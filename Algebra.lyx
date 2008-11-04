@@ -1,0 +1,1239 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass book
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+מרצה: ארי נאמרק -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+naimazk@ma.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+אתר הקורס:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+http://iwk.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+ציון סופי:
+\end_layout
+
+\begin_layout Itemize
+בחינות)
+\numeric on
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הטובים מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+12
+\numeric off
+( -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\numeric off
+%
+\end_layout
+
+\begin_layout Itemize
+מעבדה ב-
+\lang english
+Matlab
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\numeric off
+%
+\end_layout
+
+\begin_layout Itemize
+בחינה סופית -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+80
+\numeric off
+%
+\end_layout
+
+\begin_layout Section
+ןןקטורים
+\end_layout
+
+\begin_layout Standard
+אתה אמור לדעת את זה מתיכון!
+\end_layout
+
+\begin_layout Standard
+דו מימדי, אם נתונים:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\vec{x} & = & \left(\begin{array}{c}
+x_{1}\\
+x_{2}\end{array}\right)=x_{1}\vec{e_{1}}+x_{2}\vec{e_{2}}\\
+\vec{y} & = & \left(\begin{array}{c}
+y_{1}\\
+y_{2}\end{array}\right)=y_{1}\vec{e_{1}}+y_{2}\vec{e_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}+\vec{y} & = & \left(\begin{array}{c}
+x_{1}+y_{1}\\
+x_{2}+y_{2}\end{array}\right)=\left(x_{1}+y_{1}\right)\cdot\vec{e_{1}}+\left(x_{2}+y_{2}\right)\cdot\vec{e_{2}}\\
+\alpha\vec{x} & = & \left(\begin{array}{c}
+\alpha x_{1}\\
+\alpha x_{2}\end{array}\right)=\alpha x_{1}\vec{e_{1}}+\alpha x_{2}\vec{e_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\vec{e_{1}} & = & 1\cdot\vec{e_{1}}+0\cdot\vec{e_{2}}=\left(\begin{array}{c}
+1\\
+0\end{array}\right)\\
+\vec{e_{2}} & = & 0\cdot\vec{e_{1}}+1\cdot\vec{e_{2}}=\left(\begin{array}{c}
+0\\
+1\end{array}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+x_{1}\vec{e_{1}}+x_{2}\vec{e_{2}}=x_{1}\left(\begin{array}{c}
+1\\
+0\end{array}\right)+x_{2}\left(\begin{array}{c}
+0\\
+1\end{array}\right)=\left(\begin{array}{c}
+x_{1}\\
+0\end{array}\right)+\left(\begin{array}{c}
+0\\
+x_{2}\end{array}\right)=\left(\begin{array}{c}
+x_{1}\\
+x_{2}\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תלת מימדי, אם נתונים:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\vec{x} & = & \left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}\end{array}\right)=x_{1}\vec{e_{1}}+x_{2}\vec{e_{2}}+x_{3}\vec{e_{3}}\\
+\vec{y} & = & \left(\begin{array}{c}
+y_{1}\\
+y_{2}\\
+y_{3}\end{array}\right)=y_{1}\vec{e_{1}}+y_{2}\vec{e_{2}}+y_{3}\vec{e_{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}+\vec{y} & = & \left(\begin{array}{c}
+x_{1}+y_{1}\\
+x_{2}+y_{2}\\
+x_{3}+y_{3}\end{array}\right)=\left(x_{1}+y_{1}\right)\vec{e_{1}}+\left(x_{2}+y_{2}\right)\vec{e_{2}}+\left(x_{3}+y_{3}\right)\vec{e_{3}}\\
+\alpha\vec{x} & = & \left(\begin{array}{c}
+\alpha x_{1}\\
+\alpha x_{2}\\
+\alpha x_{3}\end{array}\right)=\alpha x_{1}\vec{e_{1}}+\alpha x_{2}\vec{e_{2}}+\alpha x_{3}\vec{e_{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אופרטור ליניארי
+\end_layout
+
+\begin_layout Standard
+נתמקד כעת בטרנספורמציה)פונקציה( המסובבת ומטילה קוביה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מימדי לתמונה דו מימדית.
+ כלומר לוקחים קוביה תלת מימדית המוצגת על ידי הקודקודים שלה ומדוביבים אותה
+ סביב המרכז, את הקוביה המוזזת מטילים על מישור דו מימדי.
+ כתוצאה מפעולה זו מקבלים נקודות במישור הדו מימדי המייצגים את הנקודות המוטלות.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\underbrace{\vec{x}=\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+x_{3}\end{array}\right)}_{\mbox{Source}} & \Rightarrow & \underbrace{A\left(\vec{x}\right)=\left(\begin{array}{c}
+u_{1}\\
+u_{2}\end{array}\right)}_{\mbox{Image}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה מתמטית: איך לחשב את 
+\lang english
+
+\begin_inset Formula $A\left(\vec{x}\right)=\left(\begin{array}{c}
+u_{1}\\
+u_{2}\end{array}\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ ל
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ נתון וסיבוב נתון?
+\end_layout
+
+\begin_layout Standard
+כדי לענות על שאלה זו צריך להסתקל על התכונות הנשמרות כאשר מפעילים טרנספורמציה
+ זו:
+\end_layout
+
+\begin_layout Itemize
+קו ישר עובר לקו ישר
+\end_layout
+
+\begin_layout Itemize
+קווים מקביליים עוברים לקווים מקביליים
+\end_layout
+
+\begin_layout Itemize
+מקבילית עוברת למקבילית
+\end_layout
+
+\begin_layout Itemize
+האלכסון 
+\begin_inset Formula $x+y$
+\end_inset
+
+ עובר ל
+\begin_inset Formula $A(x+y)$
+\end_inset
+
+ אבל זה שווה ל 
+\begin_inset Formula $A(x)+A(y)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+אם מגדילים הווקטור 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ ב
+\begin_inset Formula $\alpha$
+\end_inset
+
+אז גם התמונה שלו גדלה פי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $A(\alpha\vec{x})=\alpha A(\vec{x})$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות אילו מספיקות כדי לגלות את הטרנספורמציה הזו.
+ כל טרנדפורמציה המקיימת את שני התכונות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x_{1}}+\vec{x_{2}}\right) & = & A\left(\vec{x_{1}}\right)+A\left(\vec{x_{2}}\right)\\
+A\left(\alpha\vec{x}\right) & = & \alpha\cdot A\left(\vec{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקראת פעולה ליניארית.
+\end_layout
+
+\begin_layout Section
+פעולות ליניאריות
+\end_layout
+
+\begin_layout Standard
+דוגמה: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ פעולת סיבוב במישור בזווית 
+\begin_inset Formula $\varphi$
+\end_inset
+
+ נגד השעון.
+ יהי:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\vec{x}=\left(\begin{array}{c}
+x_{1}\\
+x_{2}\end{array}\right)=x_{1}\vec{e_{1}}+x_{2}\vec{e_{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x}\right) & = & A\left(x_{1}\vec{e_{1}}+x_{2}\vec{e_{2}}\right)\\
+ & = & x_{1}A\left(\vec{e_{1}}\right)+x_{2}A\left(\vec{e_{2}}\right)\\
+ & = & x_{1}\left(\begin{array}{c}
+\cos\varphi\\
+\sin\varphi\end{array}\right)+x_{2}\left(\begin{array}{c}
+-\sin\varphi\\
+\cos\varphi\end{array}\right)\\
+ & = & \left(\begin{array}{c}
+x_{1}\cos\varphi-x_{2}\sin\varphi\\
+x_{1}\sin\varphi+x_{2}\cos\varphi\end{array}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז הגענו למסכנה כי:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\left(\begin{array}{c}
+u_{1}\\
+u_{2}\end{array}\right)=\left(\begin{array}{c}
+x_{1}\cos\varphi-x_{2}\sin\varphi\\
+x_{1}\sin\varphi+x_{2}\cos\varphi\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וזו הנוסחה לחישוב 
+\begin_inset Formula $\left(\begin{array}{c}
+u_{1}\\
+u_{2}\end{array}\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi$
+\end_inset
+
+ נתונים.
+ ומכל הטריגינומטריה השתמשנו רק בהגדרה של 
+\begin_inset Formula $\sin\varphi$
+\end_inset
+
+ ו
+\begin_inset Formula $\cos\varphi$
+\end_inset
+
+!
+\end_layout
+
+\begin_layout Standard
+דוגמה מספרית:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\varphi=20^{\circ}$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{x}=\left(\begin{array}{c}
+2\\
+1\end{array}\right)$
+\end_inset
+
+ חשב את 
+\begin_inset Formula $A\left(\vec{x}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x}\right) & = & \left(\begin{array}{c}
+u_{1}\\
+u_{2}\end{array}\right)\\
+ & = & \left(\begin{array}{c}
+\cos\varphi\cdot x_{1}-\sin\varphi\cdot x_{2}\\
+\sin\varphi\cdot x_{1}+\cos\varphi\cdot x_{2}\end{array}\right)\\
+ & \approx & \left(\begin{array}{c}
+0.94\cdot2-0.34\cdot1\\
+0.34\cdot2+0.94\cdot1\end{array}\right)\\
+ & \approx & \left(\begin{array}{c}
+1.54\\
+1.62\end{array}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להראות כי הזווית בין 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ ל
+\begin_inset Formula $A\left(\vec{x}\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $20^{\circ}$
+\end_inset
+
+ וגם כי ל
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ ול
+\begin_inset Formula $A\left(\vec{x}\right)$
+\end_inset
+
+ יש אותו אורך.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+מתרגלת: גילי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+gili.schul@gmail.com
+\end_layout
+
+\begin_layout Standard
+ספרים טובים לתלךמידי אלגברה:
+\end_layout
+
+\begin_layout Itemize
+אלגברה א - עמיצור
+\end_layout
+
+\begin_layout Itemize
+אלגברה ליניארית - לפשץ
+\end_layout
+
+\begin_layout Itemize
+אלגברה ליניארית - אוניברסיטה פתוחה
+\end_layout
+
+\begin_layout Standard
+מרחבים וקטורים פשוטים)עדיין לא הגדרנו את זה(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ המישור
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ המרחב
+\end_layout
+
+\begin_layout Standard
+יש שני סוגים של וקטורים: וקטורי שורה 
+\begin_inset Formula $\left(\begin{array}{cc}
+x, & y\end{array}\right)$
+\end_inset
+
+ ווקטורי עמודה 
+\begin_inset Formula $\left(\begin{array}{c}
+x\\
+y\end{array}\right)$
+\end_inset
+
+.
+ אנחנו נעמוד עם וקטורי עמודה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{R}^{2} & = & \left\{ \left(\begin{array}{c}
+x\\
+y\end{array}\right)\mid x,y\in\mathbb{R}\right\} \\
+\mathbb{R}^{3} & = & \left\{ \left(\begin{array}{c}
+x\\
+y\\
+z\end{array}\right)\mid x,y,z\in\mathbb{R}\right\} \\
+\mathbb{R}^{n} & = & \left\{ \left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+\vdots\\
+x_{n}\end{array}\right)\mid x_{i}\in\mathbb{R},i\in\left\{ 1,2,3\dots n\right\} \right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפעולות שיכולים לבצע על וקטורים הם: חיבור, כפל בסקלר, נגד.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\vec{u}=\left(\begin{array}{c}
+x\\
+y\end{array}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{v}=\left(\begin{array}{c}
+z\\
+w\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרת חיבור: 
+\begin_inset Formula $\vec{u}+\vec{w}=\left(\begin{array}{c}
+x\\
+y\end{array}\right)+\left(\begin{array}{c}
+z\\
+w\end{array}\right)=\left(\begin{array}{c}
+x+z\\
+y+w\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הכדרת כפל בסקלר: 
+\begin_inset Formula $\alpha\vec{u}=\alpha\left(\begin{array}{c}
+x\\
+y\end{array}\right)=\left(\begin{array}{c}
+\alpha x\\
+\alpha y\end{array}\right)$
+\end_inset
+
+.
+ תכונה חשובה של כפל 
+\begin_inset Formula $\left|\alpha\vec{u}\right|=\left|\alpha\right|\left|\vec{u}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקטור האפס מסמנים 
+\begin_inset Formula $\vec{0}=\left(\begin{array}{c}
+0\\
+0\end{array}\right)$
+\end_inset
+
+ והוא הוקטור היחיד המקיים 
+\begin_inset Formula $\vec{0}+\vec{u}=\vec{u}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+תכונות של 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ ו
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+סגירות\InsetSpace ~
+בחיבור: לכל 
+\begin_inset Formula $\vec{u},\vec{v}\in\mathbb{R}^{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\vec{u}+\vec{v}\in\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+קומוטטביות\InsetSpace ~
+החיבור: לכל 
+\begin_inset Formula $\vec{u},\vec{v}\in\mathbb{R}^{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\vec{u}+\vec{v}=\vec{v}+\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+אסוציטיביות: לכל 
+\begin_inset Formula $\vec{u},\vec{v},\vec{w}\in\mathbb{R}^{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(\vec{u}+\vec{v}\right)+\vec{w}=\vec{u}+\left(\vec{v}+\vec{w}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+קיים\InsetSpace ~
+איבר\InsetSpace ~
+
+\begin_inset Formula $\vec{0}\in\mathbb{R}^{2}$
+\end_inset
+
+\InsetSpace ~
+נוטרלי\InsetSpace ~
+לחיבור: 
+\begin_inset Formula $\vec{0}+\vec{u}=\vec{u}+\vec{0}=\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+קיים\InsetSpace ~
+נגדי: לכל 
+\begin_inset Formula $\vec{u}\in\mathbb{R}^{2}$
+\end_inset
+
+ קיים וקטור שנסמן 
+\begin_inset Formula $-\vec{u}\in\mathbb{R}^{2}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left(-\vec{u}\right)+\vec{u}=\vec{u}+\left(-\vec{u}\right)=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+דיסטריבותיביות: לכל 
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\vec{u},\vec{v}\in\mathbb{R}^{2}$
+\end_inset
+
+ מתקיים: 
+\begin_inset Formula $t\cdot\left(\vec{u}+\vec{v}\right)=t\cdot\vec{u}+t\cdot\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $t,s\in\mathbb{R}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\vec{u}\in\mathbb{R}^{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(t+s\right)\cdot\vec{u}=t\cdot\vec{u}+s\cdot\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $t,s\in R$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\vec{u}\in\mathbb{R^{2}}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(t\cdot s\right)\vec{u}=t\left(s\cdot\vec{u}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $\vec{u}\in\mathbb{R}^{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $1\cdot\vec{u}=\vec{u}\cdot1=\vec{u}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(1\in\mathbb{R}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבסיס הסטנדרטי ב 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ הוא הוקטורים 
+\begin_inset Formula $\vec{e_{1}}=\left(\begin{array}{c}
+1\\
+0\end{array}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\vec{e_{2}}=\left(\begin{array}{c}
+0\\
+1\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האם קיים סקלרים אחרים 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\vec{u}=a\cdot\vec{e_{1}}+b\cdot\vec{e_{2}}$
+\end_inset
+
+? לא.
+ הפירוק הוא יחיד.
+\end_layout
+
+\begin_layout Standard
+הוכחה: נניח 
+\begin_inset Formula $\vec{u}=a\vec{e_{1}}+b\vec{e_{2}}$
+\end_inset
+
+ אז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\begin{array}{c}
+x\\
+y\end{array}\right) & = & a\vec{e_{1}}+b\vec{e_{2}}\\
+ & = & a\left(\begin{array}{c}
+1\\
+0\end{array}\right)+b\left(\begin{array}{c}
+0\\
+1\end{array}\right)\\
+ & = & \left(\begin{array}{c}
+a\\
+b\end{array}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סיבוב במישור ב 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוב ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ הוא דוגמה לאופרטור ליניארי.
+ מסבירים פו מה שדיברו בשיעור.
+\end_layout
+
+\begin_layout Standard
+מסובבים את הורטור 
+\begin_inset Formula $\vec{e_{1}}=\left(\begin{array}{c}
+1\\
+0\end{array}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $A\left(\vec{e_{1}}\right)=\left(\begin{array}{c}
+\cos\varphi\\
+\sin\varphi\end{array}\right)$
+\end_inset
+
+.
+ אחר כך מסובבים את 
+\begin_inset Formula $\vec{e_{2}}=\left(\begin{array}{c}
+0\\
+1\end{array}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\varphi$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $A\left(\vec{e_{2}}\right)=\left(\begin{array}{c}
+-\cos\varphi\\
+\cos\varphi\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות של 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $\vec{u}\in\mathbb{R}^{2}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $Aa\vec{u}=aA\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+לכל 
+\begin_inset Formula $\vec{v},\vec{u}\in\mathbb{R}^{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\vec{u}+A\vec{v}=A\left(\vec{u}+\vec{v}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+שתי התכונות האילו מגדירות מרחב וקטורי.
+\end_layout
+
+\begin_layout Standard
+מסקנה: לכל 
+\begin_inset Formula $\vec{u},\vec{v}\in\mathbb{R}^{2}$
+\end_inset
+
+ ו לכל 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\left(a\vec{u}+b\vec{v}\right)=aA\vec{u}+bA\vec{v}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+חוזרים לדוגמת הסיבוב: אנחנו יודעים מה קורה לוקטורי הבסיס אז כותבים: 
+\begin_inset Formula \[
+A\left(\begin{array}{c}
+x\\
+y\end{array}\right)=x\left(\begin{array}{c}
+\cos\varphi\\
+\sin\varphi\end{array}\right)+y\left(\begin{array}{c}
+-\sin\varphi\\
+\cos\varphi\end{array}\right)=\left(\begin{array}{c}
+x\cos\varphi-y\cos\varphi\\
+x\sin\varphi+y\cos\varphi\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה לאופרטר ליניארי: הטלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P:\mathbb{R}^{2}\to\mathbb{R}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הטלה על ציר 
+\begin_inset Formula $x$
+\end_inset
+
+ נסמן ב
+\begin_inset Formula $P$
+\end_inset
+
+: 
+\begin_inset Formula $P\left(\begin{array}{c}
+x\\
+y\end{array}\right)=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר בקלות לבדוק כי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(\vec{u}\right)+P\left(\vec{v}\right) & = & P\left(\vec{u}+\vec{v}\right)\\
+P\left(a\vec{u}\right) & = & aP\left(\vec{u}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,413 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass book
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- הקדמה
+\end_layout
+
+\begin_layout Section
+מבנה הקורס
+\end_layout
+
+\begin_layout Standard
+לא מסובך מדי אבל לא טריביילי.
+\end_layout
+
+\begin_layout Standard
+ספרים כדי לראת:
+\end_layout
+
+\begin_layout Itemize
+האוניברסיטה הפתוחה:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Berkely
+\end_layout
+
+\begin_layout Itemize
+ספר 
+\lang english
+Feyman: Lectures of Physics
+\end_layout
+
+\begin_layout Standard
+גם כדי לכנס לאתר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+MIT
+\lang hebrew
+ כדי להסתכל על כורס 801
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Fall
+\lang hebrew
+ 1999 יש פו הדמיות טובות.
+ 
+\end_layout
+
+\begin_layout Standard
+להתקשר למרצה: עדי וקנין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+avaknin@physics.huji.ac.il
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Section
+חוקי ניוטון
+\end_layout
+
+\begin_layout Enumerate
+גוף שומר על מצבו)תנועה או מנוחה( כל עוד לא פועל עליו כח.
+\end_layout
+
+\begin_layout Enumerate
+כמות התנועה היא פרופורציונלית לכוח ופרופורציונלית הפוכה למסת הגוף)
+\lang english
+
+\begin_inset Formula $\vec{a}=\frac{\vec{F}}{m}$
+\end_inset
+
+
+\lang hebrew
+.(
+\end_layout
+
+\begin_layout Enumerate
+לכל פעולה יש פעולה נגדית שווה לה במגנייטודה והופכית לה בכיוון.
+\end_layout
+
+\begin_layout Section
+שימור תנע
+\end_layout
+
+\begin_layout Standard
+ניוטון אומר כי הסכום הווקטורי של של תנועות לא משתנה אם הגופים מתנגשים מתפוצצים
+ או דבר כלשהוא אחר)כל עוד אין כח חיצוני.(
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+היום נדבר על טכניקה.
+ כל אחד מהסטודנטים בא מרקע שונה, יש אנשים שמקירים החומר היטב, ויש אנשים
+ שאף פעם לא שמעו על זה.
+\end_layout
+
+\begin_layout Section
+מרחב - זמן
+\end_layout
+
+\begin_layout Standard
+ההנחה אצלנו שהמרחב הוא הומוגיני ואיזוטרופי.
+ הומוגיני משמעותו כי אין נקודה במרחב מועדפת על השניה כלומר חוקים פיזיקלים
+ לא משתנים ממקום למקום במרחב, ואיזוטרופי זה אומר שהוא קבוע בכל הכיוונים
+ לכן כל חוק שעובד בכיוון 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ גם עובד בכיוון 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\sqrt{2}\hat{x}+\sqrt{2}\hat{y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+וקטורים
+\end_layout
+
+\begin_layout Standard
+הכל מוסבר היטב בהרצאה הראשונה של אלגברה.
+ תחזור על זה.
+\end_layout
+
+\begin_layout Subsection
+מכפלות בין וקטורים
+\end_layout
+
+\begin_layout Standard
+יש שתי סוגים של מכפלה: מכפלה וקטורית שמסמנים 
+\begin_inset Formula $\vec{a}\cdot\vec{b}$
+\end_inset
+
+ ומכפלה וקטורית שמסמנים 
+\begin_inset Formula $\vec{a}\times\vec{b}$
+\end_inset
+
+.
+ מחשוים את המכפלה הסקלרית באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{a} & = & \left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}\end{array}\right)\\
+\vec{b} & = & \left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}\end{array}\right)\\
+\vec{a}\cdot\vec{b} & = & a_{1}b_{1}+a_{2}b_{2}+a_{3}b_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם לכתוב את זה בצורה הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{a}\cdot\vec{b}=\left|\vec{a}\right|\left|b\right|\cos\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ מסמנת הזווית בין שתי הוקטורים.
+\end_layout
+
+\begin_layout Standard
+אבל המכפלה הוקטורית מחשבים בדרך קצת יותר מסובכת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{a}\times\vec{b}=\left|\begin{array}{ccc}
+\hat{x} & \hat{y} & \hat{z}\\
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\end{array}\right|=\left(a_{2}b_{3}-a_{3}b_{2}\right)\hat{x}-\left(a_{1}b_{3}-b_{1}a_{3}\right)\hat{y}+\left(a_{1}b_{2}-a_{2}b_{1}\right)\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+או אם רוצים רק הוקטור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\vec{a}\times\vec{b}\right|=\left|\vec{a}\right|\left|\vec{b}\right|\sin\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונה חשובה לזכור היא ש 
+\begin_inset Formula $\vec{a}\times\vec{b}\neq\vec{b}\times\vec{a}$
+\end_inset
+
+ אלה 
+\begin_inset Formula $\vec{a}\times\vec{b}=-\left(\vec{b}\times\vec{a}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+זמן
+\end_layout
+
+\begin_layout Standard
+אנחנו לא יכולים להגדיר זמן אפסולוטי, כל מה שיכולים לעסות זה להגדיר את ההפרש
+ בין שני זמנים ביחידות נתונות)בני אדם משתמשים ביחידת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Second
+\lang hebrew
+( זה כל מה שנצטרך בקורס הזה)להגדרה יותר מפורטת תלך ל
+\lang english
+String Theory
+\lang hebrew
+(
+\end_layout
+
+\begin_layout Section
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l2d1.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי גליליו המרחק של הכדור הוא פרפורציונלי ל 
+\begin_inset Formula $t^{2}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $S\left(t\right)\propto t^{2}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

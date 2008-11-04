@@ -1,0 +1,943 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass book
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Section
+תחומי המטמטיקה הבדידה:
+\end_layout
+
+\begin_layout Itemize
+תורת הקבוצות
+\end_layout
+
+\begin_layout Itemize
+תורת הגרפים
+\end_layout
+
+\begin_layout Itemize
+תורת החבורות
+\end_layout
+
+\begin_layout Section
+תוראת הקבוצות
+\end_layout
+
+\begin_layout Standard
+אנחנו נתעסק בתורת הקבוצות הנאיבית, היא תורה ישנה שיש בה סתירות אבל לא מענין
+ אותנו.
+\end_layout
+
+\begin_layout Standard
+מה היא קבוצה? קבוצה היא אוסף של איברים)איבר יכול להיות כל דבר( כל איבר מופיע
+ בקבוצה פעם אחת, והסדר לא משנה.
+ מסמנים קבוצות בכמה דרכים: 
+\begin_inset Formula $\left\{ a,b,c\right\} $
+\end_inset
+
+ או 
+\begin_inset Formula $\left\{ \mbox{all even numbers greater than 20}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתיחס לקבוצות באותיות לתיניות גדולות 
+\begin_inset Formula $A,B,C\dots$
+\end_inset
+
+ והאיברים יהיו אותיות לתיניות גדולות.
+\end_layout
+
+\begin_layout Subsection
+יחסים:
+\end_layout
+
+\begin_layout Standard
+שיכות: זה אומר שאיבר מסוים נמצא בקבוצה.
+ למשל 
+\begin_inset Formula $x\in\left\{ x,y,z\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אי שיכות: ההפכ של שיכות.
+ למשל 
+\begin_inset Formula $x\notin\left\{ w,y,z\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+שוויון של קבוצות: שתי קבוצות שוות אם יש להם אותם איברים.
+ כלומר אם לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $y\in B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $y\in A$
+\end_inset
+
+ אז 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הכלה: אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הכלה ממש: אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $y\in B$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $y\notin A$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+הקבוצה הריקה: 
+\begin_inset Formula $\emptyset=\left\{ \right\} $
+\end_inset
+
+.
+ תכונות הקבוצה הריקה: לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\notin\emptyset$
+\end_inset
+
+ וגם לכל קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\emptyset\subset A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קבוצות מוקרות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ - קבוצה ריקה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ - אוסף המספרים הטבעיים 
+\begin_inset Formula $\left\{ 1,2,3,4\dots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ - אוסף המספרים השלמים 
+\begin_inset Formula $\left\{ \dots-2,-1,0,1,2\dots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ - אוסף המספרים הרציונלים 
+\begin_inset Formula $\left\{ \frac{m}{n}|m\in\mathbb{Z},n\in\mathbb{N}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+- אוספ המספרים הממשיים)כמעט כל המספרים שמקירים, מכילה דברים כמו 
+\begin_inset Formula $\pi$
+\end_inset
+
+ ו
+\begin_inset Formula $e$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+משפטים:
+\end_layout
+
+\begin_layout Enumerate
+לכל קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\emptyset\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ אז 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ ו 
+\begin_inset Formula $B\subseteq C$
+\end_inset
+
+ אז 
+\begin_inset Formula $A\subseteq C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Enumerate
+לפי ההגדרה כל 
+\begin_inset Formula $x\in\emptyset$
+\end_inset
+
+ נמצא ב
+\begin_inset Formula $A$
+\end_inset
+
+ כי אין 
+\begin_inset Formula $x$
+\end_inset
+
+ כזה.
+\end_layout
+
+\begin_layout Enumerate
+כל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ הוא 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ אז לפי ההגדרה 
+\begin_inset Formula $A\subseteq A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+כל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ כי 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ וכל 
+\begin_inset Formula $y\in B$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $y\in A$
+\end_inset
+
+ כי 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ אז לפי ההגרה 
+\begin_inset Formula $A=B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ כי 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ וכל 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ כי 
+\begin_inset Formula $B\subseteq C$
+\end_inset
+
+, לכן גם כל 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $A\subseteq C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+פעולוץ על קבוצות
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C=A\cap B$
+\end_inset
+
+ הוא החיתוך בין שתי הקבוצות)כל האיברים הנמצאים בשתי הקבוצות.( פורמלית: 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C=A\cup B$
+\end_inset
+
+ הוא האיחוד בין שני הקבוצות)כל האיברים שנמצאים לפחות באחת הקבוצות.( פורמאלית:
+ 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ אם ורק אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $C=A\setminus B$
+\end_inset
+
+ הוא כל האיברים ב 
+\begin_inset Formula $A$
+\end_inset
+
+ שלא נמצא ב
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+נגדיר מוסגים חדשים:
+\end_layout
+
+\begin_layout Description
+קבוצה\InsetSpace ~
+אוניברסאלית: קשה להגדיר אבל אם עובדים עם מספרים ממשיים אז הקבוצה האוניברסאל
+ית היא 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ אם עובדים עם מרוכבים אז 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+ אם עובדים עם בני אדם אז כל בני האדם בעולם.
+\end_layout
+
+\begin_layout Description
+משלים\InsetSpace ~
+
+\begin_inset Formula $A^{c}$
+\end_inset
+
+: הוא כל האיברים הנמצאים בקבוצה האוניברסאלית ולא נמצאים בקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Description
+קבוצת\InsetSpace ~
+החזקה\InsetSpace ~
+
+\begin_inset Formula $P\left(A\right)$
+\end_inset
+
+: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה קבוצת החזקה 
+\begin_inset Formula $P\left(A\right)$
+\end_inset
+
+מוגדרת להיות אוסף תתי הקבוצות של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $x\subseteq A\Leftrightarrow x\in P\left(A\right)$
+\end_inset
+
+.
+ דוגמה: מהי 
+\begin_inset Formula $P\left(\emptyset\right)$
+\end_inset
+
+? התשובה היא 
+\begin_inset Formula $P\left(\emptyset\right)=\left\{ \emptyset\right\} \neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+זוג\InsetSpace ~
+סדור: הוא אוסף של שני איברים לא דפקה שונים זה מזה שסדרו חשוב.
+ דוגמה 
+\begin_inset Formula $\left(2,1\right)\neq\left(1,2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+מכפלה\InsetSpace ~
+קרטזית: לקבוצות 
+\begin_inset Formula $A$
+\end_inset
+
+ ו
+\begin_inset Formula $B$
+\end_inset
+
+ המכפלה הקרטזית 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ הוא קבוצת הזוגות הסדורות כך שהאיבר הראשון יהיה מ
+\begin_inset Formula $A$
+\end_inset
+
+ והשני מ
+\begin_inset Formula $B$
+\end_inset
+
+.
+ דוגמה: 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $B=\left\{ 2,5\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\times B=\left\{ \left(2,1\right),\left(2,2\right),\left(2,3\right),\left(5,1\right),\left(5,2\right),\left(5,3\right)\right\} $
+\end_inset
+
+.
+ דוגמה אחרת: 
+\begin_inset Formula $A=\emptyset$
+\end_inset
+
+ ו
+\begin_inset Formula $B=\left\{ 1,2,3\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\times B=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Description
+יחסים\InsetSpace ~
+בינארים: יהיו 
+\begin_inset Formula $A$
+\end_inset
+
+ ו 
+\begin_inset Formula $B$
+\end_inset
+
+ קבוצות, יחס בינארי הוא תתקבוצה של 
+\begin_inset Formula $A\times B$
+\end_inset
+
+.
+ ליחס 
+\begin_inset Formula $\Re\subseteq A\times B$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $a\Re b$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left(a,b\right)\in\Re$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $a,b\in\Re$
+\end_inset
+
+.
+ דוגמה: 
+\begin_inset Formula $A=B=\left\{ 1,2,3\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $\Re=\left\{ \left(1,2\right),\left(1,3\right),\left(2,3\right)\right\} $
+\end_inset
+
+, אזי 
+\begin_inset Formula $\begin{array}{c}
+1\Re2\\
+1\Re3\\
+2\Re3\end{array}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תכונות של יחסים: הגדרה תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה לא ריקה 
+\begin_inset Formula $\Re\subseteq A\times A$
+\end_inset
+
+ אז
+\end_layout
+
+\begin_layout Itemize
+אומרים כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ רפלקסיבי אם 
+\begin_inset Formula $x\Re x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אומרים כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ אנטי רפלקסיבי אם 
+\begin_inset Formula $xNOT\Re x$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אומרים כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ סימטרי אם לכל 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\Re y\Leftrightarrow y\Re x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אומרים כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ אנטי סימטרי אם לא קיים 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\neq y$
+\end_inset
+
+ ומקיים 
+\begin_inset Formula $x\Re y$
+\end_inset
+
+ ו
+\begin_inset Formula $y\Re x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אומרים כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ טרנזיטיבי אם לכל 
+\begin_inset Formula $x,y,z\in A$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\Re y$
+\end_inset
+
+ ו
+\begin_inset Formula $y\Re z$
+\end_inset
+
+ אז 
+\begin_inset Formula $x\Re z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות ליחסים מוקרים
+\end_layout
+
+\begin_layout Description
+שווה\InsetSpace ~
+
+\begin_inset Formula $=$
+\end_inset
+
+: רפלקסיבי, סימטרי, טרנזיטיבי
+\end_layout
+
+\begin_layout Description
+קטנ\InsetSpace ~
+מ-\InsetSpace ~
+
+\begin_inset Formula $<$
+\end_inset
+
+: אנטי-רפלקסיבי, סימטרי, טרנזיטיבי
+\end_layout
+
+\begin_layout Description
+קטן\InsetSpace ~
+או\InsetSpace ~
+שווה\InsetSpace ~
+ל-\InsetSpace ~
+
+\begin_inset Formula $\leq$
+\end_inset
+
+: רפלקסיבי, טרנזיטיבי
+\end_layout
+
+\begin_layout Description
+ביחס\InsetSpace ~
+
+\begin_inset Formula $\Re$
+\end_inset
+
+)מוגדר\InsetSpace ~
+על\InsetSpace ~
+ידי\InsetSpace ~
+
+\begin_inset Formula $x\Re y\Leftrightarrow\left|x-y\right|=1$
+\end_inset
+
+(: אנטי רפלקסיבי, סימטרי
+\end_layout
+
+\begin_layout Itemize
+יחס נקרא יחס שקילות אם הוא רפלקסיבי, סימטרי, וטרנזיטיבי.
+\end_layout
+
+\begin_layout Itemize
+יחס נקרא יחס סדר אם הוא טרנזיטיבי אנטי סימטרי ולכל 
+\begin_inset Formula $y,x$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $x\Re y$
+\end_inset
+
+ או 
+\begin_inset Formula $y\Re y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות ליחסי שקילות:
+\end_layout
+
+\begin_layout Enumerate
+יחס שווה.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A=\mathbb{N}$
+\end_inset
+
+ 
+\begin_inset Formula $x\Re y$
+\end_inset
+
+ אם 
+\begin_inset Formula $x-y$
+\end_inset
+
+ מתחלק ב
+\numeric on
+100
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+חלוקה של 
+\begin_inset Formula $A$
+\end_inset
+
+ היא קבוצצה של קבוצות 
+\begin_inset Formula $\left\{ B_{1},B_{2}\dots\right\} $
+\end_inset
+
+ המקיימת 
+\begin_inset Formula $B_{1}\cup B_{2}\cup B_{3}...=A$
+\end_inset
+
+ וגם לכל 
+\begin_inset Formula $B_{i}$
+\end_inset
+
+ ו
+\begin_inset Formula $B_{j}$
+\end_inset
+
+ בחלוקה 
+\begin_inset Formula $B_{i}\cap B_{j}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל קטן: נגדיר יחס 
+\begin_inset Formula $\Re$
+\end_inset
+
+באופן הבא 
+\begin_inset Formula $\Leftrightarrow\Re\subseteq A\times A$
+\end_inset
+
+
+\begin_inset Formula $x$
+\end_inset
+
+ ו 
+\begin_inset Formula $y$
+\end_inset
+
+ באותה קבוצה בחלוקה.
+ תוכיח כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ הוא יחס שקילות
+\end_layout
+
+\end_body
+\end_document

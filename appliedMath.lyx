@@ -1,0 +1,1858 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass book
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+שעות קבלה: כנדה עליון
+\end_layout
+
+\begin_layout Section
+פולינומים
+\end_layout
+
+\begin_layout Standard
+פולינום הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=a_{n}x^{n}+a_{n-1}+x^{n-1}+\dots+a_{2}x^{2}+a_{1}x+a_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרגה של פולינום מוגדרת כ
+\begin_inset Formula $n$
+\end_inset
+
+ הגדול ביותר כך ש 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ לא אפס.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=5x^{2}+3x-8\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה פולינום מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לכן כותבים 
+\begin_inset Formula $\deg f=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם המקדמים שלימים והדרגה היא אי זוגית אז יש פתרון מצורה 
+\begin_inset Formula $\frac{k}{l}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{k}{a_{n}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\frac{l}{a_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תתפוס מה שפספסת...............
+\end_layout
+
+\begin_layout Standard
+קיבלנו את המשואה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \left(x+3\right)\left(x+5\right)\left(2x-1\right)\\
+ & = & 2\left(x+3\right)\left(x+5\right)\left(x-\frac{1}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+רואים את השורשים בקלות.
+\end_layout
+
+\begin_layout Standard
+דוגמה אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=x^{4}-3x^{2}-4\]
+
+\end_inset
+
+משתמשים בשיטת ההצבה 
+\begin_inset Formula $x^{2}=t$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x^{4}-3x^{2}-4\\
+ & = & t^{2}-3t-4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה כל לפתור: 
+\begin_inset Formula \begin{eqnarray*}
+f(x) & = & \left(t-4\right)\left(t+1\right)\\
+ & = & \left(x^{2}-4\right)\left(x^{2}+1\right)\\
+ & = & \left(x+2\right)\left(x-2\right)\left(x^{2}+1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מצטרכים עוד שאלות פתורות תפנו למתרגל.
+\end_layout
+
+\begin_layout Section
+טריגינומטריה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+t=\tan\left(\frac{\theta}{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\cos^{2}x} & = & 1+\tan^{2}x\\
+\frac{1}{\cos^{2}\frac{\theta}{2}} & = & 1+\tan^{2}\frac{\theta}{2}\\
+\cos^{2}\frac{\theta}{2} & = & \frac{1}{1+t^{2}}\\
+\cos\frac{\theta}{2} & = & \frac{1}{\sqrt{1+t^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהות אחרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos^{2}\theta+\sin^{2}\theta & = & 1\\
+\sin^{2}\frac{\theta}{2} & = & 1-\cos\frac{\theta}{2}\\
+ & = & 1-\frac{1}{1+t^{2}}\\
+\sin\frac{\theta}{2} & = & \frac{t}{\sqrt{1+t^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(2x\right) & = & 2\sin\left(x\right)\cos\left(x\right)\\
+\sin\theta & = & 2\frac{t}{\sqrt{1+t^{2}}}\cdot\frac{1}{\sqrt{1+t^{2}}}\\
+ & = & \mbox{something missing here. fill in}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זיהויות זיהויות זיהויות:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+t=\tan\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\cos\theta=\frac{1}{\sqrt{1+t^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\sin\theta=\frac{t}{\sqrt{q+t^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גל סינוס כללי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{A}_{Amplitude}\sin\left(\underbrace{\omega}_{Frequency}t+\underbrace{\phi}_{Phase}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל פונקציה מצורה 
+\begin_inset Formula $a\sin\left(\omega t\right)+b\sin\left(wt\right)$
+\end_inset
+
+ אפשר להעביר לצורה שהזכרנו.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+3\sin\left(\omega t\right)+4\cos\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+A & = & \sqrt{a^{2}+b^{2}}\\
+ & = & \sqrt{3^{2}+4^{2}}\\
+ & = & 5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+=5\left(\frac{3}{5}\sin\left(\omega t\right)+\frac{4}{5}\cos\left(\omega t\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עשינו את זה כי 
+\begin_inset Formula $\left(\frac{3}{5}\right)^{2}+\left(\frac{4}{5}\right)^{2}=1$
+\end_inset
+
+ כלומר נמצאת 
+\begin_inset Formula $\phi$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\cos\phi=\frac{3}{5}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\sin\phi=\frac{4}{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+5\left(\cos\phi\sin\left(\omega t\right)+\sin\phi\cos\left(\omega t\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משתמשים בזהות 
+\begin_inset Formula $\cos\alpha\sin\beta+\sin\alpha\cos\beta=\sin\left(\alpha+\beta\right)$
+\end_inset
+
+ וזה יעבור איכשהוא לצורה 
+\begin_inset Formula $\sin\left(\omega t+\phi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קבוצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\{ 5,4,3,1\right\}  &  & \left\{ \mbox{monky, duck, cow}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אין קשר לסדר לכן 
+\begin_inset Formula $\left\{ 2,3,4\right\} =\left\{ 4,2,3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קבוצה ריקה נרשמת 
+\begin_inset Formula $\left\{ \right\} =\textrm{\O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $A$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קבוצה אז 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ פירושה כי 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא איבר ב 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ נאמר 
+\begin_inset Formula $x\notin A$
+\end_inset
+
+ אם 
+\begin_inset Formula $x$
+\end_inset
+
+ אינו איבר ב 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+קבוצות מוגדרות מראש:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\emptyset$
+\end_inset
+
+ - קבוצה ריקה
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ - אוסף המספרים הטבעיים 
+\begin_inset Formula $\left\{ 1,2,3,4\dots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ - אוסף המספרים השלמים 
+\begin_inset Formula $\left\{ \dots-2,-1,0,1,2\dots\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ - אוסף המספרים הרציונלים 
+\begin_inset Formula $\left\{ \frac{m}{n}|m\in\mathbb{Z},n\in\mathbb{N}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+- אוספ המספרים הממשיים)כמעט כל המספרים שמקירים, מכילה דברים כמו 
+\begin_inset Formula $\pi$
+\end_inset
+
+ ו
+\begin_inset Formula $e$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\begin_inset Formula $A\subset B$
+\end_inset
+
+ אם כל איבר ב 
+\begin_inset Formula $A$
+\end_inset
+
+ נמצא ב
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cap B$
+\end_inset
+
+ הוא החיתוך בין שתי הקבוצות)כל האיברים הנמצאים בשתי הקבוצות(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\cup B$
+\end_inset
+
+ הוא האיחוד בין שני הקבוצות)כל האיברים שנמצאים לפחות באחת הקבוצות(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\setminus B$
+\end_inset
+
+ הוא כל האיברים ב 
+\begin_inset Formula $A$
+\end_inset
+
+ שלא נמצא ב
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פונקציות הפיכות
+\end_layout
+
+\begin_layout Standard
+פונקציה היא משהוא שאם 
+\begin_inset Formula $x=y$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)$
+\end_inset
+
+.
+ כלומר אי אפשר שיהיה יותר מערך אחד לפונקציה באותו מקום.
+\end_layout
+
+\begin_layout Standard
+פונקציה היא חד חד ערכית אם מתקיים ש
+\begin_inset Formula $f\left(x\right)=f\left(y\right)$
+\end_inset
+
+ אז בהכרח 
+\begin_inset Formula $x=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תחום וטווח: 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ נאמר ש
+\begin_inset Formula $f$
+\end_inset
+
+ על אם לכל איבר ב
+\begin_inset Formula $B$
+\end_inset
+
+ יש מקור ב
+\begin_inset Formula $A$
+\end_inset
+
+.
+ כלומר אם 
+\begin_inset Formula $y\in B$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x\right)=y$
+\end_inset
+
+.
+ הערה: אפשר תמיד להגדיר פונקציה להיות על אם משנים את יטווח.
+\end_layout
+
+\begin_layout Section
+כפל וסכם מקוצר
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\sum_{i=1}^{10}i=1+2+3+4+5+6+7+8+9+10\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\prod_{i=1}^{10}i=1\cdot2\cdot3\cdot4\cdot5\cdot6\cdot7\cdot8\cdot9\cdot10\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דיטירמיננטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\begin{array}{cc}
+a & b\\
+c & d\end{array}\right|=a\cdot d-b\cdot c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\left|\begin{array}{ccc}
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\\
+c_{1} & c_{2} & c_{3}\end{array}\right|=a_{1}\left|\begin{array}{cc}
+b_{2} & b_{3}\\
+c_{2} & c_{3}\end{array}\right|-a_{2}\left|\begin{array}{cc}
+b_{1} & b_{3}\\
+c_{1} & c_{3}\end{array}\right|+a_{3}\left|\begin{array}{cc}
+b_{1} & b_{2}\\
+c_{1} & c_{2}\end{array}\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\left|\begin{array}{ccc}
+3 & 1 & 4\\
+2 & 1 & 3\\
+1 & 4 & 5\end{array}\right|=3\left|\begin{array}{cc}
+1 & 3\\
+4 & 5\end{array}\right|-1\left|\begin{array}{cc}
+2 & 3\\
+1 & 5\end{array}\right|+4\left|\begin{array}{cc}
+2 & 1\\
+1 & 4\end{array}\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות של דיטרמיננטה:
+\end_layout
+
+\begin_layout Itemize
+אם מחליפים שתי שורות או שתי עמודות אז הדיטמיננטה משנה סימן)מוכפלת ב
+\begin_inset Formula $-1$
+\end_inset
+
+.(
+\end_layout
+
+\begin_layout Itemize
+אם שורה או עמודה היא אפס אז הדירמיננטה אפס.
+\end_layout
+
+\begin_layout Itemize
+אם שורה היא כפולה של שורה אחרת)או עמודה של עמודה( אז הדיטרמיננטה היא אפס.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Section
+נקודות
+\end_layout
+
+\begin_layout Standard
+נלמד עכשיו על גיאומטריה ב 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+, רשית יש לנו ווקטורים.
+ כדי להגדיר ווקור צריכים להכדיר נקודה 
+\lang english
+
+\begin_inset Formula $n$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מימדית.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+R^{n}=\left\{ \left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+\vdots\\
+x_{n}\end{array}\right)\ \ x_{i}\in\mathbb{R}^{n},i\in\left\{ 1,2,3\dots n\right\} \right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל נקודה תלת מימדית נראת כמו 
+\begin_inset Formula $\left(\begin{array}{c}
+3\\
+1\\
+5\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סוף סוף נגיע לווקטןרים: תהי 
+\begin_inset Formula $O=\left(\begin{array}{c}
+0\\
+0\\
+\vdots\\
+0\end{array}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $P=\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+\vdots\\
+x_{n}\end{array}\right)$
+\end_inset
+
+ וקטור בין שני הנקודות הוא 
+\begin_inset Formula $\vec{p}=P-O=\left(\begin{array}{c}
+x_{1}\\
+x_{2}\\
+\vdots\\
+x_{n}\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמה סימונים פשוטים:
+\end_layout
+
+\begin_layout Standard
+נקודות: 
+\begin_inset Formula $A,B,P,Q\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מרחק בין שני נקודות: 
+\begin_inset Formula $AB$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שני קווים מקביליים: 
+\begin_inset Formula $AB\parallel CD$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שני קווים מאונכים זה לזה: 
+\begin_inset Formula $AB\perp CD$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האורך ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ בין שתי נקודות הוא 
+\begin_inset Formula $AB=\sqrt{\left(a_{1}-b_{1}\right)^{2}+\left(a_{2}-b_{2}\right)^{2}+\dots+\left(a_{n}-b_{n}\right)^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+וקטורים ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקטור זה דבר בעל אורך וקיון.
+ אם יודעים את שתי הקצוות של וקטור אז מקירים את הווקטיר.
+ לכן קיים וקטור 
+\begin_inset Formula $\vec{AB}$
+\end_inset
+
+.
+ וכל מה הגדרנו על חצים עובד גם בוקטורים.
+\end_layout
+
+\begin_layout Standard
+לכל ווקטור 
+\begin_inset Formula $\vec{AB}$
+\end_inset
+
+קיימת נקודה 
+\begin_inset Formula $P$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\vec{OP}=\vec{AB}$
+\end_inset
+
+ לכן אומרים ש 
+\begin_inset Formula $\vec{OP}$
+\end_inset
+
+.
+ נסמן כעת 
+\begin_inset Formula $\vec{OP}=\left(\begin{array}{c}
+x_{1}\\
+\vdots\\
+x_{n}\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+במקרה כללי 
+\begin_inset Formula $A=\left(\begin{array}{c}
+a_{1}\\
+\vdots\\
+a_{n}\end{array}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $B=\left(\begin{array}{c}
+b_{1}\\
+\vdots\\
+b_{n}\end{array}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\vec{AB}=\left(\begin{array}{c}
+b_{1}-a_{1}\\
+\vdots\\
+b_{n}-a_{n}\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אומרים ש
+\begin_inset Formula $\vec{OP}$
+\end_inset
+
+ הוא וקטור המקום של הנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+.
+ אולי נראה יותר כל להשתמש בנקודות כעת אבל בעתיד נראה שכדי להשתמש בוקטורים.
+\end_layout
+
+\begin_layout Standard
+מה זה גודל של וקטור? אם יש לנו וקטיר 
+\begin_inset Formula $\vec{AB}=\left(\begin{array}{c}
+x_{1}\\
+\vdots\\
+x_{n}\end{array}\right)$
+\end_inset
+
+ אז רוצים שהגודל שלו יהיה הורך של הקטע 
+\begin_inset Formula $AB$
+\end_inset
+
+.
+ אז מסמנים הגודל ב 
+\begin_inset Formula $\left|\left|\vec{AB}\right|\right|=\sqrt{x_{1}^{2}+\dots+x_{n}^{2}}$
+\end_inset
+
+.
+ דוגמה: נגדיר קבוצה 
+\begin_inset Formula $\left\{ v\in\mathbb{R}^{2}|\left|\left|v\right|\right|=2\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+סימנים של וקטורים:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\underline{0} & = & \left(\begin{array}{c}
+0\\
+\vdots\\
+0\end{array}\right)\\
+\vec{r} & = & \left(\begin{array}{c}
+x\\
+y\\
+z\end{array}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש ווקטורים עם קובע.
+ אילו הווקטרים שהגודל שלהם הוא אחד: 
+\begin_inset Formula $\left|\left|\hat{r}\right|\right|=1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש עוד סימונים לווקטורי יחידה ספציפיים: 
+\begin_inset Formula \[
+\underbrace{\hat{e_{1}}}_{\hat{i}}=\left(\begin{array}{c}
+1\\
+0\\
+0\end{array}\right),\underbrace{\hat{e_{2}}}_{\hat{j}}=\left(\begin{array}{c}
+0\\
+1\\
+0\end{array}\right),\underbrace{\hat{e_{3}}}_{\hat{k}}=\left(\begin{array}{c}
+0\\
+0\\
+1\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרות:
+\end_layout
+
+\begin_layout Standard
+סכום:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}+\vec{y} & = & \left(\begin{array}{c}
+x_{1}\\
+\vdots\\
+x_{n}\end{array}\right)+\left(\begin{array}{c}
+y_{1}\\
+\vdots\\
+y_{n}\end{array}\right)=\left(\begin{array}{c}
+x_{1}+y_{2}\\
+\vdots\\
+x_{n}+y_{n}\end{array}\right)\\
+\vec{y}+\vec{x} & = & \vec{x}+\vec{y}\\
+\vec{x}+\left(\vec{y}+\vec{z}\right) & = & \left(\vec{x}+\vec{y}\right)+\vec{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפרש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{x}-\vec{y}=\left(\begin{array}{c}
+x_{1}\\
+\vdots\\
+x_{n}\end{array}\right)-\left(\begin{array}{c}
+y_{1}\\
+\vdots\\
+y_{n}\end{array}\right)=\left(\begin{array}{c}
+x_{1}-y_{2}\\
+\vdots\\
+x_{n}-y_{n}\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכפלה בסקלר:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\lambda\cdot\vec{x}=\lambda\cdot\left(\begin{array}{c}
+x_{1}\\
+\vdots\\
+x_{n}\end{array}\right)=\left(\begin{array}{c}
+\lambda\cdot x_{n}\\
+\vdots\\
+\lambda\cdot x_{n}\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\left|\left|\lambda\vec{x}\right|\right| & = & \sqrt{\left(\lambda x_{1}\right)^{2}+\dots+\left(\lambda x_{n}\right)^{2}}\\
+ & = & \sqrt{\lambda^{2}\left(x_{1}^{2}+\dots+\left(x_{n}\right)^{2}\right)}\\
+ & = & \left|\lambda\right|\sqrt{x_{1}^{2}+\dots+x_{n}^{2}}\\
+ & = & \left|\lambda\right|\left|\left|\vec{x}\right|\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות חשובות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda\left(\alpha\vec{x}\right) & = & \left(\lambda\alpha\right)\vec{x}\\
+\lambda\left(\vec{x}+\vec{y}\right) & = & \lambda\vec{x}+\lambda\vec{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקטור היחידה בכיון 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ מתקבל על ידי
+\begin_inset Formula $\frac{1}{\left|\left|\vec{a}\right|\right|}\cdot\vec{a}=\frac{\vec{a}}{\left|\left|\vec{a}\right|\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+וקטור היחידה בזוית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\hat{a}=\left(\begin{array}{c}
+\cos\theta\\
+\sin\theta\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משואה של קו ישר
+\end_layout
+
+\begin_layout Standard
+אם נתונות שתי נקודות אז:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}=\vec{a}+t\cdot\left(\vec{b}-\vec{a}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+או אם נתונה נקודה אחת)
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+( עם קיוון)
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}=\vec{a}+t\cdot\hat{e}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Section
+מכפלה פנימית
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\vec{a},\vec{b}\in R^{2}$
+\end_inset
+
+ אזי המכפלה הפנינית 
+\begin_inset Formula $\vec{a}\cdot\vec{b}=\sum_{i=0}^{n}a_{i}b_{i}$
+\end_inset
+
+.
+ עוד סימונים למכפלה הוקטורית 
+\begin_inset Formula $\left\langle \vec{a}\mid\vec{b}\right\rangle $
+\end_inset
+
+ ו 
+\begin_inset Formula $\left\langle \vec{a},\vec{b}\right\rangle $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\begin{array}{c}
+1\\
+2\end{array}\right)\cdot\left(\begin{array}{c}
+3\\
+4\end{array}\right)=1\cdot3+2\cdot4=11\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משמעות:
+\end_layout
+
+\begin_layout Standard
+בהינתן שני וקטורים אז אפשר לחשב המכפלה הסקלרית באופן הזה: 
+\begin_inset Formula $\vec{a}\cdot\vec{b}=\left|\vec{a}\right|\left|\vec{b}\right|\cos\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תכונות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{b}\cdot\vec{a}=\vec{a}\cdot\vec{b}$
+\end_inset
+
+ כי 
+\begin_inset Formula $\sum_{i=0}^{n}a_{i}b_{i}=\sum_{i=0}^{n}b_{i}a_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}\cdot\vec{0}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}\cdot\left(\lambda\vec{b}\right)=\lambda\left(\vec{a}\cdot\vec{b}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}\left(\vec{b}+\vec{c}\right)=\left(\vec{a}\vec{b}\right)+\vec{a}\vec{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{a}\cdot\vec{a}=\sum_{i=0}^{n}a_{i}^{2}=\left|a\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם הזהויות האילו יכולים להוכיח המשפט שכתבנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+AB^{2} & = & \left|\vec{b}-\vec{a}\right|^{2}\\
+ & = & \left(\vec{b}-\vec{a}\right)\cdot\left(\vec{b}-\vec{a}\right)\\
+ & = & \vec{b}\vec{b}-\vec{b}\vec{a}-\vec{a}\vec{b}+\vec{a}\vec{a}\\
+ & = & OB^{2}-2\vec{a}\vec{b}+OA^{2}\\
+AB^{2} & = & OA^{2}+OB^{2}-2\vec{a}\vec{b}\\
+AB^{2} & = & OA^{2}+OB^{2}-2OA\cdot OB\cdot\cos\alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משתמשים במשפט הקוסינוס בשלב האחרון.
+\end_layout
+
+\begin_layout Standard
+דוגמה: מצא את הזווית בין שני הוקטורים 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+1\end{array}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+2\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}\cdot\vec{b} & = & \left|a\right|\cdot\left|b\right|\cos\theta\\
+\cos\theta & = & \frac{\vec{a}\cdot\vec{b}}{\left|a\right|\cdot\left|b\right|}\\
+ & = & \frac{\left(\begin{array}{c}
+1\\
+1\end{array}\right)\cdot\left(\begin{array}{c}
+1\\
+2\end{array}\right)}{\left|\left(\begin{array}{c}
+1\\
+1\end{array}\right)\right|\cdot\left|\left(\begin{array}{c}
+1\\
+2\end{array}\right)\right|}\\
+ & = & \frac{1+2}{\sqrt{2}\cdot\sqrt{5}}\\
+\cos\theta & = & \frac{3}{\sqrt{10}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משוואה וקטורית של מישור ב 
+\lang english
+
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+אורך של ההטלה של 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+ בכיוון של 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ היא 
+\begin_inset Formula $\left|\vec{a}\right|\cos\theta=\frac{\left|\vec{a}\right|\left|\vec{b}\right|\cos\theta}{\left|\vec{b}\right|}=\frac{\vec{a}\vec{b}}{\left|\vec{b}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מישור מאונך ל 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\left\{ \vec{r}\mid\vec{r}\cdot\vec{n}=0\right\} $
+\end_inset
+
+ כלומר מישור שעובר ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עם נורמאל 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+.
+ זה בגלל 
+\begin_inset Formula $\vec{a}\cdot\vec{b}=0$
+\end_inset
+
+ פירושו או שהזווית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+90
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או שאחד מהווקטורים אפס.
+\end_layout
+
+\begin_layout Standard
+מישור מאונך ל
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+ שעובר ב 
+\begin_inset Formula $\vec{a}$
+\end_inset
+
+: 
+\begin_inset Formula $\left\{ \vec{r}\mid\left(\vec{r}-\vec{a}\right)\perp\vec{n}\right\} =\left\{ \vec{r}\mid\left(\vec{r}-\vec{a}\right)\cdot\vec{n}=0\right\} =\left\{ \vec{r}\mid\vec{r}\vec{n}=\vec{a}\vec{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+מישור שעובר דרך 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+2\\
+3\end{array}\right)$
+\end_inset
+
+ ומאונך ל 
+\begin_inset Formula $\left(\begin{array}{c}
+1\\
+1\\
+1\end{array}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}\cdot\vec{n} & = & \vec{a}\vec{n}\\
+\vec{r}\left(\begin{array}{c}
+1\\
+1\\
+1\end{array}\right) & = & \left(\begin{array}{c}
+1\\
+2\\
+3\end{array}\right)\left(\begin{array}{c}
+1\\
+1\\
+1\end{array}\right)\\
+x+y+z & = & 1+2+3\\
+x+y+z & = & 6\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+6x+2y+3z & = & 14\\
+\vec{r}\cdot\left(\begin{array}{c}
+6\\
+2\\
+3\end{array}\right) & = & \underbrace{14}_{\vec{a}\vec{n}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך למצא מרחק של 
+\begin_inset Formula $0$
+\end_inset
+
+ מהמישור)הטלה של 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ על 
+\begin_inset Formula $\vec{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\vec{r}\cdot\vec{n}}{\left|\vec{n}\right|}=\frac{\overbrace{14}^{\vec{a}\vec{n}=\vec{r}\vec{n}}}{\left|\vec{n}\right|}=2\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דטרמיננטה דו מימדי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\begin{array}{cc}
+a & b\\
+c & d\end{array}\right|=ad-bc\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא שטח המלבנית)בערך מוחלט( שנוצר על ידי 
+\begin_inset Formula $\left(\begin{array}{c}
+a\\
+b\end{array}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(\begin{array}{c}
+c\\
+d\end{array}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם מחליפים את הסדר אז משתנה הסימן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|\begin{array}{cc}
+a & b\\
+c & d\end{array}\right| & = & -\left|\begin{array}{cc}
+b & a\\
+d & c\end{array}\right|\\
+ & = & -\left|\begin{array}{cc}
+c & d\\
+a & b\end{array}\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מכפלה וקטורית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}\end{array}\right)\times\left(\begin{array}{c}
+b_{1}\\
+b_{2}\\
+b_{3}\end{array}\right)=\left(\begin{array}{c}
+a_{2}b_{3}-a_{3}b_{2}\\
+a_{3}b_{1}-a_{1}b_{3}\\
+a_{1}b_{2}-a_{2}b_{1}\end{array}\right)=\left(\begin{array}{c}
+\left|\begin{array}{cc}
+a_{2} & a_{3}\\
+b_{2} & b_{3}\end{array}\right|\\
+\left|\begin{array}{cc}
+a_{1} & a_{3}\\
+b_{1} & b_{3}\end{array}\right|\\
+\left|\begin{array}{cc}
+a_{1} & a_{2}\\
+b_{1} & b_{2}\end{array}\right|\end{array}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{a}\times\vec{0}=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{b}\times\vec{a}=-\vec{a}\times\vec{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\lambda\vec{a}\right)\times\vec{b}=\lambda\left(\vec{a}\times\vec{b}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\vec{a}+\vec{b}\right)\times c=\vec{a}\times\vec{c}+\vec{b}\times\vec{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\begin{cases}
+\left(\vec{a}\times\vec{b}\right)\cdot\vec{b}=\vec{0}\\
+\left(\vec{a}\times\vec{b}\right)\cdot\vec{b}=\vec{0}\end{cases}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה של המשואה האחרונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\vec{a}\times\vec{b}\right)\cdot\vec{a} & = & \left(\begin{array}{c}
+a_{2}b_{3}-a_{3}b_{2}\\
+a_{3}b_{1}-a_{1}b_{3}\\
+a_{1}b_{2}-a_{2}b_{1}\end{array}\right)\cdot\left(\begin{array}{c}
+a_{1}\\
+a_{2}\\
+a_{3}\end{array}\right)\\
+ & = & \left(a_{2}b_{3}-a_{3}b_{2}\right)a_{1}+\left(a_{3}b_{1}-a_{1}b_{3}\right)a_{2}+\left(a_{1}b_{2}-a_{2}b_{1}\right)a_{3}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $\vec{a}\perp\vec{a}\times\vec{b}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\vec{b}\perp\vec{a}\times\vec{b}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגודל של 
+\begin_inset Formula $a\times b$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|a\times b\right|=\left|a\right|\left|b\right|\sin\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\vec{a}\times\vec{b}\right|^{2}+\left(\vec{a}\cdot\vec{b}\right)^{2}=\left|\vec{a}\right|^{2}\cdot\left|\vec{b}\right|^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרי ההוכחה יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|a\times b\right|^{2} & = & \left|a\right|^{2}\left|b\right|^{2}-\left(ab\right)^{2}\\
+ & = & \left|a\right|^{2}\left|b\right|^{2}-\left(\left|a\right|\left|b\right|\cos\theta\right)^{2}\\
+ & = & \left|a\right|^{2}\left|b\right|-\left|a\right|\left|b\right|\cos^{2}\theta\\
+ & = & \left|a\right|^{2}\left|b\right|^{2}(1-\cos^{2}\theta)\\
+ & = & \left|a\right|^{2}\left|b\right|^{2}\sin\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא שטח של מקבילית על בסיס 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
