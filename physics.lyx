@@ -16,7 +16,7 @@
 \graphics default
 \paperfontsize default
 \spacing single
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -404,6 +404,231 @@ String Theory
 
  כלומר 
 \begin_inset Formula $S\left(t\right)\propto t^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+מתרגל ברוך ברזל.
+ דנציג ב' #
+\numeric on
+206
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תל
+\numeric on
+02-6586332
+\numeric off
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+baruch@phys.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+חובה להגיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תרגילים מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+12
+\numeric off
+.
+\end_layout
+
+\begin_layout Section
+יחידות
+\end_layout
+
+\begin_layout Standard
+כאשר משווים שני דברים גם היחידות חיבות להיות שוות.
+ 
+\end_layout
+
+\begin_layout Section
+נגזרות
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial dx^{2}}{\partial x} & = & \lim_{\Delta x\to0}\frac{\left(x+\Delta x\right)^{2}-x^{2}}{\Delta x}\\
+ & = & \lim_{\Delta x\to0}\frac{x^{2}+2x\Delta x+\left(\Delta x\right)^{2}-x^{2}}{\Delta x}\\
+ & = & \lim_{\Delta x\to0}\frac{2x\Delta x+\left(\Delta x\right)^{2}}{\Delta x}\\
+ & = & \lim_{\Delta x\to0}2x+\Delta x\\
+ & = & 2x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה של המשפט של 
+\begin_inset Formula $\left(f\left(g\left(x\right)\right)\right)'=g'\left(x\right)\cdot f'\left(g\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial F\left(x\right)}{\partial x} & = & \frac{F\left(x+\Delta x\right)-F\left(x\right)}{\Delta x}\\
+ & = & \frac{f\left(g\left(x+\Delta x\right)\right)-f\left(g\left(x\right)\right)}{\Delta x}\\
+ & = & \frac{f\left(g\left(x+\Delta x\right)\right)-f\left(g\left(x\right)\right)}{\Delta x}\cdot\frac{g\left(x+\Delta x\right)-g\left(x\right)}{g\left(x+\Delta x\right)-g\left(x\right)}\\
+ & = & \underbrace{\frac{f\left(g\left(x+\Delta x\right)\right)-f\left(g\left(x\right)\right)}{g\left(x+\Delta x\right)-g\left(x\right)}}_{\frac{\partial f\left(g\left(x\right)\right)}{\partial g\left(x\right)}}\cdot\underbrace{\frac{g\left(x+\Delta x\right)-g\left(x\right)}{\Delta x}}_{\frac{\partial g\left(x\right)}{\partial x}}\\
+ & = & f'\left(g\left(x\right)\right)\cdot g'\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+טריגינומטריה
+\end_layout
+
+\begin_layout Standard
+הוכחת הזהות 
+\begin_inset Formula $\cos\left(\alpha+\beta\right)=\cos\alpha\cos\beta-\sin\alpha\sin\beta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/t1d1.svg
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\triangle & = & \triangle\\
+AC^{2} & = & BD^{2}\\
+\left[\sin\left(\alpha+\beta\right)\right]^{2}+\left(1-\cos\left(\alpha+\beta\right)\right)^{2} & = & \left(\sin\alpha+\sin\beta\right)^{2}+\left(\cos\beta-\cos\alpha\right)^{2}\\
+\sin^{2}\left(\alpha+\beta\right)+1-2\cos\left(\alpha+\beta\right)+\cos^{2}\left(\alpha+\beta\right) & = & \begin{array}{c}
+\sin^{2}\alpha+2\sin\alpha\sin\beta+\sin^{2}\beta+\dots\\
+\cos^{2}\beta-2\cos\beta\cos\alpha+\cos^{2}\alpha\end{array}\\
+\sin^{2}\left(\alpha+\beta\right)+\cos^{2}\left(\alpha+\beta\right)+1-2\cos\left(\alpha+\beta\right) & = & \begin{array}{c}
+\sin^{2}\alpha+\cos^{2}\alpha+\sin^{2}\beta+\cos^{2}\beta+\dots\\
+2\sin\alpha\sin\beta-2\cos\beta\cos\alpha\end{array}\\
+1+1-2\cos\left(\alpha+\beta\right) & = & 1+1+2\sin\alpha\sin\beta-2\cos\beta\cos\alpha\\
+\cos\left(\alpha+\beta\right) & = & \cos\alpha\cos\beta-\sin\alpha\sin\beta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+כל מה שאמר בתרגול זה היה כבר כתוב בסדנאת פיזיקה למהנדסים.
+ אבל אם מי שהוא רוצה להוסיף כצת אז בכיף, אבל אל תעשה העתק/הדבק
+\end_layout
+
 \end_inset
 
 

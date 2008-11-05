@@ -1,0 +1,446 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass book
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Chapter
+סדנא מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+פרופסור אריאל,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+harel.ilan@mail.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ תרגילים, צריך להגיש 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+75
+\numeric off
+%, כל תרגיל בעל ציון יותר מ 
+\numeric on
+6/10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא יחשב כמוגש.
+\end_layout
+
+\begin_layout Section
+נגזרות
+\end_layout
+
+\begin_layout Standard
+הכלי העיקרי שלנו בפיזיקה הוא חשוון דיפרנציאלי ואינטגראלי.
+ אפשר להגדיר פונקציות פשוט כ 
+\begin_inset Formula $f\left(x\right)=x^{2}+5$
+\end_inset
+
+ או יותר מסובך 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+x^{2} & x\geq0\\
+-x & x<0\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מגדירים מוסג של רציפות.
+ רציפות זה שאפשר לצייר הפונקציה בלי להרים העט.
+\end_layout
+
+\begin_layout Standard
+אחד הדברים המענינים אותנו הוא שיפוע הגרף.
+ אם הפונקציה ליניארית אז קל מאוד לחשב השיפוע 
+\begin_inset Formula $m=\frac{f\left(x_{2}\right)-f\left(x_{1}\right)}{x_{2}-x_{1}}$
+\end_inset
+
+ אבל ברור שזה לא יעבוד בפונקציות לא ליניאריות, שז הולכים ומקטינים 
+\begin_inset Formula $\Delta x=x_{2}-x_{1}$
+\end_inset
+
+ ובגבול של 
+\begin_inset Formula $\Delta x\to0$
+\end_inset
+
+ מקבלים הנגזרת)השיפוע(.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F'\left(x\right)=\frac{\partial F}{\partial x}=\lim_{\Delta x\to0}\frac{F\left(x+\Delta x\right)-F\left(x\right)}{\Delta x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנשים גדולים וחכמים עשו לנו ליסטה של נגזרות.
+ אנחנו לא נוכיח את זה אבל נשתמש בהם.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(x^{n}\right)'=nx^{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\sin\left(x\right)\right)'=\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\cos\left(x\right)\right)'=-\sin x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(e^{x}\right)'=e^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(ln\left(x\right)\right)'=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(f\left(x\right)\cdot g\left(x\right)\right)'=f'\left(x\right)g\left(x\right)+f\left(x\right)g'\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(\frac{f\left(x\right)}{g\left(x\right)}\right)'=\frac{f'\left(x\right)g\left(x\right)-f\left(x\right)g'\left(x\right)}{g^{2}\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(F\left(g\left(x\right)\right)\right)'=F'\left(g\left(x\right)\right)\cdot g'\left(x\right)$
+\end_inset
+
+ דוגמה: 
+\begin_inset Formula $\left(cos\left(x^{2}\right)\right)'=-\sin\left(x^{2}\right)\cdot2x$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(\left(x^{3}+1\right)^{5}\right)'=5\left(x^{3}+1\right)\cdot3x^{2}$
+\end_inset
+
+ או משהוא מטורף 
+\begin_inset Formula $\left(\sin^{2}\left(e^{\cos\left(x+3\right)}\right)\right)'=2\sin\left(e^{\cos\left(x+3\right)}\right)\cdot\cos\left(e^{\cos\left(x+3\right)}\right)\cdot e^{\cos\left(x+3\right)}\cdot\left(-\sin\left(x+3\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש לנו את גרף ההעתק ורוצים לחשב את המהירות מה אנחנו בעצם מחפסים זה הנגזרת.
+ אי אפשר להשתמש בצורה הפשוטה במקרה כזה למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w1d1.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר המהירות)שינוי של העתק( היא 
+\begin_inset Formula $v\left(t\right)=x'\left(t\right)=\dot{x}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הנגזרת הראשונה היא השינויי בזמן אז מה הנגזרת השניה? הנגזרת השניה מסמנת
+ השינוי של השינוי כלומר השינוי במהירות כלומר התאצה.
+ מסמנים 
+\begin_inset Formula $a\left(t\right)=\frac{\partial v}{\partial t}=\frac{\partial^{2}x}{\partial t^{2}}=\ddot{x}\left(t\right)=x''\left(t\right)$
+\end_inset
+
+.
+ דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \cos\left(2t\right)\\
+v\left(t\right) & = & -\sin\left(2t\right)\cdot2\\
+a\left(t\right) & = & -\cos\left(2t\right)\cdot4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אינטגרלים
+\end_layout
+
+\begin_layout Standard
+נניח פונקציה 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ ונסמן 
+\begin_inset Formula $f\left(x\right)=F'\left(x\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ נקראת פונקציה קדומה של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ או במלים אחרות אינטגרל של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ומסמנים 
+\begin_inset Formula $F\left(x\right)=\int f\left(x\right)\partial x$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $F\left(x\right)$
+\end_inset
+
+ אינטגרל של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $F\left(x\right)+c$
+\end_inset
+
+ היא אינטגרל של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+ וגם באינטגרלים היו כל מיני אנשים חכמים שפתרו אינטגרלים בשבילנו.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int x^{n}\partial x=\begin{cases}
+\frac{x^{n+1}}{n+1}+c & n\neq-1\\
+\ln\left(\left|x\right|\right)+c & n=-1\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\sin\left(x\right)\partial x=-\cos\left(x\right)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int\cos\left(x\right)\partial x=\sin\left(x\right)+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\int e^{x}\partial x=e^{x}+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int4x^{2}+5\cos\left(x\right)\partial x=x^{4}+5\sin x+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\cos\left(2x\right)\partial x=\frac{1}{2}\sin\left(2x\right)+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\cos\left(x^{2}\right)\partial x\neq\frac{\sin\left(x^{2}\right)}{2x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטגרל זה לא כמו הנגזרת.
+ בנגזרת אם עובדים בצורה מסודרת מקבלים תשובה, אבל באינטגרלים אין דברים כאילו
+ אז צריכים להשתמש בטריקים ודברים לא יפים ויש אינטגרלים שעד היום לא נפתרו.
+\end_layout
+
+\begin_layout Section
+חישוב שטח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w1d2.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לחשב את השטח משתמשים בסכום של מלבנים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S=\lim_{\begin{array}{c}
+\Delta x\to0\\
+N=0\end{array}}\sum_{i=1}^{N}f\left(x\right)\Delta x=\int_{a}^{b}f\left(x\right)\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולפי המשפט היסודי של חדו"א:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{a}^{b}f\left(x\right)\partial x=F\left(b\right)-F\left(a\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

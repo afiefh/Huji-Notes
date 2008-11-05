@@ -939,5 +939,170 @@
  הוא יחס שקילות
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+שם מתרגל הוא שאול זמל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+zemels@math.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+המוסג היסודי במטמטיקה הוא קבוצה.
+ מה שמאפיין בקבוצה זה אם מישהו נמצא בה או לא.
+ הדרך לסמן קבוצה זו 
+\begin_inset Formula $c=\left\{ 1,2,3\right\} $
+\end_inset
+
+.
+ סדר האיברים הוא לא משנה, וכל איבר מופיע פעם אחד בקבוצה.
+ הדרך לתאר אם משהוא נמצא בקבוצה 
+\begin_inset Formula $3\in C$
+\end_inset
+
+.
+ אם קבוצה גדולה אפשר להשתמש בכתיב 
+\begin_inset Formula $S=\left\{ 1,2,3\dots478\right\} $
+\end_inset
+
+ אבל הדרך השימושית היא 
+\begin_inset Formula $G=\left\{ \mbox{all pupils in the classroom}\right\} $
+\end_inset
+
+ היתרון בכתיבה זה שזה קצר מאוד, ואפשר בדרך זו לבנות קבוצה שלא יודעים מה
+ איבריה למשל 
+\begin_inset Formula $T=\left\{ \mbox{All prime numbers}\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+איך פותרים בעיות שוויון קבוצות
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+99.999
+\numeric off
+% מהתרגילים האלה מבוססות על המשפט שעבור קבוצות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A=b\Leftrightarrow A\subseteq B\mbox{ And }A\supseteq B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה: נתון קבוצות 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ תוכיח כי 
+\begin_inset Formula $\left(A\setminus B\right)\setminus C=A\setminus\left(B\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח כיוון
+\begin_inset Formula $\left(A\setminus B\right)\setminus C\subseteq A\setminus\left(B\cup C\right)$
+\end_inset
+
+: איבר 
+\begin_inset Formula $x\in\left(A\setminus B\right)\setminus C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\notin C$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin B$
+\end_inset
+
+ אבל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ לפי כך 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\notin B\cup C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $A\setminus\left(B\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח כיוון
+\begin_inset Formula $\left(A\setminus B\right)\setminus C\supseteq A\setminus\left(B\cup C\right)$
+\end_inset
+
+: יהי 
+\begin_inset Formula $x\in A\setminus\left(B\cup C\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin C$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $x\in A\setminus B$
+\end_inset
+
+ ו
+\begin_inset Formula $x\notin C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\setminus B\setminus C$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document

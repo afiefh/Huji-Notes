@@ -16,7 +16,7 @@
 \graphics default
 \paperfontsize default
 \spacing single
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -221,7 +221,7 @@ Matlab
 \end_layout
 
 \begin_layout Section
-ןןקטורים
+וקטורים
 \end_layout
 
 \begin_layout Standard
@@ -1231,7 +1231,312 @@ P\left(a\vec{u}\right) & = & aP\left(\vec{u}\right)\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
 \begin_layout Standard
+לפתור בעית סיבוב הוקטר ב
+\lang english
+mathlab
+\lang hebrew
+.
+ ראשית מכניסים פקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+clf
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדי לנקות את ה
+\lang english
+environment
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מחישובים קודמים, אחר כך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+hold off
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדי שלא כל ווקטור מחושב יוזכר.
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+phi=pi/9;
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+C=cos(phi);
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+S=sin(phi);
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+x=[2,1]';
+\end_layout
+
+\begin_layout Standard
+אתחלנו את המשתנים הבסיסיים, אנחנו יכולים לסרטט קווים דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+plot([
+\begin_inset Formula $x_{1},x_{2}\dots$
+\end_inset
+
+],[
+\begin_inset Formula $y_{1},y_{2}\dots$
+\end_inset
+
+]
+\lang hebrew
+.
+ הבעיה בזה היא שהחלון יהיה תמיד מתחים לתחום וטווח של הציור.
+ כדי להתגבר על זה משתמשים בבקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+axis(
+\begin_inset Formula $\left[-1.5,1.5,-1.5,1.5\right]$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+plot([0,x(1)],[0,x(2]);
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+axis([-3,3][-3,3];
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+u(1)=C*x(1)-S*x(2);
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+u(2)=S*x(1)+C*x(2);
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+plot([0,u(1)],[0,u(2]);
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+axis([-3,3][-3,3];
+\end_layout
+
+\begin_layout Section
+סיכום של מה שעשינו במישור
+\end_layout
+
+\begin_layout Standard
+איך הגענו לפעולת הסיביב? בדקנו את התכונות ומצאנו כי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\left(\vec{x}+\vec{y}\right)=A\vec{x}+A\vec{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $A\left(\alpha\vec{x}\right)=\alpha A\vec{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוצאה משתי התכונות 
+\begin_inset Formula $A\left(\alpha\vec{x}+\beta\vec{y}\right)=\alpha A\vec{x}+\beta A\vec{y}$
+\end_inset
+
+.
+ פונקציה המקיימת פעולות אילו נקראת פונקציה ליניארית.
+ השתמשנו בליניאריות של הקבוצה כאשר הסתכלנו על איך הפעולה עובדת על מלבן.
+ היא מעבירה מלבן למלבן ולכן האלכסון 
+\begin_inset Formula $A\left(\vec{x}+\vec{y}\right)=A\vec{x}+A\vec{y}$
+\end_inset
+
+ .
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x}\right) & = & A\left(x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}\right)\\
+ & = & A\left(x_{1}\hat{e}_{1}\right)+A\left(x_{2}\hat{e}_{2}\right)\\
+ & = & x_{1}A\hat{e}_{1}+x_{2}A\hat{e}_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומכן כל לחשב את הפעולה כי צריכים לחשב רק 
+\begin_inset Formula $A\hat{e}_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $A\hat{e}_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+אבל מה עוסים ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נדבר ראשית על סיבוב וקטור בלי סיבוב.
+ הרעיון הוא אותו רעיון אבל יהיה יותר מסוב.
+ גם תכונת הסיבוב במרחב מעבירה מקבילית למקבילית, לכן 
+\begin_inset Formula $A\left(\alpha\vec{x}+\beta\vec{y}\right)=\alpha A\vec{x}+\beta A\vec{y}$
+\end_inset
+
 
 \end_layout
 
