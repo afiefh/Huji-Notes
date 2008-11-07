@@ -634,5 +634,274 @@ status open
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+נניח וקטור 
+\begin_inset Formula $\vec{x}=x_{1}\hat{x}_{1}+x_{2}\hat{x}_{2}+x_{3}\hat{x}_{3}=\left|\vec{x}\right|\hat{x}$
+\end_inset
+
+ התלוי בזמן, לכן 
+\begin_inset Formula $\frac{\partial\vec{x}\left(t\right)}{\partial t}=\lim_{\partial t\to0}\frac{\vec{x}\left(t+\partial t\right)-\vec{x}\left(t\right)}{\partial t}=\left(\frac{\partial x_{1}}{\partial t}\right)\hat{x}_{1}+\left(\frac{\partial x_{2}}{\partial t}\right)\hat{x}_{2}+\left(\frac{\partial x_{3}}{\partial t}\right)\hat{x}_{3}$
+\end_inset
+
+ נקרא לזה המהירות ומסמנים ב
+\begin_inset Formula $\vec{v}\left(t\right)$
+\end_inset
+
+.
+ ואפשר לגזור גם את זה ולקבל 
+\begin_inset Formula $\frac{\partial\vec{v}\left(t\right)}{\partial t}=\lim_{\partial t\to0}\frac{\vec{v}\left(t+\partial t\right)-\vec{v}\left(t\right)}{\partial t}=\left(\frac{\partial v_{1}}{\partial t}\right)\hat{x}_{1}+\left(\frac{\partial v_{2}}{\partial t}\right)\hat{x}_{2}+\left(\frac{\partial v_{3}}{\partial t}\right)\hat{x}_{3}$
+\end_inset
+
+ זה הוא השינוי במהירות, ומסמנים ב
+\begin_inset Formula $\vec{a}\left(t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מסה לפי הגדרת ניוטון היא פשוט כמות החומר.
+ מסה ומשקל הם לא שקולים: מסה זה כמות חומר ומשקל זה כח.
+ גוף של מסה קבועה יש לו משקל שונה על היריח ועל כדור הארץ.
+ אם מישהוא מודד את המשקל שלו במעלית נופלת הוא יראה משקל של אפס.
+\end_layout
+
+\begin_layout Standard
+תנע)
+\lang english
+Motion
+\lang hebrew
+( 
+\begin_inset Formula $\underbrace{\vec{P}}_{motion}=\underbrace{m}_{mass}\cdot\underbrace{\vec{v}}_{velocity}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כח)
+\lang english
+Force
+\lang hebrew
+( 
+\begin_inset Formula $F=m\cdot A$
+\end_inset
+
+ הכח של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $1\mbox{Newton}=1N$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מקנה לגוף של 
+\begin_inset Formula $1Kg$
+\end_inset
+
+ תאוצה של 
+\begin_inset Formula $1\frac{m}{sec^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+יחידות
+\end_layout
+
+\begin_layout Standard
+אפשר לבטא יחידה כלשהיא דרכ היחידות של מרחק 
+\begin_inset Formula $\left[L\right]=m$
+\end_inset
+
+, זמן 
+\begin_inset Formula $\left[t\right]=sec$
+\end_inset
+
+, ומסה 
+\begin_inset Formula $\left[m\right]=Kg$
+\end_inset
+
+.
+ למשל אפשר לכתוב את היחידה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Newton
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+דרך 
+\begin_inset Formula $N=kg\cdot\frac{m}{sec^{2}}=\frac{kg\cdot m}{sec^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+חוק ניוטון השני
+\end_layout
+
+\begin_layout Standard
+הכח שווה לשינוי בתנע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=\frac{\partial}{\partial t}\vec{P}=\frac{\partial}{\partial t}m\vec{v}=m\frac{\partial\vec{v}}{\partial t}=m\vec{a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: הנחנו כי הכח קבוע.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l3d1.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & f_{0}\hat{x}\\
+v_{0} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial v_{x}\left(t\right)}{\partial t} & = & \frac{f_{0}}{m}=a_{0}\\
+\frac{\partial v_{x}\left(t\right)}{\partial t} & = & 0\\
+\frac{\partial v_{x}\left(t\right)}{\partial t} & = & 0\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial v_{x}\left(t\right)}{\partial t} & = & a_{0}\\
+\int\frac{\partial v_{x}\left(t\right)}{\partial t}\partial t & = & \int a_{0}\partial t\\
+v_{x}\left(t\right) & = & a_{0}t+c\\
+v_{0} & = & v\left(0\right)\\
+0 & = & a_{0}\cdot0+c\\
+0 & = & c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{x}\left(t\right) & = & a_{0}t\\
+\int v_{x}\left(t\right)\partial t & = & \int a_{0}t\partial t\\
+r_{x}\left(t\right) & = & \frac{1}{2}a_{0}t^{2}+c\\
+r_{x}\left(0\right) & = & 0\\
+\frac{1}{2}a_{0}t^{2}+c & = & 0\\
+0+c & = & 0\\
+c & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{x}\left(t\right) & = & \frac{1}{2}a_{0}t^{2}\\
+r\left(t\right) & = & \frac{1}{2}a_{0}t^{2}\cdot\hat{x}+0\cdot\hat{y}+0\cdot\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
