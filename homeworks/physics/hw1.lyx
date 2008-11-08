@@ -1,0 +1,609 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+צריך לייצר יחידת 
+\begin_inset Formula $sec$
+\end_inset
+
+ מיחידות 
+\begin_inset Formula $\left[m\right]=kg,\left[L\right]=m,\left[g\right]=\frac{m}{sec^{2}}$
+\end_inset
+
+ נראה שהפתרון האכי קל הוא 
+\begin_inset Formula \[
+\sqrt{\frac{L}{g}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw1d1.svg
+	width 50page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+S\left(\triangle ABC\right) & = & S\left(ABD\right)+S\left(CBD\right)\\
+\frac{AB\cdot BC}{2} & = & \frac{AD\cdot DB}{2}+\frac{CD\cdot DB}{2}\\
+AC\cos\alpha\cdot AC\cdot\sin\alpha & = & AB\cos\alpha\cdot AB\sin\alpha+BC\sin\gamma BC\cos\gamma\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+מחשבים את הזוית 
+\begin_inset Formula $\gamma$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\beta & = & 180-\left(90+\alpha\right)\\
+ & = & 90-\alpha\\
+\gamma & = & 90-\beta\\
+ & = & 90-90-\alpha\\
+ & = & \alpha\\
+\gamma & = & \alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים התוצאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+AC\cos\alpha\cdot AC\cdot\sin\alpha & = & AB\cos\alpha\cdot AB\sin\alpha+BC\sin\alpha BC\cos\alpha\\
+AC^{2}\cos\alpha\sin\alpha & = & AB^{2}\cos\alpha\sin\alpha+BC^{2}\sin\alpha\cos\alpha\\
+AC^{2} & = & AB^{2}+BC^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+מנסים את כל הפתרונות ורואים מה יקרה:
+\end_layout
+
+\begin_layout Standard
+א.
+ 
+\begin_inset Formula \begin{eqnarray*}
+\left[g+\frac{\rho}{P}\right] & = & \frac{m}{sec^{2}}+\frac{\left(\frac{kg}{m^{3}}\right)}{\left(\frac{kg}{m^{2}sec}\right)}\\
+ & = & \frac{m}{sec^{2}}+\frac{kg}{m^{3}}\cdot\frac{kg}{m^{2}sec}\\
+ & = & \frac{m}{sec^{2}}+\frac{kg^{2}}{m^{4}sec}\\
+ & = & \frac{m\cdot m^{4}+kg^{2}\cdot sec}{sec^{2}m^{4}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת אינינה החידת מהירות)לא נראת לי כיחידה בכלל(
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left[Pa\right] & = & \frac{kg}{m^{2}sec}\cdot m^{2}\\
+ & = & \frac{kg}{sec}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת יחידה, אבל לא של מהירות
+\end_layout
+
+\begin_layout Standard
+ג.
+\begin_inset Formula \begin{eqnarray*}
+\left[\sqrt{gh}\right] & = & \sqrt{\frac{m}{sec^{2}}\cdot m}\\
+ & = & \sqrt{\frac{m^{2}}{sec^{2}}}\\
+ & = & \frac{m}{sec}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצאנו יחידת זמן.
+ זה הוא המועמד הראשון שלנו
+\end_layout
+
+\begin_layout Standard
+ד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Ph+\rho^{2} & = & \frac{kg}{m^{2}sec}\cdot m+\left(\frac{kg}{m^{2}}\right)^{2}\\
+ & = & \frac{kg}{m\cdot sec}+\frac{kg^{2}}{m^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גם לא חושב שזו יחידה.
+\end_layout
+
+\begin_layout Standard
+תשובה נכונה ג.
+\end_layout
+
+\begin_layout Part*
+שאלה מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Part*
+שאלה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula \[
+\frac{\partial\cos x}{\partial x}=-\sin x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצא 
+\begin_inset Formula $\frac{\partial\sin x}{\partial x}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\sin x}{\partial x} & = & \frac{\partial\cos\left(90-x\right)}{\partial x}\\
+ & = & -\left(-\sin\left(90-x\right)\right)\\
+ & = & \cos x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצא 
+\begin_inset Formula $\frac{\partial\tan x}{\partial x}$
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\tan x}{\partial x} & = & \frac{\partial\frac{\sin x}{\cos x}}{\partial x}\\
+ & = & \frac{\cos^{2}x+\sin^{2}x}{\cos^{2}x}\\
+ & = & 1+\tan^{2}x\\
+ & = & \frac{1}{\cos^{2}x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תרגיל מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+g'(t) & > & f'(t)\\
+\left(\sqrt{t}+5\right)' & > & \left(0.5t+1\right)'\\
+\frac{1}{2\sqrt{t}} & > & 0.5\\
+\frac{1}{2}\cdot\frac{1}{0.5} & > & t\\
+1 & > & t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\left(e^{x}\right)^{e}=e^{ex}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f'\left(x\right)=e\cdot e^{ex}=e\cdot f\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכו אם גוזרים 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים יהיה המקדם 
+\begin_inset Formula $e^{n}$
+\end_inset
+
+ כי הקבוע 
+\begin_inset Formula $e^{i}$
+\end_inset
+
+)
+\begin_inset Formula $i\in\mathbb{N}$
+\end_inset
+
+( לא משפיע על הגזירה של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דרך אחרת לראות את זה היא באינדוקציה:
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח כי 
+\begin_inset Formula \[
+\frac{\partial^{n}f\left(x\right)}{\partial x^{n}}=e^{n}e^{ex}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial f\left(x\right)}{\partial x} & = & \frac{\partial e^{ex}}{\partial x}\\
+ & = & e\cdot e^{ex}\ \checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי 
+\begin_inset Formula $\frac{\partial^{k}f\left(x\right)}{\partial x^{k}}=e^{k}e^{ex}$
+\end_inset
+
+ ומוכיחים שזה מתקיים עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{k+1}f\left(x\right)}{\partial x^{k+1}} & = & \frac{\partial}{\partial x}\cdot\frac{\partial^{k}f\left(x\right)}{\partial^{k}x}\\
+ & = & \frac{\partial}{\partial x}\cdot e^{k}e^{ex}\\
+ & = & e^{k}\cdot\frac{\partial}{\partial x}e^{ex}\\
+ & = & e^{k}\cdot e\cdot e^{ex}\\
+ & = & e^{k+1}e^{ex}\ \checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula \[
+\frac{\partial^{n}f\left(x\right)}{\partial x^{n}}=e^{n}e^{ex}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\cos x}{\partial x} & = & -\sin x\\
+\lim_{\Delta h\to0}\frac{\cos\left(x+\Delta h\right)-\cos\left(x\right)}{\Delta h} & = & -\sin x\\
+\lim_{\Delta h\to0}\frac{\cos x\cos\Delta h-\sin x\sin\Delta h-\cos x}{\Delta h} & = & -\sin x\\
+\lim_{\Delta h\to0}\frac{\cos x\cdot1-\sin x\cdot\Delta h-\cos x}{\Delta h} & = & -\sin x\\
+\lim_{\Delta h\to0}\frac{-\Delta h\sin x}{\Delta h} & = & -\sin x\\
+-\sin x & = & -\sin x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & 3x\cos\left(x^{2}\right)\\
+f'\left(x\right) & = & 3\cos\left(x^{2}\right)+3x\cdot2x\left(-\sin\left(x^{2}\right)\right)\\
+ & = & 3\cos\left(x^{2}\right)-6x^{2}\sin\left(x^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{radius}\left(t\right) & = & k\cdot t\\
+\mbox{volume}\left(t\right) & = & \frac{4}{3}\pi\mbox{radius}^{2}\left(t\right)\\
+ & = & \frac{4}{3}\pi\left(kt\right)^{3}\\
+\mbox{waterCapacity}\left(t\right) & = & \rho\cdot\mbox{volume}\left(t\right)\\
+ & = & \rho\cdot\frac{4}{3}\pi\left(kt\right)^{3}\\
+\mbox{FillRate}(t) & = & \frac{\partial\mbox{waterCapacity}\left(t\right)}{\partial t}\\
+ & = & \frac{4}{3}\rho\pi k^{3}\cdot3t^{2}\\
+ & = & 4\rho\pi k^{3}t^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקת יחידות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left[\mbox{FillRate}\right] & = & \left[4\rho\pi k^{3}t^{2}\right]\\
+\frac{kg}{sec} & = & \left[\rho\right]\left[k^{3}\right]\left[t^{2}\right]\\
+ & = & \left[\rho\right]\left[k\right]^{3}\left[t\right]^{2}\\
+ & = & \frac{kg}{m^{3}}\cdot\left(\frac{m}{sec}\right)^{3}\cdot\left(sec\right)^{2}\\
+ & = & \frac{kg}{sec}\ \checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

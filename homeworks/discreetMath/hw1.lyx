@@ -1,0 +1,1531 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+צ"ל 
+\begin_inset Formula $A\cap\left(B\cup C\right)=\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+צ"ל 
+\begin_inset Formula $A\cap\left(B\cup C\right)\subseteq\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in A\cap\left(B\cup C\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in B\cup C$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\in B$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\in C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צ"ל 
+\begin_inset Formula $A\cap\left(B\cup C\right)\supseteq\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in\left(A\cap B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+ אזי או ש
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A,x\in B$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cap\left(B\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A,x\in C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cap\left(B\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(B\cap C\right)=\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(B\cap C\right)\subseteq\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in A\cup\left(B\cap C\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ ו
+\begin_inset Formula $x\in A\cup C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B,x\in C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ ו
+\begin_inset Formula $x\in A\cup C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(B\cap C\right)\supseteq\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in\left(A\cup B\right)\cap\left(A\cup C\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in A\cup C$
+\end_inset
+
+ כלומר )
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B$
+\end_inset
+
+( וגם )
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in C$
+\end_inset
+
+( כלומר)לפי כללי די-מורגן לאלגברה בוליאנית( 
+\begin_inset Formula $x\in A,x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\in B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\in C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\in C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\in C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cup\left(B\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B\cap C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cup\left(B\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cap\left(B\Delta C\right)=\left(A\cap B\right)\Delta\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cap\left(B\Delta C\right)\subseteq\left(A\cap B\right)\Delta\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in A\cap\left(B\Delta C\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in B\Delta C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ אבל לא בשניהם.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\in B,x\notin C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in\left(A\cap C\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\notin\left(A\cap B\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in\left(A\cap B\right)\Delta\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\notin B,x\in C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\notin\left(A\cap C\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\in\left(A\cap B\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in\left(A\cap B\right)\Delta\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cap\left(B\Delta C\right)\supseteq\left(A\cap B\right)\Delta\left(A\cap C\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in\left(A\cap B\right)\Delta\left(A\cap C\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cap B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+ אבל לא בשניהם.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\notin A\cap C,x\in A\cap B$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A,x\in B,x\notin C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in B\Delta C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cap\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A\cap C,x\notin A\cap B$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A,x\notin B,x\in C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in B\Delta C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\cap\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(B\setminus C\right)=\left(A\cup B\right)\setminus\left(C\cap A^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(B\setminus C\right)\subseteq\left(A\cup B\right)\setminus\left(C\cap A^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in A\cup\left(B\setminus C\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B\setminus C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in B,x\notin C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin A^{c}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\notin C\cap A^{c}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\cup B\right)\setminus\left(C\cap A^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B,x\notin C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\notin\left(C\cap A^{c}\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in\left(A\cup B\right)\setminus\left(C\cap A^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cup\left(B\setminus C\right)\supseteq\left(A\cup B\right)\setminus\left(C\cap A^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in\left(A\cup B\right)\setminus\left(C\cap A^{c}\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin C\cap A^{c}$
+\end_inset
+
+ כלומר )
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B$
+\end_inset
+
+( וגם )
+\begin_inset Formula $x\notin C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin A^{c}$
+\end_inset
+
+( כלומר 
+\begin_inset Formula $x\in A,x\notin C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\notin A^{c}$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\notin C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\notin A^{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\notin C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cup\left(B\setminus C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\notin A^{c}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cup\left(B\setminus C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B,x\notin C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in B\setminus C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cup\left(B\setminus C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B,x\notin A^{c}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in A\cup\left(B\setminus C\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\setminus\left(B\setminus C\right)=\left(A\setminus B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\setminus\left(B\setminus C\right)\subseteq\left(A\setminus B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in A\setminus\left(B\setminus C\right)$
+\end_inset
+
+ אזי
+\begin_inset Formula $x\in A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\notin B\setminus C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\in B,x\in C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\notin B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\in B,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(A\setminus B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\notin B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\setminus B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(A\setminus B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\setminus\left(B\setminus C\right)\supseteq\left(A\setminus B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $x\in\left(A\setminus B\right)\cup\left(A\cap C\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\setminus B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\notin B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\in C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\notin B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin B\setminus C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\setminus\left(B\setminus C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin B\setminus C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\setminus\left(B\setminus C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $A\subseteq B,C\subseteq D$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $y\in C$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $y\in D$
+\end_inset
+
+.
+ על פי זה צריך להוכיח:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A\cup C\subseteq B\cup D$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in A\cup C$
+\end_inset
+
+ פירושו של זה כי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in B\cup D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in B\cup D$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A\cap C\subseteq B\cap D$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A\cap C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\in C$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ ואם 
+\begin_inset Formula $x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in B\cap D$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+צ"ל כי 
+\begin_inset Formula $A\Delta B=\left(A\cap B^{c}\right)\cup\left(B\cap A^{c}\right)$
+\end_inset
+
+ אזי צ"ל כי 
+\begin_inset Formula $\left(A\setminus B\right)\cup\left(B\setminus A\right)=\left(A\cap B^{c}\right)\cup\left(B\cap A^{c}\right)$
+\end_inset
+
+ אזי מספיק להוכיח כי 
+\begin_inset Formula $\left(A\setminus B\right)=\left(A\cap B^{c}\right),\left(B\setminus A\right)=\left(B\cap A^{c}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\setminus B\right)=\left(A\cap B^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\setminus B\right)\subseteq\left(A\cap B^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A\setminus B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\notin B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in B^{c}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\cap B^{c}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\setminus B\right)\supseteq\left(A\cap B^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A\cap B^{c}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\in B^{c}$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\in B^{c}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin B$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A\setminus B$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\Delta B\right)\Delta C=A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\Delta B\right)\Delta C\subseteq A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in\left(A\Delta B\right)\Delta C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(A\Delta B\right),x\notin C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin\left(A\Delta B\right),x\in C$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A\Delta B,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\notin B,x\notin C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin A,x\in B,x\notin C$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A,x\notin B,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin B\Delta C,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\notin A,x\in B,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in B\Delta C,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\notin\left(A\Delta B\right),x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\in B,x\in C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin A,x\notin B,x\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A,x\in B,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin\left(B\Delta C\right),x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\notin A,x\notin B,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(B\Delta C\right),x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(A\Delta B\right)\Delta C\supseteq A\Delta\left(B\Delta C\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in A\Delta\left(B\Delta C\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\notin B\Delta C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin A,x\in B\Delta C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A,x\notin B\Delta C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A,x\in B,x\in C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\notin B,x\notin C$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A,x\in B,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin A\Delta B,x\in C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\Delta B\right)\Delta C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A,x\notin B,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\Delta B,x\notin C$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in\left(A\Delta B\right)\Delta C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\notin A,x\in B\Delta C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin A,x\in B,x\notin C$
+\end_inset
+
+ או 
+\begin_inset Formula $x\notin A,x\notin B,x\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\notin A,x\in B,x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(A\Delta B\right),x\notin C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(A\Delta B\right)\Delta C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\notin A,x\notin B,x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin\left(A\Delta B\right),x\in C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(A\Delta B\right)\Delta C$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta A_{3}\Delta\dots\Delta A_{n}$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $x$
+\end_inset
+
+ שייך מספר אי-זוגי של קבוצות 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הוכחנו כבר כי 
+\begin_inset Formula $A\Delta\left(B\Delta C\right)=\left(A\Delta B\right)\Delta C$
+\end_inset
+
+ וממהגדרה רואים כי 
+\begin_inset Formula $A\Delta B=B\Delta A$
+\end_inset
+
+.
+ נשתמש בכילים האילו במשך ההוכחה.
+ נוכיח כעת עוד כמה דברים קטים: 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $x\in A_{1},A_{2}\dots A_{n}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin A_{1}\Delta A_{2}\Delta\dots\Delta A_{n}$
+\end_inset
+
+.
+ נוכיח את זה באינדוקציה:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $x\notin A_{1}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\notin A_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+מניחים כי אם 
+\begin_inset Formula $x\in A_{1},A_{2}\dots A_{k}$
+\end_inset
+
+ אז 
+\begin_inset Formula $x\notin A_{1}\Delta A_{2}\Delta\dots\Delta A_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בדיקה עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+: צ"ל כי אם 
+\begin_inset Formula $x\in A_{1}\dots A_{k},A_{k+1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin A_{1}\Delta A_{2}\Delta\dots\Delta A_{k}\Delta A_{k+1}$
+\end_inset
+
+.
+ מהנחת האינדוקציה 
+\begin_inset Formula $x\notin A_{1}\Delta\dots\Delta A_{k}$
+\end_inset
+
+ ויודעים כי 
+\begin_inset Formula $x\notin A_{k+1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\notin\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{k}\right)\Delta A_{k+1}$
+\end_inset
+
+ וזה מה שרצינו להוכיח.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+צריל להוכיח כי אם 
+\begin_inset Formula $x\in A_{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $t=2\cdot k+1,k\in\mathbb{N}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta A_{3}\dots\Delta A_{n}$
+\end_inset
+
+.
+ בגלל תכונת הכומוטטיבות 
+\begin_inset Formula $A_{1}\Delta A_{2}\dots\Delta A_{n}=A_{p_{1}}\Delta\dots\Delta A_{p_{t}}\Delta A_{q_{1}}\Delta\dots\Delta A_{q_{n-t}}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $p=\left\{ i\in N\mid x\in A_{i}\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $p=\left\{ i\in\mathbb{N}\mid x\notin A_{i}\right\} $
+\end_inset
+
+.
+ כעת מוכיחם באינדוקציה כי 
+\begin_inset Formula $x\in A_{p_{1}}\Delta\dots\Delta A_{p_{t}}\Delta A_{q_{1}}\Delta\dots\Delta A_{q_{n-t}}\Longleftrightarrow t=2f+1,f\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כיוון ראשון: 
+\begin_inset Formula $x\in\left(A_{p_{1}}\Delta\dots\Delta A_{p_{2f-1}}\right)\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-\left(2f-1\right)}}\right)\Leftarrow t=2f-1,f\in\mathbb{N}$
+\end_inset
+
+.
+ נוכיח את זה באינדוקציה:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בדיקה עבור 
+\begin_inset Formula $f=1$
+\end_inset
+
+: 
+\begin_inset Formula $A_{p_{1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-1}}\right)$
+\end_inset
+
+ לפי המשפט שהוכחנו 
+\begin_inset Formula $x\notin A_{q_{1}}\Delta\dots\Delta A_{q_{n-1}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\in A_{p_{1}}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x\in A_{p_{1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-1}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מניחים כי 
+\begin_inset Formula $t=2k-1$
+\end_inset
+
+ גורם 
+\begin_inset Formula $x\in A_{p_{1}}\Delta\dots\Delta A_{p_{2k-1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-\left(2k-1\right)}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בודקים עבור 
+\begin_inset Formula $f=k+1$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\in A_{p_{1}}\Delta\dots\Delta A_{p_{2k+1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-\left(2k+1\right)}}\right)$
+\end_inset
+
+: 
+\end_layout
+
+\end_body
+\end_document
