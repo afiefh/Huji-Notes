@@ -1359,172 +1359,223 @@
 \end_inset
 
 .
- נשתמש בכילים האילו במשך ההוכחה.
- נוכיח כעת עוד כמה דברים קטים: 
-\end_layout
-
-\begin_layout Enumerate
-אם 
+ כעת נוכיח עוד משהוא קטן: נניח 
 \begin_inset Formula $x\in A_{1},A_{2}\dots A_{n}$
 \end_inset
 
- אזי 
-\begin_inset Formula $x\notin A_{1}\Delta A_{2}\Delta\dots\Delta A_{n}$
+ קבוצות אזי 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\dots\Delta A_{n}$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $n=2i-1,i\in\mathbb{N}$
 \end_inset
 
 .
- נוכיח את זה באינדוקציה:
+\end_layout
+
+\begin_layout Enumerate
+כיוון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ראשון: נניח 
+\begin_inset Formula $x\in A_{1},A_{2}\dots A_{n}$
+\end_inset
+
+ קבוצות אזי 
+\begin_inset Formula $n=2i-1,i\in\mathbb{N}$
+\end_inset
+
+ גורם גורם לזה ש
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\dots\Delta A_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה:
+\end_layout
+
+\begin_layout Enumerate
+בדיקה עבור 
+\begin_inset Formula $i=1$
+\end_inset
+
+: 
+\begin_inset Formula $x\in A_{1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A_{1}$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_deeper
 \begin_layout Enumerate
-בדיקה עבור 
-\begin_inset Formula $n=1$
+מניחים כי 
+\begin_inset Formula $n=2k-1$
 \end_inset
 
-: 
-\begin_inset Formula $x\notin A_{1}$
+ גורם לזה כי 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta\dots\Delta A_{n}$
 \end_inset
 
- לכן 
-\begin_inset Formula $x\notin A_{1}$
+ כלומר 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}$
 \end_inset
 
 .
 \end_layout
 
 \begin_layout Enumerate
-מניחים כי אם 
-\begin_inset Formula $x\in A_{1},A_{2}\dots A_{k}$
+בודקים אם עבור 
+\begin_inset Formula $n_{+}=2k+1$
 \end_inset
 
- אז 
-\begin_inset Formula $x\notin A_{1}\Delta A_{2}\Delta\dots\Delta A_{k}$
+ מתקיים: 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta\dots\Delta A_{n_{+}}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Enumerate
-בדיקה עבור 
-\begin_inset Formula $k+1$
+ כלומר 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\Delta A_{2k}\Delta A_{2k+1}$
 \end_inset
 
-: צ"ל כי אם 
-\begin_inset Formula $x\in A_{1}\dots A_{k},A_{k+1}$
+: לפי 
+\begin_inset Formula $A\Delta\left(B\Delta C\right)=\left(A\Delta B\right)\Delta C$
 \end_inset
 
- אזי 
-\begin_inset Formula $x\notin A_{1}\Delta A_{2}\Delta\dots\Delta A_{k}\Delta A_{k+1}$
+ אפשר לכתוב את זה בצורה הבאה 
+\begin_inset Formula $x\in\left(\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)\Delta A_{2k+1}$
 \end_inset
 
-.
- מהנחת האינדוקציה 
-\begin_inset Formula $x\notin A_{1}\Delta\dots\Delta A_{k}$
+ לפי הנחת האינדוקציה 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}$
 \end_inset
 
  ויודעים כי 
-\begin_inset Formula $x\notin A_{k+1}$
+\begin_inset Formula $x\in A_{2k}$
 \end_inset
 
  אזי 
-\begin_inset Formula $x\notin\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{k}\right)\Delta A_{k+1}$
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $x\notin\left(\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)$
 \end_inset
 
- וזה מה שרצינו להוכיח.
+ ויודעים כי 
+\begin_inset Formula $x\in A_{2k+1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)\Delta A_{2k+1}$
+\end_inset
+
+.
 \end_layout
 
 \end_deeper
-\begin_layout Standard
-צריל להוכיח כי אם 
-\begin_inset Formula $x\in A_{i}$
-\end_inset
-
- עבור 
-\begin_inset Formula $t=2\cdot k+1,k\in\mathbb{N}$
-\end_inset
-
- אזי 
-\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta A_{3}\dots\Delta A_{n}$
-\end_inset
-
-.
- בגלל תכונת הכומוטטיבות 
-\begin_inset Formula $A_{1}\Delta A_{2}\dots\Delta A_{n}=A_{p_{1}}\Delta\dots\Delta A_{p_{t}}\Delta A_{q_{1}}\Delta\dots\Delta A_{q_{n-t}}$
-\end_inset
-
- כך ש
-\begin_inset Formula $p=\left\{ i\in N\mid x\in A_{i}\right\} $
-\end_inset
-
- ו
-\begin_inset Formula $p=\left\{ i\in\mathbb{N}\mid x\notin A_{i}\right\} $
-\end_inset
-
-.
- כעת מוכיחם באינדוקציה כי 
-\begin_inset Formula $x\in A_{p_{1}}\Delta\dots\Delta A_{p_{t}}\Delta A_{q_{1}}\Delta\dots\Delta A_{q_{n-t}}\Longleftrightarrow t=2f+1,f\in\mathbb{N}$
-\end_inset
-
-
-\end_layout
-
+\end_deeper
 \begin_layout Enumerate
-כיוון ראשון: 
-\begin_inset Formula $x\in\left(A_{p_{1}}\Delta\dots\Delta A_{p_{2f-1}}\right)\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-\left(2f-1\right)}}\right)\Leftarrow t=2f-1,f\in\mathbb{N}$
+כיוון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שני: נניח 
+\begin_inset Formula $x\in A_{1},A_{2}\dots A_{n}$
 \end_inset
 
-.
- נוכיח את זה באינדוקציה:
+ קבוצות אזי 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\dots\Delta A_{n}$
+\end_inset
+
+ פירושו ש
+\begin_inset Formula $n=2i-1,i\in\mathbb{N}$
+\end_inset
+
+:
 \end_layout
 
 \begin_deeper
-\begin_layout Enumerate
-בדיקה עבור 
-\begin_inset Formula $f=1$
+\begin_layout Standard
+\begin_inset Formula $n=2i-1,i\in\mathbb{N}$
 \end_inset
 
-: 
-\begin_inset Formula $A_{p_{1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-1}}\right)$
+ פירושו 
+\begin_inset Formula $n\in\left\{ 2i-1\mid i\in\mathbb{N}\right\} $
 \end_inset
 
- לפי המשפט שהוכחנו 
-\begin_inset Formula $x\notin A_{q_{1}}\Delta\dots\Delta A_{q_{n-1}}$
+.
+ נניח בשלילה כי 
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\dots\Delta A_{n}$
 \end_inset
 
- ו 
-\begin_inset Formula $x\in A_{p_{1}}$
+ פירושו 
+\begin_inset Formula $n\in\left\{ 2i-1\mid i\in\mathbb{N}\right\} ^{c}$
 \end_inset
 
+ כלומר 
+\begin_inset Formula $n\in\left\{ 2i\mid i\in\mathbb{N}\right\} $
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $x\notin\left(A_{1}\Delta A_{2}\dots\Delta A_{n}\right)\Delta A_{n+1}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\notin\left(A_{1}\Delta A_{2}\dots\Delta A_{2i}\right)\Delta A_{2i+1}$
+\end_inset
+
+ בסתירה למה שהוכחנו מקודם.
  לכן 
-\begin_inset Formula $x\in A_{p_{1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-1}}\right)$
+\begin_inset Formula $x\in A_{1}\Delta A_{2}\dots\Delta A_{n}$
 \end_inset
 
-
-\end_layout
-
-\begin_layout Enumerate
-מניחים כי 
-\begin_inset Formula $t=2k-1$
+ פירושו כי 
+\begin_inset Formula $n\in\left\{ 2i-1\mid i\in\mathbb{N}\right\} $
 \end_inset
 
- גורם 
-\begin_inset Formula $x\in A_{p_{1}}\Delta\dots\Delta A_{p_{2k-1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-\left(2k-1\right)}}\right)$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-בודקים עבור 
-\begin_inset Formula $f=k+1$
-\end_inset
-
- אם 
-\begin_inset Formula $x\in A_{p_{1}}\Delta\dots\Delta A_{p_{2k+1}}\Delta\left(A_{q_{1}}\Delta\dots\Delta A_{q_{n-\left(2k+1\right)}}\right)$
-\end_inset
-
-: 
+.
 \end_layout
 
 \end_body
