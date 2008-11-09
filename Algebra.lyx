@@ -1540,5 +1540,152 @@ A\left(\vec{x}\right) & = & A\left(x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}\right)\\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+סיבובים ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+מסבבים סביב 
+\begin_inset Formula $\hat{e}_{1}$
+\end_inset
+
+ אזי הפונקציה 
+\begin_inset Formula $A$
+\end_inset
+
+ מעתיקה את וקטורי הבסיס 
+\begin_inset Formula $\hat{e}_{1}\to\hat{e}_{1},\hat{e}_{2}\to\cos\varphi\cdot\hat{e}_{2}+\sin\varphi\cdot\hat{e}_{3},e_{3}\to-\sin\varphi\cdot\hat{e}_{2}+\cos\varphi\hat{e}_{3}$
+\end_inset
+
+.
+ אזי כותבים 
+\begin_inset Formula $A\hat{e}_{1}=\begin{pmatrix}1\\
+0\\
+0\end{pmatrix},A\hat{e}_{2}=\begin{pmatrix}0\\
+\cos\varphi\\
+\sin\varphi\end{pmatrix},A\hat{e}_{3}=\begin{pmatrix}0\\
+-\sin\varphi\\
+\cos\varphi\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}=\begin{pmatrix}x_{1}\\
+x_{2}\cos\varphi-x_{3}\sin\varphi\\
+x_{2}\sin\varphi+x_{3}\cos\varphi\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מסבבים את זה סביב 
+\begin_inset Formula $\hat{e}_{2}$
+\end_inset
+
+ אז מקבלים 
+\begin_inset Formula $A\hat{e}_{1}=\begin{pmatrix}\cos\varphi\\
+0\\
+-\sin\varphi\end{pmatrix},A\hat{e}_{2}=\begin{pmatrix}0\\
+1\\
+0\end{pmatrix},A\hat{e}_{3}=\begin{pmatrix}\sin\varphi\\
+0\\
+\cos\varphi\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\vec{x}=\begin{pmatrix}x_{1}\cos\varphi+x_{3}\sin\varphi\\
+x_{2}\\
+-x_{1}\sin\varphi+x_{3}\cos\varphi\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מסבבים את זה סביב 
+\begin_inset Formula $\hat{e}_{3}$
+\end_inset
+
+ אז מקבלים 
+\begin_inset Formula $A\hat{e}_{1}=\begin{pmatrix}\cos\varphi\\
+\sin\varphi\\
+0\end{pmatrix},A\hat{e}_{2}=\begin{pmatrix}-\sin\varphi\\
+\cos\varphi\\
+0\end{pmatrix},A\hat{e}_{3}=\begin{pmatrix}0\\
+0\\
+1\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\vec{x}=\begin{pmatrix}x_{1}\cos\varphi-x_{1}\sin\varphi\\
+x_{1}\sin\varphi+x_{2}\cos\varphi\\
+x_{3}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: רוצים להפעיל פעולת 
+\begin_inset Formula $A=rot\left(45^{\circ},\hat{e}_{1}\right)$
+\end_inset
+
+ על המשולש 
+\begin_inset Formula $\vec{a}=\begin{pmatrix}0\\
+0\\
+0\end{pmatrix},\vec{b}=\begin{pmatrix}0\\
+1\\
+0\end{pmatrix},\vec{c}=\begin{pmatrix}0\\
+0\\
+1\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\vec{a}=\begin{pmatrix}0\\
+0\\
+0\end{pmatrix},A\vec{b}=\begin{pmatrix}\\\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}\end{pmatrix},A\vec{c}=\begin{pmatrix}0\\
+-\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם ניקח את המשולש שנוצר ומפעילים עליו 
+\begin_inset Formula $B=rot\left(90^{\circ},e_{2}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $B\left(A\vec{a}\right)=B\begin{pmatrix}0\\
+0\\
+0\end{pmatrix}=\begin{pmatrix}0\\
+0\\
+0\end{pmatrix},B\left(A\vec{b}\right)=B\begin{pmatrix}\\\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}\end{pmatrix}=\begin{pmatrix}\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}\\
+0\end{pmatrix},B\left(A\vec{c}\right)=B\begin{pmatrix}0\\
+-\frac{1}{\sqrt{2}}\\
+\frac{1}{\sqrt{2}}\end{pmatrix}=\begin{pmatrix}\frac{1}{\sqrt{2}}\\
+-\frac{1}{\sqrt{2}}\\
+0\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

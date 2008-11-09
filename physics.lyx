@@ -903,5 +903,171 @@ r\left(t\right) & = & \frac{1}{2}a_{0}t^{2}\cdot\hat{x}+0\cdot\hat{y}+0\cdot\hat
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\end_layout
+
+\begin_layout Standard
+היחידות בגזירה הם תמיד היחידה של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ חלקי היחידה של משתנה הגזירה.
+ למשל 
+\begin_inset Formula $\frac{\partial v\left(t\right)}{\partial t}=\frac{\left(\frac{m}{sec}\right)}{sec}=\frac{m}{sec^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היחידה באינטגרל הם היחידה של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ כפול היחידה של משתנה האינטגרציה.
+\end_layout
+
+\begin_layout Section
+נפילה חופשית
+\end_layout
+
+\begin_layout Standard
+גליליו ראה כי התאוצה לגוף בנפחלה חופשית היא 
+\begin_inset Formula $g=9.8\frac{m}{sec^{2}}\pm\underbrace{0.02\frac{m}{sec^{2}}}_{\begin{array}{c}
+\mbox{differs from}\\
+\mbox{place to place}\end{array}}\approx10\frac{m}{sec^{2}}$
+\end_inset
+
+ על כדור הארץ.
+ על היריח או כוכב אחר זה יהיה שונה.
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $\vec{a}=-g\hat{y}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{\partial\vec{v}\left(t\right)}{\partial t}=-g\hat{y}$
+\end_inset
+
+ מחשבים את זה 
+\begin_inset Formula $\int_{t_{0}}^{t}\frac{\partial\vec{v}\left(k\right)}{\partial k}\partial k=\int_{t_{0}}^{t}-g\hat{y}\partial k$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{v}\left(t\right)-\vec{v}\left(t_{0}\right)=-g\cdot\left(t-t_{0}\right)\cdot\hat{y}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{v}\left(t\right)=\vec{v}\left(t_{0}\right)-g\cdot\left(t-t_{0}\right)\cdot\hat{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\frac{\partial\vec{x}\left(t\right)}{\partial t}=\vec{v}\left(t\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\int_{t_{0}}^{t}\frac{\partial\vec{x}\left(t\right)}{\partial t}=\int_{t_{0}}^{t}\vec{v}\cdot\hat{y}\partial t$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\left(t\right)-\vec{x}\left(t_{0}\right)=\vec{v}\left(t_{0}\right)\left(t-t_{0}\right)-\frac{1}{2}g\left(t-t_{0}\right)^{2}\hat{y}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{x}\left(t\right)=\vec{x}\left(t_{0}\right)+\vec{v}\left(t_{0}\right)\left(t-t_{0}\right)-\frac{1}{2}g\left(t-t_{0}\right)^{2}\hat{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאלה: אם 
+\begin_inset Formula $\vec{v}\left(t_{0}\right)=v_{0}\cos\theta\hat{x}+v_{0}\sin\theta\hat{y}$
+\end_inset
+
+ באיזה 
+\begin_inset Formula $\theta$
+\end_inset
+
+יהיה מרחב הזריקה מקסימאלי?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l4d1.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתחיל בניסוח המשואות: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l4d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי 
+\begin_inset Formula $y\left(T\right)=0$
+\end_inset
+
+ אבל יותר כל להשתמש ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ שהא הזמן שבו מגיעים לשיא המסלול 
+\begin_inset Formula $T=2t_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $v_{y}\left(t_{0}\right)=0=v_{0y}-gt_{0}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $t_{0}=\frac{v_{0y}}{g}=\frac{v_{0}\sin\theta}{g}$
+\end_inset
+
+ מציבים 
+\begin_inset Formula $R=v_{0}\cos\theta\cdot2t_{0}=v_{0}\cos\theta\cdot2\frac{v_{0}\sin\theta}{g}$
+\end_inset
+
+ ומשתמשים בזהות טריגונוצטרית 
+\begin_inset Formula $R=\frac{v_{0}^{2}}{g}\cdot\sin2\theta$
+\end_inset
+
+.
+ מחפסים נקודת המקסימום עבור משתנה 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\frac{v_{0}^{2}}{g}\sin2\theta$
+\end_inset
+
+ הוא מקסימאלי ב 
+\begin_inset Formula $2\theta=9^{\circ}0\Leftrightarrow\theta=45^{\circ}$
+\end_inset
+
+ אבל אפשר למצא את זה גם בשיטת גזירה
+\end_layout
+
 \end_body
 \end_document
