@@ -1406,12 +1406,10 @@
 \end_inset
 
 .
+ נוכיח באינדוקציה:
 \end_layout
 
-\begin_layout Standard
-נוכיח באינדוקציה:
-\end_layout
-
+\begin_deeper
 \begin_layout Enumerate
 בדיקה עבור 
 \begin_inset Formula $i=1$
@@ -1429,7 +1427,6 @@
  
 \end_layout
 
-\begin_deeper
 \begin_layout Enumerate
 מניחים כי 
 \begin_inset Formula $n=2k-1$
@@ -1499,7 +1496,6 @@
 .
 \end_layout
 
-\end_deeper
 \end_deeper
 \begin_layout Enumerate
 כיוון
@@ -1576,6 +1572,56 @@
 \end_inset
 
 .
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left|A\cup B\cup C\right|=\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\left|A\cap B\cap C\right|$
+\end_inset
+
+: 
+\begin_inset Formula $\left|A\cup B\cup C\right|$
+\end_inset
+
+ זה הוא מספר האיברים 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in C$
+\end_inset
+
+.
+ ננסה לבנות את הביטוי הזה שלב שלב 
+\begin_inset Formula $\left|A\right|+\left|B\right|+\left|C\right|$
+\end_inset
+
+ הוא אוסף האיברים בכל קבוצה, הבעיה היא כי ספרנו את האיברים המשוטפים בין
+ שתי קבוצות פעמיים והאיברים המשוטפים בין שלושת הקבוצות שלושה פעמים אז צריך
+ לתקן את זה.
+ שלב ראשון בתיקון הוא לחסר האיברים המשוטפים בית שתי קבוצות)או יותר( פעם
+ אחת 
+\begin_inset Formula $\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap B\right|-\left|B\cap C\right|$
+\end_inset
+
+ אבל נתקלים בבעיה שאם 
+\begin_inset Formula $x\in A,B,C$
+\end_inset
+
+ אז חיסרנו אותו שלושה פעמים, אז צריכים להוסיף אותו עוד פעם: 
+\begin_inset Formula $\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\left|A\cap B\cap C\right|$
+\end_inset
+
+
 \end_layout
 
 \end_body
