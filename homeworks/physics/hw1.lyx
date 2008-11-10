@@ -45,6 +45,29 @@
 1
 \end_layout
 
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
 \begin_layout Part*
 שאלה
 \family roman
@@ -273,6 +296,39 @@ Ph+\rho^{2} & = & \frac{kg}{m^{2}sec}\cdot m+\left(\frac{kg}{m^{2}}\right)^{2}\\
 שאלה מס.
 \numeric on
 4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw1d2.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $OD=1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(\alpha+\beta\right) & = & \frac{DA}{OD}\\
+ & = & DA\\
+ & = & DC+CA\\
+ & = & DC+BE\\
+ & = & DB\cos\alpha+OB\sin\alpha\\
+ & = & OD\sin\beta\cos\alpha+OD\cos\beta\sin\alpha\\
+ &  & \sin\beta\cos\alpha+\cos\beta\sin\alpha\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Part*

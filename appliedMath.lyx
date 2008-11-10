@@ -2102,5 +2102,516 @@ z\end{pmatrix}=\begin{pmatrix}2\\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Section
+מכפלה וקטורית
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula $\vec{a}\times\vec{b}$
+\end_inset
+
+ הווקטור הנוצר יש לו תכונות הבאות 
+\begin_inset Formula $\vec{a}\perp\vec{a}\times\vec{b},\vec{b}\perp\vec{a}\times\vec{b}$
+\end_inset
+
+וגם 
+\begin_inset Formula $\left|\left|\vec{a}\times\vec{b}\right|\right|=\left|\left|\vec{a}\right|\right|\left|\left|\vec{b}\right|\right|\sin\angle(\vec{a},\vec{b})$
+\end_inset
+
+.
+ דרך יותר מתמטית לחשב את זה: 
+\begin_inset Formula $\vec{a}\times\vec{b}=\begin{vmatrix}\hat{i} & \hat{j} & \hat{k}\\
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\end{vmatrix}$
+\end_inset
+
+.
+ הפעולה הזו היא ליניארית 
+\begin_inset Formula $\vec{a}\times\left(\vec{b}+\vec{c}\right)=\vec{a}\times\vec{b}+\vec{a}\times\vec{c}$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{a}\times\left(\lambda\vec{b}\right)=\lambda\vec{a}\times\vec{b}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\vec{a}\times\vec{b}=\vec{b}\times\vec{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+מכפלה סקלרית מעורבת
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\vec{a},\vec{b},\vec{c}\in\mathbb{R}^{3}$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+\left(\vec{a}\times\vec{b}\right)\cdot\vec{c} & = & \begin{pmatrix}\begin{vmatrix}a_{2} & a_{3}\\
+b_{2} & b_{3}\end{vmatrix}\\
+-\begin{vmatrix}a_{1} & a_{3}\\
+b_{1} & b_{3}\end{vmatrix}\\
+\begin{vmatrix}a_{1} & a_{2}\\
+b_{1} & b_{2}\end{vmatrix}\end{pmatrix}\cdot\begin{pmatrix}c_{1}\\
+c_{2}\\
+c_{3}\end{pmatrix}\\
+ & = & \begin{vmatrix}a_{2} & a_{3}\\
+b_{2} & b_{3}\end{vmatrix}c_{1}-\begin{vmatrix}a_{1} & a_{3}\\
+b_{1} & b_{3}\end{vmatrix}c_{2}+\begin{vmatrix}a_{1} & a_{2}\\
+b_{1} & b_{2}\end{vmatrix}c_{3}\\
+ & = & \begin{vmatrix}c_{1} & c_{2} & c_{3}\\
+a_{1} & a_{2} & a_{3}\\
+b_{1} & b_{2} & b_{3}\end{vmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסמנים את הפעולה הזו 
+\begin_inset Formula $\vec{a}\cdot\left(\vec{b}\times\vec{c}\right)=\left[\vec{a},\vec{b},\vec{c}\right]$
+\end_inset
+
+.
+ תכונה חשובה של פעולה זו 
+\begin_inset Formula $\left[\vec{a},\vec{c},\vec{b}\right]=-\left[\vec{a},\vec{b},\vec{c}\right]$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left[\vec{c},\vec{a},\vec{b}\right]=-\left[\vec{a},\vec{c},\vec{b}\right]=\left[\vec{a},\vec{b},\vec{c}\right]$
+\end_inset
+
+ אבל מה המשמעות של פעולה זו?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+=\left(\mbox{area of makbilon on }\vec{a},\vec{b}\right)\cdot\underbrace{\left|\left|\vec{c}\right|\right|\cos\angle\left(\vec{a}\times\vec{b},\vec{c}\right)}_{\begin{matrix}\mbox{height of makbilon on}\\
+\mbox{a,b,conbasea,b}\end{matrix}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתי זה אפס? 
+\begin_inset Formula $\left[\vec{a},\vec{b},\vec{c}\right]=0$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\begin{vmatrix}\\a & b & c\\
+\\\end{vmatrix}=\begin{vmatrix} & a\\
+ & b\\
+ & c\end{vmatrix}=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{a},\vec{b},\vec{c}$
+\end_inset
+
+ הם במישור.
+\end_layout
+
+\begin_layout Section
+מכפלה וקטורית משולשת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{a}\times\left(\vec{b}\times\vec{c}\right)\neq\left(\vec{a}\times\vec{b}\right)\times\vec{c}\]
+
+\end_inset
+
+ כי 
+\begin_inset Formula $\left(\vec{a}\times\vec{b}\right)\times\vec{c}$
+\end_inset
+
+ מקביל למישור 
+\begin_inset Formula $\vec{a},\vec{b}$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{a}\times\left(\vec{b}\times\vec{c}\right)$
+\end_inset
+
+ מקביל למישור 
+\begin_inset Formula $\vec{b},\vec{c}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: מערכות קואורדינטות וצורות הנדסיות פשוטות
+\end_layout
+
+\begin_layout Standard
+אפשר להגדיר צורה גיאוצטרית לפי תנאי)משוואה( או לפי פרמוטציה)
+\lang english
+paramotrisation
+\lang hebrew
+(.
+ דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ \left(a,b\right)\mid x+y>1\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ \left(t,t^{2}\right)\mid t\in\mathbb{R}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x^{2}+y^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d3.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+פעולות על צורות
+\end_layout
+
+\begin_layout Standard
+הזזה ב
+\begin_inset Formula $\begin{pmatrix}a\\
+b\end{pmatrix}$
+\end_inset
+
+: 
+\begin_inset Formula $\begin{pmatrix}x'\\
+y'\end{pmatrix}=\begin{pmatrix}x\\
+y\end{pmatrix}+\begin{pmatrix}a\\
+b\end{pmatrix}=\begin{pmatrix}x+a\\
+y+b\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה: יש תנאי 
+\begin_inset Formula $T\left(x,y\right)$
+\end_inset
+
+ כותבים 
+\begin_inset Formula $\left\{ \left(x,y\right)\mid T\left(x,y\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d4.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ \left(x',y'\right)\mid\begin{matrix}x'=x+a\\
+y'=y+b\\
+T\left(x,y\right)\end{matrix}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d5.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\left(x,y\right)\Rightarrow x^{2}+y^{2}=1$
+\end_inset
+
+ אזי כדי לקבל מעגל שמרכזו 
+\begin_inset Formula $\left(2,3\right)$
+\end_inset
+
+ צריכים להזיז את זה ב 
+\begin_inset Formula $\begin{pmatrix}2\\
+3\end{pmatrix}$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $T\left(x-2,y-3\right)\Rightarrow\left(x-2\right)^{2}+\left(y-3\right)^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתיכה
+\end_layout
+
+\begin_layout Standard
+פי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $a$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $x$
+\end_inset
+
+ ופי 
+\begin_inset Formula $b$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $y$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x' & = & ax\\
+y' & = & by\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $\left\{ \left(x,y\right)\mid T\left(x,y\right)\right\} \Rightarrow\left\{ \left(x',y'\right)\mid\begin{matrix}x'=ax\\
+y'=by\\
+T\left(x,y\right)\end{matrix}\right\} =\left\{ \left(x',y'\right)\mid T\left(\frac{x'}{a},\frac{y'}{b}\right)\right\} $
+\end_inset
+
+ דוגמה: 
+\begin_inset Formula $\left(\cos\theta,\sin\theta\right)\Rightarrow\left(a\cos\theta,b\sin\theta\right)$
+\end_inset
+
+ זאת אליפסה.
+\end_layout
+
+\begin_layout Subsection
+היפרבולה
+\end_layout
+
+\begin_layout Standard
+הגענו לאליפסה, אבל איך מגיעים להיפרבולה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y=\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d6.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להגיע ל
+\begin_inset Formula $xy=c\Rightarrow\frac{y}{c}=\frac{1}{x}\Leftrightarrow y=\frac{1}{\left(\frac{y}{c}\right)}$
+\end_inset
+
+ אזי צריכים למתוך ב
+\begin_inset Formula $c$
+\end_inset
+
+ באחד הכיוונים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x^{2}-y^{2}=c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l3d7.svg
+	width 50text%
+	subcaptionText "x^2-y^2=1 with asimptots"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לסבב את זה 
+\begin_inset Formula $\frac{\pi}{4}=90^{\circ}$
+\end_inset
+
+ אזי כותבים את המשואה במשתנים 
+\begin_inset Formula $u=\frac{1}{\sqrt{2}}\left(x+y\right),v=\frac{1}{\sqrt{2}}\left(y-x\right)$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $uv=\frac{1}{2}\left(x+y\right)\left(y-x\right)=\frac{1}{2}\left(y^{2}-x^{2}\right)=-\frac{c}{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $uv=-\frac{c}{2}\Leftrightarrow x^{2}-y^{2}=c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי יכולים להגיע ל
+\begin_inset Formula $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$
+\end_inset
+
+ דרך מתיכה ב
+\begin_inset Formula $a$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $b$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $y$
+\end_inset
+
+ אזי עכשיו האסימפטוטות יהיו 
+\begin_inset Formula $\frac{y}{b}=\pm\frac{x}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}-2y^{2}+2x-4y & = & 1\\
+\left(x+1\right)^{2}-2\left(y+1\right)^{2} & = & 0\\
+x+1 & = & \pm\sqrt{2}\left(y+1\right)\end{eqnarray*}
+
+\end_inset
+
+ כלומר זה שתי קווים.
+ 
+\end_layout
+
 \end_body
 \end_document

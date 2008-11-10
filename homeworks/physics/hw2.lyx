@@ -1,0 +1,278 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{a}=\left(0,3,9\right),\vec{b}=\left(5,2,0\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+למצא 
+\begin_inset Formula $\vec{a}+\vec{b},\vec{a}\cdot\vec{b},\left|\vec{a}\right|,\left|\vec{b}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}+\vec{b} & = & \left(0+5,3+2,9+0\right)\\
+ & = & \left(5,5,9\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}\cdot\vec{b} & = & 0\cdot5+3\cdot2+9\cdot0\\
+ & = & 6\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\left|\vec{a}\right| & = & \sqrt{0^{2}+3^{2}+9^{2}}\\
+ & = & \sqrt{90}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\left|\vec{b}\right| & = & \sqrt{5^{2}+2^{2}+0^{0}}\\
+ & = & \sqrt{29}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}\cdot\vec{b} & = & \left|\vec{a}\right|\cdot\left|\vec{b}\right|\cos\angle\left(\vec{a},\vec{b}\right)\\
+\cos\angle\left(\vec{a},\vec{b}\right) & = & \frac{\vec{a}\cdot\vec{b}}{\left|\vec{a}\right|\cdot\left|\vec{b}\right|}\\
+\cos\angle\left(\vec{a},\vec{b}\right) & = & \frac{6}{\sqrt{90}\sqrt{29}}\\
+\angle\left(\vec{a},\vec{b}\right) & = & 0.037\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\vec{a} & = & \frac{\vec{a}}{\left|\vec{a}\right|}\\
+ & = & \frac{\left(5,2,0\right)}{\sqrt{29}}\\
+ & = & \left(\frac{5}{\sqrt{29}},\frac{2}{\sqrt{29}},0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\hat{c} & = & \frac{\vec{a}\times\vec{b}}{\left|\vec{a}\times\vec{b}\right|}\\
+ & = & \frac{\begin{vmatrix}\hat{i} & \hat{j} & \hat{k}\\
+5 & 2 & 0\\
+0 & 3 & 9\end{vmatrix}}{\left|\vec{a}\right|\left|\vec{b}\right|\sin\angle\left(\vec{a},\vec{b}\right)}\\
+ & = & \frac{\left(2\cdot9-0\cdot3\right)\hat{i}-\left(5\cdot9-0\cdot0\right)\hat{j}+\left(5\cdot3-2\cdot0\right)\hat{k}}{\sqrt{50}\sqrt{29}\sin\left(0.037\pi\right)}\\
+ & = & \frac{18\hat{i}-45\hat{j}+15\hat{k}}{7.78}\\
+ & = & 2.3\hat{i}-5.78\hat{j}+1.92\hat{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}\left(t\right) & = & 12At^{2}\hat{x}+B\cos\left(\omega t\right)\hat{y}+cte^{\alpha t}\hat{z}\\
+\vec{v}\left(t\right) & = & \int\vec{a}\left(t\right)\partial t\\
+ & = & \int\left(12At^{2}\hat{x}+B\cos\left(\omega t\right)\hat{y}+cte^{\alpha t}\hat{z}\right)\partial t\\
+ & = & \frac{12A}{3}t^{3}\hat{x}+\frac{B\sin\left(\omega t\right)}{\omega}\hat{y}+c\left(t\frac{e^{\alpha t}}{\alpha}-\int_{0}^{t}1\cdot\frac{e^{\alpha t}}{\alpha}\partial t\right)\hat{z}\\
+ & = & 4At^{3}\hat{x}+\frac{B\sin\left(\omega t\right)}{\omega}\hat{y}+\left(ct\frac{e^{\alpha t}}{\alpha}-c\frac{e^{\alpha t}}{\alpha^{2}}\right)\hat{z}+\vec{c}\\
+\vec{v}\left(0\right) & = & 0\\
+0 & = & 4A0^{3}\hat{x}+\frac{B\sin\left(\omega\cdot0\right)}{\omega}\hat{y}+\left(c0\frac{e^{\alpha\cdot0}}{\alpha}-c\frac{e^{\alpha\cdot0}}{\alpha^{2}}\right)\hat{z}+\vec{c}\\
+0 & = & 0\hat{x}+0\hat{y}+\left(0-\frac{c}{\alpha^{2}}\right)\hat{z}+\vec{c}\\
+\vec{c} & = & \frac{c}{\alpha^{2}}\hat{z}\\
+\vec{v}\left(t\right) & = & 4At^{3}\hat{x}+\frac{B\sin\left(\omega t\right)}{\omega}\hat{y}+\left(ct\frac{e^{\alpha t}}{\alpha}-c\frac{e^{\alpha t}}{\alpha^{2}}+\frac{c}{\alpha^{2}}\right)\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}\left(t\right) & = & \int\vec{v}\left(t\right)\partial t\\
+ & = & \int\left(4At^{3}\hat{x}+\frac{B\sin\left(\omega t\right)}{\omega}\hat{y}+\left(ct\frac{e^{\alpha t}}{\alpha}-c\frac{e^{\alpha t}}{\alpha^{2}}+\frac{c}{\alpha^{2}}\right)\hat{z}\right)\partial t\\
+ & = & At^{4}\hat{x}-\frac{B\cos\left(\omega t\right)}{\omega^{2}}\hat{y}+\left(\frac{c}{\alpha}\left(\int te^{\alpha t}\partial t\right)-\frac{ce^{\alpha t}}{\alpha^{3}}+\frac{c}{\alpha^{2}}t\right)\hat{z}+\vec{c}\\
+ & = & At^{4}\hat{x}-\frac{B\cos\left(\omega t\right)}{\omega^{2}}\hat{y}+\left(\frac{c}{\alpha}\left(t\frac{e^{\alpha t}}{\alpha}-\frac{e^{\alpha t}}{\alpha^{2}}\right)-\frac{ce^{\alpha t}}{\alpha^{3}}+\frac{c}{\alpha^{2}}t\right)\hat{z}+\vec{c}\\
+ & = & At^{4}\hat{x}-\frac{B\cos\left(\omega t\right)}{\omega^{2}}\hat{y}+\left(t\frac{ce^{\alpha t}}{\alpha^{2}}-\frac{ce^{\alpha t}}{\alpha^{3}}-\frac{ce^{\alpha t}}{\alpha^{3}}+\frac{c}{\alpha^{2}}t\right)\hat{z}+\vec{c}\\
+\vec{x}\left(0\right) & = & 0\\
+0 & = & A\cdot0^{4}\hat{x}-\frac{B\cos\left(\omega\cdot0\right)}{\omega^{2}}\hat{y}+\left(0\cdot\frac{ce^{\alpha\cdot0}}{\alpha^{2}}-\frac{ce^{\alpha\cdot0}}{\alpha^{3}}-\frac{ce^{\alpha\cdot0}}{\alpha^{3}}+\frac{c}{\alpha^{2}}\cdot0\right)\hat{z}+\vec{c}\\
+ & = & 0\cdot\hat{x}-\frac{B}{\omega^{2}}\hat{y}-2\frac{c}{\alpha^{3}}\hat{z}+\vec{c}\\
+\vec{c} & = & 0\cdot\hat{x}+\frac{B}{\omega^{2}}+2\frac{c}{\alpha^{3}}\hat{z}\\
+\vec{x}\left(t\right) & = & At^{4}\hat{x}-\frac{B\cos\left(\omega t\right)-B}{\omega^{2}}\hat{y}+\left(t\frac{ce^{\alpha t}}{\alpha^{2}}-2\frac{ce^{\alpha t}}{\alpha^{3}}+\frac{c}{\alpha^{2}}t+2\frac{c}{\alpha^{3}}\right)\hat{z}a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -45,6 +45,115 @@
 1
 \end_layout
 
+\begin_layout Standard
+צליל סבע
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+108
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שפרינצק
+\end_layout
+
+\begin_layout Standard
+שעת קבלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+12-13
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+חדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+15
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מתמקיקה
+\end_layout
+
 \begin_layout Section
 תחומי המטמטיקה הבדידה:
 \end_layout
@@ -1102,6 +1211,290 @@ zemels@math.huji.ac.il
 \end_inset
 
 .
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+יחס שקילות: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה יחס 
+\begin_inset Formula $\Re\subseteq A\times A$
+\end_inset
+
+ קוראים לו יחס שקילות אם מקיים התכונות הבאות:
+\end_layout
+
+\begin_layout Standard
+רפלקסיביות: לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,x\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימטריות: לכל 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(y,x\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טרנזטיביות: 
+\begin_inset Formula $x,y,z\in A$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(y,z\right)\in\Re$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,z\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: אם 
+\begin_inset Formula $x<y$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+.
+ יחס זה לא רפלקסיבי, לא סימטרי, טרנזטיבי.
+\end_layout
+
+\begin_layout Standard
+דוגמה: אם 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+.
+ יחס זה לא רפלקסיבי, סימטרי, טרנזיטיבי.
+\end_layout
+
+\begin_layout Standard
+מה החשיבות של יחס שקילות:
+\end_layout
+
+\begin_layout Standard
+ראשית נגדיר: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה, חלוקה של 
+\begin_inset Formula $A$
+\end_inset
+
+ היא הצגה של 
+\begin_inset Formula $A$
+\end_inset
+
+ כאיחוד זר של קבוצות.
+ כלומר 
+\begin_inset Formula $A=\dot{\bigcup}_{\alpha\in I}V_{\alpha}\Leftrightarrow\alpha\neq\beta\Rightarrow V_{\alpha}\cap V_{\beta}=\emptyset$
+\end_inset
+
+ הערה 
+\begin_inset Formula $\forall i\Rightarrow V_{i}\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/l3d1.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה לא ריקה ויהי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ יחס שקילות המוגדר על 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ ליחס השקילות 
+\begin_inset Formula $\Re$
+\end_inset
+
+ ניתן להתאים חלוקה 
+\begin_inset Formula $A=\dot{\bigcup}_{\alpha\in I}V_{\alpha}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\forall\, x,y\in A$
+\end_inset
+
+ מתריים 
+\begin_inset Formula $\left(x,y\right)\in\Re\Leftrightarrow\exists\alpha\, x,y\in V_{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: יהי נתון יחס השקילות 
+\begin_inset Formula $\Re$
+\end_inset
+
+, נתאים לו חלוקה: לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ נתאים 
+\begin_inset Formula $V_{x}=\left\{ y\in A\mid\left(x,y\right)\in R\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ 
+\begin_inset Formula $V_{a}\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula $\Re$
+\end_inset
+
+ רפלקסיבי לכן 
+\begin_inset Formula $\left(x,x\right)\in\Re$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\left(x,x\right)\in V_{x}$
+\end_inset
+
+ לכן אין 
+\begin_inset Formula $V_{a}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ אז 
+\begin_inset Formula $V_{x}=V_{y}$
+\end_inset
+
+ או 
+\begin_inset Formula $V_{x}\cap V_{y}=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח 
+\begin_inset Formula $V_{x1}\cap V_{x2}\neq\emptyset$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in V_{x1}\cap V_{x2}$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $y\in V_{x1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(x_{1},y\right)\in\Re$
+\end_inset
+
+ ויודעים כי 
+\begin_inset Formula $\left(x,x_{1}\right)\in\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(y,x\right)\in\Re$
+\end_inset
+
+ ויודעים כי 
+\begin_inset Formula $\left(x,x_{2}\right)\in\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(y,x_{2}\right)\in\Re$
+\end_inset
+
+ אז הוכחנו כי 
+\begin_inset Formula $V_{x1}\subseteq V_{x2}$
+\end_inset
+
+ ובדרך דומה מוכיחים כי 
+\begin_inset Formula $V_{x1}\supseteq V_{x2}$
+\end_inset
+
+.
+ לכן הוכחנו כי אם 
+\begin_inset Formula $V_{x1}\cap V_{x2}\neq\emptyset$
+\end_inset
+
+ אז 
+\begin_inset Formula $V_{x1}=V_{x2}$
+\end_inset
+
+
 \end_layout
 
 \end_body
