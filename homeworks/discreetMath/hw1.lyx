@@ -39,8 +39,54 @@
 
 \begin_body
 
-\begin_layout Part*
+\begin_layout Title
 תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
 \family roman
 \series medium
 \shape up
@@ -817,7 +863,7 @@
 \end_deeper
 \end_deeper
 \begin_layout Part*
-תרגיל
+שאלה
 \family roman
 \series medium
 \shape up
@@ -963,7 +1009,7 @@
 
 \end_deeper
 \begin_layout Part*
-תרגיל
+שאלה
 \family roman
 \series medium
 \shape up
@@ -1580,45 +1626,40 @@
 \begin_inset Formula $\left|A\cup B\cup C\right|=\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\left|A\cap B\cap C\right|$
 \end_inset
 
-: 
-\begin_inset Formula $\left|A\cup B\cup C\right|$
-\end_inset
-
- זה הוא מספר האיברים 
-\begin_inset Formula $x$
-\end_inset
-
- כך ש
-\begin_inset Formula $x\in A$
-\end_inset
-
- או 
-\begin_inset Formula $x\in B$
-\end_inset
-
- או 
-\begin_inset Formula $x\in C$
+: ראשית נוכיח 
+\begin_inset Formula $\left|A\cup B\right|=\left|A\right|+\left|B\right|-\left|A\cap B\right|$
 \end_inset
 
 .
- ננסה לבנות את הביטוי הזה שלב שלב 
-\begin_inset Formula $\left|A\right|+\left|B\right|+\left|C\right|$
+ 
+\begin_inset Formula $A\cup B=A\setminus\left(A\cap B\right)+B\setminus\left(A\cap B\right)+\left(A\cap B\right)$
 \end_inset
 
- הוא אוסף האיברים בכל קבוצה, הבעיה היא כי ספרנו את האיברים המשוטפים בין
- שתי קבוצות פעמיים והאיברים המשוטפים בין שלושת הקבוצות שלושה פעמים אז צריך
- לתקן את זה.
- שלב ראשון בתיקון הוא לחסר האיברים המשוטפים בית שתי קבוצות)או יותר( פעם
- אחת 
-\begin_inset Formula $\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap B\right|-\left|B\cap C\right|$
+ זה איחוד של קבוצות זרות לכן 
+\begin_inset Formula $\left|A\cup B\right|=\left|A\right|-\left|A\cap B\right|+\left|B\right|-\left|A\cap B\right|+\left|A\cap B\right|=\left|A\right|+\left|B\right|-\left|A\cap B\right|$
 \end_inset
 
- אבל נתקלים בבעיה שאם 
-\begin_inset Formula $x\in A,B,C$
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+עכשיו נשתמש בזה כדי לחשב 
+\begin_inset Formula $\left|A\cup B\cup C\right|$
 \end_inset
 
- אז חיסרנו אותו שלושה פעמים, אז צריכים להוסיף אותו עוד פעם: 
-\begin_inset Formula $\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\left|A\cap B\cap C\right|$
+:
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|A\cup B\cup C\right| & = & \left|A\cup B\right|+\left|C\right|-\left|\left(A\cup B\right)\cap C\right|\\
+ & = & \left|A\right|+\left|B\right|-\left|A\cap B\right|+\left|C\right|-\left|\left(A\cap B\right)\cup\left(A\cap C\right)\right|\\
+ & = & \left|A\right|+\left|B\right|-\left|A\cap B\right|+\left|C\right|-\left(\left|A\cap B\right|+\left|A\cap C\right|-\left|A\cap B\cap A\cap C\right|\right)\\
+ & = & \left|A\right|+\left|B\right|-\left|A\cap B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|+\left|A\cap B\cap C\right|\\
+ &  & \left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap B\right|-\left|A\cap C\right|+\left|A\cap B\cap C\right|\end{eqnarray*}
+
 \end_inset
 
 

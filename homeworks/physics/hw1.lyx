@@ -374,6 +374,7 @@ Ph+\rho^{2} & = & \frac{kg}{m^{2}sec}\cdot m+\left(\frac{kg}{m^{2}}\right)^{2}\\
 
 \begin_inset Formula \begin{eqnarray*}
 \frac{\partial\tan x}{\partial x} & = & \frac{\partial\frac{\sin x}{\cos x}}{\partial x}\\
+ & = & \frac{\cos x\cos x-\sin x\cdot\left(-\sin x\right)}{}\\
  & = & \frac{\cos^{2}x+\sin^{2}x}{\cos^{2}x}\\
  & = & 1+\tan^{2}x\\
  & = & \frac{1}{\cos^{2}x}\end{eqnarray*}
@@ -630,14 +631,14 @@ f'\left(x\right) & = & 3\cos\left(x^{2}\right)+3x\cdot2x\left(-\sin\left(x^{2}\r
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\mbox{radius}\left(t\right) & = & k\cdot t\\
+\mbox{radius}\left(t\right) & = & k\cdot t+r_{0}\\
 \mbox{volume}\left(t\right) & = & \frac{4}{3}\pi\mbox{radius}^{2}\left(t\right)\\
- & = & \frac{4}{3}\pi\left(kt\right)^{3}\\
+ & = & \frac{4}{3}\pi\left(kt+r_{0}\right)^{3}\\
 \mbox{waterCapacity}\left(t\right) & = & \rho\cdot\mbox{volume}\left(t\right)\\
- & = & \rho\cdot\frac{4}{3}\pi\left(kt\right)^{3}\\
+ & = & \rho\cdot\frac{4}{3}\pi\left(kt+r_{0}\right)^{3}\\
 \mbox{FillRate}(t) & = & \frac{\partial\mbox{waterCapacity}\left(t\right)}{\partial t}\\
- & = & \frac{4}{3}\rho\pi k^{3}\cdot3t^{2}\\
- & = & 4\rho\pi k^{3}t^{2}\end{eqnarray*}
+ & = & \frac{4}{3}\rho\pi\cdot k\cdot3\left(kt+r_{0}\right)^{2}\\
+ & = & 4\rho\pi k\left(kt+r_{0}\right)^{2}\end{eqnarray*}
 
 \end_inset
 
@@ -650,10 +651,11 @@ f'\left(x\right) & = & 3\cos\left(x^{2}\right)+3x\cdot2x\left(-\sin\left(x^{2}\r
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\left[\mbox{FillRate}\right] & = & \left[4\rho\pi k^{3}t^{2}\right]\\
-\frac{kg}{sec} & = & \left[\rho\right]\left[k^{3}\right]\left[t^{2}\right]\\
- & = & \left[\rho\right]\left[k\right]^{3}\left[t\right]^{2}\\
- & = & \frac{kg}{m^{3}}\cdot\left(\frac{m}{sec}\right)^{3}\cdot\left(sec\right)^{2}\\
+\left[\mbox{FillRate}\right] & = & \left[4\rho\pi k\left(kt+r_{0}\right)^{2}\right]\\
+\frac{kg}{sec} & = & \left[\rho\right]\left[k\right]\left[\left(kt+r_{0}\right)^{2}\right]\\
+ & = & \left[\rho\right]\left[k\right]\left[kt+r_{0}\right]^{2}\\
+ & = & \frac{kg}{m^{3}}\cdot\left(\frac{m}{sec}\right)\cdot\left(\frac{m}{sec}\cdot sec+m\right)^{2}\\
+ & = & \frac{kg}{m^{3}}\cdot\left(\frac{m}{sec}\right)\cdot\left(m\right)^{2}\\
  & = & \frac{kg}{sec}\ \checkmark\end{eqnarray*}
 
 \end_inset

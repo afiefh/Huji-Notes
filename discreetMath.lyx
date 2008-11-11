@@ -1497,5 +1497,734 @@ zemels@math.huji.ac.il
 
 \end_layout
 
+\end_deeper
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+משפט: לכל יחס שקילות 
+\begin_inset Formula $\Re$
+\end_inset
+
+ אפשר להתאים חלוקה 
+\begin_inset Formula $A=\dot{\bigcup}V_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר להוכיח גם כי לכל חלוקה אפשר להתאים יחס שקילות)כל קבוצה 
+\begin_inset Formula $V_{i}$
+\end_inset
+
+ נקראת מחלקת שקילות(
+\end_layout
+
+\begin_layout Standard
+טענה: לכל חלוקה אפשר להתאים יחס שקילות
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נגדיר יחס שקילות 
+\begin_inset Formula $\Re\subseteq A\times A$
+\end_inset
+
+ ואומרים כי 
+\begin_inset Formula $\left(x,y\right)\in\Re\Leftrightarrow\exists i\,\,\, x,y\in V_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה כי 
+\begin_inset Formula $\Re$
+\end_inset
+
+יחס שקילות.
+\end_layout
+
+\begin_layout Standard
+רפלקסיביות: לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ הזוג 
+\begin_inset Formula $\exists i\, x\in V_{i}\Leftrightarrow\left(x,x\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימטריות: יהי 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $\left(x,y\right)\subseteq\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(x,y\right)\in\Re\Rightarrow\exists i\, x,y\in V_{i}\Rightarrow\left(y,x\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טרנזיטיביות: 
+\begin_inset Formula $\left(y,z\right)\in\Re$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\exists j\, y,z\in V_{j}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\exists i\, x,y\in V_{i}$
+\end_inset
+
+ הקבוצה 
+\begin_inset Formula $\left\{ V_{i}\right\} _{i=0}^{n}$
+\end_inset
+
+ הן זרות לכן: 
+\begin_inset Formula $x,y\in V_{i}\wedge y,z\in V_{j}\Rightarrow i=j$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+דוגמה ליחס שקילות וחלוקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Re\subseteq\mathbb{Z}\times\mathbb{Z}$
+\end_inset
+
+ונומר 
+\begin_inset Formula $\left(x,y\right)\in R$
+\end_inset
+
+ אם"ם 
+\begin_inset Formula $\exists t\in\mathbb{Z}$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $x-y=7t$
+\end_inset
+
+)כלומר ההפרש מתחלק בשבע(
+\end_layout
+
+\begin_layout Enumerate
+מראים כי זה יחס שקילות:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+רפלקסיביות: 
+\begin_inset Formula $x-x=0$
+\end_inset
+
+ מתחלק בשבע לכן 
+\begin_inset Formula $\left(x,x\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+סימטריות: 
+\begin_inset Formula $x-y=7t$
+\end_inset
+
+ אזי 
+\begin_inset Formula $y-x=7\left(-t\right)$
+\end_inset
+
+ ויודעום כי 
+\begin_inset Formula $-t\in\mathbb{Z}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(x,y\right)\in\Re\Leftrightarrow\left(y,x\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+טרנזיטיביות: נניח 
+\begin_inset Formula $\left(x,y\right)\in\Re,\left(y,z\right)\in\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $7\mid(x-y),7\mid\left(y-z\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x-y=7t_{2},y-z=7t_{1}$
+\end_inset
+
+ מחברים ומקבלים 
+\begin_inset Formula $x-y+y-z=7\left(t_{1}+t_{2}\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x-z=7\left(t_{1}+t_{2}\right)$
+\end_inset
+
+ ויודעים כי 
+\begin_inset Formula $t_{1}+t_{2}\in\mathbb{Z}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\left(x,z\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+נראה מה היא החלוקה המתאימה ליחס 
+\begin_inset Formula $\Re$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נגדיר 
+\begin_inset Formula $\forall x\in\mathbb{Z}\, V_{x}=\left\{ y\in\mathbb{Z}\mid\left(x,y\right)\in\Re\right\} $
+\end_inset
+
+ כלומר למשל 
+\begin_inset Formula $V_{0}=\left\{ y\mid0-y=7t\right\} $
+\end_inset
+
+ כלומר כל הכפולות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\numeric off
+.
+ 
+\begin_inset Formula $V_{1}=\left\{ y\in\mathbb{Z}\mid1-y=7t\right\} =\left\{ y\in\mathbb{Z}\mid y=7t+1\right\} $
+\end_inset
+
+ כלומר השלמים המשאירים שארית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כאשר מחלקים אותם ל
+\numeric on
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Enumerate
+כלומר כל המספרים המשאירים שארית מסוימת הם מחלקת שקילות, יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ מחלקות כאילו 
+\begin_inset Formula $V_{0},V_{1},V_{2},V_{3},V_{4},V_{5},V_{6}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+פונקציה/העתקה
+\end_layout
+
+\begin_layout Standard
+הגדרה: פונקציה: תהיינה 
+\begin_inset Formula $A,B$
+\end_inset
+
+ קבוצות, יחס 
+\begin_inset Formula $f\subseteq A\times B$
+\end_inset
+
+ ייקרא פונקציה או העתקה אם לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ קיים 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ יחיד כך ש
+\begin_inset Formula $\left(a,b\right)\in f$
+\end_inset
+
+.
+ המיוחד בזה ש*לכל* 
+\begin_inset Formula $a\in B$
+\end_inset
+
+ קיים 
+\begin_inset Formula $b\in B$
+\end_inset
+
+, ולא רק קיים אלה 
+\begin_inset Formula $b$
+\end_inset
+
+ הזה הוא יחיד.
+ פונקציה מתאימה לכל איבר 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ במקור איבר 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ בתמונה כלומר 
+\begin_inset Formula $a\in A\Rightarrow\exists\underbrace{!}_{\mbox{only one}}\left(a,b\right)\in f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ תקרא על אם 
+\begin_inset Formula $\forall b\in B$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(a\right)=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: פונקציה 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ תקרא חד חד ערכית אם לכל 
+\begin_inset Formula $a_{1},a_{2}\in A$
+\end_inset
+
+ אם 
+\begin_inset Formula $f\left(a_{1}\right)=f\left(a_{2}\right)\Rightarrow a_{1}=a_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:\mathbb{Z} & \to & \mathbb{Z}\\
+f\left(z\right) & = & 2\mathbb{Z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונקציה לא על כי 
+\begin_inset Formula $1\notin f\left(z\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ היא חד חד ערכית כי 
+\begin_inset Formula $f\left(z_{1}\right)=f\left(z_{2}\right)\Leftrightarrow2z_{1}=z_{2}\Leftrightarrow z_{1}=z_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לו היתה הפונקציה מוגדרת 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ אז תהיה על וח חד ערכית
+\end_layout
+
+\begin_layout Section
+הרכבה של העתקות
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $A,B,C$
+\end_inset
+
+ קבוצות ותהיינה 
+\begin_inset Formula $f_{1}:A\to B,f_{2}:B\to C$
+\end_inset
+
+ פונקציות.
+ ההרכבה 
+\begin_inset Formula $f_{2}\circ f_{1}$
+\end_inset
+
+ היא ההעתקה 
+\begin_inset Formula $\begin{matrix}f_{2}\circ f_{1}:A\to C\\
+f_{2}\circ f_{1}\left(a\right)=f_{2}\left(f_{1}\left(a\right)\right)\end{matrix}$
+\end_inset
+
+ כלומר מהאיבר דרך 
+\begin_inset Formula $A\overset{f_{1}}{\longrightarrow}B\overset{f_{2}}{\longrightarrow}C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $\begin{matrix}f_{1}:\mathbb{N}\to\mathbb{N}\\
+f_{1}\left(x\right)=n+7\end{matrix}$
+\end_inset
+
+ ו
+\begin_inset Formula $\begin{matrix}f_{2}:\mathbb{N}\to\mathbb{Q}\\
+f_{2}\left(x\right)=\frac{1}{x}\end{matrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\begin{matrix}f_{2}\circ f_{1}:\mathbb{N}\to\mathbb{Q}\\
+f_{2}\circ f_{1}\left(x\right)=\frac{1}{x+7}\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: פונקציה הפוכה: תהיינה 
+\begin_inset Formula $A,B$
+\end_inset
+
+ פונקציות תהיינה 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ פונקציה 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ תיקרא הפכית ל
+\begin_inset Formula $f$
+\end_inset
+
+ אם 
+\begin_inset Formula $\begin{matrix}g\circ f:A\to A\\
+g\circ f\left(x\right)=x\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: 
+\begin_inset Formula $\begin{matrix}1_{A}:A\to A\\
+1_{A}\left(x\right)=x\end{matrix}$
+\end_inset
+
+ היא פונקצית הזהות.
+\end_layout
+
+\begin_layout Standard
+טענה: אם ל
+\begin_inset Formula $f$
+\end_inset
+
+ יש פונקציה הופכית אז היא יחידה.
+\end_layout
+
+\begin_layout Standard
+הוכחה: תהי 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ ונניח כי ל
+\begin_inset Formula $f$
+\end_inset
+
+ יש פונקציה הופכית 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $h:B\to A$
+\end_inset
+
+ פונקציה הופכית ל
+\begin_inset Formula $f$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\forall c\in B$
+\end_inset
+
+ מתקקים 
+\begin_inset Formula $h\left(b\right)=h\circ1_{B}\left(b\right)=h\circ\left(f\circ g\right)\left(b\right)=\left(h\circ f\right)\circ g=1_{B}\circ g=g$
+\end_inset
+
+ לכן הם שוות.
+\end_layout
+
+\begin_layout Standard
+מה אפשר לומר על פונקציות שיש להם פונקציה הופכית:
+\end_layout
+
+\begin_layout Standard
+משפט: לפונקציה 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ קיימת פונקציה הופכית אם"ם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא חד חד ערכית ועל.
+\end_layout
+
+\begin_layout Standard
+הוכחה: כיוון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+)הכיוון השני תרגיל בית(
+\end_layout
+
+\begin_layout Standard
+)על( נניח כי 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ קיימת פונקציה הופכית.
+ נסמן 
+\begin_inset Formula $g:B\to A$
+\end_inset
+
+ את הפונקציה ההופכית.
+ אז נסתכל על 
+\begin_inset Formula $1_{B}=f\circ g:B\to B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $1_{B}$
+\end_inset
+
+ היא על.
+ אי אפשר כי 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ על אבל 
+\begin_inset Formula $f$
+\end_inset
+
+ לא על כי אם 
+\begin_inset Formula $f$
+\end_inset
+
+ לא על אז יש איברים ש
+\begin_inset Formula $f$
+\end_inset
+
+ לא מגיעה אליהם אז 
+\begin_inset Formula $f\circ g=f\left(g\left(x\right)\right)$
+\end_inset
+
+ לא תגיע אלים.
+ לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ לא יכולה להיות לא על.
+\end_layout
+
+\begin_layout Standard
+)חד חד ערכית( 
+\begin_inset Formula $1_{A}=g\circ f:A\to A$
+\end_inset
+
+ והפונקציה 
+\begin_inset Formula $1_{A}$
+\end_inset
+
+ היא חד חד ערכית.
+ לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ חייבת להיות חד חד ערכית כי אם לא היתה אז 
+\begin_inset Formula $f\left(x_{1}\right)=f\left(x_{2}\right)=b$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $g\left(b\right)=c$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\circ f\left(x_{1}\right)=g\circ f\left(x_{1}\right)=c$
+\end_inset
+
+ לכן 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ איננה חד חד ערכית.
+\end_layout
+
+\begin_layout Standard
+קיבלנו כי 
+\begin_inset Formula $f$
+\end_inset
+
+ חד חד ערכית ועל
+\end_layout
+
+\begin_layout Standard
+גם 
+\begin_inset Formula $g$
+\end_inset
+
+ היא פונקציה הפכית כי הפונקציה ההפכית שלה היא 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
 \end_body
 \end_document

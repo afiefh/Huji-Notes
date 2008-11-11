@@ -905,6 +905,8 @@ r\left(t\right) & = & \frac{1}{2}a_{0}t^{2}\cdot\hat{x}+0\cdot\hat{y}+0\cdot\hat
 
 \begin_layout Chapter
 הרצאה מס.
+\numeric on
+4
 \end_layout
 
 \begin_layout Standard
@@ -1066,7 +1068,312 @@ r\left(t\right) & = & \frac{1}{2}a_{0}t^{2}\cdot\hat{x}+0\cdot\hat{y}+0\cdot\hat
 \begin_inset Formula $2\theta=9^{\circ}0\Leftrightarrow\theta=45^{\circ}$
 \end_inset
 
- אבל אפשר למצא את זה גם בשיטת גזירה
+ אבל אפשר למצא את זה גם בשיטת גזירה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+חזרה קצרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & = & F_{0}\cos\theta+R\dot{\theta}^{2}\\
+\theta\left(t\right) & = & \theta_{0}\cos\left(\omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \left(F_{0}\cos\theta-N\right)\hat{r}-F_{0}\sin\theta\hat{\theta}\\
+ & = & m\left[\ddot{r}-r\dot{\theta}^{2}\right]\hat{r}+m\left[r\ddot{\theta}+2\ddot{r}\dot{\theta}\right]\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היום נעבוד על 
+\begin_inset Formula $\vec{F}=m\vec{a}$
+\end_inset
+
+ עם בעיות חיכוך.
+\end_layout
+
+\begin_layout Standard
+יש כל מיני חיכוך והחיכוך היותר פשוט שנתעסק בו הוא חיתוך בין שני כופים למשל
+ שולחן וקוביה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l5d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f} & = & -\mu N\hat{v}=\begin{cases}
+\left|v\right|=0 & \left|\vec{f}\right|\leq\mu_{s}N\\
+\left|v\right|\neq0 & \left|\vec{f}\right|=\mu_{d}N\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+אבל במקרה השני אין 
+\begin_inset Formula $\hat{v}$
+\end_inset
+
+ אז מה הכיוון?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדרך כלל 
+\begin_inset Formula $\mu_{s}\geq\mu_{d}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & m\vec{a}\\
+\vec{F}_{0}+\vec{f} & = & m\vec{a}\\
+\vec{f}_{ef} & = & m\vec{a}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l5d2.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l5d3.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\vec{a} & = & \vec{F}\\
+m\frac{\partial^{2}}{\partial t^{2}}\vec{F}\left(t\right) & = & \vec{F}_{0}+\vec{f}=f_{ef}\\
+m\left[\left(\frac{\partial^{2}}{\partial t^{2}}x\left(t\right)\right)\hat{x}+\left(\frac{\partial^{2}}{\partial t^{2}}y\left(t\right)\right)\hat{y}\right] & = & \left(F_{0}\sin\alpha-f\right)\hat{x}+\left(N-F_{0}\cos\alpha\right)\hat{y}\\
+m\ddot{x}\left(t\right) & = & F_{0}\sin\alpha-f\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f=\begin{cases}
+\alpha=0 & f=0\\
+0<\alpha<\alpha_{\mbox{critical}} & F_{ef}=0\Leftrightarrow F_{0}\sin\alpha=f\\
+\alpha=\alpha_{c} & F_{0}\sin\alpha=\mu_{s}F_{0}\cos\alpha\\
+\alpha_{c}<\alpha<\frac{\pi}{2} & f=\underbrace{\mu_{s}F_{0}\cos\alpha}_{\mbox{constant}}\\
+\alpha=\frac{\pi}{2} & f=0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי ב
+\begin_inset Formula $\alpha_{c}<\alpha<\frac{\pi}{2}$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $m\ddot{x}\left(t\right)=F_{0}\left(\sin\alpha-\mu\cos\alpha\right)=\mbox{constant}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+במקרה של קדור שנע בנוזל החיכוך הוא 
+\begin_inset Formula $f_{l}=\left(\underbrace{K_{l}}_{\mbox{constant}}\cdot\underbrace{\eta}_{\mbox{tsmigut}}\underbrace{D}_{\mbox{radius}\cdot2}\right)\cdot v$
+\end_inset
+
+ ויש 
+\begin_inset Formula $f_{R}=\left(k_{f}\cdot\underbrace{\rho}_{density}\cdot D^{2}\right)v^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{f_{r}}{f_{l}}=k\underbrace{\frac{\rho}{\eta}\cdot D\cdot v}_{\begin{array}{c}
+R=\mbox{Reimus standard}\\
+\mbox{without units}\end{array}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+
+\lang english
+there should be some talk about reimus standard that we really don't need
+ to know about.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\rho}{\eta}=\begin{cases}
+\mbox{air} & 10^{5}\\
+\mbox{water} & 10^{6}\\
+\mbox{oil} & 2\cdot10^{4}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדור באוויר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=10^{5}\cdot0.1\cdot10=10^{5}\gg1\Rightarrow f\propto v^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דג במים: 
+\begin_inset Formula \[
+R=10^{6}\cdot0.1\cdot0.1=10^{4}\gg1\Rightarrow f\propto v^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חידק במים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\underbrace{10^{6}}_{R}\cdot\underbrace{10^{-6}}_{D}\cdot\underbrace{10^{-5}}=10_{v}^{-5}\ll1\Rightarrow f\propto v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן במקרה של נקודה של גשם 
+\begin_inset Formula $f\propto v$
+\end_inset
+
+ כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l5d4.svg
+	width 25text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{f}=-\underbrace{c}_{\begin{matrix}\mbox{some}\\
+\mbox{constant}\end{matrix}}\cdot\left|\vec{v}\right|\hat{v}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\frac{\partial}{\partial t^{2}}x\left(t\right)=F_{0}-cv\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יותר קל לפתור משואה זו עהור 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ ולא 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}v+\frac{c}{m}v=\frac{1}{m}F\]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

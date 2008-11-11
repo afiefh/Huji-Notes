@@ -1687,5 +1687,374 @@ x_{3}\end{pmatrix}$
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+תסבב את הוקטורים ב
+\numeric on
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ מעלות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\begin{pmatrix}2\\
+1\end{pmatrix} & = & 3\begin{pmatrix}2\cdot\cos\theta-1\cdot\sin\theta\\
+2\cdot\sin\theta+1\cos\theta\end{pmatrix}\\
+\theta & = & 100^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}+\vec{y} & = & \begin{pmatrix}3\\
+3\end{pmatrix}\\
+\mbox{Rot}100\begin{pmatrix}3\\
+3\end{pmatrix} & = & \begin{pmatrix}3C-3S\\
+3C+3S\end{pmatrix}\\
+\mbox{Rot}100\begin{pmatrix}2\\
+1\end{pmatrix}+\mbox{Rot}100\begin{pmatrix}1\\
+2\end{pmatrix} & = & \begin{pmatrix}3C-3S\\
+3C+3S\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בצורה כללית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{Rot}\varphi\begin{pmatrix}x_{1}+y_{1}\\
+x_{2}+y_{2}\end{pmatrix} & = & \mbox{Rot}\varphi\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}+\mbox{Rot}\varphi\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\\
+\begin{pmatrix}\left(x_{1}+y_{1}\right)C-\left(x_{2}+y_{2}\right)S\\
+\left(x_{1}+y_{1}\right)S+\left(x_{2}+y_{2}\right)C\end{pmatrix} & = & \begin{pmatrix}x_{1}C-x_{2}S\\
+x_{2}S+x_{1}C\end{pmatrix}+\begin{pmatrix}y_{1}C-y_{2}S\\
+y_{2}S+y_{1}C\end{pmatrix}\\
+\begin{pmatrix}\left(x_{1}+y_{1}\right)C-\left(x_{2}+y_{2}\right)S\\
+\left(x_{1}+y_{1}\right)S+\left(x_{2}+y_{2}\right)C\end{pmatrix} & = & \begin{pmatrix}\left(x_{1}+y_{1}\right)C-\left(x_{2}+y_{2}\right)S\\
+\left(x_{1}+y_{1}\right)S+\left(x_{2}+y_{2}\right)C\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{Rot}90\begin{pmatrix}x\\
+y\end{pmatrix}=\begin{pmatrix}0 & -1\\
+1 & 0\end{pmatrix}\begin{pmatrix}x\\
+y\end{pmatrix}=\begin{pmatrix}-y\\
+x\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{Rot}90\left(\mbox{Rot}90\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\right)=\mbox{Rot}90\begin{pmatrix}-x_{2}\\
+x_{1}\end{pmatrix}=\begin{pmatrix}-x_{1}\\
+-x_{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להראה כי 
+\begin_inset Formula $\mbox{Rot}90=\mbox{Rot}180$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{Rot}\left(-\varphi\right)\left(\mbox{Rot}\varphi\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\right) & = & \mbox{Rot}\left(-\varphi\right)\left(\begin{pmatrix}C & -S\\
+S & C\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\right)\\
+ & = & \mbox{Rot}\left(-\varphi\right)\begin{pmatrix}Cx_{1}-Sx_{2}\\
+Sx_{1}+Cx_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}C & S\\
+-S & C\end{pmatrix}\begin{pmatrix}Cx_{1}-Sx_{2}\\
+Sx_{1}+Cx_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}C\left(Cx_{1}-Sx_{2}\right)+S\left(Sx_{1}+Cx_{2}\right)\\
+-S\left(Cx_{1}-Sx_{2}\right)+S\left(Sx_{1}+Cx_{2}\right)\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מכפלה פנימית)מכפלה סקלרית(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\langle \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix},\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\right\rangle =\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\cdot\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}=x_{1}y_{1}+x_{2}y_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדכו כי האופרטור 
+\begin_inset Formula $A=\mbox{Rot}\varphi$
+\end_inset
+
+ ישמור על המכפלה הסקלרית של שני וקטורים 
+\begin_inset Formula $\vec{x},\vec{y}\in\mathbb{R}^{2}$
+\end_inset
+
+ כלומר צ"ל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\langle A\left(x\right),A\left(y\right)\right\rangle  & = & A\left(\left\langle \vec{x},\vec{y}\right\rangle \right)\\
+\left\langle \begin{pmatrix}Cx_{1}-Sx_{2}\\
+Sx_{1}+Cx_{2}\end{pmatrix},\begin{pmatrix}Cy_{1}-Sy_{2}\\
+Sy_{1}+Cy_{2}\end{pmatrix}\right\rangle  & =\\
+\left(Cx_{1}-Sx_{2}\right)\left(Cy_{1}-Sy_{2}\right)+\left(Sx_{1}+Cx_{2}\right)\left(Sy_{1}+Cy_{2}\right) & =\\
+C^{2}x_{1}y_{1}-CSx_{1}y_{2}-CSx_{2}y_{2}+S^{2}x_{2}y_{2}+S^{2}x_{1}y_{1}+CSx_{1}y_{2}+CSx_{2}y_{1}+C^{2}x_{2}y_{2} & =\\
+x_{1}y_{1}+x_{2}y_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $A$
+\end_inset
+
+ מ 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ ל 
+\begin_inset Formula $\mathbb{R}^{m}$
+\end_inset
+
+ תיקרא אופרטור ליניארי אם לכל 
+\begin_inset Formula $\vec{x},\vec{y}\in\mathbb{R}^{n}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x}+\vec{y}\right) & = & A\vec{x}+A\vec{y}\\
+A\left(a\vec{x}\right) & = & aA\left(\vec{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A:\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ אופרטור ליניארי אז 
+\begin_inset Formula $A\cdot\vec{0}=\vec{0}$
+\end_inset
+
+.
+ הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\vec{0}=A\left(0\cdot\vec{x}\right)=0\cdot A\vec{x}=\vec{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $a,b,c,d\in\mathbb{R}$
+\end_inset
+
+ אז הפונקציה הבאה היא אפרטור ליניארי: 
+\begin_inset Formula $A:\mathbb{R}^{2}\to\mathbb{R}^{2}$
+\end_inset
+
+ 
+\begin_inset Formula $A\begin{pmatrix}x\\
+y\end{pmatrix}=\begin{pmatrix}ax+by\\
+cx+dy\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\begin{pmatrix}x\\
+y\end{pmatrix}+\begin{pmatrix}w\\
+z\end{pmatrix}\right) & = & A\begin{pmatrix}x\\
+y\end{pmatrix}+A\begin{pmatrix}w\\
+z\end{pmatrix}\\
+A\begin{pmatrix}x+w\\
+y+z\end{pmatrix} & = & \begin{pmatrix}ax+by\\
+cx+dy\end{pmatrix}+\begin{pmatrix}aw+bz\\
+cw+dz\end{pmatrix}\\
+\begin{pmatrix}a\left(x+w\right)+b\left(y+z\right)\\
+c\left(x+w\right)+d\left(y+z\right)\end{pmatrix} & = & \begin{pmatrix}ax+aw+by+bz\\
+cx+cw+dy+dz\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(t\begin{pmatrix}x\\
+y\end{pmatrix}\right) & = & tA\begin{pmatrix}x\\
+y\end{pmatrix}\\
+A\begin{pmatrix}xt\\
+yt\end{pmatrix} & = & t\begin{pmatrix}ax+by\\
+cx+dy\end{pmatrix}\\
+\begin{pmatrix}axt+byt\\
+cxt+dyt\end{pmatrix} & = & \begin{pmatrix}axt+byt\\
+cxt+dyt\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $A:\mathbb{R}^{2}\to\mathbb{R}^{2}$
+\end_inset
+
+ הוא אופרטור ליניארי אז קיים 
+\begin_inset Formula $a,b,c,d\in\mathbb{R}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\begin{pmatrix}x\\
+y\end{pmatrix}\in\mathbb{R}^{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\begin{pmatrix}x\\
+y\end{pmatrix}=\begin{pmatrix}ax+by\\
+cx+dy\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\begin{pmatrix}1\\
+0\end{pmatrix} & = & \begin{pmatrix}a\\
+c\end{pmatrix}\\
+A\begin{pmatrix}0\\
+1\end{pmatrix} & = & \begin{pmatrix}b\\
+d\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\begin{pmatrix}x\\
+y\end{pmatrix}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A\begin{pmatrix}x\\
+y\end{pmatrix}=A\left(x\begin{pmatrix}1\\
+0\end{pmatrix}+y\begin{pmatrix}0\\
+1\end{pmatrix}\right)=xA\begin{pmatrix}1\\
+0\end{pmatrix}+yA\begin{pmatrix}0\\
+1\end{pmatrix}=x\begin{pmatrix}a\\
+c\end{pmatrix}+y\begin{pmatrix}b\\
+d\end{pmatrix}=\begin{pmatrix}ax+by\\
+cx+dy\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

@@ -271,6 +271,12 @@
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}\left(t\right) & = & r_{0}+\vec{v_{0}}t+\frac{1}{2}\vec{a}t^{2}\\
+\\\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 
