@@ -1538,7 +1538,7 @@
 \end_inset
 
  כלומר 
-\begin_inset Formula $x\in A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\Delta A_{2k}\Delta A_{2k+1}$
+\begin_inset Formula $x\in A_{1}\Delta\dots\Delta A_{2k-1}\Delta A_{2k}\Delta A_{2k+1}$
 \end_inset
 
 : לפי 
@@ -1546,7 +1546,7 @@
 \end_inset
 
  אפשר לכתוב את זה בצורה הבאה 
-\begin_inset Formula $x\in\left(\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)\Delta A_{2k+1}$
+\begin_inset Formula $x\in\left(\left(A_{1}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)\Delta A_{2k+1}$
 \end_inset
 
  לפי הנחת האינדוקציה 
@@ -1567,7 +1567,7 @@
 \noun off
 \color none
 
-\begin_inset Formula $x\notin\left(\left(A_{1}\Delta A_{2}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)$
+\begin_inset Formula $x\notin\left(\left(A_{1}\Delta\dots\Delta A_{2k-1}\right)\Delta A_{2k}\right)$
 \end_inset
 
  ויודעים כי 
@@ -1661,7 +1661,31 @@
 
 \end_deeper
 \end_deeper
-\begin_layout Enumerate
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+צ"ל כי
 \begin_inset Formula $\left|A\cup B\cup C\right|=\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\left|A\cap B\cap C\right|$
 \end_inset
 
@@ -1681,7 +1705,6 @@
 
 \end_layout
 
-\begin_deeper
 \begin_layout Standard
 עכשיו נשתמש בזה כדי לחשב 
 \begin_inset Formula $\left|A\cup B\cup C\right|$
@@ -1690,7 +1713,6 @@
 :
 \end_layout
 
-\end_deeper
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 \left|A\cup B\cup C\right| & = & \left|A\cup B\right|+\left|C\right|-\left|\left(A\cup B\right)\cap C\right|\\
