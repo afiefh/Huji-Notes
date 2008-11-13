@@ -1,0 +1,355 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{n}a^{i}=\frac{a^{n+1}-1}{a-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a^{0} & = & \frac{a^{1}-1}{a-1}\\
+1 & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי לכל מספר 
+\begin_inset Formula $a\neq0,1$
+\end_inset
+
+ הנחת האינדוקציה מתקיימת עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{k}a^{i} & = & \frac{a^{k+1}-1}{a-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי זה מתקיים עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{k+1}a^{i} & = & \frac{a^{k+2}-1}{a-1}\\
+\sum_{i=0}^{k}a^{i}+a^{k+1} & = & \frac{a^{k+2}-1}{a-1}\\
+\frac{a^{k+1}-1}{a-1}+a^{k+1} & = & \frac{a^{k+2}-1}{a-1}\\
+\frac{a^{k+1}-a}{a-1}+\frac{a^{k+1}\left(a-1\right)}{a-1} & = & \frac{a^{k+2}-1}{a-1}\\
+\frac{a^{k+1}-a+a^{k+2}-a^{k+1}}{a-1} & = & \frac{a^{k+2}-1}{a-1}\\
+\frac{a^{k+1}-a}{a-1} & = & \frac{a^{k+2}-a}{a-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1 & = & \frac{1\cdot\left(1+1\right)}{2}\\
+ & = & \frac{1}{1}=1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה מתקיימת עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{k}i=\frac{k\left(k+1\right)}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי הטענה נכונה גם עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{k+1}i & = & \frac{\left(k+1\right)\left(k+2\right)}{2}\\
+\sum_{i=0}^{k}i+\left(k+1\right) & = & \frac{k^{2}+2k+k+2}{2}\\
+\frac{k\left(k+1\right)}{2}+\left(k+1\right) & = & \frac{k^{2}+k}{2}+k+1\\
+\frac{k^{2}+k}{2}+k+1 & = & \frac{k^{2}+k}{2}+k+1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{n}i^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים הטענה עהור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=1}^{1}i^{2} & = & \frac{1\cdot\left(1+1\right)\cdot\left(2\cdot1+1\right)}{6}\\
+1^{2} & = & \frac{1\cdot2\cdot3}{6}\\
+1 & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה נכונה עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{k}i^{2}=\frac{k\left(k+1\right)\left(2k+1\right)}{6}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים הטענה עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{k+1}i^{2} & = & \frac{\left(k+1\right)\left(k+2\right)\left(2k+3\right)}{6}\\
+\sum_{i=0}^{k}i^{2}+\left(k+1\right)^{2} & = & \frac{\left(k+1\right)\left(k+2\right)\left(2k+3\right)}{6}\\
+\frac{k\left(k+1\right)\left(2k+1\right)}{6}+\left(k+1\right)^{2} & = & \frac{\left(k^{2}+3k+2\right)\left(2k+3\right)}{6}\\
+\frac{\left(k^{2}+k\right)\left(2k+1\right)}{6}+k^{2}+2k+1 & = & \frac{\left(2k^{3}+6k^{2}+4k+3k^{2}+9k+6\right)}{6}\\
+\frac{2k^{3}+k^{2}+2k^{2}+k}{6}+k^{2}+2k+1 & = & \frac{\left(2k^{3}+6k^{2}+4k+3k^{2}+9k+6\right)}{6}\\
+\frac{2k^{3}+k^{2}+2k^{2}+k+6k^{2}+12k+6}{6} & = & \frac{\left(2k^{3}+9k^{2}+13k+6\right)}{6}\\
+\frac{2k^{3}+9k^{2}+13k+6}{6} & = & \frac{2k^{3}+9k^{2}+13k+6}{6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=1}^{n}\left(2i-1\right) & = & n^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=1}^{1}\left(2i-1\right) & = & 1^{2}\\
+2\cdot1-1 & = & 1\\
+1 & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה נכונה עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=1}^{k}\left(2i-1\right) & = & k^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים הטענה עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=1}^{k+1}\left(2i-1\right) & = & \left(k+1\right)^{2}\\
+\sum_{i=1}^{k}\left(2i-1\right)+\left(2\cdot\left(k+1\right)-1\right) & = & \left(k+1\right)^{2}\\
+k^{2}+2k+2-1 & = & k^{2}+2k+1\\
+k^{2}+2k+1 & = & k^{2}+2k+1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1192,7 +1192,7 @@ status open
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 m\vec{a} & = & \vec{F}\\
-m\frac{\partial^{2}}{\partial t^{2}}\vec{F}\left(t\right) & = & \vec{F}_{0}+\vec{f}=f_{ef}\\
+m\frac{\partial^{2}}{\partial t^{2}}\vec{F}\left(t\right) & = & \vec{F}+\vec{f}=f_{ef}\\
 m\left[\left(\frac{\partial^{2}}{\partial t^{2}}x\left(t\right)\right)\hat{x}+\left(\frac{\partial^{2}}{\partial t^{2}}y\left(t\right)\right)\hat{y}\right] & = & \left(F_{0}\sin\alpha-f\right)\hat{x}+\left(N-F_{0}\cos\alpha\right)\hat{y}\\
 m\ddot{x}\left(t\right) & = & F_{0}\sin\alpha-f\end{eqnarray*}
 
@@ -1370,6 +1370,350 @@ m\frac{\partial}{\partial t^{2}}x\left(t\right)=F_{0}-cv\]
 \begin_layout Standard
 \begin_inset Formula \[
 \frac{\partial}{\partial t}v+\frac{c}{m}v=\frac{1}{m}F\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+תאוצה 
+\begin_inset Formula $a=\frac{a_{0}}{\left(\alpha t+1\right)^{2}}$
+\end_inset
+
+, מה הוא 
+\begin_inset Formula $X$
+\end_inset
+
+ אם יודעים כי 
+\begin_inset Formula $x\left(T\right)=X$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(t\right) & = & \int a\left(t\right)\partial t\\
+ & = & \int\frac{a_{0}}{\left(\alpha t+1\right)^{2}}\partial t\\
+ & = & a_{0}\int\frac{1}{\left(\alpha t+1\right)^{2}}\partial t\\
+ & = & a_{0}\frac{1}{\alpha}\left(\frac{1}{\alpha t+1}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(0\right) & = & v_{0}\\
+c & = & v_{0}-\frac{a_{0}}{\alpha^{2}\cdot0+\alpha}\\
+ & = & v_{0}-\frac{a_{0}}{\alpha}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \int_{0}^{t}v\left(t\right)\partial t\\
+ & = & \int_{0}^{t}\left(\frac{a_{0}}{\alpha^{2}t+\alpha}+v_{0}-\frac{a_{0}}{\alpha}\right)\partial t\\
+ & = & \int_{0}^{t}\frac{a_{0}}{\alpha^{2}t+\alpha}\partial t-\int_{0}^{T}\left(v_{0}-\frac{a_{0}}{\alpha}\right)\partial t\\
+ & = & \frac{a_{0}}{\alpha^{2}}\ln\left(\alpha^{2}t+\alpha\right)-\left(v_{0}-\frac{a_{0}}{\alpha}\right)t+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(T\right) & = & X\\
+\frac{a_{0}}{\alpha^{2}}\ln\left(\alpha^{2}T+\alpha\right)-\left(v_{0}-\frac{a_{0}}{\alpha}\right)T+c & = & X\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}v\left(t\right) & = & -\frac{c}{m}v+\frac{F_{0}}{m}\\
+\frac{\partial v}{\left(\frac{f_{0}}{m}-\frac{c}{m}v\right)} & = & \partial t\\
+\int\frac{\partial v}{\left(\frac{f_{0}}{m}-\frac{c}{m}v\right)} & = & \int\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת פונקציה שחוזרת על עצמה עם סימן מינוס, פונקציה כזו היא 
+\begin_inset Formula $e^{-x}$
+\end_inset
+
+ אז מנסים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(t\right) & = & Ae^{-\alpha t}+B\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}v\left(t\right) & = & -\frac{c}{m}v+\frac{F_{0}}{m}\\
+\frac{\partial}{\partial t}v\left(t\right)+\frac{c}{m}v & = & \frac{F_{0}}{m}\\
+-\alpha Ae^{-\alpha t}+\frac{c}{m}Ae^{-\alpha t}+\underbrace{\frac{c}{m}B}_{\mbox{constant}} & = & \underbrace{\frac{1}{m}F_{0}}_{\mbox{constant}}\\
+\\\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם שני הצדדים שווים אז החלק התלוי במשתנה צריך להתאפס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\alpha Ae^{-\alpha t}+\frac{c}{m}Ae^{-\alpha t} & = & 0\\
+\alpha Ae^{-\alpha t} & = & \frac{c}{m}Ae^{-\alpha t}\end{eqnarray*}
+
+\end_inset
+
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha & = & \frac{c}{m}\\
+B & = & \frac{1}{c}F_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתנאי ההתחלה 
+\begin_inset Formula $v\left(t=0\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+v\left(0\right) & = & A+B\\
+0 & = & A+B\\
+A & = & -B\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(t\right) & = & \frac{F_{0}}{c}\left(1-e^{-\frac{t}{\left(\frac{m}{c}\right)}}\right)\\
+\left[v\left(t\right)\right] & = & \frac{\left[F\right]}{\left(\frac{F}{v}\right)}\left[1-e^{-\frac{sec}{\left(\frac{\left[F\right]\left[v\right]}{\left[a\right]\left[F\right]}\right)}}\right]\\
+ & = & \left[v\right]\left[1-e^{\frac{sec}{\left(\frac{\left(m/sec\right)}{m/sec^{2}}\right)}}\right]\\
+ &  & \left[v\right]\left[\mbox{something without units}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מפילים שני כדורים בעלי אותה צפיפות בנוזל אז הכדור הגדול נופל יותר מהר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v=\frac{F_{0}}{c}=\frac{mg}{c}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c=k\eta\underbrace{D}_{\mbox{radius*2}}\]
+
+\end_inset
+
+ ויודעים כי בכדור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m=\rho\underbrace{\frac{4}{3}r^{3}}_{\mbox{volume}}=\rho\frac{4}{3}\left(\frac{1}{2}D\right)^{3}\]
+
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v=\frac{mg}{c}\propto\frac{D^{3}}{D}=D^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גרביטציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l6d1.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{G} & = & G\frac{m_{1}\cdot m_{2}}{\left|\vec{r}\right|^{2}}\\
+G & = & 6.67\cdot10^{-11}\frac{Nm^{2}}{kg^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם גוף נמצא על כדור הארץ אז:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l6d2.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{c}=G\cdot\frac{M_{E}}{R_{E}^{2}}\cdot m\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם גוף על מגדע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l6d3.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{g'}{g} & = & \frac{R_{E}^{2}}{\left(R_{E}+h\right)}\\
+ & = & \frac{\left(6.38\cdot10^{6}\right)^{2}}{\left(6.38\cdot10^{6}+0.01\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עם קפיץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l6d4.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & ma\\
+mg-k\Delta l & = & 0\\
+\Delta l & = & \frac{g}{k}m\\
+"w" & = & \alpha\Delta l\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם נכנסים למעלית עם תאוצה 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ למעלה)כיוון 
+\begin_inset Formula $x$
+\end_inset
+
+ החיובי למטה(?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & ma\\
+mg-k\Delta l & = & -ma_{0}\\
+\Delta l & = & \frac{1}{k}m\left(g+a_{0}\right)\\
+w & \propto & \Delta l\end{eqnarray*}
 
 \end_inset
 

@@ -2333,6 +2333,7 @@ paramotrisation
 \begin_layout Standard
 \begin_inset Graphics
 	filename appliedmath/l3d3.svg
+	lyxscale 30
 	width 50text%
 
 \end_inset
@@ -2833,6 +2834,16 @@ a\cos\theta & = & r\end{eqnarray*}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l4d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 משתמשים בקואורדינטות 
 \begin_inset Formula $\left(\rho,\theta,z\right)$
 \end_inset
@@ -3013,6 +3024,16 @@ z & = & bt\end{eqnarray*}
 \end_layout
 
 \begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l4d3.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 בכדור הארץ משתמשים בכו אורך וקו רוחב.
 \end_layout
 
@@ -3070,6 +3091,16 @@ r & = & \sqrt{x^{2}+y^{2}+z^{2}}\\
 \end_inset
 
  מקבלים חרוט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l4d2.svg
+	width 50text%
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

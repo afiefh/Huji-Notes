@@ -2226,5 +2226,147 @@ g\circ f\left(x\right)=x\end{matrix}$
 .
 \end_layout
 
+\begin_layout Section
+תרגול מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+משפט האינדוקציה: אם מוכיחים כי 
+\begin_inset Formula $R\left(1\right)$
+\end_inset
+
+ נכון וכי 
+\begin_inset Formula $R\left(n+1\right)$
+\end_inset
+
+ נכון אם 
+\begin_inset Formula $R\left(n\right)$
+\end_inset
+
+ נכון אז 
+\begin_inset Formula $R\left(n\right)$
+\end_inset
+
+ נכון.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(A\right)=\left\{ B|B\subseteq A\right\} $
+\end_inset
+
+)כלומר 
+\begin_inset Formula $B\in P\left(A\right)\Leftrightarrow B\subseteq A$
+\end_inset
+
+( תוכיח לכל 
+\begin_inset Formula $A$
+\end_inset
+
+ סופי כי 
+\begin_inset Formula $P\left(A\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $2^{\left|A\right|}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $R\left(n\right)$
+\end_inset
+
+ טענה: לכל קבומה 
+\begin_inset Formula $A$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|P\left(A\right)=2^{n}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח ש
+\begin_inset Formula $R\left(n\right)$
+\end_inset
+
+ נכון עבור 
+\begin_inset Formula $n=0\Rightarrow A=\emptyset$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P\left(\emptyset\right)=\left\{ \emptyset\right\} =\left\{ \left\{ \right\} \right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\checkmark\left|P\left(\emptyset\right)\right|=1=2^{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $R\left(n\right)$
+\end_inset
+
+ מתקיים ובודקים כי 
+\begin_inset Formula $R\left(n+1\right)$
+\end_inset
+
+ גם מתקיים:
+\end_layout
+
+\begin_layout Standard
+בוחרים 
+\begin_inset Formula $x\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\right) & = & \left\{ B\in P\left(A\right)|x\in B\right\} \dot{\bigcup}\left\{ B\in P\left(A\right)\mid x\notin B\right\} \\
+\left|P\left(A\right)\right| & = & \left|\left\{ B\in P\left(A\right)|x\in B\right\} \right|+\left|\left\{ B\in P\left(A\right)\mid x\notin B\right\} \right|\\
+ & = & 2^{n}+2^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|\left\{ B\in P\left(A\right)\mid x\notin B\right\} \right| & = & \left|\left(T\cup\left\{ x\right\} \right)\mid T\in P\left(A\setminus\left\{ x\right\} \right)\right|\\
+ & = & \left|P\left(A\setminus\left\{ x\right\} \right)\right|\\
+ & = & 2^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

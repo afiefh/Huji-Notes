@@ -2056,5 +2056,192 @@ cx+dy\end{pmatrix}$
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+מה זב מטריצה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x}\right) & = & \begin{pmatrix}a & b & c\\
+d & e & f\\
+g & h & i\end{pmatrix}\cdot\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}\\
+ & = & \begin{pmatrix}ax_{1}+bx_{2}+cx_{3}\\
+dx_{1}+ex_{2}+fx_{3}\\
+gx_{1}+hx_{2}+ix_{3}\end{pmatrix}\\
+ & = & x_{1}\cdot\begin{pmatrix}a\\
+d\\
+g\end{pmatrix}+x_{2}\begin{pmatrix}b\\
+e\\
+h\end{pmatrix}+x_{3}\begin{pmatrix}x_{3}\\
+x_{3}\\
+x_{3}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך להכניס מטריצה ל
+\lang english
+Matlab
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+a=[1, 2, 3; 4, 5, 6; 7, 8, 9]
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+b=[1, -1, 1]'
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+a*b=[2,5,8]
+\end_layout
+
+\begin_layout Standard
+כל סיבוב אפשר לתאר סיבוב דרך כפל מטריצות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1} & = & \begin{pmatrix}1 & 0 & 0\\
+0 & C & -S\\
+0 & D & C\end{pmatrix}\\
+r_{2} & = & \begin{pmatrix}C & 0 & S\\
+0 & 1 & 0\\
+-S & 0 & C\end{pmatrix}\\
+r_{3} & = & \begin{pmatrix}C & -S & 0\\
+S & C & 0\\
+0 & 0 & 1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימונים של מטריצות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\overbrace{\begin{pmatrix}a_{11} & a_{12} & \cdots & a_{1n}\\
+\vdots & \vdots & \ddots & \cdots\\
+a_{n1} & a_{n2} & \cdots & a_{nn}\end{pmatrix}}^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח מטריצה 
+\begin_inset Formula $\begin{pmatrix}a_{11} & a_{12} & \dots & a_{1n}\\
+\dots & \dots & \dots & \dots\\
+a_{i1} & a_{i2} & \dots & a_{in}\\
+\dots & \dots & \dots & \dots\end{pmatrix}$
+\end_inset
+
+ אם רוצים לכפול המטריצה הזו אנחנו צריכים מטריצה עם 
+\begin_inset Formula $n$
+\end_inset
+
+ שורות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}a_{11} & a_{12} & \dots & a_{1n}\\
+\dots & \dots & \dots & \dots\\
+a_{i1} & a_{i2} & \dots & a_{in}\\
+\dots & \dots & \dots & \dots\end{pmatrix}\cdot\begin{pmatrix}b_{1}\\
+b_{2}\\
+\vdots\\
+b_{n}\end{pmatrix} & = & \begin{pmatrix}a_{11}\cdot b_{1}+\dots+a_{1n}\cdot b_{n}\\
+a_{21}\cdot b_{1}+\dots+a_{2n}\cdot b_{n}\\
+\vdots\\
+a_{m1}\cdot b_{1}+\dots+a_{mn}\cdot b_{n}\end{pmatrix}\\
+ & = & \begin{pmatrix}a_{11}\\
+\vdots\\
+a_{m1}\end{pmatrix}\cdot b_{1}+\dots+\begin{pmatrix}a_{1n}\\
+\vdots\\
+a_{mn}\end{pmatrix}\cdot b_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטריצה כלשהיא 
+\begin_inset Formula $\left(m\times n\right)$
+\end_inset
+
+ מגדירה פעולה ליניארית על ווקטור של 
+\begin_inset Formula $m$
+\end_inset
+
+ עמודות.
+\end_layout
+
+\begin_layout Standard
+מרחב 
+\begin_inset Formula $\mathbb{R}^{n}=\left\{ \begin{pmatrix}a_{1}\\
+\vdots\\
+a_{n}\end{pmatrix}\mid a_{i}\in\mathbb{R}\right\} $
+\end_inset
+
+ אם ניקח 
+\begin_inset Formula $\vec{x},\vec{y}\in\mathbb{R}^{n}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\begin{pmatrix}a_{1}\\
+\vdots\\
+a_{n}\end{pmatrix}+\begin{pmatrix}b_{1}\\
+\vdots\\
+b_{n}\end{pmatrix}=\begin{pmatrix}a_{1}+b_{1}\\
+\vdots\\
+a_{n}+b_{n}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם מכפילים מטריצה בווקטור יחידה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}1 & 2 & 3 & 4\\
+5 & 6 & 7 & 8\\
+9 & 10 & 11 & 12\end{pmatrix}\cdot\begin{pmatrix}0\\
+1\\
+0\\
+0\end{pmatrix}=\begin{pmatrix}2\\
+6\\
+10\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

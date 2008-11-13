@@ -273,7 +273,127 @@
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 \vec{r}\left(t\right) & = & r_{0}+\vec{v_{0}}t+\frac{1}{2}\vec{a}t^{2}\\
-\\\end{eqnarray*}
+r_{0} & = & 0\\
+\vec{r}\left(t_{\mbox{end}}\right) & = & v_{0}t_{\mbox{end}}\cos\alpha\hat{x}+v_{0}t_{\mbox{end}}\sin\alpha\hat{y}-\frac{1}{2}10t^{2}\hat{y}\\
+8.13\hat{x}+0\hat{y} & = & v_{0}t_{\mbox{end}}\cos\alpha\hat{x}+v_{0}t_{\mbox{end}}\sin\alpha\hat{y}-\frac{1}{2}g_{\mbox{earth}}t^{2}\hat{y}\\
+\begin{pmatrix}8.13\\
+0\end{pmatrix} & = & \begin{pmatrix}v_{0}t_{\mbox{end}}\cos20^{\circ}\\
+v_{0}t_{\mbox{end}}\sin20^{\circ}-\frac{1}{2}10t^{2}\end{pmatrix}\\
+\begin{pmatrix}t_{\mbox{end}}\\
+5t_{\mbox{end}}^{2}\end{pmatrix} & = & \begin{pmatrix}\frac{8.13}{v_{0}\cos20^{\circ}}\\
+v_{0}t_{\mbox{end}}\sin20^{\circ}\end{pmatrix}\\
+5\left(\frac{8.13}{v_{0}\cos20^{\circ}}\right)^{2} & = & v_{0}\frac{8.13}{v_{0}\cos20^{\circ}}\sin20^{\circ}\\
+\frac{5\cdot8.13^{2}}{v_{0}^{2}\cos^{2}20^{\circ}} & = & 8.13\tan20^{\circ}\\
+\frac{5\cdot8.13}{v_{0}^{2}\cos^{2}20^{\circ}} & = & \tan20^{\circ}\\
+\frac{40.65}{\tan20^{\circ}\cos^{2}20^{\circ}} & = & v_{0}^{2}\\
+v_{0} & = & \sqrt{\frac{40.65}{\sin20^{\circ}\cos20^{\circ}}}\\
+v_{0} & = & 11.246\left[\frac{m}{sec}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\hat{x}+0\hat{y} & = & v_{0}t_{\mbox{end}}\cos\alpha\hat{x}+v_{0}t_{\mbox{end}}\sin\alpha\hat{y}-\frac{1}{2}g_{\mbox{Moon}}t^{2}\hat{y}\\
+\begin{pmatrix}x\\
+0\end{pmatrix} & = & \begin{pmatrix}v_{0}t_{\mbox{end}}\cos20^{\circ}\\
+v_{0}t_{\mbox{end}}\sin20^{\circ}-\frac{1}{2}g_{\mbox{Moon}}t_{\mbox{end}}^{2}\end{pmatrix}\\
+\begin{pmatrix}x\\
+0\end{pmatrix} & = & \begin{pmatrix}v_{0}t_{\mbox{end}}\cos20^{\circ}\\
+v_{0}\sin20^{\circ}-\frac{1}{2}g_{\mbox{Moon}}t_{\mbox{end}}\end{pmatrix}\\
+\begin{pmatrix}x\\
+t_{\mbox{end}}\end{pmatrix} & = & \begin{pmatrix}v_{0}t_{\mbox{end}}\cos20^{\circ}\\
+\frac{v_{0}\sin20^{\circ}}{\frac{1}{2}g_{\mbox{Moon}}}\end{pmatrix}\\
+\begin{pmatrix}x\\
+t_{\mbox{end}}\end{pmatrix} & = & \begin{pmatrix}v_{0}t_{\mbox{end}}\cos20^{\circ}\\
+\frac{2\cdot11.246\cdot\sin20^{\circ}}{1.6}\end{pmatrix}\\
+x & = & 11.246\cdot4.807\cos20^{\circ}\\
+x & = & 50.8\left[m\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & x_{0}+v_{0}t+\frac{1}{2}at^{2}\\
+30*1000 & = & 0+0\cdot t_{\mbox{bet shemesh}}+\frac{1}{2}\cdot0.05\cdot t_{\mbox{bet shemesh}}^{2}\\
+30000 & = & 0.025t_{\mbox{bet shemesh}}^{2}\\
+1.2\cdot10^{6} & = & t^{2}\\
+t & = & 1095\left[sec\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+הרכבת מגיעה לבית שמש בשעה 
+\begin_inset Formula $8:00:00+1095\left[sec\right]=8:18:15$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(t\right) & = & v_{0}+at\\
+v\left(1095\right) & = & 0+0.05\cdot1095\\
+v\left(1095\right) & = & 15\left[\frac{m}{sec}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+v\left(t\right) & = & v_{0}+at\\
+0 & = & 15+at\\
+-\frac{15}{a} & = & t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & v_{0}t+\frac{1}{2}at^{2}\\
+20000 & = & 15t+\frac{1}{2}at^{2}\\
+20000 & = & 15\cdot\frac{-15}{a}+\frac{1}{2}a\left(\frac{-15}{a}\right)^{2}\\
+20000 & = & -\frac{225}{a}+\frac{225}{2a}\\
+20000a & = & -225+\frac{225}{2}\\
+a & = & -0.005625\end{eqnarray*}
 
 \end_inset
 
