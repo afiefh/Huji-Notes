@@ -2368,5 +2368,827 @@ P\left(A\right) & = & \left\{ B\in P\left(A\right)|x\in B\right\} \dot{\bigcup}\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+דיברנו על יחסי שקילות ומה שקשור להם.
+ יחסי שקילות 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+מחלקות שקילות.
+ ודיברנו על פונקציות הפיכות.
+\end_layout
+
+\begin_layout Standard
+הגדרה: ץהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ תיקרא קבוצה סופית אם היא מכילה מספר סופי של איברים.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ תיקרא אינסופית אם היא איננה סופית.
+\end_layout
+
+\begin_layout Standard
+סימון: העוצמה של 
+\begin_inset Formula $A$
+\end_inset
+
+ מסמנים 
+\begin_inset Formula $\left|A\right|$
+\end_inset
+
+ הוא מספר האיברים ב
+\begin_inset Formula $A$
+\end_inset
+
+)אם יש אינסוף איברים אזי 
+\begin_inset Formula $\inf$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+קבוצה אינסופית 
+\begin_inset Formula $A$
+\end_inset
+
+ תיקרא בת מניה)
+\lang english
+Countable
+\lang hebrew
+( אם קיימת העתקה חד-חד ערכית ועל 
+\begin_inset Formula $f:\mathbb{N}\to A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+קבוצת השלמים 
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+שזה 
+\begin_inset Formula $\mathbb{Z}=\left(\mathbb{N}\right)\cup\left(-\mathbb{N}\right)$
+\end_inset
+
+ היא בת מנייה.
+\end_layout
+
+\begin_layout Standard
+ההעתקה היא 
+\begin_inset Formula \[
+f\left(x\right)=\begin{cases}
+\mbox{Even} & \frac{x}{2}\\
+\mbox{Odd} & -\frac{x+1}{2}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+יחסי סדר
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה יחס 
+\begin_inset Formula $\Re\in A\times A$
+\end_inset
+
+ הוא נקרא יחס סדר חלקי אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Re$
+\end_inset
+
+רפלקסיבי)
+\begin_inset Formula $\forall a$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(a,a\right)\in\Re$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Re$
+\end_inset
+
+ אנטי סמטרי)לכל 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(y,x\right)\notin\Re$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Re$
+\end_inset
+
+ הוא טרנזיטיבי)לכל 
+\begin_inset Formula $x,y,z\in A$
+\end_inset
+
+ אם 
+\begin_inset Formula $\left(x,y\right)\in\Re$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(y,z\right)\in\Re$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(x,z\right)\in\Re$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection
+דוגמאות ליחסי סדר חלקיים
+\end_layout
+
+\begin_layout Standard
+נגדיר יחס סדר על קבוצה 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $x,y\in\mathbb{N}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x,y\in\Re$
+\end_inset
+
+ אם 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+ זה רפלקסיבי כי 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+.
+ אנטי סימטרי כי אם 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ אזי 
+\begin_inset Formula $y\not\leq x$
+\end_inset
+
+.
+ ורפלקסיבי כי אם 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+ ו
+\begin_inset Formula $y\leq z$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\leq z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יחס סדר נקרא קוי או ליניארי אם לכל 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\left(x,y\right)\in R\mbox{ OR }\left(y,x\right)\in R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגדרה: יחס סדר נקרא יחס סדר טוב אם לכל 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ קיים איבר מינימלי.
+ כלומר 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ קיים 
+\begin_inset Formula $b_{m}\in B$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $\left(b_{m},b\right)\in\Re$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה ויהי 
+\begin_inset Formula $\Re$
+\end_inset
+
+ יחס סדר חלקי על 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ אז שרשרת 
+\begin_inset Formula $c$
+\end_inset
+
+ ב 
+\begin_inset Formula $A$
+\end_inset
+
+ היא תתקבוצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ המקיימת: 
+\begin_inset Formula \[
+\forall x,y\in c\,\left(x,y\right)\in\Re\vee\left(y,x\right)\in\Re\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: אנטי שרשרת: תהי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה 
+\begin_inset Formula $\Re$
+\end_inset
+
+ יחס סדר חלקי על 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ אנטי שרשרת 
+\begin_inset Formula $Ac$
+\end_inset
+
+ על 
+\begin_inset Formula $A$
+\end_inset
+
+ היא תתקבוצה של 
+\begin_inset Formula $A$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\forall x,y\in Ac\,\left(x,y\right)\in\Re\Rightarrow x=y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שרשרת זה פירושו כי כל שני איברים ניתנים להשוואה.
+ אנטי שרשרת זה כי אף זוג לא ניתן להשוואה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Section
+אינדוקציה
+\end_layout
+
+\begin_layout Standard
+אקסיומת האינדוקציה: לכל תת קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ לא ריקה של הטבעיים קיים איבר מינימאלי.
+\end_layout
+
+\begin_layout Standard
+עיקרון האינדוקציה: נניח כי הטענה הכטנה עבור 
+\begin_inset Formula $n_{0}\in\mathbb{N}$
+\end_inset
+
+ ונניח כי לכל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ הטענה נכונה ל 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי הטענה נכונה עבור כל 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחת עיקרון האינדוקציה: 
+\begin_inset Formula $B=\left\{ n\in\mathbb{N}\mid n\geq n_{0}\right\} $
+\end_inset
+
+ הטעהנ איננה נכונה ל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אם הטענה איננה נכונה לכל 
+\begin_inset Formula $n\geq n_{0}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $B\neq\emptyset$
+\end_inset
+
+.
+ לפי אקסיומת האינדוקציה ישנו איבר מינימאלי 
+\begin_inset Formula $b_{0}\in B$
+\end_inset
+
+ מכאן הטענה איננה נכונה לכל 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ אך היא נכונה לכל 
+\begin_inset Formula $n_{0}\leq n\leq b_{0}$
+\end_inset
+
+.
+ אזי יש שתי מקרים:
+\end_layout
+
+\begin_layout Enumerate
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+: 
+\begin_inset Formula $b_{0}=n_{0}$
+\end_inset
+
+ הטענה נכונה ל
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ אזי זאת סתירה.
+\end_layout
+
+\begin_layout Enumerate
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\begin_inset Formula $b_{0}>n_{0}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ היא הטבעי הקטן ביותר הקטן או שווה ל
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ שעבורו הטענה איננה נכונה.
+ 
+\begin_inset Formula $n_{0}\leq b_{0}-1$
+\end_inset
+
+ לכן הטענה נכונה עבור 
+\begin_inset Formula $n\leq b_{0}-1$
+\end_inset
+
+.
+ היות הטענה נכונה עבור 
+\begin_inset Formula $b_{0}-1$
+\end_inset
+
+ אז היא נכונה עבור 
+\begin_inset Formula $b_{0}$
+\end_inset
+
+ בסתירה.
+\end_layout
+
+\begin_layout Standard
+דוגמה: תוכיח שיש אינסוף מספרים ראשוניים.
+ כלומר לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים ראשוניים.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ יש 
+\begin_inset Formula $p_{1}=2$
+\end_inset
+
+ שהוא מספר ראשוני.
+\end_layout
+
+\begin_layout Enumerate
+נשתמש בעיקרון האינדוקציה כי הטענה נכונה ל
+\begin_inset Formula $n-1$
+\end_inset
+
+ ונוכיח ל
+\begin_inset Formula $n$
+\end_inset
+
+.
+ כלומר קיימים ראשומיים שונים 
+\begin_inset Formula $p_{1}\dots p_{n-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מראים כי יש ראשון נוסף 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+: 
+\begin_inset Formula $m=p_{1}p_{2}\cdots p_{n-1}+1$
+\end_inset
+
+.
+ אם נחלק את 
+\begin_inset Formula $m$
+\end_inset
+
+ ב 
+\begin_inset Formula $p_{i}$
+\end_inset
+
+ מקבלים שארית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ אזי אם נפרק אותו לגורמים ראשוניים כל הגורמים שיופיעו אינם 
+\begin_inset Formula $p_{1},p_{2}\dots p_{n-1}$
+\end_inset
+
+ אזי צריך להיות 
+\begin_inset Formula $p_{n}$
+\end_inset
+
+ שמופיע בפירוק של 
+\begin_inset Formula $n$
+\end_inset
+
+ לראשוניים.
+ והוא ראשוני.
+ לכן הטענה נכונה ל
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+הגדרה ריקורסיבית של קבוצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \left\{ 1,2,3\right\} \\
+B & = & \left\{ n\in\mathbb{N}\mid\frac{2}{n}\in\mathbb{N}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נגדיר תת-קבוצה)של קבוצה שרוצים להגדיר(.
+\end_layout
+
+\begin_layout Enumerate
+מגדירים איברים נוספים בקבוצה באמצעות איברים שכבר נמצאים בקבוצה.
+\end_layout
+
+\begin_layout Standard
+דוגמה: מגדירים ריקורסיבית המספרים הזוגיים: 
+\begin_inset Formula $0\in E$
+\end_inset
+
+ אם 
+\begin_inset Formula $n\in N$
+\end_inset
+
+ אז 
+\begin_inset Formula $n-2\in E$
+\end_inset
+
+ וגם 
+\begin_inset Formula $n+2\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: קבוצת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Ulam
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $1\in U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in U\Rightarrow2x\in U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in U$
+\end_inset
+
+ אם 
+\begin_inset Formula $x=1\pmod3$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{x-1}{3}\in U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת מסיגה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f:\mathbb{N}\to A\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונים ערכים 
+\begin_inset Formula $f\left(1\right)\dots f\left(k\right)$
+\end_inset
+
+ ונוסחה המאפשרת לחשב את 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ באמצעות: 
+\begin_inset Formula $f\left(n-1\right)\dots f\left(n-k\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $f\left(n\right)=3^{n}$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(1\right)=3$
+\end_inset
+
+ אז כלל הנסיקה הוא 
+\begin_inset Formula $f\left(n\right)=3\cdot f\left(n-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם לעשאת את זה לזוג: 
+\begin_inset Formula $f:\mathbb{N}\times\mathbb{N}\to A$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(1,1\right)=0$
+\end_inset
+
+ וכי 
+\begin_inset Formula $f\left(n,m\right)=f\left(n-1,m\right)+2$
+\end_inset
+
+ ו-
+\begin_inset Formula $f\left(n,m\right)=f\left(n,m-1\right)+3$
+\end_inset
+
+)אין סתירה כי כל הדרכים אל 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+( אז מה הוא 
+\begin_inset Formula $f\left(n,m\right)$
+\end_inset
+
+? 
+\begin_inset Formula $f\left(n,m\right)=\left(n-1\right)\cdot2+\left(m-1\right)\cdot3-5=2n+3m-5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קומבינטוריקה
+\end_layout
+
+\begin_layout Standard
+נדון בפרק זה ב:
+\end_layout
+
+\begin_layout Enumerate
+בעיות מנייה
+\end_layout
+
+\begin_layout Enumerate
+בעיות קיצון
+\end_layout
+
+\begin_layout Enumerate
+בניות קומבינטוריות
+\end_layout
+
+\begin_layout Enumerate
+אופטימיזציה קומבינטורית
+\end_layout
+
+\begin_layout Enumerate
+בעיות הכרעה
+\end_layout
+
+\begin_layout Standard
+נתחיל בבעיות מנייה.
+\end_layout
+
+\begin_layout Standard
+תהיינה 
+\begin_inset Formula $A,B$
+\end_inset
+
+ קבוצות סופיות וזרות אזי 
+\begin_inset Formula $\left|A\cup B\right|=\left|A\right|+\left|B\right|$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

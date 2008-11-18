@@ -34,6 +34,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -154,7 +155,7 @@ a^{0} & = & \frac{a^{1}-1}{a-1}\\
 2
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 \begin_inset Formula \[
 \sum_{i=1}^{n}i=\frac{n\left(n+1\right)}{2}\]
 
@@ -163,6 +164,7 @@ a^{0} & = & \frac{a^{1}-1}{a-1}\\
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 בודקים עבור 
 \begin_inset Formula $n=1$
@@ -218,7 +220,8 @@ a^{0} & = & \frac{a^{1}-1}{a-1}\\
 
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
 \begin_inset Formula \[
 \sum_{i=0}^{n}i^{2}=\frac{n\left(n+1\right)\left(2n+1\right)}{6}\]
 
@@ -227,6 +230,7 @@ a^{0} & = & \frac{a^{1}-1}{a-1}\\
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 בודקים הטענה עהור 
 \begin_inset Formula $n=1$
@@ -286,7 +290,8 @@ a^{0} & = & \frac{a^{1}-1}{a-1}\\
 
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
 \sum_{i=1}^{n}\left(2i-1\right) & = & n^{2}\end{eqnarray*}
 
@@ -295,6 +300,7 @@ a^{0} & = & \frac{a^{1}-1}{a-1}\\
 
 \end_layout
 
+\begin_deeper
 \begin_layout Standard
 בודקים עבור 
 \begin_inset Formula $n=1$
@@ -349,6 +355,379 @@ k^{2}+2k+1 & = & k^{2}+2k+1\end{eqnarray*}
 \end_inset
 
 
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+9\mid4^{4n}-3n-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+9 & \mid & 4^{4n}-3n-1\\
+9 & \mid & 4^{4}-3-1\\
+9 & \mid & 256-4\\
+9 & \mid & 252\\
+\frac{252}{9} & = & 28\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה מתקיימת עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9\mid4^{4k}-3k-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי הטענה מתקיימת עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+9 & \mid & 4^{4\left(k+1\right)}-3\left(k+1\right)-1\\
+9 & \mid & 4\cdot4^{4k}-3k-3-1\\
+9 & \mid & \underbrace{4^{4k}-3k-1}_{\mbox{divides}}+\left(3\cdot4^{4k}-3\right)\\
+9 & \mid & 3\cdot\left(4^{4k}-1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים באינדוקציה כי 
+\begin_inset Formula $9\mid3\cdot\left(4^{4k}-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $k=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+9 & \mid & 3\cdot\left(4^{4\cdot1}-1\right)\\
+9 & \mid & 765\\
+\frac{765}{9} & = & 85\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה מתקיימת עבור 
+\begin_inset Formula $k=t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9\mid3\cdot\left(4^{4k}-1\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי הטענה נכונה עבור 
+\begin_inset Formula $k=t+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+9 & \mid & 3\cdot\left(4^{4\left(t+1\right)}-1\right)\\
+ &  & 3\cdot\left(4^{4}\cdot4^{t}-1\right)\\
+ &  & 3\cdot\left(\left[255+1\right]\cdot4^{t}-1\right)\\
+ &  & 3\cdot\left(255\cdot4^{t}+4^{t}-1\right)\\
+ &  & 3\cdot255\cdot4^{t}+3\cdot4^{t}-3\\
+ &  & 9\cdot85\cdot4^{t}+\underbrace{3\cdot\left(4^{t}-3\right)}_{\begin{matrix}\mbox{divides according}\\
+\mbox{to the induction}\end{matrix}}\\
+\frac{9\cdot85\cdot4^{t}}{9} & = & 85\cdot4^{t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+7 & \mid & 5\cdot3^{4n+1}-2^{2n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+7 & \mid & 5\cdot3^{5}-2^{2}\\
+7 & \mid & 1211\\
+\frac{1211}{9} & = & 173\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה נכונה עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+7 & \mid & 5\cdot3^{4k+1}-2^{2k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים הטענה עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+7 & \mid & 5\cdot3^{4\left(k+1\right)+1}-2^{2\left(k+1\right)}\\
+ &  & 5\cdot3^{4k+5}-2^{2k+2}\\
+ &  & 5\cdot3^{4}\cdot3^{4k+1}-4\cdot2^{k+1}\\
+ &  & 81\cdot5\cdot3^{4k+1}-4\cdot2^{k+1}\\
+ &  & 77\cdot5\cdot4^{4k+1}+\underbrace{4\left(5\cdot4^{4k+1}-2^{k+1}\right)}_{\begin{matrix}\mbox{divides according}\\
+\mbox{to the induction}\end{matrix}}\\
+\frac{77\cdot5\cdot4^{4k+1}}{7} & = & 11\cdot5\cdot4^{4k+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \[
+11\mid10^{2n}+2\cdot10^{n}+1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בודקים עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+11 & \mid & 10^{2}+2\cdot10^{2}+1\\
+11 & \mid & 121\\
+\frac{121}{11} & = & 11\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים כי הטענה מתקיימת עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+11\mid10^{2k}+2\cdot10^{k}+1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי הטענה מתקיימת עבור 
+\begin_inset Formula $n=k+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+11 & \mid & 10^{2k+4}+2\cdot10^{k+2}+1\\
+ &  & 10000\cdot10^{2k}+2\cdot100\cdot10^{k}+1\\
+ &  & \left(9999+1\right)10^{2k}+\left(99+1\right)\cdot2\cdot10^{k}+1\\
+ &  & 9999\cdot10^{2k}+99\cdot2\cdot10^{k}+\underbrace{10^{2k}+2\cdot10^{k}+1}_{\begin{matrix}\mbox{divides according}\\
+\mbox{to the induction}\end{matrix}}\\
+\frac{9999\cdot10^{2k}+99\cdot2\cdot10^{k}}{11} & = & 909\cdot10^{2k}+9\cdot2\cdot10^{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
 \end_layout
 
 \end_body

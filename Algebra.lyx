@@ -1434,7 +1434,7 @@ plot([0,x(1)],[0,x(2]);
 \begin_layout Standard
 
 \lang english
-axis([-3,3][-3,3];
+axis([-3,3,-3,3]);
 \end_layout
 
 \begin_layout Standard
@@ -1458,7 +1458,7 @@ plot([0,u(1)],[0,u(2]);
 \begin_layout Standard
 
 \lang english
-axis([-3,3][-3,3];
+axis([-3,3,-3,3]);
 \end_layout
 
 \begin_layout Section
@@ -2238,6 +2238,330 @@ a_{n}+b_{n}\end{pmatrix}$
 6\\
 10\end{pmatrix}\]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Standard
+כפל מטריצה בוקטור 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}a_{11} & \dots & a_{1m}\\
+\vdots & \ddots & \vdots\\
+a_{n1} & \dots & a_{nm}\end{pmatrix}\cdot\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{m}\end{pmatrix}=\sum_{i=0}^{n}\sum_{j=0}^{m}a_{ij}\cdot x_{j}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה של 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{R}^{n}=\left\{ \vec{x}=\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\end{pmatrix}\mid x_{i}\in\mathbb{R}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט: אם יש אופרטור ליניארי 
+\begin_inset Formula $A:\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\exists a_{\left(m\times n\right)}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A\left(\vec{x}\right)=a\cdot\vec{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט: אם יש מטריצה 
+\begin_inset Formula $a_{\left(m\times n\right)}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A:\mathbb{R}^{n}\to\mathbb{R}^{m}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A\left(\vec{x}\right)=a\cdot\vec{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{x}\right) & = & A\left(x_{1}\hat{e}_{1}+\dots+x_{m}\hat{e}_{m}\right)\\
+ & = & x_{1}A\left(\hat{e}_{1}\right)+\dots+x_{m}A\left(\hat{e}_{m}\right)\\
+ & = & x_{1}\begin{pmatrix}a_{11}\\
+\vdots\\
+a_{n1}\end{pmatrix}+\dots+x_{m}\begin{pmatrix}a_{1m}\\
+\vdots\\
+a_{nm}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מערכת משוואות ליניארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{11}x_{1}+a_{12}x_{2}+a_{13}x_{3} & = & b_{1}\\
+a_{21}x_{1}+a_{22}x_{2}+a_{23}x_{3} & = & b_{2}\\
+a_{m1}x_{1}+a_{m2}x_{2}+a_{m3}x_{3} & = & b_{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה בדיוק כמו 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}a_{11} & a_{12} & a_{13}\\
+a_{21} & a_{22} & a_{23}\\
+a_{m1} & a_{m2} & a_{m3}\end{pmatrix}\cdot\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{m}\end{pmatrix}=\begin{pmatrix}b_{1}\\
+b_{2}\\
+b_{m}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1}+x_{1}+x_{3}+x_{4} & = & 0\\
+x_{1}+2x_{2}+3x_{3}+4x_{4} & = & 0\\
+\begin{pmatrix}1 & 1 & 1 & 1\\
+1 & 2 & 3 & 4\end{pmatrix}\cdot\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\\
+x_{4}\end{pmatrix} & = & \vec{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם למערכת יש יותר מפתרון אחד אז יש לה אינסוף פתרונות.
+\end_layout
+
+\begin_layout Standard
+מטריצה שמעבירה 
+\begin_inset Formula $I\left(\vec{x}\right)=\vec{x}$
+\end_inset
+
+ קוראים לה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Identity
+\lang hebrew
+.
+ והיא נראת כ
+\begin_inset Formula $\begin{pmatrix}1 & 0 & 0 & 0 & 0\\
+0 & 1 & 0 & 0 & 0\\
+0 & 0 & \ddots & 0 & 0\\
+0 & 0 & 0 & 1 & 0\\
+0 & 0 & 0 & 0 & 1\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לקבל מטיצת יחידה בגודל 
+\begin_inset Formula $n\times n$
+\end_inset
+
+ ב
+\lang english
+Matlab
+\lang hebrew
+ כותבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+eye(n)
+\end_layout
+
+\begin_layout Standard
+איך כותבים מכפלה פנימית כפעולת מטריצה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A:\vec{x} & \to & \left\langle \vec{a},\vec{x}\right\rangle \\
+A:\mathbb{R}^{2} & \to & \mathbb{R}^{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}a_{1} & a_{2} & a_{3}\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}=\left\langle \vec{a},\vec{x}\right\rangle \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A:\mathbb{R}^{n} & \to & \mathbb{R}^{m}\\
+B:\mathbb{R}^{m} & \to & \mathbb{R}^{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $B\circ A$
+\end_inset
+
+ הוא גם איפרטור ליניארי.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $x,y\in\mathbb{R}^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B\circ A\left(x+y\right) & = & B\left(A\left(x+y\right)\right)\\
+ & = & B\left(Ax+Ay\right)\\
+ & = & BAx+BAy\\
+ & = & B\circ A\left(x\right)+B\circ A\left(y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B\circ A\left(\lambda x\right) & = & B\left(A\left(\lambda x\right)\right)\\
+ & = & B\left(\lambda A\left(x\right)\right)\\
+ & = & \lambda B\left(A\left(x\right)\right)\\
+ & = & \lambda B\circ A\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונים הווקטורים 
+\begin_inset Formula $\vec{v}_{k}\in\mathbb{R}^{n}$
+\end_inset
+
+ המרחב הנפרס על ידם מסומן ב 
+\begin_inset Formula $sp\left\{ \vec{v}_{1},\vec{v}_{2}\dots\vec{v}_{3}\right\} =span\left\{ \vec{v}_{1},\vec{v}_{2}\dots\vec{v}_{3}\right\} $
+\end_inset
+
+ ומוגדר להיות כל הווקטורים ב
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\alpha_{1}\vec{v}_{1}+\dots+\alpha_{k}\vec{v}_{k}$
 \end_inset
 
 

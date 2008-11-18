@@ -324,7 +324,7 @@ Ph+\rho^{2} & = & \frac{kg}{m^{2}sec}\cdot m+\left(\frac{kg}{m^{2}}\right)^{2}\\
  & = & DC+BE\\
  & = & DB\cos\alpha+OB\sin\alpha\\
  & = & OD\sin\beta\cos\alpha+OD\cos\beta\sin\alpha\\
- &  & \sin\beta\cos\alpha+\cos\beta\sin\alpha\end{eqnarray*}
+ & = & \sin\beta\cos\alpha+\cos\beta\sin\alpha\end{eqnarray*}
 
 \end_inset
 

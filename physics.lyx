@@ -1034,7 +1034,7 @@ r\left(t\right) & = & \frac{1}{2}a_{0}t^{2}\cdot\hat{x}+0\cdot\hat{y}+0\cdot\hat
 \begin_inset Formula $t_{0}$
 \end_inset
 
- שהא הזמן שבו מגיעים לשיא המסלול 
+ שהוא הזמן שבו מגיעים לשיא המסלול 
 \begin_inset Formula $T=2t_{0}$
 \end_inset
 
@@ -1714,6 +1714,538 @@ F & = & ma\\
 mg-k\Delta l & = & -ma_{0}\\
 \Delta l & = & \frac{1}{k}m\left(g+a_{0}\right)\\
 w & \propto & \Delta l\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+הכוח שגוף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מפעיל על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}_{1\to2}=-G\frac{m_{1}m_{2}}{\left|r_{12}\right|^{2}}\hat{r}_{12}=G\frac{m_{1}m_{2}}{\left|r_{12}\right|^{2}}\hat{r}_{21}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+חוק שלישי של ניוטון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}_{1\to2}=\vec{F}_{2\to1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/l7d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{1\to2}=-G\int_{V}\frac{\partial m_{1}\partial m_{2}}{\left|r_{1\to2}\right|^{2}}\hat{r}_{1\to2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעית הסוס והעגלה: אם סוס גורר עגלה אז הכח שהסוס מפעיל על העגלה הוא שווה
+ לכח שהעגלה מפעילה על הסוס.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}a_{1} & = & F_{0}-F_{2\to1}\\
+m_{2}a_{2} & = & F_{1\to2}\\
+a_{2} & = & a_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula \begin{eqnarray*}
+\left(m_{1}+m_{2}\right)a & = & F_{0}\overbrace{-F_{2\to1}+F_{1\to2}}^{0}\\
+a & = & \frac{F_{0}}{m_{1}+m_{2}}\\
+F_{1\to2} & = & ?\\
+ & = & m_{2}\frac{F_{0}}{m_{1}+m_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם קפיץ בין שני גופים ושניהם מפעילים כח עליהם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}a_{1}=F_{2\to1}\left(t\right) & \Rightarrow & a_{1}=\frac{1}{m_{1}}F_{2\to1}\left(t\right)\\
+m_{2}a_{2}=F_{2\to1}\left(t\right) & \Rightarrow & a_{2}=\frac{1}{m_{2}}F_{2\to1}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{1} & = & \frac{1}{m_{1}}\overbrace{\int_{t_{0}}F_{2\to1}\left(t\right)\partial t}^{\tau=\mbox{Mitkaf}}\\
+v_{2} & = & \frac{1}{m_{2}}\int_{t_{0}}F_{1\to2}\left(t\right)\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{2\to1}=-F_{1\to2}\Rightarrow\tau_{1}=-\tau_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{1} & = & \frac{1}{m_{1}}\tau_{1}\\
+ & = & -\frac{1}{m_{1}}\tau_{2}\\
+ & = & -\frac{m_{2}}{m_{1}}\frac{1}{m_{1}}\tau_{2}\\
+ & = & -\frac{m_{2}}{m_{1}}v_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה יפה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{2}g-T & = & m_{2}a\\
+m_{2}g-m_{1}g\sin\alpha & = & \left(m_{1}+m_{2}\right)a\\
+a & = & \frac{m_{2}-m_{1}\sin\alpha}{m_{1}+m_{2}}\cdot g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז ה
+\begin_inset Formula $\alpha$
+\end_inset
+
+ המאזן אז המערכת - כלומר 
+\begin_inset Formula $a=0$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sin\alpha_{\mbox{ciritical}}=\frac{m_{2}}{m_{1}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם יש חיכוך?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T-m_{1}g\sin\alpha-f & = & m_{1}a\\
+m_{2}g-T & = & m_{2}a\\
+a & = & \frac{m_{2}-m_{1}\sin\alpha-\frac{f}{g}}{m_{1}+m_{2}}g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי כדי לאזן המערכת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{2}-m_{1}\sin\alpha=\frac{f}{g} & < & \mu m_{1}\cos\alpha\\
+\sin\alpha+\mu\cos\alpha & > & \frac{m_{2}}{m_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הכח הולך בכיוון הפוך:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}g\sin\alpha-T-f & = & m_{1}a\\
+T-m_{2}g & = & m_{2}a\\
+a & = & \frac{m_{1}\sin\alpha-m_{2}-\frac{f}{g}}{m_{1}+m_{2}}\cdot g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\sin\alpha-m_{2}=\frac{f}{g} & \leq & \mu m_{1}\cos\alpha\\
+\sin\alpha-\mu\cos\alpha & \leq & \frac{m_{2}}{m_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חוק שימור התנע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vec{P}_{i} & = & \vec{F}_{i}\\
+ & = & F_{\mbox{External}}^{i}+\sum_{j}\vec{F}_{j\to i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}P_{T}=F_{\mbox{External}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כותבים את זה כסכימה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum\frac{\partial}{\partial t}P_{i} & = & F_{\mbox{External}}^{i}+\sum_{j}\vec{F}_{j\to i}\\
+\frac{\partial}{\partial t}\sum P_{i} & = & \sum_{i}F_{\mbox{External}}^{i}+\sum_{i}\sum_{j}F_{j\to i}\\
+\frac{\partial}{\partial t}P_{\mbox{Total}} & = & \sum_{i}F_{\mbox{External}}^{i}+\sum_{i}\sum_{j}F_{j\to i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i,j}\vec{F}_{j\to i}=\frac{1}{2}\sum_{i,j}\underbrace{\vec{F}_{i\to j}+\vec{F}_{j\to i}}_{0}\]
+
+\end_inset
+
+ ויודעים כי צד ימני הא אפס מהחוק השני של ניוטון.
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}P_{Total}=\sum_{i}F_{\mbox{External}}^{i}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אנחנו יכולים לכתוב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\vec{P}_{T}}{\partial t}=\frac{\partial}{\partial t}\sum_{i}\vec{P}_{i}=\vec{F}_{\mbox{External}}^{\mbox{Total}}=\sum_{i}\vec{F}_{\mbox{External}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+תנק בעל מסה 
+\begin_inset Formula $M$
+\end_inset
+
+ נוסע במהירות 
+\begin_inset Formula $\vec{v}_{0}$
+\end_inset
+
+ ויורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ פגז בעל מסה 
+\begin_inset Formula $m$
+\end_inset
+
+ במהירות של 
+\begin_inset Formula $u$
+\end_inset
+
+ ביחס לעצמו.
+ אחרי הירי מהירות התנק 
+\begin_inset Formula $\vec{v}_{t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u-v_{b}-v_{t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P}_{\mbox{Before}} & = & \left(M+m\right)v_{0}\\
+\vec{P}_{\mbox{After}} & = & Mv_{t}+mv_{b}\\
+ & = & Mv_{t}+mu+mv_{t}\\
+\vec{P}_{\mbox{Before}} & = & \vec{P}_{\mbox{After}}\\
+\left(M+m\right)\vec{v}_{0} & = & Mv_{t}+mu+mv_{t}\\
+\vec{v}_{t} & = & \frac{\left(M+m\right)u-mu}{M}\\
+ & = & v_{0}-\frac{m}{M+m}u\\
+ & \approx & v_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם רקטה נעה הדלק שלה הולך אחורה כדי שהיא תקבל מהירות חיובית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{\mbox{fule}} & = & v\left(t\right)-u\\
+\vec{P}\left(t\right) & = & m\left(t\right)v\left(t\right)+\int_{0}^{t}\left(\left[v\left(t\right)-u\right]\frac{\partial m}{\partial t}\right)\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הוא 
+\begin_inset Formula $\frac{\partial m}{\partial t}$
+\end_inset
+
+? שינוי המסה של הרקטה נגרם על ידי איבוד הדלק שנפלט.
+ כלומר 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{m\left(t\right)\frac{\partial v\left(t\right)}{\partial t}}_{m\cdot a}=-\underbrace{u\frac{\partial m\left(t\right)}{\partial t}}_{P\left(t\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mv+m\partial v+v\partial m+\partial m\partial v-mv-\partial mv+dm & = & 0\\
+m\partial v+\underbrace{\partial m\partial v}_{\approx0} & = & -u\partial m\\
+m\partial v & = & -u\partial m\\
+m\frac{\partial v}{\partial t} & = & -u\frac{\partial m}{\partial t}\\
+\frac{\partial}{\partial t}v\left(t\right) & = & -u\frac{1}{m\left(t\right)}\frac{\partial m\left(t\right)}{\partial t}\\
+v\left(t\right) & = & -u\ln\left(m\left(t\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbrace{\frac{\partial}{\partial t}\left[v\left(t\right)+u\ln\left(m\left(t\right)\right)\right]}_{\frac{\partial x}{\partial t}=0\Rightarrow x=C} & = & 0\\
+v\left(t\right)+u\ln\left(m\left(t\right)\right) & = & C\\
+v\left(0\right) & = & u\ln\left(m\left(0\right)\right)+C\\
+C & = & v_{0}+u\ln\left(m\left(0\right)\right)\\
+v\left(t\right) & = & v_{0}+u\ln\left(\frac{m\left(0\right)}{m\left(t\right)}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו מנסים לפתור את זה על ידי אינטגרציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial v\left(t\right)}{\partial t} & = & -u\frac{1}{m\left(t\right)}\frac{\partial m}{\partial t}\\
+\int\partial v\left(t\right) & = & -u\int\frac{1}{m\left(t\right)}\partial m\\
+v\left(t\right)-v_{0} & = & u\ln\left(\frac{m_{0}}{m\left(t\right)}\right)\end{eqnarray*}
 
 \end_inset
 

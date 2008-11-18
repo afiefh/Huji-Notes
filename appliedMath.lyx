@@ -1965,7 +1965,7 @@ y & = & \frac{x^{2}}{2}+x-3\\
 
 \begin_layout Standard
 הגדרת וקטור לפי פיזיקיים זה חץ במרחב)יש לו גודל וקיוון אבל אין מיקום( לפי
- מתמטקיים זה חייה מסוג 
+ מתמטקיים זה חיה מסוג 
 \begin_inset Formula $\left\{ \begin{pmatrix}x_{1}\\
 \vdots\\
 x_{n}\end{pmatrix}\mid x_{i}\in\mathbb{R}\right\} $
@@ -3137,6 +3137,1662 @@ z & = & r\cos\varphi\end{eqnarray*}
 \begin_inset Formula \begin{eqnarray*}
 \left(\rho,\theta,\varphi\right) & \Rightarrow & \left(x,y,z\right)\\
 \left(1,\frac{\pi}{4},\frac{3\pi}{4}\right) & \Rightarrow & \left(1\sin\varphi\cos\theta,1\sin\varphi\cos\theta,1\cos\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+תר'
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ש'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+23
+\end_layout
+
+\begin_layout Standard
+מצא נוסחה למרחק בין הנק 
+\begin_inset Formula $\vec{x}$
+\end_inset
+
+ למישור 
+\begin_inset Formula $\vec{r}\cdot\vec{n}=c$
+\end_inset
+
+ ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\left(\vec{x}-\vec{r}\right)\cdot\vec{n}}{\left|\vec{n}\right|}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תר'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ש'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+35
+\end_layout
+
+\begin_layout Standard
+מצא את המרחק בין 
+\begin_inset Formula $A=\left(1,1,1\right)$
+\end_inset
+
+לקו הישר 
+\begin_inset Formula $l$
+\end_inset
+
+ שעובר בנקודה 
+\begin_inset Formula $B=\left(2,4,3\right)$
+\end_inset
+
+ ובכיוון 
+\begin_inset Formula $\begin{pmatrix}1\\
+1\\
+-1\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+l:\begin{pmatrix}1\\
+1\\
+-1\end{pmatrix}t+\begin{pmatrix}2\\
+4\\
+3\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא ווקטור מאונך ל 
+\begin_inset Formula $\begin{pmatrix}1\\
+1\\
+-1\end{pmatrix}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\begin{pmatrix}1\\
+1\\
+-1\end{pmatrix}\perp\begin{pmatrix}1\\
+1\\
+2\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+d=\left|AB\right|\sin\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\begin{pmatrix}2+t\\
+4+t\\
+3-t\end{pmatrix}-\begin{pmatrix}1\\
+1\\
+1\end{pmatrix}\right|=\sqrt{\left(1+t\right)^{2}+\left(3+t\right)^{2}+\left(2-t\right)^{2}}\]
+
+\end_inset
+
+ ומחפסים את המינימום של ביטוי זה
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+27
+\numeric off
+' ו'
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & \cos\theta+2\sin\theta+3\\
+y & = & 2\cos\theta-2\sin\theta+4\\
+z & = & 2\cos\theta+\sin\theta+5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}3\\
+4\\
+5\end{pmatrix}+\cos\theta\begin{pmatrix}1\\
+2\\
+2\end{pmatrix}+\sin\theta\begin{pmatrix}2\\
+-2\\
+1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מעגל ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+צורות
+\end_layout
+
+\begin_layout Standard
+ישר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=ax+b\]
+
+\end_inset
+
+ פרבולה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=ax^{2}+bx+c\]
+
+\end_inset
+
+ מעגל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(x-a\right)^{2}+\left(y-a\right)^{2}=r^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אליפסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{x}{a}\right)^{2}+\left(\frac{y}{b}\right)^{2}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היפרבולה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{x}{a}\right)^{2}-\left(\frac{y}{b}\right)^{2}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזזה:
+\end_layout
+
+\begin_layout Standard
+במקום שהמרכז יהיה ב
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ רוצים שהוא יהיה 
+\begin_inset Formula $\left(c,d\right)$
+\end_inset
+
+.
+ דוגמה על אליפסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{x-c}{a}\right)^{2}+\left(\frac{y-d}{b}\right)^{2}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתיכה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & \to & \frac{x}{c}\\
+y & \to & \frac{y}{d}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שרטט שתי הצורות הבאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}+\frac{y^{2}}{4} & = & 1\\
+x^{2}+\left(\frac{y}{2}\right)^{2} & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אליפסה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}+2y^{2}-4x-6y+3 & = & 0\\
+\left(x-2\right)^{2}-4+2\left(y+\frac{3}{2}\right)^{2}-4.5+3 & = & 0\\
+\left(x-2\right)^{2}+\frac{1}{2}\left(y+\frac{3}{2}\right)^{2} & = & 5.5\\
+\left(\frac{x-2}{\sqrt{5.5}}\right)+\left(\frac{y+1.5}{\sqrt{\frac{5.5}{2}}}\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגילים:
+\end_layout
+
+\begin_layout Standard
+מצא משוואה פרמטרית לצורות בשאלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{x}{1}\right)^{2}+\left(\frac{y}{2}\right)^{2}=1\Rightarrow\begin{pmatrix}x=\cos t\\
+y=\sin t\end{pmatrix}\underset{\mbox{Scaling}}{\Rightarrow}\begin{pmatrix}x=\cos t\\
+y=2\sin t\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{x-2}{\sqrt{5.5}}\right)^{2}+\left(\frac{y-1.5}{\sqrt{\frac{5.5}{2}}}\right)^{2}=1\Rightarrow\begin{pmatrix}x=\cos t\\
+y=\sin t\end{pmatrix}\underset{\mbox{Scaling}}{\Rightarrow}\begin{pmatrix}x=\sqrt{5.5}\cos t+2\\
+y=\sqrt{\frac{5.5}{2}}\sin t+1.5\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם רוצים לעשות פרמטריזציה של היפרבולה מתחילים עם 
+\begin_inset Formula $x=\cosh\left(t\right),y=\sinh\left(t\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $\cosh^{2}\left(t\right)-\sinh^{2}\left(t\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+בדכו כי 
+\begin_inset Formula \begin{eqnarray*}
+x & = & \frac{1}{2}\left(t-\frac{1}{2}\right)\\
+y & = & \frac{1}{2}\left(t+\frac{1}{t}\right)\\
+t & \in & \mathbb{R}\setminus\left\{ 0\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פרמטריזציה למשוואת ההיפרבולה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\frac{1}{2}\left(t+\frac{1}{t}\right)\right)^{2}-\left(\frac{1}{2}\left(t-\frac{1}{t}\right)\right) & = & 1\\
+\frac{1}{4}\left(t^{2}+2+\frac{1}{t^{2}}\right)-\frac{1}{4}\left(t^{2}-2+\frac{1}{t^{2}}\right) & = & 1\\
+\\\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצא איזה חלק בציור נתון על ידי 
+\begin_inset Formula $t\in\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/t3d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $t$
+\end_inset
+
+ כטן מאוד, למשל 
+\begin_inset Formula $t=10^{-12}$
+\end_inset
+
+ מקבלים כי 
+\begin_inset Formula $x\approx-y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $t>\frac{1}{5}$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $y>0$
+\end_inset
+
+ ו 
+\begin_inset Formula $x>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קואורדינטות
+\end_layout
+
+\begin_layout Standard
+הקואורדינטות האכי פשוטות שמשתמשים בהם הם קואורדינטות קרטזיות.
+\end_layout
+
+\begin_layout Subsection
+הפולרות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r & \geq & 0\\
+0 & \leq\theta\leq & 2\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוסחאות לעבור בין המערכות 
+\begin_inset Formula \[
+\begin{matrix}r=\sqrt{x^{2}+y^{2}}\\
+\tan\theta=\frac{y}{x}\end{matrix}\Rightarrow\begin{matrix}x=r\cos\theta\\
+y=r\sin\theta\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצאו משוואה בקואורדינטות קוטביות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{x}{2}\right)^{2}-\left(\frac{y}{4}\right)^{2}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים 
+\begin_inset Formula $r\cos\theta$
+\end_inset
+
+ ו 
+\begin_inset Formula $r\sin\theta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\frac{r\cos\theta}{2}\right)^{2}-\left(\frac{r\sin\theta}{4}\right)^{2} & = & 1\\
+4r^{2}\cos^{2}\theta-r^{2}\sin^{2}\theta & = & 16\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+גליליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/l4d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}x=r\cos\theta\\
+y=r\sin\theta\\
+z=z\end{matrix}\Rightarrow\begin{matrix}r=\sqrt{x^{2}+y^{2}}\\
+\tan\frac{y}{x}\\
+z=z\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+כדוריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}r=\sqrt{x^{2}+y^{2}+z^{2}}\\
+\tan\theta=\frac{y}{x}\\
+\tan\varphi=\frac{\sqrt{x^{2}+y^{2}}}{z}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+: מספרים מורכבים
+\end_layout
+
+\begin_layout Standard
+מה הפתרונות שמקבלים במשוואה 
+\begin_inset Formula $x^{3}+ax^{2}+bx+c=0$
+\end_inset
+
+.
+ אפשר לקבל שלושה פתרונות)ממשים( ממשוואה זו אבל בכל מקרה מקבלים מזה לפחות
+ פתרון אחד.
+\end_layout
+
+\begin_layout Standard
+אפשר להתבונן גם במוואה 
+\begin_inset Formula $Ax^{2}+bx+c=0$
+\end_inset
+
+ שיש לה 
+\begin_inset Formula $\Delta=b^{2}-4ac<0$
+\end_inset
+
+ אז אין לה פתרונות.
+\end_layout
+
+\begin_layout Standard
+אבל משפט במטמטיקה אומר כי לכל פולינום ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות.
+ הפתרונות האלה לא בהכרח ממשיים, הם יכולים להיות פתרונות מורכבים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i^{2}=-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: מספר מורכב הוא 
+\begin_inset Formula $z=a+bi$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+.
+ הסדה שכולל מספרים כמו 
+\begin_inset Formula $z$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אומרים כי 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא החלק הממשי של 
+\begin_inset Formula $z$
+\end_inset
+
+ או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Real Part
+\lang hebrew
+.
+ ומסמנים 
+\begin_inset Formula $a=R\left(z\right)=Re\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אומרים כי 
+\begin_inset Formula $b$
+\end_inset
+
+ הוא החלק המדומה של 
+\begin_inset Formula $z$
+\end_inset
+
+ או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+imaginatry part
+\lang hebrew
+.
+ ומסמנים 
+\begin_inset Formula $b=I\left(z\right)=Im\left(z\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula \[
+\mathbb{C}=\left\{ a+ib\mid a,b\in\mathbb{R}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פעולות
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+סכום: 
+\begin_inset Formula $\left(a+ib\right)+\left(c+id\right)=\left(a+c\right)+\left(b+d\right)i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+כפל: 
+\begin_inset Formula $\left(a+ib\right)\cdot\left(c+id\right)=ac+iad+ibc+i^{2}bd=ac+adi+bci-1\cdot bd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+צמוד: 
+\begin_inset Formula $\overline{\left(a+bi\right)}=\left(a-bi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+כפל\InsetSpace ~
+בסקלר: 
+\begin_inset Formula $r\cdot\left(a+bi\right)=\left(r+0\cdot i\right)\left(a+bi\right)=ra+rbi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תכונות של מספרים מורכבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(z+2\right)+w'=z+\left(w+w'\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(z+w\right)w'=zw'+ww'\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+zw=zw',z\neq0\Rightarrow w=w'\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המספרים המורכבים חיים במישור)שתי דרגות חופש(
+\end_layout
+
+\begin_layout Standard
+מבחיהת ציור הסכום של שני מספרים מורכבים בדיוק כמו הסכום של שני וקטורים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\overline{z+w} & = & \overline{z}+\overline{w}\\
+\overline{z\cdot w} & = & \overline{z}\cdot\overline{w}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מספרים מורכבים בקואורדינטות קוטביות
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב מספרים מורכבים בקואורדינטות קוטביות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|z\right|=r & = & \sqrt{x^{2}+y^{2}}\\
+\arg\left(z\right)=\theta & = & \arctan\left(\frac{y}{x}\right)+k\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+מה הגודל והזווית של 
+\begin_inset Formula $-2+2i$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|z\right| & = & \sqrt{2^{2}+2^{2}}=\sqrt{8}\\
+\arg\left(z\right) & = & \arctan\left(\frac{2}{-2}\right)+\pi=\frac{3}{4}\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה נותו הכפל של 
+\begin_inset Formula $z$
+\end_inset
+
+ ב 
+\begin_inset Formula $\overline{z}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z\cdot\overline{z} & = & \left(x+iy\right)\left(x-iy\right)\\
+ & = & x^{2}+y^{2}\\
+ & = & \left|z\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך עובד החילוק במספר ממשי?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1+2i}{2}=\frac{1}{2}+i\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל לחלק במספר מורכב זה יותר כשה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{z}{w}=\frac{z\cdot\overline{w}}{w\cdot\overline{w}}=\frac{z\cdot\overline{w}}{\left|w\right|}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואפשר לבדוק כי הפתרון הזה הוא הפתרון היחיד של משוואה זו.
+\end_layout
+
+\begin_layout Standard
+מה עם חזקה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z^{n}=\underbrace{z\cdot z\cdots z}_{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z^{-n}=\frac{1}{z^{n}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(1+i\right)^{2} & = & \left(1+i\right)\left(1+i\right)\\
+ & = & 2i\\
+\left(1+i\right)^{4} & = & -4\\
+\sqrt{-4} & = & \left(1+i\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i^{n}=\begin{cases}
+n=0+4k & i\\
+n=1+4k & -1\\
+n=2+4k & -i\\
+n=3+4k & 1\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כתיב מקוצר של 
+\begin_inset Formula $z=r\cos\theta+i\sin\theta$
+\end_inset
+
+ הוא 
+\begin_inset Formula $r\cdot\mbox{cis}\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cis}\theta\cdot\mbox{cis}\varphi & = & \left(\cos\theta+i\sin\theta\right)\left(\cos\varphi+i\sin\varphi\right)\\
+ & = & \vdots\\
+ & = & \mbox{cis}\left(\theta+\varphi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות של
+\begin_inset Formula $cis$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cis}\left(\theta+2\pi\right) & = & \mbox{cis}\left(\theta\right)\\
+\mbox{cis}\left(\theta+\pi\right) & = & \cos\left(\theta+\pi\right)+i\sin\left(\theta+\pi\right)\\
+ & = & -\cos\left(\theta\right)+-i\sin\left(\theta\right)\\
+ &  & -\mbox{cis}\left(\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה של חזקה של מספר מורכב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{a+ib} & = & e^{a}e^{ib}\\
+ & = & e^{a}\left(\cos b+i\sin b\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי תמיד נכתוב 
+\begin_inset Formula $\mbox{cis}\theta=e^{i\theta}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יותר כל לעבוד עם מכפלות בצורה הפולרית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & re^{i\theta}\\
+z^{n} & = & r^{n}e^{i\theta\cdot n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הוא הלוגריתם של מספר מרוכב?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{w}=z\Rightarrow w=\ln z\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{a+ib} & = & e^{a}\left(\cos b+i\sin b\right)=z\\
+\Rightarrow e^{w} & = & \left|z\right|,b=\arg w\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln z=ln\left|z\right|+i\arg\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{2\pi i}=e^{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $\ln z$
+\end_inset
+
+ מוגדרת עד כדי 
+\begin_inset Formula $2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2}\left(e^{ix}+e^{-ix}\right) & = & \cos x\\
+\frac{1}{2}\left(e^{ix}-e^{-ix}\right) & = & \sin x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin^{4}x & = & \left[\frac{1}{2i}\left(e^{ix}-e^{-ix}\right)\right]^{4}\\
+ & = & \frac{1}{16}\left(\left(e^{ix}\right)^{4}+4\left(e^{ix}\right)^{3}\left(e^{-ix}\right)+6\left(e^{ix}\right)^{2}\left(e^{-ix}\right)^{2}+4\left(e^{ix}\right)^{3}\left(e^{-x}\right)+\left(e^{-ix}\right)^{4}\right)\\
+ & = & \frac{1}{16}\left(e^{4ix}-4e^{2ix}+6-4e^{-2ix}+e^{-4ix}\right)\\
+ & = & \frac{1}{16}\left(\left(e^{4ix}+e^{-4ix}\right)-4\left(e^{2ix}+e^{-2ix}\right)+6\right)\\
+ & = & \frac{1}{16}\left(\cos\left(4x\right)-\frac{1}{2}\sin\left(2x\right)+\frac{3}{8}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\left(5x\right) & = & Re\left(e^{5ix}\right)\\
+ & = & Re\left(\left(e^{ix}\right)^{5}\right)\\
+ & = & Re\left(\left(\cos x+i\sin x\right)^{5}\right)\\
+ & = & Re\left(\cos^{5}x+5\cos^{4}\cdot i\sin x-10i\cos^{3}x\sin^{3}x-10i\cos^{2}x\sin^{3}x+5\cos x\sin^{4}x+\sin^{5}x\right)\\
+ & = & \cos^{5}x-10\cos^{3}x\sin^{2}x+5\cos x\sin^{4}x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a\cos\omega t+b\sin\omega t & = & R\left(\left(a+ib\right)\left(\cos\omega t-i\sin\omega t\right)\right)\\
+A & = & \sqrt{a^{2}+b^{2}}\\
+\phi & = & \arg\left(a+ib\right)\\
+ & = & R\left(Ae^{i\phi}\cdot e^{-\omega t}\right)\\
+ & = & R\left(Ae^{-i\left(\omega t+\phi\right)}\right)\\
+ & = & A\cos\left(\omega t+\phi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אמרנו שאנחנו רוצים מספרים מורכבים כך שלכל פולינום ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+ יהיו 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+p_{n}\left(x\right) & = & x^{n}+a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+\dots+a_{x}\cdot x+a_{0}\\
+ & = & \left(x-\alpha\right)\left(p_{n-1}\left(x\right)\right)\\
+ &  & \Downarrow\\
+ &  & \left(x-\alpha_{1}\right)\left(x-\alpha_{2}\right)\cdots\left(x-\alpha_{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם השורשים של 
+\begin_inset Formula $p_{n}\left(x\right)=0$
+\end_inset
+
+ הם 
+\begin_inset Formula $x_{1},x_{2}\dots x_{n}$
+\end_inset
+
+ אזי אפשר לכתוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+p_{n}\left(x\right)=\prod_{k=n}^{k}\left(x-x_{k}\right)^{e_{i}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ הוא הריבוי של השורש, כלומר כמה פעמים השורש פותר המשוואה.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{4}-1 & = & \left(x^{2}-1\right)\left(x^{2}+1\right)\\
+ & = & \left(x-1\right)\left(x+1\right)\left(x+i\right)\left(x-i\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השורשים הם 
+\begin_inset Formula $1,-1,i,-i$
+\end_inset
+
+ כולם בריבוי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{4}+2x^{2}+1 & = & \left(x^{2}+1\right)^{2}\\
+ & = & \left[\left(x+i\right)\left(x-i\right)\right]^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השורשים הם 
+\begin_inset Formula $i,-i$
+\end_inset
+
+ בריבוי של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Section
+פירוק של פולינומים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+p\left(x\right) & = & x^{3}-3x^{2}+2\\
+ & = & \left(x-1\right)\left(x^{2}+2x-2\right)\\
+ &  & \left(x-1\right)\left(\left(x-1\right)^{2}-3\right)\\
+ &  & \left(x-1\right)\left(x-1-\sqrt{5}\right)\left(x-1+\sqrt{5}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לעשות אותו דבר במספרים מורכבים.
+\end_layout
+
+\begin_layout Section
+שורשים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sqrt[n]{z} & = & \sqrt[n]{Ae^{i\theta}}\\
+ & = & Ae^{\frac{i\theta+2\pi k}{n}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פונקציות של משתנה אחד
+\end_layout
+
+\begin_layout Subsection
+פונקציות היפרבוליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sinh x & = & \frac{1}{2}\left(e^{x}-e^{-x}\right)\\
+\cosh x & = & \frac{1}{2}\left(e^{x}+e^{-x}\right)\\
+\tanh x & = & \frac{\sinh x}{\cosh x}\\
+ & = & \frac{e^{x}-e^{-x}}{e^{x}+e^{-x}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גרף של 
+\begin_inset Formula $\cosh x$
+\end_inset
+
+ הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c9d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גרף של 
+\begin_inset Formula $\sinh x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c9d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cosh^{2}\theta-\sinh^{2}\theta & = & 1\\
+\frac{1}{2}\left(e^{x}+e^{-x}\right)-\frac{1}{2}\left(e^{x}-e^{-x}\right)\\
+\frac{1}{2}e^{x}+\frac{1}{2}e^{-x}-\frac{1}{2}e^{x}-\frac{1}{2}e^{-x} & =\\
+... & .. & ...\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & \cosh t\\
+y & = & \sinh t\\
+x^{2}+y^{2} & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הצד הימיני של ההיפרבולה, כי 
+\begin_inset Formula $\cosh t\geq1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\left(x\right) & = & \frac{1}{2}\left(e^{ix}+e^{-ix}\right)\\
+ & = & \cosh\left(ix\right)\\
+\sin\left(x\right) & = & \frac{1}{2i}\left(e^{ix}-e^{-ix}\right)\\
+ & = & \frac{1}{i}\sinh\left(ix\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציות אחרות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{sech}\left(x\right) & = & \frac{1}{\cosh x}\\
+\mbox{csch}\left(x\right) & = & \frac{1}{\sinh x}\\
+\mbox{corh}\left(x\right) & = & \frac{1}{\tanh x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{sech}^{2}x & = & 1-\tanh^{2}x\\
+\cosh\left(x+y\right) & = & \cosh x\cosh y+\sinh x\sinh y\\
+\sinh\left(x+y\right) & = & \sinh x\cosh y+\cosh x\sinh y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצא את 
+\begin_inset Formula $\cosh^{-1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cosh u & = & x\\
+\frac{1}{2}\left(e^{u}+e^{-u}\right) & = & x\\
+e^{u}+e^{-u} & = & 2x\\
+e^{2u}+1 & = & 2xe^{u}\\
+e^{2u}-2xe^{u}+1 & = & 0\\
+e^{u} & = & \frac{2x\pm\sqrt{4x^{2}-4}}{2}\\
+ & = & x\pm\sqrt{x^{2}-1}\\
+u & = & \ln\left(x+\sqrt{x^{2}-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בחרנו את השורש של משהוא חיובי ו 
+\begin_inset Formula $x\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים נוסחה גם ל
+\begin_inset Formula $\sinh^{-1}x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sinh u & = & x\\
+\frac{1}{2}\left(e^{u}-e^{-u}\right) & = & x\\
+e^{u}-e^{-u} & = & 2x\\
+e^{2u}-1 & = & 2xe^{u}\\
+e^{2u}-2xe^{u}-1 & = & 0\\
+e^{u} & = & \frac{2x\pm\sqrt{4x^{2}+4}}{2}\\
+ & = & x\pm\sqrt{x^{2}+1}\end{eqnarray*}
 
 \end_inset
 

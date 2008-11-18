@@ -93,7 +93,7 @@
 
 \begin_layout Standard
 \begin_inset Formula \[
-\vec{a}=\left(0,3,9\right),\vec{b}=\left(5,2,0\right)\]
+\vec{a}=\left(5,2,0\right),\vec{b}=\left(0,3,9\right)\]
 
 \end_inset
 
@@ -131,8 +131,8 @@
 
 \begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
-\left|\vec{a}\right| & = & \sqrt{0^{2}+3^{2}+9^{2}}\\
- & = & \sqrt{90}\end{eqnarray*}
+\left|\vec{a}\right| & = & \sqrt{5^{2}+2^{2}+0^{0}}\\
+ & = & \sqrt{29}\end{eqnarray*}
 
 \end_inset
 
@@ -141,8 +141,8 @@
 
 \begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
-\left|\vec{b}\right| & = & \sqrt{5^{2}+2^{2}+0^{0}}\\
- & = & \sqrt{29}\end{eqnarray*}
+\left|\vec{b}\right| & = & \sqrt{0^{2}+3^{2}+9^{2}}\\
+ & = & \sqrt{90}\end{eqnarray*}
 
 \end_inset
 
@@ -155,7 +155,7 @@
 \vec{a}\cdot\vec{b} & = & \left|\vec{a}\right|\cdot\left|\vec{b}\right|\cos\angle\left(\vec{a},\vec{b}\right)\\
 \cos\angle\left(\vec{a},\vec{b}\right) & = & \frac{\vec{a}\cdot\vec{b}}{\left|\vec{a}\right|\cdot\left|\vec{b}\right|}\\
 \cos\angle\left(\vec{a},\vec{b}\right) & = & \frac{6}{\sqrt{90}\sqrt{29}}\\
-\angle\left(\vec{a},\vec{b}\right) & = & 0.037\pi\end{eqnarray*}
+\angle\left(\vec{a},\vec{b}\right) & = & 0.462\pi\end{eqnarray*}
 
 \end_inset
 
@@ -179,9 +179,9 @@
  & = & \frac{\begin{vmatrix}\hat{i} & \hat{j} & \hat{k}\\
 5 & 2 & 0\\
 0 & 3 & 9\end{vmatrix}}{\left|\vec{a}\right|\left|\vec{b}\right|\sin\angle\left(\vec{a},\vec{b}\right)}\\
- & = & \frac{\left(2\cdot9-0\cdot3\right)\hat{i}-\left(5\cdot9-0\cdot0\right)\hat{j}+\left(5\cdot3-2\cdot0\right)\hat{k}}{\sqrt{50}\sqrt{29}\sin\left(0.037\pi\right)}\\
- & = & \frac{18\hat{i}-45\hat{j}+15\hat{k}}{7.78}\\
- & = & 2.3\hat{i}-5.78\hat{j}+1.92\hat{k}\end{eqnarray*}
+ & = & \frac{\left(2\cdot9-0\cdot3\right)\hat{i}-\left(5\cdot9-0\cdot0\right)\hat{j}+\left(5\cdot3-2\cdot0\right)\hat{k}}{\sqrt{90}\sqrt{29}\sin\left(0.462\pi\right)}\\
+ & = & \frac{18\hat{i}-45\hat{j}+15\hat{k}}{50.724}\\
+ & = & 0.3548\hat{i}-0.8871\hat{j}+0.2957\hat{k}\end{eqnarray*}
 
 \end_inset
 
@@ -393,7 +393,269 @@ x\left(t\right) & = & v_{0}t+\frac{1}{2}at^{2}\\
 20000 & = & 15\cdot\frac{-15}{a}+\frac{1}{2}a\left(\frac{-15}{a}\right)^{2}\\
 20000 & = & -\frac{225}{a}+\frac{225}{2a}\\
 20000a & = & -225+\frac{225}{2}\\
-a & = & -0.005625\end{eqnarray*}
+a & = & -0.005625\left[\frac{m}{sec^{2}}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+x_{1}\left(t\right) & = & v_{1_{0}}t+\frac{1}{2}a_{1}\left(t-5\cdot60\right)^{2}\\
+x_{2}\left(t\right) & = & \frac{1}{2}a_{2}t^{2}\\
+x_{1}\left(t\right) & = & x_{2}\left(t\right)\\
+v_{1_{0}}t+\frac{1}{2}a_{1}\left(t-5\cdot60\right)^{2} & = & \frac{1}{2}a_{2}t^{2}\\
+15\cdot t+\frac{1}{2}\cdot\left(-0.005625\right)\left(t-5\cdot60\right)^{2} & = & \frac{1}{2}a_{2}t^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{1}\left(t\right) & = & v_{2}\left(t\right)\\
+v_{0_{1}}+a_{1}\left(t-5\cdot60\right) & = & v_{0_{2}}+a_{2}t\\
+15-0.005625\left(t-5\cdot60\right) & = & 0+a_{2}t\\
+15-0.005625t-1.6875 & = & a_{2}t\\
+13.3125 & = & a_{2}t+0.005625t\\
+\frac{13.3125}{t}-0.005625 & = & a_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+15t+\frac{9}{3200}\left(t^{2}+600t+90000\right) & = & \frac{1}{2}a_{2}t^{2}\\
+48000\cdot t+9t^{2}+5400t+810000 & = & 1600\cdot a_{2}\cdot t^{2}\\
+9t^{2}+53400t+810000 & = & 1600\cdot\left(\frac{13.3125}{t}-0.005625\right)\cdot t^{2}\\
+9t^{2}+53400t+810000 & = & 21300t-9t^{2}\\
+18t^{2}+32100t+810000 & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+h & = & v_{0}t\sin\alpha-\frac{1}{2}gt^{2}\\
+h & = & v_{0}t\cdot\sqrt{\frac{2gh}{v_{0}^{2}}}-\frac{1}{2}gt^{2}\\
+\frac{1}{2}gt^{2}+\sqrt{2gh}\cdot t+h & = & 0\\
+t & = & \frac{\sqrt{2gh}\pm\sqrt{2gh-4\cdot\frac{1}{2}g\cdot h}}{2\cdot\frac{1}{2}g}\\
+ & = & \frac{\sqrt{2gh}}{g}\\
+ & = & \sqrt{\frac{2h}{g}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d & = & v_{0}\sqrt{1-\frac{2gh}{v_{0}^{2}}}\cdot t\\
+d & = & v_{0}\sqrt{\frac{v_{0}^{2}-2gh}{v_{0}^{2}}}\cdot t\\
+d & = & \sqrt{v_{0}^{2}-2gh}\cdot\sqrt{\frac{2h}{g}}\\
+d^{2} & = & \left(v_{0}^{2}-2gh\right)\cdot\frac{2h}{g}\\
+d^{2} & = & \frac{2v_{0}^{2}h}{g}-4h^{2}\\
+\frac{\left(d^{2}+4h^{2}\right)g}{2h} & = & v_{0}^{2}\\
+v_{0} & = & \sqrt{\frac{\left(d^{2}+4h^{2}\right)g}{2h}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+ניתן לראות כי 
+\begin_inset Formula $y\left(T\right)=0$
+\end_inset
+
+ אבל יותר כל להשתמש ב
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ שהוא הזמן שבו מגיעים לשיא המסלול 
+\begin_inset Formula $T=2t_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $v_{y}\left(t_{0}\right)=0=v_{0y}-gt_{0}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $t_{0}=\frac{v_{0y}}{g}=\frac{v_{0}\sin\theta}{g}$
+\end_inset
+
+ מציבים 
+\begin_inset Formula $R=v_{0}\cos\theta\cdot2t_{0}=v_{0}\cos\theta\cdot2\frac{v_{0}\sin\theta}{g}$
+\end_inset
+
+ ומשתמשים בזהות טריגונוצטרית 
+\begin_inset Formula $R=\frac{v_{0}^{2}}{g}\cdot\sin2\theta$
+\end_inset
+
+.
+ מחפסים נקודת המקסימום עבור משתנה 
+\begin_inset Formula $\theta$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\frac{v_{0}^{2}}{g}\sin2\theta$
+\end_inset
+
+ הוא מקסימאלי ב 
+\begin_inset Formula $2\theta=9^{\circ}0\Leftrightarrow\theta=45^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw2d3.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+d\left(t\right)=\frac{1}{2}At^{2}+Bt\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d\left(t_{1}\right) & = & L\\
+L & = & \frac{1}{2}At_{1}^{2}+Bt_{1}\\
+0 & = & \frac{1}{2}At_{1}^{2}+Bt_{1}-L\\
+t_{1} & = & \frac{-B\pm\sqrt{B^{2}+2AL}}{A}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d\left(t_{2}\right) & = & L+R\pi\\
+\frac{1}{2}At_{2}^{2}+Bt_{2} & = & L+R\pi\\
+\frac{1}{2}At_{2}^{2}+Bt_{2}-\left(L+R\pi\right) & = & 0\\
+t_{2} & = & \frac{-B\pm\sqrt{B^{2}+2A\left(L+R\pi\right)}}{A}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d\left(t_{3}\right) & = & 2L+R\pi\\
+\frac{1}{2}At_{3}^{2}+Bt_{3} & = & 2L+R\pi\\
+\frac{1}{2}At_{3}^{2}+Bt_{3}-\left(2L+R\pi\right) & = & 0\\
+t_{3} & = & \frac{-B\pm\sqrt{B^{2}+2A\left(2L+R\pi\right)}}{A}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{x}\left(t\right)=\begin{cases}
+t_{0}\leq t<t_{1} & \vec{x}_{1}\left(t\right)\\
+t_{1}\leq t<t_{2} & \vec{x}_{2}\left(t\right)\\
+t_{2}\leq t\leq t_{3} & \vec{x}_{3}\left(t\right)\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{x}\left(t\right)=\left(\frac{1}{2}At^{2}+Bt\right)\hat{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}_{2} & = & \left(R-R\cos\theta\right)\hat{x}+R\sin\theta\hat{y}\\
+\theta & = & \frac{\frac{1}{2}At^{2}+Bt-L}{R}\\
+\vec{x}_{2} & = & \left(R-R\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\right)\hat{x}+R\sin\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{x}_{3}=2R\hat{x}+\left[L-\left(\frac{1}{2}At^{2}+Bt-L-\pi R\right)\right]\hat{x}\]
 
 \end_inset
 
