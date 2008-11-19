@@ -39,6 +39,35 @@
 
 \begin_body
 
+\begin_layout Title
+תרגיל מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
 \begin_layout Part*
 שאלה
 \family roman
@@ -681,7 +710,7 @@ k^{2}+2k+1 & = & k^{2}+2k+1\end{eqnarray*}
 \end_layout
 
 \begin_layout Standard
-
+אין לי מוסג.
 \end_layout
 
 \begin_layout Part*
@@ -707,6 +736,75 @@ k^{2}+2k+1 & = & k^{2}+2k+1\end{eqnarray*}
 5
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{n} & = & 2^{2^{n}}+1\\
+\prod_{k=0}^{n-1}F_{k} & = & F_{n}-2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2^{2^{0}} & = & 2^{2^{1}}-2\\
+2 & = & 4-2\checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי הטענה מתקיימת עבור 
+\begin_inset Formula $n=t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\prod_{k=0}^{t-1}F_{k}=F_{t}-2\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח הטענה עבור 
+\begin_inset Formula $n=t+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\prod_{k=0}^{t}F_{k} & = & F_{t+1}-2\\
+F_{0}\cdot F_{2}\cdot\dots\cdot F_{t-1}\cdot F_{t} & = & F_{t+1}-2\\
+\left(F_{t}-2\right)F_{t} & = & F_{t+1}-2\\
+F_{t}^{2}-2F_{t} & = & F_{t+1}-2\\
+\left(2^{2^{t}}\right)^{2}-2\cdot2^{2^{t}} & = & 2^{2^{t+1}}-2\\
+2^{2^{t}}\cdot2^{2^{t}}-2\cdot2^{2^{t}} & = & 2^{2^{t+1}}-2\\
+2^{2^{t}}\left(2^{2^{t}}-2\right) & = & 2^{2^{t+1}}-2\\
+2^{2^{t+1}}-2 & = & 2^{2^{t+1}}-2\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
 \begin_layout Part*
 שאלה
 \family roman
@@ -728,6 +826,23 @@ k^{2}+2k+1 & = & k^{2}+2k+1\end{eqnarray*}
 \noun default
 \color inherit
 6
+\end_layout
+
+\begin_layout Standard
+בהוכחה כתוב כי 
+\begin_inset Formula $a_{2}\in\left\{ a_{1},a_{2}\dots a_{n-1}\right\} \cap\left\{ a_{2},a_{3}\dots a_{n}\right\} $
+\end_inset
+
+ אבל אם 
+\begin_inset Formula $n=2$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a_{2}\notin\left\{ a_{1}\right\} \cap\left\{ a_{2}\right\} $
+\end_inset
+
+.
+ זאת היא הטעות בהוכחה.
 \end_layout
 
 \end_body

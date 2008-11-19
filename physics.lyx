@@ -2252,5 +2252,379 @@ v\left(t\right)-v_{0} & = & u\ln\left(\frac{m_{0}}{m\left(t\right)}\right)\end{e
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Section
+תנועה מעגלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum\vec{F}=m\ddot{\vec{r}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r} & = & \left(x,y,z\right)=x\hat{x}+y\hat{y}+z\hat{z}\\
+\ddot{\vec{r}} & = & \left(\ddot{x},\ddot{y},\ddot{z}\right)=\ddot{x}\hat{x}+\ddot{y}\hat{y}+\ddot{z}\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל במערכת פולרית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r} & = & \left(r,\theta\right)=r\hat{r}\\
+r & = & r\left(t\right)\\
+\theta & = & \theta\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח מקרה יותר פשוט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r & = & \mbox{const}\\
+\theta & = & \theta\left(t\right)\\
+\dot{\vec{r}} & = & r\cdot\dot{\hat{r}}\\
+ & = & r\cdot\dot{\theta}\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\hat{r}} & = & \dot{\theta}\hat{\theta}\\
+\dot{\hat{\theta}} & = & \dot{\theta}\left(-\hat{r}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\vec{r}} & = & \dot{r}\hat{r}+r\dot{\theta}\hat{\theta}\\
+\ddot{\vec{r}} & = & \ddot{r}\hat{r}+\dot{r}\dot{\hat{r}}+\dot{r}\dot{\theta}\hat{\theta}+r\dot{\theta}\dot{\hat{\theta}}\\
+ & = & \ddot{r}\hat{r}+\dot{r}\dot{\theta}\hat{\theta}+\dot{r}\dot{\theta}\hat{\theta}+\dot{r}\ddot{\theta}\hat{\theta}+r\dot{\theta}^{2}\left(-\hat{r}\right)\\
+ & = & \left(\underbrace{\ddot{r}}_{\mbox{Radial}}-\underbrace{r\dot{\theta}^{2}}_{\mbox{Centropital}}\right)\hat{r}+\left(\underbrace{r\ddot{\theta}}_{\mbox{Tangentan}}+\underbrace{2\dot{r}\dot{\theta}}_{\mbox{Curiolis}}\right)\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נדבר על מים מסתובבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z\left(r\right) & = & ?\\
+\sum\vec{F} & = & m\ddot{\vec{r}}\\
+\ddot{\vec{r}} & = & -r\omega^{2}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת משוואה וקטורית אז פותרים כל כואורדינטה לבד.
+ עבור 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & N\cos\alpha\hat{z}-N\sin\alpha\hat{r}\\
+m\vec{g} & = & -mg\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+N\cos\alpha\hat{z}-mg=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\hat{r}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-N\sin\alpha=-mg\omega^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{\vec{r}=-r\omega^{2}\hat{r}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tan\alpha=\frac{\omega^{2}}{g}r\Rightarrow\frac{\partial z}{\partial r}=\frac{\omega^{2}}{g}r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z\left(r\right)=\int\frac{\omega^{2}}{g}r\partial r=\left(\frac{\omega^{2}}{2g}\right)r^{2}+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד שאלה על תנועה מעגלית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum\vec{F}=m\ddot{\vec{r}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{\vec{r}} & = & \left(-r\dot{\theta}^{2}\right)\hat{r}+\left(r\ddot{\theta}\right)\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & -N\hat{r}+0\cdot\hat{\theta}\\
+m\vec{g} & = & mg\sin\theta\left(-\hat{r}\right)+mg\cos\theta\left(-\hat{\theta}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum\vec{F} & = & m\ddot{\vec{r}}\\
+-M-mg\sin\theta & = & -mr\dot{\theta}^{2}\\
+-mg\cos\theta & = & mr\ddot{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תנועה כווית
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T-m_{1}g=m_{1}a_{1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T''-m_{2}g=m_{2}a_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משוואות ב
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נעלמים אז צריכים עוד שתי משוואות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2T-T'''=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & 2y_{2}+y_{1}\\
+\dot{L} & = & 0\\
+\ddot{L} & = & 0\\
+2\ddot{y}_{2}+\ddot{y}_{1} & = & 0\\
+2a_{2}+a_{1} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{1} & = & 2\left(\frac{2m_{1}-m_{2}}{4m_{1}+m_{2}}\right)g\\
+a_{2} & = & \left(\frac{m_{2}-2m_{1}}{4m_{1}+m_{2}}\right)g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שתי מסות קשורות בחוט.
+ הכח המקסימאלי של החוט הוא 
+\begin_inset Formula $T_{max}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F-T_{max} & = & 20a\\
+T_{max} & = & 30a\\
+F & = & 50a\\
+F & = & \frac{5}{3}T_{max}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

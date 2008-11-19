@@ -665,6 +665,16 @@ t_{2}\leq t\leq t_{3} & \vec{x}_{3}\left(t\right)\end{cases}\]
 
 \end_deeper
 \begin_layout Enumerate
+\begin_inset Formula \[
+\vec{x}''_{1}=A\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 \vec{x}_{2} & = & \left(R-R\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\right)\hat{x}+R\sin\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}\\
 \vec{x}_{2}^{'} & = & -R\cdot\left(\frac{At+B}{R}\right)\sin\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{x}+R\cdot\left(\frac{At+B}{R}\right)\cdot\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}\\
@@ -673,6 +683,15 @@ t_{2}\leq t\leq t_{3} & \vec{x}_{3}\left(t\right)\end{cases}\]
 +At\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}+B\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}\end{matrix}\\
 \vec{x}_{2}^{''} & = & \begin{matrix}-A\left(\sin\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)-t\left(\frac{At+B}{R}\right)\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\right)\hat{x}+B\left(\frac{At+B}{R}\right)\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{x}\\
 +A\left(\left(\frac{At+B}{R}\right)\cos\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}-\left(\frac{At+B}{R}\right)\sin\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\right)-B\left(\frac{At+B}{R}\right)\sin\left(\frac{\frac{1}{2}At^{2}+Bt-L}{R}\right)\hat{y}\end{matrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{x}''_{3}=-A\]
 
 \end_inset
 

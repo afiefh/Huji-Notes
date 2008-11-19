@@ -34,6 +34,7 @@
 \tracking_changes false
 \output_changes false
 \author "" 
+\author "" 
 \end_header
 
 \begin_body
@@ -439,6 +440,126 @@ N=0\end{array}}\sum_{i=1}^{N}f\left(x\right)\Delta x=\int_{a}^{b}f\left(x\right)
 
 \end_inset
 
+
+\end_layout
+
+\begin_layout Chapter
+סדנא מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+בדרך כלל עובדים עם מערכת צירים 
+\begin_inset Formula $\hat{x},\hat{y}$
+\end_inset
+
+ אבל אפשר גם לעבוד עם מערכת 
+\begin_inset Formula $\hat{u},\hat{v}$
+\end_inset
+
+ שהיא מסובבת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\vec{a}=a_{1}\hat{x}+a_{2}\hat{y}=a_{3}\hat{u}+a_{4}\hat{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להשתמש גם במערכת פולרית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{r} & = & \cos\varphi\hat{x}+\sin\varphi\hat{y}\\
+\hat{\theta} & = & \sin\varphi\hat{x}+\cos\varphi\hat{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם משתמשים במערכת אילו רואים כי וקטורי היחידה משתנים, אז צריך לגזור את זה
+ כמו כפל של פונקציות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r} & = & a_{r}\hat{r}+a_{\theta}\hat{\theta}\\
+\dot{\vec{r}} & = & \dot{a_{r}}\hat{r}+\dot{a}_{4}\dot{\hat{r}}+\dot{a}_{\theta}\hat{\theta}+a_{\theta}\dot{\hat{\theta}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & R\hat{r}\\
+R\left(t\right) & = & R\left(t\right)\hat{r}\\
+v & = & \dot{R}\hat{r}+R\dot{\hat{r}}\\
+ & = & \dot{R}\hat{r}+R\dot{\theta}\hat{\theta}\\
+a & = & \dot{v}\\
+ & = & \ddot{R}\hat{r}+\dot{R}\dot{\hat{r}}+\dot{R}\dot{\theta}\hat{\theta}+R\ddot{\theta}\hat{\theta}+R\dot{\theta}\dot{\hat{\theta}}\\
+ & = & \ddot{R}\hat{r}+\dot{R}\dot{\theta}\hat{\theta}+\dot{R}\dot{\theta}\hat{\theta}+R\ddot{\theta}\hat{\theta}+R\dot{\theta}^{2}\hat{r}\\
+ &  & \underbrace{\left(\ddot{R}+R\dot{\theta}^{2}\right)}_{\mbox{Radial}}\hat{r}+\underbrace{\left(2\dot{R}\dot{\theta}+R\ddot{\theta}\right)}_{\mbox{Tangetan}}\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תנועה מעגלית פשוטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R\left(t\right) & = & R\\
+\varphi\left(t\right) & = & \omega t\\
+\vec{R}\left(t\right) & = & R\left(t\right)\left(\hat{r}\left(t\right)\right)\\
+v\left(t\right) & = & R\omega\left(\hat{\varphi}\left(t\right)\right)\\
+\hat{a}\left(t\right) & = & -R\omega^{2}\hat{r}\\
+ & = & \frac{\left(v\left(t\right)\right)^{2}}{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+כוחות
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

@@ -2567,5 +2567,47 @@ B\circ A\left(\lambda x\right) & = & B\left(A\left(\lambda x\right)\right)\\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Section
+מרחבים וקטוריים
+\end_layout
+
+\begin_layout Standard
+שעתיים של דוגמאות ואין הגדרה!
+\end_layout
+
+\begin_layout Section
+תת מרחב ליניארי
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $X$
+\end_inset
+
+ מרחב וקטורי אזי 
+\begin_inset Formula $V\subset X$
+\end_inset
+
+ הוא תת מרחב אםם 
+\begin_inset Formula $x,y\in V\Rightarrow\left(x+y\right)\in V$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in V,\alpha\in\mathbb{R}\Rightarrow\alpha x\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה לתת קבוצה: קו ישר שעובר דרך ראשית הצירים הוא תת-מרחב וקטורי למישור.
+\end_layout
+
 \end_body
 \end_document

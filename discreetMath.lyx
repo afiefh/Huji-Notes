@@ -3190,5 +3190,229 @@ f:\mathbb{N}\to A\]
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+מגדירים פונקציה כך ש 
+\begin_inset Formula $f\subseteq A\times B$
+\end_inset
+
+ פונקציה מ
+\begin_inset Formula $A$
+\end_inset
+
+ ל
+\begin_inset Formula $B$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ קיים 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ יחיד כך ש 
+\begin_inset Formula $\left(a,b\right)\in f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת חד חד ערכית אם לכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ יש לכל היותר 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ יחיד כך ש 
+\begin_inset Formula $\left(a,b\right)\in f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ נקראת על אם לכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ יש 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left(a,b\right)\in f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ ו- 
+\begin_inset Formula $g:B\to C$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\circ f:A\to C$
+\end_inset
+
+ ו-
+\begin_inset Formula $g\circ f\subseteq A\times C$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left(a,b\right)\in f$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $c\in C$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left(b,c\right)\in g$
+\end_inset
+
+ אזי מגדירים 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ ככל הזווגות 
+\begin_inset Formula $\left(a,c\right)$
+\end_inset
+
+ שמתקבלים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f,g$
+\end_inset
+
+ חד חד ערכית אז 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ חד חד ערכית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f,g$
+\end_inset
+
+ על אז 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ על
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ חד חד ערכית אז 
+\begin_inset Formula $f$
+\end_inset
+
+ חד חד ערכית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ על אז 
+\begin_inset Formula $g$
+\end_inset
+
+ על
+\end_layout
+
+\begin_layout Standard
+יחס על 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\Re\subseteq A\times A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a,b\right)\in\Re$
+\end_inset
+
+ מסמנים 
+\begin_inset Formula $a\Re b$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(a,b\right)\notin\Re$
+\end_inset
+
+ מסמנים 
+\begin_inset Formula $a\not\Re b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\leq=\left\{ \left(a,b\right)\mid a\leq b\right\} \]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
