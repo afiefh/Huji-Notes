@@ -2609,5 +2609,142 @@ B\circ A\left(\lambda x\right) & = & B\left(A\left(\lambda x\right)\right)\\
 דוגמה לתת קבוצה: קו ישר שעובר דרך ראשית הצירים הוא תת-מרחב וקטורי למישור.
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+8
+\end_layout
+
+\begin_layout Standard
+דיברנו בפעם האחרונה על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מרחבים וקטוריים ואמרנו שנשתמש רוב הזמן בתתי מרחבים.
+\end_layout
+
+\begin_layout Standard
+דוגמאות לתתי מרחבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+X=\left\{ \vec{x}=\begin{pmatrix}2t\\
+3t\end{pmatrix}\in\mathbb{R}^{2},t\in\mathbb{R}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+X=\left\{ \vec{x}=\begin{pmatrix}x_{1}\\
+0\\
+x_{3}\end{pmatrix}\in\mathbb{R}^{3}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+K_{w}=\left\{ x\left(t\right)=A\cos\left(\omega t+\varphi\right)\mid A,\omega,\varphi\in\mathbb{R},\omega=\mbox{constant}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & A\cos\left(\omega t+\varphi\right)\\
+y\left(t\right) & = & B\cos\left(\omega t+\phi\right)\\
+x\left(t\right)+y\left(t\right) & = & A\cos\left(\omega t+\varphi\right)+B\cos\left(\omega t+\phi\right)\\
+ & = & A\left(\cos\left(\omega t\right)\cos\varphi-\sin\left(\omega t\right)\sin\varphi\right)+B\left(\cos\left(\omega t\right)\cos\phi-\sin\left(\omega t\right)\sin\phi\right)\\
+ & = & \cos\omega t\left(\underbrace{A\cos\varphi+B\cos\phi}_{a}\right)-\sin\omega t\left(\underbrace{A\sin\varphi+B\sin\phi}_{b}\right)\\
+ & = & \sqrt{a^{2}+b^{2}}\left(\underbrace{\frac{a}{\sqrt{a^{2}+b^{2}}}}_{\cos\theta}\cos\omega t-\underbrace{\frac{b}{\sqrt{a^{2}+b^{2}}}}_{\sin\theta}\sin\omega t\right)\\
+ & = & \underbrace{\sqrt{a^{2}+b^{2}}}_{c}\left[\cos\omega t\cos\theta-\sin\omega t\sin\theta\right]\\
+ & = & c\cdot\cos\left(\omega t+\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גרעין של אופרטור
+\end_layout
+
+\begin_layout Standard
+הגדרה: תת-מרחב הגרעין הוא 
+\begin_inset Formula $\mbox{ker}A=\left\{ \vec{x}\in X\mid A\left(\vec{x}\right)=0\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+למשל הגרעין של אופרטור הגזירה הם 
+\begin_inset Formula $f\left(x\right)=Constant$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

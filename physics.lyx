@@ -2626,5 +2626,624 @@ F & = & \frac{5}{3}T_{max}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+8
+\end_layout
+
+\begin_layout Section
+מרכז מסה
+\end_layout
+
+\begin_layout Standard
+איכ מטפלים במערכת שיש בה הרבה חלקיקים שיש כל מיני אינטראקציה ביניהם, אבל
+ המערכת כלה מושפעת על ידי כח חצוני? משתמשי
+\end_layout
+
+\begin_layout Standard
+במרכז המסה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{ext} & = & \frac{\partial P_{T}}{\partial t}\\
+ & = & \frac{\partial}{\partial t}\sum\vec{P}_{i}\\
+ & = & \frac{\partial^{2}}{\partial t^{2}}\left[\sum_{i}m_{i}\vec{r}_{i}\left(t\right)\right]\\
+ & = & M\frac{\partial}{\partial t}\left[\frac{\sum m_{i}\vec{r}_{i}\left(t\right)}{M}\right]\\
+ & = & M\frac{\partial^{2}}{\partial t^{2}}\left[\underbrace{\vec{R}_{cm}\left(t\right)}_{\mbox{Center Of Math}}\right]\\
+F_{ext} & = & M\cdot\frac{\partial^{2}}{\partial t^{2}}\vec{R}_{cm}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור לבעית שתי המסות המקושרות בקפיץ.
+ קיבלנו כי 
+\begin_inset Formula $-\frac{v_{1}}{v_{2}}=\frac{m_{2}}{m_{1}}$
+\end_inset
+
+ היינו יכולים לקבל את זה ממרכז המסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+t & = & 0\\
+R_{cm} & = & 0\\
+\dot{R}_{cm} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אין כח חיצוני אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(m_{1}+m_{2}\right)\ddot{R}_{cm} & = & 0\\
+R_{cm} & = & 0\\
+\frac{1}{M}\left(m_{1}r_{1}+m_{2}r_{2}\right) & = & 0\\
+m_{1}r_{1} & = & -m_{2}r_{2}\\
+\frac{r_{1}}{r_{2}} & = & -\frac{m_{2}}{m_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c11d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקפיצ יש לו אורך מנוחה של 
+\begin_inset Formula $l_{0}$
+\end_inset
+
+ אבל ברגע 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ אנחנו לוחצים אותו 
+\begin_inset Formula $l\left(0\right)<l_{0}$
+\end_inset
+
+.
+ אפשר לראות כי 
+\begin_inset Formula $l\left(t\right)=r_{2}-r_{1}$
+\end_inset
+
+ מגדירים כיוון חיובי למטה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\frac{\partial^{2}}{\partial t^{2}}r_{1}\left(t\right) & = & m_{1}g+k\left(l\left(t\right)-l_{0}\right)\\
+m_{2}\frac{\partial^{2}}{\partial t^{2}}r_{2}\left(t\right) & = & m_{2}g-k\left(l\left(t\right)-l_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת משואות דיפרנציאלית, אז יותר כל לפתור בדרך אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1} & = & f\left(R_{cm},l\left(t\right)\right)\\
+r_{2} & = & f\left(R_{cm},l\left(t\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך למצא את 
+\begin_inset Formula $R_{cm}$
+\end_inset
+
+ ואת 
+\begin_inset Formula $l\left(t\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{cm} & = & \frac{m_{1}}{M}r_{1}+\frac{m_{2}}{M}r_{2}\\
+l\left(t\right) & = & r_{2}-r_{1}\\
+R_{cm} & = & \frac{m_{1}}{M}r_{1}+\frac{m_{2}}{M}r_{1}+\frac{m_{2}}{M}l\left(t\right)\\
+ & = & r_{1}+\frac{m_{2}}{M}\left(t\right)\\
+r_{1} & = & R_{cm}\left(t\right)-\frac{m_{2}}{M}l\left(t\right)\\
+r_{2} & = & R_{cm}\left(t\right)+\frac{m_{1}}{M}l\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עברנו את החלק הראשון, עכשיו צריך משוואות התנועה)
+\begin_inset Formula $R_{cm}\left(0\right)=0$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M\ddot{R}_{cm} & = & \left(m_{1}+m_{2}\right)g\\
+\ddot{R}_{cm} & = & g\\
+\dot{R}_{cm} & = & gt\\
+x_{cm} & = & \frac{1}{2}gt^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{l}\left(t\right) & = & \ddot{r}_{2}-\ddot{r}_{1}=\frac{1}{m_{2}}\left[m_{2}g-k\left(l\left(t\right)-l_{0}\right)\right]-\frac{1}{m_{1}}\left[m_{1}g+k\left(l\left(t\right)-l_{0}\right)\right]\\
+ & = & -\left[\frac{k}{m_{1}}+\frac{k}{m_{2}}\right]\left(l\left(t\right)-l_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+ נגדיר את 
+\begin_inset Formula $\mu=\frac{m_{1}m_{2}}{m_{1}+m_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}}{\partial t^{2}}l\left(t\right) & = & -\frac{k}{\mu}\left(l\left(t\right)-l_{0}\right)\\
+l\left(t\right) & = & A\cos\left(\omega t\right)+B\\
+-A\omega^{2}\cos\left(\omega t\right) & = & -\frac{k}{\mu}\left(A\cos\left(\omega t\right)+B-l_{0}\right)\\
+-A\omega^{2}\cos\left(\omega t\right) & = & -\frac{k}{\mu}A\cos\left(\omega t\right)-\frac{k}{\mu}B+\frac{k}{\mu}l_{0}\\
+-A\omega^{2} & = & -\frac{k}{\mu}A\\
+\omega & = & \sqrt{\frac{k}{\mu}}\\
+0 & = & -\frac{k}{\mu}B+\frac{k}{\mu}l_{0}\\
+\frac{k}{\mu}B & = & \frac{k}{\mu}l_{0}\\
+B & = & l_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרנו בתחילת השאלה כי אורך הקפיץ במצב מנוחה הוא 
+\begin_inset Formula $l_{0}$
+\end_inset
+
+ וקיווצנו אותו ב 
+\begin_inset Formula $\Delta l_{0}$
+\end_inset
+
+ אזי האורך בתחילת הניסוי היה 
+\begin_inset Formula $l_{0}-\Delta l_{0}$
+\end_inset
+
+ 
+\begin_inset Formula \begin{eqnarray*}
+l\left(t=0\right) & = & l_{0}+\Delta l_{0}\\
+A\cos\left(\sqrt{\frac{k}{\mu}}\cdot t\right)+l_{0} & = & l_{0}+\Delta l_{0}\\
+A\cos\left(0\right)+l_{0} & = & l_{0}+\Delta l_{0}\\
+A & = & l_{0}+\Delta l_{0}-l_{0}\\
+ & = & \Delta l_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1}\left(t\right) & = & \frac{1}{2}gt^{2}-\frac{m_{2}}{M}\left(l_{0}+\Delta l_{0}\cdot\cos\left(\sqrt{\frac{k}{\mu}}\cdot t\right)\right)\\
+r_{2}\left(t\right) & = & \frac{1}{2}gt^{2}+\frac{m_{2}}{M}\left(l_{0}+\Delta l_{0}\cos\left(\sqrt{\frac{k}{\mu}}\cdot t\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1}\left(t=0\right) & = & -\frac{m_{2}}{M}\left(l_{0}+\Delta l_{0}\right)\\
+r_{2}\left(t=0\right) & = & +\frac{m_{1}}{M}\left(l_{0}+\Delta l_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הגיוני כי 
+\begin_inset Formula $x=0$
+\end_inset
+
+ הוא מרכז המסה בתחילת הנסיון.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Section
+אנרגיה
+\end_layout
+
+\begin_layout Standard
+הטענה של חוק שימור הרינרגיה היא כי האנרגיה קבועה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \frac{1}{2}mv^{2}\\
+\frac{\partial E_{k}}{\partial t} & = & \frac{1}{2}m\left[\frac{\partial\vec{v}\left(t\right)}{\partial t}\cdot\vec{v}\left(t\right)+\vec{v}\left(t\right)\cdot\frac{\partial\vec{v}\left(t\right)}{\partial t}\right]\\
+ & = & m\frac{\partial\vec{v}\left(t\right)}{\partial t}\vec{v}\left(t\right)\\
+ & = & m\vec{a}\cdot\vec{v}\\
+ & = & \vec{F}\cdot\frac{\partial\vec{x}\left(t\right)}{\partial t}\\
+\frac{\partial E_{k}}{\partial t} & = & \vec{F}\cdot\frac{\partial\vec{x}\left(t\right)}{\partial t}\\
+\int_{t_{1}}^{t_{2}}\frac{\partial E_{k}}{\partial t} & = & \int_{t_{1}}^{t_{2}}\vec{F}\left(\vec{r}\right)\cdot\frac{\partial\vec{x}\left(t\right)}{\partial t}\\
+E_{k}\left(t_{2}\right)-E_{k}\left(t_{1}\right) & = & \int_{r_{1}}^{r_{2}}F\left(\vec{r}\right)\cdot\frac{\partial\vec{r}\left(t\right)}{\partial t}\partial t\\
+E\left(r_{2}\right)-E\left(r_{1}\right) & = & \int_{r_{1}}^{r_{2}}F\left(\vec{r}\right)\partial\vec{r}\\
+W_{1\to2} & = & \int_{r_{1}}^{r_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם זורקים כדור למעלה והא חוזר אלנו, מה היא העבודה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W_{1\to2} & = & \int_{1}^{2}\vec{F}\partial\vec{r}\\
+ & = & mg\int_{1}^{2}\partial\vec{r}\\
+ & = & mg\left(r_{2}-r_{1}\right)\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נותנים לגוף מהירות התחלתית ורוצים לדעת איפה הוא עוצר)בגלל החיכוך(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W_{1\to2} & = & \int\vec{f_{k}}\partial\vec{r}\\
+ & = & \int-\mu mg\partial r\\
+ & = & -mg\cdot L\\
+E_{0}+W_{1\to2} & = & 0\\
+\frac{1}{2}mv^{2}-mgL & = & 0\\
+L & = & \frac{v^{2}}{2g\mu}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האנרגיה מורכבת מכל סוגי אנרגה)חום, חשמל...( אנחנו נתעשק רק באנרגה מיכנית.
+\end_layout
+
+\begin_layout Standard
+אם יכולים לכתוב כח מסיום כ 
+\begin_inset Formula $\vec{F}=-\frac{\partial U\left(\vec{r}\right)}{\partial\vec{r}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F}\left(\vec{r}\right) & = & -\frac{\partial u\left(\vec{r}\right)}{\partial x}\hat{x}-\frac{\partial u\left(\vec{r}\right)}{\partial\vec{y}}\hat{y}-\frac{\partial u\left(\vec{r}\right)}{\partial\vec{z}}\\
+ & = & -\vec{\nabla}u\left(\vec{r}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}=\frac{\partial}{\partial x}\hat{x}+\frac{\partial}{\partial y}\hat{y}+\frac{\partial}{\partial z}\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\vec{F}\left(\vec{r}\right)\partial\vec{r} & = & \int_{\vec{r}_{1}}^{\vec{r}_{2}}\left[\underbrace{\frac{\partial u}{\partial x}\partial x+\frac{\partial u}{\partial y}\partial y+\frac{\partial y}{\partial z}\partial z}_{\partial u}\right]\\
+ & = & -\int_{\vec{r}_{1}}^{\vec{r}_{2}}\partial u=-\left[u\left(\vec{r}_{2}\right)-u\left(\vec{r}_{1}\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Section
+אנרגיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \frac{1}{2}mv^{2}\\
+\Delta E_{k_{1\to2}} & = & \int_{1}^{2}\vec{F}\partial\vec{r}\\
+ & = & \int_{1}^{2}-\vec{\nabla}u\left(\vec{r}\right)\\
+ & = & -\left[u\left(1\right)-u\left(2\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של אנרגיה מיכנית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & E_{k}+u\\
+E\left(2\right)-E\left(1\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרים של הכוחות שלנו הם כולם משמרים, כלומר יכולים לכתוב אותם כ
+\begin_inset Formula $-\nabla u\left(r\right)$
+\end_inset
+
+ חוץ מכח החיכוך.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=-\nabla u\left(r\right)+f\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לחשב את הפוטנציאל של כח הגרביטציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -G\frac{m_{1}m_{2}}{r^{2}}\hat{r}_{1\to2}\\
+u_{G}\left(\vec{r}\right) & = & -G\frac{m_{1}m_{2}}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לבדוק אם זה נכון עוסים גראדינט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\vec{\nabla}u\left(r\right) & = & \frac{\partial u}{\partial x}\hat{x}+\frac{\partial u}{\partial y}\hat{y}+\frac{\partial u}{\partial z}\hat{z}\\
+\frac{\partial u}{\partial x} & = & -Gm_{1}m_{2}\left(\frac{\partial}{\partial x}\left[\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right]\hat{x}+\frac{\partial}{\partial x}\left[\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right]\hat{y}+\frac{\partial}{\partial x}\left[\frac{1}{\sqrt{x^{2}+y^{2}+z^{2}}}\right]\hat{z}\right)\\
+ & = & -Gm_{1}m_{2}\left(\left[\frac{-2x}{2\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right]\hat{z}+\left[\frac{-2y}{2\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right]\hat{y}+\left[\frac{-2y}{2\left(x^{2}+y^{2}+z^{2}\right)^{\frac{3}{2}}}\right]\hat{z}\right)\\
+ & = & \frac{Gm_{1}m_{2}}{r^{3}}\left[x\hat{x}+y\hat{y}+z\hat{z}\right]\\
+ & = & \frac{Gm_{1}m_{2}}{r^{3}}\vec{r}\\
+ & = & \frac{Gm_{1}m_{2}}{r^{2}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם זורקים כדור תניס מהירות תחללתית כך שהוא לעולם לא יחזור, כלומר יצא לחלל,
+ מה המהירות ההתחלתית שצריכים לתת לו?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u=-G\frac{m_{1}m_{2}}{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c13d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & E_{k}+u\\
+ & = & \frac{1}{2}mv_{0}^{2}-G\frac{mM_{E}}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי התנאי שהוא לעולם לא יחזור הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & > & 0\\
+\frac{1}{2}mv_{0}^{2}-G\frac{mM_{E}}{R_{E}} & > & 0\\
+\frac{1}{2}mv_{0}^{2} & > & G\frac{mM_{E}}{R_{E}}\\
+v_{0}^{2} & > & 2G\frac{M_{E}}{R_{E}^{2}}R_{E}\\
+v_{0}^{2} & > & \sqrt{2gR_{E}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה לכדור בגובה 
+\begin_inset Formula $h$
+\end_inset
+
+ מעל כדור הארץ כאשר 
+\begin_inset Formula $h\ll R_{E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{G}\left(r\right) & = & -G\frac{mM_{E}}{R_{E}+h}\\
+ & = & -G\frac{mM_{E}}{R_{E}}\\
+ & = & -G\frac{mM_{E}}{R_{E}}\cdot\frac{1}{1+\frac{h}{R_{e}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לעשות קירוב עושים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x_{0}+\Delta x\right)\approx f\left(x_{0}\right)+\frac{\partial f}{\partial x}\mid_{x=x_{0}}+\frac{\partial^{2}f}{\partial x^{2}}\mid_{x=x_{0}}+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אנחנו נשתמש רק בסדר הראשון.
+ אזי אם 
+\begin_inset Formula $\alpha=\frac{h}{R_{E}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{1+\alpha}=1+\frac{1}{\left(1+\alpha\right)^{2}}\mid_{\alpha=0}\cdot\alpha=1-\alpha\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{G}\approx-G\frac{M_{E}m}{R_{E}}\left[1-\frac{h}{R_{E}}\right]=C+\underbrace{G\frac{M_{E}}{R_{E}^{2}}}_{g}mh\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קפיץ שמרחק המנוחה שלו 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ תלוי למסה ומצד האחר תלוי לקיר.
+ אם מותכים את הקפיץ אז מה המהירות המקסימאלית של הקפיץ?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -k\left(x-x_{0}\right)\\
+u\left(x\right) & = & \frac{1}{2}k\left(x-x_{0}\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המהירות המקסימאלית היא כאשר הוא מאבד את כל האנרגה הפוטנציאלית לטובת
+ האנרגיה הקינטית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2}mv^{2} & = & \frac{1}{2}k\left(x-x_{0}\right)^{2}\\
+v & = & \sqrt{\frac{k\left(x-x_{0}\right)^{2}}{m}}\\
+ & = & \underbrace{\sqrt{\frac{k}{m}}}_{\omega}\left(x-x_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

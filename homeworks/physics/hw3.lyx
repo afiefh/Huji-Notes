@@ -1,0 +1,659 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+נתונים:
+\begin_inset Formula \begin{eqnarray*}
+r & = & 100m\\
+\mu & = & 0.8\\
+m & = & 100kg\\
+\theta & = & 15^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+חשב 
+\begin_inset Formula $v_{min}$
+\end_inset
+
+ ו
+\begin_inset Formula $v_{max}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $v_{min}$
+\end_inset
+
+: כאשר מכונית נעה במהירות מינימאלית החיכוך פועל בכיוון 
+\begin_inset Formula $\hat{r}\cos\alpha+\hat{z}\sin\alpha$
+\end_inset
+
+ לכן:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum\vec{F} & = & m\vec{a}\\
+mg\hat{z}+N\left(\left(-\hat{r}\right)\cos\left(90-\alpha\right)+\hat{z}\sin\left(90-\alpha\right)\right)+\mu N\left(\hat{r}\cos\alpha+\hat{z}\sin\alpha\right) & = & m\vec{a}\\
+\vec{a} & = & \left(\ddot{r}-r\dot{\theta}^{2}\right)\hat{r}+\left(r\ddot{\theta}+2\dot{r}\dot{\theta}\right)\hat{\theta}\\
+\left(mg+N\sin\left(90-\alpha\right)+\mu N\sin\alpha\right)\hat{z}+\left(-N\cos\left(90-\alpha\right)+\mu N\cos\alpha\right)\hat{r} & = & m\left(0-r\dot{\theta}^{2}\right)\hat{r}+\left(0+0\right)\hat{\theta}+0\hat{z}\\
+\begin{pmatrix}mg+N\sin\left(90-\alpha\right)+\mu N\sin\alpha\\
+-N\cos\left(90-\alpha\right)+\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}-mr\dot{\theta}^{2}\\
+0\end{pmatrix}\\
+\begin{pmatrix}mg+N\sin\left(90-\alpha\right)+\mu N\sin\alpha\\
+-N\cos\left(90-\alpha\right)+\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}0\\
+-mr\dot{\theta}^{2}\end{pmatrix}\\
+\begin{pmatrix}N\\
+\mu N\cos\alpha-N\cos\left(90-\alpha\right)\end{pmatrix} & = & \begin{pmatrix}\frac{-mg}{\sin\left(90-\alpha\right)+\mu\sin\alpha}\\
+-mr\dot{\theta}^{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N\left(\mu\cos\alpha-\cos\left(90-\alpha\right)\right) & = & -mr\dot{\theta}^{2}\\
+\frac{mg\left(\mu\cos\theta-\cos\left(90-\alpha\right)\right)}{mr\left(\sin\left(90-\alpha\right)+\mu\sin\alpha\right)} & = & \dot{\theta}^{2}\\
+\dot{\theta}^{2} & = & 0.0438\\
+\dot{\theta} & = & 0.2093\left[\frac{1}{sec}\right]\\
+\dot{x} & = & \dot{\theta}r\\
+ & = & 20.93\left[\frac{m}{sec}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+לחשב 
+\begin_inset Formula $v_{max}$
+\end_inset
+
+: כאשר המכונית נוסעת במהירות 
+\begin_inset Formula $v_{max}$
+\end_inset
+
+ הכח 
+\begin_inset Formula $f$
+\end_inset
+
+ יהיה בכיוון 
+\begin_inset Formula $-\hat{r}\cos\alpha-\hat{z}\sin\alpha$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+mg\hat{z}+N\left(\left(-\hat{r}\right)\cos\left(90-\alpha\right)+\hat{z}\sin\left(90-\alpha\right)\right)-\mu N\left(\hat{r}\cos\alpha+\hat{z}\sin\alpha\right)=m\vec{a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מאחר והדבר היחיד שהשתנה הוא הסימן של 
+\begin_inset Formula $\mu$
+\end_inset
+
+ נקפוץ לסוף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{mg\left(-\mu\cos\theta-\cos\left(90-\alpha\right)\right)}{mr\left(\sin\left(90-\alpha\right)-\mu\sin\alpha\right)} & = & \dot{\theta}^{2}\\
+\dot{\theta}^{2} & = & -0.1359???????????\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Enumerate
+לא תשתנה
+\end_layout
+
+\begin_layout Enumerate
+הפרש בין 
+\begin_inset Formula $v_{max}$
+\end_inset
+
+ ו
+\begin_inset Formula $v_{min}$
+\end_inset
+
+ יקטן
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(mg-k\Delta x\cos\alpha\right)\hat{y}+\left(F-k\Delta x\sin\alpha\right)\hat{x} & = & 0\\
+\begin{pmatrix}mg-k\Delta x\cos\alpha\\
+F-k\Delta x\sin\alpha\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}\Delta x\\
+k\Delta x\sin\alpha\end{pmatrix} & = & \begin{pmatrix}\frac{mg}{k\cos\alpha}\\
+F\end{pmatrix}\\
+\frac{kmg\sin\alpha}{k\cos\alpha} & = & F\\
+\tan\alpha & = & \frac{F}{mg}\\
+\alpha & = & \arctan\left(\frac{F}{mg}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(T\cos\alpha-mg\right)\hat{z}+\left(-T\sin\alpha\right)\hat{r} & = & m\vec{a}\\
+\left(T\cos\alpha-mg\right)\hat{z}+\left(-T\sin\alpha\right)\hat{r} & = & m\left(\ddot{r}-r\dot{\theta}^{2}\right)\hat{r}+m\left(r\ddot{\theta}+2\dot{r}\dot{\theta}\right)\hat{\theta}\\
+\begin{pmatrix}T\cos\alpha-mg\\
+-T\sin\alpha\end{pmatrix} & = & \begin{pmatrix}0\\
+-mr\dot{\theta}^{2}\end{pmatrix}\\
+\cos\alpha & = & \frac{mg}{T}\\
+\alpha & = & \arccos\left(\frac{20}{40}\right)\\
+ & = & 60^{\circ}\\
+-T\sin\left(60^{\circ}\right) & = & -mr\dot{\theta}^{2}\\
+\dot{\theta} & = & \sqrt{\frac{40\cdot0.866}{2}}\\
+ & = & 4.161\left[\frac{1}{sec}\right]\\
+\dot{x} & = & \dot{\theta}\cdot R\\
+ & = & 4.161\left[\frac{m}{sec}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המהירות תהייה מקסימאלית בתחתית המעגל, ופו כח הכובד יתנגד לחוט, אזי זה הוא
+ המקום שבו צריכים לחשב אז המהירות הקריטית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(mg-T\right)\hat{r} & = & m\vec{a}\\
+\left(mg-T\right)\hat{r} & = & m\left(-r\dot{\theta}^{2}\right)\hat{r}+r\ddot{\theta}\hat{\theta}\\
+\begin{pmatrix}mg-T\\
+0\end{pmatrix} & = & \begin{pmatrix}-mr\dot{\theta}^{2}\\
+r\ddot{\theta}\end{pmatrix}\\
+\ddot{\theta} & = & 0\\
+mg-T & = & -mr\dot{\theta}\\
+\dot{\theta} & = & \sqrt{\frac{-mg+T}{mr}}\\
+ & = & \sqrt{10}\left[\frac{1}{sec}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+רוצים 
+\begin_inset Formula $F$
+\end_inset
+
+ מינימאלי שבו המזוודה תנוע, במצב זה 
+\begin_inset Formula $\ddot{x}=0\Leftrightarrow v=\mbox{Constant}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F\left(\hat{x}\cos\alpha+\hat{y}\sin\alpha\right)-mg\hat{y}+N\hat{y}-\mu N\hat{x} & = & m\vec{a}\\
+\begin{pmatrix}F\cos\alpha-\mu N\\
+N+F\sin\alpha-mg\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}N\\
+N+F\sin\alpha\end{pmatrix} & = & \begin{pmatrix}\frac{F\cos\alpha}{\mu}\\
+mg\end{pmatrix}\\
+F\frac{\cos\alpha}{\mu}+F\sin\alpha & = & mg\\
+F\left(\frac{\cos\alpha}{\mu}+\sin\alpha\right) & = & mg\\
+F & = & \frac{mg}{\left(\frac{\cos\alpha}{\mu}+\sin\alpha\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הביטוי הזה הוא מינימאלי כאשר המכנה הוא מקסימאלי.
+ אזי צריך למצא מקסימום של 
+\begin_inset Formula $\frac{\cos\alpha}{\mu}+\sin\alpha$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(\alpha\right) & = & \frac{\cos\alpha}{\mu}+\sin\alpha\\
+\frac{\partial}{\partial\alpha}f\left(\alpha\right) & = & -\frac{\sin\alpha}{\mu}+\cos\alpha\\
+0 & = & -\frac{\sin\alpha}{\mu}+\cos\alpha\\
+\frac{\sin^{2}\alpha}{\mu^{2}} & = & \cos^{2}\alpha\\
+... & ... & ...\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(N-mg\cos\theta-F\cos\left(90-\theta\right)\right)\hat{u}+\left(mg\sin\theta-F\sin\left(90-\theta\right)-f\right)\hat{v} & = & m\vec{a}\\
+\begin{pmatrix}N-mg\cos\theta-F\cos\left(90-\theta\right)\\
+mg\sin\theta-F\sin\left(90-\theta\right)-\mu N\end{pmatrix} & = & \begin{pmatrix}0\\
+ma\end{pmatrix}\\
+\begin{pmatrix}N\\
+mg\sin\theta-F\sin\left(90-\theta\right)-\mu N\end{pmatrix} & = & \begin{pmatrix}mg\cos\theta+F\cos\left(90-\theta\right)\\
+ma\end{pmatrix}\\
+mg\sin\theta-F\cos\theta-\mu\left(mg\cos\theta+F\sin\left(90-\theta\right)\right) & = & ma\\
+\frac{mg\sin\theta-F\cos\theta-\mu\left(mg\cos\theta+F\sin\left(90-\theta\right)\right)}{m} & = & a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הביטוי חיובי אזי זאת התאוצה, אם הוא שלילי אזי התאוצה אפס והגוף לא זז.
+\end_layout
+
+\begin_layout Standard
+במקרה ש
+\begin_inset Formula $f$
+\end_inset
+
+ בכיוון הפוך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(N-mg\cos\theta-F\cos\left(90-\theta\right)\right)\hat{u}+\left(mg\sin\theta-F\sin\left(90-\theta\right)+f\right)\hat{v} & = & m\vec{a}\\
+\frac{mg\sin\theta-F\cos\theta+\mu\left(mg\cos\theta+F\sin\left(\theta-\alpha\right)\right)}{m} & = & a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הביטוי שלילי אזי זאת התאוצה, אם הוא חיובי אזי התאוצה אפס והגוף לא זז.
+\end_layout
+
+\begin_layout Standard
+פתרון של מקרה ראשון במערכת לא חכמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(F+f\cos\left(\theta\right)-N\sin\theta\right)\hat{x}+\left(mg-N\cos\theta-f\sin\left(\theta\right)\right)\hat{y} & = & m\vec{a}\\
+\begin{pmatrix}F+\mu N\cos\left(\theta\right)-N\sin\theta\\
+mg-N\cos\theta-\mu N\sin\left(\theta\right)\end{pmatrix} & = & \begin{pmatrix}ma\\
+0\end{pmatrix}\\
+N\left(\cos\left(\theta\right)+\mu\sin\left(\theta\right)\right) & = & mg\\
+N & = & \frac{mg}{\cos\left(\theta\right)+\mu\sin\left(\theta\right)}\\
+\frac{F+\mu\frac{mg}{\cos\left(\theta\right)+\mu\sin\left(\theta\right)}\cos\left(\theta\right)-\frac{mg}{\cos\left(\theta\right)+\mu\sin\left(\theta\right)}\sin\theta}{m} & = & a\\
+\frac{F\left(\cos\left(\theta\right)+\mu\sin\left(\theta\right)\right)+\mu mg\cos\left(\theta\right)-mg\sin\theta}{\left(\cos\left(\theta\right)+\mu\sin\left(\theta\right)\right)m} & = & a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להראת שזה שווה למה שקיבלנו מקודם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{F\left(\cos\theta+\mu\sin\theta\right)-mg\cos\theta-\mu mg\sin\theta}{m} & = & \frac{mg\sin\theta-F\cos\theta-\mu\left(mg\cos\theta+F\cos\left(\theta\right)\right)}{m}\\
+\frac{F\left(\cos\theta+\mu\sin\theta\right)-mg\cos\theta-\mu mg\sin\theta}{m} & = & \frac{mg\sin\theta-F\cos\theta-\mu mg\cos\theta-\mu F\cos\theta}{m}\\
+\frac{F\left(\cos\theta+\mu\sin\theta\right)-mg\cos\theta-\mu mg\sin\theta}{m} & = & \frac{F\left(-\cos\theta-\mu F\cos\theta\right)+mg\sin\theta-\mu mg\cos\theta}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(f-mg\right)\hat{y}+N\hat{x} & = & m\left(a\hat{x}+0\hat{y}\right)\\
+\begin{pmatrix}\mu N-mg\\
+N\end{pmatrix} & = & \begin{pmatrix}0\\
+ma\end{pmatrix}\\
+\begin{pmatrix}N\\
+N\end{pmatrix} & = & \begin{pmatrix}\frac{mg}{\mu}\\
+ma\end{pmatrix}\\
+\frac{g}{\mu} & = & a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\sum\vec{F} & = & 0\\
+\left(N-mg\cos\theta\right)\hat{u}+\left(mg\sin\theta-f\right) & = & 0\\
+N & = & mg\cos\theta\\
+mg\sin\theta-\mu\left(mg\cos\theta\right) & = & 0\\
+\mu & = & \frac{mg\sin\theta}{mg\cos\theta}\\
+ & = & \tan\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\vec{a} & = & \sum F_{1}\\
+m_{2}\vec{A} & = & \sum F_{2}\\
+m_{1}\left(a\cos\alpha\hat{x}-a\sin\alpha\hat{y}\right) & = & \left(mg-N\cos\alpha\right)\hat{y}+\left(N\sin\alpha\right)\hat{x}\\
+-m_{2}A\hat{x} & = & -N\sin\alpha\hat{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אילו הם שלוש משוואות בשלושה נעלמים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}a\cos\alpha & = & N\sin\alpha\\
+-m_{1}a\sin\alpha & = & mg-N\cos\alpha\\
+-m_{2}A & = & -N\sin\alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & = & \frac{m_{1}\cdot a\cos\alpha}{\sin\alpha}\\
+-m_{1}a\sin\alpha & = & m_{1}g-\frac{m_{1}a\cos\alpha}{\sin\alpha}\cos\alpha\\
+a\left(\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha\right) & = & m_{1}g\\
+a & = & \frac{m_{1}g}{\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha}\\
+A & = & \frac{m_{1}\cdot a\cos\alpha}{\sin\alpha}\cdot\frac{\sin\alpha}{m_{2}}\\
+ & = & \frac{m_{1}}{\tan\alpha}\cdot\frac{m_{1}g}{\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha}\cdot\frac{\sin\alpha}{m_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

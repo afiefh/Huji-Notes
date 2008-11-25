@@ -4401,6 +4401,8 @@ e^{2\pi i}=e^{0}\]
 
 \begin_layout Chapter
 הרצאה מס.
+\numeric on
+6
 \end_layout
 
 \begin_layout Standard
@@ -4799,8 +4801,607 @@ e^{u} & = & \frac{2x\pm\sqrt{4x^{2}+4}}{2}\\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+3
+\end_layout
 
+\begin_layout Section
+מספרים מורכבים ופונקציות היפרבוליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z=a+ib\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חיבור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z_{1} & = & a_{1}+ib_{1}\\
+z_{2} & = & a_{2}+ib_{2}\\
+z_{1}+z_{2} & = & a_{1}+a_{2}+i\left(b_{1}+b_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר צמוד של 
+\begin_inset Formula $z=a+ib$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\overline{z}=a-ib$
+\end_inset
+
+ ודתמיד מתקיים 
+\begin_inset Formula $z\cdot\overline{z}=\left|z\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המגניטודה היא 
+\begin_inset Formula $\left|z\right|=\sqrt{a^{2}+b^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב המספר כ
+\begin_inset Formula $z=a+ib=re^{i\theta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פונקציות היפרבוליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(x\right) & = & \frac{e^{ix}-e^{-ix}}{2i}\\
+\cos\left(x\right) & = & \frac{e^{ix}+e^{-ix}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sinh\left(x\right) & = & \frac{e^{x}-e^{-x}}{2}\\
+\cosh\left(x\right) & = & \frac{e^{x}+e^{-x}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sinh\left(ix\right) & = & i\sin\left(x\right)\\
+\cosh\left(ix\right) & = & \cos\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז רוצים למצא את 
+\begin_inset Formula $\tanh^{-1}\left(x\right)=u$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & \tanh\left(u\right)\\
+x & = & \frac{e^{u}-e^{-u}}{e^{u}+e^{-u}}\\
+x\left(e^{u}+e^{-u}\right) & = & e^{u}-e^{-u}\\
+xe^{u}+e^{u} & = & -xe^{-u}-e^{-u}\\
+\left(x-1\right)e^{u} & = & \left(-1-x\right)e^{-u}\\
+e^{2u} & = & \frac{-1-x}{x-1}\\
+e^{2u} & = & \frac{1+x}{1-x}\\
+2u & = & \ln\left(\frac{1+x}{1-x}\right)\\
+u & = & \frac{1}{2}\ln\left(\frac{1+x}{1-x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Section
+פונקציות חזקה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\to x^{\alpha}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a\in\mathbb{N}$
+\end_inset
+
+ זןגי אזי הפונקציה נראת כמו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $n$
+\end_inset
+
+ אי זוגי אזי הפונקציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מחפסים פונקציה הפיכה של 
+\begin_inset Formula $x^{n}$
+\end_inset
+
+ בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגי צריכים לקחת חצי מישור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d3.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha\in\mathbb{Q},\alpha=\frac{n}{m}$
+\end_inset
+
+ אם 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגי אזי
+\begin_inset Formula $x^{\alpha}=x^{\frac{n}{m}}=\sqrt[m]{x^{n}}$
+\end_inset
+
+ מוגדרת ב
+\begin_inset Formula $[0,\inf)\to[0,\inf)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d4.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha\in\mathbb{Q},\alpha=\frac{n}{m}$
+\end_inset
+
+ אם 
+\begin_inset Formula $n$
+\end_inset
+
+ אי-זוגי אזי
+\begin_inset Formula $x^{\alpha}$
+\end_inset
+
+ מוגדרת לכל 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d5.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הרכבה של פונקציות
+\end_layout
+
+\begin_layout Standard
+הגדרה: אם 
+\begin_inset Formula $f,g$
+\end_inset
+
+ שתי פונקציות אזי 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ היא הרכבה של 
+\begin_inset Formula $f,g$
+\end_inset
+
+: 
+\begin_inset Formula $\left(f\circ g\right)\left(x\right)=f\left(g\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \ln x\\
+g\left(x\right) & = & x+1\\
+\left(f\circ g\right)\left(x\right) & = & \ln\left(x+1\right)\\
+\left(g\circ f\right)\left(x\right) & = & \ln\left(x\right)+1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(g\circ f\right)\left(x\right)=\ln\left(\sin\left(x\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d6.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\sqrt{\left(x-1\right)\left(x-2\right)\left(3-x\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d7.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\frac{1}{\left(x-1\right)\left(x-2\right)\left(3-x\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d8.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+רציפות
+\end_layout
+
+\begin_layout Standard
+נניח שכ פונקציה 
+\begin_inset Formula $X\to\mathbb{R}$
+\end_inset
+
+ אומרים כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $a\in X$
+\end_inset
+
+ אם לכל שינוי מספיק קטן של המקור 
+\begin_inset Formula $x$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $a$
+\end_inset
+
+ השינוי בתמונת הפונקציה 
+\begin_inset Formula $\left|f\left(a+x\right)-f\left(a\right)\right|$
+\end_inset
+
+ יהיה קטן כריצונינו.
+\end_layout
+
+\begin_layout Standard
+אומרים כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בכל נקודות הגדרתה.
+\end_layout
+
+\begin_layout Standard
+דוגמה 
+\begin_inset Formula $f\left(x\right)=\frac{1}{x}$
+\end_inset
+
+ היא רציפה בכל תחום הגדרתה 
+\begin_inset Formula $\left\{ \mathbb{R}\setminus\left\{ 0\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin x,\cos x,\tan x,e^{x},\ln x,\left|x\right|,x^{n},\cosh x,\sinh x,\tanh x,\frac{1}{x}$
+\end_inset
+
+ הם רציפות בכל תחום ההגדרה שלהם.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\begin{cases}
+\frac{\sin x}{x} & x\neq0\\
+1 & x=0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d9.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה רציף כי כאשר 
+\begin_inset Formula $x\to0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{x\to0}\frac{\sin x}{x}=\frac{x}{x}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\sin\left(\frac{1}{x}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c11d10.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אי אפשר להגדיר את הנקודה 
+\begin_inset Formula $x=0$
+\end_inset
+
+ כי בשינוי קטן כלשהוא מקבלים שינוי גדול.
+\end_layout
+
+\begin_layout Paragraph
+משפט ערך הביניים:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ו
+\begin_inset Formula $f\left(x_{1}\right)=y_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f\left(x_{2}\right)=y_{2}$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $x_{1}<x<x_{2}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x\right)=y$
+\end_inset
+
+ ו 
+\begin_inset Formula $y_{1}<y<y_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{"A countenious function contains all intermediate values"}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה רציפה וחסומה ב 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אזי קיימים 
+\begin_inset Formula $a<x_{1},x_{2}<b$
+\end_inset
+
+ כך ש 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x_{1}\right) & = & \mbox{max}_{\left[a,b\right]}f\\
+f\left(x_{2}\right) & = & \mbox{min}_{\left[a,b\right]}f\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+8
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\numeric off
+: נגזרות ואינטגרלים
+\end_layout
+
+\begin_layout Standard
+שתויות שכבר למדנו בכורסים אחרים.
 \end_layout
 
 \end_body
