@@ -133,17 +133,17 @@ m & = & 100kg\\
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 \sum\vec{F} & = & m\vec{a}\\
-mg\hat{z}+N\left(\left(-\hat{r}\right)\cos\left(90-\alpha\right)+\hat{z}\sin\left(90-\alpha\right)\right)+\mu N\left(\hat{r}\cos\alpha+\hat{z}\sin\alpha\right) & = & m\vec{a}\\
+mg\hat{z}+N\left(\left(-\hat{r}\right)\sin\left(\alpha\right)+\hat{z}\cos\left(\alpha\right)\right)+\mu N\left(\hat{r}\cos\alpha+\hat{z}\sin\alpha\right) & = & m\vec{a}\\
 \vec{a} & = & \left(\ddot{r}-r\dot{\theta}^{2}\right)\hat{r}+\left(r\ddot{\theta}+2\dot{r}\dot{\theta}\right)\hat{\theta}\\
-\left(mg+N\sin\left(90-\alpha\right)+\mu N\sin\alpha\right)\hat{z}+\left(-N\cos\left(90-\alpha\right)+\mu N\cos\alpha\right)\hat{r} & = & m\left(0-r\dot{\theta}^{2}\right)\hat{r}+\left(0+0\right)\hat{\theta}+0\hat{z}\\
-\begin{pmatrix}mg+N\sin\left(90-\alpha\right)+\mu N\sin\alpha\\
--N\cos\left(90-\alpha\right)+\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}-mr\dot{\theta}^{2}\\
+\left(mg+N\cos\left(\alpha\right)+\mu N\sin\alpha\right)\hat{z}+\left(-N\sin\left(\alpha\right)+\mu N\cos\alpha\right)\hat{r} & = & m\left(0-r\dot{\theta}^{2}\right)\hat{r}+\left(0+0\right)\hat{\theta}+0\hat{z}\\
+\begin{pmatrix}mg+N\cos\left(\alpha\right)+\mu N\sin\alpha\\
+-N\sin\left(\alpha\right)+\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}-mr\dot{\theta}^{2}\\
 0\end{pmatrix}\\
-\begin{pmatrix}mg+N\sin\left(90-\alpha\right)+\mu N\sin\alpha\\
--N\cos\left(90-\alpha\right)+\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}0\\
+\begin{pmatrix}mg+N\cos\left(\alpha\right)+\mu N\sin\alpha\\
+-N\sin\left(\alpha\right)+\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}0\\
 -mr\dot{\theta}^{2}\end{pmatrix}\\
 \begin{pmatrix}N\\
-\mu N\cos\alpha-N\cos\left(90-\alpha\right)\end{pmatrix} & = & \begin{pmatrix}\frac{-mg}{\sin\left(90-\alpha\right)+\mu\sin\alpha}\\
+\mu N\cos\alpha-N\sin\left(\alpha\right)\end{pmatrix} & = & \begin{pmatrix}\frac{-mg}{\cos\left(\alpha\right)+\mu\sin\alpha}\\
 -mr\dot{\theta}^{2}\end{pmatrix}\end{eqnarray*}
 
 \end_inset
@@ -153,8 +153,8 @@ mg\hat{z}+N\left(\left(-\hat{r}\right)\cos\left(90-\alpha\right)+\hat{z}\sin\lef
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-N\left(\mu\cos\alpha-\cos\left(90-\alpha\right)\right) & = & -mr\dot{\theta}^{2}\\
-\frac{mg\left(\mu\cos\theta-\cos\left(90-\alpha\right)\right)}{mr\left(\sin\left(90-\alpha\right)+\mu\sin\alpha\right)} & = & \dot{\theta}^{2}\\
+N\left(\mu\cos\alpha-\sin\left(\alpha\right)\right) & = & -mr\dot{\theta}^{2}\\
+\frac{mg\left(\mu\cos\theta-\sin\left(\alpha\right)\right)}{mr\left(\cos\left(\alpha\right)+\mu\sin\alpha\right)} & = & \dot{\theta}^{2}\\
 \dot{\theta}^{2} & = & 0.0438\\
 \dot{\theta} & = & 0.2093\left[\frac{1}{sec}\right]\\
 \dot{x} & = & \dot{\theta}r\\
@@ -186,33 +186,28 @@ N\left(\mu\cos\alpha-\cos\left(90-\alpha\right)\right) & = & -mr\dot{\theta}^{2}
  לכן
 \end_layout
 
-\begin_layout Enumerate
-\begin_inset Formula \[
-mg\hat{z}+N\left(\left(-\hat{r}\right)\cos\left(90-\alpha\right)+\hat{z}\sin\left(90-\alpha\right)\right)-\mu N\left(\hat{r}\cos\alpha+\hat{z}\sin\alpha\right)=m\vec{a}\]
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Enumerate
-מאחר והדבר היחיד שהשתנה הוא הסימן של 
-\begin_inset Formula $\mu$
-\end_inset
-
- נקפוץ לסוף:
-\end_layout
-
+\begin_deeper
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\frac{mg\left(-\mu\cos\theta-\cos\left(90-\alpha\right)\right)}{mr\left(\sin\left(90-\alpha\right)-\mu\sin\alpha\right)} & = & \dot{\theta}^{2}\\
-\dot{\theta}^{2} & = & -0.1359???????????\end{eqnarray*}
+\left(mg+N\cos\left(\alpha\right)-\mu N\sin\alpha\right)\hat{z}+\left(-N\sin\left(\alpha\right)-\mu N\cos\alpha\right)\hat{r} & = & -mr\dot{\theta}^{2}\hat{r}\\
+\begin{pmatrix}mg+N\cos\left(\alpha\right)-\mu N\sin\alpha\\
+-N\sin\left(\alpha\right)-\mu N\cos\alpha\end{pmatrix} & = & \begin{pmatrix}0\\
+-mr\dot{\theta}^{2}\end{pmatrix}\\
+N & = & \frac{mg}{\left(\cos\alpha-\mu\sin\alpha\right)}\\
+-N\sin\left(\alpha\right)-\mu N\cos\alpha & = & -mr\dot{\theta}^{2}\\
++\frac{mg}{\left(\cos\alpha-\mu\sin\alpha\right)}\sin\left(\alpha\right)+\mu\frac{mg}{\left(\cos\alpha-\mu\sin\alpha\right)}\cos\alpha & = & mr\dot{\theta}^{2}\\
+\frac{g\sin\left(\alpha\right)+\mu g\cos\alpha}{\left(\cos\alpha-\mu\sin\alpha\right)r} & = & \dot{\theta}^{2}\\
+\dot{\theta} & = & \sqrt{0.1359}\\
+ & = & 0.368\frac{1}{sec}\\
+v & = & 0.368*100\\
+ & = & 36.8\frac{m}{sec}\end{eqnarray*}
 
 \end_inset
 
 
 \end_layout
 
+\end_deeper
 \end_deeper
 \end_deeper
 \begin_layout Enumerate
@@ -361,6 +356,69 @@ mg-T & = & -mr\dot{\theta}\\
 4
 \end_layout
 
+\begin_layout Standard
+כדי ש
+\begin_inset Formula $m_{3}$
+\end_inset
+
+ תנוע כלפי מטה צריך להתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L_{1}+2L_{2} & < & 0\\
+\frac{\partial^{2}L_{1}}{\partial t^{2}}+2\frac{\partial^{2}L_{2}}{\partial t^{2}} & < & 0\\
+a_{1}+2a_{2} & < & 0\\
+a_{1} & < & -2a_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור עבור 
+\begin_inset Formula $a_{1}=-2a_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-T & = & m_{1}a_{1}\\
+-2T & = & m_{2}a_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2} & = & \frac{m_{1}a_{1}}{m_{2}a_{2}}\\
+\frac{1}{2} & = & \frac{2m_{1}a_{2}}{m_{2}a_{2}}\\
+\frac{1}{2}m_{2} & = & 2m_{1}\\
+4\cdot m_{2} & = & m_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור לאי השוויון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+4m_{2}<m_{1}\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part*
 שאלה
 \family roman
@@ -398,16 +456,12 @@ mg-T & = & -mr\dot{\theta}\\
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-F\left(\hat{x}\cos\alpha+\hat{y}\sin\alpha\right)-mg\hat{y}+N\hat{y}-\mu N\hat{x} & = & m\vec{a}\\
-\begin{pmatrix}F\cos\alpha-\mu N\\
-N+F\sin\alpha-mg\end{pmatrix} & = & \begin{pmatrix}0\\
-0\end{pmatrix}\\
-\begin{pmatrix}N\\
-N+F\sin\alpha\end{pmatrix} & = & \begin{pmatrix}\frac{F\cos\alpha}{\mu}\\
-mg\end{pmatrix}\\
-F\frac{\cos\alpha}{\mu}+F\sin\alpha & = & mg\\
-F\left(\frac{\cos\alpha}{\mu}+\sin\alpha\right) & = & mg\\
-F & = & \frac{mg}{\left(\frac{\cos\alpha}{\mu}+\sin\alpha\right)}\end{eqnarray*}
+\hat{x}\left(F\cos\alpha-f\right)+\hat{y}\left(N+F\sin\alpha-mg\right) & = & m\vec{a}\\
+N+F\sin\alpha & = & mg\\
+F\cos\alpha-\mu N & = & 0\\
+F & = & \frac{F\cos\alpha}{\mu}\\
+\frac{F\cos\alpha}{\mu}+F\sin\alpha & = & mg\\
+F & = & \frac{mg}{\frac{\cos\alpha}{\mu}+\sin\alpha}\end{eqnarray*}
 
 \end_inset
 
@@ -429,7 +483,11 @@ f\left(\alpha\right) & = & \frac{\cos\alpha}{\mu}+\sin\alpha\\
 \frac{\partial}{\partial\alpha}f\left(\alpha\right) & = & -\frac{\sin\alpha}{\mu}+\cos\alpha\\
 0 & = & -\frac{\sin\alpha}{\mu}+\cos\alpha\\
 \frac{\sin^{2}\alpha}{\mu^{2}} & = & \cos^{2}\alpha\\
-... & ... & ...\end{eqnarray*}
+\frac{1-\cos^{2}\alpha}{\mu^{2}} & = & \cos^{2}\alpha\\
+\frac{1-\cos^{2}\alpha-\mu^{2}\cos^{2}\alpha}{\mu^{2}} & = & 0\\
+\left(1+\mu^{2}\right)\cos^{2}\alpha-1 & = & 0\\
+\cos^{2}\alpha & = & \frac{1}{1+\mu^{2}}\\
+\alpha & = & \arccos\left(\sqrt{\frac{1}{1+\mu^{2}}}\right)\end{eqnarray*}
 
 \end_inset
 

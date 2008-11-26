@@ -2738,11 +2738,17 @@ x\left(t\right)+y\left(t\right) & = & A\cos\left(\omega t+\varphi\right)+B\cos\l
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula \[
-\]
+כפלנו כמה מטריצות.
+ לא מעניין.
+\end_layout
 
-\end_inset
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+9
+\end_layout
 
+\begin_layout Standard
 
 \end_layout
 

@@ -3420,13 +3420,1177 @@ f:\mathbb{N}\to A\]
 7
 \end_layout
 
+\begin_layout Section
+קומבינטוריקה
+\end_layout
+
+\begin_layout Paragraph
+עקרון הסכום:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ קבוצות סופיות זרות אזי 
+\begin_inset Formula $\left|A\cup B\right|=\left|A\right|+\left|B\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עקרון המכפלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ קבוצות אזי 
+\begin_inset Formula $\left|A\times B\right|=\left|A\right|\cdot\left|B\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ קבוצות אזי 
+\begin_inset Formula $\Re\subseteq A\times B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|\left\{ b\in B\mid\left(a,b\right)\in\Re\right\} \right|=s$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|\Re\right|=\left|A\right|\cdot s$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם לכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|\left\{ a\in A\mid\left(a,b\right)\in\Re\right\} \right|=t$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|\Re\right|=\left|B\right|\cdot t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נניח שבכיתה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+21
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בנים, כל בן מכיר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בנות וכל בת מכירה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בנים.
+ כמה בנות יש בכיתה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Re\subseteq A\times B$
+\end_inset
+
+, 
+\begin_inset Formula $\left(a,b\right)\in\Re$
+\end_inset
+
+ אם הבן 
+\begin_inset Formula $a$
+\end_inset
+
+ מכיר את הבת 
+\begin_inset Formula $b$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ע"י שימוש ב-
+\numeric on
+1
+\numeric off
+ 
+\begin_inset Formula $\left|R\right|=\left|A\right|\cdot5=21\cdot4=84$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"י שימוש ב-
+\numeric on
+2
+\numeric off
+ 
+\begin_inset Formula $\left|R\right|=\left|B\right|\cdot7$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|R\right| & = & \left|B\right|\cdot7\\
+84 & = & \left|B\right|\cdot7\\
+\left|B\right| & = & 12\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+כמה מספרים זוגיים יש בין 
+\begin_inset Formula $0$
+\end_inset
+
+ ו-
+\begin_inset Formula $99$
+\end_inset
+
+? כמה זוגיים בעלי ספרות שונות יש בין 
+\begin_inset Formula $0$
+\end_inset
+
+ ל
+\begin_inset Formula $99$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נסמן כל ספרה של המספר במשתנה 
+\begin_inset Formula $a,b$
+\end_inset
+
+, 
+\begin_inset Formula $a\in\left\{ 0,2,4,6,8\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $b\in\left\{ 0,\dots,9\right\} $
+\end_inset
+
+ אזי יש 
+\begin_inset Formula $\left|A\right|\left|B\right|=5\cdot10=50$
+\end_inset
+
+מספרים זוגיים, ויש 
+\begin_inset Formula $\left|A\right|\left|B\right|=5\cdot9=45$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \begin_layout Chapter
 הרצאה מס.
 \numeric on
 8
 \end_layout
 
+\begin_layout Section
+בעיות מנייה בסיסיות
+\end_layout
+
 \begin_layout Standard
+יש כמה סוגים של בעיות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+עם חזרות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ללא חזרות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\setminus$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ללא חשיבות לסדר
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+עם חשיבות לסדר
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהתאם לקטגוריה נבחר 
+\begin_inset Formula $k$
+\end_inset
+
+ איברים מקבוצה 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+בעיה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+תהיא הקבוצה 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ נחשב כמה סדרות באוך 
+\begin_inset Formula $k$
+\end_inset
+
+ ניתן לבנות מהאיברים
+\begin_inset Formula $\left\{ 1,\dots,n\right\} $
+\end_inset
+
+ עם חשיבות לסדר?
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Formula $n^{k}$
+\end_inset
+
+ סדרות באורך 
+\begin_inset Formula $k$
+\end_inset
+
+ הבנויים מהאיברים 
+\begin_inset Formula $\left\{ 1,\dots,n\right\} $
+\end_inset
+
+.
+ כי לכל איבר בסדרה יש 
+\begin_inset Formula $n$
+\end_inset
+
+ אפשריות.
+\end_layout
+
+\begin_layout Paragraph
+בעיה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+כמה סדרות באורך 
+\begin_inset Formula $k$
+\end_inset
+
+ ללא חזרות ניתן לבנות מהקבוצה 
+\begin_inset Formula $\left\{ 1,\dots,n\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Formula $n\cdot\left(n-1\right)\cdots\left(n-k+1\right)$
+\end_inset
+
+.
+ אפשר לכתוב את זה בשימוש בפעולת עצרת)
+\begin_inset Formula $n$
+\end_inset
+
+ עצרת היא 
+\begin_inset Formula $1\cdot2\cdot3\cdots\left(n-1\right)\cdot n$
+\end_inset
+
+ ומסמנים 
+\begin_inset Formula $n!$
+\end_inset
+
+( בצורת 
+\begin_inset Formula $n\cdot\left(n-1\right)\cdots\left(n-k+1\right)=n\cdot\left(n-1\right)\cdots\left(n-k+1\right)\frac{1\cdot2\cdots k}{1\cdot2\cdots k}=\frac{1\cdot2\cdot3\cdots\left(n-k\right)\cdot\left(n-k+1\right)\cdots n}{1\cdot2\cdot3\cdots\left(n-k\right)}=\frac{n!}{\left(n-k\right)!}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+כמה תתי קבוצות בעוצמת 
+\begin_inset Formula $k$
+\end_inset
+
+ יש לנו?
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+מספר הסדרות הוא 
+\begin_inset Formula $\frac{n!}{\left(n-k\right)!}$
+\end_inset
+
+ אבל עכשיו אנחנו לא ניתן חשיבות לסדר.
+ ויודעים כי 
+\begin_inset Formula $k!$
+\end_inset
+
+ סדרות מתאימים לקבוצה אחת, לכן מספר תתי הקבוצות שווה למספר תתי הסדרות חלקי
+ 
+\begin_inset Formula $k!$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\frac{n!}{\left(n-k\right)!\cdot k!}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+הערה: הביטוי הזה הוא תמיד מספר שלם, אבל לא נוכיח את זה.
+\end_layout
+
+\begin_layout Paragraph
+בעיה:
+\end_layout
+
+\begin_layout Standard
+כל האפשריות לבחור 
+\begin_inset Formula $k$
+\end_inset
+
+ איברים ואפשר לחזור על כל איבר יותר מפעם אחת?
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $n=3,k=2$
+\end_inset
+
+ אזי אפשר לבחור 
+\begin_inset Formula $\left\{ \left\{ 1,1\right\} ,\left\{ 1,2\right\} ,\left\{ 1,3\right\} ,\left\{ 2,1\right\} ,\left\{ 2,2\right\} ,\left\{ 2,3\right\} ,\left\{ 3,1\right\} ,\left\{ 3,2\right\} ,\left\{ 3,3\right\} \right\} $
+\end_inset
+
+ אבל קבוצה לא מכילה חזרות אזי מסמנים 
+\begin_inset Formula $\left\{ 1,1\right\} =\left\{ \left(1,2\right),\left(2,0\right),\left(3,0\right)\right\} $
+\end_inset
+
+ למשל ו
+\begin_inset Formula $\left\{ 3,2\right\} =\left\{ \left(1,0\right),\left(2,1\right),\left(3,1\right)\right\} $
+\end_inset
+
+.
+ לכל מולטי קבוצה מתאימה קבוצה של מספרים ואקסים שמסמנים שהמספר נבחר למשל
+ 
+\begin_inset Formula $113444nn\Rightarrow1xx3x24xxx\dots nxx$
+\end_inset
+
+ שמספר האיקסים בה הוא 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ כמה סדרות כאילו יש לנו? יש בקבוצה כזו 
+\begin_inset Formula $\underbrace{\left(n-1\right)}_{numbers}+\underbrace{k}_{X's}$
+\end_inset
+
+ כלומר צריך לבחור 
+\begin_inset Formula $k$
+\end_inset
+
+ איברים מתוך 
+\begin_inset Formula $\left(n-1\right)+k$
+\end_inset
+
+ וכבר יודעום כמה זה מהבעיה הקודמת: 
+\begin_inset Formula $\frac{\left(n+k-1\right)!}{\left(n-1\right)!\cdot k!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מתקבלת הטבלה הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="3">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+עם חזרות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ללא חזרות
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\setminus$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\left(n+k-1\right)!}{\left(n-1\right)!\cdot k!}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\frac{n!}{\left(n-k\right)!\cdot k!}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+ללא חשיבות לסדר
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $n^{k}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+\begin_inset Formula $\frac{n!}{\left(n-k\right)!}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+עם חשיבות לסדר
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+כמה פתרונות שלמים אי שלימים יש למשוואה 
+\begin_inset Formula $x+\dots+x_{n}=k$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x_{i}\geq0$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נשתמש ברישום של מולטי קבוצה: 
+\begin_inset Formula \[
+\underbrace{x_{1}}_{\left(1,x_{1}\right)}+\dots+\underbrace{x_{i}}_{\left(n,x_{n}\right)}=k\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר לכל קבוצה מתאימיים מולטי קבוצה באוך 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ למשל 
+\begin_inset Formula $x_{1}+x_{2}+x_{3}=7$
+\end_inset
+
+ אז פתרון הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $2+3+2=7$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כלומר 
+\begin_inset Formula $\left\{ \left(1,2\right),\left(2,3\right),\left(3,2\right)\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תגיעו לתשובה בלבד מפו.
+\end_layout
+
+\begin_layout Standard
+כלכם מקירים את 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(a+b\right)^{2} & = & a^{2}+2ab+b^{2}\\
+\left(a+b\right)^{3} & = & a^{3}+3a^{2}b+3b^{2}a+b^{3}\\
+\left(a+b\right)^{n} & = & \left(a+b\right)\left(a+b\right)\cdots\left(a+b\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת בעיית קומבינטוריקה שבה כל פעם בוחרים 
+\begin_inset Formula $a$
+\end_inset
+
+ או 
+\begin_inset Formula $b$
+\end_inset
+
+ ואחר כך מקווצים את כל האיברים ביחד.
+ האיברים שיופיעו פו הם 
+\begin_inset Formula $a^{k}b^{n-k}$
+\end_inset
+
+ אז צריך לספור כמה פעמים מקבלים 
+\begin_inset Formula $a^{k}b^{n-k}$
+\end_inset
+
+.
+ מספר הפעמים שמתקבל הביטוי 
+\begin_inset Formula $a^{k}b^{n-k}$
+\end_inset
+
+ הוא בדיוק מדפר תתי הקבוצות בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ של הקבוצה 
+\begin_inset Formula $\left\{ n\dots k\right\} $
+\end_inset
+
+.
+ כלומר צריך לבחור תת-קבוצה בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ לקבוצה 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+.
+ יודעים כבר כי מספר תתי הקבוצות הוא 
+\begin_inset Formula $\frac{n!}{k!\left(n-k\right)!}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $\left(a+b\right)^{n}=\sum_{k=0}^{n}\frac{n!}{k!\left(n-k\right)!}\left(a^{k}b^{n-k}\right)=\sum_{k=0}^{n}{n \choose k}a^{k}b^{n-k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula \begin{eqnarray*}
+\left(a+b\right)^{4} & = & \sum_{k=0}^{4}{n \choose k}a^{k}b^{n-k}\\
+ & = & \sum_{k=0}^{4}\frac{4!}{\left(4-k\right)!k!}a^{k}b^{n-k}\\
+ & = & b^{4}+4ab^{3}+6a^{2}b^{2}+4a^{3}b+a^{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{k=0}^{n}{n \choose k}=2^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה אלגברית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(1+1\right)^{n} & = & \sum_{k=0}^{n}{n \choose k}1^{k}1^{n-k}\\
+2^{n} & = & \sum_{k=0}^{n}{n \choose k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה קומבינטורית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${n \choose k}$
+\end_inset
+
+ הוא מספר תתי הקבוצות בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ של 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\sum_{k=0}^{n}{n \choose k}$
+\end_inset
+
+ הוא כל תתי הקבוצות של 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ כלומר 
+\begin_inset Formula $P\left(\left\{ 1\dots n\right\} \right)$
+\end_inset
+
+.
+ ויודעים כי 
+\begin_inset Formula $\left|P\left(\left\{ 1\dots n\right\} \right)\right|=2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{k=1}^{n}k\cdot{n \choose k}=n\cdot2^{n-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה אלגברית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x+1\right)^{n} & = & \sum_{k=0}^{n}{n \choose k}x^{k}\cdot1^{n-k}\\
+\left(x+1\right)^{n} & = & \sum_{k=0}^{n}{n \choose k}x^{k}\\
+\frac{\partial}{\partial x}\left(x+1\right)^{n} & = & \frac{\partial}{\partial x}\sum_{k=0}^{n}{n \choose k}x^{k}\\
+n\left(x+1\right)^{n-1} & = & \sum_{k}^{n}{n \choose k}k\cdot x^{k-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים 
+\begin_inset Formula $x=1$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula \[
+n\cdot2^{n-1}=\sum_{k}^{n}{n \choose k}k\]
+
+\end_inset
+
 
 \end_layout
 
