@@ -3245,5 +3245,338 @@ v & = & \sqrt{\frac{k\left(x-x_{0}\right)^{2}}{m}}\\
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+מרכז המסה 
+\begin_inset Formula $\vec{r}_{cm}$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}_{cm}=\frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}=\frac{\sum m_{i}\vec{r}_{i}}{M_{\mbox{Total}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש פצצה נעה בנפילה חופשית עם גובה התחלתי 
+\begin_inset Formula $h$
+\end_inset
+
+ ומתפוצצת בזמן 
+\begin_inset Formula $t=0$
+\end_inset
+
+, 
+\begin_inset Formula $\frac{2}{3}m$
+\end_inset
+
+ תלך ימינה ו
+\begin_inset Formula $\frac{1}{3}m$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $v_{\frac{2}{3}m}=-\frac{1}{2}v_{\frac{2}{3}m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r\left(t\right)=\vec{r}_{0}+\vec{v}_{0}t+\frac{1}{2}at^{2}\]
+
+\end_inset
+
+אזי גוף מס.
+\numeric on
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{0} & = & \left(0,h\right)\\
+\vec{v}_{0} & = & \left(u,0\right)\\
+\vec{a} & = & \left(0,-g\right)\end{eqnarray*}
+
+\end_inset
+
+אזי גוף מס.
+\numeric on
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{0} & = & \left(0,h\right)\\
+\vec{v}_{0} & = & \left(-\frac{2}{3}u,0\right)\\
+\vec{a} & = & \left(0,-g\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\begin_inset Formula \begin{eqnarray*}
+r_{1} & = & ut\hat{x}+\left(h-\frac{1}{2}gt^{2}\right)\hat{y}\\
+r_{2} & = & -\frac{u}{2}t\hat{x}+\left(h-\frac{1}{2}gt^{2}\right)\hat{h}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מרכז המסה בתלות בזמן הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{cm} & = & \frac{\frac{m}{3}\left(ut,h-\frac{1}{2}gt^{2}\right)+\frac{2m}{3}\left(\frac{-ut}{2},h-\frac{1}{2}gt^{2}\right)}{M}\\
+ & = & \left(0,h-\frac{1}{2}gt^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה שיש לנו מסה רציפה כמו בעולם האמיתי ולא כמו חלומות של פיזיקאים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{cm} & = & \frac{\int\vec{r}\partial m}{\int\partial m}\\
+\int\partial m & = & \int\rho\left(x,y,z\right)\underbrace{\partial v}_{\mbox{Volume}}\\
+ & = & \iiint\rho\left(x,y,z\right)\partial x\partial y\partial z\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: משטח ריבועי בעל צלעות ב שצפיפות השטחית שלו 
+\begin_inset Formula $\sigma\left(x,y\right)=\sigma_{0}-ky$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של משטח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial m=\sigma\left(x,y\right)\partial x\partial y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M & = & \int_{0}^{l}\int_{0}^{l}\sigma\left(x,y\right)\partial x\partial y\\
+ & = & \int_{0}^{l}\left[\left(\sigma_{0}-ky\right)\cdot x\right]\mid_{0}^{l}\partial y\\
+ & = & \int_{0}^{l}\left[\sigma_{0}l-ky\cdot l\right]\partial y\\
+ & = & \left[\sigma_{0}ly-\frac{kly^{2}}{2}\right]\mid_{0}^{l}\\
+ & = & \sigma_{0}l^{2}-\frac{1}{2}kl^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עכשיו צריך לחשב אז:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\vec{r}\partial m & = & \int_{0}^{l}\int_{0}^{l}\left(x\hat{x}+y\hat{y}\right)\left(\sigma_{0}-ky\right)\partial x\partial y\\
+Mx_{cm} & = & \int_{0}^{l}\int_{0}^{l}x\left(\sigma_{0}-ky\right)\partial x\partial y\\
+ & = & \int_{0}^{l}\left[\frac{1}{2}x^{2}\left(\sigma_{0}-ky\right)\right]\mid_{0}^{l}\partial y\\
+ & = & \int_{0}^{l}\left[\frac{1}{2}l^{2}\left(\sigma_{0}-ky\right)\right]\partial y\\
+ & = & \left[\frac{1}{2}l^{2}\left(\sigma_{0}y-\frac{1}{2}ky^{2}\right)\right]_{0}^{l}\\
+ & = & \frac{1}{2}l^{3}\sigma_{0}-\frac{1}{4}kl^{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{x_{cm}}{M} & = & \frac{\frac{1}{2}l^{3}\sigma_{0}-\frac{1}{4}kl^{4}}{\sigma_{0}l^{2}-\frac{1}{2}kl^{3}}\\
+ & = & \frac{\frac{1}{2}l^{3}\left(\sigma_{0}-\frac{1}{2}kl\right)}{l^{2}\left(\sigma_{0}-\frac{1}{2}kl\right)}\\
+ & = & \frac{1}{2}l\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועוסים אותו דבר ב
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אותה בעיה עם משולש ישר זווית בעל צלעות 
+\begin_inset Formula $a,\frac{\sqrt{3}}{2}a$
+\end_inset
+
+ וזוית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+
+\numeric off
+ וצפיפות 
+\begin_inset Formula $\sigma\left(x,y\right)=G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+M=\frac{1}{2}Ga\frac{\sqrt{3}}{2}a=\frac{\sqrt{3}}{4}Ga^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{cm} & = & \frac{1}{M}\int_{0}^{\frac{\sqrt{3}}{2}x}\int_{0}^{a}\left(x,y\right)G\partial x\partial y\\
+x_{cm} & = & \frac{1}{M}\int_{0}^{\frac{\sqrt{3}}{2}x}\int_{0}^{a}xG\partial x\partial y\\
+ & = & \frac{1}{M}\int_{0}^{a}\int_{0}^{\frac{\sqrt{3}}{2}x}xG\partial y\partial x\\
+ & = & \frac{G}{M}\int_{0}^{a}\left[xy\right]_{0}^{\frac{\sqrt{3}}{2}x}\partial x\\
+ & = & \frac{G}{M}\int_{0}^{a}\left[\frac{\sqrt{3}}{2}x^{2}\right]\partial x\\
+ & = & \frac{G}{M}\frac{\sqrt{3}}{2}\left[\frac{x^{3}}{3}\right]_{0}^{a}\\
+ & = & \frac{\sqrt{3}G}{6\frac{\sqrt{3}}{4}Ga^{2}}a^{3}\\
+ & = & \frac{a}{\left(\frac{6}{4}\right)}\\
+ & = & \frac{4a}{6}\\
+ & = & \frac{2a}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לחשב את הצפיפות של כדור שהצפיפות שלו היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho\left(r,\theta,\varphi\right)=\rho_{0}\frac{1}{r^{2}}\left(1-\cos\theta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: הפיזיקה 
+\begin_inset Formula $\theta$
+\end_inset
+
+ הוא הרכיב בין 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ ל
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ ו
+\begin_inset Formula $\varphi$
+\end_inset
+
+ הוא בין 
+\begin_inset Formula $\vec{r}\cos\theta$
+\end_inset
+
+ ו 
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל בקואורדינטות כדוריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial V=\partial r\cdot r\partial\theta\cdot r\sin\theta\partial\varphi=r^{2}\sin\theta\partial r\partial y\partial z\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מחשבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Mz_{cm}=\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{R}z\rho_{0}\frac{1}{r^{2}}\left(1-\cos\theta\right)r^{2}\sin\theta\partial r\partial\theta\partial\varphi\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

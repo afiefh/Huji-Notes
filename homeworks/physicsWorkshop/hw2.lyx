@@ -1,0 +1,269 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+\vec{x}\left(t\right)=\left(R_{0}+A\cos\left(4\omega t\right)\right)\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vec{x}\left(t\right) & = & \frac{\partial}{\partial t}\left(R_{0}+A\cos\left(4\omega t\right)\hat{r}\right)\\
+ & = & \frac{\partial}{\partial t}\left(R_{0}+A\cos\left(4\omega t\right)\right)\hat{r}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\frac{\partial}{\partial t}\hat{r}\\
+ & = & -4\omega A\sin\left(4\omega t\right)\hat{r}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\dot{\theta}\hat{\theta}\\
+ &  & -4\omega A\sin\left(4\omega t\right)\hat{r}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\omega\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}}{\partial t^{2}}\vec{x}\left(t\right) & = & \ddot{R}\hat{r}+\dot{R}\dot{\theta}\hat{\theta}+\dot{R}\dot{\theta}\hat{\theta}+R\ddot{\theta}\hat{\theta}+R\dot{\theta}^{2}\hat{r}\\
+ & = & \frac{\partial}{\partial t}\left(-4A\omega\sin\left(4\omega t\right)\right)\hat{r}+\left(-4A\omega\sin\left(\omega t\right)\cdot\omega\right)\hat{\theta}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\cdot0\hat{\theta}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\omega^{2}\hat{r}\\
+ & = & -16A\omega\cos\left(4\omega t\right)\hat{r}-4A\omega^{2}\sin\left(\omega t\right)\hat{\theta}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\omega^{2}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תנועה מעגלית שהרדיוס שלה משתנה, ההפרש בין 
+\begin_inset Formula $r_{max}$
+\end_inset
+
+ ו
+\begin_inset Formula $r_{min}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $2A$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw2d1.svg
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה עבור 
+\begin_inset Formula $A=1$
+\end_inset
+
+ ו
+\begin_inset Formula $R_{0}=3$
+\end_inset
+
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \[
+\vec{x}\left(t\right)=\left(R_{0}+A\cos\left(4\omega t\right)\right)\cdot\cos\left(\omega t\right)\hat{x}+\left(R_{0}+A\cos\left(4\omega t\right)\right)\cdot\sin\left(\omega t\right)\hat{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(F\sin\alpha-f-mg\sin\alpha\right)\hat{x}+\left(N-mg\cos\alpha\right)\hat{y} & = & \vec{0}\\
+\begin{pmatrix}F\sin\alpha-f-mg\sin\alpha\\
+N-mg\cos\alpha\end{pmatrix} & = & 0\\
+\begin{pmatrix}f\\
+N\end{pmatrix} & = & \begin{pmatrix}mg\sin\alpha-F\sin\alpha\\
+mg\cos\alpha\end{pmatrix}\\
+\mu N & = & mg\sin\alpha-F\sin\alpha\\
+\mu mg\cos\alpha & = & mg\sin\alpha-F\sin\alpha\\
+\mu & = & \frac{mg\sin\alpha-F\sin\alpha}{mg\cos\alpha}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T & = & m\omega^{2}R\\
+400 & = & 5\omega^{2}\cdot0.5\\
+\omega^{2} & = & 160\\
+\omega & = & 12.64\frac{1}{sec}\\
+v & = & \omega R\\
+ & = & 12.64\cdot0.5\\
+ & = & 6.324\frac{m}{sec}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

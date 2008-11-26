@@ -556,10 +556,406 @@ v\left(t\right) & = & R\omega\left(\hat{\varphi}\left(t\right)\right)\\
 \end_layout
 
 \begin_layout Chapter
-כוחות
+סדנא מס.
+\numeric on
+3
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{3:\:}\sum F_{x} & = & m_{3}g+T=m_{3}a_{3}\\
+m_{2}\,\sum F_{x} & = & -T=m_{2}a_{2}\\
+m_{1}\,\sum F_{x} & = & 2T=m_{1}a_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+l & = & -x_{3}-x_{1}-x_{1}+x_{2}=-x_{3}-2x_{1}+x_{2}\\
+\ddot{l} & = & 0\\
+0 & = & -a_{3}-2a_{1}+a_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ארבע משוואות ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ נעלמים אזי אפשר לפתור בקלות.
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w3d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+: שתי גופים נעים ביחד ויש חיכוך סטטי ביניהם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m:\,\sum F_{y} & = & N-mg=0\\
+N & = & mg\\
+m:\,\sum F_{x} & = & f_{s}=ma\\
+M:\,\sum F_{x} & = & F-f_{s}=ma\\
+F & = & \left(m+M\right)a\\
+a & = & \frac{F}{M+m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{s}=ma=\frac{mF}{M+m} & < & \mu_{s}N=\mu mg\\
+F & < & \mu_{s}g\left(M+m\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: החיכוך הוא קינטי לכן הגופים לא נעים ביחד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m:\,\sum F_{y} & = & N-mg=0\\
+N & = & mg\\
+m:\,\sum F_{x} & = & f_{k}=ma_{1}\\
+\mu N & = & ma_{1}\\
+a_{1} & = & \mu_{k}g\\
+M:\,\sum F_{x} & = & F-f_{k}=F-\mu_{k}mg=Ma_{2}\\
+F-\mu_{k}Mg & = & Ma_{2}\\
+a_{1} & = & \frac{F-\mu_{k}Mg}{M}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+כח גרביטציה עולמי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=-\frac{Gm_{1}m_{2}}{r_{1\to2}^{2}}\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש שתי גופים שמתקיים 
+\begin_inset Formula $m_{2}\ll m_{1}$
+\end_inset
+
+ אזי מה המהירות שבה 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ צריך לנוע כדי שתתקיים תנועה מעגלית?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum F & = & m_{2}a_{2}\\
+-\frac{Gm_{1}m_{2}}{R^{2}} & = & -m_{2}\omega^{2}R\\
+\omega & = & \sqrt{\frac{Gm_{1}}{R}}\\
+v & = & \sqrt{\frac{Gm_{2}}{R^{3}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד שאלה של מסות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w3d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum F_{x} & = & T=ma_{1}\\
+\sum F_{y} & = & T_{2}-m_{2}g=m_{2}a_{2}\\
+\sum F_{y} & = & T_{2}-m_{3}g=m_{3}a_{3}\\
+T & = & 2\cdot T_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{2} & = & a_{1}+a\\
+a_{3} & = & a_{1}-a\\
+2a_{1} & = & a_{2}+a_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פותרים את זה רגיל
+\end_layout
+
+\begin_layout Section
+חיכוך עם אויר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f=-\gamma\cdot v\]
+
+\end_inset
+
+ אז מה היא המהירות המקסימאלית שאפשר להגיע לה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum F & = & mg-\gamma v=ma\\
+mg-\gamma v_{max} & = & 0\\
+v_{max} & = & \frac{mg}{\gamma}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל מה 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+שלה בתלות בזמן?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mg-\gamma v & = & ma\\
+mg-\gamma v & = & m\frac{\partial v}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת משוואה דיפרנציאלית ועדין לא יודעיםם איך לפתור אותה, אזי נגדיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & v-v_{max}=v-\frac{mg}{\gamma}\\
+\frac{\partial u}{\partial t} & = & \frac{\partial v}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mg-\gamma\left(u+\frac{mg}{\gamma}\right) & = & m\frac{\partial u}{\partial t}\\
+-\gamma u & = & m\frac{\partial u}{\partial t}\\
+-\frac{\gamma}{m}u & = & \frac{\partial u}{\partial t}\\
+-\frac{\gamma}{m}\partial t & = & \frac{\partial u}{u}\\
+\int-\frac{\gamma}{m}\partial t & = & \int\frac{1}{u}\partial u\\
+-\frac{\gamma}{m}t+c & = & \ln u\\
+u & = & e^{-\frac{\gamma}{m}t+c}\\
+ & = & e^{-\frac{\gamma}{m}t}e^{c}\\
+ & = & A\cdot e^{-\frac{\gamma}{m}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך ש
+\begin_inset Formula $A>0$
+\end_inset
+
+.
+ רוצים למצא אז 
+\begin_inset Formula $A$
+\end_inset
+
+ הזה אבל ראשון נמצא 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\left(t\right)=Ae^{-\frac{\gamma}{m}t}+\frac{mg}{\gamma}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $v\left(t=0\right)=0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+0 & = & A+\frac{mg}{\gamma}\\
+A & = & -\frac{mg}{\gamma}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא שלילי כי גם 
+\begin_inset Formula $g$
+\end_inset
+
+ שלילי, אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\left(t\right)=\frac{mg}{\gamma}\left(1-e^{\frac{\gamma}{m}t}\right)\]
+
+\end_inset
+
 
 \end_layout
 

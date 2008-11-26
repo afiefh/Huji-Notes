@@ -2748,7 +2748,202 @@ x\left(t\right)+y\left(t\right) & = & A\cos\left(\omega t+\varphi\right)+B\cos\l
 9
 \end_layout
 
+\begin_layout Section
+אופרטור גזירה
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula \[
+A=\frac{\partial}{\partial x}:f\left(x\right)\to f'\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה אופרטור ליניארי כי 
+\begin_inset Formula $A\left(f+g\right)=f'+g'=A\left(f\right)+A\left(g\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $A\left(\alpha f\right)=\alpha A\left(f\right)=\alpha f'$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה לפעולה יותר מורכבת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\frac{\partial^{2}}{\partial x^{2}}+x\frac{\partial}{\partial x}+3E\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שנתונות שלוש פונקציות 
+\begin_inset Formula $a_{0}\left(x\right),a_{1}\left(x\right),a_{2}\left(x\right)\dots a_{n}\left(x\right)$
+\end_inset
+
+ אזי נסמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L:f\left(x\right)\to a_{n}\left(x\right)f^{\left(n\right)}\left(x\right)+a_{n-1}\left(x\right)f^{\left(n-1\right)}\left(x\right)+\dots+a_{1}\left(x\right)f'\left(x\right)+a_{0}\left(x\right)f\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A:C_{\inf}\left[a,b\right] & \to & C_{\inf}\left[a,b\right]\\
+A & = & \underbrace{1}_{a_{2}\left(x\right)}f''\left(x\right)+\underbrace{x}_{a_{1}\left(x\right)}f'\left(x\right)+\underbrace{3}_{a_{0}\left(x\right)}f\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+ בוא לדבר על אופרטור של מערכת שהב מסה תלויה בקפיץ: 
+\begin_inset Formula $x\left(t\right)\to m\frac{\partial^{2}}{\partial t^{2}}x\left(t\right)+kx\left(t\right)$
+\end_inset
+
+ האופרטור הזה מעביר אוך לכח.
+\end_layout
+
+\begin_layout Standard
+האופרטור הפשוט ביותר שמקירים הוא 
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}a_{11} & \dots & a_{1m}\\
+\vdots & \ddots & \vdots\\
+a_{n1} & \dots & a_{nm}\end{pmatrix}\\
+A\vec{x} & = & \vec{0}\\
+a_{i1}x_{1}+a_{i2}x_{2}\dots+a_{im}x_{m} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שיש אופרטור 
+\begin_inset Formula \[
+A:\mathbb{R}^{3}\to\mathbb{R}^{1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נהיה לנו מטריצה 
+\begin_inset Formula $1\times3$
+\end_inset
+
+: 
+\begin_inset Formula $A=\begin{pmatrix}1 & -1 & 1\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+A\vec{x} & = & \begin{pmatrix}1 & -1 & 1\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $A\vec{x}=0$
+\end_inset
+
+ הוא מישור ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}-x_{2}+x_{3}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פעולת 
+\begin_inset Formula $Span$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפעולה מקבלת וקטורים ומחזירה קבוצה שמהווה מרחב וקטורי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & \mbox{Span}\left(\vec{x}_{1},\vec{x}_{2},\vec{x}_{3},\dots,\vec{x}_{n}\right)\\
+ & = & a_{1}\vec{x}_{1}+a_{2}\vec{x}_{2}+a_{3}\vec{x}_{3}+\dots+a_{n}\vec{x}_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{Span}\left(\vec{e}_{1},\vec{e}_{2},\vec{e}_{3}\right)=\mathbb{R}^{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מוסיפים עוד וקטורים לא יעזור כי 
+\begin_inset Formula $\vec{x}=x_{1}\vec{e}_{1}+x_{2}\vec{e}_{2}+x_{3}\vec{e}_{3}$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{Span}\left(\vec{e}_{1},\vec{e}_{2},\vec{e}_{3}\right)=\mbox{Span}\left(\vec{e}_{1},\vec{e}_{2},\vec{e}_{3},\vec{x},\vec{y}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}+x_{3}\hat{e}_{3}+t\vec{x}\]
+
+\end_inset
+
 
 \end_layout
 

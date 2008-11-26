@@ -301,10 +301,11 @@ F\end{pmatrix}\\
 \alpha & = & \arccos\left(\frac{20}{40}\right)\\
  & = & 60^{\circ}\\
 -T\sin\left(60^{\circ}\right) & = & -mr\dot{\theta}^{2}\\
-\dot{\theta} & = & \sqrt{\frac{40\cdot0.866}{2}}\\
- & = & 4.161\left[\frac{1}{sec}\right]\\
-\dot{x} & = & \dot{\theta}\cdot R\\
- & = & 4.161\left[\frac{m}{sec}\right]\end{eqnarray*}
+\dot{\theta} & = & -\frac{ml\sin60}{-T\sin60}\\
+\dot{\theta} & = & \sqrt{\frac{40}{2}}\\
+ & = & 4.472\left[\frac{1}{sec}\right]\\
+\dot{x} & = & \dot{\theta}\cdot l\sin\alpha\\
+ & = & 3.872\left[\frac{m}{sec}\right]\end{eqnarray*}
 
 \end_inset
 
@@ -334,60 +335,16 @@ mg-T & = & -mr\dot{\theta}\\
 \end_layout
 
 \begin_layout Part*
-שאלה
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
+שאלה 
 \numeric on
-\bar default
-\noun default
-\color inherit
 4
 \end_layout
 
 \begin_layout Standard
-כדי ש
-\begin_inset Formula $m_{3}$
-\end_inset
-
- תנוע כלפי מטה צריך להתקיים
-\end_layout
-
-\begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-L_{1}+2L_{2} & < & 0\\
-\frac{\partial^{2}L_{1}}{\partial t^{2}}+2\frac{\partial^{2}L_{2}}{\partial t^{2}} & < & 0\\
-a_{1}+2a_{2} & < & 0\\
-a_{1} & < & -2a_{2}\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-נפתור עבור 
-\begin_inset Formula $a_{1}=-2a_{2}$
-\end_inset
-
-:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{eqnarray*}
--T & = & m_{1}a_{1}\\
--2T & = & m_{2}a_{2}\end{eqnarray*}
+T-m_{3}g & = & m_{3}a_{3}\\
+2T-m_{2}g & = & m_{2}a_{2}\\
+T-m_{1}g & = & m_{1}a_{1}\end{eqnarray*}
 
 \end_inset
 
@@ -396,10 +353,8 @@ a_{1} & < & -2a_{2}\end{eqnarray*}
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\frac{1}{2} & = & \frac{m_{1}a_{1}}{m_{2}a_{2}}\\
-\frac{1}{2} & = & \frac{2m_{1}a_{2}}{m_{2}a_{2}}\\
-\frac{1}{2}m_{2} & = & 2m_{1}\\
-4\cdot m_{2} & = & m_{1}\end{eqnarray*}
+\frac{\partial^{2}}{\partial t^{2}}\left(L_{1}+2L_{2}+L_{3}\right) & = & \frac{\partial^{2}}{\partial t^{2}}C\\
+a_{1}+2a_{2}+a_{3} & = & 0\end{eqnarray*}
 
 \end_inset
 
@@ -407,12 +362,74 @@ a_{1} & < & -2a_{2}\end{eqnarray*}
 \end_layout
 
 \begin_layout Standard
-נחזור לאי השוויון:
+\begin_inset Formula \begin{eqnarray*}
+a_{2} & = & \frac{2m_{3}g+2m_{3}a_{3}-m_{2}g}{m_{2}}\\
+a_{1} & = & \frac{m_{3}a_{3}+m_{3}g-m_{1}g}{m_{1}}\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula \[
-4m_{2}<m_{1}\]
+\begin_inset Formula \begin{eqnarray*}
+a_{1}+2a_{2}+a_{3} & = & 0\\
+\frac{m_{3}a_{3}+m_{3}g-m_{1}g}{m_{1}}+2\frac{2m_{3}g+2m_{3}a_{3}-m_{2}g}{m_{2}}+a_{3} & = & 0\\
+m_{2}\left(m_{3}a_{3}+m_{3}g-m_{1}g\right)+2m_{1}\left(2m_{3}g+2m_{3}a_{3}-m_{2}g\right)+a_{3}m_{1}m_{2} & = & 0\\
+m_{2}m_{3}a_{3}+m_{2}m_{3}g-m_{1}m_{2}g+4m_{1}m_{3}g+4m_{1}m_{3}a_{3}-2m_{1}m_{2}g & = & 0\\
+\frac{g\left(3m_{1}m_{2}-m_{2}m_{3}-4m_{1}m_{3}\right)}{m_{2}m_{3}+4m_{1}m_{3}+m_{2}m_{1}} & = & a_{3}\\
+a_{3} & < & 0\\
+\frac{g\left(3m_{1}m_{2}-m_{2}m_{3}-4m_{1}m_{3}\right)}{m_{2}m_{3}+4m_{1}m_{3}+m_{2}m_{1}} & < & 0\\
+3m_{1}m_{2}-m_{2}m_{3}-4m_{1}m_{3} & < & 0\\
+m_{3}\left(-m_{2}-4m_{1}\right) & < & -3m_{1}m_{2}\\
+m_{3} & > & \frac{3m_{1}m_{2}}{m_{2}+4m_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{3} & =\\
+T-m_{3}g & = & m_{3}a_{3}\\
+T & = & \frac{gm_{3}\left(3m_{1}m_{2}-m_{2}m_{3}-4m_{1}m_{3}\right)}{m_{2}m_{3}+4m_{1}m_{3}+m_{2}m_{1}}+m_{3}g\\
+T & = & \frac{m_{3}g\left(4m_{1}m_{2}\right)}{m_{2}m_{3}+4m_{1}m_{3}+m_{2}m_{1}}\\
+ & = & \frac{4gm_{1}m_{2}m_{3}}{m_{2}m_{3}+4m_{1}m_{3}+m_{2}m_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T-m_{1}g & = & 0\\
+T & = & m_{1}g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב התוצאה של סעיף ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{4m_{3}gm_{1}m_{2}}{m_{2}m_{3}+3m_{1}m_{3}+m_{2}m_{1}} & = & m_{1}g\\
+4m_{3}m_{2} & = & m_{2}m_{3}+4m_{1}m_{3}+m_{2}m_{1}\\
+m_{1}\left(4m_{3}+m_{2}\right) & = & 3m_{3}m_{2}\\
+m_{1} & = & \frac{3m_{3}m_{2}}{4m_{3}+m_{2}}\end{eqnarray*}
 
 \end_inset
 
@@ -675,7 +692,7 @@ mg\sin\theta-\mu\left(mg\cos\theta\right) & = & 0\\
 \begin_inset Formula \begin{eqnarray*}
 m_{1}\vec{a} & = & \sum F_{1}\\
 m_{2}\vec{A} & = & \sum F_{2}\\
-m_{1}\left(a\cos\alpha\hat{x}-a\sin\alpha\hat{y}\right) & = & \left(mg-N\cos\alpha\right)\hat{y}+\left(N\sin\alpha\right)\hat{x}\\
+m_{1}\left(a\cos\alpha\hat{x}+a\sin\alpha\hat{y}\right) & = & \left(mg-N\cos\alpha\right)\hat{y}+\left(N\sin\alpha\right)\hat{x}\\
 -m_{2}A\hat{x} & = & -N\sin\alpha\hat{x}\end{eqnarray*}
 
 \end_inset
@@ -691,7 +708,7 @@ m_{1}\left(a\cos\alpha\hat{x}-a\sin\alpha\hat{y}\right) & = & \left(mg-N\cos\alp
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 m_{1}a\cos\alpha & = & N\sin\alpha\\
--m_{1}a\sin\alpha & = & mg-N\cos\alpha\\
+m_{1}a\sin\alpha & = & mg-N\cos\alpha\\
 -m_{2}A & = & -N\sin\alpha\end{eqnarray*}
 
 \end_inset
@@ -702,11 +719,15 @@ m_{1}a\cos\alpha & = & N\sin\alpha\\
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 N & = & \frac{m_{1}\cdot a\cos\alpha}{\sin\alpha}\\
--m_{1}a\sin\alpha & = & m_{1}g-\frac{m_{1}a\cos\alpha}{\sin\alpha}\cos\alpha\\
+m_{1}a\sin\alpha & = & m_{1}g-\frac{m_{1}a\cos\alpha}{\sin\alpha}\cos\alpha\\
 a\left(\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha\right) & = & m_{1}g\\
 a & = & \frac{m_{1}g}{\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha}\\
 A & = & \frac{m_{1}\cdot a\cos\alpha}{\sin\alpha}\cdot\frac{\sin\alpha}{m_{2}}\\
- & = & \frac{m_{1}}{\tan\alpha}\cdot\frac{m_{1}g}{\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha}\cdot\frac{\sin\alpha}{m_{2}}\end{eqnarray*}
+ & = & \frac{m_{1}}{\tan\alpha}\cdot\frac{m_{1}g}{\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha}\cdot\frac{\sin\alpha}{m_{2}}\\
+ & = & \frac{m_{1}m_{2}^{2}g\sin\alpha}{\tan\alpha\left(\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha\right)\cdot m_{2}}\\
+ & = & \frac{m_{1}m_{2}g}{\frac{1}{\cos\alpha}\left(\frac{m_{1}\cos^{2}\alpha}{\sin\alpha}+m_{1}\sin\alpha\right)}\\
+ & = & \frac{m_{1}m_{2}g}{\left(\frac{m_{1}}{\tan\alpha}+m_{1}\tan\alpha\right)}\\
+ & = & \frac{m_{2}g}{\left(\frac{1}{\tan\alpha}+\tan\alpha\right)}\end{eqnarray*}
 
 \end_inset
 
