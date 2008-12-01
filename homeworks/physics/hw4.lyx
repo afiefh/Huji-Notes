@@ -1,0 +1,483 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נגדיר גוף הוא קבוצת כל החלקיקים ששיכים לגוף זה.
+ אזי לכל שני גופים הקבוצות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ שלהם זרות.
+ המסה של גוף מס.
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $M_{1}$
+\end_inset
+
+ ומסה של הגוף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא 
+\begin_inset Formula $M_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1cm} & = & \frac{\sum_{i\in A}\vec{r}_{i}\cdot m_{i}}{\sum_{i\in A}m_{i}}\\
+ & = & \frac{\sum_{i\in A}\vec{r}_{i}\cdot m_{i}}{M_{1}}\\
+\sum_{i\in A}\vec{r}_{i}\cdot m_{i} & = & r_{1cm}\cdot M_{1}\\
+\sum_{i\in B}\vec{r}_{i}\cdot m_{i} & = & r_{2cm}\cdot M_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה מרכז המסה של שני הגופים הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\sum_{i\in A\cup B}\vec{r}_{i}\cdot m_{i}}{\sum_{i\in A\cup B}m_{i}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובגלל ש
+\begin_inset Formula $A\cap B=\emptyset$
+\end_inset
+
+ אזי מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\sum_{i\in A\cup B}\vec{r}_{i}\cdot m_{i}}{\sum_{i\in A\cup B}m_{i}} & = & \frac{\left(\sum_{i\in A}\vec{r}_{i}\cdot m_{i}\right)+\left(\sum_{i\in B}\vec{r}_{i}\cdot m_{i}\right)}{\sum_{i\in A}m_{i}+\sum_{i\in B}m_{i}}\\
+ & = & \frac{\left(\sum_{i\in A}\vec{r}_{i}\cdot m_{i}\right)+\left(\sum_{i\in B}\vec{r}_{i}\cdot m_{i}\right)}{M_{1}+M_{2}}\\
+ & = & \frac{\vec{r}_{1cm}\cdot M_{1}+\vec{r}_{2cm}\cdot M_{2}}{M_{1}+M_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נניח כי מרכז הכדור הקטן 
+\begin_inset Formula $B$
+\end_inset
+
+ נמצא נמצא ב
+\begin_inset Formula $a\hat{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula \[
+\frac{\sum_{i\in A\setminus B}\vec{r}_{i}\cdot m_{i}}{\sum_{i\in A\setminus B}m_{i}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{A_{cm}} & = & \frac{\int_{A}\vec{r}\rho\partial m}{\int_{A}\rho\partial m}\\
+\vec{r}_{A_{cm}} & = & \frac{\int_{A}\vec{r}\rho\partial m}{\frac{4}{3}\pi R_{A}^{3}\rho}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לראות מסמטריה כדורית כי 
+\begin_inset Formula $\vec{r}_{A_{cm}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}_{B_{cm}}=\frac{\int_{B}\vec{r}\rho\partial V}{\frac{4}{3}\pi R_{B}^{3}\rho}=a\hat{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מרכז המסה של ההפרש ביניהם הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}_{A\setminus B_{cm}}=\frac{\int_{A\setminus B}\vec{r}\rho\partial V}{\int_{A\setminus B}\rho\partial V}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטגרל זה סכום לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\int_{A\setminus B}\vec{r}\rho\partial V}{\int_{A\setminus B}\rho\partial V} & = & \frac{\int_{A}\vec{r}\rho\partial V-\int_{B}\vec{r}\rho\partial V}{\int_{A}\rho\partial V-\int_{B}\rho\partial V}\\
+ & = & \frac{\frac{4}{3}\pi R_{A}^{3}\rho\cdot\vec{r}_{A_{cm}}-\frac{4}{3}\pi R_{A}^{3}\rho\cdot\vec{r}_{B_{cm}}}{\frac{4}{3}\pi R_{A}^{3}\rho-\frac{4}{3}\pi R_{B}^{3}\rho}\\
+ & = & \frac{\vec{0}-\frac{4}{3}\pi R_{A}^{3}\rho\cdot a\hat{x}}{\frac{4}{3}\pi R_{A}^{3}\rho-\frac{4}{3}\pi R_{B}^{3}\rho}\\
+ & = & -\frac{\frac{4}{3}\pi R_{A}^{3}\rho\cdot a\hat{x}}{\frac{4}{3}\pi R_{A}^{3}\rho-\frac{4}{3}\pi R_{B}^{3}\rho}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a & = & -\frac{1}{\tan\alpha}\\
+r & = & a\cdot z+b\\
+0 & = & -\frac{h}{\tan\alpha}+b\\
+b & = & \frac{h}{\tan\alpha}\\
+r & = & \frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M & = & \rho\iiint\rho\partial V\\
+ & = & \rho\iiint\partial x\partial x\partial z\\
+ & = & \rho\int_{0}^{h}\int_{0}^{\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}}\int_{0}^{2\pi}r\partial\theta\partial r\partial z\\
+ & = & 2\pi\rho\int_{0}^{h}\int_{0}^{\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}}r\partial r\partial z\\
+ & = & 2\pi\rho\int_{0}^{h}\left[\frac{r^{2}}{2}\right]_{0}^{\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}}\partial z\\
+ & = & \pi\rho\int_{0}^{h}\left(\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}\right)^{2}\partial z\\
+ & = & \pi\rho\int_{0}^{h}\left(\frac{h^{2}}{\tan^{2}\left(\alpha\right)}-2\frac{hz}{\tan^{2}\left(\alpha\right)}+\frac{z^{2}}{\tan^{2}\left(\alpha\right)}\right)\partial z\\
+ & = & \pi\rho\left[\frac{h^{2}z}{\tan^{2}\left(\alpha\right)}-\frac{hz^{2}}{\tan^{2}\left(\alpha\right)}+\frac{z^{3}}{3\tan^{2}\left(\alpha\right)}\right]_{0}^{h}\\
+ & = & \pi\rho\left(\frac{h^{3}}{\tan^{2}\left(\alpha\right)}-\frac{h^{3}}{\tan^{2}\left(\alpha\right)}+\frac{h^{3}}{3\tan^{2}\left(\alpha\right)}\right)\\
+ & = & \pi\rho\left(\frac{\frac{h^{3}}{3}}{\tan^{2}\left(\alpha\right)}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Mz_{cm} & = & \int_{V}z\rho\partial V\\
+ & = & \rho\iiint z\partial x\partial x\partial z\\
+ & = & \rho\int_{0}^{h}\int_{0}^{\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}}\int_{0}^{2\pi}zr\partial\theta\partial r\partial z\\
+ & = & 2\pi\rho\int_{0}^{h}\int_{0}^{\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}}zr\partial r\partial z\\
+ & = & 2\pi\rho\int_{0}^{h}\left[\frac{1}{2}z\cdot r^{2}\right]_{0}^{\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}}\partial z\\
+ & = & \pi\rho\int_{0}^{h}z\cdot\left(\frac{h}{\tan\left(\alpha\right)}-\frac{z}{\tan\left(\alpha\right)}\right)^{2}\partial z\\
+ & = & \pi\rho\int_{0}^{h}z\cdot\left(\frac{h^{2}}{\tan^{2}\left(\alpha\right)}-2\frac{hz}{\tan^{2}\left(\alpha\right)}+\frac{z^{2}}{\tan^{2}\left(\alpha\right)}\right)\partial z\\
+ & = & \pi\rho\int_{0}^{h}\left(\frac{zh^{2}}{\tan^{2}\left(\alpha\right)}-2\frac{hz^{2}}{\tan^{2}\left(\alpha\right)}+\frac{z^{3}}{\tan^{2}\left(\alpha\right)}\right)\partial z\\
+ & = & \pi\rho\left[\frac{z^{2}h^{2}}{2\tan^{2}\left(\alpha\right)}-2\frac{hz^{3}}{3\tan^{2}\left(\alpha\right)}+\frac{z^{4}}{4\tan^{2}\left(\alpha\right)}\right]_{0}^{h}\\
+ & = & \pi\rho\left(\frac{\frac{h^{4}}{2}}{\tan^{2}\left(\alpha\right)}-\frac{\frac{2h^{4}}{3}}{\tan^{2}\left(\alpha\right)}+\frac{\frac{h^{4}}{4}}{\tan^{2}\left(\alpha\right)}\right)\\
+ & = & \pi\rho\left(\frac{h^{4}\frac{6-8+3}{12}}{\tan^{2}\left(\alpha\right)}\right)\\
+ & = & \pi\rho\left(\frac{h^{4}}{12\tan^{2}\left(\alpha\right)}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{cm} & = & \frac{\pi\rho\left(\frac{h^{4}}{12\tan^{2}\left(\alpha\right)}\right)}{\pi\rho\left(\frac{\frac{h^{3}}{3}}{\tan^{2}\left(\alpha\right)}\right)}\\
+ & = & \frac{\left(\frac{h^{4}}{12}\right)}{\left(\frac{h^{3}}{3}\right)}\\
+ & = & \frac{h}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F}_{1\to2} & = & -G\frac{m_{1}m}{\left|\vec{r}_{1\to2}\right|^{2}}\hat{r}\\
+ & = & -G\frac{m_{1}m}{\left|\vec{r}_{1\to2}\right|^{3}}\vec{r}\\
+ & = & -Gm_{1}\oint\frac{\partial m}{\left|\vec{r}_{1\to2}\right|^{3}}\vec{r}\\
+ & = & -Gm_{1}\oint\frac{\lambda\partial l}{\left|\vec{r}_{1\to2}\right|^{3}}\vec{r}\\
+ & = & \frac{-Gm_{1}\lambda}{\left(\sqrt{z^{2}+r^{2}}\right)^{3}}\oint_{0}^{2\pi}r\begin{pmatrix}r\cos\theta, & r\sin\theta, & z\end{pmatrix}\partial\theta\\
+ & = & \frac{-Gm_{1}\lambda}{\left(\sqrt{z^{2}+r^{2}}\right)^{3}}\oint_{0}^{2\pi}r\begin{pmatrix}\left(\sqrt{z^{2}+r^{2}}\right)\cos\theta, & \left(\sqrt{z^{2}+r^{2}}\right)\sin\theta, & z\end{pmatrix}\partial\theta\\
+ &  & -\frac{Gm_{1}\cdot\lambda r}{\left(\sqrt{z^{2}+r^{2}}\right)^{3}}\left(0,0,2\pi z\right)\\
+ & = & -\frac{Gm_{1}\cdot z\cdot\overbrace{\lambda2\pi r}^{\mbox{Mass}}}{\left(\sqrt{z^{2}+r^{2}}\right)^{3}}\hat{z}\\
+ & = & \frac{Gm_{1}\cdot z\cdot\lambda2\pi r}{\left(z^{2}+r^{2}\right)^{\frac{3}{2}}}\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{R}-\frac{Gm_{1}\cdot z\cdot\lambda2\pi r}{\left(z^{2}+r^{2}\right)^{\frac{3}{2}}}\hat{z}\partial r & = & -Gm_{1}z\lambda2\pi\hat{z}\int_{0}^{R}\frac{r}{\left(z^{2}+r^{2}\right)^{\frac{3}{2}}}\partial r\\
+ & = & 2Gm_{1}z\lambda\pi\hat{z}\left[\frac{1}{\sqrt{z^{2}+r^{2}}}\right]_{0}^{R}\\
+ & = & 2Gm_{1}z\lambda\pi\left[\frac{1}{\sqrt{z^{2}+R^{2}}}-\frac{1}{z}\right]\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

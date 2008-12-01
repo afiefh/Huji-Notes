@@ -5404,5 +5404,719 @@ f\left(x_{2}\right) & = & \mbox{min}_{\left[a,b\right]}f\end{eqnarray*}
 שתויות שכבר למדנו בכורסים אחרים.
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+9
+\end_layout
+
+\begin_layout Section
+נגזרות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלל השרשרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(f\circ g\right)^{'}=\left(f^{'}\circ g\right)\cdot g^{'}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="11" columns="2">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $f^{'}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $ax^{a-1}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $x^{a}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $e^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $e^{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\ln x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\cos\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\sin\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\arcsin\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $-\frac{1}{\sqrt{1-x^{2}}}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\arccos\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{\cos^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\tan x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\sinh\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\cosh\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\cosh\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\sinh\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{\cosh^{2}x}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+\begin_inset Formula $\tanh\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למצא 
+\begin_inset Formula $\frac{\partial}{\partial x}\arcsin\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & \arcsin\left(x\right)\\
+x & = & \sin yx\\
+\frac{\partial x}{\partial y} & = & \cos\left(y\right)\\
+\frac{\partial y}{\partial x} & = & \frac{1}{\cos y}\\
+ & = & \frac{1}{\sqrt{1-x^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & \sin\theta=\cos\left(\frac{\pi}{2}-\theta\right)\\
+\arcsin x & = & \theta\\
+\arccos x & = & \frac{\pi}{2}-\theta\\
+\arcsin\left(x\right)+\arccos x & = & \frac{\pi}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה זה נגזרת של 
+\begin_inset Formula $\tan x$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tan x=\frac{\sin x}{\cos x}=\frac{f}{g}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\cdot\frac{1}{g\left(x\right)} & = & -\frac{1}{\left(g\left(x\right)\right)^{2}}g^{'}\left(x\right)\\
+\frac{\partial}{\partial x}\left(\frac{f\left(x\right)}{g\left(x\right)}\right) & = & \frac{\partial}{\partial x}\left(f\left(x\right)\cdot\frac{1}{g\left(x\right)}\right)\\
+ & = & f^{'}\left(x\right)\frac{1}{g\left(x\right)}+f\left(x\right)\cdot\frac{-g^{'}\left(x\right)}{\left(g\left(x\right)\right)^{2}}\\
+ & = & \frac{f^{'}\left(x\right)g\left(x\right)-f\left(x\right)g^{'}\left(x\right)}{\left(g\left(x\right)\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\frac{\sin x}{\cos x} & = & \frac{\cos x\cdot\cos x-\sin x\left(-\sin x\right)}{\left(\cos\left(x\right)\right)^{2}}\\
+ & = & \frac{\cos^{2}x+\sin^{2}x}{\cos^{2}x}\\
+ & = & \frac{1}{\cos^{2}x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נגזרת של 
+\begin_inset Formula $\sinh\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\left(\sinh\left(x\right)\right) & = & \frac{\partial}{\partial x}\left(\frac{1}{2}\left(e^{x}-e^{-x}\right)\right)\\
+ & = & \left(\frac{1}{2}\left(e^{x}+e^{x}\right)\right)\\
+ & = & \cosh\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{x} & = & e^{x\ln x}\\
+\frac{\partial}{\partial x}x^{x} & = & e^{x\ln x}\left(\ln x+x\frac{1}{x}\right)\\
+ &  & \left(1+\ln x\right)e^{x\ln x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+מציאת 
+\begin_inset Formula $\frac{\partial}{\partial x}\left(\cosh^{-1}x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & \cosh^{-1}x\\
+\cosh y & = & x\\
+\frac{\partial x}{\partial y} & = & \sinh y\\
+\frac{\partial y}{\partial x} & = & \frac{1}{\sinh y}\\
+ & = & \frac{1}{\sqrt{x^{2}-1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השתמשנו בזהות 
+\begin_inset Formula $\cosh^{2}x-\sinh^{2}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרך אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\cosh^{-1}x & = & \frac{\partial}{\partial x}\ln\left(x+\sqrt{x^{2}-1}\right)\\
+ & = & \frac{\partial}{\partial x}\ln\left(x+\left(x^{2}-1\right)^{\frac{1}{2}}\right)\\
+ & = & \frac{1}{x+\left(x^{2}-1\right)^{\frac{1}{2}}}\cdot\left(1+\frac{1}{2}\left(x^{2}-1\right)^{-\frac{1}{2}}\cdot2x\right)\\
+ & = & \frac{1+\frac{2x}{2\sqrt{x^{2}-1}}}{x+\left(x^{2}-1\right)^{\frac{1}{2}}}\\
+ & = & \frac{1+\frac{x}{\sqrt{x^{2}-1}}}{x+\sqrt{x^{2}-1}}\\
+ & = & \frac{1+\frac{x}{\sqrt{x^{2}-1}}}{\sqrt{x^{2}-1}\left(\frac{x}{\sqrt{x^{2}-1}}+1\right)}\\
+ & = & \frac{1}{\sqrt{x^{2}-1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נגזרת 
+\begin_inset Formula $a^{x}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}a^{x} & = & \frac{\partial}{\partial x}\left(e^{x\ln a}\right)\\
+ & = & e^{x\ln a}\ln a\\
+ & = & a^{x}\ln a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נגזרת של פונקציות סתומות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Implicit Functions
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+xy^{3}+x^{3}y=10\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא יכולים לגזור את זה אלה סביב נקודה כי יתכן כי ל
+\begin_inset Formula $x$
+\end_inset
+
+ יהיה יותר מ
+\begin_inset Formula $y$
+\end_inset
+
+.
+ אז מה הוא השיפוע סביב 
+\begin_inset Formula $\left(x,y\right)=\left(1,2\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+xy^{3}+x^{3}y & = & 10\\
+\frac{\partial}{\partial x}\left(xy^{3}+x^{3}y\right) & = & \frac{\partial}{\partial x}10\\
+\underbrace{y^{3}+3y^{2}y^{'}}_{\frac{\partial}{\partial x}\left(xy^{3}\right)}+\underbrace{2x^{2}y+x^{3}y^{'}}_{\frac{\partial}{\partial x}\left(x^{3}y\right)} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים 
+\begin_inset Formula $\left(1,2\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+8+12y^{'}+6+y^{'} & = & 0\\
+13y^{'}+14 & = & 0\\
+y^{'} & = & -\frac{14}{13}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קירובים ליניאריים
+\end_layout
+
+\begin_layout Standard
+מצא קירוב של 
+\begin_inset Formula $\arctan\left(1.05\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \arctan\left(x\right)\\
+f^{'}\left(x\right) & = & \frac{1}{1+x^{2}}\\
+f\left(1\right) & = & \frac{\pi}{4}\\
+f^{'}\left(1\right) & = & \frac{1}{2}\\
+f\left(1.05\right) & \approx & f\left(1\right)+f^{'}\left(1\right)\cdot\left(1.05-1\right)\\
+ & \approx & \frac{\pi}{4}+\frac{1}{2}\left(0.05\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דיפרנציאל
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x,y,z\dots$
+\end_inset
+
+ משתנים כך שאם נתון אחד מהם נוכל לחשב את האחרים: 
+\begin_inset Formula $y=f\left(x\right),z=g\left(y\right)\Rightarrow g=t\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & x^{2}\\
+z & = & \arctan y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסביבה של 
+\begin_inset Formula $\begin{pmatrix}x=1\\
+y=1\\
+z=\frac{\pi}{4}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial y}{\partial x} & = & 2x\\
+\partial y & = & 2x\partial x\\
+\frac{\partial z}{\partial y} & = & \frac{1}{1+y^{2}}\\
+\partial z & = & \frac{1}{1+y^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & \arctan\left(x^{2}\right)\\
+\frac{\partial z}{\partial x} & = & \frac{1}{1+x^{4}}\cdot2x\\
+\partial z & = & \frac{2x}{1+x^{4}}\partial x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא כלל השרשרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial z}{\partial x}=\frac{\partial z}{\partial y}\cdot\frac{\partial y}{\partial x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט הערך הממוצע
+\end_layout
+
+\begin_layout Standard
+אם נתונה פונקציה בשתי נקודות 
+\begin_inset Formula $f\left(a\right)=j,f\left(b\right)=k$
+\end_inset
+
+ אזי השיפוע הממוצע הוא 
+\begin_inset Formula $\frac{k-j}{b-a}$
+\end_inset
+
+, וקיימת נקודה 
+\begin_inset Formula $a\leq x\leq b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f^{'}\left(x\right)=\frac{k-j}{b-a}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

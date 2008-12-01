@@ -1379,7 +1379,7 @@ m\frac{\partial}{\partial t^{2}}x\left(t\right)=F_{0}-cv\]
 \begin_layout Chapter
 תרגול מס.
 \numeric on
-1
+2
 \end_layout
 
 \begin_layout Standard
@@ -3572,6 +3572,663 @@ x_{cm} & = & \frac{1}{M}\int_{0}^{\frac{\sqrt{3}}{2}x}\int_{0}^{a}xG\partial x\p
 \begin_layout Standard
 \begin_inset Formula \[
 Mz_{cm}=\int_{0}^{2\pi}\int_{0}^{\pi}\int_{0}^{R}z\rho_{0}\frac{1}{r^{2}}\left(1-\cos\theta\right)r^{2}\sin\theta\partial r\partial\theta\partial\varphi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+11
+\end_layout
+
+\begin_layout Standard
+נחזור לבעית המסה הקשורה לקפיץ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c15d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u\left(x\right)=\frac{1}{2}k\left(x-x_{0}\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c15d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת שצירנו הפוטנציאל הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u=-mgh-MgH\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל גם 
+\begin_inset Formula $h$
+\end_inset
+
+ ו
+\begin_inset Formula $H$
+\end_inset
+
+ תלויים ב 
+\begin_inset Formula $\theta$
+\end_inset
+
+ אזי נשכתב אז המשוואה ונשתמש בזהויות הבאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+l-H & = & \sqrt{b^{2}+h^{2}}\Rightarrow H=l-\sqrt{b^{2}+h^{2}}\\
+\frac{b}{h} & = & \tan\theta\Rightarrow h=\frac{b}{\tan\theta}\\
+\sqrt{1+\frac{b^{2}}{h^{2}}} & = & \sqrt{1+\tan^{2}\theta}=\frac{1}{\cos\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & mgh-Mgh\\
+ & = & -mgh-Mg\left[l-\sqrt{b^{2}+h^{2}}\right]\\
+ & = & \left(-mgh+mg\sqrt{b^{2}+h^{2}}\right)-Mgl\\
+ & = & -gh\left(m-M\sqrt{1+\frac{b^{2}}{h^{2}}}\right)-Mgl\\
+ & = & -gh\left(m-\frac{M}{\cos\theta}\right)-Mgl\\
+ & = & gh\frac{M-m\cos\theta}{\cos\theta}-Mgl\\
+ & = & gb\frac{M-m\cos\theta}{\sin\theta}-Mgl\\
+u\left(\theta\right) & = & gb\frac{M-m\cos\theta}{\sin\theta}-Mgl\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי ב
+\begin_inset Formula $\theta_{min}$
+\end_inset
+
+ כאשר כל החוט נמצא בצד ימני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{b}{l}=\sin\theta_{min}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u\left(\theta_{min}\right) & = & -mgl\sqrt{1-\frac{b^{2}}{l^{2}}}\\
+u\left(\frac{\pi}{2}\right) & = & -Mgl\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזור ונראה אם יש נקודת שיווי משקל, כלומר נקודת מינימום:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial\theta} & = & gb\frac{m\sin^{2}\theta-M\cos\theta+m\cos^{2}\theta}{\sin^{2}\theta}\\
+ & = & gb\frac{m-M\cos\theta}{\sin^{2}\theta}\\
+\frac{\partial u}{\partial\theta} & = & 0\\
+gb\frac{m-M\cos\theta_{c}}{\sin^{2}\theta_{c}} & = & 0\\
+M\cos\theta_{c} & = & m\\
+\cos\theta_{c} & = & \frac{m}{M}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לעשות עוד נגזרת ולראות כי הזווית הקריטית 
+\begin_inset Formula $\theta_{c}$
+\end_inset
+
+ היא מינימום ולכן היא נקודת שיווי משקל.
+ אזי כדי לקבל נקודת מינימום צריכים 
+\begin_inset Formula $M>m$
+\end_inset
+
+.
+ מה אם 
+\begin_inset Formula $M=m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגרף המתקבל עבור 
+\begin_inset Formula $l=20,m=5,M=10$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c15d3.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל לא היינו צריכים לדעת את זה
+\end_layout
+
+\begin_layout Standard
+עוד שאלה:
+\end_layout
+
+\begin_layout Standard
+אם מסה נופלת מעל כדור, מתי היא תתנתק מהכדור ותפול? כדי לפתור את זה צריכים
+ למצא 
+\begin_inset Formula $\theta_{c}$
+\end_inset
+
+ שבה הגוף מתנתק שבו 
+\begin_inset Formula $N=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עד נקודת ההתנתקות 
+\begin_inset Formula $r$
+\end_inset
+
+ קבוע לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ma_{r} & = & m\ddot{r}-mR\dot{\theta}^{2}\\
+ma_{r} & = & N-mg\cos\theta\\
+N & = & mg\cos\theta-mR\dot{\theta}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial r & = & R\partial\theta\\
+\frac{\partial r}{\partial t} & = & v\\
+v & = & R\dot{\theta}^{2}\\
+\dot{\theta}^{2} & = & R\dot{\theta}^{2}\end{eqnarray*}
+
+\end_inset
+
+ נחשב את 
+\begin_inset Formula $v$
+\end_inset
+
+ דרך האנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mgR & = & \frac{1}{2}mv^{2}+mgR\cos\theta\\
+v^{2} & = & 2gR\left(1-\cos\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב את זה במשוואת הכוחות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & = & mg\cos\theta-m\frac{v^{2}}{R}\\
+ & = & mg\cos\theta-2mg\left(1-\cos\theta\right)\\
+ & = & 2mg\left[\frac{3}{2}\cos\theta-1\right]\\
+N & = & 0\\
+2mg\left[\frac{3}{2}\cos\theta-1\right] & = & 0\\
+\cos\theta & = & \frac{2}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעית התנגשות של מסות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P}_{t}^{'} & = & \vec{P}_{T}\\
+E_{k}^{'} & = & E_{k}+Q\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $Q=0$
+\end_inset
+
+ אז ההתנגשות היא אלסטית ומתקיים 
+\begin_inset Formula $E_{k}^{'}=E_{k}^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $Q<0$
+\end_inset
+
+ אז ההתנגשות היא פלסטית ומתקיים 
+\begin_inset Formula $E_{k}^{'}<E_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+התנגשות פלסטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{T}^{'} & = & P_{T}\\
+m_{1}v_{1}+m_{2}v_{2} & = & m_{1}v_{1}^{'}+m_{2}v_{2}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו המסות נדהקות לכן 
+\begin_inset Formula $v_{1}^{'}=v_{2}^{'}=v^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}v_{1}+m_{2}v_{2} & = & \left(m_{1}+m_{2}\right)v^{'}\\
+v^{'} & = & \frac{m_{1}v_{1}+m_{2}v_{2}}{m_{1}+m_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נרצה לדעת את הערך של 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k}^{'} & = & \frac{1}{2}mv^{2}=\frac{1}{2}\left(m_{1}+m_{2}\right)\cdot\frac{\left(m_{1}v_{1}+m_{2}v_{2}\right)^{2}}{\left(m_{1}+m_{2}\right)^{2}}\\
+E_{k} & = & \frac{1}{2}mv_{1}^{2}+\frac{1}{2}m_{2}v_{2}^{2}\\
+E_{k}^{'}-E_{k} & = & \frac{1}{2}\left(\frac{m_{1}^{2}}{m_{1}+m_{2}}-m_{1}\right)v_{1}^{2}+\frac{1}{2}\left(\frac{m_{2}^{2}}{m_{1}+m_{2}}-m_{2}\right)v_{2}^{2}+\overbrace{\frac{m_{1}m_{2}}{m_{1}+m_{2}}}^{\mu}\cdot v_{1}v_{2}\\
+ & = & \mbox{After a lot of math}\\
+ & = & -\frac{1}{2}\mu\left(v_{1}-v_{2}\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+12
+\end_layout
+
+\begin_layout Standard
+בהרצאה האחרונה דיברנו על סוגי ההתנגשויות.
+ בהתנגשות אילסטית 
+\begin_inset Formula $\vec{P}_{T}^{'}=\vec{P}_{T}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $E_{k}^{'}=E_{k}$
+\end_inset
+
+ אבל במקרה של התנגשות פסטית 
+\begin_inset Formula $E_{k}^{'}=E_{k}-Q$
+\end_inset
+
+ ןקיבלנו כי 
+\begin_inset Formula $Q=-\frac{1}{2}\mu\left(v_{1}-v_{2}\right)^{2}$
+\end_inset
+
+.
+ נבדוק את התותצאה הזו עבור מקרה קיצון: 
+\begin_inset Formula $v_{1}=-v_{2},m_{1}=m_{2}=m$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\mu=\frac{1}{2}m$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(v_{1}-v_{2}\right)^{2}=4v^{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Q=-2\left(\frac{1}{2}mv^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת נפתור את המקרה הכללי של אתנגשות אלסטית 
+\begin_inset Formula $Q=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}v_{1}+m_{2}v_{2} & = & m_{1}v_{1}^{'}+m_{2}v_{2}^{'}\\
+m_{1}v_{1}^{2}+m_{2}v_{2}^{2} & = & m_{1}v_{1}^{'^{2}}+m_{2}v_{2}^{'^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נתונים 
+\begin_inset Formula $m_{1},m_{2},v_{1},v_{2}$
+\end_inset
+
+ אזי מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{1}^{'} & = & \frac{1}{m_{1}}\left(m_{1}v_{1}+m_{2}v_{2}+m_{2}v_{2}^{'}\right)\\
+0 & = & v_{2}^{'^{2}}-2\overbrace{\left(\frac{m_{1}v_{1}+m_{2}v_{2}}{m_{1}+m_{2}}\right)}^{A}v_{2}^{'}+\overbrace{\left(\frac{2m_{1}}{m_{1}+m_{2}}v_{1}v_{2}+\frac{m_{2}-m_{1}}{m_{1}+m_{2}}v_{2}^{2}\right)}^{B}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $m_{1}=m_{2}=m$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A=\frac{1}{2}\left(v_{1}+v_{2}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $B=v_{1}v_{2}$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{2}^{'^{2}}-\left(v_{1}+v_{2}\right)v_{2}^{'}+v_{1}v_{2} & = & 0\\
+v_{2}^{'} & = & v_{1}+v_{2}-v_{2}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{2}^{'} & = & \frac{1}{2}\left(v_{1}+v_{2}\pm\left(v_{1}-v_{2}\right)\right)\\
+v_{2}^{'} & = & v_{1}\\
+v_{1}^{'} & = & v_{2}\\
+v_{2}^{'} & = & v_{2}\\
+v_{1}^{'} & = & v_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון השני הוא פתרון עבור מקרה שהמסת לא מתנגשות שזה גם שומר אנרגיה ותנע.
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $v_{2}=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A=\frac{m_{1}}{m_{1}+m_{2}}v_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $B=0$
+\end_inset
+
+ כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{2}^{'^{2}}-2\left(\frac{m_{1}}{m_{1}+m_{2}}v_{1}\right)v_{2}^{'} & = & 0\\
+v_{2}^{'}\left(v_{2}^{'}-2\frac{m_{1}}{m_{1}+m_{2}}v_{1}\right) & = & 0\\
+v_{2}^{'} & = & 0\\
+v_{1}^{'} & = & v_{1}\\
+v_{2}^{'} & = & -2\frac{2m_{1}}{m_{1}+m_{2}}v_{1}\\
+v_{1}^{'} & = & \frac{m_{1}-m_{2}}{m_{1}+m_{2}}v_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+התנגשות בשני מימדים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c16d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1} & = & m_{2}\\
+v_{2} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{v}_{1} & = & \vec{v}_{1}^{'}+\vec{v}_{2}^{'}\\
+\vec{v}_{1}^{2} & = & \vec{v}_{1}^{'^{2}}+\vec{v}_{2}^{'^{2}}\\
+\left(\vec{v}_{1}^{'}+\vec{v}_{2}^{'}\right)^{2} & = & \vec{v}_{1}^{'^{2}}+\vec{v}_{2}^{'^{2}}\\
+\vec{v}_{1}^{'^{2}}+2\vec{v}_{1}^{'}\cdot\vec{v}_{2}^{'}+\vec{v}_{2}^{'^{2}} & = & \vec{v}_{1}^{'^{2}}+\vec{v}_{2}^{'^{2}}\\
+\vec{v}_{1}^{'}\cdot\vec{v}_{2}^{'} & = & 0\\
+\left|\vec{v}_{1}^{2}\right|\left|\vec{v}_{1}^{2}\right|\cos\theta & = & 0\\
+\cos\theta & = & 90^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר הזווית בין שני המהירויות היא תמיד 
+\begin_inset Formula $90^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+מקדם תקומה
+\end_layout
+
+\begin_layout Standard
+דיברנו על התנגשות אילסטית לחלוטין ודיברנו על התנגשות פלסטית לחלוטין עשיו
+ נדבר על משהוא בין שני המקרים.
+ אם האנרגיות נתונים במערכת מרכז המסה אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\epsilon & = & \frac{\left|\vec{v}_{2}^{'}-\vec{v}_{1}^{'}\right|}{\left|\vec{v}_{2}-\vec{v}_{1}\right|}\\
+\frac{Q}{E_{k}} & = & \frac{E_{k}^{'}-E_{k}}{E_{k}}=\epsilon^{2}-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהתנגשות פלסטית 
+\begin_inset Formula $\epsilon=0$
+\end_inset
+
+ ובהתנגשות אלסטית 
+\begin_inset Formula $\epsilon=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c16d2.svg
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M & = & m_{1}+m_{2}\\
+\vec{S}_{1} & = & \vec{r}_{1}-\vec{R}_{cm}\\
+\vec{S}_{2} & = & \vec{r}_{2}-\vec{R}_{cm}\\
+\vec{l} & = & \vec{r}_{2}-\vec{r}_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{R}_{cm} & = & \frac{1}{M}\left(m_{1}\vec{r}_{1}+m_{2}\vec{r}_{2}\right)\\
+\vec{S}_{1} & = & \vec{r}_{1}-\vec{R}_{cm}=\left(1-\frac{m_{1}}{M}\right)\vec{r}_{1}+\frac{m_{2}}{M}\vec{r}_{2}=\frac{m_{2}}{M}\left(\vec{r}_{1}-\vec{r}_{2}\right)=\frac{m_{1}}{M}\vec{l}\\
+\vec{S}_{2} & = & \vec{r}_{2}-\vec{R}_{cm}=\left(1-\frac{m_{2}}{M}\right)\vec{r}_{2}-\frac{m_{1}}{M}\vec{r}_{1}=\frac{m_{1}}{M}\left(\vec{r}_{2}-\vec{r}_{1}\right)=\frac{m_{1}}{M}\vec{l}\\
+\frac{\partial}{\partial t}\vec{s}_{1} & = & \vec{u}_{1}=-\frac{m_{2}}{M}\dot{\vec{l}}=-\frac{m}{M}\left(\dot{\vec{r}}_{2}-\dot{\vec{r}}_{1}\right)=-\frac{m_{2}}{M}\left(\vec{v}_{2}-\vec{v}_{1}\right)\\
+\frac{\partial}{\partial t}\vec{s}_{2} & = & \vec{u}_{2}=\frac{m_{1}}{M}\dot{\vec{l}}=\frac{m_{1}}{M}\left(\dot{\vec{r}}_{2}-\dot{\vec{r}}_{1}\right)=\frac{m_{1}}{M}\left(\vec{v}_{2}-\vec{v}_{1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{k}^{'} & = & \frac{1}{2}m_{1}\vec{u}_{1}^{2}+\frac{1}{2}m_{2}\vec{u}_{2}^{2}\\
+ & = & \frac{1}{2}\left[\frac{m_{1}m_{2}^{2}}{M^{2}}+\frac{m_{2}m_{1}^{2}}{M^{2}}\right]\left(v_{2}-v_{1}\right)^{2}\\
+ & = & \frac{1}{2}\left[\frac{m_{1}m_{2}\left(m_{1}+m_{2}\right)}{M^{2}}\right]\left(\vec{v}_{2}-\vec{v}_{1}\right)^{2}\\
+ & = & \frac{1}{2}\mu\left(\vec{v}_{2}-\vec{v}_{1}\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{E_{k}^{'}}{E_{k}}=\frac{\left(v_{2}^{'}-v_{1}^{'}\right)^{2}}{\left(v_{2}-v_{1}\right)^{2}}=\epsilon^{2}\]
 
 \end_inset
 

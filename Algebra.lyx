@@ -2947,5 +2947,454 @@ x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}+x_{3}\hat{e}_{3}+t\vec{x}\]
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Standard
+היום צריכים לסיים את המרחבים הוקטורים.
+\end_layout
+
+\begin_layout Standard
+אפרטור ליניארי 
+\begin_inset Formula $A:X\to Y$
+\end_inset
+
+ והגרעין 
+\begin_inset Formula $\mbox{ker}A=\left\{ \vec{x}\in X\mid A\left(\vec{x}\right)=\vec{0}\right\} $
+\end_inset
+
+ ויש את 
+\begin_inset Formula $\mbox{Image}\left(A\right)=\mbox{Im}\left(A\right)=\left\{ \vec{u}\in Y\mid\vec{u}=A\left(\vec{x}\right),\vec{x}\in A\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename algebra/c13d1.svg
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח כי 
+\begin_inset Formula $\mbox{Im}A$
+\end_inset
+
+ הוא תת מרחב של 
+\begin_inset Formula $Y$
+\end_inset
+
+ אזי צריך להוכיח סגירות עבור הפעולות חיבור וכפל במספר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{u},\vec{v}\in\mbox{Im}A & \overset{?}{\Rightarrow} & \vec{u}+\vec{v}\in\mbox{Im}A\\
+\vec{u}\in\mbox{Im}A & \Rightarrow & \exists\left(\vec{x}\in X\right):\vec{u}=A\left(\vec{x}\right)\\
+\vec{v}\in\mbox{Im}A & \Rightarrow & \exists\left(\vec{y}\in X\right):\vec{v}=A\left(\vec{y}\right)\\
+\vec{u}+\vec{v} & = & A\left(\vec{x}\right)+A\left(\vec{x}\right)\\
+ & = & A\left(\vec{x}+\vec{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{x},\vec{y}\in X$
+\end_inset
+
+ לכן 
+\begin_inset Formula $A\left(\vec{x}+\vec{y}\right)=\left(\vec{u}+\vec{v}\right)\in Y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה פשוטה לזה היא הטלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{23}:\mathbb{R}^{3} & \to & \mathbb{R}^{3}\\
+P_{23}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix} & = & \begin{pmatrix}0\\
+x_{2}\\
+x_{3}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התמונה של זה היא 
+\begin_inset Formula $\begin{pmatrix}0\\
+x_{2}\\
+x_{3}\end{pmatrix}$
+\end_inset
+
+ והגרעין הוא 
+\begin_inset Formula $\begin{pmatrix}x\\
+0\\
+0\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v_{1},v_{2}\subset X,\Gamma=v_{1}\cap v_{2}$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $\vec{x}\in\Gamma,\vec{y}\in\Gamma$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{x},\vec{y}\in v_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\vec{x},\vec{y}\in v_{2}$
+\end_inset
+
+ אזי מתקיים 
+\begin_inset Formula $\vec{x}+\vec{y}\in v_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\vec{x}+\vec{y}\in v_{2}$
+\end_inset
+
+ כי הם מרחבים וקטורים, לכן 
+\begin_inset Formula $\vec{x}+\vec{y}\in\Gamma$
+\end_inset
+
+.
+ לכן חיתוך של תתי מרחבים הוא גם תת מרחב.
+ אי אפשר כי 
+\begin_inset Formula $v_{1}\cap v_{2}=\emptyset$
+\end_inset
+
+ כי 
+\begin_inset Formula $\vec{0}\in v_{1},\vec{0}\in v_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+אם יש לנו שני מישורים 
+\begin_inset Formula $\pi_{1}=\left\{ \begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}\mid x_{2}=0\right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $\pi_{2}=\left\{ \begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}\mid x_{1}=0\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\pi_{1}\cap\pi_{2}=\left\{ \begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix},x_{1}=0,x_{2}=0\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+הגדרה כללית של מרחב ליניארי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ קבוצה שבתוכה מוגדרים שתי פעולות:
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+חיבור 
+\begin_inset Formula $\vec{x}\in V,\vec{y}\in V\Rightarrow\vec{x}+\vec{y}\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+כפל 
+\begin_inset Formula $\alpha\in R,\vec{x}\in V\Rightarrow\alpha\cdot\vec{x}\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז כדי שזה יהיה מרחב וקטורי אזי צריך להתקיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אקסיומות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\vec{u},\vec{v},\vec{w}\in V\right):\left(\vec{u}+\vec{v}\right)+\vec{w}=\vec{u}+\left(\vec{v}+\vec{w}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\vec{u},\vec{v}\in V\right):\vec{v}+\vec{u}=\vec{u}+\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\exists\left(\vec{0}\in V\right)\forall\left(\vec{u}\in V\right):\vec{u}+\vec{0}=\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\vec{u}\in V\right)\exists\left(-\vec{u}\in V\right):\vec{u}+\left(-\vec{u}\right)=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\lambda\in\mathbb{R},\vec{u},\vec{v}\in V\right):\lambda\left(\vec{u}+\vec{v}\right)=\lambda\vec{u}+\lambda\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\lambda,\mu\in\mathbb{R},\vec{u}\in V\right):\left(\lambda+\mu\right)\vec{u}=\lambda\vec{u}+\mu\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\lambda,\mu\in\mathbb{R},\vec{u}\in V\right):\left(\lambda\mu\right)\vec{u}=\lambda\left(\mu\vec{u}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall\left(\vec{u}\in V,1\in\mathbb{R}\right):1\cdot\vec{u}=\vec{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V=\left\{ \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\mid x_{1},x_{2}\in\mathbb{R},x_{1},y_{2}>0\right\} $
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\overset{Def}{=}\begin{pmatrix}x_{1}y_{1}\\
+x_{2}y_{2}\end{pmatrix}$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha\odot\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\overset{def}{=}\begin{pmatrix}\alpha x_{1}\\
+\alpha x_{2}\end{pmatrix}$
+\end_inset
+
+ ונבדוק את הפעולות שלנו:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\left(\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\right)\oplus\begin{pmatrix}z_{1}\\
+z_{2}\end{pmatrix} & \overset{?}{=} & \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\left(\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\oplus\begin{pmatrix}z_{1}\\
+z_{2}\end{pmatrix}\right)\\
+\begin{pmatrix}x_{1}y_{1}\\
+x_{2}y_{2}\end{pmatrix}\oplus\begin{pmatrix}z_{1}\\
+z_{2}\end{pmatrix} & \overset{?}{=} & \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\begin{pmatrix}y_{1}z_{1}\\
+y_{2}z_{2}\end{pmatrix}\\
+\begin{pmatrix}x_{1}y_{1}z_{1}\\
+x_{2}y_{2}z_{2}\end{pmatrix} & = & \begin{pmatrix}x_{1}y_{1}z_{1}\\
+x_{2}y_{2}z_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\forall\left(\vec{x},\vec{y}\in V\right):\vec{x}\oplus\vec{y} & \overset{?}{=} & \vec{y}\oplus\vec{x}\\
+\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix} & \overset{?}{=} & \begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\oplus\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\\
+\begin{pmatrix}x_{1}y_{1}\\
+x_{2}y_{2}\end{pmatrix} & = & \begin{pmatrix}y_{1}x_{2}\\
+y_{2}x_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\forall\left(\vec{x}\in V\right):\vec{x}+\vec{0} & = & \vec{x}\\
+\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\odot\begin{pmatrix}\alpha_{1}\\
+a_{2}\end{pmatrix} & = & \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\\
+\begin{pmatrix}\alpha_{1}x_{1}\\
+\alpha_{1}x_{1}\end{pmatrix} & = & \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\\
+\begin{pmatrix}\alpha_{1}x_{1}=x_{1}\\
+\alpha_{2}x_{2}=x_{2}\end{pmatrix} & \Rightarrow & \begin{pmatrix}\alpha_{1}=0\\
+\alpha_{2}=0\end{pmatrix}\\
+\vec{0} & = & \begin{pmatrix}1\\
+1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\forall\vec{u}\exists\left(-\vec{u}\right):\vec{u}\oplus\left(-\vec{u}\right) & = & \vec{0}\\
+\begin{pmatrix}u_{1}\\
+u_{2}\end{pmatrix}\oplus\begin{pmatrix}\alpha_{1}\\
+\alpha_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+1\end{pmatrix}\\
+\begin{pmatrix}u_{1}\alpha_{1}\\
+u_{2}\alpha_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+1\end{pmatrix}\\
+\alpha_{1} & = & \frac{1}{u_{1}}\\
+\alpha_{2} & = & \frac{1}{u_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מטלב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Matlab:polyfit
+\end_layout
+
+\begin_layout Standard
+פעולת 
+\begin_inset Formula $polyfit$
+\end_inset
+
+ מחשבת את הפולינום האכי כרוב ל
+\begin_inset Formula $k$
+\end_inset
+
+ הנקודות שמכניסים לו.
+ פעולת 
+\begin_inset Formula $polyval$
+\end_inset
+
+ מחשבת את הערך של פולינום בנקודה.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
