@@ -1,0 +1,19 @@
+x=-pi:0.05:pi;
+subplot(2,3,1);
+plot(x,sin(x),"-",x,0,".");
+axis([-pi,pi,-1,1]);
+subplot(2,3,2);
+plot(x,sin(x),"-",x,x,".");
+axis([-pi,pi,-1,1]);
+subplot(2,3,3);
+plot(x,sin(x),"-",x,x.-x.^3./6,".");
+axis([-pi,pi,-1,1]);
+subplot(2,3,4);
+plot(x,sin(x),"-",x,x.-x.^3./6.+x.^5./120,".");
+axis([-pi,pi,-1,1]);
+subplot(2,3,5);
+plot(x,sin(x),"-",x,x.-x.^3./6.+x.^5./120.-x.^7./5040,".");
+axis([-pi,pi,-1,1]);
+subplot(2,3,6);
+plot(x,sin(x),"-",x,x.-x.^3./6.+x.^5./120.-x.^7./5040.+x.^9./362880,".");
+print -dsvg c14d2.svg

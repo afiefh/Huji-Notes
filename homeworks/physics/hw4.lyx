@@ -62,6 +62,48 @@
 1
 \end_layout
 
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+R & = & R\hat{r}\\
+R\left(t\right) & = & R\left(t\right)\hat{r}\\
+v & = & \dot{R}\hat{r}+R\dot{\hat{r}}\\
+ & = & \dot{R}\hat{r}+R\dot{\theta}\hat{\theta}\\
+a & = & \dot{v}\\
+ & = & \ddot{R}\hat{r}+\dot{R}\dot{\hat{r}}+\dot{R}\dot{\theta}\hat{\theta}+R\ddot{\theta}\hat{\theta}+R\dot{\theta}\dot{\hat{\theta}}\\
+ & = & \ddot{R}\hat{r}+\dot{R}\dot{\theta}\hat{\theta}+\dot{R}\dot{\theta}\hat{\theta}+R\ddot{\theta}\hat{\theta}+R\dot{\theta}^{2}\hat{r}\\
+ &  & \underbrace{\left(\ddot{R}+R\dot{\theta}^{2}\right)}_{\mbox{Radial}}\hat{r}+\underbrace{\left(2\dot{R}\dot{\theta}+R\ddot{\theta}\right)}_{\mbox{Tangetan}}\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\hat{r} & = & \cos\theta\hat{x}+\sin\theta\hat{y}\\
+\hat{\theta} & = & -\sin\theta\hat{x}+\cos\theta\hat{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+פותרים שתי משוואות בשני משתנים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{x} & = & \hat{\theta}\sin t-\hat{r}\cos\theta\\
+\hat{y} & = & \hat{\theta}\cos\theta+\hat{r}\sin\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
 \begin_layout Part*
 שאלה
 \family roman
@@ -339,6 +381,16 @@ r_{1cm} & = & \frac{\sum_{i\in A}\vec{r}_{i}\cdot m_{i}}{\sum_{i\in A}m_{i}}\\
 4
 \end_layout
 
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial V & = & \left(\partial r\right)\left(r\partial\theta\right)\left(\partial z\right)\\
+ & = & r\partial r\partial\theta\partial z\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part*
 שאלה
 \family roman
@@ -447,7 +499,7 @@ Mz_{cm} & = & \int_{V}z\rho\partial V\\
 6
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
 \vec{F}_{1\to2} & = & -G\frac{m_{1}m}{\left|\vec{r}_{1\to2}\right|^{2}}\hat{r}\\
  & = & -G\frac{m_{1}m}{\left|\vec{r}_{1\to2}\right|^{3}}\vec{r}\\
@@ -464,19 +516,33 @@ Mz_{cm} & = & \int_{V}z\rho\partial V\\
 
 \end_layout
 
-\begin_layout Standard
-ב.
-\end_layout
-
-\begin_layout Standard
+\begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
 \int_{0}^{R}-\frac{Gm_{1}\cdot z\cdot\lambda2\pi r}{\left(z^{2}+r^{2}\right)^{\frac{3}{2}}}\hat{z}\partial r & = & -Gm_{1}z\lambda2\pi\hat{z}\int_{0}^{R}\frac{r}{\left(z^{2}+r^{2}\right)^{\frac{3}{2}}}\partial r\\
  & = & 2Gm_{1}z\lambda\pi\hat{z}\left[\frac{1}{\sqrt{z^{2}+r^{2}}}\right]_{0}^{R}\\
- & = & 2Gm_{1}z\lambda\pi\left[\frac{1}{\sqrt{z^{2}+R^{2}}}-\frac{1}{z}\right]\hat{z}\end{eqnarray*}
+ & = & 2Gm_{1}z\lambda\pi\left[\frac{1}{\sqrt{z^{2}+R^{2}}}-\frac{1}{z}\right]\hat{z}\\
+ & = & 2Gm_{1}\lambda\pi\left(\frac{z}{\sqrt{z^{2}+r^{2}}}-1\right)\hat{z}\end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{2R}2Gm_{1}\lambda\pi\left(\frac{z}{\sqrt{z^{2}+r^{2}}}-1\right)\hat{z}\partial z & = & \int_{0}^{2R}2Gm_{1}\lambda\pi\left(\frac{z}{\sqrt{z^{2}+r^{2}}}-1\right)\hat{z}\partial z\\
+ & = & \int_{0}^{2R}2Gm_{1}\lambda\pi\left(\frac{\sqrt{R^{2}+\left(R-z\right)^{2}}}{\sqrt{R^{2}+\left(R-z\right)^{2}+z^{2}}}\right)\hat{z}\partial z\\
+ & = & 2Gm_{1}\lambda\pi\int_{0}^{2R}\left(\frac{\sqrt{R^{2}+\left(R-z\right)^{2}}}{\sqrt{R^{2}+R^{2}+2Rz+z^{2}+z^{2}}}\right)\hat{z}\partial z\\
+ &  & 2Gm_{1}\lambda\pi\int_{0}^{2R}\left(\frac{\sqrt{2R^{2}-2zR+z^{2}}}{\sqrt{2R^{2}+2Rz+2z^{2}}}\right)\hat{z}\partial z\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אינטגרל זה אי פתיר....
+ 
 \end_layout
 
 \end_body

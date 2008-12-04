@@ -959,5 +959,161 @@ v\left(t\right)=\frac{mg}{\gamma}\left(1-e^{\frac{\gamma}{m}t}\right)\]
 
 \end_layout
 
+\begin_layout Chapter
+סדנא מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Section
+תנע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P} & = & m\vec{v}\\
+\frac{\partial\vec{P}}{\partial t} & = & m\cdot\frac{\partial\vec{v}}{\partial t}\\
+ & = & m\vec{a}\\
+ & = & F\\
+\frac{\partial\vec{P}}{\partial t} & = & F\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם לא פועל כח על גוף אזי התנע שמור.
+ דרך חישובים אפשר לראות כי 
+\begin_inset Formula \[
+\frac{\partial\vec{P}}{\partial t}=F_{ext}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מרכז מסה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{R}_{cm} & = & \frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}\\
+\dot{\vec{R}}_{cm} & = & \frac{\sum m_{i}\dot{\vec{r}}_{i}}{\sum m_{i}}\\
+\dot{\vec{R}}_{cm} & = & \frac{P}{M}\\
+M\vec{v}_{cm} & = & \vec{P}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פתרון שאלות בעזרת זנע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w4d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כוחות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{k}=-\mu m\left(t\right)g\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כח דחף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P}_{g} & = & \mbox{Moment Of Gas}\\
+\vec{F}_{g} & = & \frac{\partial\vec{P}_{g}}{\partial t}\\
+\vec{F}_{r} & = & -\frac{\partial\vec{P}_{g}}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\left(t\right)=m_{0}-\lambda t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & \frac{\partial P}{\partial t}\\
+ & = & \frac{\partial}{\partial t}\left(m\vec{v}\right)\\
+ & = & \dot{m}\vec{v}+m\dot{\vec{v}}\\
+ & = & -\frac{\partial\vec{P}_{g}}{\partial t}-\mu_{k}m\left(t\right)g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{g} & = & \sum_{k}\Delta mV_{g}\left(t\right)\\
+ & = & \int_{m\left(0\right)}^{m\left(t\right)}\partial m_{g}\left(t\right)v_{g}\left(t\right)\\
+\partial m_{g} & = & \frac{\partial m_{g}}{\partial t}\partial t\\
+ & = & \lambda\partial t\\
+P_{g} & = & \int_{0}^{t}v_{g}\left(t^{'}\right)\lambda\partial t^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{g}\left(t^{'}\right) & = & v_{R}\left(t^{'}\right)-u_{0}\\
+P_{g}\left(t\right) & = & \int_{0}^{t}\left(v\left(t^{'}\right)-u_{0}\right)\lambda\partial t^{'}\\
+\frac{\partial P_{g}\left(t\right)}{\partial t} & = & \left(v\left(t^{'}\right)-u_{0}\right)\lambda\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\lambda v\left(t\right)+\left(m_{0}-\lambda t\right)\dot{v} & = & -\left(v\left(t\right)-u_{0}\right)\lambda-\mu_{k}\left(m_{0}-\lambda t\right)g\\
+\dot{v} & = & \frac{u_{0}\lambda}{m_{0}-\lambda t}-\mu_{k}g\\
+v\left(t\right) & = & \int\left(\frac{u_{0}\lambda}{m_{0}-\lambda t}-\mu_{k}g\right)\partial t\\
+ & = & \int\frac{u_{0}\lambda}{m_{0}-\lambda t}\partial t-\int\mu_{k}g\partial t\\
+ & = & -u_{0}\ln\left(m_{0}-\lambda t\right)-\mu_{k}gt+c\\
+v\left(0\right) & = & 0\\
+-u_{0}\ln\left(m_{0}-\lambda\cdot0\right)-\mu_{k}g\cdot0+c & = & 0\\
+c & = & u_{0}\ln\left(m_{0}\right)\\
+v\left(t\right) & = & -u_{0}\ln\left(m_{0}-\lambda t\right)-\mu_{k}gt+u_{0}\ln\left(m_{0}\right)\\
+ & = & u_{0}\ln\left(\frac{m_{0}}{m_{0}-\lambda t}\right)-\mu_{k}gt\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

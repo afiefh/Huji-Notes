@@ -39,6 +39,22 @@
 
 \begin_body
 
+\begin_layout Title
+מתמטיקה דיסקרטית
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 הרצאה מס.
 \numeric on
@@ -4589,6 +4605,578 @@ n\left(x+1\right)^{n-1} & = & \sum_{k}^{n}{n \choose k}k\cdot x^{k-1}\end{eqnarr
 \begin_inset Formula \[
 n\cdot2^{n-1}=\sum_{k}^{n}{n \choose k}k\]
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+9
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{n-1 \choose k-1}+{n-1 \choose k}={n \choose k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להוכיח את זה אלגברית או קומבינטורית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{{n-1 \choose k-1}}_{\mbox{Subgroups that don't contain N}}+\underbrace{{n-1 \choose k}}_{\mbox{Subgroups that don't contain N}}=\underbrace{{n \choose k}}_{\mbox{All subgroups}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משולש פסקל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}{1 \choose 0}{1 \choose 1}\\
+{2 \choose 0}{2 \choose 1}{2 \choose 2}\\
+{3 \choose 0}{3 \choose 1}{3 \choose 2}{3 \choose 3}\\
+{4 \choose 0}{4 \choose 1}{4 \choose 2}{4 \choose 3}{4 \choose 4}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחשבים את הערכים האילה: כל איבר הוא סכום שני האיברים מעליו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}1\,\,1\\
+1\,\,2\,\,1\\
+1\,\,3\,\,3\,\,1\\
+1\,\,4\,\,6\,\,4\,\,1\\
+1\,5\,10\,10\,5\,1\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סדרה פולימודאלית
+\end_layout
+
+\begin_layout Standard
+סדרה שאיבריה עולים עד למקסימום ואחר כך יורדת.
+\end_layout
+
+\begin_layout Standard
+משפט: עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ קבוע סדרת המקדמים הבינומיים 
+\begin_inset Formula ${n \choose k}$
+\end_inset
+
+ היא סדרה אונימודאלית.
+\end_layout
+
+\begin_layout Standard
+הוכחה: האיבר ה
+\begin_inset Formula $k-1$
+\end_inset
+
+ בשורה הוא 
+\begin_inset Formula ${n \choose k-1}$
+\end_inset
+
+ והאיבר ה
+\begin_inset Formula $k$
+\end_inset
+
+ הוא 
+\begin_inset Formula ${n \choose k}$
+\end_inset
+
+ אז מתי 
+\begin_inset Formula ${n \choose k-1}\leq{n \choose k}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{n!}{\left(k-1\right)!\left(n-\left(k-1\right)\right)!} & \leq & \frac{n!}{k!\left(n-k\right)!}\\
+\frac{1}{\left(k-1\right)!\left(n-\left(k-1\right)\right)!} & \leq & \frac{1}{k!\left(n-k\right)!}\\
+\frac{1}{\left(n-\left(k-1\right)\right)!} & \leq & \frac{1}{k\cdot\left(n-k\right)!}\\
+\frac{1}{\left(n-k-1\right)} & \leq & \frac{1}{k\cdot\left(n-k\right)}\\
+k & \leq & \frac{n+1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+
+\lang english
+The math might not be entirely correct.
+ check it out.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה בדיוק מה רואים במשולש: אם 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגי אז זה עולה עד 
+\begin_inset Formula $\frac{n}{2}$
+\end_inset
+
+ ואחר כך יורד, אם 
+\begin_inset Formula $n$
+\end_inset
+
+ אי זוגי אז 
+\begin_inset Formula $\frac{n+1}{2}$
+\end_inset
+
+ מספר זוגי ומקבלים ממש שוויון, לכן יש איבר באמצע.
+\end_layout
+
+\begin_layout Standard
+משפט: אם 
+\begin_inset Formula $n>k>m$
+\end_inset
+
+ אזי 
+\begin_inset Formula ${n \choose k}{k \choose m}={n \choose m}{n-m \choose k-m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{{n \choose k}}_{k_{i}\mbox{ items out of n}}\underbrace{{k \choose m}}_{\mbox{m items out of}k_{1},k_{2}\dots}={n \choose m}{n-m \choose k-m}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר צד שמאלי הוא מספר הזוגות של תתי קבוצות 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|B\right|=m,\left|A\right|=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c12d2.svg
+	lyxscale 50
+	width 50theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אפשר לחשב את זה גם כך שמקבלים מה שבצד ימיני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${m \choose n}$
+\end_inset
+
+ הוא מספר תתי הקבוצות בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+ של 
+\begin_inset Formula $\left\{ 1\dots m\right\} $
+\end_inset
+
+, 
+\begin_inset Formula ${n-m \choose k-m}$
+\end_inset
+
+ מספר תת הקבוצות בגודל 
+\begin_inset Formula $k-m$
+\end_inset
+
+ של 
+\begin_inset Formula $\left\{ a_{1},a_{2}\dots a_{k-m}\right\} $
+\end_inset
+
+.
+ זה כמו לבחור תת קבוצה 
+\begin_inset Formula $D$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k-m$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $n-m$
+\end_inset
+
+ איברים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c12d1.svg
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לבחור שתי הקבוצות זה בדיוק כמו 
+\begin_inset Formula $B\subseteq B\dot{\cup}D$
+\end_inset
+
+.
+ אזי בצד ימיני כתובות כל האפשריות לבחור כל זוג כבוצות בגדלים אילו
+\end_layout
+
+\begin_layout Section
+מספרי קטלן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{n}=\frac{1}{n+1}{2n \choose n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הבעיה היא...
+ אם רושמים איזישהוא ביטוי חשבוני שיש בו סוגריים, מספר פתיחות הסוגריים חייבת
+ להיות שווה למספר הסגירות, ואי אפשר לסגור לפני לסגור.
+ בכמה דרכים ניתן לסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגות סוגריים.
+ כלומר בכמה דרכים אפשר לסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $n$
+\end_inset
+
+ אחדים כך שלכל 
+\begin_inset Formula $1\leq m\leq2m$
+\end_inset
+
+ עד המכום ה
+\begin_inset Formula $m$
+\end_inset
+
+ מספר האחדים שהופיעו הוא לכל היותר מספר האפסים שהופיעו.
+\end_layout
+
+\begin_layout Standard
+אז יש כמה קבוצות:
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $A$
+\end_inset
+
+ היא קבוצת כל הסדרות של 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $n$
+\end_inset
+
+ אחדים.
+ כלומר מספיק לבחור המקומות של האפסים, כלומר לבחור 
+\begin_inset Formula $n$
+\end_inset
+
+ מ
+\begin_inset Formula $2n$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left|A\right|={2n \choose n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $B$
+\end_inset
+
+ היא קבוצת הסדרות הלא חוקיות של 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $n$
+\end_inset
+
+ אחדים.
+ לסדרה כזו קיים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $1\leq m\leq2n$
+\end_inset
+
+ כך שעד למקום ה
+\begin_inset Formula $m$
+\end_inset
+
+ ישנם יותר אחדים מאפסים.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצת הסדרות החוקיות של 
+\begin_inset Formula $n$
+\end_inset
+
+ אחדים ו
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים.
+ 
+\begin_inset Formula $S\cup B=A\Rightarrow\left|S\right|=\underbrace{\left|A\right|}_{{2n \choose n}}-\left|B\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הטענה היא כי 
+\begin_inset Formula $\left|B\right|={2n \choose n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|S\right| & = & \left|A\right|-\left|B\right|\\
+ & = & {2n \choose n}-{2n \choose n-1}\\
+ & = & \frac{\left(2n\right)!}{n!n!}-\frac{\left(2n\right)!}{\left(n+1\right)!\left(n-1\right)!}\\
+ & = & \frac{\left(2n\right)!}{n!n!}-\frac{\left(2n\right)!}{n!\left(n+1\right)\frac{n!}{n}}\\
+ & = & \frac{\left(2n\right)!}{n!n!}\left(1-\frac{1}{\left(\frac{n+1}{n}\right)}\right)\\
+ & = & \frac{\left(2n\right)!}{n!n!}\left(\frac{1}{n-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מוכיחים את זה אז הה האו מספר קטלן.
+\end_layout
+
+\begin_layout Standard
+טענת עזר: נגדיר 
+\begin_inset Formula $C$
+\end_inset
+
+ להיות אוסף הסדרות של 
+\begin_inset Formula $n+1$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $n-1$
+\end_inset
+
+ אחדים.
+ אזי 
+\begin_inset Formula $\left|B\right|=\left|C\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי טענת העזר גוררת את הטענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left|B\right|=\left|C\right|$
+\end_inset
+
+ אז צריכים לספור מה גודל קבוצה של 
+\begin_inset Formula $\left|C\right|$
+\end_inset
+
+ אבל לקבוע זה צריך רק לדעת איפה האפסים בה, אזי 
+\begin_inset Formula ${2n \choose n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז צריך להוכיח את טענת העזר:
+\end_layout
+
+\begin_layout Standard
+רוצים לראת כי 
+\begin_inset Formula $\left|B\right|=\left|C\right|$
+\end_inset
+
+.
+ מה נעשה זה לבנות העתקה חד חד ערכית ועל בין 
+\begin_inset Formula $B$
+\end_inset
+
+ ו
+\begin_inset Formula $C$
+\end_inset
+
+ אזי הם באותו גודל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f:B\to C\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיימת סדרה 
+\begin_inset Formula $b=\left(b_{1},b_{2},b_{3}\dots b_{2n}\right)\in B$
+\end_inset
+
+ שהיא לא חוקית, כלומר יש 
+\begin_inset Formula $m$
+\end_inset
+
+ שעבורו יש יותר אחדים מאפסים, אזי יש 
+\begin_inset Formula $m$
+\end_inset
+
+ מינימאלי הזה שבו מספר האחדים גדול באחד ממספר האפסים, 
+\begin_inset Formula $b_{m}$
+\end_inset
+
+ הזה חייב להיות אחד.
+\end_layout
+
+\begin_layout Standard
+רוצים להתאים לסדרה זו נתאים סדרה ב
+\begin_inset Formula $C$
+\end_inset
+
+ כך שהופכים כל האפסים ואחדים עד המקום ה
+\begin_inset Formula $m$
+\end_inset
+
+ 
+\begin_inset Formula $c=\left(\overline{b_{1}},\overline{b_{2}}\dots\overline{b_{m}},b_{m+1}\dots b_{2n}\right)$
+\end_inset
+
+ אזי עכשין יש 
+\begin_inset Formula $n+1$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $n-1$
+\end_inset
+
+ אחדים לכן היא שייכת ל
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צריך עדיין להוכיח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ היא חד חד ערכית ועל.
+ מה היא הדרך היותר פשוטה לעשות זה? זה להגדיר 
+\begin_inset Formula $g\circ f=1$
 \end_inset
 
 

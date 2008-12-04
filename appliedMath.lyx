@@ -39,6 +39,22 @@
 
 \begin_body
 
+\begin_layout Title
+מתמטיקה שימושית
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 תרגול מס.
 \numeric on
@@ -5842,7 +5858,7 @@ x^{x} & = & e^{x\ln x}\\
 
 \end_layout
 
-\begin_layout Subsubsection
+\begin_layout Subsection
 מציאת 
 \begin_inset Formula $\frac{\partial}{\partial x}\left(\cosh^{-1}x\right)$
 \end_inset
@@ -6115,6 +6131,807 @@ z & = & \arctan\left(x^{2}\right)\\
 \begin_inset Formula $f^{'}\left(x\right)=\frac{k-j}{b-a}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+10
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- טורי
+\family roman
+\series bold
+\shape up
+\size huge
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Taylor
+\end_layout
+
+\begin_layout Section
+נגזרת מסדרים גבוהים
+\end_layout
+
+\begin_layout Standard
+מסמנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{n}f\left(x\right)}{\partial x^{n}}\equiv f^{\left(n\right)}\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial f}{\partial t} & = & \dot{f}\\
+\frac{\partial^{2}f}{\partial t^{2}} & = & \ddot{f}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x^{3}+2x+1\\
+f^{'}\left(x\right) & = & 3x^{2}+2\\
+f^{''}\left(x\right) & = & 6x\\
+f^{'''}\left(x\right) & = & 6\\
+f^{''''}\left(x\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x^{2}\sin x\\
+f^{'}\left(x\right) & = & 2x\sin x+x^{2}\cos x\\
+f^{''}\left(x\right) & = & 2\sin x+2x\cos x+2x\cos x-x^{2}\sin x\\
+ & = & 2\sin x+4x\cos x-x^{2}\sin x\\
+f^{'''}\left(x\right) & = & \dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לחשב את זה דרך נוסחת לייבניתס
+\end_layout
+
+\begin_layout Section
+נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Laibnitz
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(f\cdot g\right)^{\left(n\right)} & = & \frac{\partial^{n}}{\partial x^{n}}\left(f\cdot g\right)\\
+ & = & \sum_{i=0}^{n}{n \choose i}f^{\left(i\right)}g^{\left(n-i\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעזרת זה נוכל לכתוב צורה כללית של 
+\begin_inset Formula $\frac{\partial^{n}}{\partial x^{n}}\left(x^{2}\sin x\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2} & = & f\\
+\sin x & = & g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f^{'}\left(x\right) & = & 2x\\
+f^{''}\left(x\right) & = & 2\\
+f^{\left(n\geq3\right)}\left(x\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{n}}{\partial x^{n}}\left(x^{2}\sin x\right) & = & f\cdot g^{\left(n\right)}+{n \choose 1}f^{'}g^{\left(n-1\right)}+{n \choose 2}f^{''}g^{\left(n-2\right)}\\
+ & = & x^{2}\left(\sin x\right)^{\left(n\right)}+{n \choose 1}2x\left(\sin x\right)^{\left(n-1\right)}+{n \choose 2}2\left(\sin x\right)^{\left(n-2\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ שזה פומ/ציה תלויה רק בשארית החילוק בארבע לכן אם למשל 
+\begin_inset Formula $n=4m+3$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f^{\left(4m+3\right)}\left(x\right) & = & x^{2}g^{\left(4m+3\right)}+\left(4m+3\right)\cdot2x\left(\sin x\right)^{\left(4m+2\right)}+\left(4m+3\right)\left(4m+2\right)g^{\left(4m+1\right)}\\
+ & = & x^{2}\left(-\cos x\right)+2\left(4m+3\right)x\left(-\sin x\right)+\left(4m+3\right)\left(4m+2\right)\left(\cos x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+McLoren
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ פולינום ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(x\right)=a_{n}x^{n}+a_{n-1}x^{n-1}+\dots+a_{1}x+a_{0}$
+\end_inset
+
+ אז כל לגזור אותו ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & a_{n}x^{n}+a_{n-1}x^{n-1}+\dots+a_{1}x+a_{0}\\
+f^{'}\left(x\right) & = & a_{1}+2a_{2}x+\dots+na_{n}x^{n-1}\\
+f^{''}\left(x\right) & = & 2a_{2}+\dots+n\left(n-1\right)x^{n-2}\end{eqnarray*}
+
+\end_inset
+
+אזי מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(0\right) & = & a_{0}\\
+f^{'}\left(0\right) & = & a_{1}\\
+f^{'''}\left(0\right) & = & 2a_{2}\\
+\vdots & = & \vdots\\
+f^{\left(n\right)}\left(0\right) & = & n!a_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אפשר לכתוה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(0\right) & = & a_{0}\\
+f^{'}\left(0\right) & = & a_{1}\\
+\frac{f^{'''}\left(0\right)}{2} & = & a_{2}\\
+\vdots & = & \vdots\\
+\frac{f^{\left(n\right)}\left(0\right)}{n!} & = & a_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & f\left(0\right)+f^{'}\left(0\right)x+\frac{f^{''}\left(x\right)}{2}x^{2}+\dots+\frac{f^{\left(n\right)}\left(x\right)}{n!}x^{n}\\
+ & = & \sum_{i=0}^{n}\frac{f^{\left(i\right)}\left(0\right)}{i!}x^{i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת נוסחת מקלורן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+McLoren
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ לפולינומים.
+ דוגמה עבור 
+\begin_inset Formula $x^{4}-2x^{3}+3x^{2}-3x+2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c14d1.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Taylor
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+סביב 
+\begin_inset Formula $x=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ פולינופ ממעלה 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי נגדיר 
+\begin_inset Formula $g\left(x\right)=f\left(x+a\right)$
+\end_inset
+
+ אזי יש נוסחת מקלורן ל
+\begin_inset Formula $g$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+g\left(x\right) & = & \sum_{i=0}^{n}\frac{g^{\left(i\right)}\left(0\right)}{i!}x^{i}\\
+ & = & \sum_{i=0}^{n}\frac{f^{\left(i\right)}\left(a\right)}{i!}\left(x-a\right)^{i}\\
+ &  & f\left(a\right)+f^{'}\left(a\right)\left(x-a\right)+\frac{f^{''}\left(a\right)}{2!}\left(x-a\right)^{2}+\dots+\frac{f^{\left(n\right)}\left(a\right)}{n!}\left(x-a\right)^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת נוסחת טילור לפולינומים.
+\end_layout
+
+\begin_layout Standard
+אבל אם 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא פונקציה כלשהיא אזי 
+\begin_inset Formula \begin{eqnarray*}
+P_{n}^{f}\left(x\right) & \equiv & \sum_{r=0}^{n}\frac{f^{\left(r\right)}\left(a\right)}{r!}\left(x-a\right)^{r}+R_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \ln\left(1+x\right)\\
+f^{'}\left(x\right) & = & \frac{1}{1+x}\\
+f^{''}\left(x\right) & = & -\frac{1}{\left(x+1\right)^{2}}\\
+f^{''}\left(x\right) & = & \frac{2}{\left(x+1\right)^{3}}\\
+f^{'''}\left(x\right) & = & \frac{6}{\left(x+1\right)^{4}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן הפיתוח סביב 
+\begin_inset Formula $a=0$
+\end_inset
+
+ יתן לנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{r}^{p}=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\dots\pm\frac{x^{r}}{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c14d3.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \sin x\\
+f_{r}^{P} & = & x-\frac{x^{3}}{6}+\frac{x^{5}}{120}-\frac{x^{7}}{5040}+\frac{x^{9}}{362880}+\cdots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c14d2.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שלוש שאלות על פולינומי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Taylor
+\end_layout
+
+\begin_layout Enumerate
+לנקודה מסוימת 
+\begin_inset Formula $x$
+\end_inset
+
+ האם המספרים 
+\begin_inset Formula $P_{n}^{f}\left(x\right)$
+\end_inset
+
+ מתקרבים למספר מסוים?
+\end_layout
+
+\begin_layout Enumerate
+אם כן האם המספר הוא 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+לנקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ ומספר 
+\begin_inset Formula $n$
+\end_inset
+
+ מסוים באיזה דיוק המספר 
+\begin_inset Formula $P_{n}^{f}\left(x\right)$
+\end_inset
+
+ נותן קירוב ל
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+לא יכולים להוכיח את זה במקרה הכללי)תלמדו אינפי( אבל לטורים מסוימים אפשר.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Section
+שאלות מפרק קודם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2\cos\omega t+5\sin\omega t & = & A\cos\omega t+\varphi\\
+\sqrt{29}\left(\frac{2}{\sqrt{29}}\cos\omega t+\frac{5}{\sqrt{29}}\sin\omega t\right) & = & A\cos\omega t+\varphi\\
+\sqrt{29}\left(\cos\varphi\cos\omega t+\sin\varphi\sin\omega t\right) & = & A\cos\omega t+\varphi\\
+\sqrt{29}\cos\left(\omega t+\varphi\right) & = & A\cos\left(\omega t+\varphi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cosh^{-1}2 & = & \ln\left(x+\sqrt{x+1}\right)\\
+ & = & \ln\left(2+\sqrt{3}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טוב לזכור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+csc\left(x\right) & = & \frac{1}{\sin\left(x\right)}\\
+sec\left(x\right) & = & \frac{1}{\cos\left(x\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cot^{2}\left(ix\right)+1 & = & \csc^{2}\left(ix\right)\\
+\left(\frac{\cos ix}{\sin ix}\right)^{2}+1 & = & \left(\frac{1}{\sin ix}\right)^{2}\\
+\left(\frac{\cosh x}{i\sinh x}\right)^{2}+1 & = & \left(\frac{1}{\sinh x}\right)^{2}\\
+-\frac{\cosh^{2}x}{\sinh^{2}x}+1 & = & \frac{1}{\sinh^{2}x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פונקציות
+\end_layout
+
+\begin_layout Standard
+האם 
+\begin_inset Formula $\left(-2\right)^{\pi}$
+\end_inset
+
+ מוגדר? 
+\begin_inset Formula $f\left(x\right)=x^{y}$
+\end_inset
+
+ אם 
+\begin_inset Formula $y$
+\end_inset
+
+ הוא מספר אי רציונאלי אזי זה מוגדר רק ל
+\begin_inset Formula $y$
+\end_inset
+
+ חיובי.
+ 
+\begin_inset Formula $2^{\pi}=e^{\pi\ln2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצאו לפונקציות הבאות תחום ההגדרה, התחום שבו הם הפיכות, סרטטו אותם ומצאו
+ את ההפוכה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=x^{\frac{3}{4}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוגדר ב
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הראת בערך כמו 
+\begin_inset Formula $\sqrt{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפיכה בכל התחום ההגדרה 
+\begin_inset Formula $\left[0,\inf\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונקציה ההפוכה היא 
+\begin_inset Formula $f^{-1}\left(x\right)=x^{\frac{4}{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\log_{2}x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראת כמו 
+\begin_inset Formula $\ln x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפיכה בכל התחום 
+\begin_inset Formula $\left[0,\inf\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונקציה ההפיכב ביא 
+\begin_inset Formula $f^{-1}\left(x\right)=2^{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+רציפות
+\end_layout
+
+\begin_layout Standard
+משפט ערך הביניים אם 
+\begin_inset Formula $a,b\in R$
+\end_inset
+
+ ו
+\begin_inset Formula $a<b$
+\end_inset
+
+ ו
+\begin_inset Formula $f\left(a\right)=x,f\left(b\right)=y$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x<w<y$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $c$
+\end_inset
+
+ כך ש
+\begin_inset Formula $a\leq c\leq b$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(c\right)=w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט וירשטאוס: רם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פונקציה רציפה וחסומה אזי יש היא מסיגה את חסמיה)יש לה מינימום ומקסימום(
+\end_layout
+
+\begin_layout Section
+נגזרות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f\left(x\right)}{\partial x}=\frac{f\left(x+\Delta x\right)-f\left(x\right)}{\Delta x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

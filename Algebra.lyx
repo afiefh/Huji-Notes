@@ -39,6 +39,22 @@
 
 \begin_body
 
+\begin_layout Title
+אלגברה ליניארית לפיזיקאים
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 הרצאה מס.
 \numeric on
@@ -3392,8 +3408,492 @@ Matlab:polyfit
  מחשבת את הערך של פולינום בנקודה.
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Section
+הערה לגבי הבוחן
+\end_layout
+
+\begin_layout Standard
+הנוסחאות לסיבוב במרחב מתבוססות על ההנחה שבחירת הצירים היא כזו 
+\begin_inset Formula $\hat{e}_{1}\times\hat{e}_{2}=\hat{e}_{3}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלות מפרק
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+מצאו את ה
+\begin_inset Formula $Image$
+\end_inset
+
+, 
+\begin_inset Formula $Kernel$
+\end_inset
+
+ וכתוב משוואה פרמטרית שלהם ותכתוב אותם גם ב
+\begin_inset Formula $Span$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix} & = & \begin{pmatrix}1 & -3\\
+-2 & 6\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}-3x_{2}\\
+-2x_{1}+6x_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}-3x_{2}\\
+-2\left(x_{1}-3x_{2}\right)\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}-3x_{2}\end{pmatrix}\begin{pmatrix}1\\
+-2\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Im\left(A\right)=t\cdot\begin{pmatrix}1\\
+-2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+ker\left(A\right)=\left\{ t\begin{pmatrix}3\\
+1\end{pmatrix}\right\} =Span\left\{ \begin{pmatrix}3\\
+1\end{pmatrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}1 & 1\\
+0 & 0\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}+x_{2}\\
+0\end{pmatrix}\\
+ & = & \left(x_{1}+x_{2}\right)\begin{pmatrix}1\\
+0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Im\left(A\right) & = & \left\{ t\begin{pmatrix}1\\
+0\end{pmatrix}\right\} _{t\in\mathbb{R}}\\
+ker\left(A\right) & = & \left\{ t\begin{pmatrix}1\\
+-1\end{pmatrix}\right\} _{t\in R}\\
+ & = & span\left\{ \begin{pmatrix}1\\
+-1\end{pmatrix}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}1 & -1 & 1\\
+2 & -2 & 2\\
+3 & -3 & 3\end{pmatrix}\\
+A\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix} & = & \begin{pmatrix}x_{1}-x_{2}+x_{3}\\
+2x_{1}-2x_{2}+2x_{3}\\
+3x_{1}-3x_{2}+3x_{3}\end{pmatrix}\\
+ & = & \left(x_{1}+x_{2}+x_{3}\right)\begin{pmatrix}1\\
+2\\
+3\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Im\left(A\right) & = & \left\{ t\begin{pmatrix}1\\
+2\\
+3\end{pmatrix}\right\} _{t\in\mathbb{R}}\\
+ & = & \left\{ \begin{pmatrix}1\\
+2\\
+3\end{pmatrix}\right\} \\
+x\in ker\left(A\right) & \Leftrightarrow & x_{1}-x_{2}+x_{3}=0\\
+x_{1}-x_{2}+x_{3} & = & 0\\
+\begin{pmatrix}-1\\
+0\\
+1\end{pmatrix} & \in & ker\left(A\right)\\
+\begin{pmatrix}1\\
+1\\
+0\end{pmatrix} & \in & ker\left(A\right)\\
+ker\left(A\right) & = & \left\{ t\begin{pmatrix}1\\
+1\\
+0\end{pmatrix}+s\begin{pmatrix}-1\\
+0\\
+1\end{pmatrix}\right\} _{t,s\in\mathbb{R}}\\
+ & = & span\left(\begin{pmatrix}1\\
+1\\
+0\end{pmatrix}+\begin{pmatrix}-1\\
+0\\
+1\end{pmatrix}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}1 & -1 & 0\\
+0 & 0 & 1\\
+0 & 0 & 1\end{pmatrix}\\
+A\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix} & = & \begin{pmatrix}x_{1}-x_{2}\\
+x_{3}\\
+x_{3}\end{pmatrix}\\
+ & = & \left(x_{1}-x_{2}\right)\begin{pmatrix}1\\
+0\\
+0\end{pmatrix}+x_{3}\begin{pmatrix}0\\
+1\\
+1\end{pmatrix}\\
+Im\left(A\right) & = & \left\{ t\begin{pmatrix}1\\
+0\\
+0\end{pmatrix}+s\begin{pmatrix}0\\
+1\\
+1\end{pmatrix}\right\} _{s,t\in\mathbb{R}}\\
+ & = & Span\left(\begin{pmatrix}1\\
+0\\
+0\end{pmatrix},\begin{pmatrix}0\\
+1\\
+1\end{pmatrix}\right)\\
+\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}\in ker\left(A\right) & \Leftrightarrow & \begin{pmatrix}x_{1}+x_{2}=0\\
+x_{3}=0\end{pmatrix}\\
+ker\left(A\right) & = & \left\{ t\begin{pmatrix}1\\
+1\\
+0\end{pmatrix}\right\} _{t\in\mathbb{R}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח כי שתי קבוצות שוות צריך להוכיח כי 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ וגם 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+K_{\omega}=Span\left\{ \cos\left(\omega t\right),\sin\left(\omega t\right)\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך להראת כי כל פונקציה מהצורה 
+\begin_inset Formula $B\cos\left(\omega t+\varphi\right)$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $B\cos\left(\omega t+\varphi\right)=a\cos\left(\omega t\right)+b\cos\left(\omega t\right)$
+\end_inset
+
+.
+ זה קל, הפתרון נמצא בדפים.
+\end_layout
+
+\begin_layout Standard
+בכיוון שני צריך להוכיח כי כי כל איבר 
+\begin_inset Formula $a\cos\omega t+b\sin\omega t$
+\end_inset
+
+ קיימים 
+\begin_inset Formula $B,\varphi\in\mathbb{R}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a\cos\left(\omega t\right)+b\cos\left(\omega t\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+דרך אחת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\omega t & \in & K_{\omega}\\
+\sin\omega t & \overset{?}{\in} & K_{\omega}\\
+\cos\left(\omega t+\varphi\right) & \in & K_{\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+דרך אחרת
+\end_layout
+
+\begin_layout Standard
+דרך השתמשות בסגירות של פעולות במרחבים ליניארים.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+11
+\end_layout
+
+\begin_layout Standard
+הסברנו עוד פעם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+polyval
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\lang english
+polyfit
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section
+בסיס של מרחב וקטורי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & k_{\omega}\\
+ & = & \left\{ x\left(t\right)=A\cos\left(\omega t+\varphi\right)\right\} \\
+ &  & \left\{ x\left(t\right)=\underbrace{A\cos\varphi}_{x_{1}}\underbrace{\cos\omega t}_{\hat{e}_{1}}+\underbrace{\left(-A\sin\varphi\right)}_{x_{2}}\underbrace{\sin\omega t}_{\hat{e}_{2}}\right\} \\
+ &  & \left\{ x\left(t\right)=x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}\right\} \\
+ &  & \left\{ x\left(t\right)=\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}_{e}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם יש לנו בסיס אזי אפשר לשחזר את הוקור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{e}_{1},\vec{e}_{2},\dots,\vec{e}_{n}\in V$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $\forall\left(\vec{x}\in V\right)\exists\left(x_{1},x_{2},\dots,x_{n}\in K\right):\vec{x}=x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}+x_{3}\hat{e}_{3}\dots x_{n}\hat{e}_{n}$
+\end_inset
+
+ וההצגה הזו יחידה אזי זה הוא בסיס למרחב ו
+\begin_inset Formula $n=\dim V$
+\end_inset
+
+ המימד של המרחב.
+ ל
+\begin_inset Formula $x_{1}\hat{e}_{1}+x_{2}\hat{e}_{2}+x_{3}\hat{e}_{3}\dots x_{n}\hat{e}_{n}$
+\end_inset
+
+ קורים צירוף ליניארי.
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $\vec{e}_{1}\dots\vec{e}_{2}$
+\end_inset
+
+ הם לא בסיס.
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+\vec{x} & = & x_{1}\vec{e}_{1}+\dots+x_{n}\vec{e}_{n}\\
+\vec{x} & = & y_{1}\vec{e}_{1}+\dots+y_{n}\vec{e}_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר יש לפחות 
+\begin_inset Formula $y_{i}\neq x_{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{x}-\vec{x} & = & \left(x_{1}-y_{1}\right)\vec{e}_{1}+\dots+\left(x_{n}-y_{n}\right)\vec{e}_{n}\\
+0 & = & \left(x_{1}-y_{1}\right)\vec{e}_{1}+\dots+\left(x_{n}-y_{n}\right)\vec{e}_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה יתכן בשני מקרים: 
+\begin_inset Formula $\forall i:x_{i}=y_{i}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $e_{i}$
+\end_inset
+
+ הם בלתי תלויים ליניארית.
+ או 
+\begin_inset Formula $\exists\sum\left|x_{i}-y_{i}\right|\neq0\Rightarrow$
+\end_inset
+
+ אזי הם תלויים.
 \end_layout
 
 \end_body

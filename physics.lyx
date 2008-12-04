@@ -29,7 +29,7 @@
 \defskip medskip
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -38,6 +38,22 @@
 \end_header
 
 \begin_body
+
+\begin_layout Title
+מיכניקה ויחסות פרטית
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
 
 \begin_layout Chapter
 הרצאה מס.
@@ -4138,7 +4154,7 @@ v_{2} & = & 0\end{eqnarray*}
 
 \end_layout
 
-\begin_layout Chapter
+\begin_layout Section
 מקדם תקומה
 \end_layout
 
@@ -4233,6 +4249,1028 @@ R_{k}^{'} & = & \frac{1}{2}m_{1}\vec{u}_{1}^{2}+\frac{1}{2}m_{2}\vec{u}_{2}^{2}\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+13
+\end_layout
+
+\begin_layout Standard
+אם נותנים לשני גופים בעלי אותה מסה להחליק על משטח משופע שניהם לא יגיעו באותה
+ מהירות, זה כי חלק מהאנרגיה הפך לאנרגיה סיבובית.
+\end_layout
+
+\begin_layout Standard
+אזי נתבונו בבעיה היותר פשוטה כדי לפתח המשוואות שלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c17d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & m\vec{a}\\
+\frac{\partial\vec{v}}{\partial t} & = & \frac{1}{m}\vec{F}\\
+v & = & r\omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r\frac{\partial\omega}{\partial t}=\frac{1}{m}F\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה יקרה כרגע אם מוסיפים עוד מסה בצד השני?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c17d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה צריכים להיות 
+\begin_inset Formula $F_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $F_{2}$
+\end_inset
+
+? במקרה הזה הציר האנכי גם יפעיל כח כדי שכל המערכת לא תזוז)אבל היא כן תוכל
+ להסתובב( נסמן אותו ב
+\begin_inset Formula $\vec{F}_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta E_{k} & = & W\\
+ & = & \int_{\gamma_{1}}\vec{F}_{1}\partial\vec{r}+\int_{\gamma_{2}}\vec{F}_{2}\partial\vec{r}_{2}+\underbrace{\int_{\gamma_{3}}\vec{F}_{a}\partial\vec{r}}_{\mbox{Doesn't Move}}\\
+ & = & \int_{\gamma_{1}}\vec{F}_{1}\partial\vec{r}+\int_{\gamma_{2}}\vec{F}_{2}\partial\vec{r}_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לכתוב במקום 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ את 
+\begin_inset Formula $\vec{\omega}\times\vec{r}$
+\end_inset
+
+ זה בגלל שבמעגל 
+\begin_inset Formula $\partial r=r\partial\theta,v=r\dot{\theta}=r\omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+ כוקטור בכיוון ציר הסיבוב, לכן 
+\begin_inset Formula $\vec{\omega}\times\vec{r}$
+\end_inset
+
+ הוא תמיד בכיוון 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial W & = & \left(\vec{F}_{1}\left(\vec{\omega}\times\vec{r}_{1}\right)+\vec{F}_{2}\left(\vec{\omega}\times\vec{r}_{2}\right)\right)\partial t\\
+\partial W & = & 0\\
+0 & = & \left(\vec{F}_{1}\left(\vec{\omega}\times\vec{r}_{1}\right)+\vec{F}_{2}\left(\vec{\omega}\times\vec{r}_{2}\right)\right)\partial t\\
+0 & = & \left(\left(\vec{r}_{1}\times\vec{F}_{1}\right)+\left(\vec{r}_{2}\times\vec{F}_{2}\right)\right)\vec{\omega}\partial t\\
+0 & = & \left(\vec{r}_{1}\times\vec{F}_{1}\right)+\left(\vec{r}_{2}\times\vec{F}_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר גודל חדש שזה מומנט הכח 
+\begin_inset Formula $\vec{N}_{\mbox{Momentum}}=\vec{r}\times\vec{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+0=\vec{N}_{1}+\vec{N}_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & = & \vec{r}\times\vec{F}\\
+ & = & \vec{r}\times\frac{\partial\vec{P}}{\partial t}\\
+ & = & \frac{\partial}{\partial t}\left(\vec{r}\times\vec{P}\right)-\underbrace{\frac{\partial\vec{r}}{\partial t}\times\vec{P}}_{\vec{v}\times m\vec{v}=0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר כרגע תנע זוויתי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L\overset{def}{=}\vec{r}\times\vec{P}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \frac{\partial}{\partial t}\left(\vec{r}\times\vec{P}\right)\\
+ & = & \frac{\partial}{\partial t}\vec{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה דומה ל 
+\begin_inset Formula $\vec{F}=\frac{\partial}{\partial t}\vec{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+גופים?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c17d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \sum_{i}\vec{N}_{i}\\
+ & = & \sum\left(\vec{r}_{i}\times\vec{F}_{i}\right)\\
+ & = & \sum\vec{r}_{i}\times\frac{\partial\vec{P}}{\partial t}\\
+ & = & \sum\frac{\partial}{\partial t}\left(\vec{r}_{i}\times\vec{P}_{i}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \vec{r}\times\vec{P}\\
+ & = & \vec{r}\times m\vec{v}\\
+ & = & \vec{r}\times m\left(\vec{\omega}\times\vec{r}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ כ 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ מקביל וניצב ל
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\vec{r}=\vec{r}_{\parallel}+\vec{r}_{\perp}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & \vec{r}\times m\left(\vec{\omega}\times\vec{r}\right)\\
+ & = & m\left\{ \vec{r}_{\perp}\times\left(\omega\times r_{\perp}\right)+\vec{r}_{\perp}\times\left(\omega\times r_{\parallel}\right)+\vec{r}_{\parallel}\times\left(\omega\times r_{\perp}\right)+\vec{r}_{\parallel}\times\left(\omega\times\vec{r}_{\parallel}\right)\right\} \\
+ & = & m\left\{ \vec{r}_{\perp}\times\left(\omega\times r_{\perp}\right)+\vec{r}_{\parallel}\times\left(\omega\times r_{\perp}\right)\right\} \\
+ & = & \left(mr_{\perp}^{2}\right)\vec{\omega}+m\vec{r}_{\parallel}\times\left(\vec{\omega}\times\vec{r}_{\perp}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיבר השני לא יהיה ברוב הגופים אבל צריך להיזיר.
+ הוא יפול אם הגוף ניצב ל
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+ או כאשר יש מערכת חלקיקים שבה אחד מבטל את השני.
+ אזי בדרך כלל נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\left(m\vec{r}_{\perp}^{2}\right)\vec{\omega}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של חלקיקים שמאזנים אחד את השני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \sum\vec{L}_{i}\\
+ & = & \left\{ \sum\left(m_{i}r_{\perp}^{2}\right)\right\} \vec{\omega}+\sum_{i}m_{i}\vec{r}_{\parallel}\times\left(\vec{\omega}\times\vec{r}_{\perp}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את מומנט התמד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \vec{r}\times\vec{P}\\
+ & = & \left(\sum m_{i}r_{\perp}^{2}\right)\vec{\omega}=I\omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I\overset{def}{=}\sum m_{i}r_{\perp}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מומנט ההתמד דומה למסה במקרה של 
+\begin_inset Formula $\vec{F}=m\vec{a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P} & = & m\dot{\vec{r}}\\
+L & = & I\dot{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+W=\int_{\gamma}\vec{F}\partial\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כח משמר ניתן לכתוב כגרדינט של פונקציה סקלרית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -\vec{\nabla}\cdot u\\
+\vec{\nabla}u & = & \frac{\partial u}{\partial x}\hat{x}+\frac{\partial u}{\partial z}\hat{z}+\frac{\partial u}{\partial z}\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סוגים של אנרגיה פוטנציאלית שנתקל בהם:
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+אנרגית\InsetSpace ~
+כבידה 
+\begin_inset Formula $u\left(z\right)=mg\left(z-z_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+אנרגיה\InsetSpace ~
+של\InsetSpace ~
+קפיץ 
+\begin_inset Formula $u\left(x\right)=\frac{1}{2}k\left(x-x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת שבה כל הכוחות משמרים האנרגיה המיכנית נשמרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}mv^{2}+u\left(\vec{r}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן כללי
+\begin_inset Formula \[
+W=\Delta E\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: נתון כח מהצורה 
+\begin_inset Formula $F=\frac{k}{z^{2}}\hat{z}$
+\end_inset
+
+ מה העבודה לאורך מסלול 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ כלשהוא שמתחיל ב 
+\begin_inset Formula $\vec{r}_{1}$
+\end_inset
+
+ ומסתיים ב
+\begin_inset Formula $\vec{r}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W & = & \int_{\gamma}\vec{F}\partial\vec{r}\\
+ & = & \int_{\gamma}\left(F_{x},F_{y},F_{z}\right)\cdot\left(\partial x,\partial y,\partial z\right)\\
+ & = & \int_{\gamma}F_{z}\partial z\\
+ & = & \int_{\gamma}\frac{k}{z^{2}}\partial z\\
+ & = & k\int_{r_{1}}^{r_{2}}-\frac{1}{z^{2}}\\
+ & = & k\left[-\frac{1}{z}\right]_{r_{1}}^{r_{2}}\\
+ & = & k\left(\frac{1}{z_{1}}-\frac{1}{z_{2}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u\left(r\right)=\epsilon\left[\left(\frac{r_{0}}{r}\right)^{12}-12\left(\frac{r_{0}}{r}\right)^{6}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\epsilon,r_{0}>0$
+\end_inset
+
+ פרמטרים נתונים.
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ מרחק בין שני אטומים.
+\end_layout
+
+\begin_layout Enumerate
+מה מרחק שבו הכח מתאפס?
+\end_layout
+
+\begin_layout Enumerate
+משחררים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אטומים במנוחה במרחק 
+\begin_inset Formula $2r_{0}$
+\end_inset
+
+ מהוא המרחק המינימאלי ביניהם? מה המהירות היחסית המקסימאלית?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -\vec{\nabla}u\\
+ & = & -\frac{\partial u}{\partial r}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{r}$
+\end_inset
+
+ הוא הקיוון המקשר בין שני האטומים 
+\begin_inset Formula $\frac{\vec{r}_{2}-\vec{r}_{1}}{\left|\vec{r}_{2}-\vec{r}_{1}\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -\frac{\partial u}{\partial r}\hat{r}\\
+ & = & -\epsilon\left[12\frac{r_{0}^{12}}{r^{13}}+12\frac{r_{0}^{6}}{r^{7}}\right]\hat{r}\\
+-\epsilon\left[12\frac{r_{0}^{12}}{r^{13}}+12\frac{r_{0}^{6}}{r^{7}}\right] & = & 0\\
+r & = & r_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $v\left(r_{0}\right)>0$
+\end_inset
+
+ מינימום 
+\begin_inset Formula $v\left(r_{0}\right)=-\epsilon$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $x\to\inf$
+\end_inset
+
+ הפונקציה 
+\begin_inset Formula $u\left(x\right)\to0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\to0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $u\left(x\right)\to\inf$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+14
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{v} & \to & \vec{v}=\vec{\omega}\times\vec{r}\\
+\vec{F} & \to & \vec{N}=\vec{r}\times\vec{F}\\
+\vec{P} & \to & \vec{L}=\vec{r}\times\vec{P}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & \frac{\partial}{\partial t}\vec{P}\\
+\vec{N} & = & \frac{\partial}{\partial t}\vec{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נדון עוד פעם בבעיה של הציר ושתי המסות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c19d1.svg
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\vec{\omega}\left(t\right)=?\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{1},\vec{r}_{2} & \perp & \vec{\omega}\\
+\vec{L} & = & \left(\overbrace{m_{1}r_{1}^{2}+m_{2}r_{2}^{2}}^{I}\right)\vec{\omega}\\
+\vec{N} & = & \vec{r}_{1}\times\vec{F}_{1}+\vec{r}_{2}\times\vec{F}_{2}=\left(r_{1}F_{1}-r_{2}F_{2}\right)\hat{\omega}\\
+\frac{\partial}{\partial t}\vec{L} & = & \left(m_{1}r_{1}^{2}+m_{2}r_{2}^{2}\right)\frac{\partial}{\partial t}\vec{w}=\vec{N}=\left(r_{1}F_{1}-r_{2}F_{2}\right)\hat{\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עברנו לבעיה חד מימדית ואין צורך לוקטורים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\omega=\frac{r_{1}F_{1}-r_{2}F_{2}}{m_{1}r_{1}^{2}+m_{2}r_{2}^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אם 
+\begin_inset Formula $F_{2}=0,m_{2}=0\Rightarrow\frac{\partial\vec{\omega}}{\partial t}=\frac{1}{m_{1}r_{1}}F_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $F_{2}=0,m_{2}=m_{1}=m\Rightarrow\frac{\partial\omega}{\partial t}=\frac{1}{mr_{1}}\left(\frac{1}{1+\left(\frac{r_{2}}{r_{1}}\right)^{2}}\right)F_{1}$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $r_{2}=r_{1}$
+\end_inset
+
+ מקבלים חצי התשובה הקודמת כי האנרגיה הקינטית מתחלקת בין שני הכדורים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $F_{1}=0,m_{2}=0\Rightarrow\frac{\partial\omega}{\partial t}=-\frac{r_{2}}{r_{1}}\frac{1}{m_{1}r_{1}}F_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נלך צעד אחורה:drawing
+\end_layout
+
+\begin_layout Standard
+המשוואה 
+\begin_inset Formula $\vec{N}=\frac{\partial}{\partial L}\vec{L}$
+\end_inset
+
+ יפה אבל לאו תמיד שימושית.
+ אנחנו יודעים כי 
+\begin_inset Formula $\frac{\partial}{\partial t}\vec{P}=\vec{F}_{ext}$
+\end_inset
+
+ האם אפשר לקבל אנלוג לדבר הזה? כלומר רק מתחשבים במומנטים החיצוניים? התשובה
+ כמובן כן, אבל לא נוכיח לכל המקרים.
+\end_layout
+
+\begin_layout Standard
+נניח כי יש מערכת של גופים אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c19d2.svg
+	lyxscale 50
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{N}=\vec{N}_{ext}+\underbrace{\vec{N}_{int}}_{\mbox{internal}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N}_{int} & = & \sum\vec{r}_{i}\times\vec{F}\\
+ & = & \sum\vec{r}_{1}\times\sum_{j}\vec{F}_{j\to i}\\
+ & = & \sum_{i,j}\vec{r}_{i}\times\vec{F}_{j\to i}\\
+ & = & \frac{1}{2}\sum_{i,j}\left[r_{i}\times\vec{F}_{j\to i}+\vec{r}_{j}\times\vec{F}_{i\to j}\right]\\
+ & = & \frac{1}{2}\sum_{i,j}\left(\vec{r}_{i}-\vec{r}_{j}\right)\times\vec{F}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r_{i}-r_{j}$
+\end_inset
+
+ הוא ווקטור שהולך בין החלקיקים, אזי אם הכח בחותו כיוון)כמו גרביטציה, חשמלי...(
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+N_{int}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: ההוכחה הזו דנה במקרה פרטי אבל זה נכון בכל המקרים, נראה ההוכחה הכללית
+ בכורס חשמל ומגנטיות)איזה יופי!(
+\end_layout
+
+\begin_layout Standard
+רואים כי התנע הזוויתי תלוי בבחירה שלנו לראשית הצירים, אבל זה בניגוד להומוגניות
+ של המרחה)הרצאה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+(, ולא יכולים לעבוד עם מערכות שהם נכונות רק למקרים מסוימים.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c19d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{N}=\vec{r}\times F_{g}=r\hat{r}\times\frac{Gm_{1}m_{2}}{r^{2}}\hat{r}=r\frac{Gm_{1}m_{2}}{r^{2}}\hat{r}\times\hat{r}=0\]
+
+\end_inset
+
+ אבל אם בוחרים מערכת צירים אחרת אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{N}=\vec{r}\times\vec{F}_{g}\neq0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז צריך לבדוק אותם חוקים מתקימים אם עוברים ממערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $S^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{cases}
+S & \vec{N}=\frac{\partial}{\partial t}\vec{L}\\
+S^{'} & \vec{N}^{'}=\frac{\partial}{\partial t}\vec{L}^{'}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההבדל בין שני המערכות הוא רק בראשית הצירים, אין מהירות, אין תאוצה, ההבדל
+ בין המיקומים הוא 
+\begin_inset Formula $\vec{r}^{'}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \vec{r}\times\vec{F}\\
+ & = & \left(\vec{R}+\vec{r}^{'}\right)\times\vec{F}\\
+ & = & \vec{R}\times\vec{F}+\vec{r}^{'}\times\vec{F}\\
+ & = & \vec{R}\times\vec{F}+\vec{N}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \vec{r}\times\vec{P}\\
+ & = & \left(\vec{R}\times\vec{r}^{'}\right)\times\vec{P}\\
+ & = & \vec{R}\times\vec{P}+\vec{r}^{'}\times\vec{P}\\
+N & = & \frac{\partial}{\partial t}\vec{L}\\
+ & = & \frac{\partial}{\partial t}\left(\vec{R}\times\vec{P}+\vec{r}^{'}\times\vec{P}\right)\\
+ & = & \frac{\partial}{\partial t}\vec{R}\times\vec{P}+\frac{\partial}{\partial t}\vec{r}^{'}\times\vec{P}\\
+ & = & \frac{\partial}{\partial t}\vec{L}^{'}+\left(\underbrace{\dot{\vec{R}}}_{\begin{matrix}\mbox{R=Const}\\
+\dot{\vec{R}}=0\end{matrix}}\times\vec{P}+\vec{R}\times\underbrace{\dot{\vec{P}}}_{F}\right)\\
+ & = & \frac{\partial}{\partial t}\vec{L}^{'}+\vec{R}\times\vec{F}\\
+N & = & \vec{N}^{'}+\vec{R}\times\vec{F}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \vec{r}\times\vec{F}+\vec{N}^{'}\\
+\frac{\partial}{\partial t}\vec{L}-\frac{\partial}{\partial t}\vec{L}^{'} & = & \vec{R}\times\vec{F}\\
+\vec{N}-\frac{\partial}{\partial t}\vec{L}^{'} & = & \vec{R}\times\vec{F}\\
+\left(\vec{N}^{'}+\vec{R}\times\vec{F}\right)-\frac{\partial}{\partial t}\vec{L}^{'} & = & \vec{R}\times\vec{F}\\
+\vec{N}^{'}-\frac{\partial}{\partial t}\vec{L}^{'} & = & 0\\
+\frac{\partial}{\partial t}\vec{L}^{'} & = & \vec{N}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לעבור מערכות, ואז נשאלת השאלה באיזה מערכת כדי לעבוד? נבדוק מערכת
+ מרכז המסה, הבעיה בזה היא שמרכז המסה יכול להיות בתנועה, אז נרצה להפריד התנועה
+ של מרכז המסה והתנועה של המסה.
+\end_layout
+
+\begin_layout Standard
+אז כותבים את התנע של המערכת במערכת כללית 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \sum\vec{L}_{i}\\
+ & = & \sum\vec{r}_{i}\times\vec{P}_{i}\\
+\vec{r} & = & \vec{R}_{cm}+\vec{r}^{'}\\
+\vec{L} & = & \sum\left(\vec{R}_{cm}+\vec{r}^{'}\right)\times\vec{P}_{i}\\
+\vec{v} & = & \frac{\partial}{\partial t}\vec{r}\\
+ & = & \frac{\partial}{\partial t}\vec{R}_{cm}+\frac{\partial}{\partial t}\vec{r}^{'}\\
+ & = & \vec{v}_{cm}+\vec{v}^{'}\\
+L & = & \sum\left(\vec{R}_{cm}+\vec{r}^{'}\right)\times\left(\vec{v}_{cm}+\vec{v}_{i}^{'}\right)m_{i}\\
+ & = & \sum m_{i}\left(\vec{R}_{cm}\times v_{cm}+\vec{R}_{cm}\times\vec{v}_{i}^{'}+\vec{r}\times\vec{v}_{cm}+\vec{r}_{i}^{'}\times\vec{v}_{i}^{'}\right)\\
+ & = & \vec{R}_{cm}\times M\vec{v}_{cm}+\vec{R}_{cm}\times\underbrace{\sum_{i}m_{i}\vec{v}_{i}^{'}}_{0}+\underbrace{\left(\sum_{i}m_{i}\vec{r}_{i}^{'}\right)}_{0}\times\vec{v}_{cm}+\sum_{i}\vec{r}_{i}^{'}\times m_{i}\vec{v}_{i}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי 
+\begin_inset Formula $\sum_{i}m_{i}\vec{r}_{i}^{'}$
+\end_inset
+
+ מתאפס כי 
+\begin_inset Formula $\vec{r}_{i}^{'}$
+\end_inset
+
+ הוא במערכת מכז המסה כלומר הם םמתאפסים.
+ רואים את זה מתמטית בדרך הזו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{cm} & = & \frac{1}{M}\sum m_{i}\vec{r}_{i}\\
+\sum m_{i}\vec{r}_{i}^{'} & = & \sum m_{i}\left(\vec{r}_{i}-\vec{R}_{cm}\right)\\
+ & = & \sum m_{i}r_{i}-MR_{cm}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \underbrace{\vec{R}_{cm}\times P_{cm}}_{\vec{L}_{cm}}+\sum_{i}\vec{L}_{i}^{'}\\
+ & = & \vec{L}_{cm}+\vec{l}_{spinor}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התנע הזוויתי שהוא ביחס למרכז המסה קוראים לו ספינור.
+ ההפרדה הזו נכונה רק אם עוברים למערכת מרכז המסה.
 \end_layout
 
 \end_body
