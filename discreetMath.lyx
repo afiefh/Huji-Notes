@@ -5182,5 +5182,994 @@ f:B\to C\]
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+11
+\end_layout
+
+\begin_layout Standard
+רצינו להוכיח כי מספר הסדרות החוקיות של 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגות סוגריים הוא 
+\begin_inset Formula $C_{n}=\frac{1}{n+1}{2n \choose n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמשיך במקום שהפסקנו:
+\end_layout
+
+\begin_layout Standard
+טענת סיום: קיימת פומקציה חד חד ערכית ועל 
+\begin_inset Formula $f:B\to C$
+\end_inset
+
+.
+ תהי 
+\begin_inset Formula $\left(b_{1},b_{2},b_{3}\dots b_{2n}\right)\in B$
+\end_inset
+
+ שיש בה 
+\begin_inset Formula $n$
+\end_inset
+
+ אחדים 
+\begin_inset Formula $n$
+\end_inset
+
+ אפסים.
+ אזי נסמן 
+\begin_inset Formula $i$
+\end_inset
+
+ שהוא האינדקס המינימאלי שעד אליו)כולל אותו( יש יודר אחדים מאפסים.
+ אזי 
+\begin_inset Formula $f\left(b_{1},b_{2}\dots b_{i}\dots b_{2n}\right)=f\left(\overline{b}_{1},\overline{b}_{2},\overline{b}_{3}\dots\overline{b}_{i},b_{i+1}\dots b_{2n}\right)$
+\end_inset
+
+ שיש בה 
+\begin_inset Formula $n+1$
+\end_inset
+
+ אפסים ו
+\begin_inset Formula $n-1$
+\end_inset
+
+ אחדים והיא שייכת ל
+\begin_inset Formula $C$
+\end_inset
+
+.
+ כדי להוכיח שהפונקציה היא חד חד ערכית ועל בונים 
+\begin_inset Formula $g$
+\end_inset
+
+ הפוכה לה כלומר 
+\begin_inset Formula $f\circ g=1$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $g:C\to B$
+\end_inset
+
+ לכל 
+\begin_inset Formula $c\in C$
+\end_inset
+
+ יש 
+\begin_inset Formula $n+1$
+\end_inset
+
+ אפסים 
+\begin_inset Formula $n-1$
+\end_inset
+
+ אחדים אז נבחר האינדקס 
+\begin_inset Formula $j$
+\end_inset
+
+ המינימאלי שעד אליו ישנם יותר אפסים מאחדים.
+ אזי הופכים אז המספרים עד האינדקס ה
+\begin_inset Formula $j$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $f\left(c_{1}\dots c_{j}\dots c_{2n}\right)=\left(\overline{c}_{1}\dots\overline{c}_{j},\overline{c}_{j+1}\dots c_{2n}\right)\in B$
+\end_inset
+
+.
+ כי עד המקום ה
+\begin_inset Formula $j$
+\end_inset
+
+ יש יותר אחדים מאפסים.
+\end_layout
+
+\begin_layout Standard
+למה: 
+\begin_inset Formula $g$
+\end_inset
+
+ היא הפונקציה ההפכית ל
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה: נוכיל כי 
+\begin_inset Formula $g\circ f=1_{B}$
+\end_inset
+
+.
+ יש 
+\begin_inset Formula $\left(b_{1}\dots b_{i},b_{i+1}\dots b_{2n}\right)\in B$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $i$
+\end_inset
+
+ הוא האינדקס המינימאלי העד אליו יש יותר אחדים מאפסים 
+\begin_inset Formula $f\left(b_{1}\dots b_{i},b_{i+1}\dots b_{2n}\right)=\left(\overline{b}_{1}\dots\overline{b}_{i},b_{i+1}\dots b_{2n}\right)$
+\end_inset
+
+ ב
+\begin_inset Formula $\alpha$
+\end_inset
+
+יש אינדקס שיש בו יותר אפסים מאחדים, זה גם 
+\begin_inset Formula $i$
+\end_inset
+
+ לפי מה שעשינו קודם.
+ לכן 
+\begin_inset Formula $g\left(f\left(b_{1}\dots b_{i},b_{i+1}\dots b_{2n}\right)\right)=g\left(\overline{b}_{1}\dots\overline{b}_{i},b_{i+1}\dots b_{2n}\right)=\left(b_{1}\dots b_{i},b_{i+1}\dots b_{2n}\right)$
+\end_inset
+
+ משל.
+\end_layout
+
+\begin_layout Standard
+לכן הוכחנו אז המשפט של ההרצאה הקודמת)שמספר סדרת הסוגריים שווה למספר קטלן(
+\end_layout
+
+\begin_layout Standard
+לבעיה שכעת הוכחנו יש הוכחה גיאומטרית שהיא בעצם תרגום לפתרון זה, אבל לא נעשה
+ את זה בכיתה.
+\end_layout
+
+\begin_layout Section
+נוסחאות נסיגה
+\end_layout
+
+\begin_layout Standard
+דיברנו על זה מקודם אבל עכשיו נשתמש בזה כדי להביע בעיות מניה.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נניח שמסתכלים על הא-ב העברית א,ב,ג,ד...ת ונרצה ליצור רצך של 
+\begin_inset Formula $n$
+\end_inset
+
+ אותיות בתנאי שלא יופיעו ברצף זוג אותיות זהה.
+ מה מספר סדרות אילו?
+\end_layout
+
+\begin_layout Standard
+נסמן את הפונקציה ב
+\begin_inset Formula $u\left(n\right)$
+\end_inset
+
+ ונתחיל ב
+\begin_inset Formula $u\left(1\right)$
+\end_inset
+
+ שזה שווה למספר האותיות 
+\begin_inset Formula $u\left(1\right)=22$
+\end_inset
+
+.
+ עכשיו נבדוק 
+\begin_inset Formula $u\left(2\right)=u\left(1\right)\cdot21$
+\end_inset
+
+ עושים את זה עבור 
+\begin_inset Formula $u\left(n\right)$
+\end_inset
+
+ שזה 
+\begin_inset Formula $u\left(n\right)=u\left(n-1\right)\cdot21$
+\end_inset
+
+.
+ זאת נוסחת נסיגה, כמובן אפשר להביע אותה בצורת 
+\begin_inset Formula $u\left(n\right)=22\cdot21^{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+12
+\end_layout
+
+\begin_layout Standard
+בסוף השיעור שעבר התחלנו לדבר על בעיות מנייה בעזרת נוסחת נסיגה.
+\end_layout
+
+\begin_layout Section
+בעית מספרי פיבונצי
+\end_layout
+
+\begin_layout Standard
+נניח שאנחנו מתחילים עם זוג ארנבים והם לאט לאט מתרבים באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+RabbitsPairs\left(t\right)=\begin{cases}
+t=0 & 1\\
+t=1 & 1\\
+t=2 & 2\\
+t=3 & 3\\
+t=4 & 5\\
+t=5 & 8\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוג ארנבים לא מתרבים בחודש הראשון אחרי שנולדו.
+ אחר כך הם מולידים פעם אחד כל חודש.
+\end_layout
+
+\begin_layout Standard
+כמה ארנבים יהיו בכל יחידת זמן? התשובה תהיה מספרי פיבונצי.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ מספר זוגות הארנבים אחרי 
+\begin_inset Formula $n$
+\end_inset
+
+ יחידות זמן.
+ איך לחשב 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+? רואים שכל הארנבים בדור הכודם עוברים לדור הנוכחי, ועוד הארנבים שלא נולדו
+ בדור הקודם, כלומר שהיו קיימים ב
+\begin_inset Formula $n-2$
+\end_inset
+
+ מייצרים זוגות חדשים.
+ לכן 
+\begin_inset Formula $f\left(n\right)=f\left(n-1\right)+f\left(n-2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעיה אחרת על מספרי פיבונצי
+\end_layout
+
+\begin_layout Standard
+נניח שיש לנו המספרים 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ ורוצים למצא כמה תתי קבוצות ל
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ ישנם כך שכל תת קבוצה איננה מכילה זוג מספרים עוקבים נסמן את זה ב
+\begin_inset Formula $u\left(n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u\left(n\right)\begin{cases}
+n=0 & 1\\
+n=1 & 2\\
+n=2 & 3\\
+n=3 & 5\\
+n=4 & 8\\
+n=5 & 13\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $n=0$
+\end_inset
+
+ יש רק הקבוצה הריקה, ב
+\begin_inset Formula $n=1$
+\end_inset
+
+ יש 
+\begin_inset Formula $\left\{ \left\{ 1\right\} ,\emptyset\right\} $
+\end_inset
+
+ ב
+\begin_inset Formula $n=2$
+\end_inset
+
+ יש 
+\begin_inset Formula $\left\{ \left\{ 1\right\} ,\left\{ 2\right\} ,\emptyset\right\} $
+\end_inset
+
+ ב 
+\begin_inset Formula $n=3$
+\end_inset
+
+ יש 
+\begin_inset Formula $\left\{ \left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3\right\} ,\emptyset,\left\{ 1,3\right\} \right\} $
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Standard
+באופן כללי אם נרצה לבחור קבוצה שאין בה זוג מספרים עוקבים.
+ מחלקים את הקבוצות לשתי קבוצות: 
+\begin_inset Formula $n\in S,n\notin S$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $n\notin S$
+\end_inset
+
+ אזי זה הקבוצות על 
+\begin_inset Formula $\left\{ 1\dots\left(n-1\right)\right\} $
+\end_inset
+
+ שנותן 
+\begin_inset Formula $u\left(n-1\right)$
+\end_inset
+
+ אם 
+\begin_inset Formula $n\in S$
+\end_inset
+
+ אז אי אפשר לבחור 
+\begin_inset Formula $n-1$
+\end_inset
+
+ אזי נשארו 
+\begin_inset Formula $\left\{ 1\dots\left(n-2\right)\right\} $
+\end_inset
+
+ שנותן 
+\begin_inset Formula $u\left(n-2\right)$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $u\left(n\right)=u\left(n-1\right)+u\left(n-2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעייה
+\end_layout
+
+\begin_layout Standard
+כמה אפשרויות יש לחלק את הקבוצה 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ ל 
+\begin_inset Formula $k$
+\end_inset
+
+ תתי קבוצות לא ריקות.
+\end_layout
+
+\begin_layout Standard
+למשל 
+\begin_inset Formula $\left\{ 1,2,3,4\right\} $
+\end_inset
+
+ ו
+\begin_inset Formula $k=2$
+\end_inset
+
+ יתן 
+\begin_inset Formula $\left\{ \begin{matrix}\left\{ 1,2\right\} \left\{ 3,4\right\} ,\left\{ 2,3\right\} \left\{ 1,4\right\} ,\left\{ 2,4\right\} \left\{ 1,3\right\} ,\\
+\left\{ 1,2,3\right\} \left\{ 4\right\} ,\left\{ 1,2,4\right\} \left\{ 3\right\} ,\left\{ 1,3,4\right\} \left\{ 3\right\} ,\left\{ 2,3,4\right\} \left\{ 1\right\} \end{matrix}\right\} $
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $S\left(n,k\right)$
+\end_inset
+
+ הוא מספר האפשריות לחלק מספרים 
+\begin_inset Formula $1\dots n$
+\end_inset
+
+ ל
+\begin_inset Formula $k$
+\end_inset
+
+ קבוצות לא ריקות.
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S\left(n,1\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+זה שווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תמיד)לחלק 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים לקבוצה אחת(
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $S\left(n,n\right)$
+\end_inset
+
+ זה גם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ אחד)לחלק 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים ל
+\begin_inset Formula $n$
+\end_inset
+
+ קבוצות(
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+אם תת הקבוצה המכילה את 
+\begin_inset Formula $n$
+\end_inset
+
+ היא 
+\begin_inset Formula $\left\{ n\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $S\left(n-1,k-1\right)$
+\end_inset
+
+.
+ אם הקבוצה המכילה את 
+\begin_inset Formula $n$
+\end_inset
+
+ מכילה עוד איברים אחרים אזי אפשר להתעלם ממנו ולבנות את הקבוצות 
+\begin_inset Formula $S\left(n-1,k\right)$
+\end_inset
+
+ קבוצות כאילו, ויש 
+\begin_inset Formula $k$
+\end_inset
+
+ אפשריות לסים 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $S\left(n-1,k\right)\cdot k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים 
+\begin_inset Formula $S\left(n,k\right)=S\left(n-1,k\right)\cdot k+S\left(n-1,k-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula \begin{eqnarray*}
+S\left(4,3\right) & = & S\left(3,2\right)+3S\left(3,3\right)\\
+ & = & S\left(3,2\right)+3\cdot1\\
+ & = & S\left(2,1\right)+2S\left(2,2\right)+3\\
+ & = & 1+2\cdot1+3\\
+ & = & 6\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הוא מספר האפשרויות לסדר את האיברים 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+? מה הוא מספר האפשרויות לסדר את האיברים כך שאף איבר איננו נשאר במקומו.
+ דוגמה: 
+\begin_inset Formula $\left\{ 1,2,3\right\} \to\left\{ \left\{ 2,3,1\right\} ,\left\{ 3,1,2\right\} \right\} ,\left\{ 1,2\right\} \to\left\{ \left\{ 2,1\right\} \right\} $
+\end_inset
+
+אז נראה באופן כללי כמה אפשרויות יש לנו.
+\end_layout
+
+\begin_layout Standard
+נסתכל על האיבר ה
+\begin_inset Formula $n$
+\end_inset
+
+ ונחלק לשתי אפשרויות: אם הוא עבר למקום ה
+\begin_inset Formula $k$
+\end_inset
+
+ או שהוא לא עבר למקום ה
+\begin_inset Formula $k$
+\end_inset
+
+.
+ במקרה ש
+\begin_inset Formula $n$
+\end_inset
+
+ במקום ה
+\begin_inset Formula $k$
+\end_inset
+
+ ו
+\begin_inset Formula $k$
+\end_inset
+
+ עבר ל
+\begin_inset Formula $n$
+\end_inset
+
+ אזי יש 
+\begin_inset Formula $D\left(n-2\right)$
+\end_inset
+
+ אפשרויות.
+ במקרה האחר מתעלמים מ 
+\begin_inset Formula $n$
+\end_inset
+
+ ומסדרים אז האיברים 
+\begin_inset Formula $\left\{ 1\dots\left(n-1\right)\right\} $
+\end_inset
+
+ לא נשארו במקומם, ועכשיו מוסיפים 
+\begin_inset Formula $k$
+\end_inset
+
+ אבל אפשר להוסיף אותו רק ל
+\begin_inset Formula $n-1$
+\end_inset
+
+ מקומות)כדי שלא יחזור למקומו( אזי 
+\begin_inset Formula $D\left(n-1\right)\left(n-2\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עקרון שובך היונים
+\end_layout
+
+\begin_layout Standard
+נניח שיש שובך שיש בו 
+\begin_inset Formula $n$
+\end_inset
+
+ תאים, ויש 
+\begin_inset Formula $n+1$
+\end_inset
+
+ כדורים, ועכשיו לוקחים את 
+\begin_inset Formula $n+1$
+\end_inset
+
+ הכדורים ומכניסים אותם ל
+\begin_inset Formula $n$
+\end_inset
+
+ התאים.
+\end_layout
+
+\begin_layout Standard
+משפט: 
+\begin_inset Formula $n+1$
+\end_inset
+
+ יונום המחולקות ל
+\begin_inset Formula $n$
+\end_inset
+
+ תאים מכילות זוג יונים הנמצא באותו תא.
+\end_layout
+
+\begin_layout Standard
+הוכחה: אם אף תא לא מכיל זוג אז סכום היונים הוא 
+\begin_inset Formula $n$
+\end_inset
+
+ בסתירה לזה שיש 
+\begin_inset Formula $n+1$
+\end_inset
+
+ יונים.
+\end_layout
+
+\begin_layout Standard
+דוגמה לשימוש בזה: נניח שמסתכלים על מספרים מ
+\begin_inset Formula $0$
+\end_inset
+
+ עד 
+\begin_inset Formula $11$
+\end_inset
+
+.
+ טענה: אם נבחר שבעה מספרים שונים בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל
+\numeric on
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נמצא בתוכם זוג מספרים שסכומו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+11
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה: נחלק את המספרים 
+\begin_inset Formula $\left\{ 0\dots11\right\} $
+\end_inset
+
+ לזוגות שסכומם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+11
+\numeric off
+.
+ 
+\begin_inset Formula $\left\{ \left\{ 0,11\right\} ,\left\{ 1,10\right\} ,\left\{ 2,9\right\} ,\left\{ 3,8\right\} ,\left\{ 4,7\right\} ,\left\{ 5,6\right\} \right\} $
+\end_inset
+
+ אזי לפי עקרון השובך כל בחירה של מספרים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מ
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מכילה תא שסכומו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+11
+\numeric off
+.
+\end_layout
+
+\begin_layout Section
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Erdess-Seckeres
+\end_layout
+
+\begin_layout Standard
+סדרה מונוטונית עולה היא סדרה שבה 
+\begin_inset Formula $\forall i:a_{i}>a_{i-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $b_{1},b_{2}\dots b_{n^{2}+1}$
+\end_inset
+
+ היא סדרת מספרים ממשיים שונים, אזי קיימת תת סדרה באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ שהיא סדרה מונוטונית עולה או סדרה מונוטונית יורדת
+\end_layout
+
 \end_body
 \end_document

@@ -5273,5 +5273,601 @@ R_{cm} & = & \frac{1}{M}\sum m_{i}\vec{r}_{i}\\
  ההפרדה הזו נכונה רק אם עוברים למערכת מרכז המסה.
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+15
+\end_layout
+
+\begin_layout Standard
+נתחיל מאיפה שסיימנו בשיעור שעבר.
+ היתה לנו מערכת צירים 
+\begin_inset Formula $S$
+\end_inset
+
+ אז אם יש גופים אז יכולים לרשום את התנע הזוויתי של כל החלקיקים הוא 
+\begin_inset Formula $\vec{L}=\sum\vec{L}_{i}$
+\end_inset
+
+.
+ אבל אפשר להגדיר מערכת מרכז המסה 
+\begin_inset Formula $S^{'}$
+\end_inset
+
+ ולרשום 
+\begin_inset Formula \[
+\vec{L}=\vec{L}_{cm}+\vec{L}^{'}=\underbrace{\vec{R}_{cm}\times\vec{P}_{cm}}_{L_{cm}}+\underbrace{\sum_{i}\vec{r}_{i}^{'}\times\vec{P}_{i}^{'}}_{l=l_{spin}=l_{spinor}}\]
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אפשר לראות משהוא דומה בתנע קווי:
+\begin_inset Formula \begin{eqnarray*}
+\vec{P} & = & \sum_{i}m_{i}\dot{\vec{r}}_{i}=\sum_{i}m_{i}\left(\dot{\vec{R}}_{cm}+\dot{\vec{r}}_{i}^{'}\right)\\
+ & = & \underbrace{\sum m_{i}\dot{\vec{r}}_{i}^{'}}_{0}+\vec{P}_{cm}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים עכשיו לקבל תלות האיברים האילו בזמן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\vec{L}_{cm}}{\partial t} & = & \frac{\partial}{\partial t}\left(\vec{R}\times M\vec{V}_{cm}\right)\\
+ & = & \vec{V}_{cm}\times M\vec{V}_{cm}+\vec{R}_{cm}\times\frac{\partial}{\partial t}\vec{P}_{cm}\\
+ &  & \vec{R}_{cm}\times F_{ext}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial l}{\partial t} & = & \frac{\partial}{\partial t}\vec{L}-\frac{\partial}{\partial t}L_{cm}\\
+ & = & \vec{N}_{ext}-\vec{R}_{cm}\times\vec{F}_{ext}\\
+ & = & \sum\vec{r}_{i}\times\vec{F}_{i}^{ext}-\sum\vec{R}_{cm}\times\vec{F}_{i}^{ext}\\
+ & = & \sum\left(\vec{r}_{i}-\vec{R}_{cm}\right)\times\vec{F}_{i}^{ext}\\
+ &  & =\sum\vec{r}_{i}^{'}\times\vec{F}_{i}^{ext}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+אם טולים גוף לא סימטרי במרכז המסה שלו אזי הכרביטציה לא תסובב אותו.
+ כלומר 
+\begin_inset Formula $\vec{l}_{spin}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}_{i}=-mg\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N}_{ext}^{'} & = & \sum\vec{r}_{i}^{'}\times\vec{F}_{i}^{'}\\
+ & = & -g\underbrace{\left[\sum m_{i}\vec{r}_{i}^{'}\right]}_{0}\times\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם תולים את הגוף בנקודה אחרת אזי הגוף יתיצב במצב של 
+\begin_inset Formula $\vec{F}\parallel\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c20d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה אחרת היא של שני מסות שמסתובבות וחוט מפעיל כח שמקרב אותם אחת לשניה,
+ אזי התנע הזוויתי נשמר כי 
+\begin_inset Formula $\vec{r}\times\vec{F}$
+\end_inset
+
+ הוא אפס.
+ לכן אם 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ קטן אס 
+\begin_inset Formula $\omega$
+\end_inset
+
+ גדל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c20d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I=\sum m_{i}r_{i}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{l}=2mr^{2}\vec{\omega}=l_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\omega & = & \frac{l_{0}}{2mr^{2}}\\
+v & = & \frac{l_{0}}{2mr}\\
+E_{k} & = & \frac{1}{2}mv^{2}\\
+\Delta E_{k}^{r_{1}\to r_{2}} & = & \frac{l_{0}^{2}}{4m}\left[\frac{1}{r_{2}^{2}}-\frac{1}{r_{1}^{2}}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל למה זה נכון? מבחינת אנרגיה 
+\begin_inset Formula $T$
+\end_inset
+
+ עושה עבודה, אבל מבחינת כוחות 
+\begin_inset Formula $T$
+\end_inset
+
+ ניצב לתנועה אז איך הוא מאיץ? כאשר המסות נעות למרכז הם כבר לא נעות בתנועה
+ מעגלית בעלת רדוס קבוע, אז 
+\begin_inset Formula $\cos\theta\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימוש אחר של תנע זוויתי: לווינים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c20d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי כדור טניס שנעה סביב כדור הארץ.
+ אזי אפשר לחשב לו מהירות רדיאלית 
+\begin_inset Formula $v_{r}$
+\end_inset
+
+ ומהירות תנגנציאלית 
+\begin_inset Formula $v_{t}$
+\end_inset
+
+.
+ אזי המהיאות הזוויתית נשמרת כי 
+\begin_inset Formula $\vec{F}\parallel\vec{r}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $F=r\times P=m\vec{r}\times\left(\vec{v}_{r}+\vec{v}_{t}\right)=m\vec{r}\times\vec{v}_{t}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{L}=mrv_{t}\hat{z}=\vec{L}_{0}$
+\end_inset
+
+ ובגלל שאין מומנטים חיצוניים אזי 
+\begin_inset Formula $\vec{L}$
+\end_inset
+
+ הוא קבוע.
+\end_layout
+
+\begin_layout Standard
+נתבונן באנרגיה: 
+\begin_inset Formula $E=E_{k}+u=\frac{1}{2}mv_{r}^{2}+\frac{1}{2}mv_{t}^{2}-\frac{GMm}{r}$
+\end_inset
+
+ אבל 
+\begin_inset Formula $mrv_{t}=L_{0}$
+\end_inset
+
+ קבוע אזי יש יחס קבוע בין 
+\begin_inset Formula $v_{t}\propto r$
+\end_inset
+
+.
+ אפשר לכתוב 
+\begin_inset Formula $v_{t}=\frac{L_{0}^{2}}{m^{2}r^{2}}$
+\end_inset
+
+ ומציבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}mv_{r}^{2}+u_{effective}\\
+u_{effective} & = & \frac{L_{0}^{2}}{2m}\cdot\frac{1}{r^{2}}-\frac{GMm}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי התנועה היא במימד אחד)על קו דו מימדי קבוע(
+\end_layout
+
+\begin_layout Standard
+מצירים את הפוטנציאל ביחס לרדיוס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c20d4.svg
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל הפוטנציאל הזה יהיה תלוי בתנאי ההתחלה שלנו אזי גם המינימום תלוי בתנאי
+ ההתחלה שלנו.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+16
+\end_layout
+
+\begin_layout Standard
+נמשיך בבעיה של הרצאה קודמת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}mv_{r}^{2}+\frac{1}{2}mv_{t}^{2}-\frac{GMm}{r}\\
+v_{t}^{2} & = & \frac{L_{0}^{2}}{m^{2}r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה השניה באה משימור תנע זוויתי, כלומר החסרנו משתנה חופשי מהמשוואה שלנו.
+ מסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}mv_{r}^{2}+u_{eff}\left(r\right)\\
+u_{eff}\left(r\right) & = & \frac{a}{r^{r}}-\frac{b}{r}\\
+a & = & \frac{L_{0}^{2}}{2m}\\
+b & = & GMm\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשמעות של 
+\begin_inset Formula $u_{eff}$
+\end_inset
+
+ היא...
+ זה הוא פוטנציאל אז אפשר לגזור ולקבל כח 
+\begin_inset Formula $F_{eff}=-\nabla u_{eff}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{eff}=\overbrace{2a\frac{1}{r^{3}}}^{\mbox{I}}-\overbrace{\frac{b}{r^{2}}}^{\mbox{II}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז קיבלנו שתי כוחות.
+ 
+\begin_inset Formula $F_{II}=-G\frac{Mm}{r^{2}}$
+\end_inset
+
+ זה הוא כח הגרביטציה, אבל מה זה כח מספר 
+\begin_inset Formula $\mbox{I}$
+\end_inset
+
+? 
+\begin_inset Formula \begin{eqnarray*}
+\vec{F}_{I} & = & \frac{L_{0}^{2}}{mr^{2}}\\
+ & = & \frac{L^{2}\left(t\right)}{mr^{3}}\\
+ & = & \frac{\left(mr^{2}\omega\right)^{2}}{mr^{3}}\\
+ & = & mr\omega^{2}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+ זה הוא הכח הצנטרופוגאלי.
+ זה כח אפקטיבי, אבל באמת אין כח כזה, הוא כח אפקטיבי שנובע מהתנועה)קוראים
+ לזה גם כח מדומה(
+\end_layout
+
+\begin_layout Standard
+בשיעור קודם ציירנו את הגרף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c21d1.svg
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקודת המינימום היא המקרה של 
+\begin_inset Formula $\vec{F}_{I}=\vec{F}_{II}$
+\end_inset
+
+.
+ אם עוזבים גוף בנקודת המינימום ינוע בתנועה מעגלית, אם הוא יותר גדול אבל
+ עדיין שלילי הוא ינוע באליפסה.
+\end_layout
+
+\begin_layout Standard
+מה הוא הפרש האנרגיה 
+\begin_inset Formula $dE$
+\end_inset
+
+ בין שני התנועות? זה הוא אנרגיה של תנועה רדיאלית, כי כבר לקחנו את הרנרגיה
+ התנגנציאלית בחשבון ב
+\begin_inset Formula $u_{eff}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתבונו בבעיה הבאה:
+\end_layout
+
+\begin_layout Standard
+שתי מסות תלויות נעות על משטח חסר חיכוך.
+ ברגע 
+\begin_inset Formula $t=0$
+\end_inset
+
+ נתננו לאחד מהם מקה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F}_{ext}\left(t>0\right) & = & 0\\
+M\vec{a}_{cm}=F_{ext}=0 & \Rightarrow & \vec{v}_{cm}=\vec{v}_{cm}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נמצא את 
+\begin_inset Formula $\vec{v}_{cm}\left(0\right)$
+\end_inset
+
+.
+ בזמן 
+\begin_inset Formula $t\approx0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M\frac{\partial}{\partial t}\vec{v}_{cm} & = & \vec{F}_{ext}\\
+M\partial v_{cm} & = & F_{ext}\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן את זה כ 
+\begin_inset Formula $F_{ext}\partial t=\tau$
+\end_inset
+
+ וקוראים לו מתקף.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{v}_{cm}=\frac{\vec{\tau}}{M}=\frac{\tau}{2m}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vec{l} & = & \vec{N}_{ext}^{cm}\\
+\frac{\partial}{\partial t}\vec{l} & = & \vec{r}\times\vec{F}\\
+\partial\vec{l} & = & \vec{r}^{'}\times\vec{F}\partial t\\
+ & = & \vec{r}^{'}\times\vec{\tau}\\
+ & = & -r\tau\hat{z}\\
+\vec{l} & = & -r\tau\hat{z}\\
+\vec{l} & = & I\omega\\
+ & = & 2mr^{'^{2}}\vec{\omega}\\
+-r\tau\hat{z} & = & 2mr^{'^{2}}\vec{\omega}\\
+\vec{\omega} & = & -\frac{r^{'}\tau}{2mr^{'^{2}}}\hat{z}\\
+ & = & \frac{-\tau}{2mr^{'}}\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\vec{\omega}=-\frac{\tau}{2mr^{'}}\hat{z}\\
+\vec{v}_{cm}=\frac{\tau}{2m}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המהירויות של התי המסות רגע אחרי ההתנגשות היא:
+\begin_inset Formula \begin{eqnarray*}
+\vec{v}_{1} & = & \vec{v}_{cm}+\vec{\omega}\times\vec{r}_{1}^{'}=\frac{\tau}{m}\\
+\vec{v}_{2} & = & \vec{v}_{cm}+\vec{\omega}\times\vec{r}_{2}^{'}=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העיה חדשה
+\end_layout
+
+\begin_layout Standard
+זורקים מסה על גלגל)אין גרביטציה(, המסה נדבקה לו, והגלגל מתחיל להסתובב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c21d2.svg
+	lyxscale 30
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא נפתור את הבעיה הזו במרכז המסה מכל מיני סיבות, בסופו של דבר יותר כל לפתור
+ בציר של הגלגל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N}_{ext} & = & 0\\
+\frac{\partial}{\partial t}\vec{L} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L}\left(t<0\right) & = & r\times m\vec{v}_{0}\\
+ & = & m\vec{r}\times\vec{v}_{0}\\
+ & = & -mv_{0}\sin\theta\hat{x}\\
+ & = & -mv_{0}r\sin\alpha\hat{x}\\
+ & = & -mv_{0}v\hat{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L}\left(t>0\right) & = & \left(\underbrace{I}_{\mbox{wheel}}+\underbrace{I^{'}}_{\mbox{projectile}}\right)\vec{\omega}\\
+I^{'} & = & \sum m_{i}r_{i_{\perp}}^{2}=mR^{2}\\
+I & = & \sum m_{i}r_{i_{\perp}}^{2}\\
+ & = & \int_{V}r_{\perp}^{2}\rho\partial V\\
+ & = & \iiint r^{3}\partial\theta\partial h\partial r\\
+ & = & \int_{0}^{R}\int_{-\frac{h}{2}}^{\frac{h}{2}}\int_{0}^{2\pi}r^{3}\partial\theta\partial h\partial r\\
+ & = & 2\pi\rho H\frac{1}{4}R^{4}\\
+M & = & \rho\cdot V\\
+ & = & \rho\pi R^{2}h\\
+I & = & \frac{1}{2}MR^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\omega} & = & -\frac{mv_{0}b}{I+I^{'}}\hat{x}\\
+ & = & \frac{mv_{0}b}{\left(\frac{1}{2}M+m\right)R^{2}}m\hat{x}\\
+ & = & -\frac{v_{0}b}{\left(\frac{1}{2}\frac{M}{m}+1\right)R^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

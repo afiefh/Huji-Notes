@@ -1,0 +1,60 @@
+GNU Octave, version 3.0.1
+Copyright (C) 2008 John W. Eaton and others.
+This is free software; see the source code for copying conditions.
+There is ABSOLUTELY NO WARRANTY; not even for MERCHANTIBILITY or
+FITNESS FOR A PARTICULAR PURPOSE.  For details, type `warranty'.
+
+Octave was configured for "i486-pc-linux-gnu".
+
+Additional information about Octave is available at http://www.octave.org.
+
+Please contribute if you find this software useful.
+For more information, visit http://www.octave.org/help-wanted.html
+
+Report bugs to <bug@octave.org> (but first, please read
+http://www.octave.org/bugs.html to learn how to write a helpful report).
+
+For information about changes from previous versions, type `news'.
+
+A. The C matrix corresponding to polyfit(x,y,3) where x is [0,1.2,2.4,3.6,4.8]
+C =
+
+  -4.8225e-02   9.6451e-02  -7.6803e-17  -9.6451e-02   4.8225e-02
+   4.4643e-01  -7.4405e-01  -9.9206e-02   6.4484e-01  -2.4802e-01
+  -1.2401e+00   1.3492e+00   4.7619e-01  -8.7302e-01   2.8770e-01
+   9.8571e-01   5.7143e-02  -8.5714e-02   5.7143e-02  -1.4286e-02
+
+B. The coefficients using matrix multiplication and polyfit:
+cy =
+
+   0.048225  -0.421627   1.329365   0.985714
+
+cpy =
+
+   0.048225  -0.421627   1.329365   0.985714
+
+cz =
+
+   0.19290  -1.43849   2.87698   1.05714
+
+cpz =
+
+   0.19290  -1.43849   2.87698   1.05714
+
+cu =
+
+   4.1633e-17  -4.9603e-02  -1.7857e-01   3.0571e+00
+
+cpu =
+
+   2.0101e-17  -4.9603e-02  -1.7857e-01   3.0571e+00
+
+cv =
+
+  -0.096451   0.644841  -0.873016   0.057143
+
+cpv =
+
+  -0.096451   0.644841  -0.873016   0.057143
+
+C. Building the graphs of approximated functions using the coefficients we found through matrix multiplication.

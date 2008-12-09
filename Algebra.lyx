@@ -29,7 +29,7 @@
 \defskip medskip
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -3894,6 +3894,1061 @@ x_{2}\end{pmatrix}_{e}\right\} \end{eqnarray*}
 \end_inset
 
  אזי הם תלויים.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+12
+\end_layout
+
+\begin_layout Standard
+מרחב סוף מימדי הוא מרחב שיש לו בסיס סופי, כלומר 
+\begin_inset Formula $\forall\left(\vec{x}\in V\right)\exists\left(a_{1}\dots a_{n}\in\mathbb{R},e_{1}\dots e_{n}\in V\right)$
+\end_inset
+
+ סופיים כך ש
+\begin_inset Formula $\vec{x}=a_{1}e_{1}+a_{2}e_{2}\dots+a_{n}e_{n}$
+\end_inset
+
+.
+ לכל בסיס ווקטור המקדמים שמייצרים וקטור מסויים הם יחידים, כלומר אם 
+\begin_inset Formula $a_{1}e_{1}+\dots a_{n}e_{n}=\vec{x}$
+\end_inset
+
+ אזי לא קימים 
+\begin_inset Formula $b_{1}e_{1}+\dots+b_{n}e_{n}=\vec{x}$
+\end_inset
+
+ לכן הווקטורים 
+\begin_inset Formula $e_{1},e_{2}\dots e_{n}$
+\end_inset
+
+ חייוים לא להיות תלויים ליניארית, כי אם הם תלויים ליניארית אזי יהיה אפשר
+ למצא מקדמים שונים שנותנים אותו ווקטור.
+\end_layout
+
+\begin_layout Standard
+דוגמה: רוצים לודוק אם שני וקטורים תלויים ליניארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\begin{pmatrix}2\\
+1\end{pmatrix},B=\begin{pmatrix}1\\
+2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha\begin{pmatrix}2\\
+1\end{pmatrix}+\beta\begin{pmatrix}1\\
+2\end{pmatrix} & = & \vec{0}\\
+\begin{pmatrix}2\alpha+\beta\\
+\alpha+2\beta\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+ אם הפתרון היחיד של משוואה זו הוא 
+\begin_inset Formula $\alpha=0,\beta=0$
+\end_inset
+
+ אזי הם בלתי תלויים ליניארית.
+\end_layout
+
+\begin_layout Section
+אי תלות של פונקציות
+\end_layout
+
+\begin_layout Standard
+האם הפונקציות 
+\begin_inset Formula $\sin\left(\omega t\right),\cos\left(\omega t\right)$
+\end_inset
+
+ בלתי תלויים?
+\end_layout
+
+\begin_layout Standard
+אם אפשר למצא 
+\begin_inset Formula $\alpha,\beta\neq0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\alpha\sin\left(\omega t\right)+\beta\cos\left(\omega t\right)=0$
+\end_inset
+
+ אזי הם תלויים ליניארית.
+ אפשר על ידי חיבור 
+\begin_inset Formula $\cos$
+\end_inset
+
+ ו 
+\begin_inset Formula $\sin$
+\end_inset
+
+ כי זה לא מתאפס לכל 
+\begin_inset Formula $t$
+\end_inset
+
+ אלא אם 
+\begin_inset Formula $\alpha,\beta=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מרחב של פולינומים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{a}\left(x\right)=Span\left(1,x,x^{2},x^{3}\dots x^{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר להשתמש בווקטורים אלה כמרחב ולכתוב פולינום כווקטור 
+\begin_inset Formula $\begin{pmatrix}a_{1}\\
+a_{2}\\
+\vdots\\
+a_{n}\end{pmatrix}$
+\end_inset
+
+ בבסיס הזה.
+ אבל צריך להוכיח כי וקטורי הבסיס אי תלויים, נעשה את זה ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מימדים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e_{1} & = & 1\\
+e_{2} & = & x\\
+e_{3} & = & x^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha e_{1}+\beta e_{2}+\gamma e_{3} & = & 0\\
+\alpha+\beta x+\gamma x^{2} & = & 0\\
+\frac{\partial}{\partial x}\left(\alpha+\beta x+\gamma x^{2}\right) & = & 0\\
+\beta+2\gamma x & = & 0\\
+\frac{\partial}{\partial x}\left(\beta+2\gamma x\right) & = & 0\\
+2\gamma & = & 0\\
+\gamma & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומכן אפשר לראות כי גם 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+ ו
+\begin_inset Formula $\beta=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+פעולות על מטריצות
+\end_layout
+
+\begin_layout Subsection
+חיבור מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}a_{11} & \dots & a_{1n}\\
+\vdots & \ddots & \vdots\\
+a_{n1} & \dots & a_{nn}\end{pmatrix}+\begin{pmatrix}b_{11} & \dots & b_{1n}\\
+\vdots & \ddots & \vdots\\
+b_{n1} & \dots & b_{nn}\end{pmatrix}=\begin{pmatrix}a_{11}+b_{11} & \dots & a_{1n}+b_{1n}\\
+\vdots & \ddots & \vdots\\
+a_{n1}+b_{n1} & \dots & a_{nn}+b_{nn}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(A+B\right)\vec{x}=A\left(x\right)+B\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+כפל של מטריצה במספר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\alpha\begin{pmatrix}a_{11} & \dots & a_{1n}\\
+\vdots & \ddots & \vdots\\
+a_{n1} & \dots & a_{nn}\end{pmatrix}=\begin{pmatrix}\alpha a_{11} & \dots & \alpha a_{1n}\\
+\vdots & \ddots & \vdots\\
+\alpha a_{n1} & \dots & \alpha a_{nn}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\alpha A\right)\vec{x}=\alpha\left(A\left(\vec{x}\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+כפל מטריצות והרכבה של אופרטורים
+\end_layout
+
+\begin_layout Standard
+נגיד שיש לנו שלושה מרחבים 
+\begin_inset Formula $X\overset{B}{\to}Y\overset{A}{\to}Z$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $\vec{x}\in X$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\left(B\left(\vec{x}\right)\right)=\left(A\circ B\right)\vec{x}\in Z$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ הם אופרטורים ליניארים אזי 
+\begin_inset Formula $A\circ B$
+\end_inset
+
+ הוא גם אופרטור ליניארי אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(A\circ B\right) & = & A\left(B\left(\alpha\vec{x}+\beta\vec{y}\right)\right)\\
+ & = & A\left(\alpha B\left(\vec{x}\right)+\beta B\left(\vec{y}\right)\right)\\
+ & = & \alpha A\left(B\left(\vec{x}\right)\right)+\beta A\left(B\left(\vec{y}\right)\right)\\
+ & = & \alpha\left(A\circ B\right)\vec{x}+\beta\left(A\circ B\right)\vec{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: באופן כללי 
+\begin_inset Formula $A\circ B\neq B\circ A$
+\end_inset
+
+, אבל יתכנו מקרים פרטיים 
+\begin_inset Formula $A\circ B=B\circ A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+תבדוק אם הקבוצות סגורות עבור פעולות חיבור וכפל בסקלר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\{ a_{1}\cos x+a_{2}^{2}\cdot1+a_{3}e^{5x}+a_{4}x^{2}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקבוצה סגורה עבור חיבור כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}a_{1}\cos x+a_{2}^{2}\cdot1+a_{3}\cdot e^{5x}+a_{4}x^{2}+\\
++b_{1}\cos x+b^{2}\cdot1+b_{3}e^{5x}+b_{4}x^{2}\end{matrix}=\underbrace{\left(a_{1}+b_{1}\right)}_{c_{1}}\cos x+\underbrace{\left(a_{2}^{2}+b_{2}^{2}\right)}_{c_{2}}\cdot1+\underbrace{\left(a_{3}+b_{3}\right)}_{c_{3}^{2}}e^{5x}+\underbrace{\left(a_{4}+b_{4}\right)}_{c_{4}}x^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תמיד אפשר למצא 
+\begin_inset Formula $c_{3}^{2}=a_{2}^{2}+b_{2}^{2}$
+\end_inset
+
+ כי צד ימיני הוא חיובי.
+\end_layout
+
+\begin_layout Standard
+אבל זה לא סגור אבור כפל, למשל עבור 
+\begin_inset Formula $-1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(a_{1}\cos x+a_{2}^{2}\cdot1+a_{3}\cdot e^{5x}+a_{4}x^{2}\right)\cdot-1=\underbrace{-a_{1}}_{c_{1}}\cos x+\underbrace{-a_{2}^{2}}_{c_{2}^{2}}\cdot1+\underbrace{-a_{3}}_{c_{3}}\cdot e^{5x}+\underbrace{-a_{4}}_{c_{4}}x^{2}\]
+
+\end_inset
+
+ אי אפשר לקבל 
+\begin_inset Formula $c_{2}^{2}=-a_{2}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\{ a_{1}\cos x+a_{2}^{2}\cdot1+3e^{5x}+a_{4}x^{2}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא סגור עבור כל פעולה)חוץ מכפל ב
+\numeric on
+1
+\numeric off
+( כי תמיד צריכ להיות המקדם של 
+\begin_inset Formula $e^{5x}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $6$
+\end_inset
+
+ אבל אם מחברים למשל מקבלים 
+\begin_inset Formula $6e^{5x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+k=\left\{ f\left(x\right)\in C_{\inf}\left[0,1\right]\mid x^{2}f^{''}\left(x\right)+e^{x}f^{'}\left(x\right)+Sf\left(x\right)=0\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:\, x^{2}f^{''}\left(x\right)+e^{x}f^{'}\left(x\right)+5f\left(x\right) & = & 0\\
+g:\, x^{2}g^{''}\left(x\right)+e^{x}g^{'}\left(x\right)+5g\left(x\right) & = & 0\\
+f+g:\, x^{2}\left(f+g\right)^{''}\left(x\right)+e^{x}\left(f+g\right)^{'}\left(x\right)+5\left(f+g\right)\left(x\right) & \overset{?}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}\left(f+g\right)^{''}\left(x\right)+e^{x}\left(f+g\right)^{'}\left(x\right)+5\left(f+g\right)\left(x\right) & = & \begin{matrix}x^{2}\left(f^{''}\left(x\right)+g^{''}\left(x\right)\right)+\\
++e^{x}\left(f^{'}\left(x\right)+g^{'}\left(x\right)\right)+\\
++5\left(f\left(x\right)+g\left(x\right)\right)\end{matrix}\\
+ & = & \begin{matrix}x^{2}f^{''}\left(x\right)+e^{x}f^{'}\left(x\right)+5f\left(x\right)+\\
++x^{2}g^{''}\left(x\right)+e^{x}g^{'}\left(x\right)+5g\left(x\right)\end{matrix}\\
+ & = & 0+0\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי סגור לחיבור)קל לראות שזה סגור לכפל(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+k=\left\{ f\left(x\right)\in C_{\inf}\left[0,1\right]\mid x^{2}f^{''}\left(x\right)+e^{x}f^{'}\left(x\right)+Sf\left(x\right)=e^{x}+5x\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:\, x^{2}f^{''}\left(x\right)+e^{x}f^{'}\left(x\right)+5f\left(x\right) & = & e^{x}+5x\\
+g:\, x^{2}g^{''}\left(x\right)+e^{x}g^{'}\left(x\right)+5g\left(x\right) & = & e^{x}+5x\\
+f+g:\, x^{2}\left(f+g\right)^{''}\left(x\right)+e^{x}\left(f+g\right)^{'}\left(x\right)+5\left(f+g\right)\left(x\right) & \overset{?}{=} & e^{x}+5x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}\left(f+g\right)^{''}\left(x\right)+e^{x}\left(f+g\right)^{'}\left(x\right)+5\left(f+g\right)\left(x\right) & = & \begin{matrix}x^{2}\left(f^{''}\left(x\right)+g^{''}\left(x\right)\right)+\\
++e^{x}\left(f^{'}\left(x\right)+g^{'}\left(x\right)\right)+\\
++5\left(f\left(x\right)+g\left(x\right)\right)\end{matrix}\\
+ & = & \begin{matrix}x^{2}f^{''}\left(x\right)+e^{x}f^{'}\left(x\right)+5f\left(x\right)+\\
++x^{2}g^{''}\left(x\right)+e^{x}g^{'}\left(x\right)+5g\left(x\right)\end{matrix}\\
+ & = & e^{x}+5x+e^{x}+5x\\
+ & = & 2e^{x}+10x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי זה לא סגור עבור חיבור)גם לא עבור כפל בסקלר(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+k=\left\{ f\left(x\right)\in C_{\inf\left[0,1\right]}\left[f^{'}\left(\frac{1}{2}\right)\right]^{2}=0\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f,g\in K$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}\left[f^{'}\left(\frac{1}{2}\right)\right]^{2}=0\\
+\left[g^{'}\left(\frac{1}{2}\right)\right]^{2}=0\end{matrix}\Leftrightarrow\begin{matrix}f^{'}\left(\frac{1}{2}\right)=0\\
+g^{'}\left(\frac{1}{2}\right)=0\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואז כל לראות שזה סגור לכפל וחיבור.
+\end_layout
+
+\begin_layout Section
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+לבדוק אם האקסיומות של מרחב וקטרי מתקימות עבור קבוצה 
+\begin_inset Formula $\left\{ \begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\mid x_{1},x_{2}>0\right\} $
+\end_inset
+
+ ופעולות 
+\begin_inset Formula $\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}=\begin{pmatrix}x_{1}y_{1}\\
+x_{2}y_{2}\end{pmatrix}$
+\end_inset
+
+ ו
+\begin_inset Formula $\alpha\odot\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}=\begin{pmatrix}x_{1}^{\alpha}\\
+x_{2}^{\alpha}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו את האקסיומות של חיבור בהרצאה, אז הוכיח לכפל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lambda\odot\left(\vec{u}\oplus\vec{v}\right)=\lambda\odot\vec{u}\oplus\lambda\odot\vec{v}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda\odot\left(\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\right) & = & \lambda\odot\begin{pmatrix}x_{1}y_{1}\\
+x_{2}y_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}^{\lambda}y_{1}^{\lambda}\\
+x_{2}^{\lambda}y_{2}^{\lambda}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}^{\lambda}\\
+x_{2}^{\lambda}\end{pmatrix}\oplus\begin{pmatrix}y_{1}^{\lambda}\\
+y_{2}^{\lambda}\end{pmatrix}\\
+ &  & \lambda\odot\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\lambda\odot\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\\
+ & = & \lambda\odot\vec{u}\oplus\lambda\odot\vec{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צ"ל: 
+\begin_inset Formula \[
+\left(\lambda+\mu\right)\odot\vec{u}=\lambda\odot\vec{u}\oplus\mu\odot\vec{u}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\left(\lambda+\mu\right)\odot\vec{u} & = & \begin{pmatrix}x_{1}^{\left(\lambda+\mu\right)}\\
+x_{2}^{\left(\lambda+\mu\right)}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda\odot\vec{u}\oplus\mu\odot\vec{u} & = & \lambda\odot\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\oplus\mu\odot\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}^{\lambda}\\
+x_{2}^{\lambda}\end{pmatrix}\oplus\begin{pmatrix}x_{1}^{\mu}\\
+x_{2}^{\mu}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}^{\lambda}x_{1}^{\mu}\\
+x_{2}^{\lambda}x_{2}^{\mu}\end{pmatrix}\\
+ & = & \begin{pmatrix}x_{1}^{\left(\lambda+\mu\right)}\\
+x_{2}^{\left(\lambda+\mu\right)}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים ששניהם שווים.
+\end_layout
+
+\begin_layout Subsection
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A:X\to\Psi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נקראת על 
+\begin_inset Formula $\Psi$
+\end_inset
+
+ אם"ם לכל 
+\begin_inset Formula $y\in\Psi$
+\end_inset
+
+ קיים 
+\begin_inset Formula $x\in X$
+\end_inset
+
+ כך ש
+\begin_inset Formula $A\left(x\right)=y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נקראת חד חד ערכית אם"ם לכל 
+\begin_inset Formula $x_{1},x_{2}\in X$
+\end_inset
+
+ שמקימים 
+\begin_inset Formula $A\left(x_{1}\right)=A\left(x_{2}\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x_{1}=x_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A:\mathbb{R}^{1} & \to & \mathbb{R}^{2}\\
+A\left(x\right) & = & \begin{pmatrix}2\\
+1\end{pmatrix}x\\
+ & = & \begin{pmatrix}2x\\
+x\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Im\left(A\right)=sp\left\{ \begin{pmatrix}2\\
+1\end{pmatrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא על כי מקבלים רק קו ישר מתוכ מישור)למשל לא נקבל 
+\begin_inset Formula $\begin{pmatrix}1\\
+1\end{pmatrix}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אבל זה חד חד ערכי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{23}:\mathbb{R}^{3} & \to & \mathbb{R}^{3}\\
+A\left(\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}\right) & = & \begin{pmatrix}0\\
+x_{2}\\
+x_{3}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא חד חד ערכי ולא על כי לא מתקבל 
+\begin_inset Formula $\begin{pmatrix}1\\
+1\\
+1\end{pmatrix}$
+\end_inset
+
+ וכי 
+\begin_inset Formula $A\left(\begin{pmatrix}1\\
+1\\
+1\end{pmatrix}\right)=A\left(\begin{pmatrix}2\\
+1\\
+1\end{pmatrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Rot\varphi\mathbb{R}^{2} & \to & \mathbb{R}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי זה חד חד ערכי ועל כי אפשר להגדיר פונקציה 
+\begin_inset Formula $Rot\left(-\varphi\right)$
+\end_inset
+
+ שמקיימת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Rot\varphi\left(Rot\left(-\varphi\right)\left(\vec{v}\right)\right) & = & \vec{v}\\
+Rot\left(-\varphi\right)\left(Rot\varphi\left(\vec{v}\right)\right) & = & \vec{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקוראים לה פונקציה הפוכה.)יש הוכחה מפורשת של דבר זה בסיכומים של הרצאות המתמטיקה
+ הדיסקרטית(
+\end_layout
+
+\begin_layout Standard
+תוכיח כי אופרטור 
+\begin_inset Formula $A:V\to W$
+\end_inset
+
+ הוא חד חד ערי אם"ם 
+\begin_inset Formula $ker\left(A\right)=\left\{ \vec{0}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: נניח ש 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא חח"ע.
+ תמיד 
+\begin_inset Formula $\vec{0}\in Ker\left(A\right)$
+\end_inset
+
+ כי 
+\begin_inset Formula $A\left(\vec{0}\right)=\vec{0}$
+\end_inset
+
+ וצריך לראת כי אין עוד איברים ב
+\begin_inset Formula $ker\left(A\right)$
+\end_inset
+
+.
+ נניח 
+\begin_inset Formula $\vec{v}\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\left(\vec{v}\right)=A\left(\vec{0}\right)=\vec{0}$
+\end_inset
+
+ מחד חד ערכיות של 
+\begin_inset Formula $A$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $\vec{v}=\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שני: נניח 
+\begin_inset Formula $ker\left(A\right)=\left\{ 0\right\} $
+\end_inset
+
+ נניח 
+\begin_inset Formula $\vec{v}_{1},\vec{v}_{2}\in V$
+\end_inset
+
+ מקימים
+\begin_inset Formula \begin{eqnarray*}
+A\left(\vec{v}_{1}\right) & = & A\left(\vec{v}_{2}\right)\\
+A\left(\vec{v}_{1}\right)-A\left(\vec{v}_{2}\right) & = & A\left(\vec{v}_{2}\right)-A\left(\vec{v}_{2}\right)\\
+A\left(\vec{v}_{1}\right)-A\left(\vec{v}_{2}\right) & = & \vec{0}\\
+A\left(\vec{v}_{1}-\vec{v}_{2}\right) & = & \vec{0}\end{eqnarray*}
+
+\end_inset
+
+ אבל אז 
+\begin_inset Formula $\left(\vec{v}_{1}-\vec{v}_{2}\right)\in ker\left(A\right)$
+\end_inset
+
+ בסתירה לנתון ש
+\begin_inset Formula $ker\left(A\right)=\left\{ \vec{0}\right\} $
+\end_inset
+
+.
+ אזי לא קיימים 
+\begin_inset Formula $\vec{v}_{1},\vec{v}_{2}\in V$
+\end_inset
+
+ כך ש
+\begin_inset Formula $A\left(\vec{v}_{1}\right)=A\left(\vec{v}_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f}_{1} & = & \begin{pmatrix}1\\
+1\end{pmatrix}\\
+\vec{f_{2}} & = & \begin{pmatrix}-2\\
+2\end{pmatrix}\\
+\vec{f_{3}} & = & \begin{pmatrix}0\\
+-1\end{pmatrix}\\
+y & = & \begin{pmatrix}1\\
+2\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראו שהפירוק 
+\begin_inset Formula $\vec{y}=a_{1}\vec{f}_{1}+\alpha_{2}\vec{f}_{2}+\alpha_{3}\vec{f}_{3}$
+\end_inset
+
+ של 
+\begin_inset Formula $\vec{y}$
+\end_inset
+
+לפי הווקטורים ההתחלתיים 
+\begin_inset Formula $\vec{f}_{1},\vec{f}_{2},\vec{f}_{3}$
+\end_inset
+
+ אינו יחיד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}1\\
+2\end{pmatrix} & = & \begin{pmatrix}\alpha_{1}\\
+\alpha_{1}\end{pmatrix}+\begin{pmatrix}-2\alpha_{2}\\
+2\alpha_{2}\end{pmatrix}+\begin{pmatrix}0\\
+-a_{3}\end{pmatrix}\\
+\begin{pmatrix}1\\
+2\end{pmatrix} & = & \begin{pmatrix}a_{1}-2\alpha_{2}\\
+\alpha_{1}+2\alpha_{2}-\alpha_{3}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נבחר 
+\begin_inset Formula $\alpha_{2}$
+\end_inset
+
+ שרירותי, מזה נקבל 
+\begin_inset Formula $\alpha_{1}$
+\end_inset
+
+ ושתי אילו קובעים לנו את 
+\begin_inset Formula $\alpha_{3}$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{1} & = & 1+2\alpha_{2}\\
+\alpha_{3} & = & 2-\alpha_{1}-2\alpha_{2}\\
+ & = & 2-\left(1+2\alpha_{2}\right)-2\alpha_{2}\end{eqnarray*}
+
+\end_inset
+
+
 \end_layout
 
 \end_body

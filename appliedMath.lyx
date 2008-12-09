@@ -6931,7 +6931,724 @@ f\left(x\right)=\log_{2}x\]
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Section
+נגזרות חשובות
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x^{n}\right)^{'} & = & nx^{n-1}\\
+\left(e^{x}\right)^{'} & = & e^{x}\\
+\left(\ln x\right)^{'} & = & \frac{1}{x}\\
+\left(\sin x\right)^{'} & = & \cos x\\
+\left(\cos x\right)^{'} & = & -\sin x\\
+\left(\tan x\right)^{'} & = & \frac{1}{\cos^{2}x}\\
+\left(a^{x}\right)^{'} & = & a^{x}\ln a\\
+\left(\cosh x\right)^{'} & = & \sinh x\\
+\sinh x & = & \cosh x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: חשבו את הנגזרות הבאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\left(\sqrt[7]{2x+\ln x}\right) & = & \frac{\partial}{\partial x}\left(2x+\ln x\right)^{\frac{1}{7}}\\
+ & = & \frac{1}{7}\left(2x+\ln x\right)^{-\frac{6}{7}}\cdot\left(2+\frac{1}{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\left(\frac{\sin x}{x}\right)=\frac{x\cos x-\sin x}{x^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\left(\frac{x}{\ln^{2}\left(7x^{2}+3x-5\right)}\right)=\frac{1\cdot\ln^{2}\left(7x^{2}+3x-5\right)-x\cdot2\cdot\ln\left(7x^{2}+3x-5\right)\frac{1}{7x^{2}+3x-5}\cdot\left(14x+3\right)}{\ln^{4}\left(7x^{2}+3x-5\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\left(x^{x^{x}}\right) & = & \frac{\partial}{\partial x}e^{\ln x\cdot x^{x}}\\
+ & = & e^{\ln x\cdot x^{x}}\cdot\left(\ln x\cdot x^{x}\right)^{'}\\
+ & = & e^{\ln x\cdot x^{x}}\left(\frac{1}{x}\cdot x^{x}+\ln x\cdot\left(x^{x}\right)^{'}\right)\\
+ & = & e^{\ln x\cdot x^{x}}\left(\frac{1}{x}\cdot x^{x}+\ln x\cdot\left(e^{\ln x\cdot x}\right)^{'}\right)\\
+ & = & e^{\ln x\cdot x^{x}}\left(\frac{1}{x}\cdot x^{x}+\ln x\cdot e^{\ln x\cdot x}\left(\ln x\cdot x\right)^{'}\right)\\
+ & = & e^{\ln x\cdot x^{x}}\left(\frac{1}{x}\cdot x^{x}+\ln x\cdot e^{\ln x\cdot x}\cdot\left(\ln x+1\right)\right)\\
+ & = & x^{x^{x}}\left(x^{x-1}\ln x\cdot x^{x}\cdot\left(\ln x+1\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+איך לזכור נגזרות של פונקציות הפוכות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & \sin^{-1}x\\
+x & = & \sin y\\
+\frac{\partial}{\partial y}x & = & \frac{\partial}{\partial y}\sin y\\
+\frac{\partial x}{\partial y} & = & \cos x\\
+\frac{1}{\left(\frac{\partial y}{\partial x}\right)} & = & \frac{1}{\cos y}\\
+ & = & \frac{1}{\sqrt{1-\sin^{2}y}}\\
+ & = & \frac{1}{\sqrt{1-x^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נגזרת של פונקציה סתומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\cos\left(xy\right)-y=x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חשב את 
+\begin_inset Formula $\frac{\partial y}{\partial x}$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\left(\cos\left(xy\right)-y\right) & = & \frac{\partial x}{\partial x}\\
+-\sin\left(xy\right)\cdot\left(y+xy^{'}\right)-y^{'} & = & 1\\
+y^{'} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+קירוב ליניארי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & \approx & P\left(a\right)\\
+ & = & f\left(a\right)+f^{'}\left(a\right)\cdot\left(x-a\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל הקירוב הליניארי של 
+\begin_inset Formula $\ln x$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $x=1$
+\end_inset
+
+ הוא 
+\begin_inset Formula \[
+P\left(x\right)=0+1\left(x-1\right)=x-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת ליבניץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(f\cdot g\right)^{\left(n\right)}=\sum_{i=0}^{n}{n \choose k}f^{\left(i\right)}g^{\left(n-i\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+11
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=e^{-\frac{1}{x^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לצייר אז 
+\begin_inset Formula $e^{\frac{1}{x^{2}}}$
+\end_inset
+
+ כדי לכבל מוסג על איך נראת הפונקציה לפני שמצירים אותה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c17d1.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $e^{-\frac{1}{x^{2}}}$
+\end_inset
+
+ היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c17d2.svg
+	width 80text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אם מנסים לבנות טור טילור סביב אפס מקבלים כי 
+\begin_inset Formula $f^{\left(n\right)}\left(0\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ אזי מקבלים 
+\begin_inset Formula $P_{n}^{f}\left(x\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+נוסחת 
+\lang english
+Taylor
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x_{1}\right)=P_{n}^{f}\left(x_{1}\right)+\frac{f^{\left(n-1\right)}\left(c\right)}{\left(n+1\right)!}\left(x_{1}-a\right)^{n}\]
+
+\end_inset
+
+ אזי קיים מספר 
+\begin_inset Formula $c$
+\end_inset
+
+ כך שזה נכון.
+ זאת היא השארית בצורת לגרנג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+La Grange
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection
+משמעות גיאומטרית של נוסחת טילור
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $n=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\exists c\in\left(a,x_{1}\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x\right)=f\left(a\right)+f^{'}\left(c\right)\left(x_{1}-a\right)$
+\end_inset
+
+ זאת אומרת כי 
+\begin_inset Formula $\frac{f\left(x_{1}\right)-f\left(a\right)}{x_{1}-a}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+מצא את 
+\begin_inset Formula $\ln\left(1.1\right)$
+\end_inset
+
+בדיוק של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ ספרות אחרי הנקודה,
+\begin_inset Formula $<\frac{1}{2}10^{-5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\frac{x^{5}}{5}-\frac{x^{6}}{6}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השארית היא 
+\begin_inset Formula $\frac{0.1^{n+1}}{n+1}$
+\end_inset
+
+ אזי רוצים 
+\begin_inset Formula $\frac{0.1^{n+1}}{n+1}<\frac{1}{2}10^{-5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאמה מס.
+\numeric on
+12
+\end_layout
+
+\begin_layout Section
+קירוב מוביל ותת-מוביל
+\end_layout
+
+\begin_layout Standard
+טור טילור של 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula \[
+\sum_{n=0}^{\inf}\frac{f^{\left(n\right)}\left(x-a\right)^{n}}{n!}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טור טילור עד מקום 
+\begin_inset Formula $n$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $P_{n}^{f}\left(x\right)$
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ פולינום ממעלה 
+\begin_inset Formula $k\leq n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P_{n}^{f}\left(x\right)=f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $0\leq k$
+\end_inset
+
+ מספר טבעי קטן ביותר כך ש 
+\begin_inset Formula $f^{\left(k\right)}\left(a\right)\neq0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $k<L$
+\end_inset
+
+ מספר טבעי קטן ביותר כך ש 
+\begin_inset Formula $f^{\left(L\right)}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{f}\left(x\right)=\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}+\dots+\frac{f^{\left(L\right)}\left(a\right)\left(x-a\right)^{L}}{L!}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $f\left(x\right)=\sin x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P_{f}\left(x\right)=x-\frac{x^{3}}{3!}+\dots$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגדרה: אם כותבים 
+\begin_inset Formula $f\left(x\right)=o\left(g\left(x\right)\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{f\left(x\right)}{g\left(x\right)}\underset{x\to0}{\to0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה: כאשר 
+\begin_inset Formula $x\to0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sin\left(x\right)-x=-\frac{x^{3}}{3}+\frac{x^{3}}{5!}-\dots=o\left(x^{2}\right)$
+\end_inset
+
+ זה כמו לאומר 
+\begin_inset Formula $\sin x=x+o\left(x^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sin x=x-\frac{x^{3}}{6}+o\left(x^{3}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin^{2}\left(x\right) & = & \left(x-\frac{x^{3}}{6}+o\left(x^{3}\right)\right)^{2}\\
+ & = & x^{2}+\frac{x^{4}}{3}+\dots+o\left(x^{5}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x^{4}}\left(\sin^{2}x\right)\mid_{x=0}=-\frac{4!}{3}=-8\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נקודות קריטיות של פונקציות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=a$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f^{'}\left(a\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(x\right)=f\left(a\right)+\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $k$
+\end_inset
+
+ זוגי ו
+\begin_inset Formula $f^{\left(k\right)}\left(a\right)>0$
+\end_inset
+
+ אזי זה מינימום., אם הוא חיובי אז זה מקסימום.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $k$
+\end_inset
+
+ אי זוגי אזי זאת נקודת פיתול כלומר מקבלים נקודת פיתול באופן בלתי תלוי ב
+\begin_inset Formula $f^{'}\left(a\right)$
+\end_inset
+
+, מה שצריך להתקיים זה ש
+\begin_inset Formula $f^{\left(k\right)}\left(x\right)$
+\end_inset
+
+ הראשון שבו 
+\begin_inset Formula $f^{\left(k\right)}\left(a\right)\neq0$
+\end_inset
+
+ יהי 
+\begin_inset Formula $k$
+\end_inset
+
+ אי-זוגי.
+\end_layout
+
+\begin_layout Section
+דוגמאות לחקירת פונקציה
+\end_layout
+
+\begin_layout Standard
+צריך לעשות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(0\right)$
+\end_inset
+
+ חיתוך עם ציר 
+\begin_inset Formula $y$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $f\left(x\right)=0$
+\end_inset
+
+ השורשים.
+\end_layout
+
+\begin_layout Itemize
+אסימפטוטות.
+\end_layout
+
+\begin_layout Itemize
+סימנים של 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+נק' קריטיות ולפעמים גם את נקודות הפיתול.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\frac{x^{2}+4}{x+1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ גדל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & \approxeq & x\\
+f\left(x\right) & = & x+o\left(x\right)\\
+f\left(x\right) & = & \frac{x^{2}\left(1+\frac{1}{x^{2}}\right)}{x\left(1+\frac{1}{x}\right)}\\
+ & = & x\cdot\left(1+\frac{4}{x^{2}}\right)\cdot\left(1+\frac{1}{x}\right)^{-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ גדול כלומר 
+\begin_inset Formula $x\to\inf$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x\left(1-\frac{1}{x}+o\left(\frac{1}{x}\right)\right)\\
+ & = & x-1+o\left(1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרך אחרת למצא את האסימפטוטה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{x^{2}+4}{x+1} & = & \frac{x^{2}-1+5}{x+1}\\
+ & = & x-1+\frac{5}{x+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצא נרודות קיצון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f^{'}\left(x\right) & = & 0\\
+\frac{\left(x^{2}+4\right)\cdot1-\left(x+1\right)\left(2x\right)}{\left(x+1\right)^{2}} & = & 0\\
+x^{2}+2x-4 & = & 0\\
+x & = & -1\pm\sqrt{5}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר למצא אם הנקודות מקסימום או מינימום דרך עוד גזירה או דרך ציור של המונה
+ 
+\begin_inset Formula $f^{'}\left(x\right)$
+\end_inset
+
+ ולראות שהנגזרת עוברת משלילי לחיובי בנקודה וההפך בנקודה אחרת ולציין מקסימום
+ ומינימום.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c18d1.svg
+	width 80text%
+
+\end_inset
+
 
 \end_layout
 
