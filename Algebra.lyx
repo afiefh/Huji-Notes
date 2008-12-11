@@ -4951,5 +4951,253 @@ a_{1} & = & 1+2\alpha_{2}\\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+13
+\end_layout
+
+\begin_layout Standard
+מה קורה אם מחליפים השורה השניה במטריצת היחידה ב 
+\begin_inset Formula $\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}1 & 0 & 0\\
+0 & \lambda & 0\\
+0 & 0 & 1\end{pmatrix}\cdot\begin{pmatrix}1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9\end{pmatrix}=\begin{pmatrix}1 & 2 & 3\\
+\lambda4 & \lambda5 & \lambda6\\
+7 & 8 & 9\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם מחליפים שתי שורות?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}0 & 1 & 0\\
+1 & 0 & 0\\
+0 & 0 & 1\end{pmatrix}\cdot\begin{pmatrix}1 & 2 & 3\\
+4 & 5 & 6\\
+7 & 8 & 9\end{pmatrix}=\begin{pmatrix}4 & 5 & 6\\
+1 & 2 & 3\\
+7 & 8 & 9\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים במטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\circ\left(B\circ C\right)=\left(A\circ B\right)\circ C\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\circ B\neq B\circ A\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אופרטור הפכי ומטריצה הפכית
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ הוא האופרטור ההפכי של האופרטור הליניארי 
+\begin_inset Formula $A$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\left(A^{-1}\left(\vec{v}\right)\right)=\vec{v}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ ליניארי? כן, אם 
+\begin_inset Formula $A$
+\end_inset
+
+ ליניארי אזי 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ ליניארי, זה ניתן לבדוק על ידי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A^{-1}\left(\alpha\vec{u}+\beta\vec{v}\right)\overset{?}{=}\alpha A^{-1}\left(\vec{u}\right)+\beta A^{-1}\left(\vec{v}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מסמנים 
+\begin_inset Formula $\vec{u}=A\left(\vec{x}\right)$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{v}=A\left(\vec{y}\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A^{-1}\left(\alpha\vec{u}+\beta\vec{v}\right) & = & A^{-1}\left(\alpha A\left(\vec{x}\right)+\beta A\left(\vec{y}\right)\right)\\
+ & = & A^{-1}\left(A\left(\alpha\vec{x}+\beta\vec{y}\right)\right)\\
+ & = & \alpha\vec{x}+\beta\vec{y}\\
+ & = & \alpha A^{-1}\left(\vec{u}\right)+\beta A^{-1}\left(\vec{v}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ הוא ליניארי, ולכן יש לו מטריצה.
+ המטריצה 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ היא הפכית של 
+\begin_inset Formula $A$
+\end_inset
+
+ לכן 
+\begin_inset Formula $A\circ A^{-1}=E=\begin{pmatrix}1 & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & 1\end{pmatrix}$
+\end_inset
+
+ וניתן לראת כי המטריצה ההפכית של 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $A^{-1^{-1}}$
+\end_inset
+
+ היא 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $A^{-1^{-1}}=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ לא מטריצה ריבועית אף פעם אין לה הפכית.
+\end_layout
+
+\begin_layout Section
+פתרון מערכות משוואות דרך מטריצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}a_{11}x_{1}+\dots+a_{1n}x_{n}\\
+\dots+\dots+\dots\\
+a_{n1}x_{1}+\dots+a_{nn}x_{n}\end{pmatrix} & = & \begin{pmatrix}b_{1}\\
+\vdots\\
+b_{n}\end{pmatrix}\\
+A\cdot\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\end{pmatrix} & = & \begin{pmatrix}b_{1}\\
+\vdots\\
+b_{n}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לקבל את הפתרון על ידי מהכפלה ב 
+\begin_inset Formula $A^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A^{-1}\cdot A\cdot\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\end{pmatrix} & = & A^{-1}\begin{pmatrix}b_{1}\\
+\vdots\\
+b_{n}\end{pmatrix}\\
+\begin{pmatrix}x_{1}\\
+\vdots\\
+x_{n}\end{pmatrix} & = & A^{-1}\begin{pmatrix}b_{1}\\
+\vdots\\
+b_{n}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

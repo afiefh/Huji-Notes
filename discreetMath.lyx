@@ -6171,5 +6171,334 @@ Erdess-Seckeres
  שהיא סדרה מונוטונית עולה או סדרה מונוטונית יורדת
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{n}=\frac{1}{n+1}{2n \choose n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש קופאית שאין לה עודף, ויש שני סוגים של אנשים סוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ יש להם בדיוק מטבע אחד לשלם, סוג 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שצריכה להחזיר להם מטבע עודף, אז אם יש טור מבצורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+112122
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אין בעיה.
+\end_layout
+
+\begin_layout Standard
+עושים מישור ואומרים שכל "
+\numeric on
+1
+\numeric off
+" הוא צעד ימינה, וכל "
+\numeric on
+2
+\numeric off
+" הוא צעד למעלה.
+ אז אנחנו תמיד נמהיה מתחת ל
+\begin_inset Formula $y=x$
+\end_inset
+
+ כי צריך להיות יודר אנשים מסוג "
+\numeric on
+1
+\numeric off
+" מאשר מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+"
+\numeric on
+2
+\numeric off
+"
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/tmp1d1.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזיז את כל המסלולים ימינה, אז כל מסלול שחוצה את הקו עכשיו נוגע בו.
+\end_layout
+
+\begin_layout Standard
+אם רוצים להגיע מ
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(b,c\right)$
+\end_inset
+
+ דרך צעדים ימינה ולמעלה: 
+\begin_inset Formula ${c-a+d-b \choose c-a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן במסלול הזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/tmp1d2.svg
+	lyxscale 30
+	width 50theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל מסלול יש נקודה ראשונה שבה הוא נוגע במסלול, אז אפשר להתאים לקו הזה דרך
+ שיקוף החלק מתחת הקו אז מקבלים
+\end_layout
+
+\begin_layout Standard
+אז קיבלנו התאמה חד חד ערכית ועל בין מסלולים מ
+\begin_inset Formula $\left(1,0\right)$
+\end_inset
+
+ הנוגעים בקו למסלולים מ
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ ל
+\begin_inset Formula $\left(n+1,n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן מספר המסלולים הנוגעים בקו שווה למספר המסלולים מ
+\begin_inset Formula $\left(0,1\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(n+1,n\right)$
+\end_inset
+
+ ומספרן הוא 
+\begin_inset Formula $\frac{\left(2n\right)!}{\left(1+n\right)!\left(n-1\right)!}$
+\end_inset
+
+)מהמשוואה שקיבל נולמעלה(
+\end_layout
+
+\begin_layout Standard
+לכן מסלולים שלא נוגעים שווה לכל המסלולים פחות המסלולים שכן נוגעים.
+ 
+\begin_inset Formula \begin{eqnarray*}
+\frac{\left(2n\right)!}{n!n!}-\frac{\left(2n\right)!}{n!\left(n+1\right)!} & = & \frac{\left(2n\right)!}{\left(n+1\right)!n!}\left[\left(n+1\right)-n\right]\\
+ & = & \frac{\left(2n\right)!}{\left(n+1\right)!n!}\cdot1\\
+ &  & \frac{1}{n+1}{2n \choose n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: מספרי קטלן 
+\begin_inset Formula $C_{n}$
+\end_inset
+
+ מקימים את נוסחת הנסיגה הבאה: 
+\begin_inset Formula $c_{0}=1,c_{n}=\sum_{k-1}^{n}C_{k-1}C_{n-k}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\end_layout
+
+\begin_layout Standard
+סדרה היא מאוזנת אם יש לה בדיוק אותו מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\numeric off
+.
+ היא מינימאלית אם אין לה ראשה)התחלה( שבה היא מאוזנת
+\end_layout
+
+\begin_layout Standard
+טענה: לכל סדרה מאוזנת יש ראשה מינימאלית יחידה.
+\end_layout
+
 \end_body
 \end_document

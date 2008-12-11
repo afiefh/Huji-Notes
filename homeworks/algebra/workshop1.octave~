@@ -54,12 +54,12 @@ subplot(2,2,1);
 plot(xx,valuesy,'-',x,y,'*');
 
 subplot(2,2,2);
-plot(xx,valuesz,'-',x,z,'*');
+plot(xx,valuesz,'-',x,y,'*');
 
 subplot(2,2,3);
-plot(xx,valuesu,'-',x,u,'*');
+plot(xx,valuesu,'-',x,y,'*');
 
 subplot(2,2,4);
-plot(xx,valuesv,'-',x,v,'*');
+plot(xx,valuesv,'-',x,y,'*');
 
-print -dsvg workshop1.svg;
+print -dpng workshop1.png;

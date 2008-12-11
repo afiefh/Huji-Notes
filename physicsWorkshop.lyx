@@ -1115,5 +1115,493 @@ v\left(t\right) & = & -u_{0}\ln\left(m_{0}-\lambda t\right)-\mu_{k}gt+u_{0}\ln\l
 
 \end_layout
 
+\begin_layout Chapter
+סדנא מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Section
+אינטגרל מסילתי
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+מסילה היא פונקציה המתאמת נק' במרחב)כלומר וקטור 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+( לכל סקלר 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ בתחום כלשהוא 
+\begin_inset Formula $\alpha_{1}<\alpha<\alpha_{2}$
+\end_inset
+
+.
+ למשל 
+\begin_inset Formula $\vec{r}\left(x\right)=\left(x,x^{2}\right)$
+\end_inset
+
+ אז מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w5d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם למשל רוצים מסילה מעגלית)
+\begin_inset Formula $x^{2}+y^{2}=R^{2}$
+\end_inset
+
+( אזי אי אפשר לרשום 
+\begin_inset Formula $\vec{r}\left(x\right)=\left(x,\sqrt{R^{2}-x^{2}}\right)$
+\end_inset
+
+ כי זה יתן רק חזי עליון של מעגל, אם סמים 
+\begin_inset Formula $\pm$
+\end_inset
+
+ לפני השורש אז זה לא חד חד ערכית.
+ אזי משתמשים בפרמטריזציה אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}\left(\alpha\right)=\left(R\cos\alpha,R\sin\alpha\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w5d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+שדה ווקטורי הוא פונקציה המתאימה לכל וקטור 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ וקטור אחר 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+.
+ 
+\begin_inset Formula \[
+\vec{F}\left(\vec{r}\right)=\vec{F}\left(x,y,z\right)=F_{x}\left(x,y,z\right)\hat{x}+F_{y}\left(x,y,z\right)\hat{y}+F_{z}\left(x,y,z\right)\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטגרל מסילתי מסמנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{\gamma}\vec{F}\cdot\partial\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\partial\vec{r}=\left(\partial x,\partial y,\partial z\right)$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}\vec{F}\cdot\partial\vec{r} & = & \int_{\gamma}\left(F_{x}\partial x+F_{y}\partial y+F_{z}\partial z\right)\\
+ & = & \int_{\alpha_{1}}^{a_{2}}\left(F_{x}\frac{\partial x}{\partial\alpha}+F_{y}\frac{\partial y}{\partial\alpha}+F_{z}\frac{\partial z}{\partial\alpha}\right)\partial\alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא אינטגרל פשוט רגיל שמופיע בו נגזרות של 
+\begin_inset Formula $x,y,z$
+\end_inset
+
+ לפי 
+\begin_inset Formula $\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עבודה של כח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w=\int\vec{F}\cdot\partial\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=Axy\hat{x}+Ay^{2}\hat{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לחשב העבודה על מסלול רבע מעגל מ
+\begin_inset Formula $\left(R,0\right)$
+\end_inset
+
+ ל
+\begin_inset Formula $\left(0,R\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & R\cos\theta\\
+y & = & R\cos\theta\\
+\vec{r} & = & \left(R\cos\theta,R\sin\theta\right)\\
+0\leq & \theta & <\frac{\pi}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial r=\frac{\partial r}{\partial\theta}\partial\theta=\left(-R\sin\theta,R\cos\theta\right)\partial\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -AR\cos\theta R\sin\theta\hat{x}+A\left(R\sin\theta\right)^{2}\\
+\int\vec{F}\partial\vec{r} & = & \int\left(AR^{3}\sin^{2}\theta\cos\theta+AR^{3}\sin^{2}\theta\cos\theta\right)\partial\theta\\
+ & = & \int2AR^{3}\sin^{2}\theta\cos\theta\partial\theta\\
+ & = & 2AR^{3}\int\sin^{2}\theta\cos\theta\partial\theta\\
+ & = & 2AR^{3}\left[\frac{\sin^{3}\theta}{3}\right]_{0}^{\frac{\pi}{2}}=\frac{2}{3}AR^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גרדיאנט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}=\frac{\partial}{\partial x}\hat{x}+\frac{\partial}{\partial z}\hat{y}+\frac{\partial}{\partial z}\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נותן את הכיוון שבו הפונקציה משתנה האכי מהר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}u=\frac{\partial u}{\partial x}\hat{x}+\frac{\partial u}{\partial y}\hat{y}+\frac{\partial u}{\partial z}\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שדה/כח משמר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ointop\vec{F}\partial\vec{r}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר כל אינטגרל על מסילה סגורה היא אפס.
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{r_{1}}^{r_{2}}\vec{F}\partial\vec{r}=u\left(\vec{r}_{1}\right)-u\left(\vec{r}_{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם קיימת פונקציה סקלרית 
+\begin_inset Formula $u$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\vec{F}=-\vec{\nabla}u$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ משמר.
+\end_layout
+
+\begin_layout Standard
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w=\int\vec{F}\cdot\partial\vec{r}=\frac{1}{2}mv_{final}^{2}-\frac{1}{2}mv_{initial}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & m\vec{a}=m\dot{\vec{v}}\\
+\partial\vec{r} & = & \frac{\partial\vec{r}}{\partial t}\partial t=\vec{v}\partial t\\
+w & = & \int m\dot{\vec{v}}\cdot\vec{v}\partial t\\
+ & = & \int\frac{\partial}{\partial t}\left(\frac{mv^{2}}{2}\right)\partial t\\
+ & = & \left[\frac{mv^{2}}{2}\right]_{t_{initial}}^{t_{final}}\\
+ & = & \frac{1}{2}mv_{final}^{2}-\frac{1}{2}mv_{initial}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה:
+\end_layout
+
+\begin_layout Standard
+אם יש שתי כוחות, אחד משמר ואחד לא 
+\begin_inset Formula $F=F_{c}+F_{nc}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w & = & \frac{1}{2}mv_{final}^{2}-\frac{1}{2}mv_{final}^{2}\\
+\int\vec{F}\partial\vec{r} & = & \frac{1}{2}mv_{final}^{2}-\frac{1}{2}mv_{final}^{2}\\
+\int\vec{F}_{c}\partial\vec{r}+\int\vec{F}_{nc}\partial\vec{r} & = & \frac{1}{2}mv_{final}^{2}-\frac{1}{2}mv_{final}^{2}\\
+u_{i}-u_{f}+\int\vec{F}_{nc}\partial\vec{r} & = & \frac{1}{2}mv_{final}^{2}-\frac{1}{2}mv_{final}^{2}\\
+\int\vec{F}_{nc}\partial\vec{r} & = & \left(\frac{1}{2}mv_{final}^{2}+u_{f}\right)-\left(\frac{1}{2}mv_{final}^{2}+u_{i}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+רשימת כוחות משמרים
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+גרביטציה 
+\begin_inset Formula $F=-mg\hat{z},u=mgz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+גרביטציה\InsetSpace ~
+כללית 
+\begin_inset Formula $F=-\frac{Gm_{1}m_{2}}{r^{2}}\hat{r},u=\frac{-Gm_{1}m_{1}}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+קפיץ 
+\begin_inset Formula $F=-kx\hat{x},u=\frac{kx^{2}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מועד א' תשס"א
+\end_layout
+
+\begin_layout Standard
+מסה 
+\begin_inset Formula $m_{1}=1kg$
+\end_inset
+
+ תלויה על קפיץ אנכי וגורמת לו להתארך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $10cm$
+\end_inset
+
+.
+ מסה שניה 
+\begin_inset Formula $m_{2}=\frac{1}{2}kg$
+\end_inset
+
+ נופלת מגובה של מטר אחד על המסה הראשונה ונדבקת אליה.
+ חשבו את ההתארכות המקסימאלית של הקפיץ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physicsWorkshop/w5d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון:
+\end_layout
+
+\begin_layout Standard
+אין שימור אנרגיה כי המסות נדבקות זו לזו)התנגשות פלסטית( אבל עד ל 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ לפני ההתנגשות יש שימור אנרגיה.
+ בזמן ההתנגשות הקצר הזה 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ יש שימור תהע כי 
+\begin_inset Formula $P=P_{0}+\int f\partial t$
+\end_inset
+
+ אבל זמן האינטראקציה הוא קצר מאוד
+\begin_inset Formula $\left(\epsilon\right)$
+\end_inset
+
+ והכח הוא סופי אזי האינטגרל הוא זניח אזי 
+\begin_inset Formula $P=P_{0}$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

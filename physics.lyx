@@ -5869,5 +5869,801 @@ I & = & \frac{1}{2}MR^{2}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+התנע הוא מכפלת המהירות במסה.
+ 
+\begin_inset Formula $\vec{P}=m\cdot\vec{v}$
+\end_inset
+
+.
+ בעזרתו מגדירים את החור השני של ניוטון 
+\begin_inset Formula $\vec{F}=\frac{\partial\vec{P}}{\partial t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+חוק שימור התנע אומר שכל עוד אין כוחות חיצוניים אזי התנע נשאר קבוע.
+\end_layout
+
+\begin_layout Section
+בעית התנגשות אלסטית
+\end_layout
+
+\begin_layout Standard
+מסה 
+\begin_inset Formula $m_{1}$
+\end_inset
+
+ נעה במהירות 
+\begin_inset Formula $\vec{v_{1}}$
+\end_inset
+
+ ומתנגשת במסה 
+\begin_inset Formula $m_{2}$
+\end_inset
+
+ הנעה במהירות 
+\begin_inset Formula $\vec{v}_{2}$
+\end_inset
+
+.
+ ההתנגשות אלסטית לחלוטין)כלומר האנרגיה נשמרת בהתנגשות( אזי מה המהירויות
+ לפני ואחרי במערכת מרכז המסה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c22d1.svg
+	lyxscale 50
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $u_{1},u_{2}$
+\end_inset
+
+ המהירויות של שתי המסות לפני ההתנגשות במערכת מרכז המסה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{1} & = & v_{1}-v_{cm}\\
+ &  & v_{1}-\frac{m_{1}v_{1}+m_{2}v_{2}}{m_{1}+m_{2}}\\
+ &  & =\frac{\left(m_{1}+m_{2}\right)b_{1}-m_{1}v_{1}-m_{2}v_{2}}{m_{1}+m_{2}}\\
+ & = & \frac{m_{2}\left(v_{1}-v_{2}\right)}{m_{1}+m_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן: 
+\begin_inset Formula $V=v_{1}-v_{2},\mu=\frac{m_{1}m_{2}}{m_{1}+m_{2}}$
+\end_inset
+
+ אזי מקבלים 
+\begin_inset Formula \[
+u_{1}=\frac{\mu}{m_{1}}V\]
+
+\end_inset
+
+ באותה דרך רואים כי
+\begin_inset Formula \begin{eqnarray*}
+u_{2} & = & v_{2}-v_{cm}\\
+ &  & v_{2}-\frac{m_{1}v_{1}+m_{2}v_{2}}{m_{1}+m_{2}}\\
+ &  & \frac{\left(m_{1}+m_{2}\right)v_{2}-m_{1}v_{1}-m_{2}v_{2}}{m_{1}+m_{2}}\\
+ &  & \frac{m_{1}\left(v_{2}-v_{1}\right)}{m_{1}+m_{2}}\\
+ &  & -\frac{\mu}{m_{2}}V\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbrace{m_{1}u_{1}^{'}+m_{2}u_{2}^{'}}_{After} & = & \underbrace{m_{1}u_{1}+m_{2}u_{2}}_{Before}\\
+m_{1}u_{1}^{'}+m_{2}u_{2}^{'} & = & m_{1}\frac{\mu}{m_{1}}V+\mu_{2}\left(-\frac{\mu}{m}V\right)\\
+m_{1}u_{1}^{'}+m_{2}u_{2}^{'} & = & \underbrace{0}_{\begin{matrix}\mbox{Interesting: Motion after in the}\\
+\mbox{center of mass system is zero}\end{matrix}}\\
+m_{1}u_{1}^{'} & = & -m_{2}u_{2}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש כעת בשימור אנרגיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}u_{2}^{'^{2}} & = & \frac{1}{2}m_{1}u_{1}^{2}+\frac{1}{2}m_{1}u_{1}^{2}\\
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}u_{2}^{'^{2}} & = & \frac{1}{2}m_{1}\frac{\mu V^{2}}{m_{1}^{2}}+\frac{1}{2}\frac{\mu^{2}V^{2}}{m_{2}^{2}}\\
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}u_{2}^{'^{2}} & = & \left(\frac{1}{m_{1}}+\frac{1}{m_{2}}\right)\frac{1}{2}\mu^{2}V^{2}\\
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}u_{2}^{'^{2}} & = & \left(\frac{m_{1}+m_{2}}{m_{1}m_{2}}\right)\frac{1}{2}\mu^{2}V^{2}\\
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}u_{2}^{'^{2}} & = & \frac{1}{\mu}\frac{1}{2}\mu^{2}V^{2}\\
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}u_{2}^{'^{2}} & = & \frac{1}{2}\mu V^{2}\\
+\frac{1}{2}m_{1}u_{1}^{'^{2}}+\frac{1}{2}m_{2}\cdot\underbrace{\frac{m_{1}^{2}u_{1}^{'^{2}}}{m_{2}^{2}}}_{\begin{matrix}\mbox{From the}\\
+\mbox{\mbox{motion equation}}\end{matrix}} & = & \frac{1}{2}\mu V^{2}\\
+\left(m_{2}+\frac{m_{2}^{2}}{m_{2}}\right)u_{1}^{'^{2}} & = & \mu V^{2}\\
+m_{1}\frac{m_{1}m_{2}+m_{1}^{2}}{m_{2}m_{1}}u_{1}^{'^{2}} & = & \mu V^{2}\\
+m_{1}^{2}\cdot\frac{1}{\mu}u_{1}^{'^{2}} & = & \mu V^{2}\\
+u_{1}^{'^{2}} & = & \left(\frac{\mu V}{m_{1}}\right)^{2}\\
+ & = & u_{1}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי יש שתי פתרונות למשוואה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}u_{1}^{'}=-u_{1}\\
+u_{2}^{'}=-u_{2}\end{pmatrix},\begin{pmatrix}u_{1}^{'}=u_{1}\\
+u_{2}^{'}=u_{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל הפתרון שבו אף דבר לא משתנה לא מעניין כי הוא מתקבל אם הגופים לא התלקדו.
+\end_layout
+
+\begin_layout Section
+בעית מסילה עם התנגשות פלסטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c22d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונים 
+\begin_inset Formula $R,M,m$
+\end_inset
+
+ ונתון שזה בהתנגשות פלסטית.
+ רוצים לדעת את ה
+\begin_inset Formula $v$
+\end_inset
+
+ כך שהגוף לא יפול מהמסילה.
+\end_layout
+
+\begin_layout Standard
+פותרים ב
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שלבים:
+\end_layout
+
+\begin_layout Enumerate
+בודקים מה צריכה להיות המהירות כדי שהמסה לא תפול מהמסילה בראש המסלול
+\end_layout
+
+\begin_layout Enumerate
+משיקולי אנרגיה מקבלים מה צריכה להיות המהירות בתחתית המסלול
+\end_layout
+
+\begin_layout Enumerate
+משיקולי תנע מקבלים מה צריך להיות 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נתחיל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N+\left(M+m\right)g\sin\theta & = & \frac{\left(M+m\right)u^{2}}{R}\\
+N & = & \left(\frac{u^{2}}{R}-g\sin\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים ש
+\begin_inset Formula $N>0$
+\end_inset
+
+ בכל 
+\begin_inset Formula $\theta$
+\end_inset
+
+ ורואים כי יש מינימום בראש המסלול.
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & > & 0\\
+\left(M+m\right)\left(\frac{u^{2}}{R}-g\sin\theta\right) & > & 0\\
+\frac{u^{2}}{R}-g\sin\theta & > & 0\\
+u^{2} & > & gR\sin\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם מקימים אז זה כאשר 
+\begin_inset Formula $\theta=90$
+\end_inset
+
+ כלומר בשיא הגובה אז מקימים אז תה תמיד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{c}=\sqrt{gR}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שלב שני משתמשים בשימור אנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E^{'} & = & E\\
+\frac{1}{2}mv^{'^{2}} & = & \frac{1}{2}mu^{2}+mgh\\
+\frac{1}{2}mv^{'^{2}} & = & \frac{1}{2}mgR+2mgR\\
+v^{'^{2}} & = & gR+4gR\\
+v^{'} & = & \sqrt{5gR}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו משתמשים בתנע להגיע למהירות 
+\begin_inset Formula $v$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mv & = & \left(M+m\right)v^{'}\\
+v & = & \frac{\left(M+m\right)\sqrt{5gR}}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תרגיל של טיפת מים
+\end_layout
+
+\begin_layout Standard
+טיפת מים נופלת ובנפילה היא אוספת מסה, מה היא משוואת התנועה שלה?
+\end_layout
+
+\begin_layout Standard
+לא יכולים להשתמש ב
+\begin_inset Formula \[
+m\left(t\right)g=m\left(t\right)a\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה שנכון זה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \dot{\vec{P}}\\
+mg & = & m\dot{\vec{v}}+\dot{m}\vec{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נמציא מודל לפתור הבעיה הזו: נניח טיפה כדורית הסופחת באופן רציף ואחיד
+ בכל הכיוונים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial m}{\partial t}=\alpha\underbrace{S}_{\begin{matrix}\mbox{Surface}\\
+\mbox{Area}\end{matrix}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m & = & \rho\frac{4\pi}{3}R^{3}\\
+R & = & \sqrt[3]{\frac{3m}{4\pi\rho}}\\
+S & = & 4\pi R^{2}\\
+ & = & 4\pi\left(\frac{3m}{4\pi\rho}\right)^{\frac{2}{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו משוואה דיפרנציאלית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial m}{\partial t}=\gamma m^{\frac{2}{3}}\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ הוא כל הקבועים שלנו)שלא רוצים לראות כעת(
+\end_layout
+
+\begin_layout Standard
+גדי לפתור אז זה צריכים תנאי התחלה אז מניחים כי 
+\begin_inset Formula $m\left(0\right)=m_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial m}{\partial t} & = & \gamma m^{\frac{2}{3}}\\
+\frac{\partial m}{m^{\frac{2}{3}}} & = & \gamma\partial t\\
+\int\frac{\partial m}{m^{\frac{2}{3}}} & = & \int\gamma\partial t\\
+3m^{\frac{1}{3}} & = & \gamma t+c\\
+m & = & \left(\frac{\gamma t}{3}+\frac{c}{3}\right)^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן מחדש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m & = & \left(at+b\right)^{3}\\
+a & = & \frac{\gamma}{3}\\
+m\left(0\right) & = & 0\\
+\left(a\cdot0+b\right)^{3} & = & 0\\
+b & = & m_{0}^{\frac{1}{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נפתור משואת התנועה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mg & = & m\dot{v}+\dot{m}v\\
+\left(at+b\right)^{3}g & = & \left(at+b\right)^{3}\dot{v}+3a\left(at+b\right)^{2}v\\
+g & = & \dot{v}+\frac{3a}{at+b}v\\
+\frac{\partial v}{\partial t} & = & g-\frac{3a}{at+b}v\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא יודעים איך לפתור אזי ננסה לענות על השאלה מה קורה אחרי זמן רב 
+\begin_inset Formula $t\to\inf$
+\end_inset
+
+.
+ אזי המסה תהיה גדולה מאוד ואפשר להנח כי היא כבר קבועה.
+ נסמן תאוצה זו ב 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbrace{A}_{\dot{v}} & = & g-\frac{2a}{at+b}\underbrace{At}_{v}\\
+A & = & g-3a\cdot A\\
+A & = & \frac{g}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+17
+\end_layout
+
+\begin_layout Standard
+נזכיר את הניסוי שהתחיל את כל העניין של תע זביתי: שני גלגלים באותה מסה אחד
+ מגיע לתחתית המישור המשופע לפני השני.
+ למה? היום נקבל תשובה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c23d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבוד במרכז המסה כי כן יכולים לפרק התנע הזוויתי לשני חלקים 
+\begin_inset Formula $\vec{L}=\vec{L}_{cm}+\vec{l}$
+\end_inset
+
+ שזה אפשר רק במרכז המסה.
+ נשתמש במערכת צירים של המישור המשופע)
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ בכיוון התנועה,
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+ לתוך הציור.(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\vec{a}_{cm} & = & \left(mg\sin\alpha-f\right)\hat{y}\\
+\frac{\partial}{\partial t}\vec{l} & = & \vec{N}^{'}\\
+ & = & \vec{r}_{0}\times\vec{f}\\
+ & = & \vec{r}_{0}f\hat{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש עוד אילוץ וזה כי הגוף לא מחליק, כלומר המהירות התנגנסיאלית של הנקודה הנוגעת
+ במשטח)נקודה מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+( היא אפס, כלומר 
+\begin_inset Formula $v_{t_{1}}^{'}=-v_{cm}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula \begin{eqnarray*}
+\vec{v}_{t_{1}}^{'} & = & -\vec{v}_{cm}\\
+\vec{\omega}\times\vec{r}_{0} & = & -\vec{v}_{cm}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב המשוואה השניה לראשונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{l} & = & I\vec{\omega}\\
+\frac{\partial}{\partial t}\vec{l} & = & I\frac{\partial\vec{\omega}}{\partial t}\\
+r_{0}f\hat{x} & = & I\frac{\partial\vec{\omega}}{\partial t}\\
+\frac{\partial\omega}{\partial t} & = & \frac{r_{0}}{I}f\hat{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}_{cm} & = & \frac{\partial}{\partial t}\vec{v}_{cm}\\
+ & = & -\frac{\partial}{\partial t}\left(\vec{\omega}\times\vec{r}_{0}\right)\\
+ & = & \left(-\frac{\partial\omega}{\partial t}\right)\times\vec{r}_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}_{cm} & = & -\frac{r_{0}}{I}f\left(\hat{x}\times\vec{r}_{0}\right)\\
+ & = & \frac{r_{0}}{I}fr_{0}\cdot\hat{y}\\
+ &  & \frac{r_{0}^{2}}{I}f\cdot\hat{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו מציבים הכל למשוואה 
+\begin_inset Formula $I$
+\end_inset
+
+ ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\vec{a}_{cm} & = & \left(mg\sin\alpha-f\right)\hat{y}\\
+\frac{m\vec{r}_{0}^{2}}{I}f\hat{y} & = & \left(mg\sin\alpha-f\right)\hat{y}\\
+f & = & \frac{mg\sin\alpha}{1+\frac{mr_{0}^{2}}{I}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר דורשים כי כח החיכוך יהיה בגודל מסויים אם ברגע מסויים דורשים יותר ממה
+ שהוא יכול לספק הגוף יתחיל להחליק והתשובה שלנו לא תהיה שווה כלום.
+\end_layout
+
+\begin_layout Standard
+מציבים החיכוך עבור המשוואה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{a}_{cm} & = & \frac{r_{0}^{2}}{I}f\cdot\hat{y}\\
+ & = & \frac{g\sin\alpha}{1+\frac{I}{mr_{0}^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשיעור הקודם קיבלנו שהאינרציה של גליל מלא היא 
+\begin_inset Formula \begin{eqnarray*}
+I & = & \frac{1}{2}MR^{2}\\
+ & = & \frac{1}{2}\left\{ \rho\pi R^{2}H\right\} r^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מורידים ממנו גליל קטן יותר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{hollow} & = & \frac{1}{2}\left\{ \rho\pi R^{2}H\right\} R^{2}-\frac{1}{2}\left\{ \rho\pi r^{2}H\right\} r^{2}\\
+ & = & \frac{1}{2}\rho\pi H\left\{ R^{4}-r^{4}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M & = & \rho\pi R^{2}H-\rho\pi r^{2}H\\
+ & = & \rho\pi H\left(R^{2}-r^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{hollow} & = & \frac{1}{2}M\frac{R^{4}-r^{4}}{R^{2}-r^{2}}\\
+ & = & \frac{1}{2}MR^{2}\frac{1-\left(\frac{r}{R}\right)^{4}}{1-\left(\frac{r}{R}\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם 
+\begin_inset Formula $r\to R$
+\end_inset
+
+? כלומר הגליל הזה דק מאוד אזי 
+\begin_inset Formula $\lim_{r\to R}I=\inf$
+\end_inset
+
+ זה בגלל שהמסה קבועה אבל היא מרוכזת בגליל הדק הזה.
+\end_layout
+
+\begin_layout Section
+מערכות נעות
+\end_layout
+
+\begin_layout Subsection
+תנע
+\end_layout
+
+\begin_layout Standard
+אם יש שתי מערכות שנעות אחת ביחס לשניה אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r} & = & \vec{R}+\vec{r}^{'}\\
+\vec{v} & = & \vec{V}+\vec{v}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P}_{s} & = & \sum m_{i}\vec{v}_{i}\\
+ & = & \sum m_{i}\left(\vec{V}+\vec{v}^{'}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{P}_{s}=M\vec{V}+\vec{P}_{s^{'}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת מרכז המסה מקבלים כי 
+\begin_inset Formula $\vec{P}_{s^{'}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אנרגיה
+\end_layout
+
+\begin_layout Standard
+באותה מערכת נחשב את האנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k_{s}} & = & \frac{1}{2}\sum m_{i}\vec{v}_{i}^{2}\\
+ & = & \frac{1}{2}\sum m_{i}\left(\vec{V}+\vec{v}_{i}\right)^{2}\\
+ & = & \frac{1}{2}MV^{2}+\frac{1}{2}\sum m_{i}\vec{v}_{i}^{2}+V\vec{P}_{s^{'}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{k_{s}}=\frac{1}{2}MV^{2}+E_{k_{s^{'}}}+\vec{V}\vec{P}_{s^{'}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ויש רק מערכת אחת שבה הרכיב האחרון נופל וזו מערכת מרכז המסה.
+\end_layout
+
 \end_body
 \end_document
