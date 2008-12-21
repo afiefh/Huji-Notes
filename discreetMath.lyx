@@ -6500,5 +6500,1382 @@ C_{n}=\frac{1}{n+1}{2n \choose n}\]
 טענה: לכל סדרה מאוזנת יש ראשה מינימאלית יחידה.
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+13
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ הוא האוך המקסימאלי של תת-סדרה מונוטונית יורדת המתחילה ב
+\begin_inset Formula $u_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $1<s_{i}<n$
+\end_inset
+
+ ו
+\begin_inset Formula $1<r_{i}<n$
+\end_inset
+
+ כמה אפשרויות של זוג כזה יש? זה 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל מופיעים 
+\begin_inset Formula $n^{2}+1$
+\end_inset
+
+ זוגות אזי לפי עקרון השובך יש שני זוגות שווים 
+\begin_inset Formula $S_{i}=S_{j},r_{i}=r_{j}$
+\end_inset
+
+ ונראה כי זה לא ייתכן
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $u_{i}<u_{j}$
+\end_inset
+
+ כל תת סדרה מונוטונית עולה המתחילה ב
+\begin_inset Formula $u_{j}$
+\end_inset
+
+ ניתן להאריך ע"י התחלה ב
+\begin_inset Formula $u_{i}$
+\end_inset
+
+, זה גורר כי 
+\begin_inset Formula $S_{i}>S_{j}$
+\end_inset
+
+ וקיבלנו סתירה ל
+\begin_inset Formula $S_{i}=S_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באותו אופן אם 
+\begin_inset Formula $u_{i}>u_{j}$
+\end_inset
+
+ אז כל סדרה מונוטונית יורדת המתחילה ב
+\begin_inset Formula $u_{j}$
+\end_inset
+
+ ניתנת להארכה ע"י הוספת 
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ לכן במקרה זה 
+\begin_inset Formula $r_{i}>r_{j}$
+\end_inset
+
+ וקיבלנו סתירה ל
+\begin_inset Formula $r_{i}=r_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו סתירה להנחה הראשונה שלנו.
+ אזי הוכחנו המשפט.
+\end_layout
+
+\begin_layout Standard
+תרגיל: בנו סדרה באורך 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ של מספרים ממשיים שונים שאין לה תת-סדרה מונוטונית עולה באורך 
+\begin_inset Formula $n+1$
+\end_inset
+
+ ולא תת סדרה מונוטונית יורדת באורך 
+\begin_inset Formula $n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: בכל קבוצה של 
+\begin_inset Formula $n$
+\end_inset
+
+ אנשים)
+\begin_inset Formula $n\geq2$
+\end_inset
+
+( קיימים זוג אנשים שמקירים בדיוק אותו מספר אנשים.
+\end_layout
+
+\begin_layout Standard
+נסדר אז האנשים 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ לכל 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ יהי 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ מספר האנשים אותו מקיר האדם ה-
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ 
+\begin_inset Formula $0\leq d_{i}\leq n-1$
+\end_inset
+
+ אזי קיימת פונקציה השולחת מ
+\begin_inset Formula $\left\{ 1\dots n\right\} \to\left\{ 0\to n-1\right\} $
+\end_inset
+
+ אבל לא יכולים להשתמש בעכרון השובך כי יש 
+\begin_inset Formula $n$
+\end_inset
+
+ מקורות ו
+\begin_inset Formula $n$
+\end_inset
+
+ יעדים.
+ אזי משתמשים בלמה:
+\end_layout
+
+\begin_layout Standard
+למה: תמונת 
+\begin_inset Formula $d$
+\end_inset
+
+ לא יכולה להכיל גם את 
+\begin_inset Formula $0$
+\end_inset
+
+ וגם את 
+\begin_inset Formula $n-1$
+\end_inset
+
+)כי אם בן אדם לא מקיר אף אחד אז אין אדם שמקיר את כולם כי אם הוא היה מקיר
+ אותם אז היה מקיר את האדם הזה(
+\end_layout
+
+\begin_layout Standard
+אזי יש 
+\begin_inset Formula $n-1$
+\end_inset
+
+ יעדים, אזי לפי עכרון השובך קיימים שני מקורות כך ש
+\begin_inset Formula $1\leq i\neq j\leq n$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $d_{i}=d_{j}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $i$
+\end_inset
+
+ ו
+\begin_inset Formula $j$
+\end_inset
+
+ מקירים אותו מספר אנשים
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+14
+\end_layout
+
+\begin_layout Section
+הרכבה של עכרון השובך
+\end_layout
+
+\begin_layout Standard
+טענה: אם נפזר 
+\begin_inset Formula $kn+1$
+\end_inset
+
+ כדורים ב 
+\begin_inset Formula $n+1$
+\end_inset
+
+ תאים אז קיים תא שיש בו לפחות 
+\begin_inset Formula $k+1$
+\end_inset
+
+ כדורים.
+\end_layout
+
+\begin_layout Standard
+הוכחה: יהיו 
+\begin_inset Formula $a_{1}\dots a_{n}$
+\end_inset
+
+ מס מספר הכדורים בתאים אזי אם לא קיים תא שבו 
+\begin_inset Formula $k+1$
+\end_inset
+
+ כדורים אזי 
+\begin_inset Formula $\sum_{i=1}^{n}a_{i}\leq\sum_{i=1}^{n}k\leq nk$
+\end_inset
+
+ בסתירה שיש 
+\begin_inset Formula $kn+1$
+\end_inset
+
+ כדורים.
+\end_layout
+
+\begin_layout Standard
+טענה: בכל קבוצה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים קיימים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים המקירים זה את זה או שלושה אנשים שאינם מקירים זה את זה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/tmp2d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר או שיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משולש או שיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ נקודות שאין ביניהם אף קו.
+\end_layout
+
+\begin_layout Standard
+נסמן אחד מהם ב'א' ונחךק את האחרים לאילו שמקירים את א ואילו שלא מקירים את
+ א.
+ לכן לפי עקרון השובך המורחב קיימת קבוצה בעלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים לפחות.
+\end_layout
+
+\begin_layout Standard
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+: קבוצת המקירים את א מכילה לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים.
+ אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים בקבוצה א המקירים זה את זה אז אזי יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים שמקירים זה את זה.
+ אם אין שני אנשים כאילו אזי מצאנו קבוצה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים שלא מקירים זה את זה
+\end_layout
+
+\begin_layout Standard
+מקרה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: קבוצת הלא מקירים מכילה לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים.
+ אם קיים זוג בקבוצה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שאינם מקירים זה את זה אזי זוג זה עם 'א' הם קבוצה שבה כל זוג לא מקיר זה את
+ זה.
+ אם אין זוג כזה אז כל זוג מכיר זה את זה אזי מצאנו כבוצה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שמקירים זה את זה.
+ 
+\end_layout
+
+\begin_layout Section
+עכרון ההכלה וההדחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|A\cup B\right|=\left|A\right|+\left|B\right|-\left|A\cap B\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|A\cup B\cup C\right|=\left|A\right|+\left|B\right|+\left|C\right|-\left|A\cap B\right|-\left|A\cap C\right|-\left|B\cap C\right|+\left|A\cap B\cap C\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זהי 
+\begin_inset Formula $A_{1}\dots A_{n}$
+\end_inset
+
+ קבוצה סופית אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|A_{1}\cup\dots\cup A_{n}\right| & = & \begin{matrix}\sum_{i=1}^{n}\left|A_{i}\right|-\sum_{1\leq i<j\leq n}\left|A_{i}\cup A_{j}\right|+\sum_{1\leq i<j<l\leq n}\left|A_{i}\cap A_{j}\cap A_{l}\right|\\
+-\sum\dots+\left(-1\right)^{m-1}\left|A_{1}\cup\dots\cup A_{m}\right|\end{matrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אנחנו צריכים להוכיח כי כל נקודה שנמצאת באיחוד נספרת בדיוק פעם אחת.
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $x$
+\end_inset
+
+ שייך בדיוק ל
+\begin_inset Formula $m$
+\end_inset
+
+ קבוצות.
+ כלומר 
+\begin_inset Formula $x\in A_{i_{1}}\dots A_{i_{m}}$
+\end_inset
+
+.
+ אז נראה מה 
+\begin_inset Formula $x$
+\end_inset
+
+ טורם לכל אחד מהסכומים האלה.
+\end_layout
+
+\begin_layout Standard
+מה טרומת 
+\begin_inset Formula $x$
+\end_inset
+
+ לסכום הימיני?
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\sum\left|A_{i}\right|$
+\end_inset
+
+ 
+\begin_inset Formula $m={m \choose 1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\sum\left|A_{i}\cap A_{j}\right|$
+\end_inset
+
+ 
+\begin_inset Formula ${m \choose 2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\sum\left|A_{i}\cap A_{j}\cap A_{l}\right|$
+\end_inset
+
+ 
+\begin_inset Formula ${m \choose 3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\left|A_{1}\cup\dots\cup A_{m}\right|$
+\end_inset
+
+ 
+\begin_inset Formula ${m \choose m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך להוכיח כי 
+\begin_inset Formula ${m \choose 1}-{m \choose 2}+{m \choose 3}+\dots+{m \choose m}=1$
+\end_inset
+
+ כלומר כי 
+\begin_inset Formula \begin{eqnarray*}
+1-\left[{m \choose 1}-{m \choose 2}+{m \choose 3}+\dots+\left(-1\right)^{m-1}{m \choose m}\right] & = & 0\\
+{m \choose 0}-{m \choose 1}+{m \choose 2}-{m \choose 3}+\dots\left(-1\right)^{m}{m \choose m} & = & 0\\
+\sum_{s=0}^{m}\left(-1\right)^{s}{m \choose s} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם מספר הקבוצות הזוגיות שווה למספר הקבוצות האי זוגיות.
+\end_layout
+
+\begin_layout Standard
+תזכורת להוכחה זו 
+\begin_inset Formula $0-\left(1-1\right)^{m}=\left(1+\left(-1\right)\right)^{m}=\sum_{s=0}^{m}{m \choose s}\left(-1\right)^{s}\cdot1^{m-s}$
+\end_inset
+
+ )כותבים הדבר לפי בינום ניוטון(
+\end_layout
+
+\begin_layout Section
+פונקצית אוילר
+\end_layout
+
+\begin_layout Standard
+נדבר עכשיו אל המספרים הטבעיים 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ והסימון 
+\begin_inset Formula $a\vert b$
+\end_inset
+
+ מסמן כי 
+\begin_inset Formula $a$
+\end_inset
+
+ מחלק את 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a$
+\end_inset
+
+ זר ל
+\begin_inset Formula $b$
+\end_inset
+
+ פירושו 
+\begin_inset Formula $\left(a,b\right)=1$
+\end_inset
+
+ כלומר ל
+\begin_inset Formula $a$
+\end_inset
+
+ ו
+\begin_inset Formula $b$
+\end_inset
+
+ אין מחלק משותף.
+\end_layout
+
+\begin_layout Standard
+הגדרת פונקצית אוילר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi\left(1\right) & = & 1\\
+\phi\left(n\right) & = & \left|\left\{ k\vert\begin{matrix}1\leq k\leq n\\
+\left(k,n\right)=1\end{matrix}\right\} \right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר מספר כל המספרים הקטנים מ
+\begin_inset Formula $n$
+\end_inset
+
+ הזרים לו.
+ 
+\begin_inset Formula $\phi\left(2\right)=1,\phi\left(3\right)=2,\phi\left(4\right)=2,\phi\left(5\right)=4,\phi\left(6\right)=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז נשאלת השאלה איך מחשבים 
+\begin_inset Formula $\phi\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט: יהי 
+\begin_inset Formula $P_{1}\dots P_{k}$
+\end_inset
+
+ המספרים הראשוניים המופיעים בפיתוח של 
+\begin_inset Formula $n$
+\end_inset
+
+: 
+\begin_inset Formula $n=p_{1}^{\alpha_{1}}\cdots p_{k}^{a_{k}}$
+\end_inset
+
+ 
+\begin_inset Formula $\left(\alpha_{i}\geq1\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi\left(n\right)=n\prod_{i=1}^{k}\left(1-\frac{1}{p_{i}}\right)=\prod_{i=1}^{k}p_{i}^{\alpha_{i}-1}\left(p_{i}-1\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A_{p_{i}}=\left\{ l\vert\begin{matrix}1\leq l\leq n\\
+p_{i}\vert l\end{matrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $i<j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A_{p_{i}}\cap A_{p_{j}}=\left\{ l\vert\begin{matrix}1\leq l\leq n\\
+p_{1}\cdot p_{2}\vert l\end{matrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל מספר שאיננו זר ל 
+\begin_inset Formula $n$
+\end_inset
+
+ חייב להתחלק לפחות באחד מהראשוניים 
+\begin_inset Formula $p_{1}\dots p_{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S=\left\{ l\vert\begin{matrix}1\leq l\leq n\\
+\mbox{l is not zar to n}\end{matrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi\left(n\right)=n-\left|S_{n}\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מה זה אומר?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S_{n}=A_{p_{1}}\cup\dots\cup A_{p_{n}}\]
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $A_{p_{i}}$
+\end_inset
+
+ הם המספרים המתחלקים ב
+\begin_inset Formula $p_{i}$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|S_{n}\right| & = & \left|A_{p_{1}}\cup\dots\cup A_{p_{n}}\right|\\
+ & = & \sum_{i=1}^{k}\underbrace{\left|A_{p_{i}}\right|}_{\frac{n}{p_{i}}}-\sum_{i\leq i<j\leq k}\underbrace{\left|A_{p_{i}}\cap A_{p_{i}}\right|}_{\frac{n}{p_{i}p_{j}}}-\sum_{i\leq i<j<r\leq k}\underbrace{\left|A_{p_{i}}\cap A_{p_{j}}\cap A_{p_{r}}\right|}_{\frac{n}{p_{i}p_{j}p_{r}}}\dots+\left(-1\right)^{k-1}\left|A_{p_{1}}\cap\dots\cap A_{p_{k}}\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi\left(n\right) & = & n-\left|S_{n}\right|\\
+ & = & n-\sum\frac{n}{p_{i}}+\sum\frac{n}{p_{i}p_{j}}-\sum\frac{n}{p_{i}p_{j}p_{r}}\dots+\left(-1\right)^{k}\frac{n}{p_{1}\dots p_{k}}\\
+ & = & n\left(1-\sum\frac{1}{p_{i}}+\sum\frac{1}{p_{i}p_{j}}-\sum\frac{1}{p_{i}p_{j}p_{r}}\dots+\left(-1\right)^{k}\frac{1}{p_{1}\dots p_{k}}\right)\\
+ & = & n\left(1-\frac{1}{p_{1}}\right)\left(1-\frac{1}{p_{2}}\right)\left(1-\frac{1}{p_{3}}\right)\cdots\left(1-\frac{1}{p_{k}}\right)\\
+ & = & n\prod_{i=1}^{k}\left(1-\frac{1}{p_{i}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגול מס.
+\numeric on
+99
+\end_layout
+
+\begin_layout Section
+מגדלי הנוי
+\end_layout
+
+\begin_layout Standard
+כדי לפתור בעית מגדלי הנוי של 
+\begin_inset Formula $n$
+\end_inset
+
+ דיסקיות צריכים 
+\begin_inset Formula $h_{n}=2h_{n-1}+1$
+\end_inset
+
+ כי להעביכ כל הדיסקיות פחות הראשונה למגדל השני זה 
+\begin_inset Formula $h_{n-1}$
+\end_inset
+
+, להעביר הדיסקה הגדולה למגדל השלישי היא 
+\begin_inset Formula $1$
+\end_inset
+
+ ולהעביר הדיסקיות חזרה למגדל הרשון זה 
+\begin_inset Formula $h_{n-1}$
+\end_inset
+
+.
+ רואים כי 
+\begin_inset Formula $h_{1}=1,h_{2}=3,h_{3}=7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניזכר בפיבונצי, 
+\begin_inset Formula $F_{n}=F_{n-1}+F_{n-2}$
+\end_inset
+
+ ויודעים כי 
+\begin_inset Formula $F_{n}=A\left(\frac{1+\sqrt{5}}{2}\right)^{n}+B\left(\frac{1-\sqrt{5}}{2}\right)^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי רוצים לפתור גם את בעית מגדלי הנוי.
+ ננסה לפתור משהוא יותר כל: 
+\begin_inset Formula $C_{n}=2C_{n-1}$
+\end_inset
+
+.
+ במקרה זה מקבלים כי 
+\begin_inset Formula $C_{n}=2^{n-1}C_{1}$
+\end_inset
+
+ אבל נסמן 
+\begin_inset Formula $a=\frac{c_{1}}{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $C_{n}=a\cdot2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל אם זה מוזז בקבוע אזי גם הפתרון יהיה מוזז.
+ ננחש: 
+\begin_inset Formula $h_{n}=a2^{n}+b$
+\end_inset
+
+.
+ נציב את זה ביחס הריקורסיה: 
+\begin_inset Formula $h_{n}=2h_{n-1}+1$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+a2^{n}+b & = & 2\left(a2^{n-1}+b\right)+1\\
+b & = & 2b+1\\
+b & = & -1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נשתמש בתנאי ההתחלה למצא את 
+\begin_inset Formula $a$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a2^{1}-1 & = & 1\\
+2a & = & 2\\
+a & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h_{n}=2^{n}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השתמשנו בניחוש אז הבא נוכיח כי זה הוא הפתרון:
+\end_layout
+
+\begin_layout Standard
+)תוכיח את זה באינדוקציה(
+\end_layout
+
+\begin_layout Section
+עזרה בבעית תרגיל בית
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $T_{4}$
+\end_inset
+
+ מצולע בעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צלעות, רוצים לחלק אותו למשולשים שלא נחתכים.
+ דרך אחת לחלק זה לבחור זווית ולהוציא ממנה אלכסונים לכל מקום.
+\end_layout
+
+\begin_layout Standard
+דרך אחרת היא לעשות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+zig zag
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כזה.
+ מה שצריך להוכיח זה כי מספר המשולשים הם כמו מספר קטלן.
+ 
+\begin_inset Formula $T_{0}=1$
+\end_inset
+
+ לפי הגדרה.
+\end_layout
+
 \end_body
 \end_document

@@ -1,0 +1,765 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|A\times A\right|=n^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר היחסים הוא לבחור אם איבר מסויים הוא ביחס או שהוא לא ביחס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יחס רפלקסיבי כלומר 
+\begin_inset Formula $\forall a\in A:\left(a,a\right)\in\Re$
+\end_inset
+
+ כלומר כבר קבענו 
+\begin_inset Formula $n$
+\end_inset
+
+ בחירות של לכלול או לא לכלול לכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n^{2}-n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יחס סימטרי כלומר 
+\begin_inset Formula $\forall a,b\in A:\left(a,b\right)\in\Re\Leftrightarrow\left(b,a\right)\in\Re$
+\end_inset
+
+, לכן אנחנו לא יכולים לבחור 
+\begin_inset Formula $\frac{\left(n-1\right)^{2}}{2}$
+\end_inset
+
+ זוגות)משולש שלא מכיל את הציר 
+\begin_inset Formula $\left(n,n\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n^{2}-\frac{\left(n-1\right)^{2}}{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+איו ספרות צמודות זו לזו? על מה מדברים, תמיד יהיו ספרות צמודות.
+ אני מניח שמתקוונים לספרות זהות: ספרה ראשונה אסור לה להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+, כל ספרה אחרת אסור לה להיות שווה מימין לה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9\cdot9\cdot9\cdot9\cdot9\cdot9\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל הספרות שונות זו מזו: הספרה הראשונה אסורה להיות אפס, הספרה השניה אסורה
+ להיות הספרה הראשונה...
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9\cdot9\cdot8\cdot7\cdot6\cdot5\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמה מספרים שש ספרתים יש?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9\cdot10^{5}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+דרכים לסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ אנשים זה 
+\begin_inset Formula $n!$
+\end_inset
+
+, לסדר אותם סביב שולחן עגול זה פירושו להסיר הסדרות שמתקבלות על ידי סיבוב
+ סדרה אחרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{n!}{n}=\left(n-1\right)!\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+להשיב 
+\begin_inset Formula $n$
+\end_inset
+
+ נשים זה 
+\begin_inset Formula $n!$
+\end_inset
+
+ להשיב 
+\begin_inset Formula $n$
+\end_inset
+
+ גברים זה 
+\begin_inset Formula $n!$
+\end_inset
+
+.
+ להשיב 
+\begin_inset Formula $n$
+\end_inset
+
+ גברים ו
+\begin_inset Formula $n$
+\end_inset
+
+ נשים כך שאין תלות בין שתי המאורעות זה 
+\begin_inset Formula $\left(n!\right)^{2}$
+\end_inset
+
+.
+ להסיר את החזרות זה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\left(n!\right)^{2}}{2n}=\frac{n\left(n-1\right)!}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+אם יש לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים שרוצים להשיב על שלחן עגול אז יש 
+\begin_inset Formula $8!$
+\end_inset
+
+ דרכים להשיב אותם.
+ אם רוצים להשיב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים על ספסל אז יש 
+\begin_inset Formula $9!$
+\end_inset
+
+ דרכים להשיב אותם.
+ יש 
+\begin_inset Formula ${18 \choose 9}$
+\end_inset
+
+ דרכים לחלק אותם.
+ לכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{18 \choose 9}8!9!\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{18 \choose 9}\left(8!\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראשית נבחר אילו שיושבים על שלחן עגול ראשון: 
+\begin_inset Formula ${18 \choose 6}$
+\end_inset
+
+, יש 
+\begin_inset Formula $5!$
+\end_inset
+
+ דרכים להשיב אותם.
+ אחר כך נבחור אילו שישבו על השלחן העגול השני 
+\begin_inset Formula ${12 \choose 6}$
+\end_inset
+
+ יש 
+\begin_inset Formula $5!$
+\end_inset
+
+ דרכים להשיב אותם.
+ אילו שנשארו יש 
+\begin_inset Formula $6!$
+\end_inset
+
+ דרכים להשיב אותם על הספסל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{18 \choose 6}5!\cdot{12 \choose 6}5!\cdot6!\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+זה דומה לבעית להשיב 
+\begin_inset Formula $n=20$
+\end_inset
+
+ בני אדם סביב שלחן עגול:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{20!}{20}=19!\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+זה לבחור אחד מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+13
+\numeric off
+,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+פעמים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+13^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לבחור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ילדים מהכיתה)בלי לבחור מישהו יותר מפעם אחת(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{13 \choose 3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לבחור סבתא יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+13
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אפשרויות, לבחור הזאב יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+12
+\numeric off
+....
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+13\cdot12\cdot11\cdot10\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

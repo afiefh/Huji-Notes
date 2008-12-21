@@ -7652,5 +7652,1015 @@ x & = & -1\pm\sqrt{5}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Standard
+פולינום טילור מסדר 
+\begin_inset Formula $r$
+\end_inset
+
+ סביב 
+\begin_inset Formula $a$
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא 
+\begin_inset Formula $P_{r}^{f}\left(x\right)=\sum_{k=0}^{r}\frac{f^{\left(k\right)}\left(a\right)}{k!}\left(x-a\right)^{k}$
+\end_inset
+
+ ומתקיים בו כי 
+\begin_inset Formula $f\left(a\right)=P_{r}^{f}\left(a\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f^{\left(k\right)}\left(a\right)=P_{r}^{f}\left(a\right)$
+\end_inset
+
+.
+ לכל פונקציה יש אוסף נקודות שבהם הפונקציה מתכנסת.
+ אוסף זה נקרא תחום ההתכנסות של טור טילור זה.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{x}=x+\frac{x^{2}}{2}+\dots=\sum_{n=0}^{\inf}\frac{x^{n}}{n!}$
+\end_inset
+
+ מתכנסת לכל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin x=\sum_{n=0}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n+1\right)!}x^{2n+1}$
+\end_inset
+
+ גם לכל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin x=\sum_{n=0}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n\right)!}x^{2n}$
+\end_inset
+
+ גם לכל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\ln\left(1+x\right)=x-\frac{x^{2}}{2}+\frac{x^{3}}{3}-\frac{x^{4}}{4}+\dots=\sum_{n=0}^{\inf}\frac{\left(-1\right)^{n}}{n}x^{n}$
+\end_inset
+
+ מתכנס כאשר 
+\begin_inset Formula $-1<x<\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{1+x}=1-x+x^{2}-x^{3}+\dots=\sum_{n=0}^{\inf}\left(-x\right)^{n}$
+\end_inset
+
+ מתכנס ב 
+\begin_inset Formula $-1<x<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\arctan x=x-\frac{x^{3}}{3}+\frac{x^{5}}{6}\dots=\sum_{n=0}^{\inf}\frac{\left(-1\right)^{n}}{2n+1}x^{2n+1}$
+\end_inset
+
+ מתכנס ב 
+\begin_inset Formula $-x\leq x\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט:שארית מצורת לגרנג': אם 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה 
+\begin_inset Formula $n+1$
+\end_inset
+
+ פעמים בסביבת 
+\begin_inset Formula $a$
+\end_inset
+
+ והסביבה כוללת את 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $c$
+\end_inset
+
+ בין 
+\begin_inset Formula $a$
+\end_inset
+
+ ל-
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ כך שהשארית מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ היא 
+\begin_inset Formula $R_{n}\left(x_{1}\right)=\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x_{1}-a\right)^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגילים:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+.
+ חשבו את 
+\begin_inset Formula $e$
+\end_inset
+
+ על ידי קירוב רציונאלי עם דיוק קטן מ
+\begin_inset Formula $10^{-5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \sum_{n=0}^{N}\frac{1}{n!}x^{n}+\sum_{n=N+1}^{\inf}\frac{1}{n!}x^{n}\\
+ & = & \sum_{n=0}^{n}\frac{1}{n!}x^{n}+\frac{f^{\left(N+1\right)}\left(c\right)}{\left(N+1\right)!}\left(x-1\right)^{N+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי רוצים 
+\begin_inset Formula $\frac{f^{\left(N+1\right)}\left(c\right)}{\left(N+1\right)!}\left(x-1\right)^{N+1}<10^{-5}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<c<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{f^{\left(N+1\right)}\left(c\right)}{\left(N+1\right)!}\left(x-1\right)^{N+1}=\frac{e^{c}}{\left(N+1\right)!}<\frac{e}{\left(N+1\right)!}<\frac{3}{\left(N+1\right)!}<10^{5}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+3\cdot10^{5} & < & \left(N+1\right)!\\
+N & \leq & 8\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e\approx1+\frac{1}{2!}+\frac{1}{3!}+\frac{1}{4!}+\dots+\frac{1}{8!}=\frac{109601}{40320}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(x\right) & = & \sum_{n=0}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n+1\right)!}x^{2n+1}\\
+ & = & 1-\frac{1}{3}+\frac{1}{5}-\frac{1}{7}+\frac{1}{9}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו סדרה ש:
+\end_layout
+
+\begin_layout Enumerate
+הסימנים מתחלפים
+\end_layout
+
+\begin_layout Enumerate
+כל איבר גדול בערך מוחלט מזה שבא אחריו.
+\end_layout
+
+\begin_layout Standard
+אזי יש משפט שאומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\sum_{n=N+1}^{\inf}a_{n}x^{n}\right|<\left|a_{n+1}x^{N+1}\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נרצה כי 
+\begin_inset Formula $\sin x-P_{N}^{\sin x}\left(x\right)<10^{-5}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{0.2^{2N+3}}{\left(2N+3\right)!}<10^{-5}\]
+
+\end_inset
+
+רואים כי 
+\begin_inset Formula $N=2$
+\end_inset
+
+ מספיק כבר.
+\end_layout
+
+\begin_layout Section
+סימוני למדאו 
+\begin_inset Formula $o\left(\right),O\left(\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הריבוי של 
+\begin_inset Formula $0$
+\end_inset
+
+ של פונקציה 
+\begin_inset Formula $f\left(x\right)=\left(x-a\right)^{n}$
+\end_inset
+
+ היא 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אבל איך להגדיר את זה למקרה הכללי?
+\end_layout
+
+\begin_layout Standard
+משפט: הסדר של שורש של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא המספר המינימאלי שבו 
+\begin_inset Formula $f\left(0\right)=f^{'}\left(0\right)=\dots=f^{\left(k-1\right)}\left(0\right)=0$
+\end_inset
+
+ ו 
+\begin_inset Formula $f^{\left(k\right)}\left(0\right)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאמר ש 
+\begin_inset Formula $f\left(x\right)=o\left(\left(x-a\right)^{n}\right)$
+\end_inset
+
+ אם סדר האפסים של 
+\begin_inset Formula $f$
+\end_inset
+
+ בנק' 
+\begin_inset Formula $a$
+\end_inset
+
+ גזירה ממש מ- 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin x & \sim & o\left(x^{0}\right)\\
+\sin x-x & \sim & o\left(x^{1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעזרת פעולות על טור טילור מצאו את האיבר המוביל)האיבר הראשון שלא מתאפס( והתת
+ מוביל)האיבר השני שלא מתאפס( של 
+\begin_inset Formula $f$
+\end_inset
+
+ בסביבת 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \ln x-x\\
+ & \approx & \underbrace{1}_{\mbox{movil}}-\underbrace{\frac{1}{2}\left(x-1\right)^{2}}_{\mbox{tat movil}}+\frac{1}{3}\left(x-1\right)^{3}+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \frac{1-\frac{x^{2}}{2}-\cos x}{x^{3}}\\
+a & = & 0\\
+f\left(x\right) & \approx & \frac{1-\frac{x^{2}}{2}-\left(1-\frac{x^{3}}{2!}+\frac{x^{4}}{4!}-\frac{x^{6}}{6!}+\dots\right)}{x^{3}}\\
+ & = & \frac{-\frac{x^{4}}{4!}+\frac{x^{6}}{6!}+\dots}{x^{3}}\\
+ & = & -\frac{x}{4!}+\frac{x^{3}}{6!}+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+13
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\numeric off
+: האינטגרל הלא מסוים
+\end_layout
+
+\begin_layout Standard
+הגדרה לפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ אומרים כי 
+\begin_inset Formula $F$
+\end_inset
+
+ הפונקציה הקדומה שלה אם"ם 
+\begin_inset Formula $F^{'}=f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה: 
+\begin_inset Formula $\frac{\partial}{\partial x}\left(\sin x\right)=\cos x$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\sin x$
+\end_inset
+
+ היא פונקציה קדומה של 
+\begin_inset Formula $\cos x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכל פונקציה יש אינסוף פונקציות קדומות כי אם 
+\begin_inset Formula $F$
+\end_inset
+
+ קדומה של 
+\begin_inset Formula $f$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $F+c$
+\end_inset
+
+ עבור 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ היא פונקציה קדומה לה.
+\end_layout
+
+\begin_layout Standard
+אם גם 
+\begin_inset Formula $F$
+\end_inset
+
+ ו
+\begin_inset Formula $G$
+\end_inset
+
+ הם קדומות של 
+\begin_inset Formula $f$
+\end_inset
+
+ אזי 
+\begin_inset Formula $F-G=constant$
+\end_inset
+
+ כי אם 
+\begin_inset Formula $F^{'}=f$
+\end_inset
+
+ ו 
+\begin_inset Formula $G^{'}=f$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(F-G\right)^{'}=0\Rightarrow F-G=constant$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $F$
+\end_inset
+
+ קדומה של 
+\begin_inset Formula $f$
+\end_inset
+
+ אזי כותבים 
+\begin_inset Formula $\int f\left(x\right)\partial x=F+c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות:
+\end_layout
+
+\begin_layout Standard
+אינטגרל של סכום:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\left(f\left(x\right)+g\left(x\right)\right)\partial x=\int f\left(x\right)\partial x+\int g\left(x\right)\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטגרציה בחלקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int uv^{'}=uv-\int u^{'}v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב גם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int fg=f\int g-\int\left(f^{'}\int g\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטגרציה על ידי הצבה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int f\left(x\right)\partial x=\int f\left(\phi\left(t\right)\right)\phi^{'}\left(t\right)\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\phi\left(t\right)=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{\sqrt{a^{2}-x^{2}}} & = & \int\frac{\partial x}{\sqrt{a^{2}\left(1-\frac{x^{2}}{a^{2}}\right)}}\\
+ & = & \frac{1}{a}\int\frac{\partial x}{\sqrt{1-\frac{x^{2}}{a^{2}}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים 
+\begin_inset Formula $u=\frac{x}{a}\Rightarrow x=ua$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{a}\int\frac{\partial x}{\sqrt{1-\frac{x^{2}}{a^{2}}}} & = & \frac{1}{a}\int\frac{u^{'}\partial u}{\sqrt{1-u^{2}}}\\
+ & = & \frac{1}{a}\int\frac{a\partial u}{\sqrt{1-u^{2}}}\\
+ & = & \int\frac{\partial u}{\sqrt{1-u^{2}}}\\
+ & = & \arcsin\left(u\right)+c\\
+ & = & \arcsin\left(\frac{x}{a}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{a^{2}+x^{2}} & = & \sinh^{-1}\left(\frac{x}{a}\right)+c\\
+\int\frac{\partial x}{x^{2}-a^{2}} & = & \cosh^{-1}\left(\frac{x}{a}\right)+c\\
+\int\frac{\partial x}{a^{2}-x^{2}} & = & \frac{1}{a}\tanh^{-1}\left(\frac{x}{a}\right)+c\\
+\int\frac{\partial x}{a^{2}+x^{2}} & = & \frac{1}{a}\tan^{-1}\left(\frac{x}{a}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{1}{\tan\left(ax\right)}\partial x & = & \frac{1}{a}\int\frac{1}{\tan t}\partial t\\
+ & = & \frac{1}{a}\ln\left(\sin t\right)+c\\
+ & = & \frac{1}{a}\ln\left(\sin\left(ax\right)\right)+c\\
+ & = & \frac{1}{a}\ln\left|\sin\left(ax\right)\right|+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{1}{\left(x+1\right)^{2}+4}\partial x & = & \int\frac{1}{t^{2}+4}\partial t\\
+ & = & \frac{1}{2}\tan^{-1}\left(\frac{t}{2}\right)+c\\
+ & = & \frac{1}{2}\tan^{-1}\left(\frac{x+1}{2}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השלמה לריבוע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{x^{2}-4x+8} & = & \int\frac{\partial x}{\left(x-2\right)^{2}+4}\\
+ & = & -\int\frac{\partial x}{2-\left(x-2\right)^{2}}\\
+ & = & -\frac{1}{\sqrt{2}}\tanh\left(\frac{x-2}{\sqrt{2}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{\sqrt{8+2x-x^{2}}} & = & \int\frac{\partial x}{\sqrt{-\left(x-1\right)^{2}+9}}\\
+ & = & \sin^{-1}\left(\frac{x-1}{3}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות של אינטגרציה בחלקים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\underbrace{\ln x}_{1\cdot\ln x}\partial x & = & \ln x\int1\partial x-\int\left(\left(\ln x\right)^{'}\int1\partial x\right)\partial x\\
+ & = & x\ln x-\int\left(\frac{1}{x}\cdot x\right)\partial x\\
+ & = & x\ln x-x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+14
+\end_layout
+
+\begin_layout Section
+אינטגרציה לפי חלקים
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{1}{x}\ln x\partial x & = & \left(\ln x\right)\left(\ln x\right)-\int\frac{1}{x}\left(\ln x\right)\partial x+c\\
+2\int\frac{1}{x}\ln x\partial x & = & \ln^{2}x+c\\
+\int\frac{1}{x}\ln x\partial x & = & \frac{1}{2}\ln^{2}x+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת נסיגה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{n} & = & \int x^{n}e^{x}\partial x\\
+ & = & x^{n}\int e^{x}\partial x-\int\left(\left(nx^{n-1}\right)\left(\int e^{x}\partial x\right)\partial x\right)\\
+ & = & x^{n}e^{x}-n\cdot I_{n-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\left(\ln x\right)^{n}\partial x & \underset{\begin{matrix}t=\ln x\\
+\partial x=e^{t}\partial t\end{matrix}}{=} & \int t^{n}e^{t}\partial t\\
+ & = & \left(-1\right)^{n}n!\left(\frac{\left(-t\right)^{n}}{n!}+\frac{\left(-t\right)^{n-1}}{\left(n-1\right)!}+\dots+1\right)e^{t}+c\\
+ & = & \left(-1\right)^{n}n!\left(\frac{\left(-\ln x\right)^{n}}{n!}+\frac{\left(-\ln x\right)^{n-1}}{\left(n-1\right)!}+\dots+1\right)x+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמאות של הצבה
+\end_layout
+
+\begin_layout Standard
+א.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\left(t^{3}+t\right)e^{t^{4}+2t^{2}+5}\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x=t^{4}+2t^{2}+5\Rightarrow\partial x=\left(4x^{3}+4t\right)\partial t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int e^{x}\frac{1}{4}\partial x & = & \frac{1}{4}e^{x}+c\\
+ & = & \frac{1}{4}e^{t^{4}+2t^{2}+5}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ פונקציה רציונאלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{r\left(t\right)}{\sqrt{1-t^{2}}}\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עושים הצבה 
+\begin_inset Formula $t=\sin\theta,\cos\theta=\sqrt{1-t^{2}},\partial t=\cos\partial\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{r\left(t\right)}{\sqrt{1-t^{2}}}\partial t & = & \int\frac{r\left(\sin\theta\right)}{\cos\theta}\cos\theta\partial\theta\\
+ & = & \int r\left(\sin\theta\right)\partial\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{t^{2}}{\sqrt{1-t^{2}}}\partial t & = & \int\frac{\sin^{2}\theta}{\cos\theta}\cos\theta\partial\theta\\
+ & = & \int\sin^{2}\theta\partial\theta\\
+ & = & \frac{1}{2}\left(\theta-\sin\theta\cos\theta\right)+c\\
+ & = & \frac{1}{2}\left(\arcsin t-t\sqrt{1-t^{2}}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\sqrt{1-t^{2}} & = & \int\cos\theta\cos\theta\partial t\\
+ & = & \int\cos^{2}\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש מקרים שאפשר להציב בהם יותר מדבר אחד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{r\left(t\right)\partial t}{\sqrt{1+t^{2}}}\Rightarrow\begin{cases}
+t=\tan\theta & 1+\tan^{2}=sec^{2}\theta\\
+t=\sinh x & \sqrt{1+\sinh^{2}x}=\cosh x\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{r\left(t\right)\partial t}{\sqrt{t^{2}-1}}\Rightarrow\begin{cases}
+t=sec\theta\\
+t=coshx & \sqrt{\cosh^{2}x=\sinh x}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אינטגרל של פונקציות רציונאליות של 
+\begin_inset Formula $\sin x,\cos x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\theta & = & \frac{2t}{1+t^{2}}\\
+\cos\theta & = & \frac{1-t^{2}}{1+r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int R\left(\cos\theta,\sin\theta\right)\partial\theta=\int R\left(\frac{1-t^{2}}{1+r^{2}},\frac{2t}{1+t^{2}}\right)\frac{2\partial t}{1+t^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{1+\cos\theta}{2+\sin\theta}\partial\theta & = & \int\frac{1+\frac{1-t^{2}}{1+t}}{2+\frac{2t}{1+t^{2}}}\cdot\frac{2\partial t}{1+t^{2}}\\
+ & = & \int\frac{4\partial t}{\left(1+t^{2}\right)\left(2+2t+2t^{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עוד הצבות יותר פשוטות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R\left(-x,y\right)=-R\left(x,y\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\cos^{3}\theta}{1+2\sin\theta}\partial\theta & \underset{\begin{matrix}t=\sin\theta\\
+\partial t=\cos\theta\partial\theta\end{matrix}}{=} & \int\frac{1-t^{2}}{1+2t}\partial t\\
+ & = & \ln\left(1-t^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R\left(x,-y\right)=R\left(x,y\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{\sin\theta}{1+\cos^{3}\theta}\partial\theta=\int\frac{-\partial t}{1+t^{3}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם 
+\begin_inset Formula \[
+R\left(-x,-y\right)=R\left(x,y\right)\]
+
+\end_inset
+
+ אזי כדאי להציב 
+\begin_inset Formula $t=\tan\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{\sin\theta\cos^{2}\left(\theta\right)}{\sin\theta+\cos\theta}=\int\frac{t\cdot\frac{1}{1+t^{2}}}{1+t}\cdot\frac{\partial t}{1+t^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

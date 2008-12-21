@@ -5195,6 +5195,370 @@ b_{n}\end{pmatrix}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ב.
+\end_layout
+
+\begin_layout Standard
+האם הקבוצה הבאה תלויה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{1}=\begin{pmatrix}1\\
+0\\
+0\end{pmatrix},f_{2}=\begin{pmatrix}1\\
+1\\
+0\end{pmatrix},f_{3}=\begin{pmatrix}1\\
+1\\
+1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כן בלתי תלויים.
+\end_layout
+
+\begin_layout Standard
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+א.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+1,x,x^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם הם בלתי תלויים?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\alpha_{1}1+\alpha_{2}x+\alpha_{3}x^{2}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה צריך להתקיים לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ אזי גוזרים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\alpha_{2}+2\alpha_{3}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גוזרים עוד פעם אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2a_{3} & = & 0\\
+a_{3} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula \[
+a_{1}=a_{2}=a_{3}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הם בלתי תלויים
+\end_layout
+
+\begin_layout Standard
+שאלה כלשהיא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{1}=1,f_{2}=1+x,f_{3}=1+x+x^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם תלויים?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha_{1}+a_{2}\left(1+x\right)+a_{3}\left(1+x+x^{2}\right) & = & 0\\
+a_{1}+a_{2}+a_{3}+x\left(a_{2}+a_{3}\right)+a_{3}x^{2} & = & 0\\
+a_{3} & = & 0\\
+a_{2}+a_{3} & = & 0\\
+a_{1}+a_{2}+a_{3} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שאלה חשובה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & \left\{ f\left(x\right)\in C_{\inf}\left[0,1\right]\vert f\left(\frac{1}{3}\right)=0\right\} \\
+A & = & \frac{\partial}{\partial x}\\
+A:V & \to & C_{\inf}\left[0,1\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם זה חח"ע ועל?
+\end_layout
+
+\begin_layout Standard
+על: נניח 
+\begin_inset Formula $g\in C_{\inf}\left[0,1\right]$
+\end_inset
+
+ כך ש
+\begin_inset Formula $G^{'}=g,G=\int g$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $f\left(x\right)=G\left(x\right)-G\left(\frac{1}{3}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\left(f\right)=g$
+\end_inset
+
+.
+ אזי הפונקציה היא על
+\end_layout
+
+\begin_layout Standard
+חח"ע: נניח 
+\begin_inset Formula $A\left(f_{1}\right)=A\left(f_{2}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f_{1}^{'}\left(x\right)=f_{2}^{'}\left(x\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{\partial}{\partial x}\left(f_{1}\left(x\right)+f_{2}\left(x\right)\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(f_{1}\left(x\right)+f_{2}\left(x\right)\right)=c$
+\end_inset
+
+.
+ אבל יודעים כי 
+\begin_inset Formula $f_{1}\left(\frac{1}{3}\right)=f_{2}\left(\frac{1}{3}\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+f_{1}\left(\frac{1}{3}\right)+f_{2}\left(\frac{1}{3}\right) & = & c\\
+0+0 & = & c\\
+c & = & 0\end{eqnarray*}
+
+\end_inset
+
+ שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+13.2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \frac{\partial}{\partial x}\\
+A:span\left\{ x,x^{2},x^{3},x^{4}\right\}  & \to & P_{3}\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B\left(p\left(x\right)\right) & \to & \int_{0}^{x}p\left(z\right)\partial z\\
+B:P_{3}\left(x\right) & \to & \left\{ x,x^{2},x^{3},x^{4}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בבסיס שנתון ב 
+\begin_inset Formula $span$
+\end_inset
+
+ כדי לכתוב את המטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 2 & 0 & 0\\
+0 & 0 & 3 & 0\\
+0 & 0 & 0 & 4\end{pmatrix}\\
+B & = & \begin{pmatrix}1 & 0 & 0 & 0\\
+0 & \frac{1}{2} & 0 & 0\\
+0 & 0 & \frac{1}{3} & 0\\
+0 & 0 & 0 & \frac{1}{4}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז רואים כי אם יש פונקציות הפיכיות מקבלים מטריצות הפיכות.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+14
+\end_layout
+
 \begin_layout Standard
 
 \end_layout

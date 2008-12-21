@@ -1,0 +1,656 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mg & = & \frac{mv^{2}}{R}\\
+v^{2} & = & Rg\\
+v & = & \sqrt{Rg}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mgH & = & \frac{mv^{2}}{2}+mg\left(2R\right)\\
+mgH & = & \frac{mRg}{2}+2mgr\\
+H & = & \frac{R}{2}+2R\\
+H & = & \frac{5}{2}R\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $H$
+\end_inset
+
+ צריך להיות לפחות 
+\begin_inset Formula $\frac{5}{2}R$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נקודות שיווי המשקל הן המינימום של הפוטנציאל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial r} & = & -3\frac{a}{r^{4}}+2\frac{b}{r^{3}}\\
+0 & = & -3\frac{a}{r^{4}}+2\frac{b}{r^{3}}\\
+r_{equblerium} & = & \frac{3a}{2b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)אין נקודות אחרות אזי מניחים כי יש פתרון לשאלה, כי יש לנו מתרגילים טובים,
+ וזה הוא הפתרון(
+\end_layout
+
+\begin_layout Standard
+האנרגיה הדרושה כדי להפריד לחלוטין בין שני החלקיקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u\left(r_{equblerium}\right) & = & u\left(\frac{3a}{2b}\right)\\
+ & = & \frac{a}{\left(\frac{3a}{2b}\right)^{3}}-\frac{b}{\left(\frac{3a}{2b}\right)^{2}}\\
+ & = & \frac{-4b^{3}}{27a^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \Delta u\\
+ & = & u\left(\inf\right)-u\left(r_{equblerium}\right)\\
+ & = & 0-\frac{-4b^{3}}{27a^{2}}\\
+ & = & \frac{4b^{3}}{27a^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+החלקיק יש לו מהירות אפס כאשר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & E_{0}-\frac{4b^{3}}{27a^{2}}\\
+\frac{a}{r^{3}}-\frac{b}{r^{2}} & = & E\\
+a & = & r\left(Er^{2}+b\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפוטנציאל הכולל הוא סכום הפוטנציאלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{total}\left(r\right)=\frac{a}{r^{3}}-\frac{b}{r^{2}}+\frac{a}{\left(r-d\right)^{3}}-\frac{b}{\left(r-d\right)^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אשר 
+\begin_inset Formula $\left(r-d\right)$
+\end_inset
+
+ הוא המרחק מהחלקיקים 
+\begin_inset Formula $\rho$
+\end_inset
+
+ החדש.
+ נקודות שיווי המשקל ההחדשה של 
+\begin_inset Formula $x$
+\end_inset
+
+ היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial u}{\partial t}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{-3a}{r^{4}}+\frac{b}{r^{2}}-\frac{4a}{\left(r-d\right)^{4}}+\frac{2b}{\left(r-d\right)^{3}}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+בהפעלת הכח 
+\begin_inset Formula $F$
+\end_inset
+
+ לפני השחרור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{s} & = & \frac{1}{2}kL_{1}^{2}\\
+F+m_{1}g & = & kL_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ברגע ההתנתקות 
+\begin_inset Formula $N=0,v_{1}=v_{2}=0$
+\end_inset
+
+ כיוון שנתון את האנרגיה המינימאלית לניתוק הגוף מהשלחן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{f} & = & \frac{1}{2}kL_{2}^{2}+mg\left(L_{1}+L_{2}\right)\\
+kL_{2} & = & m_{2}g\\
+E_{s} & = & E_{f}\\
+\frac{1}{2}kL_{1}^{2} & = & \frac{1}{2}kL_{2}^{2}+m_{1}g\left(L_{1}+L_{2}\right)\\
+k\left(L_{1}^{2}-L_{2}^{2}\right) & = & 2m_{1}g\left(L_{1}+L_{2}\right)\\
+kL_{1}-kL_{2} & = & 2m_{1}g\\
+G+m_{1}g-m_{2}g & = & 2m_{1}g\\
+F & = & m_{1}g+m_{2}g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+א.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & mgh\\
+h & = & R-R\cos\theta\\
+u\left(\theta\right) & = & ngR\left(1-\cos\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mgR & = & mgh+\frac{mv^{2}}{2}\\
+gR & = & gR\left(1-\cos\theta\right)+\frac{v^{2}}{2}\\
+gR\left(\cos\theta\right) & = & \frac{v^{2}}{2}\\
+mgR\cos\theta & = & \frac{mv^{2}}{2}=E_{k}\\
+E_{k}\left(\theta\right) & = & mgR\cos\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ma_{r} & = & \frac{mv^{2}}{R}\\
+N-mg\cos\theta & = & \frac{mv^{2}}{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $N$
+\end_inset
+
+ לא פועל בכיוון המשיק ולכן נאפס אותו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mg\sin\theta & = & ma_{T}\\
+a_{T} & = & g\sin\theta\\
+v^{2} & = & 2gR\cos\theta\\
+a_{R} & = & \frac{v^{2}}{R}\\
+a_{R}\left(\theta\right) & = & 2g\cos\theta\\
+mg\cos\theta-N & = & \frac{mv^{2}}{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנקודת ההתנתקות: 
+\begin_inset Formula $N=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mg\cos\theta & = & \frac{mv^{2}}{R}\\
+g\cos\theta & = & \frac{v^{2}}{R}\\
+mgR & = & mgh+\frac{mv^{2}}{2}\\
+h & = & R\cos\theta\\
+gR & = & gR\cos\theta+\frac{v^{2}}{2}\\
+2gR\left(1-\cos\theta\right) & = & v^{2}\\
+\cos\theta & = & 2\left(1-\cos\theta\right)\\
+\cos\theta & = & 2-2\cos\theta\\
+\cos\theta & = & \frac{2}{3}\\
+\theta & = & 48.189^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h=R\cos\left(48.189^{\circ}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum F_{y} & = & 0\\
+N-mg\cos\theta & = & 0\\
+N & = & mg\cos\theta\\
+f_{f} & = & \mu_{f}N\\
+ & = & \mu_{f}mg\cos\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W_{f} & = & f_{f}\cdot r\\
+ & = & \mu_{f}mg\cos\theta\cdot\frac{\Delta y}{\sin\theta}\\
+ &  & \mu_{f}mg\frac{\Delta y}{\tan\theta}\\
+ & = & \mu_{f}mg\Delta x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקה שלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu_{f}mg=const\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $w_{f}\propto\Delta x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן עבודת כח החיכוך בין פסגת גבנון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לפסגת גבנון גבנון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w_{f}=\mu_{f}mg\cdot2h\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+ ביחס לפסגה השלישית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k_{i}} & = & w_{f}+mgh\\
+\frac{mv_{0}^{2}}{2} & = & \mu mg\cdot5h+mgh\\
+v_{0}^{2} & = & 2\left(\mu g\cdot5h+gh\right)\\
+v_{0}^{2} & = & 2\left(gh\left(\mu\cdot5+1\right)\right)\\
+v_{0} & = & \sqrt{2\left(gh\left(\mu\cdot5+1\right)\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המהירות על הפסגה הראשונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{mv_{0}^{2}}{2} & = & \frac{mv_{1}^{2}}{2}+w_{f}\\
+\frac{2mgh\left(5\mu+1\right)}{2} & = & \frac{mv_{1}^{2}}{2}+\mu mgh\\
+2\left(gh\left(5\mu+1\right)-\mu gh\right) & = & v_{1}^{2}\\
+v_{1} & = & \sqrt{2\left(gh\left(5\mu+1\right)-\mu gh\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המהירות על הפסגה השניה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{mv_{0}^{2}}{2} & = & \frac{mv_{2}^{2}}{2}+w_{f}\\
+gh\left(5\mu+1\right) & = & \frac{mv_{1}^{2}}{2}+3\mu gh\\
+v_{2} & = & \sqrt{2gh\left(2\mu+1\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta_{1}$
+\end_inset
+
+ הוא השינוי בזווית של המעגל הקטן, 
+\begin_inset Formula $\theta_{2}$
+\end_inset
+
+ הוא השינו בזווית של המעגל הגדול:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\theta_{1}=\frac{1}{3}\theta_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F\theta_{1}R_{1} & = & T\theta_{2}R_{2}\\
+80\theta_{1}\cdot0.3 & = & T\cdot\theta_{2}\cdot0.02\\
+T & = & \frac{80\cdot0.3}{\left(\frac{1}{3}\right)0.02}\\
+ & = & 3600N\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

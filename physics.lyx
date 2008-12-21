@@ -164,7 +164,11 @@ MIT
 \lang english
 Fall
 \lang hebrew
- 1999 יש פו הדמיות טובות.
+ 
+\numeric on
+1999
+\numeric off
+ יש פו הדמיות טובות.
  
 \end_layout
 
@@ -6557,7 +6561,10 @@ M & = & \rho\pi R^{2}H-\rho\pi r^{2}H\\
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 I_{hollow} & = & \frac{1}{2}M\frac{R^{4}-r^{4}}{R^{2}-r^{2}}\\
- & = & \frac{1}{2}MR^{2}\frac{1-\left(\frac{r}{R}\right)^{4}}{1-\left(\frac{r}{R}\right)^{2}}\end{eqnarray*}
+ & = & \frac{1}{2}MR^{2}\frac{1-\left(\frac{r}{R}\right)^{4}}{1-\left(\frac{r}{R}\right)^{2}}\\
+ &  & \frac{1}{2}MR^{2}\frac{1-\alpha^{4}}{1-\alpha^{2}}\\
+ &  & \frac{1}{2}MR^{2}\frac{\left(1+\alpha^{2}\right)\left(1-\alpha^{2}\right)}{1-\alpha^{2}}\\
+ &  & \frac{1}{2}MR^{2}\left(1+\alpha^{2}\right)\end{eqnarray*}
 
 \end_inset
 
@@ -6569,8 +6576,24 @@ I_{hollow} & = & \frac{1}{2}M\frac{R^{4}-r^{4}}{R^{2}-r^{2}}\\
 \begin_inset Formula $r\to R$
 \end_inset
 
-? כלומר הגליל הזה דק מאוד אזי 
-\begin_inset Formula $\lim_{r\to R}I=\inf$
+? כלומר הגליל הזה דק מאוד כלומר 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+ 
+\begin_inset Formula $\lim_{r\to R}I=MR^{2}$
+\end_inset
+
+ אבל אם 
+\begin_inset Formula $r\to0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\alpha=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $I\to1$
 \end_inset
 
  זה בגלל שהמסה קבועה אבל היא מרוכזת בגליל הדק הזה.
@@ -6663,6 +6686,789 @@ E_{k_{s}}=\frac{1}{2}MV^{2}+E_{k_{s^{'}}}+\vec{V}\vec{P}_{s^{'}}\]
 
 \begin_layout Standard
 ויש רק מערכת אחת שבה הרכיב האחרון נופל וזו מערכת מרכז המסה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+18
+\end_layout
+
+\begin_layout Standard
+אם יש שתי מעכות, 
+\begin_inset Formula $S$
+\end_inset
+
+ ו
+\begin_inset Formula $S^{'}$
+\end_inset
+
+, יש מרווא ביניהם ויש גם סיבוב סביב איזה שהוא ציר.
+ נניח כי 
+\begin_inset Formula $S$
+\end_inset
+
+ היא מערכת אינרציאלית.
+ רוצים למצא את התאוצה של 
+\begin_inset Formula $a_{S^{'}}$
+\end_inset
+
+ ביחס למערכת 
+\begin_inset Formula $a_{S}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}S: & \vec{a}_{s}=\frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{s}\\
+S^{'}: & \vec{a}_{s^{'}}=\frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{s^{'}}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לעשות את זה נשתמש במערכת פחות מסובכת 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vert_{S} & = & \vec{\omega}\times\vec{b}\\
+\partial b & = & b\partial\theta\\
+\frac{\partial b}{\partial t} & = & b\frac{\partial\theta}{\partial t}\\
+ & = & b\omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c23d4.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\vec{b}\vert_{S}=\frac{\partial}{\partial t}\vec{b}\vert_{S^{'}}+\vec{\omega}\times\vec{b}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c23d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vec{b}\vert_{S^{'}} & = & 0\\
+\frac{\partial}{\partial t}\vec{v}\vert_{S} & = & \vec{\omega}\times\vec{b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\vec{r}\vert_{S}=\frac{\partial}{\partial t}\vec{r}\vert_{S^{'}}+\vec{\omega}\times\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב את התוצאה הזו במשוואה 
+\begin_inset Formula $\frac{\partial}{\partial t}\vec{b}\vert_{S}=\frac{\partial}{\partial t}\vec{b}\vert_{S^{'}}+\vec{\omega}\times\vec{b}$
+\end_inset
+
+ שהיא נכונה עבור כל וקטור.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vec{b}\vert_{S} & = & \frac{\partial}{\partial t}\vec{b}\vert_{S^{'}}+\vec{\omega}\times\vec{b}\\
+\frac{\partial}{\partial t}\left\{ \frac{\partial}{\partial t}\vec{r}\vert_{S}\right\} _{S} & = & \frac{\partial}{\partial t}\left\{ \frac{\partial}{\partial t}\vec{r}\vert_{S^{'}}+\vec{\omega}\times\vec{r}\right\} _{S^{'}}+\vec{\omega}\times\left\{ \frac{\partial}{\partial t}\vec{r}\vert_{S^{'}}+\vec{\omega}\times\vec{r}\right\} \\
+\frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S} & = & \frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S^{'}}+\dot{\vec{\omega}}\times\vec{r}+\vec{\omega}\times\dot{\vec{r}}_{S^{'}}+\vec{\omega}\times\dot{\vec{r}}_{S^{'}}+\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)\\
+ &  & \underbrace{\frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S^{'}}}_{\vec{a}\vert_{S^{'}}}+\dot{\vec{\omega}}\times\vec{r}+2\vec{\omega}\times\dot{\vec{r}}_{S^{'}}+\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ הוא תמיד ב
+\begin_inset Formula $S^{'}$
+\end_inset
+
+ ויודעים כי 
+\begin_inset Formula $\vec{r}=\vec{r}_{0}-\vec{R}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S}=\underbrace{\frac{\partial^{2}}{\partial t^{2}}\vec{r}_{0}\vert_{S}}_{\vec{a}\vert_{s}}-\ddot{\vec{R}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbrace{\frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S}}_{\vec{a}\vert_{S^{'}}} & = & \frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S^{'}}+\dot{\vec{\omega}}\times\vec{r}+2\vec{\omega}\times\dot{\vec{r}}_{S^{'}}+\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)\\
+\underbrace{\frac{\partial^{2}}{\partial t^{2}}\vec{r}_{0}\vert_{S}}_{\vec{a}\vert_{s}}-\ddot{\vec{R}} & = & \frac{\partial^{2}}{\partial t^{2}}\vec{r}\vert_{S^{'}}+\dot{\vec{\omega}}\times\vec{r}+2\vec{\omega}\times\dot{\vec{r}}_{S^{'}}+\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)\\
+m\vec{a}\vert_{S} & = & m\vec{a}\vert_{S^{'}}+m\ddot{\vec{R}}-m\left(\vec{\omega}\times\vec{r}\right)\times\vec{\omega}-2m\left(\dot{\vec{r}}\times\vec{\omega}\right)-m\left(r\times\dot{\vec{\omega}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגלל שהמערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ היא אינרצילית אז פועל בה החוק השני של ניוטון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\vec{a}\vert_{S}=\vec{F}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: 
+\begin_inset Formula $-\left(\vec{\omega}\times\vec{r}\right)\times\vec{\omega}$
+\end_inset
+
+ הוא הכח הצנטרופיתאלי 
+\end_layout
+
+\begin_layout Standard
+נסים עכשיו את הכוחות המידומים כדי שחוק ניוטון יעבוד ב
+\begin_inset Formula $S^{'}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\vec{a}\vert_{S^{'}}=\vec{F}-m\ddot{\vec{R}}+m\left(\vec{\omega}\times\vec{r}\right)\times\vec{\omega}+2m\left(\dot{\vec{r}}\times\vec{\omega}\right)+m\cdot\underbrace{\left(\vec{r}\times\dot{\vec{\omega}}\right)}_{\mbox{Curiolis Force}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+19
+\end_layout
+
+\begin_layout Standard
+דיברנו בשיעור שעבר כי אם עוברים ממערכת אינרציאלית אל מערכת לא אינרציאלית
+ מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c25d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\vec{a}\vert_{S^{'}}=\vec{F}-m\ddot{\vec{R}}+m\left(\vec{\omega}\times\vec{r}\right)\times\vec{\omega}+2m\left(\dot{\vec{r}}\times\vec{\omega}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אם מסתכלים על בן אדם שמחזיק כדור במעלית מאיצב למעלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c25d2.svg
+	lyxscale 30
+	width 50cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a\vert_{S^{'}} & = & 0\\
+F & = & mg+m\ddot{\vec{R}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקום שזה יהי 
+\begin_inset Formula $F=mg$
+\end_inset
+
+ במערכת שהיא במנוחה.
+\end_layout
+
+\begin_layout Standard
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+מה יקרה אם זורקים כדור ממגדל בגובה 
+\begin_inset Formula $h$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c25d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\vec{a}\vert_{S^{'}} & = & -mg\hat{y}+m\left(\vec{\omega}\times\vec{r}\right)\times\vec{\omega}+2m\vec{v}_{y}\times\vec{\omega}\\
+ & = & \left(-mg+mR_{E}\omega^{2}\right)\hat{y}+2mv_{y}\vec{\omega}\hat{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי להיבתר מהקרוסים הנחנו הנחה: 
+\begin_inset Formula $R_{E}+h\approxeq R_{E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי 
+\begin_inset Formula $\frac{mR_{E}\omega^{2}}{mg}\ll1$
+\end_inset
+
+ אזי אפשר להזניח את האיבר הזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\ddot{y} & = & -mg\\
+m\ddot{x} & = & 2m\omega v_{y}\\
+\dot{y} & = & y_{x}\\
+ & = & -mgt\\
+ & = & \frac{-mgt^{2}}{2}+h\\
+0 & = & -\frac{mgt^{2}}{2}\\
+t & = & \sqrt{\frac{2h}{g}}\\
+x & = & \frac{1}{3}\omega gt^{3}\end{eqnarray*}
+
+\end_inset
+
+ אזי נציב מספרים ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & -\frac{1}{3}g\omega\left(\frac{2h}{g}\right)^{\frac{3}{2}}\\
+ & = & -\frac{1}{3}\cdot10\cdot\left(7\cdot10^{-5}\right)\cdot\left(\frac{2\cdot100}{10}\right)^{\frac{3}{2}}\\
+ & \approxeq & 2\cdot10^{-2}m\\
+ & = & 2cm\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Section
+חזרה לבוחר
+\end_layout
+
+\begin_layout Standard
+משפיזים מים על עגלה שמסתה 
+\begin_inset Formula $M$
+\end_inset
+
+ המים מוזרמים מהצינור בקצב 
+\begin_inset Formula $\dot{m}$
+\end_inset
+
+ במהירות 
+\begin_inset Formula $v$
+\end_inset
+
+ ביחס לקרקע.
+ המים פוגעים בעגלה ומוחזרים חזרה בהתנגשות אלסטית.
+ מה היא מהירות העגלה?
+\end_layout
+
+\begin_layout Standard
+הערה: ההתנגשות אלסטית לכן המהיארות של המים אחרי הפגיעה ביחס לעגלה היא הפוכה
+ למהירותה היחסית לפני הפגיעה.
+\end_layout
+
+\begin_layout Standard
+נפתור במערכת יחוז שמהירותה בזמן 
+\begin_inset Formula $t$
+\end_inset
+
+ שווה למהירות העגלה:
+\end_layout
+
+\begin_layout Standard
+נשתמש בחוק שימור התנע: התנע בזמן כלשהוא 
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula $P\left(t\right)=\underbrace{0}_{cart}+\Delta m\left(v-v\left(t\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התנע בזמן 
+\begin_inset Formula $t+\partial t$
+\end_inset
+
+: 
+\begin_inset Formula $P\left(t+\partial t\right)=M\partial u+\Delta m\left(v\left(t\right)-v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי חוק שימור התנע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(t\right) & = & P\left(t+\partial t\right)\\
+\Delta m\left(v-v\left(t\right)\right) & = & M\cdot\partial u+\Delta m\left(v\left(t\right)-v\right)\\
+M\partial u+2\Delta m\left(v\left(t\right)+v\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לקבל משוואה דיפרנציאלית צריכים 
+\begin_inset Formula $\partial t$
+\end_inset
+
+שאותו נמצא ב
+\begin_inset Formula $\Delta m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמות המים הפוגעים הם תלויים ב 
+\begin_inset Formula $\partial x$
+\end_inset
+
+, זה כל למצא: 
+\begin_inset Formula $\partial x=\left(v-v\left(t\right)\right)\partial t$
+\end_inset
+
+, אבל כמה מסה של מים יש האורך הזה? צריכים צפיפות המים...
+ זה מוצאים ב
+\begin_inset Formula $\dot{m}$
+\end_inset
+
+.
+\begin_inset Formula \begin{eqnarray*}
+\partial m & = & \dot{m}\partial t\\
+\partial x & = & v\partial t\\
+\frac{\partial m}{\partial x} & = & \frac{\dot{m}}{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta m & = & \frac{\dot{m}}{v}\partial x\\
+ & = & \frac{\dot{m}}{v}\left(v-v\left(t\right)\right)\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו אפשר לפתור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M\partial v+\frac{\partial m}{v}\left(v-v\left(t\right)\right)\left(v\left(t\right)-v\right)\partial t & = & 0\\
+M\partial v & = & \frac{2\dot{m}}{v}\left(v-v\left(t\right)\right)^{2}\partial t\\
+\int\frac{\partial v}{\left(v-v\left(t\right)\right)^{2}} & = & \int\frac{2\dot{m}}{Mv}\partial t\\
+\frac{1}{v-v\left(t\right)} & = & \frac{2\dot{m}}{Mv}t+c\\
+v\left(t\right) & = & v-\frac{1}{\frac{2\dot{m}}{Mv}t+c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+)תקרא את השאלה מהדפים ב
+\begin_inset Formula $owl$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c26d1.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+א.
+ נשרטט מערכת כוחות לכל מסה בנפרד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c26d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+8\mu mg-\mu mg & = & 2m\cdot a_{1}\\
+\mu mg & = & ma_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{1} & = & \frac{7}{2}\mu g\\
+a_{2} & = & \mu g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+ התאוצות ביחס לקרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{1}^{'} & = & 0\\
+a_{2}^{'} & = & a_{2}-a_{1}=-\frac{5}{2}\mu g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ג.
+ לאחר הפסקת הכח:
+\end_layout
+
+\begin_layout Standard
+ד.
+ נמצא את 
+\begin_inset Formula $\Delta t$
+\end_inset
+
+: נתון כי העצירה היתה עבור מרחק 
+\begin_inset Formula $L$
+\end_inset
+
+ ביחס לקרון.
+ מסקנה: במרחק 
+\begin_inset Formula $L$
+\end_inset
+
+ המהירות היחסית 
+\begin_inset Formula $v_{rel}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{rel}=\begin{cases}
+t<\Delta t & 0-\frac{3}{2}mgt\\
+t>\Delta t & v_{rel}\left(\Delta t\right)+\frac{3}{2}mg\left(t-\Delta t\right)\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+20
+\end_layout
+
+\begin_layout Standard
+נחזור עוד פעם לסיפור של מערכת מוזזת שמסתובבת ביחס למערכת אחרת.
+ קיבלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\vec{a}\vert_{S^{'}}=\vec{F}-m\ddot{\vec{R}+m\left(\vec{\omega}\times\vec{r}\right)\times\vec{\omega}-2m\left(\dot{\vec{r}}\times\vec{\omega}\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש שולחן שמסתובב במהירות 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c27d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז הכל ברור, אבל אם ניקח מצב לא סימטרי למשל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c27d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{1}=mr_{1}\omega^{2}<F_{2}=mr_{2}\omega^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c27d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך לבחור מערכת לעבוד בה.
+ בוחרים 
+\begin_inset Formula $S^{'}$
+\end_inset
+
+ שהיא צמודה למסות אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c27d4.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי ההפרש בין שתי המערכות הוא פשוט 
+\begin_inset Formula $\vec{R}$
+\end_inset
+
+ אזי הכח שצריך להוסיף הוא 
+\begin_inset Formula $m\ddot{\vec{R}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מסתכלים על הבעיה של כדור הארץ והיריח.
+ כדור שניהם מסתובבים סביב נקודת מרכז המסה שהיא לא נמצאת במרכז כדור הרץ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c27d5.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\vec{a}\vert_{s^{'}}=\vec{F}-m\ddot{\vec{R}}=-mg\hat{r}-G\frac{M_{moon}m}{d^{2}}\hat{d}-m\ddot{\vec{R}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M_{E}\ddot{\vec{R}} & = & -G\frac{M_{m}M_{E}}{r_{Em}^{2}}\hat{r}_{Em}\\
+\ddot{\vec{R}} & = & -G\frac{M_{m}M_{E}}{r_{Em}^{2}}\hat{r}_{Em}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\vec{a}\vert_{S^{'}}=-mg\hat{r}+GMm\left\{ \frac{\hat{r}_{cm}}{r_{cm}^{2}}-\frac{\hat{d}}{d^{2}}\right\} \]
+
+\end_inset
+
+
 \end_layout
 
 \end_body

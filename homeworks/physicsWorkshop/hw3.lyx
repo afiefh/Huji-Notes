@@ -91,6 +91,11 @@
 1
 \end_layout
 
+\begin_layout Standard
+התנועה עצמה לא משתנה אבל אם הכח שהגז מפעיל על הגוף קטן מהחיכוך הסטטי אז
+ הרקטה בכלל לא זזה.
+\end_layout
+
 \begin_layout Part*
 שאלה
 \family roman
@@ -114,12 +119,16 @@
 2
 \end_layout
 
-\begin_layout Standard
+\begin_layout Enumerate
 המהירות בזמן 
 \begin_inset Formula $t<0$
 \end_inset
 
- היתה 
+ היתה
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
 \begin_inset Formula \[
 \vec{v}=u\hat{x}\]
 
@@ -175,14 +184,38 @@ v_{x} & = & \frac{Mu_{0}-mu_{0}+m\cdot u}{M-m}\\
 
 \end_layout
 
-\begin_layout Standard
+\end_deeper
+\begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
 \begin{pmatrix}Mu_{0}\\
 0\end{pmatrix} & = & \begin{pmatrix}\left(M-nm\right)v_{x}+nm\left(u_{0}-u\right)\\
 \left(M-nm\right)v_{y}\end{pmatrix}\\
 v_{y} & = & 0\\
 v_{x} & = & \frac{Mu_{0}-nmu_{0}+nmu}{M-nm}\\
- & = & u_{0}+\frac{nm\cdot u_{0}}{M-nm}\end{eqnarray*}
+ & = & u_{0}+\frac{nm\cdot u}{M-nm}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם המהירות של המכונית היא 
+\begin_inset Formula $u_{n}$
+\end_inset
+
+ אחרי זריקת 
+\begin_inset Formula $n$
+\end_inset
+
+ כדורים אזי
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{n} & = & u_{n-1}+\frac{m\cdot u}{\left(M-\left(n-1\right)m\right)-m}\\
+ & = & u_{n-1}+\frac{mu}{M-nm}\end{eqnarray*}
 
 \end_inset
 
@@ -190,9 +223,32 @@ v_{x} & = & \frac{Mu_{0}-nmu_{0}+nmu}{M-nm}\\
 \end_layout
 
 \begin_layout Standard
+עד שמגיעים ל
+\begin_inset Formula $u_{0}$
+\end_inset
+
+ הנתון
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+זה אותו דבר כי
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{n} & = & u_{n-1}+\frac{mu}{M-nm}\\
+ & = & u_{n-2}+\frac{mu}{M-nm}+\frac{mu}{M-nm}\\
+ & = & \vdots\\
+ & = & u_{0}+\frac{nm\cdot u}{M-nm}\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 
+\end_deeper
 \begin_layout Part*
 שאלה
 \family roman
