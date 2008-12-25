@@ -1,0 +1,349 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+א.
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $D_{n}=\frac{F_{n}}{n}=\left(n-1\right)!$
+\end_inset
+
+ אזי מוכיחים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+D_{n+1} & \overset{?}{=} & n\left(D_{n}+D_{n-1}\right)\\
+n! & \overset{?}{=} & n\left[\left(n-1\right)!+\left(n-2\right)!\right]\\
+n! & \overset{X}{=} & n\left[\left(n-1\right)\left(n-2\right)!+\left(n-2\right)!\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{n+1} & \overset{?}{=} & n\left(F_{n}+F_{n-1}\right)\\
+\left(n+1\right)! & \overset{?}{=} & n\left(n!+\left(n-1\right)!\right)\\
+\left(n+1\right)! & \overset{?}{=} & n\cdot n!+n!\\
+\left(n+1\right)! & \overset{?}{=} & n!\left(n+1\right)\\
+\left(n+1\right)! & \overset{\checkmark}{=} & \left(n+1\right)!\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+D_{1} & = & 0\\
+D_{2} & = & 1\\
+F_{1} & = & 1\\
+F_{2} & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי יש לנו תנאי התחלה שונים ולכן 
+\begin_inset Formula $D_{n}\neq F_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+א.
+\end_layout
+
+\begin_layout Standard
+מצולע בעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+ צדדים הוא משולש אז זאת היא הדרך היחידה לחלק אותו לכן 
+\begin_inset Formula $T_{1}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצולע בעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צדדים יש לו שתי קטרים, כל קוטר מחלק את המצולע למשולשים, אזי 
+\begin_inset Formula $T_{2}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+אם רוצים לחלק מצולע בעל 
+\begin_inset Formula $n+2$
+\end_inset
+
+ צלעים לשני מצולעים בעלי 
+\begin_inset Formula $\left(n_{1}\right),\left(n-n_{1}\right)<n+2$
+\end_inset
+
+ יש 
+\begin_inset Formula $n$
+\end_inset
+
+ דרכים לעשות את זה.
+ אנחנו כבר יודעים כי יש 
+\begin_inset Formula $T_{n_{1}}\cdot T_{n-n_{1}}$
+\end_inset
+
+ דרכים לחלק את שניהם.
+ צריך לעשות את זה לכל חלוקה כזו אזי 
+\begin_inset Formula $T_{n}=\sum_{k=0}^{n}T_{k}\cdot T_{n-k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $\$_{30}=10^{6}\mbox{NIS}$
+\end_inset
+
+.
+ כל שנה מקבלים ריבית של 
+\begin_inset Formula $2\%$
+\end_inset
+
+ ושולפים 
+\begin_inset Formula $150\cdot10^{6}$
+\end_inset
+
+ שקלים מהחשבון.
+ אם בשנה הראשונה הוא לא שלף)עצלן, אבל שולף כסף ברגע שסבא שלו מת?!( מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\$_{n>30}=S_{n-1}\cdot1.02-150\cdot10^{6}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך לחשב את 
+\begin_inset Formula $\$_{80}$
+\end_inset
+
+ כדי לדעת כמה כסף נשאר כאשר הבן אדם הנחמד הזה נפתר.
+\end_layout
+
+\end_body
+\end_document

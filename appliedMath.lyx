@@ -8655,7 +8655,1506 @@ R\left(-x,-y\right)=R\left(x,y\right)\]
 
 \begin_layout Standard
 \begin_inset Formula \[
-\int\frac{\sin\theta\cos^{2}\left(\theta\right)}{\sin\theta+\cos\theta}=\int\frac{t\cdot\frac{1}{1+t^{2}}}{1+t}\cdot\frac{\partial t}{1+t^{2}}\]
+\int\frac{\sin\theta\cos^{2}\left(\theta\right)}{\sin\theta+\cos\theta}=\int\frac{\left(t\cdot\frac{1}{1+t^{2}}\right)}{1+t}\cdot\frac{\partial t}{1+t^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Standard
+שאלה מפרק קודם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & \frac{1-\frac{x^{2}}{2}-\cos x}{x^{3}}\\
+ & = & \frac{1-\frac{x^{2}}{2}-\sum_{n=0}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n\right)!}x^{2n}}{x^{3}}\\
+ & = & \frac{1-\frac{x^{2}}{2}-\left(1-\frac{x^{2}}{2}+\sum_{n=2}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n\right)!}x^{2n}\right)}{x^{3}}\\
+ & = & \frac{\sum_{n=2}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n\right)!}x^{2n}}{x^{3}}\\
+ & = & -\sum_{n=2}^{\inf}\frac{\left(-1\right)^{n}}{\left(2n\right)!}x^{2n-3}\\
+ & = & \frac{-1}{4!}x+\frac{1}{6!}x^{3}-\frac{1}{8!}x^{5}+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי האיבר המוביל הוא 
+\begin_inset Formula $-\frac{1}{4!}x$
+\end_inset
+
+ והאיבר התת מוביל הוא 
+\begin_inset Formula $\frac{1}{6!}x^{3}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f^{'}\left(0\right)=\frac{1}{4!}$
+\end_inset
+
+ ו 
+\begin_inset Formula $f^{'''}\left(0\right)=\frac{1}{6!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אינטגרלים לא מסוימים
+\end_layout
+
+\begin_layout Standard
+אינטגרל לא מסוים מחזיר פונקציה.
+ אינוגרל מסוים מחזיר מספר אחד.
+\end_layout
+
+\begin_layout Standard
+אם יש פונקציה כלשהיא אז אנחנו יודעים לגזור את זה, אבל באינטגרלם אין את זה
+\end_layout
+
+\begin_layout Section
+שאלות
+\end_layout
+
+\begin_layout Standard
+הצבה פשוטה 
+\begin_inset Formula $t=ax+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{4\partial x}{\sqrt{3x+t}} & = & \int\frac{\frac{4}{3}\partial t}{\sqrt{t}}\\
+ &  & \frac{4}{3}\int\frac{\partial t}{\sqrt{t}}\\
+ &  & \frac{4}{3}\cdot2\sqrt{t}+c\\
+ &  & \frac{4}{3}\cdot2\sqrt{3x+5}+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\sec^{2}\left(2x\right)+\tan\left(3x\right)\partial x & = & \int\sec^{2}\left(2x\right)\partial x+\int\tan\left(3x\right)\partial x\\
+ & = & \int\sec^{2}\left(t\right)\frac{1}{2}\partial t+\int\tan\left(s\right)\frac{1}{3}\partial s\\
+ & = & \frac{1}{2}\tan\left(t\right)+\frac{1}{3}\ln\left|\cos\left(s\right)\right|+x\\
+ & = & \frac{1}{2}\tan\left(2x\right)+\frac{1}{3}\ln\left|\cos\left(3x\right)\right|+x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השלמה לריבוע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+ax^{2}+bx+c=a\left(x^{2}+\frac{b}{2a}\right)^{2}+c-\frac{b^{2}}{4a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{\sqrt{x^{2}-2x+5}} & = & \int\frac{\partial x}{\sqrt{\left(x-1\right)^{2}+4}}\\
+ & = & \int\frac{\partial x}{\sqrt{\left(\frac{\left(x-1\right)^{2}}{4}+1\right)\cdot4}}\\
+ & = & \int\frac{\partial x}{\left(\frac{x-1}{2}\right)^{2}+1}\\
+ & = & \frac{1}{2}\int\frac{2\partial t}{\sqrt{t^{2}+1}}\\
+ & = & \sinh^{-1}\left(t\right)+c\\
+ & = & \sinh^{-1}\left(\frac{x-1}{2}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{\sqrt{x^{2}-4x+3}} & = & \int\frac{\partial x}{\sqrt{\left(x-2\right)^{2}-1}}\\
+ & = & \int\frac{\partial t}{\sqrt{t^{2}-1}}\\
+ & = & \cosh^{-1}\left(t\right)+c\\
+ & = & \cosh^{-1}\left(x-2\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזרת של הרכבה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int f\left(\phi\left(t\right)\right)\phi^{'}\left(t\right)\partial t\underset{s=\phi\left(t\right)}{=}f\left(s\right)\partial s\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{2x-4}{x^{2}-4x+3}\partial x & = & \int\frac{2x-4}{s}\cdot\frac{\partial s}{2x-4}\\
+ & = & \int\frac{\partial s}{s}\\
+ & = & \ln s+c\\
+ &  & \ln2x-4+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\arcsin\left(x\right)}{\sqrt{1-x^{2}}}\partial x & = & t^{3}\partial t\\
+ & = & \frac{t^{4}}{4}+c\\
+ & = & \frac{\arcsin^{4}\left(x\right)}{4}+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\sec^{4}x\partial x & = & \int\sec^{2}x\cdot\underbrace{\sec^{2}x\partial x}_{\partial t}\\
+ & = & \int\left(\tan^{2}\left(x\right)+1\right)\sec^{2}x\partial x\\
+ & = & \int\left(t^{2}+2\right)\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{x+5}{x^{2}-2x+5} & = & \int\frac{x+5}{\left(x-1\right)^{2}+4}\partial x\\
+ & = & \int\frac{x-1+6}{\left(x-1\right)^{2}+4}\\
+ & = & \int\frac{x-1}{\left(x-1\right)^{2}+4}\partial x+\int\frac{6}{\left(x-1\right)^{2}+4}\partial x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מחשב כל אחד בנפרד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{x-1}{\left(x-1\right)^{2}+4} & = & \frac{1}{2}\int\frac{2\left(x-1\right)}{\left(x-1\right)^{2}+4}\\
+ & = & \frac{1}{2}\int\frac{\partial t}{t+4}\\
+ & = & \frac{1}{2}\ln\left(t+4\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{6}{\left(x-1\right)^{2}+4}\partial x & = & 6\int\frac{1}{4\left(\frac{\left(x-1\right)^{2}}{4}+1\right)}\partial x\\
+ & = & \frac{6}{4}\int\frac{1}{\left(\frac{x-1}{2}\right)+1}\partial x\\
+ & = & \frac{6}{4}\arctan\left(\frac{x-1}{2}\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אינטגרציה בחלקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+fg & = & \int f^{'}g\partial x+\int fg^{'}\partial x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\underbrace{x^{2}}_{f}\underbrace{\sin\left(x\right)}_{g^{'}}\partial x & = & x^{2}\left(-\cos x\right)-\int2x\left(-\cos x\right)\partial x\\
+ & = & x^{2}\left(-\cos x\right)-\int\underbrace{2x}_{f}\underbrace{\left(-\cos x\right)}_{g^{'}}\partial x\\
+ & = & -x^{2}\cos x-2\left(x\sin x-\int\sin x\partial x\right)\\
+ & = & -x^{2}\cos x-2x\sin x+\cos x+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\underbrace{e^{-x}}_{g^{'}}\underbrace{\cos\left(2x\right)}_{f}\partial x & = & -e^{-x}\cos\left(2x\right)-\int-e^{-x}\cdot-2\sin\left(2x\right)\partial x\\
+\int e^{-x}\cos\left(2x\right)\partial x & = & -e^{-x}\cos\left(2x\right)-\int e^{-x}2\sin\left(2x\right)\partial x\\
+\int e^{-x}\cos\left(2x\right)\partial x & = & -e^{-x}\cos\left(2x\right)+\left(2e^{-x}\sin2x-4\int e^{-x}\cos\left(2x\right)\right)\\
+\int e^{-x}\cos\left(2x\right)\partial x & = & -e^{-x}\cos\left(2x\right)+2e^{-x}\sin2x-4\int e^{-x}\cos\left(2x\right)\\
+5\int e^{-x}\cos\left(2x\right)\partial x & = & -e^{-x}\cos\left(2x\right)+2x^{-x}\sin2x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\underbrace{\ln x}_{f}\cdot\underbrace{1}_{g^{'}} & = & \ln x\cdot x-\int\frac{1}{x}\cdot x\partial x\\
+ & = & x\ln x-x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימוש במספרים מורכבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int e^{-x}\cos\left(2x\right)\partial x & = & \int e^{-x}Real\left(e^{2ix}\right)\\
+ & = & Real\int e^{-x}e^{2ix}\partial x\\
+ & = & Real\int e^{-\left(1-2i\right)x}\partial x\\
+ & = & Real\left(\frac{1}{-1+2i}e^{\left(-1+2i\right)x}\partial x\right)+c\\
+ & = & Real\left(\frac{-1-2i}{5}e^{-x}\left(\cos2x+i\sin2x\right)\right)+c\\
+ & = & \frac{e^{-x}}{5}\left(-\cos2x+2\sin2x\right)+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הצבות טריגונומטריות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+t=\tan\theta\Rightarrow\begin{cases}
+\cos\theta=\frac{1}{\sqrt{1+t^{2}}}\\
+\sin\theta=\frac{t}{\sqrt{1+t^{2}}}\\
+\partial t=\sec^{2}\theta\partial\theta\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+t=\tan\frac{\theta}{2}\Rightarrow\begin{cases}
+\sin t=\frac{2t}{1+t^{2}}\\
+\cos t=\frac{1-t^{2}}{1+t^{2}}\\
+\partial t=\frac{2}{t+t^{2}}\partial\theta\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial t}{\left(1+t^{2}\right)^{\frac{3}{2}}} & \overset{t=\tan\theta}{=} & \int\frac{\sec^{2}\theta\partial\theta}{\left(1+\tan^{2}\theta\right)^{\frac{3}{2}}}\\
+ & = & \int\frac{\sec^{2}\theta\partial\theta}{\sec^{3}\theta}\\
+ & = & \int\frac{1}{\sec\theta}\partial\theta\\
+ & = & \int\cos\theta\partial\theta\\
+ & = & \sin\theta+c\\
+ & = & \frac{1}{\sqrt{1+t^{2}}}+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial\theta}{2+\sin\theta+2\cos\theta} & \overset{t=\tan\frac{\theta}{2}}{=} & \frac{\frac{2\partial t}{1+t^{2}}}{2+\frac{2t}{1+t^{2}}+2\frac{1-t^{2}}{1+t^{2}}}\\
+ & = & \int\frac{2\partial t}{2\left(1+t^{2}\right)+2t+2\left(1-t^{2}\right)}\\
+ & = & \int\frac{\partial t}{2+t}\\
+ & = & \ln\left(2+t\right)+c\\
+ & = & \ln\left|\tan\frac{\theta}{2}+2\right|+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial t}{1+\cosh t} & = & \int\frac{\partial t}{1+\frac{e^{t}-e^{-t}}{2}}\\
+ & \overset{x=e^{t}}{=} & \int\frac{\frac{1}{x}}{1+\frac{x+\frac{1}{x}}{2}}\partial x\\
+ & = & \int\frac{\partial x}{x+\frac{x^{2}+1}{2}}\\
+ & = & \int\frac{\partial x}{\frac{x^{2}+2x+1}{2}}\\
+ & = & 2\int\frac{\partial x}{\left(x+1\right)^{2}}\\
+ & = & 2\frac{-1}{x+1}+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש עוד דרך חשובה לעשות אינטגרל של שבר שזה לפרק לשברים יותר פשוטים, אבל על
+ זה נלמד בפעם הבאה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+15
+\end_layout
+
+\begin_layout Standard
+בוחן אמצע יהיה כל החומר עד לשיעור שעבר, כלומר עד פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עמוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\numeric off
+.
+\end_layout
+
+\begin_layout Section
+אינטגרציה של פונקציות רציונאליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{p\left(x\right)}{q\left(x\right)}\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו כבר מקירים כמה דרכים לפתור משהוא כזה למשל 
+\begin_inset Formula $\int\frac{1}{ax^{2}+bx+c}$
+\end_inset
+
+ דרך השלמה בריבוע.
+ תזכור 
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{x^{2}+1} & = & \tan^{-1}x+c\\
+\int\frac{\partial x}{x^{2}+1} & = & \tanh^{-1}x+c\\
+\int\frac{\partial x}{x^{2}} & = & -\frac{1}{x}+c\\
+\int\frac{\partial x}{ax+b} & = & \frac{1}{a}\ln\left|ax+b\right|+c\\
+\int\frac{2ax+b}{ax^{2}+bx+c} & = & \ln\left|ax^{2}+bx+c\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל רוצים לחשבהאינטגרל של כל פונקציה, אזי מפרקים את השבר לשברים יותר פשוטים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r\left(x\right)=\frac{p\left(x\right)}{q\left(x\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צעד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+לחלק אז 
+\begin_inset Formula $p\left(x\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $q\left(x\right)$
+\end_inset
+
+ זה עובד אם 
+\begin_inset Formula $\deg p\left(x\right)>\deg q\left(x\right)$
+\end_inset
+
+ אז מקבלים משהוא מהצורה: 
+\begin_inset Formula $a\left(x\right)+\frac{b\left(x\right)}{q\left(x\right)}$
+\end_inset
+
+.
+ למשל 
+\begin_inset Formula $\frac{x^{2}+1}{x+1}=x-1+\frac{2}{x+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עדיין צריכים לדעת איך לעשות אינטגרל של 
+\begin_inset Formula $\frac{b\left(x\right)}{q\left(x\right)}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\deg b\left(x\right)<\deg q\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צעד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+לפרק את הפונקציה 
+\begin_inset Formula $\frac{a\left(x\right)}{b\left(x\right)}$
+\end_inset
+
+ לסכום של איברים בצורה 
+\begin_inset Formula $\frac{A}{\left(x+a\right)},\frac{A+Bx}{\left(x^{2}+ax+b\right)^{n}}$
+\end_inset
+
+.
+ אנחנו יודעים איך לעשות אינטגרל לשני אילו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{A}{x+a}\partial x & = & A\ln\left(x+a\right)+c\\
+\int\frac{A}{\left(x+a\right)^{r}} & = & A\frac{\left(x+a\right)^{1-r}}{1-r}+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial x}{x^{2}+3x+2} & = & \int\frac{\partial x}{\left(x+1\right)\left(x+2\right)}\\
+ & = & \int\left(\frac{A}{x+1}+\frac{B}{x+2}\right)\partial x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך למצא את 
+\begin_inset Formula $A,B$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x}{x^{2}+3x+2} & = & \frac{A}{x+1}+\frac{B}{x+2}\\
+1 & = & A\left(x+2\right)+B\left(x+1\right)\\
+1 & = & x\left(A+B\right)+\left(2A+B\right)\\
+A+B & = & 0\\
+A & = & -B\\
+2A+B & = & 1\\
+B & = & 1-2A\\
+A & = & 1\\
+B & = & -A\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז כל לעשות אינטגרל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{5x\partial x}{x^{2}-2x-3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעוים כי 
+\begin_inset Formula $x^{2}+3x-3=\left(x+3\right)\left(x+1\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{5x}{x^{2}-2x-3} & = & \frac{A}{x-3}+\frac{B}{x+1}\\
+5x & = & A\left(x+1\right)+B\left(x-3\right)\\
+5x & = & x\left(A+B\right)+\left(A-3B\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור ונקבל 
+\begin_inset Formula \[
+A=\frac{15}{4},B=\frac{5}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך לחשב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\left(\frac{15}{4}\cdot\frac{1}{x-3}+\frac{5}{4}\cdot\frac{1}{x+1}\right)\partial x=\frac{15}{4}\ln\left|x-3\right|+\frac{5}{4}\ln\left|x+1\right|+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{2x+5}{x^{2}+4x-4}\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x^{2}+4x+4=\left(x+2\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{2x+5}{x^{2}+4x+4}=\frac{A}{x+2}+\frac{B}{\left(x+2\right)^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2x+5 & = & A\left(x+2\right)+B\\
+2x+5 & = & Ax+\left(2A+B\right)\\
+A & = & 2\\
+2A+B & = & 5\\
+B & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{x\partial x}{x^{4}-2x^{2}+1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{4}-2x^{2}+1 & = & \left(x^{2}-1\right)^{2}\\
+ & = & \left(x-1\right)^{2}\left(x+1\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{x}{x^{2}-2x^{2}+1}=\frac{A}{x-1}+\frac{B}{\left(x-1\right)^{2}}+\frac{C}{x+1}+\frac{D}{\left(x+1\right)^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולפתור רגיל.
+\end_layout
+
+\begin_layout Standard
+אבל מה קורה אם השורשים הם לא ממשיים?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{x+1}{x^{4}+x^{2}}\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{4}+x^{2} & = & x^{2}\left(x^{2}+1\right)\\
+ & = & x^{2}\left(x+i\right)\left(x-i\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{x+1}{x^{4}+x^{2}} & = & \frac{A}{x}+\frac{B}{x^{2}}+\frac{C}{x+i}+\frac{D}{x-i}\\
+x+1 & = & Ax\left(x-i\right)\left(x+i\right)+B\left(x-i\right)\left(x+i\right)+Cx^{2}\left(x-i\right)+Dx^{2}\left(x+i\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x=0 & \Rightarrow & B=1\\
+x=i & \Rightarrow & 1+i=2iD\\
+ &  & D=\frac{1+i}{2i}\\
+x=-i & \Rightarrow & 1-i=C\cdot2i\\
+ &  & C=\frac{1-i}{2i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומקבלים 
+\begin_inset Formula $A$
+\end_inset
+
+ מהשוואת מקדמים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+0 & = & A+C+D\\
+A & = & -\left(C+D\right)=1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי האינטגרל יהיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{x+1}{x^{4}+x^{2}}\partial x=\ln\left|x\right|+-\frac{1}{x}+\frac{-1+i}{2}\ln\left(x+i\right)+\frac{1-i}{2}\ln\left(x-i\right)+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: אי אפשר לסים 
+\begin_inset Formula $\ln\left|v\right|$
+\end_inset
+
+ כאן כי משתמשים במספרים מורכבים.
+\end_layout
+
+\begin_layout Standard
+רואים שיש לנו מספר מורכב + הצמוד שלו אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & = & \frac{-1+i}{2}\ln\left(x+i\right)+\frac{1-i}{2}\ln\left(x-i\right)\\
+ & = & Real\left(\left(-1-i\right)\ln\left(x+i\right)\right)\\
+ & = & Real\left(\left(-1-i\right)\left(\ln\sqrt{x^{2}+1}+i\tan^{-1}\frac{1}{x}\right)\right)\\
+ & = & -\ln\sqrt{x^{2}+1}+\tan^{-1}\frac{1}{x}\\
+ & = & -\frac{1}{2}\ln\left(x^{2}+1\right)+\frac{\pi}{2}-\tan^{-1}\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\frac{x+1}{x^{4}+x^{2}}\partial x=\ln\left|x\right|-\frac{1}{x}-\frac{1}{2}\ln\left(x^{2}+1\right)-\tan^{-1}x+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה היה המון עבודה, אז יש לנו דרך אחרת לעשות את זה בלי מספרים מורכבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{4}+x^{2} & = & x^{2}\left(x^{2}+1\right)\end{eqnarray*}
+
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{x+1}{x^{4}+x^{2}}=\frac{A}{x}+\frac{B}{x^{2}}+\frac{Cx+D}{x^{2}+1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עובדים רגיל ומקבלים 
+\begin_inset Formula $A=1,B=1,C=-1,D=-1$
+\end_inset
+
+ אזי כל מה שנשאר זה לעשות אינטגרציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{1}{x}+\frac{1}{x^{2}}+\frac{-x-1}{x^{2}+1}\partial x & = & \ln\left|x\right|-\frac{1}{x}+\int\frac{-x-1}{x^{2}+1}\\
+ & = & \ln\left|x\right|-\frac{1}{x}+\int\frac{-x}{x^{2}+1}-\int\frac{1}{x^{2}+1}\\
+ & = & \ln\left|x\right|-\frac{1}{x}+\frac{1}{2}\ln\left(x^{2}+1\right)-\tan^{-1}x+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+16
+\end_layout
+
+\begin_layout Standard
+האינטגרל המסויים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int f\left(x\right)\partial x=F\left(x\right)+c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $F^{'}=f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula $\int_{a}^{b}f\left(x\right)\partial x$
+\end_inset
+
+ השטח מתחת לגרף בתחום 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשפט היסודי של חד"ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{a}^{b}f & = & \left[F\right]_{a}^{b}\\
+ & = & F\left(b\right)-F\left(a\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\left(\int_{a}^{x}f\right)=f\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להגיע מהשוויון השני לראשון: 
+\begin_inset Formula $\int_{a}^{x}f$
+\end_inset
+
+ פונקציה קדומה, קיים 
+\begin_inset Formula $c$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\int_{a}^{x}f=F\left(x\right)+c\overset{x=a}{\Rightarrow}0=F\left(a\right)+c$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\int_{a}^{b}f=F\left(b\right)+c=F\left(b\right)-F\left(a\right)$
+\end_inset
+
+ אז הגענו לשוויון הראשון.
+\end_layout
+
+\begin_layout Standard
+אז אם יודעום למה השוויון השני נכון יודעים את הכל)
+\lang english
+The answer to the great question of life the universe and everything
+\lang hebrew
+( 
+\end_layout
+
+\begin_layout Standard
+אז מדוע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מתקיים:
+\end_layout
+
+\begin_layout Standard
+אם שטח בין 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ של 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\int_{a}^{b}f$
+\end_inset
+
+ אזי השטח של 
+\begin_inset Formula $\lim_{h\to0}\int_{a}^{b+h}f\approx\int_{a}^{b+h}f+h\cdot f\left(x\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula \[
+\lim_{h\to0}\frac{1}{h}\left(\int_{a}^{x+h}f-\int_{a}^{x}f\right)=f\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הצד השמאלי של השוויון הוא נגזרת.
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+מה השטח בין 
+\begin_inset Formula $y=x^{2},y=6-x$
+\end_inset
+
+ אז מוצאים נקודות החיתוך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2} & = & 6-x\\
+\left(x+3\right)\left(x-2\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז השטח הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{-3}^{2}\left(6-x\right)\partial x-\int_{-3}^{2}x^{2}\partial x=\int_{-3}^{2}\left(6-x-x^{2}\right)\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה על שוויון שני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\int_{0}^{x}\sin\left(u^{2}\right)\partial u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $\frac{\partial}{\partial x}\left(\int_{a}^{x}f\right)=f\left(x\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\int_{0}^{x}\sin\left(u^{2}\right)\partial u=\sin\left(x^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\int_{0}^{x^{2}}\sin\left(u^{2}\right)\partial u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula $F\left(x\right)=\int_{0}^{x}\sin\left(u^{2}\right)\partial u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\int_{0}^{x^{2}}\sin\left(u^{2}\right)\partial u & = & \frac{\partial}{\partial x}F\left(x^{2}\right)\\
+ & = & F\left(x^{2}\right)\cdot2x\\
+ & = & \sin\left(x^{4}\right)\cdot2x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\left(\int_{x}^{x^{2}}\sin\left(u^{2}\right)\partial u\right) & = & \frac{\partial}{\partial x}\left(\int_{0}^{x^{2}}\sin\left(u^{2}\right)\partial u-\int_{0}^{x}\sin\left(u^{2}\right)\partial u\right)\\
+ & = & 2x\sin\left(x^{2}\right)-\sin\left(x^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לעשות האינטגרציה בחלקים ישר באינטגרל מסויים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int uv^{'}=uv-\int u^{'}v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי במקרה המסויים מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{a}^{b}uv^{'} & = & \left[\int uv^{'}\right]_{a}^{b}\\
+ & = & \left[uv-\int u^{'}v\right]_{a}^{b}\\
+ & = & \left[uv\right]_{a}^{b}-\int_{a}^{b}u^{'}v\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{1}^{2}\ln x & = & \int_{1}^{2}\left(1\cdot\ln x\right)\partial x\\
+ & = & \left[\ln x\cdot x\right]_{1}^{2}-\int_{1}^{2}\frac{1}{x}\cdot x\partial x\\
+ & = & 2\ln2-\int_{1}^{2}1\partial x\\
+ & = & 2\ln2-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואיך זה הולך עם הצבה?
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x=\phi\left(t\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\partial x=\phi^{'}\left(t\right)\partial t$
+\end_inset
+
+ אזי 
+\begin_inset Formula \[
+\int f\left(x\right)\partial x=\int f\left(\phi\left(t\right)\right)\phi^{'}\left(t\right)\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{\phi\left(\alpha\right)}^{\phi\left(\beta\right)}f\left(x\right)\partial x=\int_{\alpha}^{\beta}f\left(\phi\left(t\right)\right)\phi^{'}\left(t\right)\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{0}^{2}\frac{x\partial x}{\left(1+x^{2}\right)\left(2+x^{2}\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם נציב 
+\begin_inset Formula $u=x^{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\partial u=2x\partial x$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{4}\frac{\frac{1}{2}\partial u}{\left(1+u\right)\left(2+u\right)} & = & \frac{1}{2}\int_{0}^{4}\left(\frac{1}{1+u}-\frac{1}{2+u}\right)\partial u\\
+ & = & \frac{1}{2}\left[\ln\left(1+u\right)-\ln\left(2+u\right)\right]_{0}^{4}\\
+ & = & \frac{1}{2}\left(\left(\ln5-\ln6\right)-\left(-\ln2\right)\right)\\
+ & = & \frac{1}{2}\ln\left(\frac{5}{3}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{n}=\int_{0}^{\frac{\pi}{2}}\left(\sin\left(x\right)\right)^{n}\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{n} & = & \int_{0}^{\frac{\pi}{2}}\left(\sin x\right)^{n-2}\left(1-\cos^{2}x\right)\partial x\\
+I_{n} & = & I_{n-2}-\int_{0}^{\frac{\pi}{2}}\underbrace{\left(\cos x\right)}_{u}\underbrace{\left(\sin x\right)^{n-2}\cos\left(x\right)}_{v^{'}}\\
+I_{n} & = & I_{n-2}-\left(\left[\cos x\cdot\frac{\left(\sin x\right)^{n-1}}{n-1}\right]_{0}^{\frac{\pi}{2}}\right)-\int_{0}^{\frac{\pi}{2}}\left(-\sin x\right)\frac{\left(\sin\left(x\right)\right)^{n-1}}{n-1}\partial x\\
+I_{n} & = & I_{n-2}-\frac{I_{n}}{n-1}\\
+\left(1+\frac{1}{n+1}\right)I_{n} & = & I_{n-2}\\
+I_{n} & = & \frac{n-1}{n}I_{n-2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל לפעמים לא רוצים את 
+\begin_inset Formula $\int_{\phi\left(\alpha\right)}^{\phi\left(\beta\right)}f\left(x\right)\partial x\overset{x=\phi\left(t\right)}{=}\int_{\alpha}^{\beta}f\left(\phi\left(t\right)\right)\phi^{'}\left(t\right)$
+\end_inset
+
+, ורוצים את ההפוך של זה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{a}^{b}g\left(t\right)\partial t\overset{\phi\left(t\right)}{=}\int_{\phi\left(a\right)}^{\phi\left(b\right)}g\left(\phi^{-1}\left(x\right)\right)\frac{\partial}{\partial x}\left(\phi^{-1}\left(x\right)\right)\partial x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל זה כמובן עובד רק אם 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הפיכה.
+ למשל אם מסתכלים על פונקציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-2}^{3}t^{2}\partial t & \overset{?}{\underset{x=t^{2}}{=}} & \int_{4}^{9}x\frac{\partial x}{2\sqrt{x}}\\
+\left[\frac{t^{3}}{3}\right]_{-2}^{3} & \overset{?}{=} & \int_{4}^{9}\frac{1}{2}x^{\frac{1}{2}}\partial x\\
+\frac{3^{3}-\left(-2\right)^{3}}{3} & \overset{?}{=} & \left[\frac{1}{3}x^{\frac{3}{2}}\right]_{4}^{9}\\
+\frac{35}{3} & \overset{?}{=} & \frac{1}{3}\left[9^{\frac{3}{2}}-4^{\frac{3}{2}}\right]\\
+\frac{35}{3} & \neq & \frac{19}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אינטגרלים לא טובים
+\end_layout
+
+\begin_layout Standard
+אילו הם אינתגרלים כמו: 
+\begin_inset Formula $\int_{a}^{\infty}f,\int_{-\infty}^{b}f,\int_{-\infty}^{\infty}f$
+\end_inset
+
+ או 
+\begin_inset Formula $\int_{a}^{b}f$
+\end_inset
+
+ כאשר יש נקודות סינגולריות של 
+\begin_inset Formula $f$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הסוג הראשון הוא תחום אינסופי, אז בדרך כלל זה שטח אינסופי, אבל יש פונקצות
+ מסוימות כמו 
+\begin_inset Formula $\int_{1}^{\infty}e^{-x}\partial x$
+\end_inset
+
+ שמקבלים ערכים סופיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{1}^{x}e^{-x} & = & \lim_{x\to\infty}\left[-e^{-x}\right]_{1}^{x}\\
+ & = & \lim_{x\to\infty}\left(-e^{-x}\right)-\left(-e^{-1}\right)\\
+ & = & \frac{1}{e}-\lim_{x\to\infty}e^{-x}\\
+ & = & \frac{1}{e}-0\\
+ & = & \frac{1}{e}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל למשל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{1}^{\infty}\frac{1}{x}\partial x=\left[\ln x\right]_{1}^{\infty}=\ln\left(\infty\right)-\ln1=\infty\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז זה לא מוגדר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{0}^{1}\frac{1}{\sqrt{t}}\partial t=\left[2t^{\frac{1}{2}}\right]=2-0=2\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז זה קיים
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב את זה בצורה הבאה)לאילו שאוהבים כתיב מתמטי נכון(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{\epsilon\to0}\int_{\epsilon}^{1}\frac{1}{\sqrt{t}}=\lim_{\epsilon\to0}\left[2t^{\frac{1}{2}}\right]_{\epsilon}^{1}=2-\lim_{\epsilon\to0}2\sqrt{\epsilon}=2-0=2\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{2}\frac{x}{x-1}\partial x & = & \int_{0}^{1-\epsilon}\frac{x}{x-1}\partial x+\int_{1+\epsilon}^{2}\frac{x}{x-1}\\
+ & = & \left[x+\ln\left|x-1\right|\right]_{0}^{1-\epsilon}+\left[x+\ln\left|x-1\right|\right]_{1+\epsilon}^{2}\\
+ & = & \left(1-\epsilon+\ln\epsilon\right)+2-\left(1+\epsilon\right)-\ln\epsilon\\
+ & = & \left(1-\epsilon+\ln\epsilon\right)+1-\epsilon-\ln\epsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אומרים כי האינטגרל הזה לא מתכנס
+\end_layout
+
+\begin_layout Standard
+דברים שיודעים אבל לא נוכיח עכשיו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}e^{-x^{2}}\partial x & = & \sqrt{\pi}\\
+\int_{0}^{\infty}e^{-x^{2}}\partial x & = & \frac{\sqrt{\pi}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עכשיו אנחנו יכולים לחשב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{\infty}xe^{-x^{2}} & \overset{u=x^{2}}{=} & \int_{0}^{\infty}\frac{1}{2}e^{-u}\partial u\\
+ & = & \left[\frac{1}{2}e^{-u}\right]_{0}^{\infty}\\
+ & = & 0-\frac{1}{2}\end{eqnarray*}
 
 \end_inset
 

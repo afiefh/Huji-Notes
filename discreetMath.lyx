@@ -16,7 +16,7 @@
 \graphics default
 \paperfontsize default
 \spacing single
-\papersize default
+\papersize a4paper
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -29,7 +29,7 @@
 \defskip medskip
 \quotes_language english
 \papercolumns 1
-\papersides 1
+\papersides 2
 \paperpagestyle default
 \tracking_changes false
 \output_changes false
@@ -218,7 +218,7 @@
 \end_layout
 
 \begin_layout Subsection
-יחסים:
+יחסים
 \end_layout
 
 \begin_layout Standard
@@ -6171,6 +6171,23 @@ Erdess-Seckeres
  שהיא סדרה מונוטונית עולה או סדרה מונוטונית יורדת
 \end_layout
 
+\begin_layout Standard
+הוכחה: נוכיח את זה לפי עיכרון שובך היונים
+\end_layout
+
+\begin_layout Standard
+תהי נתונה סדרה 
+\begin_inset Formula $u_{1},\dots u_{n^{2}+1}$
+\end_inset
+
+ של מספרים ממשיים שונים.
+ נניח בשלילה כי לסדרה אין תתי סדרה באורך 
+\begin_inset Formula $n+1$
+\end_inset
+
+ שהיא מונוטונית עולה או מונוטונית יורדת.
+\end_layout
+
 \begin_layout Chapter
 תרגול מס.
 \numeric on
@@ -7643,10 +7660,10 @@ S_{n}=A_{p_{1}}\cup\dots\cup A_{p_{n}}\]
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Chapter
 תרגול מס.
 \numeric on
-99
+8
 \end_layout
 
 \begin_layout Section
@@ -7875,6 +7892,2218 @@ zig zag
 \end_inset
 
  לפי הגדרה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+15
+\end_layout
+
+\begin_layout Standard
+נוכיח באופן כללי הנוסחה כאשר יש 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ 1\dots n\right\} $
+\end_inset
+
+ מספרים ו
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ n_{1},n_{2}\dots n_{n}\right\} $
+\end_inset
+
+ צבעים כך ש 
+\begin_inset Formula $n_{i}>0$
+\end_inset
+
+.
+ מספר האפשרויות הוא 
+\begin_inset Formula ${n \choose 1\dots n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה באינדוקציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $l=2$
+\end_inset
+
+ הוא מספר האפשרויות כאשר 
+\begin_inset Formula ${n \choose n_{1}\dots n_{2}}={n \choose n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר האפשרויות שווה ל
+\begin_inset Formula ${n \choose n}$
+\end_inset
+
+ שזה מספר האפשרויות לקבוצה שתצבע בצבע הראשון.
+ 
+\begin_inset Formula ${n-n_{1} \choose n_{2},n_{3}\dots n_{l}}$
+\end_inset
+
+ הקבוצה השניה בגודל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ ב
+\begin_inset Formula $l-1$
+\end_inset
+
+ צבעים.
+ זה 
+\begin_inset Formula $\frac{n!}{n_{1}!}...$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: למה קוראים למשתנים אילה משתנים מולטינומיים? זה כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x_{1}+\dots+x_{l}\right)^{n} & = & \left(x_{1}+\dots+x_{n}\right)\cdots\left(x_{1}+\dots+x_{n}\right)\\
+ & = & \sum_{n_{1}+n_{2}+\dots+n_{l}=n}{n \choose n_{1}n_{2}\dots n_{l}}x_{1}^{n_{1}}\cdots x_{l}^{n_{l}}\\
+ & =\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תורת הגרפים
+\end_layout
+
+\begin_layout Standard
+זה תחום רחב מאוד ויש בו המון שאלות פתוחות)יאלה תפתרו יא מחוננים(
+\end_layout
+
+\begin_layout Standard
+תורת הגרפים באופן כללי עושקת במספר סופי של קודקודים 
+\begin_inset Formula $V$
+\end_inset
+
+ וקשתות או צלעות ביניהם 
+\begin_inset Formula $E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש קשתות שהם מכובנות)קשת בין 
+\begin_inset Formula $a\to b$
+\end_inset
+
+ היא שווה ל 
+\begin_inset Formula $b\to a$
+\end_inset
+
+( ויש גרפים מכובנים שבהם 
+\begin_inset Formula $a\to b\neq b\to a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה לשאלה מתורת הגרפים:
+\end_layout
+
+\begin_layout Standard
+אם יש 
+\begin_inset Formula $k$
+\end_inset
+
+ אנשים והם רוצים לחגור תעלה בין כל זוג אנשים כך שהתעלות לא יחתכו.
+\end_layout
+
+\begin_layout Standard
+אם זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אמשים זה אפשרי
+\end_layout
+
+\begin_layout Standard
+אם זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים אז גם אפשרי
+\end_layout
+
+\begin_layout Standard
+אבל אם זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים אזי אי אפשר להשתמש באלכסונים ישרים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+תמשיך פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+14
+\numeric off
+ 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+16
+\end_layout
+
+\begin_layout Paragraph
+גרף 
+\end_layout
+
+\begin_layout Standard
+יש לו 
+\begin_inset Formula $V$
+\end_inset
+
+ קבוצת קודקודים ו 
+\begin_inset Formula $E$
+\end_inset
+
+ קבוצת קשתות.
+ יש גרפים לא מכוונים
+\begin_inset Formula $\left(a\to b=b\to a\right)$
+\end_inset
+
+ וגרפים מכובנים
+\begin_inset Formula $\left(a\to b\neq b\to a\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+בדרך כלל מסמנים 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+.
+ לכל גרף אפשר להצמיד מטריצת החילה שהיא מטריצה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שגודלה הוא מספר הקודקודים בריבוע וסמים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בנקודות שיש ביניהם קשת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c20d1.svg
+	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="5">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+4
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מסתכלים על גרף מכוון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c20d2.svg
+	lyxscale 20
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="4">
+<features>
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" width="0">
+<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row topline="true" bottomline="true">
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Standard
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חשוב ליצר את זה בצורה זו כדי ללמוד על גרפים כמטריצות ולהשתמש בטכניקות של
+ אלגברה ליניארית.
+\end_layout
+
+\begin_layout Standard
+הגדרות:
+\end_layout
+
+\begin_layout Enumerate
+קודקודים 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ יקראו שכנים אם קיימת צלע/קשת בין 
+\begin_inset Formula $u\to v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תהי 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ אז קבוצת השכנים של 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\begin_inset Formula $\Gamma\left(S\right)=\left\{ v\in V\vert\exists u\in S,\mbox{u,v are neighbours}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+דרגה של קודקוד 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ שמסמנים 
+\begin_inset Formula $\deg v$
+\end_inset
+
+ או 
+\begin_inset Formula $dv$
+\end_inset
+
+ היא מספר מס הצלעות המחוברות ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+ לכל קודקוד אפשר להגדיר דרגת כניסה ודרגת יציאה)שהם שונים אם הגרף מכוון.
+\end_layout
+
+\begin_layout Enumerate
+קודקוד 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ יקרא מבודד אם דרגתו היא אפס 
+\begin_inset Formula $\deg v=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף לא מכוון אזי 
+\begin_inset Formula $\sum_{v\in V}d\left(v\right)=2\left|E\right|$
+\end_inset
+
+ כלומר סכום הדרגות שווה לפעמיים מספר הצלעות.
+\end_layout
+
+\begin_layout Standard
+הוכחה: תהי 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ אזי 
+\begin_inset Formula $e$
+\end_inset
+
+ מחברת בין שני קודקודים 
+\begin_inset Formula $v_{1},v_{2}\in V$
+\end_inset
+
+ לכן הצלע 
+\begin_inset Formula $e$
+\end_inset
+
+ טורמת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $d\left(v_{1}\right)$
+\end_inset
+
+ ו
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל
+\begin_inset Formula $d\left(v_{2}\right)$
+\end_inset
+
+ כלומר היא תורמת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לסכום 
+\begin_inset Formula $\sum d\left(v\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הגדרות:
+\end_layout
+
+\begin_layout Enumerate
+סדרת קודקודים 
+\begin_inset Formula $\left(v_{0},v_{1}\dots,v_{n}\right)$
+\end_inset
+
+ תיקרא מסלול או מסילה בקרף 
+\begin_inset Formula $G$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $0\leq i\leq n-1$
+\end_inset
+
+ 
+\begin_inset Formula $\left(v_{i},v_{i+1}\right)\in E$
+\end_inset
+
+ וכל 
+\begin_inset Formula $0\leq i<j\leq n-1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(v_{i},v_{i+1}\right)=\left(v_{j},v_{j+1}\right)$
+\end_inset
+
+ )כלומר אסור לחזור על אותה קשת פעמיים.(
+\end_layout
+
+\begin_layout Enumerate
+מסלול שיש בו כל הקודקודים שונים נקרא פשוט.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מעגל - מסלול שבו 
+\begin_inset Formula $v_{0}=v_{n}$
+\end_inset
+
+ מעגל פשוט - מעגל שבו לכל 
+\begin_inset Formula $0\leq i<j\leq n-1$
+\end_inset
+
+ 
+\begin_inset Formula $v_{i}\neq v_{j}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אורך מסלול הוא מספר הקשתות במסלול.
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ אזי המרחק 
+\begin_inset Formula $\underbrace{d}_{distance}\left(u,v\right)$
+\end_inset
+
+ אם הוא מוגדר אז הוא האורך המינימאלי של מסלול בין 
+\begin_inset Formula $u\to v$
+\end_inset
+
+ אם לא קיים מסלול כזה אז זה מוגדר להיות 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+גרף לא מכוון יקרא קשיר אם לכל זוג נקודות 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ ישנה מסלול בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ וגרף מכוון יקרא קשיר חזק אם זוג נקודות 
+\begin_inset Formula $u,v\in V$
+\end_inset
+
+ קיים מסלול מכוון בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ ומסלול מכוון בין 
+\begin_inset Formula $v$
+\end_inset
+
+ ל
+\begin_inset Formula $u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף לא מכוון קשיר אזי הפונקציה 
+\begin_inset Formula $d:\left(V\times V\right)\to\mathbb{N}$
+\end_inset
+
+)מרחק( היא מטריקה כלומר מקיימת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תכונות 
+\begin_inset Formula $\forall u,v,w\in V:d\left(u,v\right)\geq0,d\left(v,v\right)=0,d\left(u,v\right)=d\left(v,u\right),d\left(u,v\right)+d\left(v,w\right)\geq d\left(u,w\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+עוד הגרות:
+\end_layout
+
+\begin_layout Enumerate
+נגדיר יחס שקילות על כודכודי 
+\begin_inset Formula $G$
+\end_inset
+
+ אזי נגדיר כי 
+\begin_inset Formula $v_{1}\sim v_{2}$
+\end_inset
+
+ אם קיימת מסילה בין 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ מחלקת שקילות של יחס זה נקרא רכיב שירות של גרף 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+למה: היחס 
+\begin_inset Formula $R$
+\end_inset
+
+ הזה הוא יחס שקילות:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ תמיד 
+\begin_inset Formula $v\sim v\Rightarrow\left(v,v\right)\in R$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ אם קיימת מסילה בין 
+\begin_inset Formula $v_{1}\to v_{2}$
+\end_inset
+
+ אזי גם קיים 
+\begin_inset Formula $v_{2}\to v_{1}$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+.
+ טרנזיטיביות: זה כבר ברור.
+ הערה: בגרף מכוון נגדיר כי 
+\begin_inset Formula $v_{1}\sim v_{2}$
+\end_inset
+
+ אם קיימת 
+\begin_inset Formula $v_{1}\to v_{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $v_{2}\to v_{1}$
+\end_inset
+
+.
+ כל מחלקת שקילות הינה קשירה ממש.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף לא מכוון קשיר 
+\begin_inset Formula $\emptyset\neq S\subsetneqq V$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ 
+\begin_inset Formula $u\notin S$
+\end_inset
+
+ כך ש
+\begin_inset Formula $u$
+\end_inset
+
+ שכן של 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: בוחרים 
+\begin_inset Formula $v_{1}\in S$
+\end_inset
+
+ ו 
+\begin_inset Formula $v_{2}\notin S$
+\end_inset
+
+ ששניהם קיימים כי 
+\begin_inset Formula $\emptyset\neq S$
+\end_inset
+
+ ו
+\begin_inset Formula $S\neq V$
+\end_inset
+
+ והגרף קשיר אזי יש מסילה בין 
+\begin_inset Formula $v_{1}\to v_{2}$
+\end_inset
+
+ אז עוברים על המסילה עד שמגיעים לכודכוד הראשון בתוך 
+\begin_inset Formula $S$
+\end_inset
+
+ נסמן אותו ב 
+\begin_inset Formula $\hat{t}$
+\end_inset
+
+.
+ כלומר כל אילו שלפני 
+\begin_inset Formula $\hat{t}$
+\end_inset
+
+ לא ב 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ הקודקוד שעומד לפניו במסילה נסמן 
+\begin_inset Formula $\hat{w}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\hat{w}$
+\end_inset
+
+ הוא שכן של 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגדרות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in V$
+\end_inset
+
+ אז 
+\begin_inset Formula $g-x$
+\end_inset
+
+ גרף שהוצא ממנו קודקוד 
+\begin_inset Formula $x$
+\end_inset
+
+ וכל הקשתות המכלים את 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ אז 
+\begin_inset Formula $G\setminus S$
+\end_inset
+
+ הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ שהוציא ממנו כל הקודקודים 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ וכל קשת המכילה את 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ תת-גרף של 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא גרף 
+\begin_inset Formula $\hat{G}=\left(\hat{V},\hat{E}\right)$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $\hat{E}\in E,\hat{V}\in V$
+\end_inset
+
+ אם 
+\begin_inset Formula $\hat{e}\in\hat{E}$
+\end_inset
+
+ אזי הקודקודים בהם חלה הצלע 
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+ נמצאת ב
+\begin_inset Formula $\hat{V}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+9
+\end_layout
+
+\begin_layout Section
+איך עובדים הם ההכלה וההדכה
+\end_layout
+
+\begin_layout Standard
+מה מאפיין מסלול שלנו? יש בו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צעדים ימינה ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\numeric off
+ צעדים למעלה.
+ אזי כמה מסלולים כאילו אפשר לייצר? 
+\begin_inset Formula ${14 \choose 7}$
+\end_inset
+
+ כי אם כבענו הצעדים ימינה אז כבר קבענו את המסלול
+\end_layout
+
+\begin_layout Standard
+אם יש משבצת שאי אפשר להגיע איליה, אזי יש מסלולים שמתבטלים.
+ אז כמה מסלולים נפסלו? נניח שהמשפצת הזו היא 
+\begin_inset Formula $\left(4,6\right)$
+\end_inset
+
+ אזי צריך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צעדים ימינה ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שמאלה, וצריכים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צעדים ימינה ו
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+למעלה להגיע לסוף.
+ אזי המסלולים שעוברים דרך נקודה זו הוא 
+\begin_inset Formula ${10 \choose 6}{4 \choose 1}$
+\end_inset
+
+ אזי נשארו 
+\begin_inset Formula ${14 \choose 6}-{10 \choose 6}{4 \choose 1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגיד שיש עוד משפצת שנפסלה, הפעם 
+\begin_inset Formula $\left(3,5\right)$
+\end_inset
+
+ אזי יש 
+\begin_inset Formula ${5 \choose 2}{9 \choose 5}$
+\end_inset
+
+ שנפסלו, אבל מביניהם מסלולים שכבר פסלנו מכודם אזי רוצים להוסיף המסלולים
+ שעוברים בשתי הנקודות)כי כבר פסלנו אןתם פעמיים( כלומר 
+\begin_inset Formula ${5 \choose 2}{5 \choose 2}{4 \choose 1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם יש עוד תחנה שלא עובדת 
+\begin_inset Formula $\left(6,3\right)$
+\end_inset
+
+ אזי צריך לפסול 
+\begin_inset Formula ${9 \choose 3}{5 \choose 1}$
+\end_inset
+
+ מסלולים אבל כבר זרקנו מסלולים כאילו כאשר ספרנו בפעמים הקודמים לכן מחזירים
+ אותם: 
+\begin_inset Formula ${5 \choose 2}{4 \choose 4}{5 \choose 1}$
+\end_inset
+
+)של התחנה הפגועה הראשונה כי אין מסלול שעובר דרך התחנה השלישית והשנייה(
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{14 \choose 7}-{10 \choose 6}{4 \choose 1}-{5 \choose 2}{9 \choose 5}+{5 \choose 2}{5 \choose 2}{4 \choose 1}-{9 \choose 3}{5 \choose 1}+{5 \choose 2}{4 \choose 4}{5 \choose 1}+0-0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1} & = & 3\\
+x_{1}+x_{2} & = & 3\\
+x_{1}+x_{2}+x_{3} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמה פתרונות יש למשוואה הראשונה?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+כמה פתרונות יש לשנית?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+פתרונות 
+\begin_inset Formula $\left(0,3\right),\left(1,2\right),\left(2,1\right),\left(3,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמה יש לשלישית?
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+פתרונות שזה 
+\begin_inset Formula ${5 \choose 2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם רוצים 
+\begin_inset Formula $\sum_{i=1}^{k}x_{i}=n$
+\end_inset
+
+ אזי יש 
+\begin_inset Formula ${n+k-1 \choose k-1}={n+j-1 \choose n}$
+\end_inset
+
+ אפשרויות.
+ נוכיח את זה:
+\end_layout
+
+\begin_layout Standard
+אם יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מספרים 
+\begin_inset Formula $x_{1}+x_{2}+x_{3}+x_{4}=7$
+\end_inset
+
+ מסמנים את זה ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדורים 
+\begin_inset Formula $oooooo$
+\end_inset
+
+ שסמים מקלות ביניהם, כלומר לפתרון 
+\begin_inset Formula $\left(2,2,0,3\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $oo\vert oo\vert\vert ooo$
+\end_inset
+
+ אזי צריך לבחור מקום 
+\begin_inset Formula $k-1$
+\end_inset
+
+ מקלות בין 
+\begin_inset Formula $n$
+\end_inset
+
+ כדורים זה לבחור 
+\begin_inset Formula $k-1$
+\end_inset
+
+ מקומות מבין 
+\begin_inset Formula $n+k-1$
+\end_inset
+
+ כלומר 
+\begin_inset Formula ${n+k-1 \choose k-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באו נסבך את זה קצת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}+x_{2}+x_{3}+x_{4}=24\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם האילוצים הם 
+\begin_inset Formula $x_{1}\geq-9,x_{2}\geq7,x_{3}\geq0,x_{4}\geq-3$
+\end_inset
+
+ אזי מסמנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}=y_{1}+9,x_{2}=y_{2}-7,x_{3}=y_{3},x_{4}=y_{4}+3\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{1}+y_{2}+y_{3}+y_{3}=11\]
+
+\end_inset
+
+ זה כבר יודעים איך לפתור שזה 
+\begin_inset Formula ${14 \choose 3}$
+\end_inset
+
+
 \end_layout
 
 \end_body

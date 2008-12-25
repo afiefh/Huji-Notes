@@ -1,0 +1,123 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\vec{r}=\left(0,0\right)$
+\end_inset
+
+ הוא מרכז המוט.
+ התנע הזוויתי נשמר כי אין מומנטים חיצוניים שפועלים לכן אם נרשום הבעיה בזמן
+ 
+\begin_inset Formula $t=\lim_{\epsilon\to0}\epsilon$
+\end_inset
+
+ לפני הפגיעה נקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L_{Before} & = & L_{After}\\
+m_{4}\cdot\vec{v}\times\vec{r}_{4} & = & \begin{matrix}m_{1}\cdot\vec{u}_{1}\times\vec{r}_{1}+m_{2}\cdot\vec{u}_{2}\times\vec{r}_{2}+\\
+m_{3}\cdot\vec{u}_{3}\times\vec{r}_{3}+m_{4}\cdot\vec{u}_{4}\times\vec{r}_{4}\end{matrix}\\
+m_{4}v\cdot\frac{d}{2} & = & m_{1}u\frac{d}{2}+m_{4}u\frac{d}{2}+m_{2}u\frac{d}{4}+m_{3}u\frac{d}{2}\\
+m_{4}vd & = & m_{1}du+m_{4}du+\frac{1}{2}m_{2}du+m_{3}du\\
+u & = & \frac{m_{4}vd}{m_{1}d+m_{4}d+\frac{1}{2}m_{2}d+m_{3}d}\\
+ & = & \frac{m_{4}v}{m_{1}+m_{4}+\frac{1}{2}m_{2}+m_{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אין שימור תנע בבעיה זו כי יש כוח חיצוני שפועל על המערכת וזה הוא הכח של הציר
+ שעוצר את מרכז המסה של המערכת.
+\end_layout
+
+\begin_layout Standard
+אין שימור אנרגיה כי ההתנגשות שרואים היא התנגשות פלסטית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta E & = & E_{after}-E_{before}\\
+ & = & \frac{1}{2}m_{4}v^{2}-\frac{1}{2}u^{2}\left(m_{1}+m_{2}+m_{3}+m_{4}\right)\\
+ & = & \frac{1}{2}m_{4}v^{2}-\frac{1}{2}\frac{m_{4}^{2}v^{2}\left(m_{1}+m_{2}+m_{3}+m_{4}\right)}{\left(m_{1}+m_{4}+\frac{1}{2}m_{2}+m_{3}\right)^{2}}\\
+ & = & \frac{1}{2}m_{4}v^{2}\left[1-\frac{m_{4}\left(m_{1}+m_{2}+m_{3}+m_{4}\right)}{\left(m_{1}+m_{4}+\frac{1}{2}m_{2}+m_{3}\right)^{2}}\right]\\
+\Delta E & \neq & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

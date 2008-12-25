@@ -5560,6 +5560,273 @@ B & = & \begin{pmatrix}1 & 0 & 0 & 0\\
 \end_layout
 
 \begin_layout Standard
+\begin_inset Formula \[
+\dim Col\left(A\right)+\dim Ker\left(A\right)=\dim\left(A\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי יש למרחב 
+\begin_inset Formula $V$
+\end_inset
+
+ שני בסיסים: 
+\begin_inset Formula $f_{1},f_{2}\dots$
+\end_inset
+
+ ו 
+\begin_inset Formula $g_{1},g_{2}\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A:\mathbb{R}^{n} & \to & V\\
+A\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+a_{n}\end{pmatrix} & = & \alpha_{1}f_{1}+\dots+\alpha_{n}f_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B:V & \to & \mathbb{R}^{m}\\
+B\begin{pmatrix}\alpha_{1}\\
+\vdots\\
+a_{m}\end{pmatrix} & = & \beta_{1}g_{1}+\dots+\beta_{m}g_{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי שניהם חד חד ערכיים ועל ולכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C & = & A\circ B\\
+C:\mathbb{R}^{n} & \to & \mathbb{R}^{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי גם הרכבה של שתי פעולות חד חד ערכיות ועל היא חד חד ערכיות ועל אזי
+ 
+\begin_inset Formula $n=m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סוגי מטריציות
+\end_layout
+
+\begin_layout Standard
+מטריצה משולשת עליונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Upper Triangular Matrix
+\lang hebrew
+: 
+\begin_inset Formula $u_{i,j}\underset{\begin{matrix}i>j\end{matrix}}{=}0$
+\end_inset
+
+ דוגמה: 
+\begin_inset Formula $L=\begin{pmatrix}1 & 2 & 3\\
+0 & 4 & 5\\
+0 & 0 & 6\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטריצה משולשת תחתונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Lower Triangular Matrix
+\lang hebrew
+: 
+\begin_inset Formula $u_{i,j}\underset{\begin{matrix}i<j\end{matrix}}{=}0$
+\end_inset
+
+ דוגמה: 
+\begin_inset Formula $U=\begin{pmatrix}1 & 0 & 0\\
+2 & 4 & 0\\
+4 & 5 & 6\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Standard
+כל מה שעשינו בתרגול זה זה לחזור על אלגוריתם מציאת מטריצה הפכית.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+15
+\end_layout
+
+\begin_layout Section
+דיטרמיננטה
+\end_layout
+
+\begin_layout Standard
+ננסה לחשב שטח של מקבילית הבנויה על שני וקטורים 
+\begin_inset Formula $\vec{x}=\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix},\vec{y}=\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}$
+\end_inset
+
+.
+ נסמן הפונקציה המחשבת את זה היא 
+\begin_inset Formula $S$
+\end_inset
+
+ שמקבלת שני ערכים ומחשבת את השטח.
+ מה התכונות של 
+\begin_inset Formula $S$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\left(e_{1},e_{2}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\left(\alpha x_{1}+\beta x_{2},x_{3}\right)=\alpha S\left(x_{1},x_{3}\right)+\beta S\left(x_{2},x_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\left(x_{1},\alpha x_{2}+\beta x_{3}\right)=\alpha S\left(x_{1},x_{2}\right)+\beta S\left(x_{1},x_{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S\left(x_{1},x_{2}\right)=-S\left(x_{2},x_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S\left(x,y\right)=x_{1}y_{2}-x_{2}y_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אם הווקטורים שלנו לא ב
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ אלה ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S\left(x,y,z\right)=x_{1}\left(y_{2}z_{3}-y_{3}z_{2}\right)-x_{2}\left(y_{1}z_{3}-y_{3}z_{1}\right)+x_{3}\left(y_{1}z_{2}-y_{2}z_{1}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסמנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S\left(\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix},\begin{pmatrix}y_{1}\\
+y_{2}\\
+y_{3}\end{pmatrix},\begin{pmatrix}z_{1}\\
+z_{2}\\
+z_{3}\end{pmatrix}\right)=S\begin{pmatrix}x_{1} & y_{1} & z_{1}\\
+x_{2} & y_{2} & z_{2}\\
+x_{3} & y_{3} & z_{3}\end{pmatrix}=\begin{vmatrix}x_{1} & y_{1} & z_{1}\\
+x_{2} & y_{2} & z_{2}\\
+x_{3} & y_{3} & z_{3}\end{vmatrix}\]
+
+\end_inset
+
 
 \end_layout
 

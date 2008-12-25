@@ -7471,5 +7471,540 @@ m\vec{a}\vert_{S^{'}}=-mg\hat{r}+GMm\left\{ \frac{\hat{r}_{cm}}{r_{cm}^{2}}-\fra
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+21
+\end_layout
+
+\begin_layout Section
+פתרון בעית קפלר
+\end_layout
+
+\begin_layout Standard
+חוקי קפלר:
+\end_layout
+
+\begin_layout Standard
+חוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+: כוכבי הלכת נעים באליפסות סביב השמש כאשר השמש לא נמצאת באםמצע האליפה אלה
+ באחד המוקדים של האליפסה.
+ אם השמש נמצאת ב 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ אזי אליפסה היא 
+\begin_inset Formula $\frac{\left(x+d\right)^{2}}{a^{2}}+\frac{y^{2}}{b^{2}=1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $d=\sqrt{a^{2}-b^{2}}$
+\end_inset
+
+ אפשר גם לכתוב איליפס באופן הבא 
+\begin_inset Formula $r\left(\theta\right)=\frac{c}{1+\epsilon\cos\theta}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\epsilon<1$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\epsilon=\frac{d}{a}=\sqrt{1-\frac{b^{2}}{a^{2}}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $c=\frac{b^{2}}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: אם כוכב לכת נע מ 
+\begin_inset Formula $r_{1}\to r_{2}$
+\end_inset
+
+ במשך 
+\begin_inset Formula $\Delta t_{1}$
+\end_inset
+
+, אזי השטח 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ הוא השטח של האליפסה בין 
+\begin_inset Formula $r_{1},r_{2}$
+\end_inset
+
+ והשמש.
+ ו
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ הוא השטח שחלף ב
+\begin_inset Formula $\Delta t_{2}$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $\Delta t_{1}=\Delta t_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A_{1}=A_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+: זמן המחזור 
+\begin_inset Formula $\tau\propto a^{\frac{3}{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c28d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם מתקבלים חוקי קפלר מחוקי ניוטון?
+\end_layout
+
+\begin_layout Standard
+מה נשמר במערכת זו?
+\end_layout
+
+\begin_layout Standard
+אין כוחות חיצוניים אזי 
+\begin_inset Formula $\dot{P}=0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $\sum F=0$
+\end_inset
+
+ אזי גם אין מומנטים לכן 
+\begin_inset Formula $\dot{L}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם מסתכלים על התנע הזוויתי במערכת שראשית הצירים שלה עלהשמש אזי 
+\begin_inset Formula $\vec{L}=\vec{r}\times m_{E}\vec{v}=m_{E}\underbrace{\vec{r}\times\vec{v}}_{L_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז פותרים 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c28d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{cm} & = & \frac{1}{M}\left(m_{1}\vec{r}_{1}+m_{2}\vec{r}_{2}\right)\\
+\vec{r} & = & \vec{r}_{2}-\vec{r}_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{2} & = & \vec{r}+\vec{r}_{1}\\
+\vec{R}_{cm} & = & \frac{1}{M}\left(m_{1}\vec{r}_{1}+m_{2}\vec{r}+m_{2}\vec{r}_{1}\right)\\
+ & = & \vec{r}_{1}+\frac{m_{2}}{M}\vec{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{2} & = & \vec{r}+\vec{r}_{1}\\
+ & = & \vec{R}_{cm}-\frac{m_{2}}{M}\vec{r}+\vec{r}\\
+ & = & \vec{R}_{cm}+\frac{m_{1}}{M}\vec{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{1} & = & \vec{R}_{cm}-\frac{m_{2}}{M}\vec{r}\\
+\vec{r}_{2} & = & \vec{R}_{cm}-\frac{m_{1}}{M}\vec{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מחשבים התנע הזוויתי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & m_{1}\left(\vec{r}_{1}\times\vec{v}_{1}\right)+m_{2}\left(\vec{r}_{2}\times\vec{v}_{2}\right)\\
+ & = & m_{1}\left(\vec{R}_{cm}-\frac{m_{2}}{M}\vec{r}\right)\times\vec{v}_{1}+m_{2}\left(\vec{R}_{cm}+\frac{m_{1}}{M}\vec{r}\right)\times\vec{v}_{2}\\
+ & = & \vec{R}_{cm}\times\left(m_{1}\vec{v}_{1}+m_{2}\vec{v}_{2}\right)+\frac{m_{1}m_{2}}{M}\vec{r}\times\left(\vec{v}_{2}-\vec{v}_{1}\right)\\
+ & = & \underbrace{\vec{R}_{cm}\times M\dot{\vec{R}}_{cm}}_{\mbox{Motion of CM}}+\mu\left(\vec{r}\times\underbrace{\vec{v}}_{\begin{matrix}\frac{\partial}{\partial t}\vec{r}=\\
+\frac{\partial}{\partial t}\left(\vec{r}_{2}-\vec{r}_{1}\right)\end{matrix}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מגדירים כי 
+\begin_inset Formula $R_{cm}=0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \underbrace{\vec{R}_{cm}\times M\dot{\vec{R}}_{cm}}_{0}+\mu\left(\vec{r}\times\vec{v}\right)\\
+ & = & \mu\left(\vec{r}\times\vec{v}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r}_{1} & = & \vec{R}_{cm}-\frac{m_{2}}{M}\vec{r}\\
+\vec{r}_{2} & = & \vec{R}_{cm}+\frac{m_{1}}{M}\vec{r}\\
+\vec{L} & = & \mu\left(\vec{r}\times\vec{v}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סוף סוף נגיע למשוואת התנועה:
+\end_layout
+
+\begin_layout Standard
+עבור כדור השמש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\ddot{\vec{r}}_{1} & = & \vec{F}_{2\to1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור כדור הארץ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m_{2}\ddot{\vec{r_{2}}}=\vec{F}_{1\to2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מציבים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\frac{\partial^{2}}{\partial t^{2}}\left(\underbrace{R_{cm}}_{\dot{R}_{cm}=0}-\frac{m_{2}}{M}\vec{r}\right) & = & \vec{F}_{2\to1}\\
+\mu\ddot{\vec{r}} & = & -\vec{F}_{2\to1}\\
+\mu\ddot{\vec{r}} & = & -G\frac{m_{1}m_{2}}{r^{2}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לעשות אותו דבר לכדור הארץ ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu\ddot{\vec{r}}=G\frac{m_{1}m_{2}}{r^{2}}\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המשוואה שצריך לפתור היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu\ddot{\vec{r}}=-\frac{\overbrace{k_{0}}^{Gm_{1}m_{2}}}{r^{2}}\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל 
+\begin_inset Formula $\vec{r}\left(t\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\vec{r}_{1}\\
+\vec{r}_{2}\end{pmatrix}\Rightarrow\begin{pmatrix}\vec{R}_{cm}\\
+\vec{r}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{v}=\frac{\partial}{\partial t}\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu\ddot{\vec{r}} & = & -\frac{k_{0}}{r^{2}}\hat{r}\\
+L & = & \mu\left(\vec{r}\times\vec{v}\right)=\vec{l}_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu\ddot{\vec{r}}=\left\{ \mu\ddot{\vec{r}}-\mu r\dot{\theta}^{2}\right\} \hat{r}+\left\{ 2\mu\dot{r}\dot{\theta}+\mu r\ddot{\theta}\right\} \hat{\theta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu\ddot{r}-\mu r\dot{\theta}^{2} & = & -\frac{k}{r^{2}}\\
+2\mu\dot{r}\dot{\theta}+\mu r\ddot{\theta} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה השניה היא שווה ל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\left(\mu r^{2}\dot{\theta}\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I\to\mu\ddot{r}-\mu r\left\{ \frac{l_{0}^{2}}{\mu^{2}r^{4}}=-\frac{k_{0}}{r^{2}}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu\ddot{r}=\frac{k_{1}}{r^{3}}-\frac{k_{0}}{r^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dot{\theta}=\frac{l_{0}}{\mu}\cdot\frac{1}{r^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תזכור כי הגדרנו 
+\begin_inset Formula \begin{eqnarray*}
+k_{1} & = & \frac{l_{0}^{2}}{\mu}\\
+k_{0} & = & Gm_{1}m_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dot{r}=\frac{\partial r}{\partial t}=-\frac{l_{0}}{\mu}\frac{\partial}{\partial\theta}u\left(\theta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{r} & = & -\frac{l_{0}^{2}}{\mu^{2}}u^{2}\frac{\partial^{2}}{\partial\theta^{2}}u\left(\theta\right)\\
+\frac{\partial}{\partial\theta}u\left(\theta\right) & = & u^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{r}=-\frac{l_{0}^{2}}{\mu^{2}}u^{2}u^{''}=k_{1}u^{3}-ku^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

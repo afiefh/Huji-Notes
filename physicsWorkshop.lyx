@@ -1603,5 +1603,76 @@ u_{i}-u_{f}+\int\vec{F}_{nc}\partial\vec{r} & = & \frac{1}{2}mv_{final}^{2}-\fra
 
 \end_layout
 
+\begin_layout Chapter
+סדנא מספר ???
+\end_layout
+
+\begin_layout Section
+אוסילטור הרמוני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ma & = & -kx\\
+m\frac{\partial^{2}x}{\partial t^{2}} & = & -kx\\
+\frac{\partial^{2}x}{\partial t^{2}}+\frac{k}{m}x & = & 0\\
+\frac{\partial^{2}x}{\partial t^{2}}+\omega^{2}x & = & 0\\
+x\left(t\right) & = & ?\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך לפתור את המשוואה הדיפרנציאלית הזאת שהיא הומוגינית מסדר שני.
+\end_layout
+
+\begin_layout Standard
+נמצא פתרון כללי של הבעיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a\frac{\partial^{2}x}{\partial t^{2}}+b\frac{\partial x}{\partial t}+cx=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מנחשים כי 
+\begin_inset Formula $x\left(t\right)=Ae^{rt}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+aAr^{2}e^{rt}+bAre^{rt}+cAe^{rt} & = & 0\\
+ar^{2}+br+c & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מקבלים שני פתרונות למשוואה הזו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1}\left(t\right) & = & Ae^{r_{1}t}\\
+x_{2}\left(t\right) & = & Ae^{r_{2}t}\\
+x\left(t\right) & = & x_{1}\left(t\right)+x_{2}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document
