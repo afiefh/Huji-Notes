@@ -10106,5 +10106,295 @@ y_{1}+y_{2}+y_{3}+y_{3}=11\]
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+17
+\end_layout
+
+\begin_layout Standard
+השבוע שעבר דיברנו על גרפים, שמסמנים 
+\begin_inset Formula $G\left(V,E\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $V$
+\end_inset
+
+ זה קודקודים ו
+\begin_inset Formula $E$
+\end_inset
+
+ זה קשטים.
+\end_layout
+
+\begin_layout Standard
+נגדיר קוטר של גרף: זה שווה למקסימום המרחק בין זוג קודקודים בגרף.
+\end_layout
+
+\begin_layout Standard
+טענה: יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+קודקודים אם 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר אזי ב
+\begin_inset Formula $G$
+\end_inset
+
+ לפחות 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות.
+ טענה יותר חזקה: יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים, ו
+\begin_inset Formula $m$
+\end_inset
+
+ קשטות אזי אם 
+\begin_inset Formula $m<n-1$
+\end_inset
+
+ יש לפחות 
+\begin_inset Formula $n-m$
+\end_inset
+
+ רכיבי קשירות
+\end_layout
+
+\begin_layout Standard
+טענה: יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף בעל 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ קודקודים 
+\begin_inset Formula $m\geq n$
+\end_inset
+
+ צלעות, אזי 
+\begin_inset Formula $G$
+\end_inset
+
+ מכיל מעגל.
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $n=3$
+\end_inset
+
+ אזי יש חיבור בין כל הקדקדים)שזה מעגל(.
+ נניח כי זה נכון ל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים.
+ 
+\end_layout
+
+\begin_layout Standard
+מקרה א.
+ נניח כי קיים קודקוד 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ שהוא בעל דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+ 
+\begin_inset Formula $G=\tilde{G}=\left(G\setminus e\right)\setminus v$
+\end_inset
+
+ מספר הקודקודים ב 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ היא 
+\begin_inset Formula $n-1$
+\end_inset
+
+ מס הקשטות ב 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא 
+\begin_inset Formula $m-1$
+\end_inset
+
+ יודעים כי
+\begin_inset Formula $m\geq n\Rightarrow,m-1\geq n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרה ב.
+ הדרגה של כל רודקוד ב 
+\begin_inset Formula $G$
+\end_inset
+
+ היא לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+, אזי אפשר לעבור מקודקוד 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{1}$
+\end_inset
+
+...
+ ואם וממשיכים ללכת כל עוד שלא עברנו על כודכוד פעמיים)אפשר כי הדרגה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+(, אבל מספר הקדקודים סופי אז בסופו של דבר נגיע לכדכוד שהיינו בו, אז יש מעגל.
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא גרף קשיר , ותהי 
+\begin_inset Formula $e$
+\end_inset
+
+ קשת בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $G-e$
+\end_inset
+
+ היא גרף קשיר אם ורק אם 
+\begin_inset Formula $e$
+\end_inset
+
+ שייך למעגל ב 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

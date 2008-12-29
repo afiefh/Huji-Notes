@@ -1,0 +1,469 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a3paper
+\use_geometry true
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Enumerate
+נחשב את התנע הזוויתי סביב הנקודה שבה החוט קשור למוט 
+\begin_inset Formula $\vec{r}=\left(0,0\right)$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $h$
+\end_inset
+
+ הוא גובה המוט אז
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \vec{r}_{1}\times Mg\hat{x}+\vec{r}_{2}\times f\hat{x}\\
+0 & = & \frac{h}{2}\hat{y}\times Mg\hat{x}+\frac{h}{2}\left(-\hat{y}\right)\times f\hat{x}\\
+0 & = & \left(-\frac{h}{2}Mg+\frac{h}{2}f\right)\hat{z}\\
+f & = & Mg\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אזי 
+\begin_inset Formula $\vec{f}=Mg\hat{x}$
+\end_inset
+
+ שזה באותו כיוון שהמסה 
+\begin_inset Formula $M$
+\end_inset
+
+ מושכת אותו.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יודעים כי אין תנועה זוויתית אזי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\sum F_{x} & = & ma_{x}\\
+\sum F_{x} & = & 0\\
+T_{M}+f-T_{x} & = & 0\\
+T_{x} & = & T_{M}+f\\
+T\cos\alpha & = & Mg+Mg\\
+T & = & \frac{2Mg}{\cos\alpha}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כדי לתת תשובה צריכים למצא אז 
+\begin_inset Formula $N$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\sum F_{y} & = & 0\\
+N-mg-T_{y} & = & 0\\
+N & = & mg+\frac{2Mg}{\cos\alpha}\sin\alpha\\
+N & = & mg+2Mg\tan\alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+f & = & Mg\\
+\mu N & = & Mg\\
+\mu & = & \frac{Mg}{mg+2Mg\tan\alpha}\\
+ & = & \frac{M}{m+2M\tan\alpha}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $N\left(\vec{r}\right)=\vec{r}\times\vec{F}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum N\left(\vec{r}_{0}\right) & = & \sum\left(\vec{r}_{i}-\vec{r}_{0}\right)\times\vec{F}_{i}\\
+ & = & \sum\left(r_{i}-\vec{r}_{0}+\vec{r}_{1}-\vec{r}_{1}\right)\times\vec{F}_{i}\\
+ & = & \sum\left(r_{i}-\vec{r}_{1}+\vec{r}_{1}-\vec{r}_{0}\right)\times\vec{F}_{i}\\
+ & = & \sum\left(r_{i}-\vec{r}_{1}\right)\times\vec{F}_{i}+\sum\left(\vec{r}_{1}-\vec{r}_{0}\right)\times\vec{F}_{i}\\
+ & = & \sum N\left(\vec{r}_{1}\right)+\sum\left(\vec{r}_{1}-\vec{r}_{0}\right)\times\vec{F}_{i}\\
+ & = & \sum N\left(\vec{r}_{1}\right)+\left(\vec{r}_{1}-\vec{r}_{0}\right)\times\sum\vec{F}_{i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אם שקול הכוחות הוא אפס מתקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum N\left(\vec{r}_{0}\right) & = & \sum N\left(\vec{r}_{1}\right)+\left(\vec{r}_{1}-\vec{r}_{0}\right)\times\sum\vec{F}_{i}\\
+ & = & \sum N\left(\vec{r}_{1}\right)+\left(\vec{r}_{1}-\vec{r}_{0}\right)\times\vec{0}\\
+ & = & \sum N\left(\vec{r}_{1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Enumerate
+מניחים כי 
+\begin_inset Formula $\vec{v}=v\hat{x}$
+\end_inset
+
+ ושהכדור מתנגש בכדור שנמצא ב
+\begin_inset Formula $\frac{d}{2}\hat{y}$
+\end_inset
+
+.
+ ברגע 
+\begin_inset Formula $t=\lim_{\epsilon\to0}\epsilon$
+\end_inset
+
+ לפני ההתנגשות
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \underbrace{\vec{r}\times\vec{0}}_{M_{1}}+\underbrace{\vec{r}\times\vec{0}}_{M_{2}}+\underbrace{\vec{r}\times\vec{v}}_{m}\vec{L}\\
+ & = & \frac{d}{2}\hat{y}\times v\hat{x}\\
+ & = & -\frac{dv}{2}\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+מחשבים את הכל במערכת של המוט הנעה במהירות 
+\begin_inset Formula $V$
+\end_inset
+
+ ושבה מרכז המסה של המוט אחרי ההתנגשות הוא סתטי:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נשתמש בשימור תנע ושימור תנע זוויתי:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+mv & = & mv^{'}+Mu_{1}+Mu_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\frac{d}{2}\cdot mv & = & \frac{d}{2}\cdot mv^{'}+\frac{d}{2}\cdot Mu_{1}-\frac{d}{2}\cdot Mu_{2}\\
+mv & = & mv^{'}+Mu_{1}-Mu_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מחיבור המשוואות מקבלים כי 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+mv & = & mv^{'}+Mu_{1}\\
+Mu_{1} & = & mv-mv^{'}\\
+u_{1} & = & \frac{mv-mv^{'}}{M}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אזי 
+\begin_inset Formula $Mu_{2}=0\Rightarrow u_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2}mv^{2} & = & \frac{1}{2}mv^{'^{2}}+\frac{1}{2}Mu_{1}^{2}\\
+mv^{2} & = & mv^{'^{2}}+Mu_{1}^{2}\\
+mv^{2} & = & mv^{'^{2}}+M\frac{\left(mv-mv^{'}\right)^{2}}{M^{2}}\\
+mv^{2} & = & mv^{'^{2}}+\frac{m^{2}v^{2}-2m^{2}vv^{'}+m^{2}v^{'^{2}}}{M}\\
+Mmv^{2} & = & Mmv^{'^{2}}+m^{2}v^{2}-2m^{2}vv^{'}+m^{2}v^{'^{2}}\\
+Mv^{2} & = & Mv^{'^{2}}+mv^{2}-2mvv^{'}+mv^{'^{2}}\\
+0 & = & Mv^{'^{2}}+mv^{2}-2mvv^{'}+mv^{'^{2}}-Mv^{2}\\
+0 & = & v^{'^{2}}\left(M+m\right)+v^{'}\left(2mv\right)+\left(mv^{2}-Mv^{2}\right)\\
+0 & = & v^{'^{2}}+v^{'}\frac{2mv}{M+m}+\frac{mv^{2}-Mv^{2}}{M+m}\\
+v_{1,2} & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4m^{2}v^{2}}{\left(M+m\right)^{2}}-\frac{4mv^{2}-4Mv^{2}}{M+m}}}{2}\\
+ & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4m^{2}v^{2}}{\left(M+m\right)^{2}}-\frac{\left(4mv^{2}-4Mv^{2}\right)\left(M+m\right)}{\left(M+m\right)^{2}}}}{2}\\
+ & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4m^{2}v^{2}}{\left(M+m\right)^{2}}-\frac{4Mmv^{2}-4M^{2}v^{2}+4m^{2}v^{2}-4Mmv^{2}}{\left(M+m\right)^{2}}}}{2}\\
+ & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4m^{2}v^{2}}{\left(M+m\right)^{2}}-\frac{-4M^{2}v^{2}+4m^{2}v^{2}}{\left(M+m\right)^{2}}}}{2}\\
+ & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4m^{2}v^{2}+4M^{2}v^{2}-4m^{2}v^{2}}{\left(M+m\right)^{2}}}}{2}\\
+ & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4M^{2}v^{2}}{\left(M+m\right)^{2}}}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אז רואים כי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+v_{1,2}^{'} & = & \frac{-\frac{2mv}{M+m}\pm\sqrt{\frac{4M^{2}v^{2}}{\left(M+m\right)^{2}}}}{2}\\
+ & = & \frac{2\frac{2mv}{M+m}\pm\frac{2Mv}{M+m}}{2}\\
+ & = & \frac{2mv\pm Mv}{M+m}\\
+v_{1}^{'} & = & \frac{2mv+Mv}{M+m}\\
+v_{2}^{'} & = & \frac{2mv-Mv}{M+m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+זה מזל שקיבלנו משהוא)וממש לא רוצה לדעת אם זה נכון או לא(
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{\theta} & = & 2\dot{r}\omega+r\dot{\omega}\\
+\frac{F_{\theta}}{m} & = & 2\dot{r}\omega+r\dot{\omega}\\
+ & = & \left(2\dot{r}\omega+r\dot{\omega}\right)m\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\vec{L} & = & \vec{N}\\
+ & = & \vec{r}\times\vec{F}\\
+ & = & \vec{r}\times\left(F_{r}\hat{r}+F_{\theta}\hat{\theta}\right)\\
+ & = & \vec{r}\times F_{\theta}\hat{\theta}\\
+ & = & rF_{\theta}\\
+ & = & \left(2r\dot{r}\omega+r^{2}\dot{\omega}\right)m\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
