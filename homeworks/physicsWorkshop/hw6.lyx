@@ -1,0 +1,225 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\vec{r}=\vec{0}$
+\end_inset
+
+ היא הזווית בציור ןכיוון 
+\begin_inset Formula $y$
+\end_inset
+
+ החיובי למטה
+\end_layout
+
+\begin_layout Standard
+מזה שהמוט לא יתארך נובע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(x-d\right)^{2}+y^{2}=l^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזניח התארכות הקפיץ בכיוון 
+\begin_inset Formula $y$
+\end_inset
+
+, ונניח כי 
+\begin_inset Formula $\hat{\theta}=\hat{x}$
+\end_inset
+
+ בזוויות קטנות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum F & = & ma\\
+-\frac{1}{2}k\left(x-d\right)^{2}-mg\sin\theta & = & ma\\
+-\frac{k}{2m}\left(x-d\right)^{2}-g\sin\theta & = & a\\
+\frac{k}{2m}\left(x-d\right)^{2}-g\frac{x-d}{l} & = & \ddot{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $p=x-d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-\frac{k}{2m}p^{2}-\frac{g}{l}p=\ddot{p}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה זה? משווא דיפרנציאלית ריבועית? אני אמור לדעת איך לפתור את זה?!
+\end_layout
+
+\begin_layout Standard
+אלך בראש קטן ואזניח גם את הכח של המוט)נניח שמתבטל עם הגרביטציה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\frac{k}{2m}p^{2} & = & \ddot{p}\\
+x & = & A\cos\left(\frac{k}{2m}t+\varphi\right)+d\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\numeric off
+.
+ אם 
+\begin_inset Formula $\dot{\theta}\left(0\right)=0$
+\end_inset
+
+ אזי זו היא האמפליטודה של הגוף
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x=l\cdot\sin\left(\theta_{0}\right)\cdot\cos\left(\frac{k}{2m}t+\varphi-\frac{\pi}{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\numeric off
+.
+ 
+\begin_inset Formula \[
+\theta\left(t=0\right)=0\Rightarrow\varphi=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\theta\approx\frac{x}{2\pi l}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\theta}\left(0\right) & = & \omega_{0}\\
+\frac{k}{2m}\cdot\frac{A\cos\left(\frac{k}{2m}t\right)}{2\pi l} & = & \omega_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה בלתי אפשרי...
+ אזי נראה לי כי עשיתי יותר מדאי קירובים....
+\end_layout
+
+\begin_layout Standard
+נקווה שאקבל "עבר" בעבודת בית הזו לפחות
+\end_layout
+
+\end_body
+\end_document

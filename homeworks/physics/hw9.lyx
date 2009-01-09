@@ -1,0 +1,611 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+א.
+ הם ינועו במצב חוסר משקל כי הכח המדומה במערכת הלא אנרציאלית מבטל את כח הגרביטציה.
+\end_layout
+
+\begin_layout Standard
+ב.
+\begin_inset Formula $\sum\vec{F}=0\Rightarrow\ddot{x}=0\Rightarrow v=\dot{x}=\mbox{constant}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ג.
+ במערכת הלא אנרציאלית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x=\vec{v}_{0}\cdot t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת האינרציאלית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum\vec{F} & = & m\vec{g}\\
+\vec{a} & = & \vec{g}\\
+\vec{x} & = & \vec{v}_{0}\cdot t+\frac{1}{2}m\vec{g}t^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ד.
+ זה בגלל הכח הצנטרופוגאלי המדומה שפועל על התחנה הזו שמבטל את הכח הצנטרופיטאלי.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+א.
+ הוא צריך לזרוק את הכדור בכיוון מרכז הקרוסל
+\begin_inset Formula $\left(\hat{r}\right)$
+\end_inset
+
+ במהירות 
+\begin_inset Formula $\frac{2R}{\frac{1}{2}T}=12\frac{m}{sec}$
+\end_inset
+
+.
+ יכולים גם לחשב את הכיוון בציר 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ אבל אתם לא רוצים את זה נכון?
+\end_layout
+
+\begin_layout Standard
+ב.
+ רוצים כי הכדור ינוע במהירות של 
+\begin_inset Formula $v=12\frac{m}{sec}\hat{r}$
+\end_inset
+
+)מתעלמים עוד פעם מהמהירות בכיוון 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ כי היא לא תשפיע(, כלומר הילד נע במהירות בכיוון 
+\begin_inset Formula $\hat{\theta}$
+\end_inset
+
+ ורוצה לזרוק הכדור במהיורת 
+\begin_inset Formula $v_{\theta}=0$
+\end_inset
+
+)במערכת האינרציאלית( אזי במערכת שלו הוא צריך לזרוק את הכדור במהירות 
+\begin_inset Formula $v_{\theta}=-v_{\theta_{boy}}=-\omega\cdot R=-\frac{2\pi}{T}\cdot R=-2\pi R=-6\pi$
+\end_inset
+
+ אז המהירות שהוא צריך לזרוק בה היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{v}=12\hat{r}-6\pi\hat{\theta}\frac{m}{sec}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+ב.
+ צריך למצא את שקול הכוחות.
+ יש כח הגרביטציה שהוא 
+\begin_inset Formula $-mg\hat{y}$
+\end_inset
+
+ ויש כח קוריוליס שהוא 
+\begin_inset Formula $-2m\vec{\omega}\times\vec{v}$
+\end_inset
+
+, ויש עוד כח צנטרופוגאלי שהוא 
+\begin_inset Formula $m\omega^{2}R\hat{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מחשבים את 
+\begin_inset Formula $\omega$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & 6371Km\\
+ & = & 6371000m\\
+\omega & = & \frac{2\pi}{24h}\\
+ & = & \frac{2\pi}{24\cdot60\cdot60\cdot sec}\\
+ & = & 7.27220521664303990385\cdot10^{-5}\frac{1}{sec}\\
+ & \approx & 7.27\cdot10^{-5}\frac{1}{sec}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -mg\hat{y}+m\omega^{2}R\hat{y}-2m\vec{\omega}\times\vec{v}\\
+\tan\theta & = & \frac{2\omega v\sin\theta}{g+\omega^{2}R}\\
+ & = & \frac{2\cdot7.27\cdot10^{-5}\cdot\frac{10}{3.6}\sin\left(60^{\circ}\right)}{9.8+\left(7.27\cdot10^{-5}\right)^{2}\cdot6371000}\\
+ & = & 3.55694207984219336086e-5\\
+\theta & = & 0.00203797769061495558^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+א.
+ נסמן 
+\begin_inset Formula $\hat{r}$
+\end_inset
+
+ הוא כיוון 
+\begin_inset Formula $\vec{g}$
+\end_inset
+
+.
+ אזי בלי כוחות יפעל כח 
+\begin_inset Formula $mg\hat{r}$
+\end_inset
+
+ על הגוף.
+ מסמנים 
+\begin_inset Formula $\hat{\theta}$
+\end_inset
+
+ הוא הכיוון התנגנציאלי של כדור הארץ.
+ 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ הוא הכיוון המוזר שנשאר.
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula $\vec{\omega}=\omega\cdot\left(\cos\theta\hat{r}+\sin\theta\hat{z}\right)$
+\end_inset
+
+ והמהירות היא 
+\begin_inset Formula $\vec{v}=-v\hat{r}$
+\end_inset
+
+ אזי שקול הכוחות היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & mg\hat{r}+m\omega^{2}r\left(-\cos\left(90-\theta\right)\hat{z}+\sin\left(90-\theta\right)\hat{r}\right)\\
+a & = & g\hat{r}+\vec{\omega}^{2}\left(R\sin\theta\right)\left(-\sin\theta\hat{z}+\cos\theta\hat{r}\right)\\
+a & = & g\hat{r}+\omega^{2}\left(\cos^{2}\theta+\sin^{2}\theta\right)\cdot\left(R\sin\theta\right)\left(-\sin\theta\hat{z}+\cos\theta\hat{r}\right)\\
+ & = & g\hat{r}+-\omega^{2}R\sin^{2}\theta\hat{z}+\omega^{2}R\cos\theta\sin\theta\hat{r}\\
+\tan\alpha & = & \frac{\omega^{2}R\sin^{2}\theta}{g+\omega^{2}R\cos\theta\sin\theta}\\
+ & = & \frac{R\sin^{2}\theta}{\frac{g}{\omega^{2}}+R\cos\theta\sin\theta}\\
+ & = & \frac{\sin^{2}\theta}{\beta+\cos\theta\sin\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים נקודת המקסימום אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\arctan\left(\frac{R\sin^{2}\theta}{\frac{g}{\omega^{2}}+R\cos\theta\sin\theta}\right)\right)^{'} & = & 0\\
+\frac{1}{1+\left(\frac{R\sin^{2}\theta}{\frac{g}{\omega^{2}}+R\cos\theta\sin\theta}\right)^{2}}\cdot\left(\frac{R\sin^{2}\theta}{\frac{g}{\omega^{2}}+R\cos\theta\sin\theta}\right)^{'} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיבר הראשון אף פעם לא מתאפס לכן מתעלמים ממנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\frac{R\sin^{2}\theta}{\frac{g}{\omega^{2}}+R\cos\theta\sin\theta}\right)^{'} & = & 0\\
+\frac{2R\sin\theta\cos\theta\cdot\left(\frac{g}{\omega^{2}}+R\cos\theta\sin\theta\right)-R\left(-\sin^{2}\theta+\cos^{2}\theta\right)\cdot R\sin^{2}\theta}{\left(\frac{g}{\omega^{2}}+R\cos\theta\sin\theta\right)^{2}} & = & 0\\
+2R\sin\theta\cos\theta\cdot\left(\frac{g}{\omega^{2}}+R\cos\theta\sin\theta\right)-R\left(-\sin^{2}\theta+\cos^{2}\theta\right)\cdot R\sin^{2}\theta & = & 0\\
+R\sin2\theta\cdot\left(\frac{g}{\omega^{2}}+\frac{1}{2}R\sin2\theta\right)-R^{2}\left(-\sin^{2}\theta+\cos^{2}\theta\right)\sin^{2}\theta & = & 0\\
+\frac{gR}{\omega^{2}}\sin2\theta+\frac{1}{2}R^{2}\sin^{2}2\theta+R^{2}\sin^{4}\theta-R^{2}\cos^{2}\theta\sin^{2}\theta & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים משוואה טריגונומטרית אי פתירה, נותנים אותה למתמטיקאי ומקבלים התשובה,
+ זו תהייה הזווית שבה השיפוע מקסימאלי.
+ אבל אם מסתכלים על הבעייה בסכל רואים כי 
+\begin_inset Formula $\theta=45^{\circ}$
+\end_inset
+
+ היא הזווית האופתימאלית.
+\end_layout
+
+\begin_layout Standard
+ב.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -mg\hat{r}+2m\vec{\omega}\times\vec{v}\\
+ & = & -mg\hat{r}+2m\omega v\cdot\sin\theta\hat{\theta}\\
+a & = & -g\hat{r}+2\omega v\cdot\sin\theta\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסטייה היא מקסימאלית כאשר כוח קוריוליס מקסימאלי, כלומר 
+\begin_inset Formula $\sin\theta=1\Rightarrow\theta=\frac{\pi}{2}$
+\end_inset
+
+ כלומר בקו המשווה.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נסמן מהירות זוויתית של המכונית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega^{\prime}=\omega+\frac{v}{R\cos\alpha}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי ממשוואת כוחות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{T}-mg\hat{z} & = & -m\omega^{\prime^{2}}R\cos\alpha\hat{r}\\
+\vec{T} & = & \left(-m\omega^{\prime^{2}}R\cos\alpha\sin\alpha,0,-m\omega^{\prime^{2}}R\cos\alpha\sin\alpha+mg\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקבלת זווית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tan\theta=\frac{\cos\alpha\sin\alpha}{\cos^{2}\alpha+\frac{g}{\omega^{\prime}R}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל הכוחות הם אמיתיים.
+\end_layout
+
+\begin_layout Standard
+במערכת של גדור הארץ יהיה כח צנטרופוגלי וקוריוליס שהם מדומים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega^{\prime\prime}=\frac{v}{R\cos\theta}=\omega^{\prime}-\omega\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{T}-mg\hat{z}+m\omega^{2}R\cos\alpha\hat{r}+2m\omega v\hat{r}=-m\omega^{\prime\prime^{2}}R\cos\alpha\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים ומקבלים עוד פעם 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tan\theta=\frac{\cos\alpha\sin\alpha}{\cos^{2}\alpha+\frac{g}{\omega^{\prime}R}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+נפתור במערכת של הדיסקית המסתובבת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{friction}+f_{curiolis}+f_{centrufugal} & = & 0\\
+\vec{f}_{friction}+2m\vec{\omega}\times\vec{v}+m\omega^{2}R\hat{r} & = & 0\\
+\vec{f}_{friction} & = & 2mv\omega\hat{x}+m\omega^{2}R\hat{r}\\
+\mu & = & \frac{\sqrt{\left(2v\omega\right)^{2}+\left(\omega^{2}R\right)^{2}}}{g}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקדם חיכוך מינימאלי מוצאים אותו ב
+\begin_inset Formula $R=0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mu=\frac{2v\omega}{g}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

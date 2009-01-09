@@ -10161,5 +10161,685 @@ I_{n} & = & \frac{n-1}{n}I_{n-2}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+17
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\numeric off
+: פונקציות 
+\begin_inset Formula $\mathbb{R}\to\mathbb{C},\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה לפונקציה מ 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ ל
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+: 
+\begin_inset Formula $r\left(t\right)=\begin{pmatrix}\cos t\\
+\sin t\end{pmatrix}$
+\end_inset
+
+.
+ זה מעגל.
+ דוגמה לפונקציה מ 
+\begin_inset Formula $\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+: 
+\begin_inset Formula $r\left(t\right)=\begin{pmatrix}\cos t\\
+\sin t\\
+t\end{pmatrix}$
+\end_inset
+
+.
+ זו ספיראלה.
+\end_layout
+
+\begin_layout Standard
+הגדרה: אם 
+\begin_inset Formula $f_{1}\left(t\right)\dots f_{n}\left(t\right)$
+\end_inset
+
+ הם פונקציות גזירות אז אם 
+\begin_inset Formula $f\left(t\right)=\begin{pmatrix}f_{1}\left(t\right)\\
+f_{2}\left(t\right)\\
+\vdots\\
+f_{n}\left(t\right)\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{\partial}{\partial t}f\left(t\right)=\begin{pmatrix}\frac{\partial}{\partial t}f_{1}\left(t\right)\\
+\frac{\partial}{\partial t}f_{2}\left(t\right)\\
+\vdots\\
+\frac{\partial}{\partial t}f_{n}\left(t\right)\end{pmatrix}$
+\end_inset
+
+ שזה בכיוון המשיק של הפונקציה בנקודה 
+\begin_inset Formula $t$
+\end_inset
+
+ וגודל הווקטור הוא "מהירות" הפונקציה.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r\left(t\right)=\begin{pmatrix}a\cos t\\
+b\sin t\end{pmatrix}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{\partial}{\partial t}r\left(t\right)=\begin{pmatrix}-a\sin t\\
+b\cos t\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב 
+\begin_inset Formula $n=3$
+\end_inset
+
+ יש פעולת המכפלה הוקטורית, 
+\begin_inset Formula $\frac{\partial}{\partial t}\left(f\times g\right)=\frac{\partial f}{\partial t}\times g+f\times\frac{\partial g}{\partial t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: 
+\begin_inset Formula $\int f\left(t\right)\partial t=\begin{pmatrix}\int f_{1}\left(t\right)\partial t\\
+\int f_{2}\left(t\right)\partial t\\
+\vdots\\
+\int f_{n}\left(t\right)\partial t\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+18
+\end_layout
+
+\begin_layout Standard
+דוגמאות איך נראים קווי גובה של פונקציה 
+\begin_inset Formula $z=x^{2}+y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z$
+\end_inset
+
+ קבוע אז מקבלים מעגלים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d3.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ או 
+\begin_inset Formula $y$
+\end_inset
+
+ קבוע מקבלים פרבולה.
+ למשל אם 
+\begin_inset Formula $x$
+\end_inset
+
+ קבוע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d6.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה עם הפונקציה 
+\begin_inset Formula $z=x^{2}-y^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d2.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z$
+\end_inset
+
+ קבוע מקבלים היפרבולה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d4.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ או 
+\begin_inset Formula $y$
+\end_inset
+
+ קבוע מקבלים פרבולה.
+ למשל אם 
+\begin_inset Formula $x$
+\end_inset
+
+ קבוע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d5.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נגזרת חלקית
+\end_layout
+
+\begin_layout Standard
+מסמנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x}\left(f\left(x,y\right)\right)\vert_{x=x_{0}}=\frac{\partial f}{\partial x}\vert_{x=x_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פירושו של זה שגוזרים את הפונקציה לפי משתנה 
+\begin_inset Formula $x$
+\end_inset
+
+ כאילו ש
+\begin_inset Formula $y$
+\end_inset
+
+ היה מספר קבוע.
+\end_layout
+
+\begin_layout Standard
+הערה: זה נכון רק אם 
+\begin_inset Formula $x$
+\end_inset
+
+ ו
+\begin_inset Formula $y$
+\end_inset
+
+ הם בלתי תלויים, אם הפונקציה היא למשל 
+\begin_inset Formula $f\left(x,x^{2}\right)=x^{2}+x+1$
+\end_inset
+
+ אי אפשר לגזור לפי 
+\begin_inset Formula $x$
+\end_inset
+
+ בנפרד ולפי 
+\begin_inset Formula $x^{2}$
+\end_inset
+
+ בנפרד.
+\end_layout
+
+\begin_layout Standard
+אם רוצים לקבל את הנגזרת של פונקציה מסויימת בכיוון ווקטור 
+\begin_inset Formula $\vec{e}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\partial_{\vec{e}}f$
+\end_inset
+
+ הוא הנגזרת של 
+\begin_inset Formula $f$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $\vec{e}$
+\end_inset
+
+ כלומר המשיק של 
+\begin_inset Formula $f$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $\vec{e}$
+\end_inset
+
+.
+ אפשר לראות כי 
+\begin_inset Formula $\partial_{2\vec{e}}f=2\partial_{\vec{e}}f$
+\end_inset
+
+, לכן בדרך כלל מחשווים נגזרת בכיוון וקטור יחידה.
+\end_layout
+
+\begin_layout Standard
+רוצים למשל לגזור את 
+\begin_inset Formula $f\left(x,y\right)=x^{2}+y^{2}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $x$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f\left(x,y\right)}{\partial x}\vert_{\left(x,y\right)=\left(0,0\right)}=2x+y^{2}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אם למשל נרצה לגזור 
+\begin_inset Formula $f\left(x,y\right)=\sqrt{x^{2}+y^{2}}$
+\end_inset
+
+ לפי 
+\begin_inset Formula $x$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f\left(x,y\right)}{\partial x}=\frac{1}{2\sqrt{x^{2}+y^{2}}}\cdot2x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל זה לא מוגדר בנקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+.
+ אם מסתכלים על הגרף של הפונקציה רואים הסיבה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d7.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יותר פשוט לראות את זה אם מציירים דרך קואורדינטות פולריות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c26d8.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא מפתיע שהשיפוע של נקודה 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ לא מוגדר בקונוס.
+\end_layout
+
+\begin_layout Section
+דופרנציאביליות
+\end_layout
+
+\begin_layout Standard
+אומרים כי פונקציה 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ היא דיפרנציאבילית בסביבה 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ אם קיים עבורה קירוב ליניארי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x_{0}+\Delta x,y_{0}+\Delta y\right)\sim f\left(x_{0},y_{0}\right)+A\Delta x+B\Delta y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר ההפרש 
+\begin_inset Formula $r$
+\end_inset
+
+ קטן ביחס למרחק 
+\begin_inset Formula $\sqrt{\Delta x^{2}+\Delta y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+19
+\end_layout
+
+\begin_layout Standard
+אם פונקציה דיפרנציאבילית אזי יש לה נגזרות חלקיות.
+\end_layout
+
+\begin_layout Standard
+נרצה לחשב את 
+\begin_inset Formula $\partial_{\vec{e}}f$
+\end_inset
+
+ שזה שווה ל 
+\begin_inset Formula $\frac{\partial}{\partial t}\left(f\left(x_{0}+te_{x},y_{0}+te_{y}\right)\right)\vert_{t=0}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x_{0}+te_{x},y_{0}+te_{y}\right) & \approx & f\left(x_{0},y_{0}\right)+Ate_{x}+Bte_{y}\\
+\partial_{e}f & = & Ae_{x}+Be_{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קירוב ליניארי ל-
+\begin_inset Formula $f$
+\end_inset
+
+ הסביבה של 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula \[
+f\left(x_{0}+\Delta x,y_{0}+\Delta y\right)=f\left(x_{0},y_{0}\right)+\frac{\partial}{\partial x}f\left(x_{0},y_{0}\right)\cdot\Delta x+\frac{\partial}{\partial y}f\left(x_{0},y_{0}\right)\cdot\Delta y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x,y\right)=\sin\left(y\right)\cdot\sqrt{1+x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היא דיפרנציאביליתבכל נקודה 
+\begin_inset Formula $x>-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(0,0\right) & = & 0\\
+f_{x} & = & \left(\sin y\right)\frac{1}{2}\left(1+x\right)^{-\frac{1}{2}}\\
+f_{x}\left(0,0\right) & = & 0\\
+f_{y} & = & \left(\cos y\right)\sqrt{1+x}\\
+f_{y}\left(0,0\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x,y\right) & \sim & 0+0\cdot x+1\cdot y\\
+ & \sim & y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x,y\right) & = & x^{2}+x\cos\left(y\right)+y^{2}\\
+f_{x} & = & 2x+\cos y\\
+y_{y} & = & -x\sin y+2y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז בסביבה של 
+\begin_inset Formula $\left(1,\pi\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(1,\pi\right) & = & 1-1+\pi^{2}\\
+f_{x}\left(1,\pi\right) & = & 1\\
+f_{y}\left(1,\pi\right) & = & 2\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(1+\Delta x,\pi+\Delta y\right)\sim\pi^{2}+\Delta x+2\pi\cdot\Delta y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גרדיאנט, כלל שרשרת ודיפרנציאלים
+\end_layout
+
+\begin_layout Standard
+מגדירים גדינט של 
+\begin_inset Formula $f$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}f=\left(f_{x_{1}},f_{x_{2}}\dots f_{x_{n}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $\vec{\nabla}=\left(\frac{\partial}{\partial x_{1}},\frac{\partial}{\partial x_{2}}\dots\frac{\partial}{\partial x_{n}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הנגזרת של 
+\begin_inset Formula $f$
+\end_inset
+
+ בכיוון 
+\begin_inset Formula $\vec{e}$
+\end_inset
+
+ היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\vec{\nabla}f\right)\cdot\left(\vec{e}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השיפוע הוא מקסימאלי בכיוון הגראדינט.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

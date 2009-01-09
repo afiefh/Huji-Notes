@@ -1,0 +1,456 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{spring} & = & -kx\\
+F_{friction} & = & -\beta v\\
+F_{ext} & = & A\cos\left(\omega_{1}t\right)+B\sin\left(\omega_{2}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\ddot{x} & = & -kx-\beta\dot{x}+A\cos\left(\omega_{1}t\right)+B\sin\left(\omega_{2}t\right)\\
+\ddot{x}+\frac{\beta}{m}\dot{x}+\frac{k}{m}x & = & \frac{A}{m}\cos\left(\omega_{1}t\right)+\frac{B}{m}\sin\left(\omega_{2}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתוא משוואה הומוגינית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{x}+\frac{\beta}{m}\dot{x}+\frac{k}{m}x & = & 0\\
+r^{2}+\frac{\beta}{m}r+\frac{k}{m} & = & 0\\
+r_{1,2} & = & \frac{-\frac{\beta}{m}\pm\sqrt{\frac{\beta^{2}}{m^{2}}-4\cdot\frac{k}{m}}}{2}\\
+ & = & \frac{-2\frac{\beta}{2m}\pm\sqrt{4\frac{\beta^{2}}{4m^{2}}-4\frac{k}{m}}}{2}\\
+ & = & -\frac{\beta}{2m}\pm\sqrt{\frac{\beta^{2}}{4m^{2}}-\frac{k}{m}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו אמורים להניח ריסון חלש אזי 
+\begin_inset Formula $\frac{\beta^{2}}{4m^{2}}<\frac{k}{m}$
+\end_inset
+
+ אזי אנחנו מקבלים מזה מספרים מורכבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r_{1,2}=-\frac{\beta}{2m}\pm i\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\omega^{*}=\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r_{1,2}=-\frac{\beta}{2m}\pm i\omega^{*}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפתרון של המשוואה ההומוגינית הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & Je^{t\left(-\frac{\beta}{2m}+i\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)}+Ke^{t\left(-\frac{\beta}{2m}-i\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)}\\
+ & = & e^{-\frac{\beta}{2m}t}\left(Je^{ti\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}}+Ke^{t\left(-i\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)}\right)\\
+ & = & e^{-\frac{\beta}{2m}t}\left(J\sin\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)+K\cos\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נמצא את הפתרון הפרטי של המשוואה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+\frac{\beta}{m}\dot{x}+\frac{k}{m}x=\frac{A}{m}\cos\left(\omega_{1}t\right)+\frac{B}{m}\sin\left(\omega_{2}t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננחש פתרון 
+\begin_inset Formula $x=L\cos\left(\omega_{1}t+\delta\right)+N\cos\left(\omega_{2}t+\phi\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}-L\omega_{1}^{2}\cos\left(\omega_{1}t+\delta\right)-N\omega_{2}^{2}\cos\left(\omega_{2}t+\phi\right)+\\
+\frac{\beta}{m}\left(-L\omega_{1}\sin\left(\omega_{1}t+\delta\right)-N\omega_{2}\sin\left(\omega_{2}t+\phi\right)\right)+\\
+\frac{k}{m}\left(L\cos\left(\omega_{1}t+\delta\right)+N\cos\left(\omega_{2}t+\phi\right)\right)\end{matrix}=\frac{A}{m}\cos\left(\omega_{1}t\right)+\frac{B}{m}\cos\left(\frac{\pi}{2}-\omega_{2}t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר להפריד לשני משוואות: איברים תלויים ב
+\begin_inset Formula $\omega_{1}$
+\end_inset
+
+ ואיברים תלויים ב
+\begin_inset Formula $\omega_{2}$
+\end_inset
+
+, ומקבלים אותו פתרון שקיבלנו בכיתה שזה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-L\omega_{1}^{2}\cos\left(\omega_{1}t+\delta\right)+\frac{\beta}{m}L\omega_{1}\sin\left(\omega_{1}t+\delta\right)+\frac{k}{m}L\cos\left(\omega_{1}t+\delta\right) & = & \frac{A}{m}\cos\left(\omega_{1}t\right)\\
+-L\omega_{1}^{2}\cos\left(\omega_{1}t\right)+\frac{\beta}{m}L\omega_{1}\sin\left(\omega_{1}t\right)+\frac{k}{m}L\cos\left(\omega_{1}t\right) & = & \frac{A}{m}\cos\left(\omega_{1}t+\delta\right)\\
+\frac{k}{m}L\cos\left(\omega_{1}t\right)-L\omega_{1}^{2}\cos\left(\omega_{1}t\right)+\frac{\beta}{m}L\omega_{1}\sin\left(\omega_{1}t\right) & = & \frac{A}{m}\cos\left(\omega_{1}t+\delta\right)\\
+L\left(\left(\frac{k}{m}-\omega_{1}^{2}\right)\cos\left(\omega_{1}t\right)+\frac{\beta}{m}\omega_{1}\sin\left(\omega_{1}t\right)\right) & = & \frac{A}{m}\cos\left(\omega_{1}t+\delta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & \frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\\
+\tan\delta & = & \frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור המשוואה של 
+\begin_inset Formula $\omega_{2}$
+\end_inset
+
+ מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & = & \frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\\
+\tan\left(\frac{\pi}{2}+\phi\right) & = & \frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון השלם הוא:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula \[
+x\left(t\right)=\begin{matrix}e^{-\frac{\beta}{2m}t}\left(J\sin\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)+K\cos\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)\right)+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\omega_{1}t+\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\omega_{2}t+\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם הגוף מתחיל את תנועתו מנקודת 
+\begin_inset Formula $x=0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(0\right) & = & \begin{matrix}k+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\\
+k & = & \frac{-\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)-\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=\begin{matrix}e^{-\frac{\beta}{2m}t}\cdot J\sin\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\omega_{1}t+\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\omega_{2}t+\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הגוף מתחיל ממירות אפס אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(t\right) & = & \begin{matrix}-\frac{\beta}{2m}e^{-\frac{\beta}{2m}t}\cdot J\sin\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)+e^{-\frac{\beta}{2m}t}\cdot J\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\cos\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\omega_{1}\sin\left(\omega_{1}t+\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\omega_{1}\sin\left(\omega_{2}t+\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\\
+0 & = & \begin{matrix}-\frac{\beta}{2m}\cdot1\cdot J\cdot0+1\cdot J\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\cdot1+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\omega_{1}\cdot0+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\omega_{1}\cdot0\end{matrix}\\
+0 & = & J\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\\
+J & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כבר רואים)אחרי שפתרנו סעיף קודם( כי אם 
+\begin_inset Formula $v\left(0\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $J=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \begin{matrix}e^{-\frac{\beta}{2m}t}\cdot K\cos\left(t\sqrt{\frac{k}{m}-\frac{\beta^{2}}{4m^{2}}}\right)+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\omega_{1}t+\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\omega_{2}t+\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\\
+x\left(t=0\right) & = & x_{0}\\
+\begin{matrix}K+\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix} & = & x_{0}\\
+k & = & \begin{matrix}x_{0}-\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)-\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+כן כי ההבדל בין שתי התשובות זה 
+\begin_inset Formula $K,J$
+\end_inset
+
+ שהם מוכפלים ב 
+\begin_inset Formula $e^{-\alpha t}$
+\end_inset
+
+ שזה שואף לאפס.
+\end_layout
+
+\begin_layout Enumerate
+נקבל עוד איברים לא דועכים בסוף
+\end_layout
+
+\begin_layout Enumerate
+צריכים לצייר
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}-\frac{\beta}{2m}e^{-\frac{\beta}{2m}t}\left(\mbox{something}\right)\\
+\frac{\frac{A}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)+\\
+\frac{\frac{B}{m}}{\sqrt{\left(\frac{k}{m}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\cos\left(\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרי זמן רב האיבר הראשון מתאפס.
+ נציר את האמפליטודה המקסימאלית שמתקבלת בזמן מסויים 
+\begin_inset Formula $t^{\prime}$
+\end_inset
+
+ שבו 
+\begin_inset Formula $\cos\left(\frac{\left(\frac{\beta}{m}\omega_{1}\right)}{\left(\frac{k}{m}-\omega_{1}^{2}\right)}\right)=\cos\left(\frac{\left(\frac{\beta}{m}\omega_{2}\right)}{\left(\frac{k}{m}-\omega_{2}^{2}\right)}\right)$
+\end_inset
+
+ אזי רוצים לצציר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\frac{\frac{A}{m}}{\sqrt{\left(\omega_{0}^{2}-\omega_{1}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{1}\right)^{2}}}+\frac{\frac{B}{m}}{\sqrt{\left(\omega_{0}^{2}-\omega_{2}^{2}\right)^{2}+\left(\frac{\beta}{m}\omega_{2}\right)^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מציבים ערכים באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\frac{100}{\sqrt{\left(\omega_{0}^{2}-20^{2}\right)^{2}+10^{2}}}+\frac{50}{\sqrt{\left(\omega_{0}^{2}-40^{2}\right)+20^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים את הצורה הזו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw7d1.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+זה לדעתי נכון? לדעתי זה יתפוצץ! האמת שנראה לי שכל פומקציה מחזורית אפשר לבנות
+ אותה כהרכבה של 
+\begin_inset Formula $A_{i}\cos\left(\omega_{i}t+\varphi_{i}\right)$
+\end_inset
+
+ אזי הפתרון שלנו תקף
+\end_layout
+
+\end_body
+\end_document

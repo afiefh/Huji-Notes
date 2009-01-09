@@ -1,0 +1,780 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Enumerate
+אם גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר אזי יש מסילה שהולכת מכודכוד כלשהוא לכודכוד כלשהוא.
+ הדרכ האכי פשוטה ויעילה לבנות מסילה כזו היא 
+\begin_inset Formula $\left\{ \left(v_{1},v_{2}\right),\left(v_{2},v_{2}\right),\left(v_{3},v_{4}\right)\dots\left(v_{n-1},v_{n}\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח בשלילה שאפשר לבנות גרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים שאין בו מעגלים, אזי מתחילים לבנות גרף זה בלחבר קשת בין 
+\begin_inset Formula $\left(v_{0},v_{1}\right)$
+\end_inset
+
+, אז יש קשת אחד, מחברים לזה 
+\begin_inset Formula $v_{2}$
+\end_inset
+
+ - בלי לפגוע בקלליות - בקודקוד 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ אזי יש עוד קשת 
+\begin_inset Formula $\left(v_{1},v_{2}\right)$
+\end_inset
+
+ אז יש שתי קשתות.
+ ממשיכים לחבר קודקודים באופן זה, אזי כאשר מחברים 
+\begin_inset Formula $v_{n}$
+\end_inset
+
+ יהיו 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים, ויש גרף קשיר.
+ אם מחברים עוד קשת בין שתי קודקודים כלשהם אז זה יהיה מעגל.
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא גרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ צלעות אזי כל קודקוד יכול להיות מחובר ל
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים אחרים, כלומר 
+\begin_inset Formula $\deg v\in\left\{ 0\dots n-1\right\} $
+\end_inset
+
+.
+ מחלקים לשני מקרים: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אם יש קודקוד שדרגתו אפס אז כל הקודקודים האחרים חייבים להיות בעלי דרגה 
+\begin_inset Formula $\left\{ 0\dots n-2\right\} $
+\end_inset
+
+ כי הוא לא מחובר לאף אחד מהם.
+ אזי יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ו
+\begin_inset Formula $n-1$
+\end_inset
+
+ דרגות אפשריות, לכן לפי עכרון שובך היונים יש שתי קודקודים בעלי אותה דרגה.
+\end_layout
+
+\begin_layout Enumerate
+אם אין קודקוד שדרגתו אפס אזי כל הקודקודים בעלי דרגות 
+\begin_inset Formula $\left\{ 1\dots n-1\right\} $
+\end_inset
+
+, אזי יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ו
+\begin_inset Formula $n-1$
+\end_inset
+
+ דרגות אפשרויות, אזי לפי עכרון שובך היונים יש שתי קודקודים בעלי אותה דרגה.
+\end_layout
+
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Enumerate
+אם יש מסילה בין 
+\begin_inset Formula $u,v$
+\end_inset
+
+ אזי או שהמסילה תהיה פשוטה או לא פשוטה.
+ אם היא פשוטה אז אין בעיה.
+ אם היא לא פשוטה:
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+אזי המסילה חוזרת על קודקוד 
+\begin_inset Formula $k$
+\end_inset
+
+ יותר מפעם אחד.
+ אזי 
+\begin_inset Formula $\deg k=4$
+\end_inset
+
+ כי יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ קשתות מחוברות אליו: קשת שהגענו אליו ממנו בפעם הראשונה 
+\begin_inset Formula $e_{1}$
+\end_inset
+
+, קשת שעברנו עליה אחרי שהגענו ל
+\begin_inset Formula $k$
+\end_inset
+
+ בפעם הראשונה 
+\begin_inset Formula $e_{2}$
+\end_inset
+
+, קשת שהובלה אותנו ל
+\begin_inset Formula $k$
+\end_inset
+
+ בפעם השניה 
+\begin_inset Formula $e_{3}$
+\end_inset
+
+ והקשת שעוזבת את 
+\begin_inset Formula $k$
+\end_inset
+
+ בפעם השנייה, 
+\begin_inset Formula $e_{4}$
+\end_inset
+
+, אזי אם המסילה היא 
+\begin_inset Formula $\left\{ a_{1},a_{2}\dots e_{1},e_{2}\dots e_{3},e_{4}\dots a_{n}\right\} $
+\end_inset
+
+ אזי בונים מסילה חדשה 
+\begin_inset Formula $\left\{ a_{1},a_{2}\dots e_{1}e_{3}\dots a_{n}\right\} $
+\end_inset
+
+ שהיא פשוטה.
+ אם המסילה עדיין אינה פשוטה אז חוזרים על התהליך עד שתהייה פשוטה.
+ אזי אם יש מסילה אז אפשר למצא מסילה פשוטה.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם יש מסילה מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ מסמנים 
+\begin_inset Formula $P_{1}=\left\{ e_{1},e_{2}\dots e_{n}\right\} $
+\end_inset
+
+ ומסילה המחברת בין 
+\begin_inset Formula $v,w$
+\end_inset
+
+ שמסמנים 
+\begin_inset Formula $P_{2}=\left\{ a_{1},a_{2}\dots a_{n}\right\} $
+\end_inset
+
+.
+ אזי אם המסילות זרות אזי המסילה בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $w$
+\end_inset
+
+ היא 
+\begin_inset Formula $\left\{ e_{1},e_{2}\dots e_{n},a_{1},a_{2}\dots a_{n}\right\} $
+\end_inset
+
+.
+ אם הם לא מוזרות אזי מחפסים הצלע הראשונה המשותפת בין 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ ו
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ ומסמנים אותה 
+\begin_inset Formula $g=a_{i}=e_{i}$
+\end_inset
+
+ ובונים מסילה 
+\begin_inset Formula $\left\{ e_{1}\dots g\dots a_{n}\right\} $
+\end_inset
+
+ שהיא מחברת בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $w$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+יחס שקילות הוא יחס: סימטרי, רפלקסיבי, טרנזיטיבי.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+סימטרי: אם 
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $b$
+\end_inset
+
+ קודקודים קשורים אזי גם 
+\begin_inset Formula $b$
+\end_inset
+
+ ו 
+\begin_inset Formula $a$
+\end_inset
+
+ קשורים)בגרף לא מכוון.
+ אי אפשר להוכיח הטענה בגרף מכוון(
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+רפלקסיבי: 
+\begin_inset Formula $a$
+\end_inset
+
+ מקושר עם 
+\begin_inset Formula $a$
+\end_inset
+
+, זה נובע מההגדרה.
+\end_layout
+
+\begin_layout Enumerate
+טרנזיטיבי: לפי סעיף ב' אם 
+\begin_inset Formula $v$
+\end_inset
+
+ מחובר ל
+\begin_inset Formula $u$
+\end_inset
+
+ ו
+\begin_inset Formula $u$
+\end_inset
+
+ מחובר ל
+\begin_inset Formula $w$
+\end_inset
+
+ אזי 
+\begin_inset Formula $v$
+\end_inset
+
+ מחובר ל
+\begin_inset Formula $w$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $v\Re u\wedge u\Re w\Rightarrow v\Re w$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+נוכיח כי א' גורר את ב': אם 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר אזי יש בין כל שני קודקודים מסילה אחת או יותר.
+ אם אין מעגלים אזי יש אין קודקודים שיש ביניהם שני מסילות או יותר, כלומר
+ יש קשת אחת בין כל שתי קודקודים, אזי אם מוסיפים קשת כלשהיא בין שתי קודקודים
+ אנחנו 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ אזי יהיו שתי מסילות בין הקודקודים האילו, אזי זה הוא גרף חסר מעגלים מקסימאלי.
+\end_layout
+
+\begin_layout Enumerate
+נוכיח כי ב' גורר את ג': אם כל הוספה של קשת תוסיף מעגל ל
+\begin_inset Formula $G$
+\end_inset
+
+ אזי יש קשת אחת בין כל שתי קודקודים)ראה הוכחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.( נניח כי יש קשת 
+\begin_inset Formula $e=\left(u,v\right)$
+\end_inset
+
+ אזי המסילה המחברת את שני הקודקודים היא 
+\begin_inset Formula $\left\{ e\right\} $
+\end_inset
+
+ אם מורידים הקשת אזי הורדנו את המסילה, אזי הגרף נהפך ללא קשיר.
+\end_layout
+
+\begin_layout Enumerate
+נוכיח כי ג' גורר את ד': אם 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר אזי יש לפחות מסלול אחד בין כל שני קודקודים.
+ אם כל הסרה של קשת תגרום לגרף להפוך לגרף לא קשיר אזי כל שתי קודקודים מחוברים
+ במסילה אחת, כלומר אין מעגלים)שתי מסילות שונות שמחברות אותו קודקוד(
+\end_layout
+
+\begin_layout Enumerate
+נוכיח כי ד' גורר את א': אם בין כל שתי קודקודים יש מסילה יחידה אזי הגרף קשיר
+ ואין מעגלים כי מעגל זה שתי מסילות בין אותם שתי קודקודים.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי אפשר להוכיח שקילות של 
+\begin_inset Formula $n$
+\end_inset
+
+ טענות דרך 
+\begin_inset Formula $n-1$
+\end_inset
+
+ גרירות.
+ מסמנים גרירה היא קשת מכוונת.
+ רוצים להוכיח כי 
+\begin_inset Formula $n$
+\end_inset
+
+ הטענות שקולות אזי בפרט רוצים להוכיח כי 
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ שקול לכל האחרים)כלומר יש מסילה בינו לביביהם.( כדי לבנות גרף קשיר בין 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים צריכים 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קשתות.
+ אבל אזי אין מסילה בין 
+\begin_inset Formula $v_{i}\Rightarrow v_{1}\left(i\in\left\{ 2\dots n\right\} \right)$
+\end_inset
+
+.
+ בסתירה לזה שאפשר להוכיח שקילות של 
+\begin_inset Formula $n$
+\end_inset
+
+ טענות דרך 
+\begin_inset Formula $n-1$
+\end_inset
+
+ גרירות.
+ 
+\end_layout
+
+\begin_layout Standard
+נותר להוכיח כי אפשר לעשות את זה ב
+\begin_inset Formula $n$
+\end_inset
+
+ גרירות, זה קל, בונים מסילה 
+\begin_inset Formula $v_{1}\Rightarrow v_{2}\Rightarrow v_{3}\Rightarrow\dots\Rightarrow v_{n}$
+\end_inset
+
+ שהיא בעלת 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קשתות ומוסיפים קשת 
+\begin_inset Formula $v_{n}\Rightarrow v_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+לקבל 
+\begin_inset Formula $xy^{4}z^{2}$
+\end_inset
+
+ מ
+\begin_inset Formula $\left(x+y+z\right)^{7}$
+\end_inset
+
+ זה לבחור 
+\begin_inset Formula $x$
+\end_inset
+
+ פעם אחת, 
+\begin_inset Formula $y$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+פעמים ו
+\begin_inset Formula $z$
+\end_inset
+
+ פעמיים מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קבוצות 
+\begin_inset Formula $\left\{ x,y,z\right\} $
+\end_inset
+
+.
+ מספר הדרכים לעשות את זה הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{7 \choose 1,4,2}=\frac{7!}{1!\cdot4!\cdot2!}=\frac{5\cdot6\cdot7}{1!\cdot2!}=105\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

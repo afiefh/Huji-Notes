@@ -10393,7 +10393,1767 @@ y_{1}+y_{2}+y_{3}+y_{3}=11\]
 \begin_inset Formula $G$
 \end_inset
 
+.
+\end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+18
+\end_layout
+
+\begin_layout Standard
+ראינו כי לגרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ כודכודים שבו 
+\begin_inset Formula $m\geq n$
+\end_inset
+
+ צלעות אזי קיים מעגל
+\end_layout
+
+\begin_layout Standard
+גרף קשיר בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים מכיל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות לפחות
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $G\left(V,E\right)$
+\end_inset
+
+ הוא גרף, 
+\begin_inset Formula $e\in E$
+\end_inset
+
+.
+ 
+\begin_inset Formula $G-e$
+\end_inset
+
+ קשיר אם ורק אם 
+\begin_inset Formula $e$
+\end_inset
+
+ שייך למעגל ב
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $G-e$
+\end_inset
+
+ קשיר תהי 
+\begin_inset Formula $e=\left\{ u,v\right\} $
+\end_inset
+
+.
+ אזי אם 
+\begin_inset Formula $G-e$
+\end_inset
+
+ קשיר אז יש מסלול מ
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+, אזי ב
+\begin_inset Formula $G$
+\end_inset
+
+ המסלול הזה עם הצלע 
+\begin_inset Formula $e$
+\end_inset
+
+ היא מעגל.
+\end_layout
+
+\begin_layout Standard
+כיוון שני: 
+\begin_inset Formula $e$
+\end_inset
+
+ חלק ממעגל, רוציל להראות כי 
+\begin_inset Formula $G-e$
+\end_inset
+
+ קשיר, כלומר צריך להוכיח כי בין כל זוג קודקודים 
+\begin_inset Formula $x,y\in V$
+\end_inset
+
+ קיים מסלול ב 
+\begin_inset Formula $G-e$
+\end_inset
+
+ כלומר מסלול ב 
+\begin_inset Formula $G$
+\end_inset
+
+ שלא מכיל את 
+\begin_inset Formula $e$
+\end_inset
+
+.
+ נתון כי 
+\begin_inset Formula $e$
+\end_inset
+
+ היה חלק ממעגל אזי גם ב 
+\begin_inset Formula $G-e$
+\end_inset
+
+ יש מסלול מ
+\begin_inset Formula $u\to v$
+\end_inset
+
+)תזכור הגדרנו 
+\begin_inset Formula $e=\left\{ u,v\right\} $
+\end_inset
+
+( אזי אם יש מסלול מ
+\begin_inset Formula $x\to y$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+ אז אפשר להגיע מ
+\begin_inset Formula $x\to y$
+\end_inset
+
+ גם ב
+\begin_inset Formula $G-e$
+\end_inset
+
+ אם משתמשים במסלול השני בין 
+\begin_inset Formula $u\to v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגדרה: הגרף המשלים של 
+\begin_inset Formula $G=G\left(V,E\right)$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\overline{G}=\overline{G}\left(V,\overline{E}\right)$
+\end_inset
+
+ שבו כל הצלעות שאין בהם קשתות יש קשתות ובהפך.
+ כלומר 
+\begin_inset Formula $\overline{E}=\left(V\times V\right)\setminus E$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הגדרה: גרף ריק זה 
+\begin_inset Formula $G=G\left(V,\emptyset\right)$
+\end_inset
+
+, המשלים שלו הוא גרף שמכיל את כל הקשטות בין הקודקודים.
+\end_layout
+
+\begin_layout Standard
+בגרף שלם עם 
+\begin_inset Formula $n$
+\end_inset
+
+כודכודים יש 
+\begin_inset Formula $\begin{pmatrix}n\\
+2\end{pmatrix}$
+\end_inset
+
+ שזה 
+\begin_inset Formula $\frac{n\left(n-1\right)}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+תת קבוצה 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ נקראת קליק אם כל הקשתות בין קודקודי 
+\begin_inset Formula $S$
+\end_inset
+
+ נמצאים קליק
+\end_layout
+
+\begin_layout Standard
+גרף של קובייה 
+\begin_inset Formula $n$
+\end_inset
+
+ מימדית, נסמן 
+\begin_inset Formula $\left\{ a_{1},a_{2}\dots a_{n}\right\} ,a_{i}\in\left\{ 0,1\right\} $
+\end_inset
+
+ אזי יש 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ קודקודים.
+ שני קודקודים מחוברים אם 
+\begin_inset Formula $\left|a_{i}-b_{i}\right|\leq1$
+\end_inset
+
+.....
+\end_layout
+
+\begin_layout Standard
+גרף רגולארי הוא גרף שהדרגה של כל הקודקודים בו שווים.
+\end_layout
+
+\begin_layout Standard
+גרף דו צדדי: אם 
+\begin_inset Formula $G=G\left(V_{1}\dot{\cup}V_{2},E\right)$
+\end_inset
+
+ אם כל קשת 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ מחברת קודקוד מ
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ עם קודקוד ב 
+\begin_inset Formula $V_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט:
+\end_layout
+
+\begin_layout Standard
+גרפ 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא דו צדדי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+כל המעגלים ב
+\begin_inset Formula $G$
+\end_inset
+
+ בעל אורך זוגי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ כל המעגלים הפשוטים הם בעלי אורך זוגי.
+\end_layout
+
+\begin_layout Section
+עצים
+\end_layout
+
+\begin_layout Standard
+יער: זה כרף שאין בו מעגל
+\end_layout
+
+\begin_layout Standard
+עץ: יער קשיר.
+\end_layout
+
+\begin_layout Standard
+קודקוד בעל דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ בעץ נקרא עלה
+\end_layout
+
+\begin_layout Standard
+טענה: בכל עץ בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים כאשר 
+\begin_inset Formula $n\geq n$
+\end_inset
+
+ קיים עלה.
+\end_layout
+
+\begin_layout Standard
+הוכחה: נסמן ב
+\begin_inset Formula $T$
+\end_inset
+
+ עץ.
+ יהי 
+\begin_inset Formula $v_{0}\in T$
+\end_inset
+
+ אם 
+\begin_inset Formula $\deg v_{0}=1$
+\end_inset
+
+ אז סיימנו, אם 
+\begin_inset Formula $\deg v_{0}\geq2$
+\end_inset
+
+ אזי אפשר ללכת במסלול שלו, אפשר להמשיך כך עד אינסוף אבל יש מספר סופי של
+ קודקודים ואי אפשר לחזור לקודקוד שהיינו בו)כי בעץ אין מעגל( אזי צריך להיעצר
+ איפה שהוא.
+\end_layout
+
+\begin_layout Standard
+מסקנה: עץ בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים מכיל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות.
+\end_layout
+
+\begin_layout Standard
+טענות:
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא עץ אם ורק אם הוא מקיים אחת מהתכונות האילו:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר ומינימאלי בעל תכונה זו, כלומר לכל 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $G\setminus e$
+\end_inset
+
+ איננו קשיר
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $G$
+\end_inset
+
+ איננו מכיל מעגלים והוא מקסימאלי בעל תכונה זו, כלומר הוספת קשט כלשהיא מוסיפה
+ מעגל.
+\end_layout
+
+\begin_layout Enumerate
+גרף קשיר עם 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ו
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות
+\end_layout
+
+\begin_layout Standard
+תת גרף פורש: 
+\begin_inset Formula $G=G\left(V,E\right)$
+\end_inset
+
+ תת גרף פורש של 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא גרף שמכיל את כל קודקודי 
+\begin_inset Formula $G$
+\end_inset
+
+ ותת קבוצה של קשתותיו.
+\end_layout
+
+\begin_layout Standard
+משפט: תת גרף קשיר אם ורק אם ל
+\begin_inset Formula $G$
+\end_inset
+
+ קיים עץ פורש
+\end_layout
+
+\begin_layout Standard
+הוכחה: אם ל
+\begin_inset Formula $G$
+\end_inset
+
+ יש תת עץ פורש 
+\begin_inset Formula $T$
+\end_inset
+
+ אז 
+\begin_inset Formula $T$
+\end_inset
+
+ קשיר ולכן 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Chapter
+תרגול מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Standard
+מקדם מולטינומי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{n \choose k}={n \choose n-k}={n \choose k,n-k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השוויון הראשון נובע מזה שלחלק לשתי קבוצות בעלות 
+\begin_inset Formula $k,n-k$
+\end_inset
+
+ או 
+\begin_inset Formula $n-k,k$
+\end_inset
+
+ איברים זה אותו דבר.
+\end_layout
+
+\begin_layout Standard
+אז אם מחלקים ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קבוצות למשל אז אפשר לכתוב את זה כ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{n \choose \begin{matrix}k & l & m\end{matrix}}=\frac{n!}{k!l!m!}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם מחלקים ל
+\begin_inset Formula $r$
+\end_inset
+
+ קבוצות אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+{n \choose \begin{matrix}k_{1}, & \dots, & k_{r}\end{matrix}}=\frac{n!}{k_{1}!\cdot k_{2}!\cdots k_{r}!}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+19
+\end_layout
+
+\begin_layout Standard
+עצ עם שורש זה עז בעל קודקוד שנקרא לו שורש כך שכל הקודקודים יוצאים משורש
+ זה.
+ 
+\end_layout
+
+\begin_layout Standard
+כל קודקוד בעל דרגה אחד קוראים לו "עלה"
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+leaf
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אב קדמון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ancestor
+\lang hebrew
+ של קודקוד מסוים זה קודקוד שנמצא על המסילה בינו לבין השורש.
+\end_layout
+
+\begin_layout Standard
+הורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+parent
+\lang hebrew
+ הוא אב קדמון אם המרחק הוא אחד.
+\end_layout
+
+\begin_layout Standard
+ילד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+child
+\lang hebrew
+ זה הפך של הורה
+\end_layout
+
+\begin_layout Standard
+ציצה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+offspring
+\lang hebrew
+ זה הפך של אב קדמון
+\end_layout
+
+\begin_layout Standard
+גובה עץ זה המרחק המקסימאלי בין עלה לשורש
+\end_layout
+
+\begin_layout Standard
+עץ בינארי זה עז שבו יש לכל קודקוד דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לכל היותר)כלומר יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לכל קודקוד לכל היותר שני בנים(
+\end_layout
+
+\begin_layout Standard
+עץ בינארי מלא זה שלכל קודקוד יש דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ או 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+עץ בינארי שלם שבו כל העלים נמצאים באותה רמה.
+\end_layout
+
+\begin_layout Standard
+כמה קודרודים יש בעץ שלם בעומק 
+\begin_inset Formula $h$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+1+k+\dots+k^{h}=\frac{k^{h+1}-1}{k-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גרפים מישוריים
+\end_layout
+
+\begin_layout Standard
+זה גרף שניתן לייציג במישור, כלומר זה גרף שניתן ליצגו על ידי נקודות במישור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+תמשיך ההגדרה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c25d1.svg
+	lyxscale 10
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פאה זה תחום במישור שספתו היא מעגל פשוט של הגרף ולא מכיל אף קשט.)יש גם את
+ הפאה בין המעגל החיצוני והאינסוף(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c25d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוסחת אוילר נותנת היחס בין קודקודים פאות והקשטות...
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף מישורי קשיר אזי 
+\begin_inset Formula $\left|V\right|-\left|E\right|+\left|F\right|=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף קשיר בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודם אז יש לפחות 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות...
+\end_layout
+
+\begin_layout Standard
+אם מסתכלים על גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ וגרף 
+\begin_inset Formula $G\setminus e$
+\end_inset
+
+ רואים כי 
+\begin_inset Formula $V_{G}=n$
+\end_inset
+
+ ו
+\begin_inset Formula $V_{G\setminus e}=n$
+\end_inset
+
+, 
+\begin_inset Formula $\left|E_{G\setminus e}\right|=\left|E_{G}\right|-1$
+\end_inset
+
+, 
+\begin_inset Formula $\left|F_{G\setminus e}\right|=\left|F_{G}\right|-1$
+\end_inset
+
+ ועדיין מתקיים השוויון: 
+\begin_inset Formula $\left|V_{G}\right|-\left|E_{G}\right|+\left|F_{G}\right|=\left|V_{G\setminus e}\right|-\left|E_{G\setminus e}\right|-1+\left|F_{G\setminus e}\right|+1=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+20
+\end_layout
+
+\begin_layout Standard
+בגרפים מישוריים מתקיים נוסחת אוילר לגרף קשיר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|V\right|-\left|E\right|+\left|F\right|=2\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגרף מישורי כל צלע גובלת בפיאה אחת או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+)כל צלע ששיכת למעגל גובלת ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.( השפה של כל פיאה חסומה מכילה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קשטות)כלומר לא הפאה של אינסוף כי היא לא חסומה.( אם הגרף מכיל יותר משתי צלעות
+ אזי גם הפאה הלא חסומה שפתה מכילה לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צלעות.
+\end_layout
+
+\begin_layout Standard
+נסתכל על מספר הפאות אזי 
+\begin_inset Formula $3\left|F\right|$
+\end_inset
+
+ קטן או שווה מאורכי השפות של כל פאה שזה קטן או שווה ל
+\begin_inset Formula $2\left|E\right|$
+\end_inset
+
+ כי כל קשט נספרת פעם או פעמיים.
+ אזי 
+\begin_inset Formula $\left|F\right|\leq\frac{2}{3}\left|E\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|V\right|-\left|E\right|+\left|F\right| & = & 2\\
+\left|E\right|-\left|F\right| & = & \left|V\right|-2\\
+\frac{1}{3}\left|E\right| & \leq & \left|V\right|-2\\
+\left|E\right| & < & 3\left(\left|V\right|-2\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט: בכל גרף מישורי קשיר פרט לגרף שמכיל צלע אחת מתקיים הדבר הזה.
+\end_layout
+
+\begin_layout Standard
+אזי נוכיח כי 
+\begin_inset Formula $k_{5}$
+\end_inset
+
+ לא יכול להיות גרף מישורי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|V\right|=5,\left|E\right|={5 \choose 2}=10\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אילו הוא מישורי היה 
+\begin_inset Formula \[
+10\leq3\left(5-2\right)=9\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש עוד גרף לא מישורי 
+\begin_inset Formula $k_{3,3}$
+\end_inset
+
+ במקרה זה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|V\right|=6,\left|E\right|=9\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+9\leq3\left(6-2\right)=2\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אזי אי אפשר לקבל את זה מאי השוויון הזה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|V\right|-\left|E\right|+\left|F\right| & = & 2\\
+\left|F\right| & = & 2-\left|V\right|+\left|E\right|\\
+\left|F\right| & = & 2-6+9\\
+ & = & 5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+פאות.
+ הגרף הוא דו צדדי לכן 
+\begin_inset Formula $4F\leq2\left|E\right|\Rightarrow2\left|F\right|\leq\left|E\right|$
+\end_inset
+
+ זה לא מתקיים כי 
+\begin_inset Formula $\left|F\right|=5,\left|E\right|=9$
+\end_inset
+
+.
+ אזי זה לא מישורי.
+\end_layout
+
+\begin_layout Standard
+עידון של גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Refining
+\lang hebrew
+ הוא גרף המתקבל על ידי הוספת קודקודים נוספים מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לאורך הצלעות.
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Kartowski
+\lang hebrew
+: 
+\begin_inset Formula $G$
+\end_inset
+
+ איננו מישורי אם"ם 
+\begin_inset Formula $G$
+\end_inset
+
+ מכיל עידון של 
+\begin_inset Formula $k_{5}$
+\end_inset
+
+ או 
+\begin_inset Formula $k_{3,3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד משפט: יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף מישורי אזי קיים ב 
+\begin_inset Formula $G$
+\end_inset
+
+ קודקוד בעל דרגה קטנה שווה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+מספיק להתבונן ברכיב הקשירות של 
+\begin_inset Formula $G$
+\end_inset
+
+ ולכןן ניתן להניח כי 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|E\right|\leq3\left(\left|V\right|-3\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{v\in V}\deg\left(v\right) & = & 2\left|E\right|\\
+\sum_{v\in V}\deg\left(v\right) & \leq & 6\left(\left|V\right|-2\right)\\
+\frac{\sum_{v\in V}\deg\left(v\right)}{\left|V\right|} & \leq & \frac{6\left(\left|V\right|-2\right)}{\left|V\right|}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן קיים קןדקןד שהדרגה שלו קטנה או שווה ל
+\numeric on
+5
+\numeric off
+.
+\end_layout
+
+\begin_layout Section
+מסלולים בגרפים 
+\end_layout
+
+\begin_layout Standard
+נניח שנתון גרף ונשאל אם קיים מסלול )מעגל( העובר על כל הצלעות הגרף?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c26d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף קשיר)מכוון או לא מכוון( מסלול או מעגל אוילר בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ הוא מסלול או מעגל העובר על כל קשטות הגרף.
+\end_layout
+
+\begin_layout Standard
+אז מתי יש מעגל אוילר?
+\end_layout
+
+\begin_layout Standard
+משפט: בגרף קשיר לא מכוון קיים מעגל אוילר 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+דרגת הקודקוים זוגית.
+\end_layout
+
+\begin_layout Standard
+הוכחה: נניח שב 
+\begin_inset Formula $G$
+\end_inset
+
+ קיים מעגל אוילר אזי כל כודכוד שמבקרים בו נכנסים מקשט ויוצאים מקשט אחרת,
+ אז אנחנו טורמים לדרגה שלו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.
+ הקודקוד שהתחלנו ממנו טרמנו אחד בהתחלה ואחד בסיום, לכן הדרגה של כל קדקוד
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+כיוון שני: בגרף שבו כל הקודקודים בעלי דרגה זוגית כל קשת מוכלת במעגל.
+ אזי נתחיל ב 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ נעבור ב 
+\begin_inset Formula $e$
+\end_inset
+
+ ל
+\begin_inset Formula $v_{1}$
+\end_inset
+
+ ונמשיך...
+ אזי כל קודקוד לאור המסלול אנחנו נכנסים ויוצאים ממנו, אזי מגיעים למצב שכל
+ קשט שאפשר ללכת עלה כבר היינו בה.
+\end_layout
+
+\begin_layout Standard
+נוכיח עכשיו כי המסלול חייב להסתיים ב
+\begin_inset Formula $v_{0}$
+\end_inset
+
+: יהי 
+\begin_inset Formula $u$
+\end_inset
+
+ הקודקוד בו מסתיים המסלול אם 
+\begin_inset Formula $u\neq v_{0}$
+\end_inset
+
+ אזי טרמנו בסך הכל מספר אי זוגי לדרגה של 
+\begin_inset Formula $u$
+\end_inset
+
+ אבל 
+\begin_inset Formula $u$
+\end_inset
+
+ בעל דרגה זוגית ולכן ניתן להמשיך במסלול בסתירה.
+ משל.
+\end_layout
+
+\begin_layout Standard
+אבל המעגל הזה לא חייב להיות מעגל אוילר.
+ יהי 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ קודקוד של הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ קיימת קשת החלה ב 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ לפי טענה קיודמת 
+\begin_inset Formula $e$
+\end_inset
+
+ שייך למעגל.
+ אם מעגל זה איננו מעגל אוילר אז נגדיל אותו.
+ אבל מדוע אפשר להגדיל את המעגל? יהי המעגל הראשון 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ שלא עובר דרך כל הקשטות אזי מסתכלים על 
+\begin_inset Formula $G\setminus P_{1}$
+\end_inset
+
+)לזרוק את הקשתות ולא הקודקודים( רואים כי הדרגה של כל קודקוד היא עדיין זוגית.
+ 
+\begin_inset Formula $G$
+\end_inset
+
+ קשיר לכן קיימת קשת 
+\begin_inset Formula $\hat{e}\in G$
+\end_inset
+
+ שאחד מקודקודיה לפחות הוא קודקוד של המעגל 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+ היא קשת בגרף 
+\begin_inset Formula $G\setminus P_{1}$
+\end_inset
+
+ שכל כודכודיו בעל דרגה זוגית ךפי טענה קודמת 
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+נמצא במעגל 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ הנמצא ב
+\begin_inset Formula $G\setminus P_{1}$
+\end_inset
+
+.
+ אז נבנה המעגל 
+\begin_inset Formula $P_{1}\cup P_{2}$
+\end_inset
+
+: נתחיל מ
+\begin_inset Formula $v_{0}$
+\end_inset
+
+ ונלך על 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ עד לאחד מקודקודי 
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+, נמשיך ב 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ ונחזור ל
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+ משם נחזור ל
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ וממשיכים ל 
+\begin_inset Formula $v_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה: אם 
+\begin_inset Formula $G$
+\end_inset
+
+ לא מכוון וקשיר קיים ב 
+\begin_inset Formula $G$
+\end_inset
+
+ מסלול אוילר 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ קיימים בדיוק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קודקודים בעלי דרגה אי זוגית.
+\end_layout
+
+\begin_layout Standard
+הוכחה: מוסיפים קשת בין שתה הקודקודים בעלי דרגה אי זוגית וחזרנו להוכחה של
+ מעגל אוילר.
+\end_layout
+
+\begin_layout Standard
+הגדרה: מסלול)מעגל( המילטוני בגרף יהי גרף קשיר מסלול או מעגל המילטוני הוא
+ מסלול העובר דרך כל קודקוד פעם אחת בלבד.
 \end_layout
 
 \end_body

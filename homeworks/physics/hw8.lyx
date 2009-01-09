@@ -105,6 +105,33 @@
 \bar default
 \noun default
 \color inherit
+1
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
 2
 \end_layout
 
@@ -453,12 +480,54 @@ a_{\theta} & = & 2\dot{r}\omega+r\dot{\omega}\\
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\frac{\partial}{\partial t}\vec{L} & = & \vec{N}\\
- & = & \vec{r}\times\vec{F}\\
- & = & \vec{r}\times\left(F_{r}\hat{r}+F_{\theta}\hat{\theta}\right)\\
- & = & \vec{r}\times F_{\theta}\hat{\theta}\\
- & = & rF_{\theta}\\
- & = & \left(2r\dot{r}\omega+r^{2}\dot{\omega}\right)m\end{eqnarray*}
+mgh & = & \frac{1}{2}mv^{2}\\
+2gh & = & v^{2}\\
+2gh & = & r^{2}\omega^{2}\\
+r^{2} & = & \frac{2gh}{\omega^{2}}\\
+r & = & \frac{\sqrt{2gh}}{\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\omega^{2}r-mg & = & ma\\
+\omega^{2}r-g & = & a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h=\frac{1}{2}\left(\omega^{2}r-g\right)t^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r & = & \frac{\sqrt{2g\frac{1}{2}\left(\omega^{2}r-g\right)t^{2}}}{\omega}\\
+ & = & \frac{\sqrt{g\left(\omega^{2}r-g\right)t^{2}}}{\omega}\\
+ & = & \frac{\sqrt{\left(g\omega^{2}r-g^{2}\right)}}{\omega}t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r=\frac{\sqrt{\left(g\omega^{2}r-g^{2}\right)}}{\omega}t\]
 
 \end_inset
 

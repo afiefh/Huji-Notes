@@ -7871,7 +7871,9 @@ m_{1}\frac{\partial^{2}}{\partial t^{2}}\left(\underbrace{R_{cm}}_{\dot{R}_{cm}=
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס?
+הרצאה מס.
+\numeric on
+22
 \end_layout
 
 \begin_layout Standard
@@ -8002,7 +8004,1704 @@ k_{0} & = & Gm_{1}m_{2}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+23
+\end_layout
+
 \begin_layout Standard
+אם יש שתי גופים: כדור הארץ והשמש, 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+מרחק מהראשית לשמש, 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+ המרחק מהראשית לכדור הארץ ו 
+\begin_inset Formula $R$
+\end_inset
+
+ מהראשית למרכז המסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu\ddot{\vec{r}} & = & -\frac{k_{0}}{r^{2}}\hat{r}\\
+\vec{L} & = & \mu\left(\vec{r}\times\vec{v}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu\ddot{r} & = & \frac{l_{0}^{2}/\mu}{r^{3}}-\frac{k_{0}}{r^{2}}\\
+\dot{\theta} & = & \frac{l_{0}/\mu}{r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ופתרנו אז התקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r\left(\theta\right) & = & \frac{c}{1+\epsilon\cos\theta}\\
+c & = & \frac{l_{0}^{2}/\mu}{k_{0}}\\
+E & = & \frac{\mu k_{0}^{2}}{2l_{0}}\left(\epsilon^{2}-1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצא כמה דברים בדרך אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{k}=\frac{1}{2}m_{1}v_{1}^{2}+\frac{1}{2}m_{2}v_{2}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $\vec{r}_{1}=R-\frac{m_{2}}{M}\vec{r},\vec{r}_{2}=\vec{R}+\frac{m_{1}}{M}\vec{r}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{v}_{1} & = & \dot{\vec{R}}-\frac{m_{2}}{M}\vec{v}\\
+\vec{v}_{2} & = & \dot{\vec{R}}+\frac{m_{1}}{M}\vec{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח לשם פשטות כי 
+\begin_inset Formula $\dot{\vec{R}}=0$
+\end_inset
+
+ אז מציבים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \frac{1}{2}m_{1}v_{1}^{2}+\frac{1}{2}m_{2}v_{2}^{2}\\
+ & = & \frac{1}{2}\left\{ m_{1}\left(\frac{m_{2}}{M}\right)^{2}+m_{2}\left(\frac{m_{1}}{M}\right)^{2}\right\} v^{2}\\
+ & = & \frac{1}{2}\mu\vec{v}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+מוגדר להיות 
+\begin_inset Formula $\vec{v}=\frac{\partial}{\partial t}\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{v} & = & \frac{\partial}{\partial t}\vec{r}\\
+ & = & \frac{\partial}{\partial t}\left(r\hat{r}\right)\\
+ & = & \dot{r}\hat{r}+r\dot{\theta}\hat{\theta}\\
+v^{2} & = & \dot{r}^{2}+r^{2}\dot{\theta}^{2}\end{eqnarray*}
+
+\end_inset
+
+ 
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \frac{1}{2}\mu\dot{r}^{2}+\frac{1}{2}\mu r^{2}\dot{\theta}^{2}\\
+E & = & \frac{1}{2}\mu\dot{r}^{2}+\left\{ \frac{1}{2}\mu r^{2}\dot{\theta}^{2}-\frac{k_{0}}{r}\right\} \\
+ & \underset{l_{0}=\mu r^{2}\dot{\theta}}{=} & \frac{1}{2}\mu\dot{r}^{2}+\left\{ \frac{l_{0}^{2}}{2\mu r^{2}}-\frac{k_{0}}{r}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים גרף)במימדים שונים לגמרה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c20d4.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקודת המינימום היא 
+\begin_inset Formula $\epsilon=0$
+\end_inset
+
+ שבה התנועה היא מעגלית.
+\end_layout
+
+\begin_layout Section
+חזרה לחוקי קפלר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c30d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial A & = & \frac{1}{2}\left|\vec{r}\times\partial\vec{r}\right|\\
+ & = & \frac{1}{2}\left|\vec{r}\times\overbrace{\frac{\partial\vec{r}}{\partial t}}^{\vec{v}}\partial t\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עושים אינטגרל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial A}{\partial t} & = & \frac{l_{0}}{2\mu}\\
+A & = & \frac{l_{0}}{2\mu}\tau\\
+\tau & = & \frac{2\mu}{l_{0}}A\end{eqnarray*}
+
+\end_inset
+
+ אז צריך למצא את השטח 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\pi ab=\pi a^{\frac{3}{2}}\sqrt{\frac{b^{2}}{a}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי 
+\begin_inset Formula $\sqrt{\frac{b^{2}}{a}}$
+\end_inset
+
+ זה 
+\begin_inset Formula $c$
+\end_inset
+
+ שהגדרנו מקודם, אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\pi\sqrt{c}a^{\frac{3}{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tau & = & \pi\sqrt{c}\frac{2\mu}{l_{0}}\cdot a^{\frac{3}{2}}\\
+ & = & \pi\frac{l_{0}}{\sqrt{\mu k_{0}}}\cdot\frac{2\mu}{l_{0}}a^{\frac{3}{2}}\\
+ & = & 2\pi\sqrt{\frac{\mu}{k}}\cdot a^{\frac{3}{2}}\\
+ & = & 2\pi\left[\frac{\mu}{Gm_{1}m_{2}}\right]^{\frac{1}{2}}a^{\frac{3}{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אוסצילטורים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c30d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפוטניאל הזה ליד נקודת שיווי המשקל היא בקירוב דומה ל 
+\begin_inset Formula $E=\left(x-a\right)^{2}$
+\end_inset
+
+ שזה פוטנציאל של דברים כמו קפיץ, מתולתלת...
+ ועוד
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב את זה דרך טור טילור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u\left(x-x_{0}\right)=u\left(x_{0}\right)+\underbrace{\frac{\partial u}{\partial x}\vert_{x=x_{0}}}_{0}\left(x-x_{0}\right)+\frac{1}{2}\frac{\partial^{2}u}{\partial x^{2}}\vert_{x=x_{0}}\left(x-x_{0}\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיבר השני הוא אפס כי מדובר בנקודת מינימום לכן הנגזרת מתאפסת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u\left(x-x_{0}\right) & = & u\left(x_{0}\right)+\frac{1}{2}\underbrace{\frac{\partial^{2}u}{\partial x^{2}}\vert_{x=x_{0}}}_{k>0}\left(x-x_{0}\right)^{2}\\
+ & \underset{x_{0}=0}{=} & \frac{1}{2}kx^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר כל מערכת בשיווי משקל זה דומה לקפיץ.
+ והכח יהיה 
+\begin_inset Formula $F=-kx\Rightarrow m\ddot{x}=-kx\Rightarrow\ddot{x}+\frac{k}{m}x=0$
+\end_inset
+
+ ננסה לפתור את זה במספרים מרוכבים:
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula \begin{eqnarray*}
+e^{a+i\theta} & = & e^{a}\left(\cos\theta+i\sin\theta\right)\\
+ & = & A\left(\cos\theta+i\sin\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.???
+\end_layout
+
+\begin_layout Standard
+כל המערכות הבעות במהירות קבועה הם אינרציאליות)ליגיתימיות( 
+\end_layout
+
+\begin_layout Standard
+נעבור לדברים המעניינים: מערכת מסתובבת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/31d1.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|\vec{v}\right| & = & \omega r\\
+\dot{r} & = & \vec{\omega}\times\vec{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לדבר על ווקטורי היחידה של המערכת המסתובבת: 
+\begin_inset Formula $\hat{x}^{'},\hat{y}^{'}$
+\end_inset
+
+ שהם מסתובבים ביחס למערכת הנייחת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\hat{x}}^{'} & = & \vec{\omega}\times\hat{x}^{'}\\
+\dot{\hat{y}}^{'} & = & \vec{\omega}\times\hat{y}^{'}\\
+\dot{\hat{z}}^{'} & = & \vec{\omega}\times\hat{z}^{'}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העולם מנקודת העולם של הנייחת הוא 
+\begin_inset Formula $\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}$
+\end_inset
+
+, אבל אם רוצים לתאר את אותה נקודה במערכת המסתובבת אזי 
+\begin_inset Formula $\vec{r}^{'}=x^{'}\hat{x}^{'}+y^{'}\hat{y}^{'}+z^{'}\hat{z}^{'}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{v} & = & \dot{x}^{'}\hat{x}^{'}+x^{'}\dot{\hat{x}}^{'}+\dot{y}^{'}\hat{y}^{'}+y^{'}\dot{\hat{y}}^{'}+\dot{z}^{'}\hat{z}^{'}+z^{'}\dot{\hat{z}}^{'}\\
+ & = & \vec{v}^{'}+x^{'}\vec{\omega}\times\hat{x}^{'}+y^{'}\vec{\omega}\times\hat{y}^{'}+z^{'}\vec{\omega}\times\hat{z}^{'}\\
+\\\vec{a} & = & \dot{\vec{v}}^{\prime}+\vec{\omega}\times\vec{v}^{\prime}+\vec{\omega}\times\left(\vec{v}+\vec{\omega}\times\vec{r}\right)\\
+ & = & \dot{\vec{v}}^{\prime}+2\vec{\omega}\times\vec{v}^{\prime}-\underbrace{\vec{\omega}\times\left(\vec{\omega}\times\vec{r}\right)}_{\mbox{Centrufugal Force}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+
+\lang english
+where did the minus come from?
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם בן אדם חי בחללית, אז מה צריך להיות 
+\begin_inset Formula $\omega$
+\end_inset
+
+ כדי שהוא ירגיש כאילו שהוא במערכת עם כבידה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c31d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N & = & mg\\
+m\omega^{2}r & = & mg\\
+\omega & = & \sqrt{\frac{g}{r}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוא רוצה לזרוק כדור לחברה שלו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c31d3.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי פועלים מומנטים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & m\omega r^{2}=m\omega v^{2}t^{2}\\
+\tau & = & L=2m\omega v^{2}t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \frac{\tau}{r}\\
+ & = & \frac{2m\omega v^{2}t}{vt}\\
+ & = & m\omega v\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+24
+\end_layout
+
+\begin_layout Standard
+נתחיל בפתירת בעיה קלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+\frac{k}{m}x=0\]
+
+\end_inset
+
+ נגדיר אופרטור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D=\frac{\partial^{2}}{\partial^{2}t}+\frac{k}{m}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מחפשים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Dx=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אפשר לחפש פתרון מהצורה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{x}\left(t\right) & = & a\left(t\right)+ib\left(t\right)\\
+D\hat{x} & = & \underbrace{Da\left(t\right)}_{0}+\underbrace{iDb\left(t\right)}_{0}=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננסה פתרון מהצורה 
+\begin_inset Formula $\hat{x}\left(t\right)=Ae^{i\left(\omega t+\delta\right)}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\{ \left(i\omega\right)^{2}+\frac{k}{m}\right\} \hat{x}\left(t\right) & = & 0\\
+\omega^{2} & = & \frac{k}{m}\\
+\omega & = & \sqrt{\frac{k}{m}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & A\cos\left(\omega_{0}t+\delta\right)\\
+x_{0} & = & x\left(0\right)=A\cos\left(\delta\right)\\
+v_{0} & = & v\left(0\right)=-\omega_{0}A\sin\left(\delta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \frac{x_{0}}{\cos\delta}\\
+\tan\left(\delta\right) & = & -\frac{v_{0}}{x_{0}\omega_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור אותה בעיה אם יש עוד כח 
+\begin_inset Formula $f=-bv$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\ddot{x}=-kx-b\dot{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{k}{m}=\omega_{0}^{2},\frac{b}{m}=2\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+2\gamma\dot{x}+\omega_{0}^{2}x=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננסה את אותו פתרון שהשתמשנו בו מקודם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\hat{x}=Ae^{i\left(\omega t+\delta\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(i\omega+i2mg\omega+\omega_{0}^{2}\right)^{2}\hat{x}\left(t\right) & = & 0\\
+\omega_{1,2} & = & i\gamma\pm\frac{1}{2}\sqrt{4\gamma^{2}+4\omega_{0}^{2}}\\
+ & = & i\gamma\pm\sqrt{\gamma^{2}+\omega_{0}^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+25
+\end_layout
+
+\begin_layout Standard
+נוסיף עוד כח לבעיה של שיעור קודם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\ddot{x}=-kx-b\dot{x}+F_{0}\cos\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכתוב את זה במונחים שהגדרנו מקודם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+\gamma\dot{x}+mgw_{0}^{2}x=\frac{F_{0}}{m}\cos\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי כותבים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Fx=\frac{F_{0}}{m}\cos\omega t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D\left[a\left(t\right)+ib\left(t\right)\right]=\frac{F_{0}}{m}e^{i\omega t}=\frac{F_{0}}{m}\left[\cos\omega t+i\sin\omega t\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נצטרך לקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Da\left(t\right) & = & \frac{F_{0}}{m}\cos\omega t\\
+Db\left(t\right) & = & \frac{F_{0}}{m}\sin\omega t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי ננחש ונראה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\hat{x}=Ae^{i\left(\omega t+\delta\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב את זה ונראה מה מתקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\left(i\omega\right)^{2}+i\gamma\omega+\omega_{0}^{2}\right)\cdot Ae^{i\delta}\cdot e^{i\omega t} & = & \frac{F_{0}}{m}e^{i\omega t}\\
+\left(-\omega^{2}+i\gamma\omega+\omega_{0}^{2}\right)\cdot Ae^{i\delta} & = & \frac{F_{0}}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{x}\left(0\right)=Ae^{i\delta}$
+\end_inset
+
+ לכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(-\omega^{2}+i\gamma\omega+\omega_{0}^{2}\right)\cdot\hat{x}\left(0\right) & = & \frac{F_{0}}{m}\\
+\hat{x}\left(0\right) & = & \frac{\nicefrac{F_{0}}{m}}{\omega_{0}^{2}-\omega^{2}+i\gamma\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{x}\left(0\right)\cdot\overline{\hat{x}}\left(0\right) & = & Ae^{i\delta}\cdot Ae^{-i\delta}\\
+\hat{x}\left(0\right)\cdot\overline{\hat{x}}\left(0\right) & = & A^{2}\\
+\frac{\nicefrac{F_{0}}{m}}{\omega_{0}^{2}-\omega^{2}+i\gamma\omega}\cdot\frac{\nicefrac{F_{0}}{m}}{\omega_{0}^{2}-\omega^{2}-i\gamma\omega} & = & A^{2}\\
+A & = & \frac{\nicefrac{F_{0}}{m}}{\sqrt{\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+\gamma^{2}\omega^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עכשיו רוצים למצא את הפאזה 
+\begin_inset Formula $\delta$
+\end_inset
+
+, כדי למצא אז זה נשתמש ב 
+\begin_inset Formula $\frac{1}{\hat{x}\left(0\right)}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\hat{x}\left(0\right)} & = & \frac{1}{A}e^{-\delta}\\
+\frac{1}{\left(\frac{F_{0}}{m}\right)}\left(\omega_{0}^{2}-\omega^{2}+i\gamma\omega\right) & = & \frac{1}{A}\left(\cos\delta-i\sin\delta\right)\\
+\frac{A}{\left(\frac{F_{0}}{m}\right)}\left(\omega_{0}^{2}-\omega^{2}+i\gamma\omega\right) & = & \cos\delta-i\sin\delta\\
+\begin{pmatrix}i\sin\delta\\
+\cos\delta\end{pmatrix} & = & \begin{pmatrix}i\frac{A\gamma\omega}{\left(\frac{F_{0}}{m}\right)}\\
+-\frac{A}{\left(\frac{F_{0}}{m}\right)}\left(\omega_{0}^{2}-\omega^{2}\right)\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tan\delta & = & \frac{\sin\delta}{\cos\delta}\\
+ & = & \frac{\left(\frac{A\gamma\omega}{\left(\frac{F_{0}}{m}\right)}\right)}{\left(-\frac{A}{\left(\frac{F_{0}}{m}\right)}\left(\omega_{0}^{2}-\omega^{2}\right)\right)}\\
+ & = & -\frac{\gamma\omega}{\omega_{0}^{2}-\omega^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tan\delta=\frac{-\gamma\omega}{\omega_{0}^{2}-\omega^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו פתרוו פרטי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=Re\left(\hat{x}\right)=A\cos\left(\omega t+\delta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \frac{\nicefrac{F_{0}}{m}}{\sqrt{\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+\gamma^{2}\omega^{2}}}\\
+\tan\delta & = & \frac{-\gamma\omega}{\omega_{0}^{2}-\omega^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להוסיף לפתרון זה כל פתרון שקיבלנו בשיעור הקודם)פתרון הומוגיני(
+\end_layout
+
+\begin_layout Standard
+אז רוצים לדעת מה פירושו של פתרון זה
+\end_layout
+
+\begin_layout Standard
+רואים שאמפליטודה מקסימאלית מתקבלת ב 
+\begin_inset Formula $\omega=\omega_{0}$
+\end_inset
+
+, במקרה זה הפאזה 
+\begin_inset Formula $\delta=\frac{\pi}{2}$
+\end_inset
+
+ והיא 
+\begin_inset Formula $A=\frac{\frac{F_{0}}{m}}{\gamma\omega_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מצירים את 
+\begin_inset Formula $A$
+\end_inset
+
+ בתלות ב
+\begin_inset Formula $\omega$
+\end_inset
+
+ אז מקבלים)
+\begin_inset Formula $\frac{F_{0}}{m}=1,\omega_{0}=5,\gamma^{2}=0.5$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c33d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז הרוחב של ה
+\lang english
+peak
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הזה בחצי הגובה הוא הוא 
+\begin_inset Formula $\gamma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $\omega=0$
+\end_inset
+
+ כלומר כח קבוע אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\frac{F_{0}}{m\omega_{0}^{2}}=\frac{F_{0}}{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והפתרון יהיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=\frac{F_{0}}{k}+x_{0}\cos\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לחשב את האנרגיה באוסצילטור מתנדנד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}m\dot{x}^{2}+\frac{1}{2}kx^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם מציבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}m\left\{ -\omega A\sin\left(\omega t+\delta\right)\right\} ^{2}+\frac{1}{2}k\left\{ A\cos\left(\omega t+\delta\right)\right\} ^{2}\\
+ & \underset{\omega\to\omega_{0}}{=} & \frac{1}{2}m\omega^{2}A^{2}\left(\sin^{2}\left(\omega t+\delta\right)+\cos^{2}\left(\omega t+\delta\right)\right)\\
+ & = & \frac{1}{2}m\omega^{2}A^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+בשיעור שעבר ראינו שבמקרה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+\gamma\dot{x}+\omega_{0}^{2}x=\frac{F_{0}}{m}\cos\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=A\cos\left(\omega t+\delta\right)+A_{1}e^{-\gamma t}\cos\left(\omega_{1}t+\delta_{1}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}m\dot{x}^{2}+\frac{1}{2}kx^{2}\underset{\omega\to\omega_{0}}{\to}\frac{1}{2}mA_{\left(\omega_{0}\right)}^{2}\omega_{0}^{2}\]
+
+\end_inset
+
+רוצים לראות את ההספק של המערכת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P & = & \frac{\partial}{\partial t}E_{k}=m\vec{v}\dot{\vec{v}}\\
+P & = & \vec{F}\vec{v}\\
+\Delta E & = & w=\intop P\left(t\right)\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{in} & = & \vec{F}\vec{v}\\
+ & = & F_{0}\cos\omega t\cdot\left\{ -\omega A\sin\left(\omega t+\delta\right)\right\} \\
+ & = & \omega AF\cos\left(\omega t\right)\cdot\cos\left(\omega t+\delta+\frac{\pi}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{in}=\tau\cdot\frac{1}{\tau_{0}}\underbrace{\intop_{\tau_{0}}P\partial t}_{\left\langle P\right\rangle }\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula $\left\langle f\left(t\right)\right\rangle $
+\end_inset
+
+ זה הממוצע של 
+\begin_inset Formula $f\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\langle \cos\left(\omega t\right)\cos\left(\omega t+\delta+\frac{\pi}{2}\right)\right\rangle  & = & \left\langle \cos\left(\omega t\right)\left[\cos\left(\omega t\right)\cos\left(\delta+\frac{\pi}{2}\right)-\sin\left(\omega t\right)\sin\left(\delta+\frac{\pi}{2}\right)\right]\right\rangle \\
+ & = & \underbrace{\left\langle \cos^{2}\left(\omega t\right)\right\rangle }_{\frac{1}{2}}\cos\left(\delta+\frac{\pi}{2}\right)-\underbrace{\left\langle \cos\left(\omega t\right)\sin\left(\omega t\right)\right\rangle }_{0}\sin\left(\delta+\frac{\pi}{2}\right)\\
+ & = & \frac{1}{2}\cos\left(\delta+\frac{\pi}{2}\right)-0\cdot\sin\left(\delta+\frac{\pi}{2}\right)\\
+ & = & \frac{1}{2}\cos\left(\delta+\frac{\pi}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{in} & = & \tau_{0}\frac{1}{\tau_{0}}\int P\partial t\\
+ & = & \tau_{0}\omega AF_{0}\left\langle \cos\left(\omega t\right)\cos\left(\omega t+\delta+\frac{\pi}{2}\right)\right\rangle \\
+ & = & 2\pi\cdot\frac{F_{0}}{2}A_{\left(\omega\right)}\cos\left(\delta_{\left(\omega\right)}+\frac{\pi}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tan\left(\delta_{\left(\omega\right)}\right)=-\frac{\gamma\omega}{\omega_{0}^{2}-\omega^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנקודת המקסימום 
+\begin_inset Formula $E_{in}\left(\omega_{0}\right)=2\pi\cdot\frac{F_{0}}{2}A\left(\omega_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האנרגיה היוצאת מהמערכת היא האנרגיה המיוצרת על ידי החיכוך 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ אזי:)תזכור 
+\begin_inset Formula $\gamma=\frac{b}{m}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{\gamma} & = & \vec{f}\cdot\vec{v}\\
+ & = & -b\dot{x}\cdot\dot{x}\\
+ & = & -b\dot{x}^{2}\\
+ & = & -b\left\{ -\omega A\sin\left(\omega t+\delta\right)\right\} \\
+E_{out} & = & \tau_{0}\frac{1}{\tau_{0}}\int_{\tau_{0}}P\partial t\\
+ & = & -b\omega^{2}A_{\left(\omega\right)}^{2}\left\langle \sin^{2}\left(\omega t+\delta\right)\right\rangle \tau_{0}\\
+ & = & -2\pi b\omega A_{\left(\omega\right)}^{2}\cdot\frac{1}{2}\\
+ & \underset{\omega\to\omega_{0}}{\to} & -2\pi b\frac{1}{2}\omega_{0}\left(\frac{\nicefrac{F_{0}}{m}}{\gamma\omega_{0}}\right)^{2}\\
+E_{out} & = & -\frac{F_{0}^{2}}{2m\gamma^{2}}\cdot2\pi\frac{\gamma}{\omega_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{in} & = & 2\pi\frac{F_{0}}{2}A_{\left(\omega\right)}\\
+ & \overset{\omega\to\omega_{0}}{\to} & 2\pi\frac{F_{0}}{2}\cdot\frac{\nicefrac{F_{0}}{m}}{\gamma\omega_{0}}\\
+ & = & \frac{F_{0}^{2}}{2m\gamma^{2}}\cdot2\pi\frac{\gamma}{\omega_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{store} & = & \frac{1}{2}mA_{\left(\omega_{0}\right)}^{2}\omega_{0}^{2}\\
+ & = & \frac{1}{2}m\omega_{0}^{2}\left(\frac{\nicefrac{F_{0}}{m}}{\gamma\omega_{0}}\right)^{2}\\
+ & = & \frac{F_{0}^{2}}{2m\gamma^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן מקדם האיכות הוא 
+\begin_inset Formula \begin{eqnarray*}
+Q & = & \frac{\omega_{0}}{\gamma}\\
+ & = & 2\pi\frac{E_{store}}{E_{out}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.>>>>
+\end_layout
+
+\begin_layout Standard
+קפיץ יש בו כח 
+\begin_inset Formula $F=-k\vec{x}$
+\end_inset
+
+, ופוטנציאל 
+\begin_inset Formula $u=\frac{1}{2}kx^{2}$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & ma\\
+-kx & = & m\ddot{x}\\
+\ddot{x} & = & -\frac{k}{m}x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $\omega_{0}^{2}=\frac{k}{m}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{x} & = & -\omega_{0}^{2}x\\
+x\left(t\right) & = & A\cos\left(\omega_{0}t+\delta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+נתון פוטנציאל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u\left(r\right) & = & u_{0}\left(1-e^{-\frac{r-r_{0}}{\delta}}\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תמצא את נקודת שיווי המשקל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial r}u\left(r\right) & = & 2u_{0}\left[1-e^{-\frac{r-r}{\delta}}\right]\cdot e^{-\frac{\left(r-r_{0}\right)}{\delta}}\frac{1}{\delta}\\
+ & = & \frac{2u_{0}}{\delta}e^{-\frac{r-r_{0}}{\delta}}\left[1-e^{-\frac{r-r_{0}}{\delta}}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקודת שיווי המשקל היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1-e^{-\frac{r-r_{0}}{\delta}} & = & 0\\
+e^{-\frac{r-r_{0}}{\delta}} & = & 1\\
+-\frac{r-r_{0}}{\delta} & = & 0\\
+r & = & r_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אוצים למצא את התדירות של מערכת זו אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+k & = & \frac{\partial^{2}u}{\partial r^{2}}\\
+ & = & \frac{2u_{0}}{\delta}\left(-\frac{1}{\delta}e^{-\frac{r-r_{0}}{\delta}}\left(1-e^{-\frac{r-r_{0}}{\delta}}\right)\right)+\frac{1}{\delta}e^{-\frac{r-r_{0}}{\delta}}e^{-\frac{r-r_{0}}{\delta}}\\
+ & = & \frac{2u_{0}}{\delta}\left(2e^{-\frac{r-r_{0}}{\delta}}-1\right)e^{-\frac{r-r_{0}}{\delta}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $r=r_{0}$
+\end_inset
+
+ מתקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{0}=\sqrt{\frac{2u_{0}}{\delta m}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אוסצילטור מרוסן
+\end_layout
+
+\begin_layout Standard
+פתרנו את זה כבר בכיתה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\ddot{x}=-kx-\alpha\dot{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=\begin{cases}
+\alpha<2\sqrt{km} & Ae^{-\frac{t}{\tau}}\cos\left(\omega t+\delta\right)\\
+a>2\sqrt{km} & Ae^{-\frac{t}{\tau_{1}}}+Be^{-\frac{t}{\tau_{2}}}\\
+a=2\sqrt{km} & \dots\mbox{homework}\dots\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tau & = & \frac{2m}{\alpha}\\
+\omega_{0}^{2} & = & \frac{k}{m}\\
+\omega^{2} & = & \omega_{0}^{2}-\left(\frac{1}{\tau}\right)^{2}\\
+\tau_{1,2} & = & \frac{\tau}{-1\pm\sqrt{1-\left(\omega_{0}\tau\right)^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+99999
+\end_layout
+
+\begin_layout Standard
+אם באוסצילטור מאולץ הכח המאלץ הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F\left(t\right)=\sum F_{i}\cos\left(\omega_{i}t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפתרון שלנו יהיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \sum A_{\omega_{i}}\cos\left[\omega_{i}t+\delta_{\omega_{i}}\right]\\
+ & \sim & A_{\left(\omega_{0}\right)}\cos\left(\omega_{0}t+\delta_{\omega_{0}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c35d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בקבוק שיש בו מים)צפיפות 
+\begin_inset Formula $\rho_{1}$
+\end_inset
+
+( עד ל
+\begin_inset Formula $h_{0}$
+\end_inset
+
+ נע בנוזל אחר בעל צפיפות 
+\begin_inset Formula $\rho_{2}$
+\end_inset
+
+ מה צשוואת התנועה? שטח חתך של הבקבוק הוא 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{a}=-\rho_{1}\overbrace{A\left(h_{0}+x\right)}^{\mbox{volume}=V}g\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho_{1}Ah_{0}\ddot{x}=\rho_{1}Ah_{0}g-\rho_{2}A\left(h_{0}+x\right)g\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\rho_{1}Ah_{0}\ddot{x} & = & \rho_{1}Ah_{0}g-\rho_{2}Ah_{0}g-\rho_{2}Ag\cdot x\\
+\ddot{x}+\frac{\rho_{2}Ag}{\rho_{1}Ah_{0}}\cdot x & = & \frac{\rho_{1}-\rho_{2}}{\rho_{1}}\cdot\frac{Ah_{0}g}{Ah_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\omega_{0}=\frac{\rho_{2}g}{\rho_{1}h_{0}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $c_{0}=g\left[1-\frac{\rho_{2}}{\rho_{1}}\right]$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=x_{0}\cos\left(\omega_{0}t\right)+\frac{c_{0}}{\omega_{0}^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל אחר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c35d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ זה המרחק ממרחק המנוחה של המסה השמאלית, ו 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ זה המרחק ממרחק המנוחה של המשה השמאלית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\ddot{x}_{1} & = & -k\left(x_{1}-x_{2}\right)-kx_{1}\\
+m\ddot{x}_{2} & = & -k\left(x_{2}-x_{1}\right)-kx_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננסה לחבר את שתי המשוואות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\frac{\partial^{2}}{\partial t^{2}}\left(x_{1}+x_{2}\right) & = & -k\left(x_{1}-x_{2}\right)-kx_{1}-k\left(x_{2}-x_{1}\right)-kx_{2}\\
+ & = & -k\left(x_{1}+x_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $b\left(t\right)=x_{1}\left(t\right)+x_{2}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\ddot{b}=-kb\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\frac{\partial^{2}}{\partial t^{2}}\left(x_{1}-x_{2}\right) & = & -k\left(x_{1}-x_{2}\right)-kx_{1}+k\left(x_{2}-x_{1}\right)+kx_{2}\\
+ & = & -k\left(3x_{1}-3x_{2}\right)\\
+ & = & -3k\left(x_{1}-x_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נגדיר 
+\begin_inset Formula $a=x_{1}\left(t\right)-x_{2}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{a}+\frac{3k}{m}a\left(t\right) & = & 0\\
+\ddot{b}+\frac{k}{m}b\left(t\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים שתי אוסצילטורים שמתנדדים בתדירויות שונות
+\end_layout
+
+\begin_layout Standard
+אזי נגדיר 
+\begin_inset Formula \begin{eqnarray*}
+\omega_{-}^{2} & = & \frac{3k}{m}\\
+\omega_{+}^{2} & = & \frac{k}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מזיזים את שני הגופים ביחד ומשחררים אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}\left(0\right)=x_{2}\left(0\right)\Rightarrow a\left(0\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a\left(0\right) & = & A_{-}\cos\left(\omega_{-}t\right)\\
+A_{-} & = & 0\\
+a\left(t\right) & = & 0\\
+x_{1}\left(t\right) & = & x_{2}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}\left(t\right)+x_{2}\left(t\right)=2x_{0}\cos\left(\omega_{+}t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להתחיל באופן שונה: אם משאירים מרכז המסה במקומו ומקבצים את שתי המסות
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}\left(0\right)=-x_{2}\left(0\right)\Rightarrow b\left(0\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+b\left(t\right) & = & A_{+}\cos\left(\omega_{+}t\right)\\
+b\left(0\right) & = & A_{+}\\
+A_{+} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל במקרה זה האוסצילטור השני יתעורר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{0} & = & 2x_{0}\\
+x_{1}\left(t\right)-x_{2}\left(t\right) & = & 2x_{0}\cos\left(\omega_{-}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד בעיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c35d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+l_{cm}=\frac{m}{m+M}l_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אין חיכוך בין 
+\begin_inset Formula $M$
+\end_inset
+
+ למשטח, אזי אין כוחות בציר 
+\begin_inset Formula $y$
+\end_inset
+
+ אזי מרכז המסה בציר זה הוא אפס.
+ לא יכולים לאומר את זה על ציר 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נשתמש בשימור תנע ואנרגיה: נחלק מהירות הכדור 
+\begin_inset Formula $v_{x},v_{y}$
+\end_inset
+
+ ומהירות הגוש היא 
+\begin_inset Formula $v_{M}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mv_{y} & = & -Mv_{m}\\
+\frac{1}{2}mv^{2}+\frac{1}{2}Mv_{M}^{2} & = & \Delta u=-mg\left(1-\cos\theta\right)l_{0}fi\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 

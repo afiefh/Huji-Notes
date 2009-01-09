@@ -1674,5 +1674,583 @@ x\left(t\right) & = & x_{1}\left(t\right)+x_{2}\left(t\right)\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+סדנא מס.???
+\end_layout
+
+\begin_layout Section
+אוסילטור מרוסן
+\end_layout
+
+\begin_layout Standard
+אם יש חיכוך 
+\begin_inset Formula $f=-\beta v=-\beta\dot{x}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -kx\\
+f & = & -\beta\dot{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך לפתור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\ddot{x}=-kx-\beta\dot{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעביר את זה למשוואה מהצורה הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{x}+2b\dot{x}+\omega_{0}^{2}x & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונפתור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r^{2}+2br+\omega_{0}^{2} & = & 0\\
+r_{1,2} & = & \frac{-2b\pm\sqrt{4b^{2}-4\omega_{0}^{2}}}{2}\\
+ & = & -b\pm\sqrt{b^{2}-\omega_{0}^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=Ae^{r_{1}t}+Be^{r_{2}t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסים לב כי שני הפתרונות הם קטנים מאפס)במקרה שהם ממשיים(, אזי שני הפתרונות
+ דועכים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $b=\omega_{0}$
+\end_inset
+
+ אזי יש רק פתרון אחד 
+\begin_inset Formula $r=-b$
+\end_inset
+
+ שזה נקרא ריסון קריטי לכן 
+\begin_inset Formula \[
+x\left(t\right)=Ae^{-bt}+Bte^{-bt}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $b<\omega_{0}$
+\end_inset
+
+ - ריסון חלש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1,2} & = & -b\pm\sqrt{b^{2}-\omega_{0}^{2}}\\
+w^{*} & = & \sqrt{\omega_{0}^{2}-b^{2}}\\
+r_{1,2} & = & -b\pm iw^{*}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & Ae^{\left(-b+iw^{*}\right)t}+Be^{\left(-b-iw^{*}\right)}\\
+ & = & Ae^{-b}\left(Ae^{iw^{*}}+Be^{-iw^{*}}\right)\\
+ & = & Ae^{-b}\left(A\cos\left(wt\right)+B\sin\left(w^{*}t\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הריסון הקריטי דועך מהר ביותר.
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m & = & 1\left[kg\right]\\
+k & = & 1\left[\frac{N}{m}\right]\\
+\beta & = & 1\left[\frac{N\cdot sec}{m}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\omega^{2} & = & \frac{k}{m}\Rightarrow\omega=1\\
+2b & = & \frac{b}{m}=1\Rightarrow b=\frac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ריסון חלש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w^{*} & = & \sqrt{1-\frac{1}{4}}\\
+ & = & \sqrt{\frac{3}{4}}\\
+ & = & \frac{\sqrt{3}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=e^{-0.5t}\left(A\cos\left(\frac{\sqrt{3}}{2}t\right)+B\sin\left(\frac{\sqrt{3}}{2}t\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונים תנאי התחלה
+\begin_inset Formula \begin{eqnarray*}
+x\left(0\right) & = & 1m\\
+\dot{x}\left(0\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים כי 
+\begin_inset Formula $A=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dot{x}\left(t\right)=-0.5e^{-0.5t}\left(A\cos\left(\frac{\sqrt{3}}{2}t\right)+B\sin\left(\frac{\sqrt{3}}{2}t\right)\right)+e^{-0.5}\left(-\frac{\sqrt{3}}{2}A\sin\left(\frac{\sqrt{3}}{2}t\right)+\frac{\sqrt{3}}{2}B\cos\left(\frac{\sqrt{3}}{2}t\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{x}\left(0\right) & = & 0\\
+-0.5+\frac{\sqrt{3}}{2}B & = & 0\\
+B & = & \frac{1}{\sqrt{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=e^{-0.5t}\left(\cos\left(\frac{\sqrt{3}}{2}t\right)+\frac{1}{\sqrt{3}}\sin\left(\frac{\sqrt{3}}{2}t\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אוסצילטור מרוסן ומאלוץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -kx\\
+f & = & -\beta\dot{x}\\
+F_{e} & = & F_{0}\cos\left(\omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שים לב ש
+\begin_inset Formula $\omega$
+\end_inset
+
+ הזה לא תלוי ב
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ או 
+\begin_inset Formula $\omega$
+\end_inset
+
+ כלשהוא הדיברנו עליו בבעיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\ddot{x} & = & -kx-\beta\dot{x}+F_{0}\cos\omega t\\
+\ddot{x}+\frac{\beta}{m}\dot{x}+\frac{k}{m}x & = & \frac{F_{0}}{m}\cos\omega t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+2b\dot{x}+\omega_{0}^{2}=D\cos\omega t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואה דיפרנציאלית עם מקדמים קבועים לא הומוגינית.
+\end_layout
+
+\begin_layout Standard
+אנחנו כבר יודעים איך לפתור הגרסה ההומוגינית של משוואה זו, עכשיו ננחש פתרון
+ פרטי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{p}=R\cos\left(\omega t+\phi\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\omega^{2}E\cos\left(\omega t+\phi\right)-2b\omega R\sin\left(\omega t+\phi\right)+\omega_{0}^{2}R\cos\left(\omega t+\phi\right) & = & D\cos\left(\omega t\right)\\
+-\omega^{2}R\cos\left(\omega t\right)-2b\omega R\sin\left(\omega t\right)+\omega_{0}^{2}R\cos\left(\omega t\right) & = & D\cos\left(\omega t-\phi\right)\\
+R\left(\omega_{0}^{2}-\omega^{2}\right)\cos\left(\omega t\right)-2b\omega R\sin\left(\omega t\right) & = & D\cos\left(\omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+D^{2} & = & R^{2}\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+4b^{2}\omega^{2}R^{2}\\
+R & = & \frac{D}{\sqrt{\left(\omega_{0}^{2}-\omega^{2}\right)^{2}+4b^{2}\omega^{2}}}\\
+\tan\left(\phi\right) & = & \frac{-2b\omega}{\left(\omega_{0}^{2}-\omega^{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & x_{p}+x_{h}\\
+ & = & R\cos\left(\omega t+\phi\right)+e^{-bt}\left(A\cos\left(w^{*}t\right)+B\sin w^{*}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+סדנא מס.???
+\end_layout
+
+\begin_layout Section
+כח מרכזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=f\left(r\right)\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+: בתנועה בשיפוע כח מרכזי התנע הזוויתי נשמר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\vec{L}}{\partial t} & = & \vec{N}\\
+ & = & \vec{r}\times\vec{F}\\
+ & = & \vec{r}\times f\left(r\right)\hat{r}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טעהנ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: תנועה בשיפוע כח מרכזי הינה משיכות 
+\begin_inset Formula $\vec{L}$
+\end_inset
+
+ קבוע בזמן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \vec{r}\times m\vec{v}\\
+\vec{r} & \perp & \vec{L}\\
+\vec{v} & \perp & \vec{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לפשט את הבעייה ממבעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מימדית לבעיה דו מימדית ונשתמש בקואורדינטות פולריות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{r} & = & r\hat{r}\\
+\vec{v} & = & \dot{r}\hat{r}+r\dot{\theta}\hat{\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \vec{r}\times m\vec{v}\\
+ & = & mr^{2}\dot{\theta}\hat{k}\\
+L^{2} & = & m^{2}r^{4}\dot{\theta}^{2}\\
+\dot{\theta}^{2} & = & \frac{L^{2}}{m^{2}r^{4}}\end{eqnarray*}
+
+\end_inset
+
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+: כח מרכזי הינו כח מרכזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u\left(r\right) & = & -\intop_{\infty}^{r}f\left(r\right)\partial r\\
+f\left(r\right) & = & -\vec{\nabla}u\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}u & = & \frac{\partial u}{\partial r}\hat{r}+\frac{1}{r}\frac{\partial u}{\partial\theta}\hat{\theta}+\frac{1}{r\sin\theta}\frac{\partial u}{\partial\varphi}\hat{u}\\
+ & = & \frac{\partial u}{\partial r}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+ האנרגיה של תנועה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}mv^{2}+u\left(r\right)\\
+ & = & \frac{1}{2}m\dot{r}^{2}+\frac{1}{2}mr^{2}\dot{\theta}^{2}+u\left(r\right)\\
+ & = & \frac{1}{2}m\dot{r}^{2}+\frac{1}{2}\frac{L^{2}}{mr^{2}}+u\left(r\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מזה נגדיר פוטנציאל אפקטיבי שזה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{eff}=\frac{1}{2}\frac{L^{2}}{mr^{2}}+u\left(r\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}m\dot{r}^{2}+u_{eff}\left(r\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
