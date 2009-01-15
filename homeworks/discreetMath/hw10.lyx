@@ -1,0 +1,302 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+א.
+\end_layout
+
+\begin_layout Standard
+אם יש 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים אזי יש 
+\begin_inset Formula $\frac{n\left(n-1\right)}{2}$
+\end_inset
+
+ קשטות אפשריים.
+ לבנות גרף זה לבחור 
+\begin_inset Formula $k$
+\end_inset
+
+ קשתות כאשר 
+\begin_inset Formula $k\in\left\{ 0\dots\frac{n\left(n-1\right)}{2}\right\} $
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{\frac{n\left(n-1\right)}{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+רואים כי אם גרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים הוא מעגל פשוט מלא אזי זה דומה לבעית סידור אנשים סביב שולחן מעגלי,
+ אזי התשובה היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(n-1\right)!\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $n-k=n$
+\end_inset
+
+ רכיבי קשירות, זה טריוויאלי.
+\end_layout
+
+\begin_layout Standard
+נניח כי הטענה נכונה עבור 
+\begin_inset Formula $k=t-1$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $t\leq n-1$
+\end_inset
+
+( ונוכיח אותה עבור 
+\begin_inset Formula $t$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G=G\left(V,E\right)$
+\end_inset
+
+ גרף חסר מעגלים בעל 
+\begin_inset Formula $t-1$
+\end_inset
+
+ קשתות ו
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים.
+ נסמן ב
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ את רכיבי הקשירות של הגרף)לפי הנחת האינדוקציה יש 
+\begin_inset Formula $n-t+1$
+\end_inset
+
+ רכיבים כאילו.( אזי אם נרצה להוסיף עוד קשת כך שיהיה 
+\begin_inset Formula $t$
+\end_inset
+
+ קשתות מבלי להוסיף מעגלים צריך להוסיף את הקשת בין שתי רכיבי קשירות.
+ הוספת קשת בין שתי רכיבי קשירות הופכת אותם לרכיב קשירות אחד, אזי מספר רכיבי
+ הקשירות הופך ל
+\begin_inset Formula $n-t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+אם גרף דו צדדי מלא זה 
+\begin_inset Formula $G=G\left(\left(V_{1},V_{2}\right),E\right)$
+\end_inset
+
+ אזי הגרף המשלים לו הוא 
+\begin_inset Formula $F_{V_{1}}\cup F_{V_{2}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $F_{V}$
+\end_inset
+
+ זה הגרף מעל הקודקודים בקבוצה 
+\begin_inset Formula $V$
+\end_inset
+
+.
+ התוצאה היא שתי רכיבי קשירות שכל אחד מהם מהווה גרף מלא.
+\end_layout
+
+\end_body
+\end_document

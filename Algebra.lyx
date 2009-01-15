@@ -6369,6 +6369,222 @@ A^{-1}=\begin{pmatrix}\frac{1}{4} & 0\\
 333
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+11111111
+\end_layout
+
+\begin_layout Standard
+משפט: אם יש אופרטור 
+\begin_inset Formula $A:V\to V$
+\end_inset
+
+, 
+\begin_inset Formula $f_{k}\in V$
+\end_inset
+
+: 
+\begin_inset Formula $A\left(f_{i}\right)=\lambda_{i}\vec{f}_{i}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\lambda_{i}\underset{i\neq j}{\neq}\lambda_{k}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f_{k}\dots f_{i}$
+\end_inset
+
+ בילתי תלויים ליניארית.
+\end_layout
+
+\begin_layout Standard
+הוכחה באינדוקציה: בדיקה עבור ווקטור אחד ברור שהוא בלתי תלוי.
+\end_layout
+
+\begin_layout Standard
+נניח כי עבור 
+\begin_inset Formula $k-1$
+\end_inset
+
+: 
+\begin_inset Formula $\alpha_{1}f_{1}+\alpha_{2}f_{2}+\dots+\alpha_{k-1}f_{k-1}=\vec{0}\Rightarrow\alpha_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח כי 
+\begin_inset Formula $\alpha_{1}f_{1}+\alpha_{2}f_{2}+\dots+\alpha_{k-1}f_{k-1}+\alpha_{k}f_{k}=\vec{0}\Rightarrow\alpha_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha_{1}f_{1}+\alpha_{2}f_{2}+\dots+\alpha_{k-1}f_{k-1}+\alpha_{k}f_{k} & = & \vec{0}\\
+A\left(\alpha_{1}f_{1}+\alpha_{2}f_{2}+\dots+\alpha_{k-1}f_{k-1}+\alpha_{k}f_{k}\right) & = & A\left(\vec{0}\right)\\
+\alpha_{1}A\left(f_{1}\right)+\alpha_{2}A\left(f_{2}\right)+\dots+\alpha_{k-1}A\left(f_{k-1}\right)+\alpha_{k}A\left(f_{k}\right) & = & 0\\
+\alpha_{1}\lambda_{1}f_{1}+\alpha_{2}\lambda_{2}f_{2}+\alpha_{3}\lambda_{3}f_{3}+\dots+\alpha_{k-1}\lambda_{k-1}f_{k-1}+\alpha_{k}\lambda_{k}f_{k} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכפול ההשוויון המקורי ב 
+\begin_inset Formula $\lambda_{k}$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $\alpha_{1}\lambda_{k}f_{1}+\alpha_{2}\lambda_{k}f_{2}+\dots+\alpha_{k-1}\lambda_{k-1}f_{k-1}+\alpha_{k}\lambda_{k}f_{k}=\vec{0}$
+\end_inset
+
+ ומחסרים את זה מהמשוואה שלנו אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\alpha_{1}\left(\lambda_{1}-\lambda_{k}\right)\vec{f}_{1}+\dots+\alpha_{k-1}\left(\lambda_{k-1}-\lambda_{k}\right)f_{k-1}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כבר כי 
+\begin_inset Formula $f_{1}\dots f_{k-1}$
+\end_inset
+
+ בלתי תלויים ליניארית, ויודעים כי 
+\begin_inset Formula $\lambda_{i}\underset{i\neq k}{\neq}\lambda_{k}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a_{1}=a_{2}=\dots=a_{k-1}=0$
+\end_inset
+
+ אזי במשוואה המקורית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha_{1}f_{1}+\alpha_{2}f_{2}+\dots+\alpha_{k-1}f_{k-1}+\alpha_{k}f_{k} & = & \vec{0}\\
+0\cdot f_{1}+0\cdot f_{2}+\dots+0\cdot f_{k-1}+\alpha_{k}f_{k} & = & 0\\
+\alpha_{k}f_{k} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $f_{k}\neq0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\alpha_{k}=0$
+\end_inset
+
+.
+ זה מה שרצינו להוכיח.
+\end_layout
+
+\begin_layout Section
+שורשים כפולים ובסיס עצמי
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a=\begin{pmatrix}1 & 0 & -1\\
+-1 & 2 & -1\\
+0 & 0 & 2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בונים פולינום עצמי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|a-\lambda E\right| & = & 0\\
+\begin{vmatrix}1-\lambda & 0 & -1\\
+-1 & 2-\lambda & -1\\
+0 & 0 & 2-\lambda\end{vmatrix} & = & 0\\
+\left(2-\lambda\right)\begin{vmatrix}1-\lambda & 0\\
+-1 & 2-\lambda\end{vmatrix} & = & 0\\
+\left(2-\lambda\right)\left(1-\lambda\right)^{2} & = & 0\\
+\lambda_{1,2} & = & 2\\
+\lambda_{3} & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\lambda_{3}=1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}0 & 0 & -1\\
+-1 & 1 & -1\\
+0 & 0 & 1\end{pmatrix}\to\begin{pmatrix}1 & -1 & 0\\
+0 & 0 & 1\\
+0 & 0 & 0\end{pmatrix}\overset{\begin{matrix}x_{1}=x_{2}\\
+x_{3}=0\end{matrix}}{\Rightarrow}f_{3}=\begin{pmatrix}1\\
+1\\
+0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lambda_{1,2}=2$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}-1 & 0 & -1\\
+-1 & 0 & -1\\
+0 & 0 & 0\end{pmatrix}\to\begin{pmatrix}1 & 0 & 1\\
+0 & 0 & 0\\
+0 & 0 & 0\end{pmatrix}\to f=x_{2}\begin{pmatrix}0\\
+1\\
+0\end{pmatrix}+x_{1}\begin{pmatrix}1\\
+0\\
+-1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 
 \end_layout

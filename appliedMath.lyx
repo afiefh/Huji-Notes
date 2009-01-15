@@ -10837,7 +10837,501 @@ f\left(1+\Delta x,\pi+\Delta y\right)\sim\pi^{2}+\Delta x+2\pi\cdot\Delta y\]
 השיפוע הוא מקסימאלי בכיוון הגראדינט.
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.???
+\end_layout
+
 \begin_layout Standard
+שימוש של אינטגרל לא מסוים בשביל לחשב טור אינסופי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(n\right)=\frac{1}{n}+\frac{1}{n+1}+\frac{1}{n+2}+\dots+\frac{1}{2n-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(1\right) & = & \frac{1}{1}\\
+f\left(2\right) & = & \frac{1}{2}+\frac{1}{3}\\
+f\left(3\right) & = & \frac{1}{3}+\frac{1}{3}+\frac{1}{5}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצא 
+\begin_inset Formula $f\left(\infty\right)$
+\end_inset
+
+.
+ עושים כצת אלגברה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(n\right) & = & \frac{1}{n}\left(\frac{1}{1+0}+\frac{1}{1+\frac{1}{n}}+\frac{1}{1+\frac{2}{n}}+\dots+\frac{1}{2-\frac{1}{n}}\right)\\
+ & = & \frac{1}{n}\left(f\left(0\right)+f\left(\frac{1}{n}\right)+\dots+f\left(1-\frac{1}{n}\right)\right)\\
+ & = & \int_{0}^{1}f\left(x\right)\partial x\\
+ & = & \int_{0}^{1}\frac{1}{1+x}\partial x\\
+ & = & \ln\left(1+x\right)\vert_{0}^{1}\\
+ & = & \ln2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה אחרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(n\right) & = & n\left(\frac{1}{n\cdot3n}+\frac{1}{\left(n+1\right)\left(3n+1\right)}+\dots+\frac{1}{\left(2n-1\right)\left(4n-1\right)}\right)\\
+ & = & \frac{n}{n^{2}}\left(\frac{1}{1\cdot3}+\frac{1}{\left(1+\frac{1}{n}\right)\left(3+\frac{1}{n}\right)}+\dots+\frac{1}{\left(2-\frac{1}{n}\right)\left(4-\frac{1}{n}\right)}\right)\\
+ & \underset{n\to\infty}{\to} & \intop_{1}^{2}\frac{1}{x\left(x+2\right)}\partial x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\int_{3}^{x^{2}}\frac{\partial u}{\sqrt[3]{4-u^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4-u^{2} & \neq & 0\\
+u & = & \pm2\\
+x^{2} & \neq & 2\\
+x & \neq & \pm\sqrt{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התחומים שזה מוגדר בו 
+\begin_inset Formula $\left\{ x<-\sqrt{2}\right\} ,\left\{ x>\sqrt{2}\right\} $
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\frac{1}{\sqrt[3]{4-\left(x^{2}\right)^{2}}}\cdot2x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נגזרות חלקיות ומכוונות
+\end_layout
+
+\begin_layout Standard
+מצא הנגזרות החלקיות והנגזרות הגיווניות של 
+\begin_inset Formula $f\left(x,y\right)=\sin x\cos\left(\frac{y}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial f}{\partial x}\vert_{\left(0,0\right)} & = & \cos x\cos x\left(\frac{y}{2}\right)\vert_{\left(0,0\right)}=1\\
+\frac{\partial f}{\partial x}\vert_{\left(0,0\right)} & = & -\frac{1}{2}\sin x\sin\left(\frac{y}{2}\right)\vert_{\left(0,0\right)}=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזור בכיוון של 
+\begin_inset Formula $\vec{e}=\begin{pmatrix}1\\
+1\end{pmatrix}$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{\begin{pmatrix}1\\
+1\end{pmatrix}} & = & \frac{\partial}{\partial t}\left(f\left(0+t\cdot1,0+t\cdot1\right)\right)\vert_{t=0}\\
+ & = & \frac{\partial}{\partial t}\sin\left(t\right)\cos\left(\frac{t}{2}\right)\vert_{t=0}\\
+ & = & \cos t\cdot\cos\frac{t}{2}+\sin t\cdot\left(-\frac{1}{2}\sin\left(\frac{t}{2}\right)\right)\vert_{t=0}\\
+ & = & 1\end{eqnarray*}
+
+\end_inset
+
+ נגזור ל 
+\begin_inset Formula $\vec{e}=\begin{pmatrix}a\\
+b\end{pmatrix}$
+\end_inset
+
+ כללי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{\begin{pmatrix}a\\
+b\end{pmatrix}} & = & \frac{\partial}{\partial t}\sin\left(at\right)\cos\left(bt\right)\vert_{t=0}\\
+ & = & a\cos\left(at\right)\cos\left(\frac{bt}{2}\right)-\frac{b}{2}\sin\left(at\right)\sin\left(\frac{bt}{2}\right)\vert_{t=0}\\
+ & = & a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה: 
+\begin_inset Formula $f\left(x,y\right)=\left|x-y\right|$
+\end_inset
+
+ פשוט לראות כי 
+\begin_inset Formula $\frac{\partial f}{\partial x}$
+\end_inset
+
+ לא קיים וגם 
+\begin_inset Formula $\frac{\partial f}{\partial y}$
+\end_inset
+
+ לא קיים
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+20
+\end_layout
+
+\begin_layout Standard
+נניח שיש יחס בין שלושה משתנים 
+\begin_inset Formula $p,v,t$
+\end_inset
+
+ אזי אפשר לשאול על נגזרת לפי אחד מהם אם האחרים קבועים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial p & = & \frac{\partial p}{\partial v}\vert_{t}\partial v+\frac{\partial p}{\partial t}\vert_{v}\partial t\\
+\partial v & = & \frac{\partial v}{\partial p}\vert_{t}\partial p+\frac{\partial v}{\partial t}\vert_{p}\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לכתוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial v}{\partial p}\vert_{t}\partial p=\partial v-\frac{\partial v}{\partial t}\vert_{p}\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולהציב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial p=\frac{1}{\frac{\partial v}{\partial p}\vert_{p}}\partial v-\frac{\frac{\partial v}{\partial t}\vert_{p}}{\frac{\partial v}{\partial p}\vert_{t}}\vert_{t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+21
+\end_layout
+
+\begin_layout Section
+מיון נקודות סטציונאריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x_{0}+\Delta x,y_{0}+\Delta y\right)\sim f\left(x_{0},y_{0}\right)+f_{x}\Delta x+f_{y}\Delta y+\frac{1}{2}\left(f_{xx},g\Delta x^{2}+2f_{xy}\Delta x\Delta y+f_{yy}\Delta y^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(x_{0},y_{0}\right)$
+\end_inset
+
+ נקודה קריטית אזי 
+\begin_inset Formula $\nabla f=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f_{x}=f_{y}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f_{xx},f_{yy}>0$
+\end_inset
+
+ אזי הנקודה היא מינימום, אם 
+\begin_inset Formula $f_{xx},f_{yy}<0$
+\end_inset
+
+ אזי הנקודה היא מקסימום.
+ 
+\end_layout
+
+\begin_layout Section
+ערכי קיצון של פונקציה על תחום
+\end_layout
+
+\begin_layout Standard
+במקרה זה צריך גם לבדוק את השפה
+\end_layout
+
+\begin_layout Section
+בעיות קיצון תחת אילוצים
+\end_layout
+
+\begin_layout Standard
+למצא ערכים מקס/מין של 
+\begin_inset Formula $f$
+\end_inset
+
+ תחת אילוץ 
+\begin_inset Formula $g=constant$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+דוגמה 
+\begin_inset Formula $x+\dot{y}+z$
+\end_inset
+
+ תחת האילןץ 
+\begin_inset Formula $x^{2}+2y^{2}+3z^{2}=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רוצים כי 
+\begin_inset Formula $\partial f=0$
+\end_inset
+
+ לכל שינוי 
+\begin_inset Formula $\partial x$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\partial g=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial f=f_{x}\partial x+f_{y}\partial y+f_{z}\partial z=\underbrace{\begin{pmatrix}f_{x}\\
+f_{y}\\
+f_{z}\end{pmatrix}}_{\vec{\nabla}f}\cdot\underbrace{\begin{pmatrix}\partial x\\
+\partial y\\
+\partial z\end{pmatrix}}_{\partial\vec{x}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים ש 
+\begin_inset Formula $\underbrace{\vec{\nabla}f\cdot\partial\vec{x}=0}_{\partial\vec{x}\perp\vec{\nabla}f}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\partial\vec{x}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\underbrace{\vec{\nabla}g\cdot\partial\vec{x}}_{\partial\vec{x}\perp\vec{\nabla}g}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lambda$
+\end_inset
+
+ זה כפל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Lagrange
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אזי 
+\begin_inset Formula $\exists\lambda:\vec{\nabla}f=\lambda\vec{\nabla}g$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\exists\lambda:\begin{pmatrix}1\\
+2\\
+2\end{pmatrix}=\lambda\begin{pmatrix}2x\\
+4y\\
+6z\end{pmatrix}\Rightarrow\begin{pmatrix}1=2\lambda x\\
+1=4\lambda y\\
+1=6\lambda z\\
+x^{2}+2y^{2}+3z^{2}=2\end{pmatrix}\rightarrow\begin{pmatrix}x=\frac{1}{2\lambda}\\
+y=\frac{1}{4\lambda}\\
+z=\frac{1}{6\lambda}\\
+x^{2}+2y^{2}+3z^{2}=2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים את כל הבלגן הזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{4\lambda^{2}}+\frac{2}{16\lambda^{2}}+\frac{3}{36\lambda^{2}} & = & 2\\
+\frac{1}{\lambda^{2}}\left(\frac{1}{4}+\frac{1}{8}+\frac{3}{36}\right) & = & 2\\
+\frac{11}{24\lambda^{2}} & = & 2\\
+\lambda & = & \pm\sqrt{\frac{11}{48}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x=\pm\sqrt{\frac{12}{11}},y=\pm\sqrt{\frac{3}{11}},z=\pm\sqrt{\frac{4}{33}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק אם כל התנאים מתקיימים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2}+2y^{2}+3z^{2} & = & \frac{12}{11}+2\cdot\frac{3}{11}+3\cdot\frac{4}{33}\\
+ & = & \frac{12}{11}+\frac{6}{11}+\frac{4}{11}\\
+ & = & 2\checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x,y,z\right)=\pm\sqrt{\frac{12}{11}}\left(1+\frac{1}{2}+\frac{1}{3}\right)=\pm\frac{11}{6}\sqrt{\frac{12}{11}}=\pm\sqrt{\frac{11}{3}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{max}_{D}f=\sqrt{\frac{11}{3}},\mbox{min}_{D}=-\sqrt{\frac{11}{3}}\]
+
+\end_inset
+
 
 \end_layout
 

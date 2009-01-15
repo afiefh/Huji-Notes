@@ -1,0 +1,854 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \frac{\alpha^{2}}{r^{3}}-\frac{e^{2}}{r^{2}}\\
+U & = & -\frac{\alpha^{2}}{2r^{2}}+\frac{e^{2}}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך למצא 
+\begin_inset Formula $\frac{\partial}{\partial r}U=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial r}U & = & 0\\
+F & = & 0\\
+\frac{\alpha^{2}}{r^{3}}-\frac{e^{2}}{r^{2}} & = & 0\\
+\frac{\alpha^{2}}{r^{3}} & = & \frac{e^{2}}{r^{2}}\\
+\alpha^{2}r^{2} & = & e^{2}r^{3}\\
+e^{2}r^{3}-\alpha^{2}r^{2} & = & 0\\
+r^{2}\left(e^{2}r-\alpha^{2}\right) & = & 0\\
+r & = & \frac{\alpha^{2}}{e^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+נפתח את טור טילור לכח עד לסדר ראשון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & \approx & 0+\left(r-\frac{\alpha^{2}}{e^{2}}\right)\frac{\partial F}{\partial r}\vert_{r=\frac{\alpha^{2}}{e^{2}}}\\
+ & = & \left(r-\frac{\alpha^{2}}{e^{2}}\right)\left(\frac{2e^{2}}{r^{3}}-\frac{3\alpha^{2}}{4r^{4}}\right)\vert_{r=\frac{\alpha^{2}}{e^{2}}}\\
+ & = & \left(r-\frac{\alpha^{2}}{e^{2}}\right)\left(\frac{2e^{2}}{\left(\frac{\alpha^{2}}{e^{2}}\right)^{3}}-\frac{3\alpha^{2}}{4\left(\frac{\alpha^{2}}{e^{2}}\right)^{4}}\right)\\
+ & = & \left(r-\frac{\alpha^{2}}{e^{2}}\right)\left(\frac{2e^{2}}{\left(\frac{\alpha^{6}}{e^{6}}\right)}-\frac{3\alpha^{2}}{\left(4\frac{\alpha^{8}}{e^{8}}\right)}\right)\\
+ & = & \left(r-\frac{\alpha^{2}}{e^{2}}\right)\left(2e^{2}\cdot\frac{e^{6}}{\alpha^{6}}-\frac{3}{4}\alpha^{2}\cdot\frac{e^{8}}{\alpha^{8}}\right)\\
+ & = & -\frac{e^{8}}{\alpha^{6}}\left(r-\frac{\alpha^{2}}{e^{2}}\right)\\
+ & = & -\frac{e^{8}}{a^{6}}\left(r-r_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & m\frac{\partial^{2}}{\partial t^{2}}\left(r-r_{0}\right)\\
+-\frac{e^{8}}{\alpha^{6}}\left(r-r_{0}\right) & = & m\ddot{r}\\
+m\frac{\partial^{2}}{\partial t^{2}}\left(r-r_{0}\right)+\frac{e^{8}}{\alpha^{6}}\left(r-r_{0}\right) & = & 0\\
+\ddot{r}^{\prime}+\frac{e^{8}}{m\alpha^{6}}r^{\prime} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו בכיתה כי המקדם של 
+\begin_inset Formula $r$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\omega_{0}^{2}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{0}=\sqrt{\frac{e^{8}}{m\alpha^{6}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}}{\partial t^{2}}\left(r-r_{0}\right)+\frac{e^{8}}{ma^{6}}\left(r-r_{0}\right) & = & F_{0}\cos\omega t\\
+\ddot{r}^{\prime}+\frac{e^{8}}{m\alpha^{6}}r^{\prime} & = & F_{0}\cos\omega t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי הפתרון הוא 
+\begin_inset Formula $r^{\prime}=A\cos\left(\omega t+\varphi\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{r}^{\prime}+\omega_{0}^{2}r^{\prime} & = & F_{0}\cos\omega t\\
+-A\omega^{2}\cos\left(\omega t+\varphi\right)+\omega_{0}^{2}A\cos\left(\omega t+\varphi\right) & = & F_{0}\cos\left(\omega t\right)\\
+\left(\omega_{0}^{2}-\omega^{2}\right)A\cos\left(\omega t+\varphi\right) & = & F_{0}\cos\left(\omega t\right)\\
+\varphi & = & 0\\
+A & = & \frac{F_{0}}{\left(\omega_{0}^{2}-\omega^{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי התנועה תהייה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r^{\prime} & = & A\cos\left(\omega_{0}t\right)+\frac{F_{0}}{\left(\omega_{0}^{2}-\omega^{2}\right)}\cos\left(\omega t\right)\\
+r & = & A\cos\left(\omega_{0}t\right)+\frac{F_{0}}{\left(\omega_{0}^{2}-\omega^{2}\right)}\cos\left(\omega t\right)+\frac{\alpha^{2}}{e^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ד.
+\end_layout
+
+\begin_layout Standard
+האמפליטודה של התנודות שהכח החצוני מקנה לגוף היא אינסופית, כלומר המערכת תשבר
+ והאלקטרון יברח מהאטום.
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F=-\left(k_{1}+k_{2}\right)x\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\left(k_{1}+k_{2}\right)x & = & m\ddot{x}\\
+m\ddot{x}-\left(k_{1}+k_{2}\right)x & = & 0\\
+\ddot{x}-\frac{k_{1}+k_{2}}{m}x & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{0}=\sqrt{\frac{k_{1}+k_{2}}{m}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+הולכים לויקיפידיה ומחסים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+hook's law
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ורואים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{k_{eq}} & = & \frac{1}{k_{1}}+\frac{1}{k_{2}}\\
+\frac{1}{k_{eq}} & = & \frac{k_{2}+k_{1}}{k_{1}k_{2}}\\
+k_{eq} & = & \frac{k_{1}k_{2}}{k_{1}+k_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{0}=\sqrt{\frac{k_{1}k_{2}}{m\left(k_{1}+k_{2}\right)}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח כי אם 
+\begin_inset Formula $Ae^{-\frac{t}{\tau}}$
+\end_inset
+
+ מקיים את המשוואה 
+\begin_inset Formula $\ddot{x}+b\dot{x}+cx=0$
+\end_inset
+
+ במקרה ש
+\begin_inset Formula $\sqrt{b^{2}-4c}=0$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $Ate^{\frac{t}{\tau}}$
+\end_inset
+
+ מקיים אותו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sqrt{b^{2}-4c} & = & 0\\
+b^{2} & = & 4c\\
+c & = & \frac{b^{2}}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e^{-\frac{t}{\tau}}$
+\end_inset
+
+ הוא פתרון לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{A}{\tau^{2}}e^{-\frac{t}{\tau}}-\frac{Ab}{\tau}e^{-\frac{t}{\tau}}+cAe^{-\frac{t}{\tau}} & = & 0\\
+\frac{A}{\tau^{2}}-\frac{Ab}{\tau}+Ac & = & 0\\
+\frac{A}{\tau^{2}}-\frac{Ab}{\tau}+\frac{Ab^{2}}{4} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי בודקים אם 
+\begin_inset Formula $Ate^{-\frac{t}{\gamma}}$
+\end_inset
+
+ הוא פתרון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\frac{A}{\tau^{2}}t-\frac{2A}{\tau}\right)e^{-\frac{t}{\tau}}+b\left(\frac{tA}{\tau^{2}}-\frac{2A}{\tau}\right)e^{-\frac{t}{\tau}}+cAte^{-\frac{t}{\tau}} & = & 0\\
+\left(\frac{A}{\tau^{2}}t-\frac{2A}{\tau}\right)e^{-\frac{t}{\tau}}+b\left(\frac{tA}{\tau^{2}}-\frac{2A}{\tau}\right)e^{-\frac{t}{\tau}}+\frac{Ab^{2}}{4}te^{-\frac{t}{\tau}} & = & 0\\
+\frac{A}{\tau^{2}}t-\frac{2A}{\tau}+\frac{tAb}{\tau^{2}}-\frac{2Ab}{\tau}+\frac{Ab^{2}}{4} & = & 0\\
+\underbrace{\frac{A}{\tau^{2}}t-\frac{Ab}{\tau}+\frac{Ab^{2}}{4}}_{0}-\frac{Ab}{\tau}-\frac{2A}{\tau}+\frac{tAb}{\tau^{2}} & = & 0\\
+-\frac{Ab}{\tau}-\frac{2A}{\tau}+\frac{tAb}{\tau^{2}} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי...
+ כבר לא יודעים כלום וזה עדיין לא אפס!
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+צריכים לפתור המשוואה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & m\ddot{x}\\
+-\gamma\dot{x}-kx & = & m\ddot{x}\\
+\ddot{x}+\frac{\gamma}{m}\dot{x}+\frac{k}{m}x & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\omega_{0}^{2} & = & \frac{k}{m}\\
+2b & = & \frac{\gamma}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אמרו לנו להניח כי הריסון הוא חזק אזי המשוואה הבאה תתן שתי פתרונות ממשיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r^{2}+2b+\omega_{0}^{2} & = & 0\\
+r_{1,2} & = & -b\pm\sqrt{b^{2}-\omega_{0}^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=Ae^{r_{1}t}+Be^{r_{2}t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\left(0\right)=x_{0}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{0}=A+B\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $v\left(0\right)=v_{0}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{0}=Ar_{1}+Br_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור מערכת משוואות ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\frac{{\it r_{2}}{\it x_{0}}-{\it v_{0}}}{{\it r_{2}}-{\it r_{1}}},B=-\frac{{\it r_{1}}\,{\it x_{0}}-{\it v_{0}}}{{\it r_{2}}-{\it r_{1}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא קיבלנו פתרון שלם לבעייה.
+\end_layout
+
+\begin_layout Standard
+ג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\tau$
+\end_inset
+
+ מוגדר על ידי הופעתו בפתרון 
+\begin_inset Formula $e^{-\frac{t}{\tau}}$
+\end_inset
+
+ ובפתרון שלנו רואים כי הפתרון הוא 
+\begin_inset Formula $e^{rt}$
+\end_inset
+
+ אזי מתקבל כי 
+\begin_inset Formula $r=-\frac{1}{\tau}\Rightarrow\frac{1}{\tau}=-r$
+\end_inset
+
+ אזי מציבים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\tau} & = & -\frac{1}{-b\pm\sqrt{b^{2}-\omega_{0}^{2}}}\\
+ & = & \frac{1}{b\mp\sqrt{b^{2}-\omega_{0}^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אמרו לנו לקחת האיבר שבו הזמן 
+\begin_inset Formula $\tau$
+\end_inset
+
+ הוא מינימאלי, כלומר הביטוי הזה הוא מקסימאלי, כלומר 
+\begin_inset Formula $b\mp\sqrt{b^{2}-\omega_{0}^{2}}$
+\end_inset
+
+ מינימאלי אזי בוחרים את 
+\begin_inset Formula $\frac{1}{b-\sqrt{b^{2}-\omega_{0}^{2}}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\tau} & = & \frac{1}{b-\sqrt{b^{2}-\omega_{0}^{2}}}\\
+ & = & \frac{1}{\frac{\gamma}{2m}-\sqrt{\left(\frac{\gamma}{2m}\right)^{2}-\frac{k}{m}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה במקרה של ריסון חזק.
+\end_layout
+
+\begin_layout Standard
+בריסון חלש לא ברור מה רוצים ממנו)נו? מה זה 
+\begin_inset Formula $\tau$
+\end_inset
+
+? זמן מחזור? זמן ריסון?( אזי מניחים שזה יופיע גם מעל ל
+\begin_inset Formula $e$
+\end_inset
+
+)כלומר זמן ריסון( במקרה זה הפתרון הוא 
+\begin_inset Formula $e^{-bt}\left(\dots\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $-b=-\frac{1}{\tau}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+b & = & \frac{1}{\tau}\\
+\frac{\gamma}{2m} & = & \frac{1}{\tau}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים ציור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw10d1.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part*
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -k\left(x_{mass}-x_{top}\right)-0.1\dot{x}\\
+m\ddot{x} & = & -k\left(x_{mass}-x_{top}\right)-0.1\dot{x}\\
+\ddot{x}+0.1\dot{x}+k\left(x-x_{top}\right) & = & 0\\
+\ddot{x}+\frac{0.1}{m}\dot{x}+\frac{k}{m}x & = & kx_{top}\\
+\ddot{x}+\frac{0.1}{m}\dot{x}+\frac{k}{m}x & = & \frac{0.01}{m}\cdot k\cdot\cos\left(\omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הלא דועך של משוואה זו הוא מצורה 
+\begin_inset Formula $A\cos\left(\omega t+\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-A\omega^{2}\cos\left(\omega t+\varphi\right)-\frac{A\omega}{10m}\sin\left(\omega t+\varphi\right)+\frac{kA}{m}\cos\left(\omega t+\varphi\right) & = & \frac{k}{100m}\cos\left(\omega t\right)\\
+A\left(\frac{k}{m}-\omega^{2}\right)\cos\left(\omega t\right)+\frac{A\omega}{10m}\sin\left(\omega t\right) & = & \frac{k}{100m}\cos\left(\omega t+\varphi\right)\\
+A & = & \frac{\frac{k}{100m}}{\sqrt{\left(\frac{k}{m}-\omega^{2}\right)^{2}+\left(\frac{A\omega}{10m}\right)^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תדירות המערכת היא 
+\begin_inset Formula $\omega_{0}=\sqrt{\frac{k}{m}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התדירות היא מקסימאלית כאשר 
+\begin_inset Formula $\omega=\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה זה התדירות היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \frac{\frac{k}{100m}}{\sqrt{\left(\frac{k}{m}-\omega^{2}\right)^{2}+\left(\frac{A\omega}{10m}\right)^{2}}}\\
+ & = & \frac{\left(\frac{k}{100m}\right)}{\left(\frac{A\omega}{10m}\right)}\\
+ & = & \frac{k}{10A\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בתדירות כפולה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \frac{\frac{\omega}{100}}{\sqrt{\left(4\omega^{2}-\omega^{2}\right)^{2}+\left(\frac{A\omega}{10m}\right)^{2}}}\\
+ & = & \frac{\omega}{100\sqrt{\left(3\omega^{2}\right)^{2}+\left(\frac{A\omega}{10m}\right)^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא למדנו על הספק! לא פייר שתהיה שאלה על חומר שצריך לקרא מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Wikipedia
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+P & = & F\cdot v\\
+ & = & 0.01\cdot k\cdot\cos\left(\omega t\right)\cdot\frac{\partial}{\partial t}\left(A\cos\left(\omega t+\varphi\right)\right)\\
+ & = & -0.01\cdot k\cdot\cos\left(\omega t\right)\cdot A\omega\sin\left(\omega t+\varphi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+כנראה זה תלוי ב
+\begin_inset Formula $\varphi$
+\end_inset
+
+ שאי אפשר לחשב בלי נתונים אחרים.
+\end_layout
+
+\begin_layout Standard
+מקדם הטיב הוא 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Q & = & \frac{\omega_{0}}{\gamma}\\
+ & = & \frac{\sqrt{\frac{k}{m}}}{\left(\frac{0.1}{2m}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

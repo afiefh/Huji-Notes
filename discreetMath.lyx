@@ -12156,5 +12156,1162 @@ Kartowski
  מסלול העובר דרך כל קודקוד פעם אחת בלבד.
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+21
+\end_layout
+
+\begin_layout Section
+מסלול ומעגל המילתון
+\end_layout
+
+\begin_layout Standard
+דיברנו על מסלול אוילר שעובר על כל קשת פעם אחת ומסלול המילתון שעובר על כל
+ קודקוד פעם אחת.
+\end_layout
+
+\begin_layout Standard
+אמרנו שבגרף קשיר קיים מעגל אוילר אם הערכיות של כל קודקוד זוגית ומסלול אם
+ הכל זוגי חוץ מ
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+בעיית הסוכן הנוסע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Travelling Salesman
+\end_layout
+
+\begin_layout Standard
+יש גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ שקודקודיו הם ערים והקשטות הם דרכים בין ערים.
+ כל דרך יש לה אורך.
+ רוצים לעבור בכל בקודקודים ולחזור מזה שהתחנו ממנו בתנאי שעוברים על כל קודקוד
+ פעם אחת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c30d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה: גרף מכוון 
+\begin_inset Formula $G=G\left(VE\right)$
+\end_inset
+
+ על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים שבו לכל זוג קודקודים 
+\begin_inset Formula $x,y\in V$
+\end_inset
+
+ קיים צלע מ 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $y$
+\end_inset
+
+ או מ 
+\begin_inset Formula $y$
+\end_inset
+
+ ל 
+\begin_inset Formula $x$
+\end_inset
+
+ אך לא שתיהן נקרא תחרות.
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Szele
+\lang hebrew
+: בכל תחרות קיים מסלול המילטון.
+\end_layout
+
+\begin_layout Standard
+הוכחה: נוכיח באינדוקציה על מספר הקודקודים בגרף.
+ אם 
+\begin_inset Formula $n=2$
+\end_inset
+
+ יש שתי קודקודים ויש קשת ביניהם אזי קיים מסלול המילתון.
+ נניח שהטענה נכונה עבור 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים ונוכיח עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים נבחר 
+\begin_inset Formula $v\in G$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\hat{G}=G\setminus v$
+\end_inset
+
+ שזה גרף תחרות בעל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים, לפי הנחת האנדוקציה ב 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ יש מסלול המילתון יודעים כי 
+\begin_inset Formula $v$
+\end_inset
+
+ קשור בצלע מכוונת לכל 
+\begin_inset Formula $t\in V\setminus v$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $v_{1}\in V\setminus v$
+\end_inset
+
+ הקודקוד הראשונ במסלול המילתון ב
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ ו 
+\begin_inset Formula $v_{n-1}\in V\setminus v$
+\end_inset
+
+ האחרון במסלול.
+ אפשר להניח כי יש הקשת בין 
+\begin_inset Formula $\left(v,v_{n-1}\right),\left(v,v_{1}\right)$
+\end_inset
+
+ הן בכיוון 
+\begin_inset Formula $v_{1}\to v$
+\end_inset
+
+ ו 
+\begin_inset Formula $v\to v_{n-1}$
+\end_inset
+
+ כי אם לא היה אז היינו כבר מקבלים מסלול המילתון.
+ אזי אפשר למצא קודקוד 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $v_{i}\to v$
+\end_inset
+
+ ו 
+\begin_inset Formula $v\to v_{i+1}$
+\end_inset
+
+.
+ אזי בונים מסלול המילתון 
+\begin_inset Formula $v_{1}\to\dots\to v_{i}\to v\to v_{i+1}\to v_{n-1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רפשר לראות שלא תמיד קיים המילתון, אזי נחפש אם אפשר לחזק את הטענה לקבל מעגל
+ המילתון:
+\end_layout
+
+\begin_layout Standard
+תרגיל: נניח ש 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף תחרות קשיר חזק אזי ב 
+\begin_inset Formula $G$
+\end_inset
+
+ קיים מעגל המילתון.
+ )הפתרון בתרגול(
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס??
+\end_layout
+
+\begin_layout Standard
+רוצים למצא סדרה מעגלית של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+ים ו
+\numeric on
+1
+\numeric off
+ים באורך 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ שמכילה את כל ה
+\begin_inset Formula $n$
+\end_inset
+
+-יות האפשריות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+ים ו
+\numeric on
+1
+\numeric off
+ים - זאת היא סדרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+De Brujin
+\end_layout
+
+\begin_layout Standard
+נניח קיום של סדרה כזו
+\end_layout
+
+\begin_layout Standard
+נגדיר את הגרף המכוון הבא:
+\end_layout
+
+\begin_layout Standard
+קודקודי הגרף: כל הסדרות 
+\begin_inset Formula $\left(a_{1},\dots,a_{n-1}\right)$
+\end_inset
+
+ באורך 
+\begin_inset Formula $n-1$
+\end_inset
+
+ של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+ים ו
+\numeric on
+1
+\numeric off
+ים)סך הכל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $2^{n-1}$
+\end_inset
+
+ קודקודים(
+\end_layout
+
+\begin_layout Standard
+קשתות הגרף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/c28d1.svg
+	lyxscale 30
+	width 100text%
+	rotateOrigin leftTop
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגרף הוא קשיר ודרגת הכניסה לכל קודקוד שווה ל
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ודרגת יציאה שווה ל
+\numeric on
+2
+\numeric off
+, אזי יש בו מעגל אוילר.
+\end_layout
+
+\begin_layout Standard
+כאשר לכל קודקוד יש שתי קשתות שאותו קודקוד היא קודקוד היציאה שלהן ולכן ישנן
+ 
+\begin_inset Formula $2^{n-1}\cdot2=2^{n}$
+\end_inset
+
+ קשתות כלומר מעגל רוילר הוא באורך 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו סדרה באורך 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ של אפסים ואחדים המתקבלת על ידי הליכה לאורך מעגל אוילר ואיסוף האפסים והאחדים
+ לאורכו.
+\end_layout
+
+\begin_layout Section
+זיווג בגרפים
+\end_layout
+
+\begin_layout Standard
+הגדרה: יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף לא מכוון.
+ זיווג 
+\begin_inset Formula $M$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ היא אוסף של קשתות, כך שבקבוצת הקודקודים המתאימה לקשת אחת ב
+\begin_inset Formula $M$
+\end_inset
+
+ זרה לקבוצה הקודקודים המתאימה לכל קשת אחרת ב 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ )כלומר הקשתות לא נוגעות אחת בשניה(
+\end_layout
+
+\begin_layout Standard
+זיווג יקרא זיווג מושלם אם כל קודקוד בגרף חל באחד הקשתות בזיווג
+\end_layout
+
+\begin_layout Standard
+מתי קיים זיווג מושלם בגרף דו צדדי?
+\end_layout
+
+\begin_layout Standard
+זיווג מושלם 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left|V_{2}\right|=\left|V_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למת החתונה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Hall
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G=G\left(V_{1},v_{2}E\right)$
+\end_inset
+
+ גרף דו צדדי)לא מכוון( ל 
+\begin_inset Formula $G$
+\end_inset
+
+ קיים זיווג מושלם אם ורק אם לכל תתקבוצה 
+\begin_inset Formula $S\subseteq V_{1}$
+\end_inset
+
+: 
+\begin_inset Formula $\left|\Gamma\left(S\right)\right|\geq\left|S\right|$
+\end_inset
+
+כאשר 
+\begin_inset Formula $\Gamma\left(S\right)$
+\end_inset
+
+ הוא מספר השכנים של 
+\begin_inset Formula $S$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על מספר הקודקודים 
+\begin_inset Formula $\left|V_{1}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\left|V_{1}\right|=\left|V_{1}\right|=1$
+\end_inset
+
+ זה טריוויאלי.
+\end_layout
+
+\begin_layout Standard
+נניח עבור 
+\begin_inset Formula $\left|V_{1}\right|\leq n-1$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $\left|V_{1}\right|=n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+מקרה א: קיימת תת קבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+ חלקית ממש ל 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ שעבורה 
+\begin_inset Formula $\left|\Gamma\left(S\right)\right|=\left|S\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרה ב: לכל תתקבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+ חלקית ממש ל
+\begin_inset Formula $V_{1}$
+\end_inset
+
+ ולא ריקה 
+\begin_inset Formula $\left|\Gamma\left(S\right)\right|\geq\left|S\right|+1\Leftrightarrow\left|\Gamma\left(S\right)\right|>\left|S\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכית מקרה א: 
+\end_layout
+
+\begin_layout Standard
+אם יוצאת קשת של 
+\begin_inset Formula $S$
+\end_inset
+
+ אזי היא חייבת להיות מחוברת ל
+\begin_inset Formula $\Gamma\left(S\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר תת-גרף דו צדדי 
+\begin_inset Formula $\hat{G}=\left(\hat{V}_{1},\hat{V}_{2},\hat{E}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\hat{V}_{1}=S,\hat{V}_{2}=\Gamma\left(S\right)$
+\end_inset
+
+  
+\begin_inset Formula $\left|\hat{V}_{2}\right|=\left|\hat{V}_{1}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{E}$
+\end_inset
+
+ קבוצת כל הקשתות מ 
+\begin_inset Formula $E$
+\end_inset
+
+ שקודקוד אחד שלהם היא ב 
+\begin_inset Formula $\hat{V}$
+\end_inset
+
+)והקודקוד הנוסף ב 
+\begin_inset Formula $\hat{V}_{2}$
+\end_inset
+
+( 
+\begin_inset Formula $\left|\hat{V}_{1}\right|=\left|\hat{V}_{2}\right|,\left|\hat{V}_{1}\right|\leq\left|V_{1}\right|-1=n-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה:
+\end_layout
+
+\begin_layout Standard
+לכל תתקבוצה 
+\begin_inset Formula $U\subseteq\hat{V}_{1}$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\left|U\right|$
+\end_inset
+
+ קטן שווה לקבוצת השכנים של 
+\begin_inset Formula $U$
+\end_inset
+
+ ב 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ שזה שווה לקבוצת השכנים של 
+\begin_inset Formula $U$
+\end_inset
+
+ ב
+\begin_inset Formula $G$
+\end_inset
+
+ שזה גדול מ 
+\begin_inset Formula $\left|U\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגרף 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+הוא גרף דו צדדי 
+\begin_inset Formula $\left|\hat{V}_{1}\right|=\left|\hat{V}_{2}\right|$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|\hat{V}_{1}\right|\leq n-1$
+\end_inset
+
+ ולכל תתקבוצה 
+\begin_inset Formula $\hat{V}_{1}\supseteq U$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|U\right|$
+\end_inset
+
+ קטן או שווה מספר השכנים של 
+\begin_inset Formula $U$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר הנחת למה החתונה מתקימות ולכן לפי הנחת האינדוקציה קיים זיווג ב 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\tilde{G}=\left(\tilde{V}_{1},\tilde{V}_{2},\tilde{E}\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\tilde{V}_{2}=V_{2}\setminus\Gamma\left(S\right),\tilde{V}_{1}=V_{1}\setminus S$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\tilde{E}$
+\end_inset
+
+ - כל הקשתות מ
+\begin_inset Formula $E$
+\end_inset
+
+ המחוברות קודקוד ב 
+\begin_inset Formula $\tilde{V}_{1}$
+\end_inset
+
+לקודקוד ב 
+\begin_inset Formula $\tilde{V}_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|\tilde{V}_{1}\right|\leq n-1,\left|\tilde{V}_{1}\right|=\left|\tilde{V}_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה להראות כי ב 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ קיימים זיווג מושלם 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T\subseteq\tilde{V}_{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\overset{?}{\Leftarrow}$
+\end_inset
+
+
+\begin_inset Formula $T$
+\end_inset
+
+ קטן שווה קווצת השכנים של 
+\begin_inset Formula $T$
+\end_inset
+
+ ב
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נוכיח את האי שוויון ב 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+.
+ נניח בשלילה כי האישוויון לא מתקיים.
+ 
+\begin_inset Formula $\left|T\right|$
+\end_inset
+
+גדול ממספר השכנים ב 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+, 
+\begin_inset Formula $\exists T\subseteq\tilde{V}_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן בקבוצת השכנים 
+\begin_inset Formula $T\cup S$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+קבוצת השרנים של 
+\begin_inset Formula $T\cup S$
+\end_inset
+
+ב
+\begin_inset Formula $G$
+\end_inset
+
+ הם: 
+\begin_inset Formula $\Gamma_{G}\left(S\right)\cup\Gamma_{\tilde{G}}\left(T\right)$
+\end_inset
+
+.
+ מזה מקבלים סתירה להנחת השלילה שלנו.
+ אזי האי שוויון תמיד מתקיים.
+\end_layout
+
+\begin_layout Standard
+קיבלנו כי לכל קבוצה 
+\begin_inset Formula $T\subseteq\tilde{V}_{1}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|T\right|$
+\end_inset
+
+ קטן שווה קבוצת השכנים של 
+\begin_inset Formula $T$
+\end_inset
+
+ ב
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+מקיים את הנחות למת החתונה ולכן לפי הנחת האינדוקציה ב
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ קיים זיווג מושלם.
+\end_layout
+
+\begin_layout Standard
+קיים זיווג מושלם ב 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ מקיים זיווג מושלם ב
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ ולכן קיים זיווג מושלם ב
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרה ב:
+\end_layout
+
+\begin_layout Standard
+נבאר קודקוד 
+\begin_inset Formula $v_{1}\in V_{1}$
+\end_inset
+
+ קיימת קשת 
+\begin_inset Formula $\left\{ v_{1},v_{2}\right\} \in E$
+\end_inset
+
+ נבחר קשת זו כחלק מהזיווג.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{V_{2}} & = & V_{2}\setminus\left\{ v_{2}\right\} \\
+\hat{V_{1}} & = & V_{1}\setminus\left\{ v_{1}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $G=G\left(\hat{V_{1}},\hat{V}_{2},\hat{E}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $E\supseteq\hat{E}$
+\end_inset
+
+ כולל רק קשתות בין קודקודים ב
+\begin_inset Formula $\hat{V}_{1}$
+\end_inset
+
+ לקודקוד ב 
+\begin_inset Formula $\hat{V}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\hat{V}_{1}\right|=\left|\hat{V}_{2}\right|=n-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $S\subseteq\hat{V}_{1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\Gamma_{\hat{G}}\left(S\right)\right|\geq\left|\Gamma_{G}\left(S\right)\right|-1\geq\left|S\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עד כדי שינוי סדר יש זיווג מושלם.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.???
+\end_layout
+
+\begin_layout Standard
+טענה: על קודקדעם נתונים יש 
+\begin_inset Formula $n^{n-2}$
+\end_inset
+
+ עצים שונים.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $d_{2}-d_{n}$
+\end_inset
+
+ סדרת הקודקודים של עץ על הקודקודים 
+\begin_inset Formula $1-n$
+\end_inset
+
+ אם הדרגה של הקודקוד 
+\begin_inset Formula $n$
+\end_inset
+
+ היא 
+\begin_inset Formula $d_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה: אם 
+\begin_inset Formula $d_{n}-d_{n}$
+\end_inset
+
+ ...
+ של עץ לפי 
+\begin_inset Formula $\sum d_{n}=2n-2d_{1}\geq1$
+\end_inset
+
+ ו 
+\begin_inset Formula $d_{n}\geq1$
+\end_inset
+
+ כי אין קודקודים מבודדים.
+ בעץ יש 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות 
+\end_layout
+
+\begin_layout Standard
+בכל גרף 
+\begin_inset Formula $\sum d_{n}=2\left|E\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענת עזר: אם 
+\begin_inset Formula $d_{1}\dots d_{n}>1$
+\end_inset
+
+ עם סכום 
+\begin_inset Formula $2n-2$
+\end_inset
+
+ אזי מספר העצים בעלי סדרת הדרגות הנ"ל הוא 
+\begin_inset Formula ${n-2 \choose d_{1}-1,\dots,d_{n}-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $d_{1}=d_{2}=1$
+\end_inset
+
+ ומספר העצים המתאימים הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+, בהתאמה ל
+\begin_inset Formula ${0 \choose 0,0}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $n\geq3$
+\end_inset
+
+ ושטענת העזר נכונה ל
+\begin_inset Formula $n-1$
+\end_inset
+
+ ותהי 
+\begin_inset Formula $d_{1}\dots d_{n}$
+\end_inset
+
+ כנ"ל
+\end_layout
+
+\begin_layout Standard
+קיים 
+\begin_inset Formula $1\leq i\leq n$
+\end_inset
+
+ כך ש
+\begin_inset Formula $d_{i}=1$
+\end_inset
+
+)אחרת 
+\begin_inset Formula $\forall i:d_{i}\geq2$
+\end_inset
+
+ ואז 
+\begin_inset Formula $\sum d_{i}\geq2n$
+\end_inset
+
+( נקיים 
+\begin_inset Formula $1\leq j\leq n$
+\end_inset
+
+ כך ש
+\begin_inset Formula $d_{j}>1$
+\end_inset
+
+ אחרת 
+\begin_inset Formula $\forall j:d_{j}=1$
+\end_inset
+
+ ו 
+\begin_inset Formula $\underbrace{\sum d_{j}<2n-2-1}_{n\geq3}$
+\end_inset
+
+( 
+\end_layout
+
 \end_body
 \end_document

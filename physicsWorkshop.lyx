@@ -1798,9 +1798,9 @@ r_{1,2} & = & -b\pm iw^{*}\end{eqnarray*}
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-x\left(t\right) & = & Ae^{\left(-b+iw^{*}\right)t}+Be^{\left(-b-iw^{*}\right)}\\
- & = & Ae^{-b}\left(Ae^{iw^{*}}+Be^{-iw^{*}}\right)\\
- & = & Ae^{-b}\left(A\cos\left(wt\right)+B\sin\left(w^{*}t\right)\right)\end{eqnarray*}
+x\left(t\right) & = & Ae^{\left(-b+iw^{*}\right)t}+Be^{\left(-b-iw^{*}\right)t}\\
+ & = & Ae^{-bt}\left(Ae^{iw^{*}}+Be^{-iw^{*}}\right)\\
+ & = & Ae^{-bt}\left(A\cos\left(wt\right)+B\sin\left(w^{*}t\right)\right)\end{eqnarray*}
 
 \end_inset
 

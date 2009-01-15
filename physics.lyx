@@ -6937,7 +6937,7 @@ m\vec{a}\vert_{S^{'}}=\vec{F}-m\ddot{\vec{R}}+m\left(\vec{\omega}\times\vec{r}\r
 \begin_inset Graphics
 	filename physics/c25d2.svg
 	lyxscale 30
-	width 50cm
+	width 50text%
 
 \end_inset
 
@@ -7046,7 +7046,7 @@ x & = & -\frac{1}{3}g\omega\left(\frac{2h}{g}\right)^{\frac{3}{2}}\\
 \end_layout
 
 \begin_layout Section
-חזרה לבוחר
+חזרה לבוחן
 \end_layout
 
 \begin_layout Standard
@@ -7218,6 +7218,7 @@ v\left(t\right) & = & v-\frac{1}{\frac{2\dot{m}}{Mv}t+c}\end{eqnarray*}
 \begin_inset Graphics
 	filename physics/c26d1.svg
 	lyxscale 30
+	width 100text%
 
 \end_inset
 
@@ -9703,6 +9704,1569 @@ mv_{y} & = & -Mv_{m}\\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+222
+\end_layout
+
+\begin_layout Standard
+נמשיך בהרצאה של שבוע שעבר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+mv_{y}=-Mv_{M}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}mv^{2}+\frac{1}{2}mv_{M}^{2}+myl\left(1-\cos\theta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפרק את המהירות 
+\begin_inset Formula $\vec{v}=v_{y}\hat{y}+v_{x}\hat{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את המהירות 
+\begin_inset Formula $v_{x}$
+\end_inset
+
+ ביחס לנקודה שבה תלוי החוט בגוף 
+\begin_inset Formula $M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{x}=\frac{\partial}{\partial t}\left(l\cos\left(\theta\left(t\right)\right)\right)=-l\dot{\theta}\left(t\right)\sin\left(\theta\left(t\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את המהירות בכיוון 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ ביחס לנקודת מרכז המסה)כי היא לא זזה( נזכור כי נכודת מרכז המסה היא 
+\begin_inset Formula $l_{cm}=\frac{m}{M+m}l$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+l_{eff} & = & l-l_{cm}\\
+ & = & l-\frac{m}{M+m}l\\
+ & = & \frac{l\left(M+m\right)-ml}{M+m}\\
+ & = & \frac{lM+lm-lm}{M+m}\\
+ & = & \frac{M}{M+m}l\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{y} & = & \frac{\partial}{\partial t}\left(l_{eff}\sin\left(\theta\left(t\right)\right)\right)\\
+ & = & l_{eff}\dot{\theta}\left(t\right)\cos\theta\\
+ & = & \frac{M}{M+m}l\dot{\theta}\left(t\right)\cos\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{M}=-\frac{m}{M}v_{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \frac{1}{2}mv_{x}^{2}+\frac{1}{2}mv_{y}^{2}+\frac{1}{2}mv_{M}^{2}\\
+ & = & \frac{1}{2}m\left(v_{y}^{2}\left(1+\frac{m}{M}\right)+v_{x}^{2}\right)\\
+ & = & \frac{1}{2}\mu\left(1+\frac{m}{M}\sin^{2}\theta\right)l^{2}\dot{\theta}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\mu=\frac{mM}{M+m}$
+\end_inset
+
+.
+ רואים כי 
+\begin_inset Formula $\frac{m}{M}\theta^{2}\ll1$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\theta^{2}\ll\frac{M}{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{k}=\frac{1}{2}\mu l^{2}\dot{\theta}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והאנרגיה הפוטנציאלית היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u=mgl\left(1-\cos\theta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $\theta$
+\end_inset
+
+ קטן מאוד אזי מקרבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & mgl\left(1-\left(1-\frac{1}{2}\theta^{2}\right)\right)\\
+ & = & \frac{1}{2}mgl\theta^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי האנרגיה הכוללת היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}\mu l^{2}\dot{\theta}^{2}+\frac{1}{2}mgl\theta^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והאנרגיה קבועה כי הכח היחיד הוא הגרביטציה וכבר התחשבנו בפוטנציאל שלו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}E & = & 0\\
+l\dot{\theta}\left(\mu l\ddot{\theta}+mg\theta\right) & = & 0\\
+\mu l\ddot{\theta}+mg\theta & = & 0\\
+\ddot{\theta}+\frac{m}{\mu}\cdot\frac{g}{l}\theta & = & 0\\
+\ddot{\theta}+\frac{m}{\left(\frac{mM}{m+M}\right)}\cdot\frac{g}{l}\theta & = & 0\\
+\ddot{\theta}+\frac{m+M}{M}\cdot\frac{g}{l}\theta & = & 0\\
+\ddot{\theta}+\left(1+\frac{m}{M}\right)\frac{g}{l}\theta & = & 0\\
+\ddot{\theta}+\omega_{0}\theta & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\omega_{0}=\left[1+\frac{m}{M}\right]\frac{g}{l}$
+\end_inset
+
+.
+ זה רק פתרון אחד, פתרון אחר זה 
+\begin_inset Formula $l\dot{\theta}=0$
+\end_inset
+
+ אבל זה כבר לא מעניין
+\end_layout
+
+\begin_layout Section
+עוד נקודה אחרונה על אוסצילטור הרמוני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{x}+\gamma\dot{x}+\omega_{0}^{2}x=F_{0}\cos\omega t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\omega_{0}^{2}$
+\end_inset
+
+ זה המקדם של 
+\begin_inset Formula $x$
+\end_inset
+
+ שבמצב של קפיץ 
+\begin_inset Formula $\omega_{0}^{2}=\frac{k}{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\omega$
+\end_inset
+
+ הוא תדר הכח המאלץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{1}=\omega_{0}\sqrt{1-\left(\frac{\gamma}{2\omega}\right)^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של רזוננס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{0}\sqrt{1-\frac{1}{2}\frac{\gamma}{\omega}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל המקדם הזה מתחת לשורש הוא זניח כי גם רם 
+\begin_inset Formula $Q=\frac{\gamma}{\omega_{0}}=5$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\sqrt{1-\frac{1}{2}\frac{\gamma}{\omega}}\approx1.01$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L=\left\{ I_{x}\hat{x}+I_{y}\hat{y}+I_{z}\hat{z}\right\} \omega\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה במקרה ש 
+\begin_inset Formula $\omega$
+\end_inset
+
+ הוא בכיוון 
+\begin_inset Formula $z$
+\end_inset
+
+, אבל רוצים 
+\begin_inset Formula $\omega$
+\end_inset
+
+ כללי אזי מגדירים 
+\begin_inset Formula $\vec{\omega}=\omega_{x}\hat{x}+\omega_{y}\hat{y}+\omega_{z}\hat{z}$
+\end_inset
+
+ וזה יכול להיות תלוי בזמן גם.
+\end_layout
+
+\begin_layout Standard
+אזי רוצים לראות איך נראה התנע הזוויתי במקרה הזה.
+\end_layout
+
+\begin_layout Standard
+עבור גוף מסוים נפתח הבעיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}=x\hat{x}+y\hat{y}+z\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \sum m_{i}\vec{r}_{i}\times\overbrace{\left(\omega_{i}\times\vec{r}_{i}\right)}^{\vec{v}}\\
+ & = & \begin{pmatrix}I_{x} & I_{xy} & I_{xz}\\
+I_{yx} & I_{y} & I_{yz}\\
+I_{zx} & I_{zy} & I_{z}\end{pmatrix}\begin{pmatrix}\omega_{x}\\
+\omega_{y}\\
+\omega_{z}\end{pmatrix}\\
+ & = & \begin{pmatrix}I_{x}\omega_{x}+I_{xy}\omega_{y}+I_{xz}\omega_{z}\\
+I_{yx}\omega_{x}+I_{y}\omega_{y}+I_{yz}\omega_{z}\\
+I_{zx}\omega_{x}+I_{zy}\omega_{y}+I_{z}\omega_{z}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תזכור כי 
+\begin_inset Formula $\vec{L}=I\vec{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{x} & = & \sum m_{i}\left(y_{i}^{2}+z_{i}^{2}\right)\\
+I_{y} & = & \sum m_{i}\left(x_{i}^{2}+z_{i}^{2}\right)\\
+I_{z} & = & \sum m_{i}\left(y_{i}^{2}+z_{i}^{2}\right)\\
+I_{xy} & = & -\sum m_{i}x_{i}y_{i}=I_{yx}\\
+I_{yx} & = & -\sum m_{i}y_{i}x_{i}=I_{xy}\\
+I_{yz} & = & -\sum m_{i}y_{i}z_{i}=I_{zy}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה הקודם שהיה לנו 
+\begin_inset Formula $\omega=\omega_{z}\hat{z}$
+\end_inset
+
+ היינו מקבלים 
+\begin_inset Formula $\vec{L}=\left\{ I_{xz}\hat{x}+I_{yz}\hat{y}+I_{z}\hat{z}\right\} \omega_{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה די מסובך, אבל אפשר לפתור את זה בקלות בבחירה נכונה של מערךת הצירים.
+\end_layout
+
+\begin_layout Standard
+משפט: לכל גוף יכולים לבחור מערכת צירים 
+\begin_inset Formula $\hat{x},\hat{y},\hat{z}$
+\end_inset
+
+ מקבילים לצירי הסמטריה של הגוף.
+ אזי נקבל 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\begin{pmatrix}\lambda_{1} & 0 & 0\\
+0 & \lambda_{2} & 0\\
+0 & 0 & \lambda_{3}\end{pmatrix}\begin{pmatrix}\omega_{x}\\
+\omega_{y}\\
+\omega_{z}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: זה גם עובד בלי צירי סמטריה כי תמיד אפשר ללכסן מטריצה סמטרית אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\lambda_{1}\omega_{1}\hat{e}_{1}+\lambda_{2}\omega_{2}\hat{e}_{2}+\lambda_{3}\omega_{3}\hat{e}_{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=\lambda_{3}$
+\end_inset
+
+ אזי הגוף הוא כדור.
+ אם 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}\neq\lambda_{3}$
+\end_inset
+
+ שזה סביבון סימטרי)סימטרי בשתי צירים ולא בשלישי(.
+ אם 
+\begin_inset Formula $\lambda_{1}\neq\lambda_{2}\neq\lambda_{3}$
+\end_inset
+
+ אזי זה גוף כללי)די מסובך(.
+ 
+\end_layout
+
+\begin_layout Standard
+יודעים כבר כי לכל ווקטור 
+\begin_inset Formula $b$
+\end_inset
+
+ אם עוברים ממערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ ל 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\vec{b}\vert_{s}=\frac{\partial}{\partial t}\vec{b}\vert_{s^{\prime}}+\vec{\omega}\times\vec{b}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\vec{L}\vert_{S}=\frac{\partial}{\partial t}\vec{L}\vert_{S^{\prime}}+\vec{\omega}\times\vec{L}=\vec{N}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\lambda_{1}\omega_{1}\hat{e}_{1}+\lambda_{2}\omega_{2}\hat{e}_{2}+\lambda_{3}\omega_{3}\hat{e}_{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מציבים ומפרקים לרכיבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{1}\dot{\omega}_{1}-\left(\lambda_{2}-\lambda_{3}\right)\omega_{2}\omega_{3} & = & N_{1}\\
+\lambda_{2}\dot{\omega}_{2}-\left(\lambda_{3}-\lambda_{1}\right)\omega_{1}\omega_{3} & = & N_{2}\\
+\lambda_{3}\dot{\omega}_{3}-\left(\lambda_{1}-\lambda_{2}\right)\omega_{1}\omega_{2} & = & N_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור בעיה יחסית קלה:
+\end_layout
+
+\begin_layout Standard
+ההיח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & 0\\
+\lambda_{1} & = & \lambda_{2}=\lambda\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מה קורה עם משוואת אוילר? הקל ביותר להתחיל במשוואה השלישית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{3}\dot{\omega}_{3}-\left(\lambda_{1}-\lambda_{2}\right)\omega_{1}\omega_{2} & = & N_{3}\\
+\lambda_{3}\dot{\omega}_{3}-0 & = & 0\\
+\omega_{3} & = & \mbox{Constant}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda\dot{\omega}_{1}-\left(\lambda-\lambda_{3}\right)\omega_{2}\omega_{3} & = & 0\\
+\lambda\dot{\omega}_{2}-\left(\lambda_{3}-\lambda\right)\omega_{1}\omega_{3} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\omega}_{1}-\overbrace{\left(\frac{\lambda-\lambda_{3}}{\lambda}\omega_{3}\right)}^{\Omega}\omega_{2} & = & 0\\
+\dot{\omega}_{2}+\underbrace{\left(\frac{\lambda-\lambda_{3}}{\lambda}\omega_{3}\right)}_{\Omega}\omega_{1} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\omega}_{1}-\Omega\omega_{2} & = & 0\\
+\dot{\omega}_{2}+\Omega\omega_{1} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון של זה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\omega_{1} & = & \omega_{0}\sin\left(\Omega t\right)\\
+\omega_{2} & = & \omega_{0}\cos\left(\Omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לכתוב 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\omega} & = & \overbrace{\omega_{0}\sin\left(\Omega t\right)\hat{e}_{1}+\omega_{0}\cos\left(\Omega t\right)\hat{e}_{2}}^{\omega_{t}\left(t\right)}+\omega_{3}\hat{e}_{3}\\
+ & = & \omega_{t}\left(t\right)+\omega_{3}\hat{e}_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\lambda\vec{\omega}_{t}\left(t\right)+\lambda_{3}\omega_{3}\hat{e}_{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.????
+\end_layout
+
+\begin_layout Section
+בעית קפלר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c28d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנחה: הכח שלנו הוא כח מרכזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}\left(r\right)=f\left(r\right)\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש רק שני גופים שיש ביניהם כח פנימי לכן יש שימור תנע קווי ושימור אנרגי ו
+ 
+\begin_inset Formula $V_{cm}=\mbox{Const}$
+\end_inset
+
+ וגם התנע הזוויתי קבוע
+\end_layout
+
+\begin_layout Standard
+נעבור לתיאור על ידי 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+)נמקם את הראשית על אחת המסות( מבחינה פיזיקלית טהורה אסור לעשות זה כי הגופים
+ מאיצים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=m_{2}\ddot{\vec{r}}_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משימור התנע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\dot{\vec{r}}_{1} & = & -m_{2}\dot{\vec{r}}_{2}\\
+\dot{\vec{r}}_{1} & = & -\frac{m_{2}}{m_{1}}\dot{\vec{r}}_{2}\\
+\ddot{\vec{r}}_{1} & = & -\frac{m_{2}}{m_{1}}\ddot{\vec{r}}_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{\vec{r}} & = & \ddot{\vec{r}}_{2}-\ddot{\vec{r}}_{1}\\
+ & = & \ddot{\vec{r}}_{2}+\frac{m_{2}}{m_{1}}\ddot{\vec{r}}_{2}\\
+\ddot{\vec{r}}_{2} & = & \ddot{\vec{r}}\left(\frac{1}{1+\frac{m_{2}}{m_{1}}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & m_{2}\left(\frac{1}{1+\frac{m_{2}}{m_{1}}}\right)\ddot{\vec{r}}\\
+ & = & \left(\frac{m_{1}m_{2}}{m_{1}+m_{2}}\right)\ddot{\vec{r}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מגדירים מסה מצומצמת 
+\begin_inset Formula $\mu=\left(\frac{m_{1}m_{2}}{m_{1}+m_{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בתנע הזוויתי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & m_{1}\vec{r}_{1}\times m\dot{\vec{r}}_{1}+m_{2}\vec{r_{2}}\times\dot{\vec{r}}_{2}\\
+ & = & m_{1}\vec{r}_{1}\times\left(-\frac{m_{2}}{m_{1}}\dot{\vec{r}}_{2}\right)+m_{2}\vec{r}_{2}\times\dot{\vec{r}}_{2}\\
+ & = & m_{2}\left(\vec{r}_{2}-\vec{r}_{1}\right)\times\dot{\vec{r}}_{2}\\
+ & = & m_{2}\vec{r}\times\dot{\vec{r}}_{2}\\
+ & = & m_{2}\vec{r}\times\left(\frac{1}{1+\frac{m_{2}}{m_{1}}}\right)\dot{\vec{r}}\\
+\vec{L} & = & \mu\vec{r}\times\dot{\vec{r}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה ווקטור קבוע גפי שראינו מקודם.
+\end_layout
+
+\begin_layout Standard
+את 
+\begin_inset Formula $\dot{\vec{r}}$
+\end_inset
+
+ אפשר לפרק לשני רכיבים: 
+\begin_inset Formula $\dot{\vec{r}}=\dot{r}\hat{r}+r\dot{\theta}\hat{\theta}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L=\mu r\cdot r\dot{\theta}=\mu r^{2}\dot{\theta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו את המשוואה הראשונה כבר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L=\mu r^{2}\dot{\theta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימור אנרגיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+תוכל לפתור את זה לבד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}\mu\dot{\vec{r}}^{2}+V\left(r\right)\\
+ & = & \frac{1}{2}\mu\left(\dot{r}^{2}+r^{2}\dot{\theta}^{2}\right)+V\left(r\right)\\
+ & = & \frac{1}{2}\mu\dot{r}^{2}+\frac{1}{2}\mu r^{2}\dot{\theta}^{2}+V\left(r\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו היא המשוואה השניה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}\mu\dot{r}^{2}+\frac{1}{2}\mu r^{2}\dot{\theta}^{2}+V\left(r\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז יש לנו שתי משוואות שזה מספיק לנו כדי לפתור בעיה בשתי נעלמים.
+ מציבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}\mu\dot{r}^{2}+\frac{1}{2}\mu r^{2}\dot{\theta}^{2}+V\left(r\right)\\
+ & = & \underbrace{\frac{1}{2}\mu\dot{r}^{2}}_{\mbox{Kinetik Energy}}+\underbrace{\frac{L^{2}}{2\mu r^{2}}}_{\begin{matrix}\mbox{Something similar}\\
+\mbox{to potential energy}\end{matrix}}+\underbrace{V\left(r\right)}_{\mbox{Potential Energy}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז צריכים לפתור את המשוואה הדיפרנציאלית.
+ צריכים לדעת מה זה 
+\begin_inset Formula $V\left(r\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיבר 
+\begin_inset Formula $\frac{L^{2}}{2\mu r}$
+\end_inset
+
+ מתנהג כמו אנרגיה פוטנציאלית בזה שהוא תלוי רק במיקום, אזי מגדיירים 
+\begin_inset Formula $V_{eff}\left(r\right)=V\left(r\right)+\frac{L^{2}}{2mr^{2}}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}\mu\dot{r}^{2}+V_{eff}\left(r\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c38d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -kr\hat{r}\\
+V\left(r\right) & = & \frac{1}{2}kr^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{1}{2}\mu\dot{r}^{2}+\frac{L^{2}}{2\mu r^{2}}+\frac{1}{2}kr^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{eff} & = & \frac{L^{2}}{2\mu r^{2}}+\frac{1}{2}kr^{2}\\
+F_{eff} & = & \frac{\partial}{\partial r}V_{eff}\\
+ & = & kr-\frac{L^{2}}{\mu r^{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקודת שיווי המשקל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r_{0}=\left(\frac{L^{2}}{\mu k}\right)^{\frac{1}{4}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+k_{eff} & = & \frac{\partial^{2}V_{eff}}{\partial r^{2}}\vert_{r=r_{0}}\\
+ & = & \left(k+3\frac{L^{2}}{\mu r^{4}}\right)\vert_{r=r_{0}}\\
+ & = & k+3k\\
+ & = & 4k\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי התדירות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\omega & = & \sqrt{\frac{k_{eff}}{\mu}}\\
+ & = & \sqrt{\frac{4k}{\mu}}\\
+ & = & 2\sqrt{\frac{k}{\mu}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מגדירים 
+\begin_inset Formula $\omega_{0}=\sqrt{\frac{k}{\mu}}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\omega=2\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז פותרים את המשוואה הדיפרנציאלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}\mu\dot{r}^{2}+\frac{L^{2}}{2\mu r^{2}}+\frac{1}{2}kr^{2}\\
+\left(\frac{\partial r}{\partial t}\right)^{2} & = & \frac{2R}{\mu}-\frac{L^{2}}{\mu^{2}r^{2}}-\frac{k}{\mu}r^{2}\\
+\frac{\partial r}{\partial t} & = & \sqrt{\frac{2R}{\mu}-\frac{L^{2}}{\mu^{2}r^{2}}-\frac{k}{\mu}r^{2}}\\
+\frac{\partial r}{\sqrt{\frac{2R}{\mu}-\frac{L^{2}}{\mu^{2}r^{2}}-\frac{k}{\mu}r^{2}}} & = & \partial t\\
+\int\frac{\partial r}{\sqrt{\frac{2R}{\mu}-\frac{L^{2}}{\mu^{2}r^{2}}-\frac{k}{\mu}r^{2}}} & = & \int\partial t\\
+\int\frac{\partial r}{\sqrt{\frac{2R}{\mu}-\frac{L^{2}}{\mu^{2}r^{2}}-\frac{k}{\mu}r^{2}}} & = & t-t_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{\partial r}{\sqrt{\frac{2R}{\mu}-\frac{L^{2}}{\mu^{2}r^{2}}-\frac{k}{\mu}r^{2}}} & \overset{\begin{matrix}\xi=r^{2}\\
+\partial r=\frac{\partial\xi}{2\sqrt{\xi}}\end{matrix}}{=} & \int\frac{\partial\xi}{2\sqrt{\xi}\sqrt{\frac{2E}{\mu}-\frac{L^{2}}{\mu^{2}\xi}-\frac{k}{\mu}\xi}}\\
+ & = & \int\frac{\partial\xi}{2\sqrt{\frac{k}{\mu}}\sqrt{-\frac{L^{2}}{\mu k}-\xi^{2}+\frac{2E}{k}\xi}}\\
+ & = & \frac{1}{2\sqrt{\frac{k}{\mu}}}\int\frac{\partial\xi}{\sqrt{-\frac{L^{2}}{\mu k}-\xi^{2}+\frac{2E}{k}\xi}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה דומה לאינטגרל 
+\begin_inset Formula $\int\frac{\partial x}{\sqrt{c^{2}-x^{2}}}=\arcsin\left(\frac{x}{c}\right)$
+\end_inset
+
+ אז עושים השלמה לריבוע.
+ נסמן 
+\begin_inset Formula $\eta=\xi-\frac{E}{k}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\partial\eta=\partial\xi$
+\end_inset
+
+ ו
+\begin_inset Formula $\eta^{2}=\xi^{2}-\frac{2E}{k}\xi+\left(\frac{E}{k}\right)$
+\end_inset
+
+ נציב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2\sqrt{\frac{k}{\mu}}}\int\frac{\partial\xi}{\sqrt{-\frac{L^{2}}{\mu k}-\xi^{2}+\frac{2E}{k}\xi}} & = & \frac{1}{2\omega_{0}}\int\frac{\partial\eta}{\sqrt{\left(\left(\frac{E}{k}\right)^{2}-\frac{L}{\mu k}\right)-\eta^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נדון במקרה ש 
+\begin_inset Formula $\underbrace{\left(\left(\frac{E}{k}\right)^{2}-\frac{L}{\mu k}\right)}_{c}>0$
+\end_inset
+
+ כי אחרת האינטגרל שונה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2\omega_{0}}\int\frac{\partial\eta}{\sqrt{\left(\left(\frac{E}{k}\right)^{2}-\frac{L}{\mu k}\right)-\eta^{2}}} & = & \frac{1}{2\omega_{0}}\int\frac{\partial\eta}{\sqrt{c^{2}-\eta^{2}}}\\
+ & = & \frac{1}{2\omega_{0}}\arcsin\left(\frac{\eta}{c}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור למשוואה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2\omega_{0}}\arcsin\left(\frac{\eta}{c}\right) & = & t-t_{0}\\
+\arcsin\left(\frac{\eta}{c}\right) & = & 2\omega_{0}\left(t-t_{0}\right)\\
+\mu & = & c\sin\left(2\omega_{0}\left(t-t_{0}\right)\right)\\
+r^{2} & = & \frac{E}{k}+\left(\frac{E^{2}}{k^{2}}-\frac{L^{2}}{\mu k}\right)^{\nicefrac{1}{2}}\sin\left(2\omega_{0}\left(t-t_{0}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עדיין צריך למצא את 
+\begin_inset Formula $v_{\theta}$
+\end_inset
+
+.
+ משתמשים בשימור תנע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & \mu r^{2}\theta\\
+\frac{\partial\theta}{\partial t} & = & \frac{L}{\mu r^{2}}\\
+\theta & = & L\frac{\partial t}{\mu r^{2}}\\
+ & = & \frac{L\partial r}{\mu r^{2}\sqrt{\dots}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד תרגיל:
+\end_layout
+
+\begin_layout Standard
+עבור גרביטציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{1}{2}\mu\dot{r}^{2}+\frac{L^{2}}{2\mu r^{2}}-\frac{Gm_{1}m_{2}}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r\left(\theta\right) & = & \frac{r_{0}}{1+\epsilon\sin\left(\theta+\phi\right)}\\
+r_{0} & = & \frac{L^{2}}{GM\mu^{2}}\\
+\epsilon & = & \sqrt{1+\frac{2EL^{2}}{\mu^{3}\left(GM\right)^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+האצאה מס.??
+\end_layout
+
+\begin_layout Standard
+פתרנו בשיעור שעבר בעית פותבאל באוויר בלי גרביטציה בלי כוחות חיצוניים.
+ במערכת המעבדה התקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c39d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial t}\vec{L}\vert_{S}=\frac{\partial}{\partial t}\vert_{S^{\prime}}+\vec{\omega}\times\vec{L}=\underbrace{\vec{N}}_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\lambda\omega_{1}\hat{e}_{1}+\lambda_{2}\omega_{2}\hat{e}_{2}+\lambda_{3}\omega_{3}\hat{e}_{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היום מוסיפים גרביטציה.
+\end_layout
+
+\begin_layout Standard
+אם עובדים במערכת מרכז המסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & -\sum m_{i}g\hat{z}\times\vec{r}_{i}\\
+ & = & g\underbrace{\left\{ \sum m_{i}\vec{r}_{i}\right\} }_{0}\times\hat{z}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז סוף סוף נפתור בעית סוביבון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c39d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \vec{R}\times\left(-mg\hat{z}\right)\\
+ & = & -mgR\left(\hat{e}_{3}\times\hat{z}\right)\\
+N_{3} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגיד כי החרוט הזה הוא סימטרי אזי 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת אוילר אומרת כי 
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{3}\dot{\omega}_{3}-\underbrace{\left(\lambda_{1}-\lambda_{2}\right)}_{0}\omega_{2}\omega_{1} & = & \underbrace{N_{3}}_{0}\\
+\dot{\omega}_{3} & = & 0\\
+\omega_{3} & = & \mbox{Constant}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נתחיל לעזות קירובים, ונתחיל בזה כי נתננו לסביבון מספיק תנע זוויתי)או
+ שהמומנט מספיק חלש( כך שכל מה שלא סביב 
+\begin_inset Formula $\hat{e}_{3}$
+\end_inset
+
+ הוא זניח.
+ כלומר אם נותנים לגוף 
+\begin_inset Formula $\vec{L}\left(0\right)=\lambda_{3}\omega_{3}\left(0\right)\hat{e}\left(0\right)$
+\end_inset
+
+ אזי התנע הזוויתי שלו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}\approx\lambda_{3}\omega_{3}\hat{e}_{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נכתוב משוואת תנועה עבור התנע הזוויתי הזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\vec{L}}{\partial t}\vert_{S} & = & \vec{N}\\
+\lambda_{3}\frac{\partial}{\partial t}\left(m\cdot g\cdot\underbrace{\omega_{3}}_{\mbox{constant}}\cdot\hat{e}_{3}\right) & = & -mgR\left(\hat{e}_{3}\times\hat{z}\right)\\
+\lambda_{3}\omega_{3}\cdot\underbrace{\frac{\partial}{\partial t}\hat{e}_{3}}_{\begin{matrix}\mbox{Not zero}\\
+\mbox{Direction changes}\end{matrix}} & = & -mgR\left(\hat{e}_{3}\times\hat{z}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Omega_{0}=\frac{mgR}{\lambda_{3}\omega_{3}}\hat{z}\Rightarrow\dot{\hat{e}}=\vec{\Omega}_{0}\times\hat{e}_{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו כי בתנועת סיבוב 
+\begin_inset Formula $\frac{\partial}{\partial t}\vec{r}=\vec{\omega}\times\vec{r}$
+\end_inset
+
+ אזי אומרים כי 
+\begin_inset Formula $\Omega_{0}$
+\end_inset
+
+ הוא מהירות זוויתית כרגע)כי יש לו יחידות של 
+\begin_inset Formula $\frac{1}{sec}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+למה זה לא יכול להיות הפתרון? כי יודעים כי בכיוון ציר 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ התנע הזוויתי גם נשמר)כי 
+\begin_inset Formula $\vec{N}$
+\end_inset
+
+ גם ניצב ל
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $N_{z}=0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+אם התחלנו עם תנע זוויתי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}\left(0\right)=\lambda_{3}\omega_{3}\left(0\right)\hat{e}_{3}\left(0\right)\Rightarrow L_{z}=\lambda_{3}\omega_{3}\cos\left(\theta\left(0\right)\right)\]
+
+\end_inset
+
+ ואמרנו כי 
+\begin_inset Formula $L_{z}$
+\end_inset
+
+ צריך להישמר כל הזמן.
+ יודעים כי צריך להיות לגוף עוד תנע זוויתי שזה התע הזוויתי של כל הגוף)במערכת
+ המעבדה( שהוא הסיבוב של מרכז המסה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\underbrace{mR_{\perp}^{2}\Omega_{0}}_{\Delta\vec{L}}+\lambda_{3}\omega_{3}\cos\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר ברגע שהסוביבון יורד מ
+\begin_inset Formula $\theta=90^{\circ}$
+\end_inset
+
+, אזי התנע הזוויתי בציר 
+\begin_inset Formula $z$
+\end_inset
+
+ הוא כבוע והוא מתחיל להסתובב סביב ציר 
+\begin_inset Formula $z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל למה הוא לא נופל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לרצפה? נרשום כחות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\ddot{\vec{R}} & = & \vec{F}_{ext}\\
+ & = & \vec{N}-mg\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הוא לא נופל אזי סכום הכחות הוא אפס.
+\end_layout
+
+\begin_layout Standard
+עדיין התנע הזוויתי בציר 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ צריך להישמר)יש תנע התליתי בכיוון זה כי 
+\begin_inset Formula $\hat{e}$
+\end_inset
+
+ מתפרק ל
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ ו
+\begin_inset Formula $\hat{x}$
+\end_inset
+
+(, אזי אם הזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ תגדל)הגוף נופל( אזי צריך להוסיף תנע זוויתי בכיוון ציר 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ וזה גורם לגוף להסתובב סביב ציר 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+.
+ הגוף לא ממשיך ליפול)להגדיל את 
+\begin_inset Formula $\theta$
+\end_inset
+
+( כי בשביל ליפול צריך לפעול מומנט בכיוון 
+\begin_inset Formula $-\hat{z}$
+\end_inset
+
+ אבל המומנט)אם מסתכלים מנקודה שבה הוא נוגע במשטח( אזי 
+\begin_inset Formula $\vec{N}=\left(-mg\hat{z}\right)\times\vec{R}_{cm}$
+\end_inset
+
+ שזה ניצב ל
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\hat{e}_{3}$
+\end_inset
+
+ כלומר זה בכיוון שגורם לו להסתובב סביב ציר 
+\begin_inset Formula $\hat{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה היא האנרגיה האגורה בגוף המסתובב?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c39d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \sum_{i}\frac{1}{2}m_{i}v_{i}^{2}\\
+ & = & \sum_{i}\frac{1}{2}m_{i}\left(\vec{\omega}\times\vec{r}_{i}\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננסה לפתור את זה בשני שלבים.
+ שלב ראשון יש דיסקית מסתובבת אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\omega}\times\vec{r}_{i}=\omega r_{i}\Rightarrow E_{k}=\frac{1}{2}\underbrace{\left\{ \sum m_{i}r_{i}^{2}\right\} }_{I}\omega^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{k}=\frac{1}{2}I\omega^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם משווים בין תנע קווי ותנע זוויתי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}\mbox{Linear} & \mbox{Angular}\\
+\vec{P}=m\vec{v} & \vec{L}=I\vec{\omega}\\
+E_{k}=\frac{1}{2}mv^{2} & E_{k}=\frac{1}{2}I\omega^{2}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסתכלים על זה עוד פעם במקרה כללי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \sum\frac{1}{2}m_{i}v_{i}^{2}\\
+ & = & \sum\frac{1}{2}m_{i}\left(\vec{\omega}\times\vec{r}_{i}\right)^{2}\\
+ & = & \sum\frac{1}{2}m_{i}\left(\vec{\omega}\times\vec{r}_{i}\right)\left(\vec{\omega}\times\vec{r}_{i}\right)\\
+ & = & \frac{1}{2}\left\{ \sum m_{i}r_{i}^{2}\right\} \omega^{2}-\frac{1}{2}\sum m_{i}\left(\vec{\omega}\cdot\vec{r}_{i}\right)^{2}\\
+ & = & \frac{1}{2}\vec{\omega}\cdot\vec{L}\\
+ & = & \frac{1}{2}\lambda_{1}\omega_{1}^{2}+\frac{1}{2}\lambda_{2}\omega_{2}^{2}+\frac{1}{2}\lambda_{3}\omega_{3}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מה זה תנזור
+\end_layout
+
+\begin_layout Standard
+מה היא המשמעות של זנע זוויתי ששווה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\begin{pmatrix}I_{x} & I_{xy} & I_{xz}\\
+I_{yx} & I_{y} & I_{yz}\\
+I_{zx} & I_{zy} & I_{z}\end{pmatrix}\begin{pmatrix}\omega_{1}\\
+\omega_{2}\\
+\omega_{3}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש איברים רק באלכסון אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{L}=\begin{pmatrix}\lambda_{1} & 0 & 0\\
+0 & \lambda_{2} & 0\\
+0 & 0 & \lambda_{3}\end{pmatrix}\begin{pmatrix}\omega_{1}\\
+\omega_{2}\\
+\omega_{3}\end{pmatrix}\Rightarrow\vec{L}=\begin{pmatrix}\lambda_{1}\omega_{1}\\
+\lambda_{2}\omega_{2}\\
+\lambda_{3}\omega_{3}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל במקרה הכללי)לא רק אלכסון( כל 
+\begin_inset Formula $\omega_{i}$
+\end_inset
+
+ טורם לא רק בכיוון שלו
 \end_layout
 
 \end_body
