@@ -6585,8 +6585,205 @@ x_{3}=0\end{matrix}}{\Rightarrow}f_{3}=\begin{pmatrix}1\\
 
 \end_layout
 
-\begin_layout Standard
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
 
+\begin_layout Standard
+אם נתון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}y_{1}^{\prime}\left(t\right)\\
+\vdots\\
+y_{1}^{\prime}\left(t\right)\end{pmatrix}=\begin{pmatrix}a_{11} & \dots & a_{1n}\\
+\vdots & \ddots & \vdots\\
+a_{n1} & \dots & a_{nn}\end{pmatrix}\begin{pmatrix}y_{1}\left(t\right)\\
+\vdots\\
+y_{n}\left(t\right)\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{1}^{\prime}\left(t\right)=a_{11}y_{1}\left(t\right)+\dots+a_{1n}y_{1}\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עושים קירוב ליניארי 
+\begin_inset Formula $f\left(x+\Delta x\right)\approx f\left(x\right)+f^{\prime}\left(x\right)\Delta x$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{y}\left(t+\Delta t\right) & \approx & \vec{y}\left(t\right)+\Delta t\cdot\vec{y}^{\prime}\left(t\right)\\
+ & = & \vec{y}\left(t\right)+\Delta t\cdot a\cdot\vec{y}\left(t\right)\\
+ & = & \left(E+\Delta t\cdot a\right)\cdot\vec{y}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פולינום אופיני ומטריצות דומות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $T=T_{ef}$
+\end_inset
+
+ היא מטריצת מעבר מבסיס לבסיס אזי 
+\begin_inset Formula $a_{f}=T^{-1}a_{e}T$
+\end_inset
+
+ ו- 
+\begin_inset Formula $a_{e}=Ta_{f}T^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שתי מטריצות דומות הן מטריצות שקיים קשר כזה ביניהם.
+\end_layout
+
+\begin_layout Standard
+רואים כי שתי מטריצות דומות אם יש להם אותה צורה גורדאנית.
+\end_layout
+
+\begin_layout Standard
+למשל אם יש לנו שתי מטריצות הדומות 
+\begin_inset Formula $a_{e}=\begin{pmatrix}\nicefrac{3}{4} & \nicefrac{1}{4}\\
+\nicefrac{1}{4} & \nicefrac{3}{4}\end{pmatrix}$
+\end_inset
+
+ ו- 
+\begin_inset Formula $a_{f}=\begin{pmatrix}1 & 0\\
+0 & \frac{1}{2}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפולינום של 
+\begin_inset Formula $a_{e}$
+\end_inset
+
+ הוא 
+\begin_inset Formula \[
+\left|a_{e}-\lambda I\right|=\left(\frac{3}{4}-\lambda\right)^{2}-\left(\frac{1}{4}\right)^{2}=\left(1-\lambda\right)\left(\frac{1}{2}-\lambda\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והפולינום של 
+\begin_inset Formula $a_{f}$
+\end_inset
+
+ הוא אותו דבר
+\end_layout
+
+\begin_layout Standard
+נוכיח את התכונה הזו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{a_{e}}\left(x\right) & = & P_{a_{e}}\left(x\right)\\
+\left|a-\lambda I\right| & = & \left|TaT^{-1}-T\lambda IT^{-1}\right|\\
+ & = & \left|T\left(a-\lambda I\right)T^{-1}\right|\\
+ & = & \left|T\right|\left|a-\lambda I\right|\left|T^{-1}\right|\\
+ & = & \left|T\right|\cdot\left|T\right|^{-1}\left|a-\lambda I\right|\\
+ & = & \left|a-\lambda I\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקדמים של פולינום אופיני הם אינורינטים של האופרטור.
+\end_layout
+
+\begin_layout Standard
+במקרה שלנו 
+\begin_inset Formula $P_{a_{e}}=\lambda^{2}-\frac{3}{2}+\frac{1}{2}$
+\end_inset
+
+ אזי אם מסמנים את סכום האלכסון של המטריצה ב 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ והדיטרמיננטה ב 
+\begin_inset Formula $\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P_{a_{e}}=\lambda^{2}-\sigma\lambda+\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במתמטיקה מסמנים סכום של אלכסון: 
+\begin_inset Formula $a_{11}+a_{22}+\dots+a_{nn}=\sum_{i}^{n}a_{ii}=\mbox{tr}\left(a\right)$
+\end_inset
+
+ שרואים לזה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Trace
+\end_layout
+
+\begin_layout Standard
+אזי אם לא מתקיים 
+\begin_inset Formula $\mbox{tr}\left(a_{e}\right)=\mbox{tr}\left(a_{f}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|a_{e}\right|=\left|a_{f}\right|$
+\end_inset
+
+ אז המטריצות לא דומות.
+ אבל אם זה מתקיים זה לא אומר שהם דומות
 \end_layout
 
 \end_body

@@ -13313,5 +13313,683 @@ Hall
 ( 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+למה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+hall
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G\left(V_{1},V_{2},E\right)$
+\end_inset
+
+ עץ דו צדדי 
+\begin_inset Formula $\left|V_{1}\right|=\left|V_{2}\right|$
+\end_inset
+
+אזי אם קיים ב 
+\begin_inset Formula $G$
+\end_inset
+
+ זיווג מושלם אם"ם 
+\begin_inset Formula $\forall S\subseteq V_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|\Gamma\left(S\right)\right|\geq\left|S\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה מידית ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Hall
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+בגף דו צדדי 
+\begin_inset Formula $k$
+\end_inset
+
+-רגולרי 
+\begin_inset Formula $\left(k\geq1\right)$
+\end_inset
+
+ קיים זיווג מושלם
+\end_layout
+
+\begin_layout Standard
+הוכחה: ראשית מספר הצלעות בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+: 
+\begin_inset Formula $\left|E\right|=k\cdot\left|V_{1}\right|=k\left|V_{2}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $S\subseteq V_{1}$
+\end_inset
+
+ אזי מספר הקשתות החלות בקודקודי 
+\begin_inset Formula $S$
+\end_inset
+
+: 
+\begin_inset Formula $\left|S\right|\cdot k$
+\end_inset
+
+ מספר הצלעות החלות ב
+\begin_inset Formula $S$
+\end_inset
+
+ מוכלת במספר הצלעות החלות ב
+\begin_inset Formula $\Gamma\left(S\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $k\cdot\left|S\right|\leq k\left(\Gamma\left(S\right)\right)\Rightarrow\left|S\right|\leq\left|\Gamma\left(S\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסלול מתחלף ביחס לזיווג:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(v_{i},v_{i+1}\right)$
+\end_inset
+
+ היא קשת אזי אם 
+\begin_inset Formula $\forall\left(i\neq j\right):\left(v_{i},v_{i+1}\right)\neq\left(v_{j},v_{j+1}\right)$
+\end_inset
+
+ יהי 
+\begin_inset Formula $C$
+\end_inset
+
+ זיווג בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ מסלול מתחלף ב
+\begin_inset Formula $G$
+\end_inset
+
+ הוא מסלול שהצלעות בו שונות ולא-שייכות לזיווג 
+\begin_inset Formula $C$
+\end_inset
+
+, לסירוגין.
+\end_layout
+
+\begin_layout Standard
+מסלול מרחיב:
+\end_layout
+
+\begin_layout Standard
+מסלול מתחלף 
+\begin_inset Formula $p$
+\end_inset
+
+ יקרא מרחיב אם הקודקוד הראשון והאחרון במסלול שונים ואינם חלים בקשת השייכת
+ לזיווג 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף לא מכוון ויהי 
+\begin_inset Formula $C$
+\end_inset
+
+ זיווג ב 
+\begin_inset Formula $G$
+\end_inset
+
+ אזי הזיווג 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא זיווג בעל מספר מקסימאלי של צלעות ב
+\begin_inset Formula $G$
+\end_inset
+
+ אם"ם ב
+\begin_inset Formula $G$
+\end_inset
+
+ לא קיים מסלול מרחיב ביחס למסלול 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+כיוון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+: נניח כי קיים מסלול מרחיב ב 
+\begin_inset Formula $G$
+\end_inset
+
+ ביחס לזיווג 
+\begin_inset Formula $C$
+\end_inset
+
+.יהי 
+\begin_inset Formula $p$
+\end_inset
+
+ המסלול המרחיב אזי נגדיור מזיווג חדש שמורכב מהצלעות של הזיווג 
+\begin_inset Formula $C$
+\end_inset
+
+ שאינן ב
+\begin_inset Formula $p$
+\end_inset
+
+ ועוד הצלעות של 
+\begin_inset Formula $p$
+\end_inset
+
+ שאינן ב
+\begin_inset Formula $C$
+\end_inset
+
+, אז הגדלנו את הצלעות בזיווג.
+\end_layout
+
+\begin_layout Standard
+נניח כי הזיווג 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא איננו זיווג מקסימאלי אזי קיים זיווג 
+\begin_inset Formula $D$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $\left|D\right|>\left|C\right|$
+\end_inset
+
+.
+ אזי נסתכל על 
+\begin_inset Formula $D\Delta C=\left(D\setminus C\right)\cup\left(C\setminus D\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבוןן בגרף 
+\begin_inset Formula $\hat{G}=\hat{G}\left(V,D\Delta C\right)$
+\end_inset
+
+ מה דרגת הקודקודים ב
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+, אפשר להיות 
+\begin_inset Formula $\deg v=0,1,2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתבונן בגרף שבו כל הקודקודים הם מדרגה 
+\begin_inset Formula $0,1,2$
+\end_inset
+
+.
+ מתחילים מ
+\begin_inset Formula $v\in V$
+\end_inset
+
+.
+ אם הדרגה היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אז זה מחלקת שקילות.
+ אם 
+\begin_inset Formula $\deg v=1,2$
+\end_inset
+
+ אזי ממשיכים.
+ אי אפשר לעבור על קודקוד שכבר היינו בו כי אז מקבלים 
+\begin_inset Formula $\deg v=3$
+\end_inset
+
+.
+ אזי מקבלים מעגל או מסלול בלי מעגלים.
+ כל רכיב קשירות בגרף שבו לכל קודקוד דרגה 
+\begin_inset Formula $0,1,2$
+\end_inset
+
+ הוא או קודקוד בודד)דרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+( או מסלול פשוט או מעגל פשוט.
+\end_layout
+
+\begin_layout Standard
+אפיון זה נכון לגרף 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ יודעים כי 
+\begin_inset Formula $\left|D\right|>\left|C\right|$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left|D\setminus C\right|>\left|C\setminus D\right|$
+\end_inset
+
+....
+ מסלול פשוט כזה הוא מסלול מרחיב.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+זיווגים
+\end_layout
+
+\begin_layout Standard
+הגדרה: יהי 
+\begin_inset Formula $G=G\left(V,E\right)$
+\end_inset
+
+ גרף בהינתן 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ נסמן ב 
+\begin_inset Formula $\alpha_{S}$
+\end_inset
+
+ את מספר רכיבי הקשירות של 
+\begin_inset Formula $G\setminus S$
+\end_inset
+
+ שבהם מספר אי זוגי של קודקודים.
+ רכיב קשירות 
+\begin_inset Formula $G\setminus S$
+\end_inset
+
+ בעל מספר אי זוגי של קודקודים חייב להכיל קודקוד שבן זוגו נמצא ב
+\begin_inset Formula $S$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Tutte
+\end_layout
+
+\begin_layout Standard
+בגרף 
+\begin_inset Formula $G=G\left(V,E\right)$
+\end_inset
+
+ )לא מכוון( קיים זיווג מושלם אם ורק אם לכל תת קבוצה 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ 
+\begin_inset Formula $\alpha_{S}\leq\left|S\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעית מנייה בגרפים
+\end_layout
+
+\begin_layout Subsection
+עצים מתוייגים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename discreetmath/somestupiddrawing.svg
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Cayley
+\end_layout
+
+\begin_layout Standard
+מספר העצים המתוייגים בעלי 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים היא 
+\begin_inset Formula $n^{n-2}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n\geq2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: נראה כי מתקיימת התאמה חד חד ערכית ועל מאוסף העצים המתוייגים לאוסף
+ הסדרות 
+\begin_inset Formula $\left(a_{1},\dots,a_{n-2}\right)$
+\end_inset
+
+ כך ש
+\begin_inset Formula $1\leq a_{i}\leq n$
+\end_inset
+
+)מספר סדרות כנ"ל יש 
+\begin_inset Formula $n^{n-2}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מעץ מתוייג לסדרה באורך 
+\begin_inset Formula $n-2$
+\end_inset
+
+ של מספרים בין 
+\begin_inset Formula $1$
+\end_inset
+
+ ל-
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נמצא את העלה בעל התייוג המינימאלי.
+\end_layout
+
+\begin_layout Enumerate
+נרשום בסדרה את הקדקוד המחובר לאותו עלה
+\end_layout
+
+\begin_layout Enumerate
+נמחק הצלע המחברת רותם
+\end_layout
+
+\begin_layout Enumerate
+נחזור על הפעולה עם העץ שנשאר אחרי המחיקה
+\end_layout
+
+\begin_layout Standard
+אחרי 
+\begin_inset Formula $n-2$
+\end_inset
+
+ מחיקות נעצור ונקבל סדרה כנדרש.
+\end_layout
+
+\begin_layout Standard
+נבנה פונקציה)הפוכה?( ונקראה לה 
+\begin_inset Formula $g$
+\end_inset
+
+ שהיא מאוסף הסדרות לאוסף העצים:
+\end_layout
+
+\begin_layout Standard
+)נו תחשוב לבד!(
+\end_layout
+
+\begin_layout Standard
+רואים כי 
+\begin_inset Formula $f\circ g$
+\end_inset
+
+ היא הזהות, לכן הפונקציה חד חד ערכית ועל ולכן יש להם אותו מספר איברים.
+\end_layout
+
+\begin_layout Subsection
+עץ לא מתוייג
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $T_{1},T_{2},T_{3}$
+\end_inset
+
+ עצים בעלי 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים נאמר כי 
+\begin_inset Formula $T_{1}$
+\end_inset
+
+ איזומורפי ל
+\begin_inset Formula $T_{2}$
+\end_inset
+
+ אם קיימת העתקה 
+\begin_inset Formula $f:T_{1}\to T_{2}$
+\end_inset
+
+ הממירה קודקודים לקודקודים וצלעות לצלעות.
+\end_layout
+
+\begin_layout Standard
+כמה עצים לא מתוייגים בעלי 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ישנם?
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.??
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

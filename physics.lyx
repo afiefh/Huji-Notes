@@ -11226,16 +11226,12 @@ E_{k} & = & \sum\frac{1}{2}m_{i}v_{i}^{2}\\
 \end_layout
 
 \begin_layout Standard
-מה היא המשמעות של זנע זוויתי ששווה:
+כתבנו את המשוואה
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula \[
-\vec{L}=\begin{pmatrix}I_{x} & I_{xy} & I_{xz}\\
-I_{yx} & I_{y} & I_{yz}\\
-I_{zx} & I_{zy} & I_{z}\end{pmatrix}\begin{pmatrix}\omega_{1}\\
-\omega_{2}\\
-\omega_{3}\end{pmatrix}\]
+\vec{L}=I\vec{\omega}\]
 
 \end_inset
 
@@ -11243,7 +11239,69 @@ I_{zx} & I_{zy} & I_{z}\end{pmatrix}\begin{pmatrix}\omega_{1}\\
 \end_layout
 
 \begin_layout Standard
-אם יש איברים רק באלכסון אזי 
+כלומר הכיוון של 
+\begin_inset Formula $\vec{L}$
+\end_inset
+
+ הוא אותו כיוון של 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+.
+ אבל ראינו כבר שזה לא נכון למקרים היותר מסובכים שבהם 
+\begin_inset Formula $\vec{L}$
+\end_inset
+
+ ו-
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+ הם לא באותו כיוון.
+ המשוואה שכתבנו היא עדיין נכונה במקרים הפשוטים, אבל במקרים היותר מסובכים
+ נצטרך להשתמש בתנזור שזה 
+\begin_inset Formula $\tilde{I}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{I} & = & \begin{pmatrix}I_{x} & I_{xy} & I_{xz}\\
+I_{yx} & I_{y} & I_{yz}\\
+I_{zx} & I_{zy} & I_{z}\end{pmatrix}\\
+\vec{L} & = & \tilde{I}\vec{\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המקרה הפרטי שהתעשקנו בו מקודם הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{I}=I\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\end{pmatrix}\Rightarrow\vec{L}=I\cdot\underbrace{\begin{pmatrix}1 & 0 & 0\\
+0 & 1 & 0\\
+0 & 0 & 1\end{pmatrix}\cdot\vec{\omega}}_{\vec{\omega}}=I\vec{\omega}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל ברור שאפשר להשתמש בזה להביע דברים הרבה יותר מסובכים למשל אם 
+\begin_inset Formula $\tilde{I}=\begin{pmatrix}\lambda_{1} & 0 & 0\\
+0 & \lambda_{2} & 0\\
+0 & 0 & \lambda_{3}\end{pmatrix}$
+\end_inset
+
+ שזה עדיין פשוט יחסית מקבלים
 \end_layout
 
 \begin_layout Standard
@@ -11261,12 +11319,1238 @@ I_{zx} & I_{zy} & I_{z}\end{pmatrix}\begin{pmatrix}\omega_{1}\\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
 \begin_layout Standard
-אבל במקרה הכללי)לא רק אלכסון( כל 
-\begin_inset Formula $\omega_{i}$
+הדגמה בכיתה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c40d1.svg
+	lyxscale 20
+	width 100text%
+
 \end_inset
 
- טורם לא רק בכיוון שלו
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\vec{L}}{\partial t}=\lambda_{3}\omega_{3}\frac{mp}{\partial t}\hat{e}_{3}=\vec{R}\times\vec{F}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תרגילים:
+\end_layout
+
+\begin_layout Standard
+מה 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+ של המערכת הבאה אם יודעים כי החיכוך מספיק חזק כך שהוא לא יחליק
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c40d2.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לפתור הבעיה סביב נקודת ראשית הצירים 
+\begin_inset Formula $\vec{0}$
+\end_inset
+
+ או סהיה מרכז המסה 
+\begin_inset Formula $\vec{r}_{cm}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cm}:E_{k} & = & \underbrace{\frac{1}{2}mv_{cm}^{2}}_{\begin{matrix}\mbox{speed of the}\\
+\mbox{center of mass}\end{matrix}}+\underbrace{\frac{1}{2}\Omega\tilde{I}\Omega}_{\begin{matrix}\mbox{spin around}\\
+\mbox{center of mass}\end{matrix}}+\underbrace{\frac{1}{2}\lambda_{3}\omega_{3}^{2}}_{\mbox{spin around }\hat{e}_{3}}\\
+\vec{0}:E_{k} & = & \frac{1}{2}\Omega\tilde{I}_{0}\Omega+\frac{1}{2}\lambda_{3}\omega_{3}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ברור כי 
+\begin_inset Formula $\tilde{I}\neq\tilde{I}_{0}$
+\end_inset
+
+ כי חישבנו אותם סביב נקודות שונות.
+\end_layout
+
+\begin_layout Standard
+החרוט סימטרי אזי 
+\begin_inset Formula $\lambda_{1}=\lambda_{2}=\lambda_{\perp}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{0}:\frac{1}{2}\Omega\tilde{I}_{0}\Omega & = & \frac{1}{2}\lambda_{1}\Omega_{1}^{2}+\frac{1}{2}\lambda_{2}\Omega_{2}^{2}+\frac{1}{2}\lambda_{3}\omega_{3}^{2}\\
+ & = & \frac{1}{2}\lambda_{\perp}\underbrace{\left(\Omega_{1}^{2}+\Omega_{2}^{2}\right)}_{\Omega_{\perp}^{2}}+\frac{1}{2}\lambda_{3}\Omega_{3}^{2}\\
+ & = & \frac{1}{2}\lambda_{\perp}\Omega_{\perp}^{2}+\frac{1}{2}\lambda_{3}\Omega_{3}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי רוצים לכתוב מה זה 
+\begin_inset Formula $\Omega_{3},\Omega_{\perp}$
+\end_inset
+
+, מהציור רואים כי זה פשוט חילוק לשתי צירים דרך 
+\begin_inset Formula $\cos\alpha$
+\end_inset
+
+ ו
+\begin_inset Formula $\sin\alpha$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{0}:\Omega\tilde{I}_{0}\Omega=\frac{1}{2}\lambda_{\perp}\Omega^{2}\cos^{2}\alpha+\frac{1}{2}\lambda_{3}\Omega^{2}\sin^{2}\alpha\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל 
+\begin_inset Formula $\omega_{3}$
+\end_inset
+
+ זה מקבלים מזה שאין החלקה.
+ אם 
+\begin_inset Formula $\vec{b}$
+\end_inset
+
+ הוא וקטור ממרכז החרוט לרדיוסו אזי אפשר לכתוב את המהירות כפונקציה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ או כפונקציה של 
+\begin_inset Formula $\omega_{3}$
+\end_inset
+
+ כי אין החלקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{a} & = & \vec{\Omega}\times\vec{a}\\
+v_{a} & = & -\vec{\omega}_{3}\times\vec{b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{e}=-\frac{a}{b}\Omega=-\frac{\Omega}{\sin\alpha}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי בעצם פתרנו את הבעיה.
+\end_layout
+
+\begin_layout Standard
+מה היה קורה אם היינו מתחילים את הכל סביב מרכז המסה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{v}_{cm} & = & \vec{\Omega}\times\vec{R}_{cm}\\
+ & = & \Omega R\sin\left(\frac{\pi}{2}-\alpha\right)\\
+ & = & \Omega R\cos\left(\alpha\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי במשוואה הראשונה היינו מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{cm}:E_{k}=\frac{1}{2}\left\{ mR^{2}+\lambda_{\perp}^{\mbox{cm}}\right\} \cos^{2}\alpha+\lambda_{3}\left(\sin^{2}\alpha+\frac{1}{\sin^{2}\alpha}\right)\Omega^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי שהפתרון בשתי המשוואות יהיה שווה אזי צריך להתקיים 
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{\perp} & = & \lambda_{\perp}^{\mbox{cm}}+mR^{2}\\
+I_{\perp} & = & I_{\perp}^{\mbox{cm}}+mR^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c40d3.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\omega\left(0\right)=0$
+\end_inset
+
+ אז מה זה 
+\begin_inset Formula $E_{k}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+מסמנים 
+\begin_inset Formula $\Delta\vec{P}$
+\end_inset
+
+ הוא השינוי בתנע.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Delta\vec{P}=\vec{F}dt=\tau\Rightarrow v_{0}=\frac{\tau}{m}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להגיע למצב שבו הכדור מתגלגל ולא מחליק על המשטח, אזי היחס בין הסיבוב
+ והמהירות צריך להיות 
+\begin_inset Formula \begin{eqnarray*}
+\omega R & = & v_{0}\\
+\omega & = & \frac{v_{0}}{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הגדור נע אזי יש חיכוך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\vec{P}}{\partial t} & = & -f\\
+\frac{\partial\vec{v}}{\partial t} & = & -\frac{f}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\left(t\right)=v_{0}-\frac{f}{m}t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\vec{L}}{\partial t} & = & \vec{N}\\
+\frac{\partial}{\partial t}\left(I\omega\right) & = & \vec{R}\times\vec{f}\\
+\frac{\partial\omega}{\partial t} & = & \frac{Rf}{I}\\
+\int\frac{\partial\omega}{\partial t}\partial t & = & \int\frac{Rf}{I}\partial t\\
+\omega\left(t\right) & = & \frac{Rf}{I}t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר מגיעים למצב 
+\begin_inset Formula $R\cdot\omega\left(t\right)=v\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לחיכוך אין עבודה.
+ יודעים כי אם נתון כדור אזי 
+\begin_inset Formula $I=\frac{2}{5}mR^{2}$
+\end_inset
+
+.
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R\omega & = & \frac{R^{2}mg\mu}{I}t=\frac{5}{2}\mu gt\\
+v\left(t\right) & = & v_{0}-\frac{mg\mu}{m}t=v_{0}-\mu gt\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{5}{2}\mu gt_{1} & = & v_{0}-\mu gt_{1}\\
+t_{1} & = & \frac{2}{7}\frac{v_{0}}{\mu g}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עד זמן 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ הוא גם מחליק וגם מתגלגל, אחרי 
+\begin_inset Formula $t_{1}$
+\end_inset
+
+ הוא רק מתגלגל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{k} & = & \frac{1}{2}mv_{cm}^{2}\left(t_{1}\right)+\frac{1}{2}I\omega^{2}\left(t_{1}\right)=\frac{5}{2}E_{k}\left(0\right)\\
+E_{k}\left(0\right) & = & \frac{1}{2}mv_{0}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Section
+יחסות פרטית
+\end_layout
+
+\begin_layout Standard
+יודעים כבר שאין הבדל בין מערךת אינרציאלית לאחרת.
+\end_layout
+
+\begin_layout Standard
+תורת היחסות מוסיפה כי מהירות האור 
+\begin_inset Formula $c$
+\end_inset
+
+ קבועה בכל המערכות.
+\end_layout
+
+\begin_layout Standard
+ניסוי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c41d1.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שני מאורעים: האור מגיע למראה ב 
+\begin_inset Formula $x_{1},t_{1}$
+\end_inset
+
+ וחוזרת לחישן ב
+\begin_inset Formula $x_{1},t_{2}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\Delta t_{S_{0}}=\frac{2h}{c}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם אנחנו ברכבת ונוסעים במהירות 
+\begin_inset Formula $v$
+\end_inset
+
+ אזי המאורע הראשון יקרה ב 
+\begin_inset Formula $x_{1}^{\prime},t_{1}^{\prime}$
+\end_inset
+
+ והשני ב 
+\begin_inset Formula $x_{2}^{\prime},t_{2}^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מה זה משפיע כי מהירות האור בשתי המערכות שווה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c\Delta t^{\prime} & = & 2l=2\sqrt{\frac{1}{4}V^{2}\Delta t^{\prime^{2}}+h^{2}}\\
+\Delta t^{\prime^{2}} & = & \frac{4}{c^{2}}\left(\frac{1}{4}V^{2}\Delta t^{\prime}+h^{2}\right)\\
+ & = & \left(\frac{V}{c}\right)^{2}\Delta t^{\prime^{2}}+\frac{4h^{2}}{c^{2}}\\
+\Delta t & = & \frac{2h}{c}\cdot\overbrace{\frac{1}{\sqrt{1-\left(\frac{V}{c}\right)^{2}}}}^{\gamma}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר הזמן שהאדם ברציף מדד יהיה אחר מהזמן שהאדם ברכבת מדד.
+\end_layout
+
+\begin_layout Standard
+מסמנים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Delta t_{S}^{\prime}=\Delta t_{S_{0}}\cdot\gamma\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תמיד המערכת שבה שתי המאורעים היו באותו מקום תמדוד הזמן המינימאלי.
+\end_layout
+
+\begin_layout Standard
+ניסוי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+רוצים למדוד את 
+\begin_inset Formula $L_{0}$
+\end_inset
+
+ של בנינן מסויים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c41d2.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב 
+\begin_inset Formula $S_{0}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B & \to & \left(B\leftrightarrow A,t_{1}\right)\\
+C & \to & \left(C\leftrightarrow A,t_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula \begin{eqnarray*}
+v_{s_{0}} & = & \frac{L_{0}}{\Delta t_{0}}\\
+\Delta t_{0} & = & t_{2}-t_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת 
+\begin_inset Formula $S$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & \to & \left(B\leftrightarrow A,t_{1}^{\prime}\right)\\
+A & \to & \left(C\leftrightarrow A,t_{2}^{\prime}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{s}=\frac{L^{\prime}}{\Delta t_{s}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{s_{0}}=v_{s}\Rightarrow\frac{L^{\prime}}{\Delta t_{s}}=\frac{L_{0}}{\Delta t_{s_{0}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L^{\prime}=\frac{\Delta t_{s}}{\Delta t_{s_{0}}}L_{0}=\frac{1}{\gamma}L_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.??
+\end_layout
+
+\begin_layout Standard
+גוף קשיח מסתובב סביב מרכז המסהשלו במהירות זוויתית 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+.
+ לחשב האנרכיה של הגוף מחלקים אותו לחלקים רטנים: 
+\begin_inset Formula $\vec{v}_{i}=\vec{\omega}\times\vec{r}_{i}$
+\end_inset
+
+ לכן 
+\begin_inset Formula \begin{eqnarray*}
+E_{k_{i}} & = & \sum\frac{1}{2}m_{i}\left(\vec{\omega}\times\vec{r}_{i}\right)^{2}\\
+ & = & \sum\frac{1}{2}m_{i}\omega^{2}r_{i_{\perp}}^{2}\\
+ & = & \frac{1}{2}\omega^{2}\underbrace{\sum m_{i}r_{i_{\perp}}^{2}}_{I}\\
+ & = & \frac{1}{2}\omega^{2}I\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I$
+\end_inset
+
+ זה מומנט ההתמד של הגוף ומבנה הגוף במרחב והציר שבחרנו.
+\end_layout
+
+\begin_layout Standard
+תנע זוויתי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \sum r_{i}\times\left(m\dot{\vec{r}}_{i}\right)\\
+ & = & \sum m_{i}\left(\vec{r}_{i_{\perp}}+\vec{r}_{i_{\parallel}}\right)\times\left(\vec{\omega}\times\vec{r}_{i_{\perp}}\right)\\
+ & = & \sum m_{i}\vec{r}_{i_{\perp}}\times\left(\vec{\omega}\times\vec{r}_{i_{\perp}}+m_{i}\vec{r}_{i_{\parallel}}\times\left(\vec{\omega}\times\vec{r}_{i_{\perp}}\right)\right)\\
+ & = & \sum m_{i}r_{i_{\perp}}\omega+\sum m_{i}r_{i_{\parallel}}r_{i_{\perp}}\omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל זה רק וקטור כדי לקבל את הכיוון עושים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{L} & = & \sum_{i}m_{i}r_{i_{\perp}}^{2}\vec{\omega}-\sum_{i}m_{i}r_{i_{\parallel}}\vec{r}_{i_{\parallel}}\omega\\
+ & = & I\vec{\omega}-\sum m_{i}r_{i_{\parallel}}\vec{r}_{i_{\perp}}\omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתי אפשר לכתוב פשוט 
+\begin_inset Formula $\vec{L}=I\vec{\omega}$
+\end_inset
+
+? 
+\end_layout
+
+\begin_layout Enumerate
+אם הגוף מישורי)דו מימדי( ו-
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+ ניצב למישור.
+\end_layout
+
+\begin_layout Enumerate
+אם הגוף סימטרי סביב ציר הסיבוב.
+\end_layout
+
+\begin_layout Standard
+נשווה בין העולם הקווי והעולם הזוויתי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}\mbox{Linear} &  & \mbox{Angular}\\
+\vec{x} & \Rightarrow & \vec{\theta}\\
+\vec{v}=\dot{\vec{x}} & \Rightarrow & \vec{\omega}=\dot{\vec{\theta}}\\
+\vec{a}=\ddot{\vec{x}} & \Rightarrow & \vec{\alpha}=\ddot{\vec{\theta}}\\
+m & \Rightarrow & I\\
+E_{k}=\frac{1}{2}mv^{2} & \Rightarrow & E_{k}=\frac{1}{2}I\omega^{2}\\
+\vec{P}=m\vec{v} & \Rightarrow & \vec{L}=I\vec{\omega}\\
+\vec{\tau}=I\dot{\vec{\omega}} & \Rightarrow & \vec{F}=\dot{\vec{P}=m\dot{\vec{v}}}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הגוף הור רציף משתמשים ב 
+\begin_inset Formula $\rho\left(\vec{r}\right)\partial V$
+\end_inset
+
+ במקום 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ ואינטגרל במקום סכום.
+\end_layout
+
+\begin_layout Section
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c42d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדור בעל צפיפות אחידה 
+\begin_inset Formula $\rho$
+\end_inset
+
+ מסתבב סביב המרכז:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{\perp} & = & r\sin\theta\\
+\rho\left(\vec{r}\right) & = & \rho\\
+\partial V & = & r^{2}\sin\theta\partial r\partial\theta\partial\varphi\\
+M & = & \frac{4}{3}\pi R^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I & = & \intop_{0}^{R}\intop_{0}^{\pi}\intop_{0}^{2\pi}\underbrace{r^{2}\sin^{2}\theta}_{r_{\perp}^{2}}\rho\underbrace{r^{2}\sin\theta\partial\varphi\partial\theta\partial r}_{\partial V}\\
+ & = & 2\pi\rho\intop_{0}^{R}\intop_{0}^{\pi}r^{4}\sin^{3}\theta\partial\theta\partial r\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{\pi}\sin^{3}\theta\partial\theta & = & \int_{0}^{\pi}\sin\theta\left(1-\cos^{2}\theta\right)\\
+ & = & -\cos\theta\vert_{0}^{\pi}+\frac{1}{3}\cos^{3}\theta\vert_{0}^{\pi}\\
+ & = & \frac{4}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I & = & 2\cdot\frac{4}{3}\pi\rho\intop_{0}^{R}r^{4}\partial r\\
+ & = & \frac{2}{5}\left(\frac{4}{3}\pi\rho\right)R^{2}\\
+ & = & \frac{2}{5}MR^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c42d2.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה היא מהירות הקצה רגע לאחר פעולת המתקף?
+\end_layout
+
+\begin_layout Standard
+משתמשים בשימור נתע קווי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta P & = & mv_{cm}\\
+v_{cm} & = & \frac{\Delta P}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האם זו היא המהיאות של הנקודה 
+\begin_inset Formula $A$
+\end_inset
+
+? לא כי זה גם מסתובב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta\tau & = & \vec{L}\\
+\Delta P\cdot l & = & I\omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי מומנט ההתמד של מוט הוא
+\begin_inset Formula \begin{eqnarray*}
+I & = & \frac{1}{12}m\left(2l\right)^{2}\\
+ & = & \frac{ml^{2}}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta Pl & = & \frac{1}{3}ml^{2}\omega\\
+\omega & = & \frac{3\Delta P}{ml}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{A} & = & v_{cm}+\omega l\\
+ & = & \frac{\Delta P}{m}+\frac{3\Delta P}{ml}l\\
+ & = & \frac{4\Delta P}{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הערות
+\end_layout
+
+\begin_layout Standard
+מומנט התמד של שתי גופים זה 
+\begin_inset Formula $I_{1+2}=I_{1}+I_{2}$
+\end_inset
+
+ אם מחשביםסביב אותה נקודה.
+\end_layout
+
+\begin_layout Standard
+משפט שתינר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Steiner
+\lang hebrew
+ : אם יש לנו 
+\begin_inset Formula $I_{cm}$
+\end_inset
+
+ הוא מומנט ההתמד סביב ציר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שעובר דרך מרכז המסה, אם רוצים לקבל את מומנט לציר מקביל לציר מרכז המסה אזי
+ 
+\begin_inset Formula $I^{\prime}=I+MR_{cm}^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c42d3.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה צריכה להיות 
+\begin_inset Formula $h$
+\end_inset
+
+ כדי שהכדור יתגלגל)ולא יחליק( על המסילה בלי ליפול?
+\end_layout
+
+\begin_layout Standard
+צריכים לקיים 
+\begin_inset Formula \begin{eqnarray*}
+mg & = & m\frac{v^{2}}{R}\\
+v & = & \sqrt{gR}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא את 
+\begin_inset Formula $h$
+\end_inset
+
+ משימור אנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+mgh=mg2R+\frac{1}{2}mgR+\frac{1}{2}I\omega^{2}\]
+
+\end_inset
+
+אזי צריכים 
+\begin_inset Formula $I=\frac{2}{5}mr^{2}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\omega$
+\end_inset
+
+.
+ איך נמצא את 
+\begin_inset Formula $\omega$
+\end_inset
+
+? אם הכדור מתגלגל ללא החלקה צריך להיות 
+\begin_inset Formula $\omega=\frac{v}{r}$
+\end_inset
+
+ אזי נציב ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+mgh & = & 2mgR+\frac{1}{2}mgR+\frac{1}{2}\cdot\frac{2}{5}mr^{2}\frac{gR}{r^{2}}\\
+gh & = & 2gR+\frac{1}{2}gR+\frac{1}{5}r^{2}\frac{gR}{r^{2}}\\
+h & = & 2R+\frac{1}{2}R+\frac{1}{5}r^{2}\frac{R}{r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c42d4.svg
+	lyxscale 30
+	width 50cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה זה 
+\begin_inset Formula $\vec{L}\neq I\vec{\omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/d42c5.svg
+	lyxscale 30
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\tau}=\dot{\vec{L}}=\vec{\omega}\times\vec{L}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר מערכת צירים כך ש 
+\begin_inset Formula $z$
+\end_inset
+
+ ניצב לדיסקה ו
+\begin_inset Formula $x$
+\end_inset
+
+ יושב על הדיסקה
+\end_layout
+
+\begin_layout Standard
+אפשר לפרק את 
+\begin_inset Formula $\vec{\omega}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\omega} & = & \omega\sin\alpha\hat{x}+\omega\cos\alpha\hat{z}\\
+\vec{L} & = & L_{x}\hat{x}+L_{z}\hat{z}\\
+ & = & I_{x}\omega\sin\alpha\hat{x}+I_{z}\omega\cos\alpha\hat{z}\\
+ & = & \left(\frac{1}{4}ma^{2}\right)\omega\sin\alpha\hat{x}+\left(\frac{1}{2}a^{2}\right)\omega\cos\alpha\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סים לב כי לציר 
+\begin_inset Formula $x$
+\end_inset
+
+ יש פקטור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ מעל ציר 
+\begin_inset Formula $z$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\vec{L}$
+\end_inset
+
+ לא מקביל ל 
+\begin_inset Formula $\omega$
+\end_inset
+
+
 \end_layout
 
 \end_body

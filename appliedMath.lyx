@@ -55,6 +55,38 @@
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+ספר טוב כדי להוסיף חומר:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Thomas' Calculus
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 תרגול מס.
 \numeric on
@@ -11329,6 +11361,1108 @@ f\left(x,y,z\right)=\pm\sqrt{\frac{12}{11}}\left(1+\frac{1}{2}+\frac{1}{3}\right
 \begin_layout Standard
 \begin_inset Formula \[
 \mbox{max}_{D}f=\sqrt{\frac{11}{3}},\mbox{min}_{D}=-\sqrt{\frac{11}{3}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.??
+\end_layout
+
+\begin_layout Section
+נגזרות חלקיות מסדר גבוה וטור טילור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{xx} & = & \frac{\partial^{2}f}{\partial x\partial x}\\
+f_{xy} & = & \frac{\partial^{2}f}{\partial y\partial x}\\
+f_{yx} & = & \frac{\partial^{2}f}{\partial x\partial y}\\
+f_{yy} & = & \frac{\partial^{2}f}{\partial y\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(x,y\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $f_{xy}$
+\end_inset
+
+ ו
+\begin_inset Formula $f_{yx}$
+\end_inset
+
+ קיימים ורציפים אזי 
+\begin_inset Formula $f_{xy}=f_{yx}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טור טילור הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x,y\right)=\begin{matrix}f\left(x_{0},y_{0}\right)+f_{x}\left(x-x_{0}\right)+f_{y}\left(y-y_{0}\right)\\
++\frac{1}{2!}\left(f_{xx}\left(x-x_{0}\right)+2f_{xy}\left(x-x_{0}\right)\left(y-y_{0}\right)+f_{yy}\left(y-y_{0}\right)\right)\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נקודות סטציונריות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f_{xx}f_{yy}>f_{xy}^{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $f_{xx}>0$
+\end_inset
+
+ אזי זו נקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Min
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f_{xx}f_{yy}>f_{xy}^{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $f_{xx}<0$
+\end_inset
+
+ אזי זו נקודת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Max
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f_{xx}f_{yy}<f_{xy}^{2}$
+\end_inset
+
+ אז זה אוקף
+\end_layout
+
+\begin_layout Standard
+משפט: 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ומוגדרת על תחום סגור וחסום היא חסומה ומשיגה שת חסמיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ התחום הוא חסום אם קיימים 
+\begin_inset Formula $M$
+\end_inset
+
+ ו
+\begin_inset Formula $N$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\left(x,y\right)\in D$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|x\right|\leq M$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|y\right|\leq N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+11
+\numeric off
+.
+ פונקציות 
+\begin_inset Formula $\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\vec{f}\left(x_{1}\dots x_{m}\right)$
+\end_inset
+
+ היא מ
+\begin_inset Formula $\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+ זה כמו לכתוב 
+\begin_inset Formula $\vec{f}\left(x_{1}\dots x_{m}\right)=\begin{pmatrix}f_{1}\left(x_{1}\dots x_{m}\right)\\
+\vdots\\
+f_{n}\left(x_{1}\dots x_{m}\right)\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+ רציפה אם ורק אם 
+\begin_inset Formula $f_{1}\dots f_{n}$
+\end_inset
+
+ רציפות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}^{m}\to\mathbb{R}^{n}$
+\end_inset
+
+ דיפרנציאבילית אם ורק אם 
+\begin_inset Formula $f_{1}\dots f_{n}$
+\end_inset
+
+ דיפרנציאבילית.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $m=1$
+\end_inset
+
+ אזי מקבלים 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}^{n}$
+\end_inset
+
+ שזה למדנו בפרק
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Standard
+אבל אם לא אז מה הנגזרת?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\vec{f}}{\partial x_{i}}=\begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}}\\
+\vdots\\
+\frac{\partial f_{n}}{\partial x_{1}}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קירוב ליניארי לשינוי 
+\begin_inset Formula $\delta f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+d\vec{f}=\begin{pmatrix}df_{1}\\
+\vdots\\
+df_{n}\end{pmatrix}\sim\begin{pmatrix}\delta f_{1}\\
+\vdots\\
+\delta f_{n}\end{pmatrix}=\delta\vec{f}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דיפרנציאל ונגזרת של 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+df=\begin{pmatrix}df_{1}\\
+\vdots\\
+d_{n}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{i}:\mathbb{R}^{m}\to\mathbb{R}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+df_{i}=\frac{\partial f_{i}}{\partial x_{1}}dx_{1}+\frac{\partial f_{i}}{\partial x_{2}}dx_{2}+\dots\frac{\partial f_{i}}{\partial x_{m}}dx_{m}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d\vec{f} & = & \begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}}dx_{1}+\frac{\partial f_{1}}{\partial x_{2}}dx_{2}+\dots+\frac{\partial f_{1}}{\partial x_{m}}dx_{m}\\
+\vdots\\
+\frac{\partial f_{n}}{\partial x_{1}}dx_{1}+\frac{\partial f_{n}}{\partial x_{2}}dx_{2}+\dots+\frac{\partial f_{n}}{\partial x_{m}}dx_{m}\end{pmatrix}\\
+ & = & \frac{\partial\vec{f}}{\partial x_{1}}dx+\dots+\frac{\partial\vec{f}}{\partial x_{m}}dx_{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d\vec{f} & = & \underbrace{\begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}} & \dots & \frac{\partial f_{1}}{\partial x_{m}}\\
+\vdots & \ddots & \vdots\\
+\frac{\partial f_{n}}{\partial x_{1}} & \dots & \frac{\partial f_{n}}{\partial x_{m}}\end{pmatrix}}_{D\vec{f}}\cdot\underbrace{\begin{pmatrix}dx_{1}\\
+\vdots\\
+dx_{m}\end{pmatrix}}_{d\vec{x}}\\
+ & = & D\vec{f}\cdot d\vec{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $D\vec{f}$
+\end_inset
+
+ הוא הנגזרת של 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f}\left(x,y\right) & = & \begin{pmatrix}x\cos y\\
+x\sin y\\
+x^{2}\end{pmatrix}\\
+D\vec{f} & = & \begin{pmatrix}\cos y & -x\sin y\\
+\sin y & x\cos y\\
+2x & 0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסביבה של 
+\begin_inset Formula $\left(x,y\right)=\left(1,\nicefrac{\pi}{4}\right)$
+\end_inset
+
+ מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D\vec{f}=\begin{pmatrix}\nicefrac{1}{\sqrt{2}} & -\nicefrac{1}{\sqrt{2}}\\
+\nicefrac{1}{\sqrt{2}} & \nicefrac{1}{\sqrt{2}}\\
+2 & 0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקירוב הליניארי של 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f}\left(x,y\right) & \sim & \vec{f}\left(1,\nicefrac{\pi}{4}\right)+D\vec{f}\cdot\begin{pmatrix}x-1\\
+y-\nicefrac{\pi}{4}\end{pmatrix}\\
+\vec{f}\left(x,y\right) & \sim & \begin{pmatrix}\nicefrac{1}{\sqrt{2}}\\
+\nicefrac{1}{\sqrt{2}}\\
+1\end{pmatrix}+\begin{pmatrix}\nicefrac{1}{\sqrt{2}} & -\nicefrac{1}{\sqrt{2}}\\
+\nicefrac{1}{\sqrt{2}} & \nicefrac{1}{\sqrt{2}}\\
+2 & 0\end{pmatrix}\begin{pmatrix}x-1\\
+k-\nicefrac{\pi}{4}\end{pmatrix}\\
+\vec{f}\left(1+h,\nicefrac{\pi}{4}+k\right) & \sim & \begin{pmatrix}\nicefrac{1}{\sqrt{2}}+\nicefrac{1}{\sqrt{2}}h-\nicefrac{1}{\sqrt{2}}k\\
+\nicefrac{1}{\sqrt{2}}+\nicefrac{1}{\sqrt{2}}h+\nicefrac{1}{\sqrt{2}}k\\
+1+2h\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+כלל השרשרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{R}^{m}\overset{\vec{f}}{\to}\mathbb{R}^{n}\overset{\vec{g}}{\to}\mathbb{R}^{k}\Rightarrow\mathbb{R}^{m}\overset{\vec{g}\circ\vec{f}}{\rightarrow}\mathbb{R}^{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $\vec{x}\in\mathbb{R}^{m}$
+\end_inset
+
+: 
+\begin_inset Formula $\vec{y}=\vec{f}\left(\vec{x}\right),\vec{z}=\vec{g}\left(\vec{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+d\vec{y} & = & \left(D\vec{f}\right)\cdot d\vec{x}\\
+d\vec{z} & = & \left(D\vec{g}\right)\cdot d\vec{y}\\
+ & = & \left(D\vec{g}\right)\cdot\left(\left(D\vec{f}\right)\cdot d\vec{x}\right)\\
+ & = & \left(\left(D\vec{g}\right)\cdot\left(D\vec{f}\right)\right)\cdot d\vec{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי כלל השרשרת הכללי הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D\left(g\circ f\right)=\left(D\vec{g}\right)\cdot\left(D\vec{f}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{R}\overset{\vec{f}}{\to}\mathbb{R}^{2}\overset{\vec{g}}{\to}\mathbb{R}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{df}{dt}\left(u\left(t\right),v\left(t\right)\right) & = & \frac{\partial f}{\partial u}u^{\prime}+\frac{\partial f}{\partial v}v^{\prime}\\
+ & = & \begin{pmatrix}\frac{\partial f}{\partial u} & \frac{\partial f}{\partial v}\end{pmatrix}\begin{pmatrix}u^{\prime}\\
+v^{\prime}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+משטחים ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{f}:D\to\mathbb{R}^{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $D\subset\mathbb{R}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תמונה=משטח ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+)המקרה הכללי(
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x,y\right)=\begin{pmatrix}x\cos y\\
+x\sin y\\
+x^{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c32d1.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המישור המשיק למשטח ב
+\begin_inset Formula $\vec{f}\left(x_{0},y_{0}\right)$
+\end_inset
+
+ הוא מקביל ל
+\begin_inset Formula $\frac{\partial\vec{f}}{\partial y}$
+\end_inset
+
+ ו
+\begin_inset Formula $\frac{\partial\vec{f}}{\partial x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן הווקטור הנורמאלי למישור הוא 
+\begin_inset Formula $\frac{\partial\vec{f}}{\partial x}\times\frac{\partial\vec{f}}{\partial y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{\hat{N}}_{\begin{matrix}\mbox{Normal}\\
+\mbox{Vector}\end{matrix}}=\frac{\frac{\partial\vec{f}}{\partial x}\times\frac{\partial\vec{f}}{\partial y}}{\left\Vert \frac{\partial\vec{f}}{\partial x}\times\frac{\partial\vec{f}}{\partial y}\right\Vert }\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שטח במשטח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c32d2.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+d\vec{f}=\frac{\partial\vec{f}}{\partial x}dx+\frac{\partial\vec{f}}{\partial y}dy\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קירוב ליניארי לתמונה תחת 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+ של מלבן הוא מקבילית.
+ השטח של המקבילית הור 
+\begin_inset Formula $\left\Vert \left(\frac{\partial f}{\partial x}h\right)\times\left(\frac{\partial f}{\partial y}k\right)\right\Vert \sim hk\left\Vert \frac{\partial f}{\partial x}\times\frac{\partial f}{\partial y}\right\Vert $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f}\left(\theta,\varphi\right) & = & \begin{pmatrix}a\cos\theta\sin\varphi\\
+a\sin\theta\sin\varphi\\
+\cos\varphi\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך ש 
+\begin_inset Formula $0\leq\theta\leq2\pi,0\leq\varphi\leq\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f}{\partial\theta}=\begin{pmatrix}-a\sin\theta\sin\varphi\\
+a\cos\theta\sin\theta\\
+0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f}{\partial\varphi}=\begin{pmatrix}a\cos\theta\cos\varphi\\
+a\sin\theta\cos\varphi\\
+-a\sin\varphi\end{pmatrix}\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial f}{\partial\theta}\times\frac{\partial f}{\partial\varphi} & = & a^{2}\sin\varphi\begin{pmatrix}-\sin\theta\\
+\cos\theta\\
+0\end{pmatrix}\times\begin{pmatrix}\cos\theta\cos\varphi\\
+\sin\theta\cos\varphi\\
+-\sin\varphi\end{pmatrix}\\
+ & = & a^{2}\sin\varphi\begin{pmatrix}-\cos\theta\sin\varphi\\
+-\sin mgv\sin mgj\\
+-\cos\varphi\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\Vert \frac{\partial f}{\partial\theta}\times\frac{\partial f}{\partial\varphi}\right\Vert =a^{2}\sin\varphi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\hat{N}=\begin{pmatrix}-\cos\theta\sin\varphi\\
+-\sin\theta\sin\varphi\\
+-\cos\varphi\end{pmatrix}=-\frac{1}{a}\vec{f}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+חילוף משתנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{f}=D\to\mathbb{R}^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f}:\mathbb{R}^{2} & \to & \mathbb{R}^{2}\\
+f\begin{pmatrix}r\\
+\theta\end{pmatrix} & \to & \begin{pmatrix}r\cos\theta\\
+r\sin\theta\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c32d3.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי השטח החדש הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{vmatrix}h\vec{f}_{x} & k\vec{f}_{y}\end{vmatrix}=hk\begin{vmatrix}\vec{f}_{x} & \vec{f}_{y}\end{vmatrix}=hk\cdot\left(\mbox{Jacobian}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אותו דבר ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ רק שזה לא מקבלית אלה מקבילון.
+\end_layout
+
+\begin_layout Standard
+השטח הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{\begin{vmatrix}\vec{f}_{x} & \vec{f}_{y} & \vec{f}_{z}\end{vmatrix}}_{\left|D\vec{f}\right|}\partial x\partial y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\begin{pmatrix}r\\
+\theta\end{pmatrix}=\begin{pmatrix}r\cos\theta\\
+r\sin\theta\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{vmatrix}\cos\theta & r\sin\theta\\
+\sin\theta & r\cos\theta\end{vmatrix}=r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר השטח הוא 
+\begin_inset Formula $r\partial r\partial\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\begin{pmatrix}\rho\\
+\theta\\
+z\end{pmatrix}=\begin{pmatrix}\rho\cos\theta\\
+\rho\sin\theta\\
+z\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{vmatrix}\cos\theta & -\rho\sin\theta & 0\\
+\sin\theta & \rho\cos\theta & 0\\
+0 & 0 & 1\end{vmatrix}=\rho\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי השטח הוא 
+\begin_inset Formula $\rho\partial r\partial\theta\partial z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.????
+\end_layout
+
+\begin_layout Section
+שדות וקטוריים וסקלרים ופעולותיהם
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $D\subset\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שדה וקטורי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{f}:D\to\mathbb{R}^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סדה סקלרי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{f}:D\to\mathbb{R}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\phi\left(x_{1}\dots x_{n}\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\phi=\mbox{grad}\phi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}=\begin{pmatrix}\frac{\partial\phi}{\partial x_{1}}\\
+\vdots\\
+\frac{\partial\phi}{\partial x_{n}}\end{pmatrix}\in\mathbb{R}^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi=x^{2}y+z\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}=\begin{pmatrix}2xy\\
+x^{2}\\
+1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r=\sqrt{x_{1}^{2}+\dots+x_{n}^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}r=\begin{pmatrix}\frac{\partial r}{\partial x_{1}}\\
+\vdots\\
+\frac{\partial r}{\partial x_{n}}\end{pmatrix}=\begin{pmatrix}\frac{x_{1}}{r}\\
+\vdots\\
+\frac{x_{n}}{r}\end{pmatrix}=\frac{r}{r}=\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסדה סקלארי מגדירים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial f_{1}}{\partial x_{1}}+\frac{\partial f_{2}}{\partial x_{2}}+\dots+\frac{\partial f_{n}}{\partial x_{n}}=\vec{\nabla}\cdot\vec{f}=\mbox{div}\vec{f}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\cdot\begin{pmatrix}x^{2}y\\
+yz\\
+z\end{pmatrix} & = & \frac{\partial}{\partial x}\left(x^{2}y\right)+\frac{\partial}{\partial y}\left(yz\right)+\frac{\partial}{\partial z}\left(z\right)\\
+ & = & 2xy+z+1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה המשמעות של זה?
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\vec{v}$
+\end_inset
+
+ הוא שדה מהירות אזי 
+\begin_inset Formula $\vec{\nabla}v$
+\end_inset
+
+ זה בערך כמה יצא מהמשטח ביחס לנפח של המשטח 
+\end_layout
+
+\begin_layout Standard
+אם מתעשקים ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ אז אפשר להגדיר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\times\vec{f} & = & \begin{pmatrix}\frac{\partial}{\partial x}\\
+\frac{\partial}{\partial y}\\
+\frac{\partial}{\partial z}\end{pmatrix}\times\begin{pmatrix}f_{1}\\
+f_{2}\\
+f_{3}\end{pmatrix}\\
+ & = & \begin{pmatrix}\hat{i} & \hat{j} & \hat{k}\\
+\frac{\partial}{\partial y} & \frac{\partial}{\partial y} & \frac{\partial}{\partial y}\\
+f_{1} & f_{2} & f_{3}\end{pmatrix}\\
+ & = & \begin{pmatrix}\frac{\partial f_{3}}{\partial y}-\frac{\partial f_{2}}{\partial z}\\
+\frac{\partial f_{1}}{\partial z}-\frac{\partial f_{3}}{\partial x}\\
+\frac{\partial f_{z}}{\partial x}-\frac{\partial f_{1}}{\partial y}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\times\vec{f} & = & \begin{pmatrix}\frac{\partial}{\partial x}\\
+\frac{\partial}{\partial y}\\
+\frac{\partial}{\partial z}\end{pmatrix}\times\begin{pmatrix}x^{2}y\\
+yz\\
+z\end{pmatrix}\\
+ & = & \begin{pmatrix}-y\\
+0\\
+-x^{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\cdot\left(\vec{\nabla}\times A\right) & = & 0\\
+\vec{\nabla}\times\left(\vec{\nabla}\varphi\right) & = & \vec{0}\\
+\vec{\nabla}\cdot\left(f\vec{A}\right) & = & \left(\vec{\nabla}f\right)\cdot\vec{A}+f\left(\vec{\nabla}A\right)\\
+\vec{\nabla}\left(\vec{A}\times\vec{B}\right) & = & \left(\vec{\nabla}\times\vec{A}\right)\vec{B}-\vec{A}\left(\vec{\nabla}\times\vec{B}\right)\end{eqnarray*}
 
 \end_inset
 
