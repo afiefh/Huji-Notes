@@ -13987,8 +13987,762 @@ Cayley
 תרגול מס.??
 \end_layout
 
-\begin_layout Standard
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
 
+\begin_layout Standard
+בשבוע שעבר דיברנו על ספירת עצים.
+ למדנו לספור עצים מתוייגים שהם עצים שלכל קודקוד יש שם.
+ שני עצים הם איזומורפית אם יש העתקה שמעבירה קודקוד לקודקוד אחר ושומרת הקשרים.
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Cayley
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ אומר כי מספר זה 
+\begin_inset Formula $n^{n-2}$
+\end_inset
+
+ לעצים מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אחר כך עברנו לעצים לא מתוייגים.
+ אילו הם עצים שבהם 
+\begin_inset Formula $T_{1}\leftrightarrow T_{2}$
+\end_inset
+
+ בלי שמות)כלומר אותם קשתות ודרגות(
+\end_layout
+
+\begin_layout Standard
+מספר העצים הלא מתוייגים 
+\begin_inset Formula $\forall A<e,\forall n>n_{A}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $A^{n}<U_{n}<4^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אי אפשר לספור את העצים הלא מתוייגים בדיוק, אז מחלקים את זה למחלקות שונות,
+ אחד מהחלקים הוא עצים מישוריים עם שורש.
+\end_layout
+
+\begin_layout Standard
+מתי שתי עצים מישוריים עם שורש הם איזומורפיים? אם יש העתקה 
+\begin_inset Formula $f$
+\end_inset
+
+ כך שההעתקה:
+\end_layout
+
+\begin_layout Enumerate
+שומרת על יחסי חילה.
+\end_layout
+
+\begin_layout Enumerate
+שורש מועבר לשורש
+\end_layout
+
+\begin_layout Enumerate
+שומר על יחס הורות)אם 
+\begin_inset Formula $a$
+\end_inset
+
+ בן של 
+\begin_inset Formula $b$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ בן של 
+\begin_inset Formula $f\left(b\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+שומר סדר בכל רמה)קודקודים משמאל עוברים לקודקודים משמאל(
+\end_layout
+
+\begin_layout Section
+בעיות קיצון
+\end_layout
+
+\begin_layout Standard
+בעיה: בהינתן גרף לא מכוון בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים מה הוא מספר הצלעות המקסימאלי שיכולות להיות בגרף אם הגרף לא מכיל
+ משולשים)מעגל מעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צלעות(
+\end_layout
+
+\begin_layout Standard
+בעיה: נתון גרף לא מכוון שלם בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים נצבע את קשתות הגרף ב 
+\begin_inset Formula $k$
+\end_inset
+
+ צבעים.
+ מה הוא 
+\begin_inset Formula $n$
+\end_inset
+
+ מינימאלי שמבטיח קיום של תת גרף שעם על 
+\begin_inset Formula $s$
+\end_inset
+
+ קודקודים שכל צלעותיו צבועות באותו צבע)מונוכרומטי(?
+\end_layout
+
+\begin_layout Standard
+משפט: גרף שלם בעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קודקודים או יותר אם נצבע את צלעותיו השתי צבעים נמצא משולש הצבוע באותו צבע.
+\end_layout
+
+\begin_layout Standard
+הוכחה: 
+\begin_inset Formula $v\in k_{6}$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שכנים לכן לפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שכנים מחוברים ל
+\begin_inset Formula $v$
+\end_inset
+
+ באותו צבע)כחול( אזי שתים מהצלעים האילו מחוברות בכחול אז קיבלנו משולש, ואם
+ אף אחד לא מחובר בקחול אז גם קיבלנו משולש.
+\end_layout
+
+\begin_layout Standard
+הגדרה: 
+\begin_inset Formula $n$
+\end_inset
+
+ המינימאלי עבורו קיים תת-גרף שלם בעל 
+\begin_inset Formula $s$
+\end_inset
+
+ קודקודים הצבוע באותו צבע לאחר שצבענו את הגרף השלם על 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ו
+\begin_inset Formula $k$
+\end_inset
+
+ צבעים קוראים לו מספר רמזי.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Section
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Erdos - Szekares
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+n^{\nicefrac{n}{2}}<R\left(s,t\right) & \leq & {s+t-2 \choose s-1}={s+t-2 \choose t-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(1+1\right)^{2n-2}=\sum_{k=0}^{2n-2}{2n-2 \choose k}\geq{2n-2 \choose n-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+tuttle
+\end_layout
+
+\begin_layout Standard
+ב 
+\begin_inset Formula $G$
+\end_inset
+
+ יש זיווג שלם אם"ם לכל 
+\begin_inset Formula $u\subseteq V$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\alpha_{u}\leq\left|u\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+דיברנו על משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Mantel
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שאומר כי בגרף מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ ללא משולשים ישנם לכל היודר 
+\begin_inset Formula $\frac{n^{2}}{4}$
+\end_inset
+
+ צלעות.
+\end_layout
+
+\begin_layout Standard
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Turan
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מכליל את המשפט הזה לא רק למשולשים: לגרף מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ ללא תתגרף שלם 
+\begin_inset Formula $K_{t}$
+\end_inset
+
+ עם 
+\begin_inset Formula $t$
+\end_inset
+
+ קודקודים ישנן לכל היותר 
+\begin_inset Formula $\left\lfloor n^{2}\cdot\frac{t-2}{2\left(t-1\right)}\right\rfloor $
+\end_inset
+
+ צלעות.
+\end_layout
+
+\begin_layout Standard
+הראנו שהחספ הזה הדוק.
+ מה שנראה היום זה לא רק שהחסם הדוק אלה שזה הוא בדיוק החסם.
+\end_layout
+
+\begin_layout Standard
+הגדרה: צביעה בגרפים: יהי נתון גרף 
+\begin_inset Formula $G\left(V,E\right)$
+\end_inset
+
+, צביעה של גרף ב 
+\begin_inset Formula $k$
+\end_inset
+
+ צבעים היא העתקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f:V\to\left\{ 1,2,\dots,k\right\} \]
+
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $x,y\in V$
+\end_inset
+
+ ו
+\begin_inset Formula $\left(x,y\right)\in E$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(x\right)\neq f\left(y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ברור שתמיד אפשר לצבוע גרף בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים ב 
+\begin_inset Formula $n$
+\end_inset
+
+ צבעים, אבל בדרך כלל נרצה לעשות את זה ב
+\begin_inset Formula $n^{\prime}<n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם למשל הגרף הוא ריבוע אז צריכים רק שת צבעים.
+\end_layout
+
+\begin_layout Standard
+בגרף דו צדדי גם צריכים רק שתי צבעים.
+ ניתן להוכיח כי גרף שניתן לצבוע על ידי שתי צבעים הוא דו צדדי.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\chi\left(G\right)$
+\end_inset
+
+ הוא מספר הצביעה של גרף.
+ כלומר מספר הצבעים המינימאלי.
+\end_layout
+
+\begin_layout Standard
+טענה: יהי 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+גרף מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\chi\left(G\right)\leq t-1$
+\end_inset
+
+ ונניח כי 
+\begin_inset Formula $\underbrace{t-1\vert n}_{\mbox{t-1 divides n}}$
+\end_inset
+
+ אזי ב 
+\begin_inset Formula $G$
+\end_inset
+
+ לכל היותר 
+\begin_inset Formula $n^{2}\frac{t-2}{2\left(t-1\right)}$
+\end_inset
+
+ צלעות.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi\left(G\right)\leq t-1$
+\end_inset
+
+ לכן נקבע צביעה של 
+\begin_inset Formula $V$
+\end_inset
+
+ על ידי 
+\begin_inset Formula $t-1$
+\end_inset
+
+ צבעים ונחלק את קודקודי הגרף בהתאם לצבעיהן.
+ אז יודעים כי אין צלעות בין קודקודים באותה קבוצה.
+ אזי כל צלע היא בין שתי קבוצות.
+\end_layout
+
+\begin_layout Standard
+נוסיף לגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ את כל הקשתות בין קודקודי כל אחת מהקבוצות לקודקודי כל הקבוצות האחרות)זה
+ רק מגדיל מספר הקשתות(
+\end_layout
+
+\begin_layout Standard
+כמה קשתות יש בגרף המורחב שיצרנו?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{max}\sum_{1\leq i<k\leq t-1}m_{i}m_{j}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ הוא קודקוד ויודעים כי 
+\begin_inset Formula $\sum_{i=0}^{t-1}m_{i}=n$
+\end_inset
+
+ ו
+\begin_inset Formula $0\leq m_{i}\leq n$
+\end_inset
+
+ ו 
+\begin_inset Formula $m_{i}$
+\end_inset
+
+ שלם.
+\end_layout
+
+\begin_layout Standard
+נניח כי קיימים 
+\begin_inset Formula $i<j$
+\end_inset
+
+ כך ש
+\begin_inset Formula $\left|m_{i_{0}}-m_{j_{0}}\right|\geq2$
+\end_inset
+
+ אזי ניתן להגדיל את 
+\begin_inset Formula $\sum_{1\leq i<j\leq t-1}m_{i}m_{j}$
+\end_inset
+
+ על ידי חלוקה חדשה של הקודקודים.
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $m_{i_{0}}>m_{k_{0}}$
+\end_inset
+
+מגדיר: 
+\begin_inset Formula $\hat{m}_{i_{0}}=m_{i_{0}}-1,\hat{m}_{j_{0}}=m_{j_{0}}+1$
+\end_inset
+
+ אזי רוצים לחשב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum\hat{m}_{i}\hat{m}_{j} & = & \left(\sum_{\begin{matrix}1\leq i<j\leq n\\
+\left(i,j\right)\neq\left(i_{0},j_{0}\right)\end{matrix}}\hat{m}_{i}\hat{m}_{j}\right)+\underbrace{\hat{m}_{i_{0}}\hat{m}_{j_{0}}}_{\left(m_{i_{0}}-1\right)\left(m_{j_{0}}+1\right)}\\
+ & = & \left(\sum_{\begin{matrix}1\leq i<j\leq n\\
+\left(i,j\right)\neq\left(i_{0},j_{0}\right)\end{matrix}}\hat{m}_{i}\hat{m}_{j}\right)+\underbrace{m_{i_{0}}m_{j_{0}}+\left(m_{i_{0}}-m_{j_{0}}\right)-1}_{\geq1}\\
+ &  & \left(\sum_{\begin{matrix}1\leq i<j\leq n\\
+\left(i,j\right)\neq\left(i_{0},j_{0}\right)\end{matrix}}m_{i}m_{j}\right)+m_{i_{0}}m_{j_{0}}+\left(m_{i_{0}}-m_{j_{0}}\right)-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המסקנה מהדיון הזה הוא כי אם מחפסים את המקסימטם אזי ההפרש בין כל אחת מהקבוצות
+ הוא לכל היותר 
+\begin_inset Formula $1$
+\end_inset
+
+.
 \end_layout
 
 \end_body

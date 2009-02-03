@@ -16,7 +16,7 @@
 \graphics default
 \paperfontsize default
 \spacing single
-\papersize a4paper
+\papersize default
 \use_geometry false
 \use_amsmath 1
 \use_esint 1
@@ -40,11 +40,12 @@
 \begin_body
 
 \begin_layout Title
-תרגיל
+תרגיל מס.
+
 \family roman
 \series medium
 \shape up
-\size normal
+\size largest
 \emph off
 \bar no
 \noun off
@@ -59,7 +60,7 @@
 \bar default
 \noun default
 \color inherit
-11
+8
 \end_layout
 
 \begin_layout Author
@@ -85,7 +86,7 @@
 302323001
 \end_layout
 
-\begin_layout Part*
+\begin_layout Part
 שאלה
 \family roman
 \series medium
@@ -109,127 +110,49 @@
 \end_layout
 
 \begin_layout Standard
-גוף מסוים יברח לאינסוף אם האנרגיה הקינטית שלו גדולה מפוטנציאל הגרביטציה:
+ברור כי 
+\begin_inset Formula $k$
+\end_inset
+
+ חייב להיות שלילי כדי שהכח יהיה צנטרופיטאלי.
+\end_layout
+
+\begin_layout Standard
+צריך ש 
+\begin_inset Formula $\alpha<0$
+\end_inset
+
+ כדי שהכח לא ידחוף אותו לאינסוף
+\end_layout
+
+\begin_layout Standard
+למצא 
+\begin_inset Formula $r_{0}$
+\end_inset
+
+ זה למצא נקודת מינימום הפוטנציאל האפקטיבי:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-E_{k} & > & U_{g}\\
-\frac{1}{2}mu^{2} & > & \frac{GM_{E}m}{5R}\\
-u^{2} & > & \frac{2GM_{E}}{5R}\\
-u & > & \sqrt{\frac{2GM_{E}}{5R}}\end{eqnarray*}
+U_{eff}\left(r\right) & = & \frac{L^{2}}{2mr^{2}}+Kr^{\alpha}\\
+\frac{\partial}{\partial r}U_{eff}\left(r\right) & = & -2\frac{L^{2}}{2mr^{3}}+\alpha Kr^{\alpha-1}\\
+0 & = & -\frac{L^{2}}{mr^{3}}+\alpha Kr^{\alpha-1}\end{eqnarray*}
 
 \end_inset
 
 
-\end_layout
-
-\begin_layout Standard
-כדי שהוא ינוע במעגל סביב כדור הארץ צריכים מאזן כחות:
 \end_layout
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\sum F & = & m\ddot{r}\\
-\frac{GM_{E}m}{\left(5R\right)^{2}} & = & 5mv^{2}R\\
-v & = & \sqrt{\frac{GM_{E}}{5^{3}R^{3}}}\\
-E_{k} & = & \frac{1}{2}m\frac{GM}{5^{3}R^{3}}\end{eqnarray*}
+0 & = & -\frac{L^{2}}{mr^{3}}+\alpha Kr^{\alpha-1}\\
+\frac{L^{2}}{mr^{3}} & = & \alpha Kr^{\alpha-1}L^{2}\\
+\frac{1}{m\alpha K} & = & r^{2+\alpha}\\
+r & = & \sqrt[2+\alpha]{\frac{1}{m\alpha K}}\end{eqnarray*}
 
 \end_inset
 
-
-\end_layout
-
-\begin_layout Standard
-חצי האנרגיה זה לא חצי המהירות, זה 
-\begin_inset Formula $\frac{1}{\sqrt{2}}v$
-\end_inset
-
- מהמהירות של המעגל
-\end_layout
-
-\begin_layout Standard
-חישבנו בכיתה כי
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{eqnarray*}
-r_{0} & = & \frac{L^{2}}{GM\mu^{2}}\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-אזי מחשבים:
-\end_layout
-
-\begin_layout Standard
-\begin_inset Formula \begin{eqnarray*}
-L & = & \left|\vec{v}\times\vec{r}\right|\\
- & =\end{eqnarray*}
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-כן הוא יפגע.
-\end_layout
-
-\begin_layout Standard
-זו המהירות של מסלול מעגלי.
-\end_layout
-
-\begin_layout Part*
-שאלה
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\noun default
-\color inherit
-2
-\end_layout
-
-\begin_layout Part*
-שאלה
-\family roman
-\series medium
-\shape up
-\size normal
-\emph off
-\bar no
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\noun default
-\color inherit
-3
-\end_layout
-
-\begin_layout Standard
 
 \end_layout
 

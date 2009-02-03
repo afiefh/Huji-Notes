@@ -1,0 +1,315 @@
+#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
+\lyxformat 276
+\begin_document
+\begin_header
+\textclass article
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+\graphics default
+\paperfontsize default
+\spacing single
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל מס.
+
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Part
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw9d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי אין תנועה בציר 
+\begin_inset Formula $y$
+\end_inset
+
+ אזי 
+\begin_inset Formula \[
+\sum F_{y}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסתכלים על כל גלגל לבד שיש מעליו 
+\begin_inset Formula $\frac{1}{2}M$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename images/hw9d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+N_{2}^{'} & = & \frac{Mg\cos\alpha}{2}\\
+N_{1}-N_{2}^{'}-mg\cos\alpha & = & 0\\
+N_{1}-\frac{Mg\cos\alpha}{2}-mg\cos\alpha & = & 0\\
+N_{1} & = & \frac{Mg\cos\alpha}{2}+mg\cos\alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם אין החלקה אזי המהיאות של 
+\begin_inset Formula $M$
+\end_inset
+
+ תלויה במהירות גלגול של הגלגלים, אז מחשבים דרך תנע זוויתי סביב נקודת מרכז
+ המעגל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tau & = & f\cdot R+0+0\\
+I\dot{\omega} & = & fR\\
+\dot{\omega} & = & \frac{fR}{I}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+כדי שזה יתקיים צריכים לקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{V_{x}}{R} & = & \omega\\
+\frac{a_{x}}{R} & = & \dot{\omega}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{x} & = & \frac{F_{x}}{M}\\
+a_{x} & = & \frac{Mg\sin\alpha}{M}\\
+ & = & g\sin\alpha\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{a_{x}}{R} & = & \dot{\omega}\\
+\frac{g\sin\alpha}{R} & = & \frac{fR}{I}\\
+\frac{Ig\sin\alpha}{R^{2}} & = & f\\
+\frac{Ig\sin\alpha}{R^{2}} & = & \mu\overbrace{\left(\frac{Mg\cos\alpha}{2}+mg\cos\alpha\right)}^{N_{1}}\\
+\frac{Ig\sin\alpha}{R^{2}\left(\frac{Mg\cos\alpha}{2}+mg\cos\alpha\right)} & = & \mu\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Part
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מומנט האינרציה של המערכת סביב הנקודה שבה החבל תלוי בקיר לפי משפט שתיינר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I & = & \left(I_{1}+m_{1}r_{1}^{2}\right)+\left(I_{2}+m_{2}r_{2}^{2}\right)+I_{rod}\\
+ & = & \left(\frac{m\left(\frac{L}{2}\right)^{2}}{2}+m\left(\frac{L}{2}\right)^{2}\right)+\left(\frac{mL^{2}}{2}+mL^{2}\right)+\frac{mL^{2}}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לכתוב משוואות התנועה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I\dot{\omega} & = & N\\
+I\ddot{\theta} & = & \underbrace{mg\times\frac{L}{2}}_{\mbox{Disk1}}+\underbrace{mg\times L}_{\mbox{Disk2}}+\underbrace{mg\times\frac{L}{2}}_{\mbox{Rod}}\\
+I\ddot{\theta} & = & 2\cdot\frac{mgL}{2}\sin\left(270-\theta\right)+mgL\sin\left(270-\theta\right)\\
+I\ddot{\theta} & = & 2mgL\sin\left(270-\theta\right)\\
+I\ddot{\theta} & = & 2mgL\sin\left(180-\left(\theta-90\right)\right)\\
+I\ddot{\theta} & = & 2mgL\sin\left(\theta-90\right)\\
+I\ddot{\theta} & = & -2mgL\sin\left(90-\theta\right)\\
+I\ddot{\theta} & = & -2mgL\cos\left(\theta\right)\\
+I\ddot{\theta}+2mgL\cos\left(\theta\right) & = & 0\\
+\ddot{\theta}+\frac{2mgL}{I}\cos\left(\theta\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $\theta$
+\end_inset
+
+ הוא מאוד קטן מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ddot{\theta}+\frac{2mgL}{I}\theta=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים 
+\begin_inset Formula $\omega_{0}=\sqrt{\frac{2mgL}{I}}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

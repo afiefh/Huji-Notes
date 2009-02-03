@@ -2248,7 +2248,32 @@ E=\frac{1}{2}m\dot{r}^{2}+u_{eff}\left(r\right)\]
 
 \end_layout
 
+\begin_layout Chapter
+סדנא מספר ??
+\end_layout
+
 \begin_layout Standard
+משפט שטיינר
+\end_layout
+
+\begin_layout Standard
+ניתנ 
+\begin_inset Formula $I_{cm}$
+\end_inset
+
+ מוממת התמד סביב ציר העובר דרך מרכז מסה ונתון ציר מקביל לו המרוחק מרחק 
+\begin_inset Formula $s$
+\end_inset
+
+ ממנו אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I=I_{cm}+ms^{2}\]
+
+\end_inset
+
 
 \end_layout
 

@@ -12553,5 +12553,2222 @@ h & = & 2R+\frac{1}{2}R+\frac{1}{5}r^{2}\frac{R}{r^{2}}\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+ראינו שאם מערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ נעה במהירות 
+\begin_inset Formula $V$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L_{s} & = & \frac{1}{\gamma}L_{0}\\
+\gamma & \equiv & \frac{1}{\sqrt{1-\left(\frac{v}{c}\right)^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניסוי:
+\end_layout
+
+\begin_layout Standard
+נחש נע 
+\begin_inset Formula $v=0.6c$
+\end_inset
+
+ יש שני סכינים מרוחקים 
+\begin_inset Formula $100cm$
+\end_inset
+
+ שמורידים כאשר הנחש הוא בדיוק ביניהם
+\end_layout
+
+\begin_layout Standard
+אבל הנחש רואה כי המרחק בין הסכינים 
+\begin_inset Formula $L=\frac{1}{\gamma}L_{0}$
+\end_inset
+
+ והוא מפחד.
+ אז אם מורידים הסכין, האם הנחש יוצא חי או מת?
+\end_layout
+
+\begin_layout Standard
+ניסוי עזר:
+\end_layout
+
+\begin_layout Standard
+שני אנשים עומדים ברציף ופולטים פולסים של אור לאדם שלישי שעומד באמצע, אבל
+ המערכת נעה במהירות 
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta t_{1} & = & t_{2}-t_{1}\\
+\Delta t_{2} & = & t_{4}-t_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת המנוחה 
+\begin_inset Formula $\Delta t_{1}=\Delta t_{2}$
+\end_inset
+
+ אבל במערכת הנעה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta t_{1} & = & \frac{L_{0}}{2\gamma c}\cdot\frac{1}{1-\frac{v}{c}}\\
+\Delta t_{2} & = & \frac{L_{0}}{2\gamma c}\cdot\frac{1}{1+\frac{v}{c}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Delta t_{1}-\Delta t_{2}=\frac{v}{c^{2}}\gamma L_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור לנחש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & \frac{1}{\gamma}L_{0}\\
+\Delta t & = & \frac{v}{c^{2}}\gamma L_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הוא לא רואה שתי הסכינים יורדים באותו זמן, המרחק בין הירידה של הסכינים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta L & = & \frac{1}{\gamma}+\overbrace{\frac{v^{2}}{c^{2}}\gamma L_{0}}^{\Delta t\cdot v}\\
+ & = & \vdots\\
+ & = & \gamma L_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריכים טרנספורמציה חדשה לעבור בין מערכות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c43d3.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{\prime} & = & \gamma\left(x-v_{x}t\right)\\
+y^{\prime} & = & y\\
+z^{\prime} & = & z\\
+t^{\prime} & = & \gamma\left(t-\frac{v_{x}}{c^{2}}x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c44d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{r}^{2}-c^{2}t^{2}=\vec{r}^{\prime}-c^{2}t^{\prime^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של אור כל זה שווה לאפס.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{\prime} & = & \gamma\left(V\right)\cdot\left(x-\frac{V}{c}\cdot ct\right)\\
+y^{\prime} & = & y\\
+z^{\prime} & = & z\\
+t^{\prime} & = & \gamma\left(V\right)\cdot\left(t-\frac{V}{c^{2}}\cdot x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לכתוב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+dx^{\prime} & = & \gamma\left(V\right)\left(dx-Vdt\right)\\
+dy^{\prime} & = & dy\\
+dz^{\prime} & = & dz\\
+dt^{\prime} & = & \gamma\left(V\right)\left(dt-\frac{V}{c^{2}}dx\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי כדי לקבל סימטריה בין הקואורדינטות נגדיר מערכת חדשה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\left(x_{1},x_{2},x_{3},x_{4}\right)\\
+\Updownarrow\\
+\left(x,y,z,ct\right)\end{pmatrix}\Rightarrow\begin{array}{rcl}
+x_{2}^{\prime} & = & x_{1}^{\prime}=\gamma\left(V\right)\left[x_{1}-\beta x_{4}\right]\\
+x_{2}^{\prime} & = & x_{2}\\
+x_{3}^{\prime} & = & x_{3}\\
+x_{4}^{\prime} & = & \gamma\left(V\right)\left[-\beta+x_{4}\right]\end{array}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לכתוב את זה באופן מטריציוני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{x} & = & \left(x_{1},x_{2},x_{3},x_{4}\right)\\
+\tilde{x}^{\prime} & = & \Lambda\tilde{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נגדיר)אל תשאל למה!!!(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{x}^{2}=\tilde{x}\cdot\tilde{x}=x_{1}^{2}+x_{2}^{2}+x_{3}^{2}-x_{4}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי טרנספואמצית לורנס משמרת את האורך
+\begin_inset Formula $\left(\vec{r}-c^{2}t^{2}=\vec{r}^{\prime^{2}}-c^{2}t^{\prime^{2}}\right)$
+\end_inset
+
+ אזי אפשר לכתוב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{x}^{\prime^{2}}=\tilde{x}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מצירים מאורע שבו 
+\begin_inset Formula $x_{2}=x_{3}=0$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+הנקודה 
+\begin_inset Formula $P$
+\end_inset
+
+ היא בעלת 
+\begin_inset Formula $x_{4}>0$
+\end_inset
+
+ ו
+\begin_inset Formula $x_{1}>0$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\tilde{x}^{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+תבדוק
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל הנקודה 
+\begin_inset Formula $Q$
+\end_inset
+
+ היא בעלת 
+\begin_inset Formula $t>0$
+\end_inset
+
+ ו
+\begin_inset Formula $\tilde{x}^{2}>0$
+\end_inset
+
+....
+\end_layout
+
+\begin_layout Standard
+אזי כל הנקודות שהן לא ב"עבר" לא יכולים להשפיע על מאורע ב
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ ומאורע שקרה ב
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ לא יכול להשפיע על מאורע כלשהוא שהוא לא ב"עתיד"
+\end_layout
+
+\begin_layout Standard
+אפשר לסמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{x} & = & \left(x_{1},x_{2},x_{3},x_{4}\right)=\left(\vec{r},ct\right)\\
+\tilde{x}^{2} & = & \tilde{x}\cdot\tilde{x}=\vec{r}^{2}-c^{2}t^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל 
+\begin_inset Formula $v^{\prime}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c44d3.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{x}^{\prime} & = & \frac{\partial x^{\prime}}{\partial t^{\prime}}\\
+ & = & \frac{\gamma\left(V\right)\cdot\left[dx-Vdt\right]}{\gamma\left(V\right)\left[dt-\frac{V}{c^{2}}dx\right]}\\
+ & = & \frac{\left[dx-Vdt\right]}{\left[dt-\frac{V}{c^{2}}dx\right]}\cdot\frac{\left(\frac{1}{dt}\right)}{\left(\frac{1}{dt}\right)}\\
+ & = & \frac{v_{x}-V}{1-\frac{Vv_{x}}{c^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים מה קורה על תנועה ב
+\begin_inset Formula $y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c44d4.svg
+	lyxscale 20
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{y}^{\prime} & = & \frac{\partial y^{\prime}}{\partial t^{\prime}}\\
+ & = & \frac{\partial y}{\gamma\left(V\right)\left[dt-\frac{V}{c^{2}}dx\right]}\\
+ & = & \frac{\partial y}{\gamma\left(V\right)\left[dt-\frac{V}{c^{2}}dx\right]}\cdot\frac{\left(\frac{1}{dt}\right)}{\left(\frac{1}{dt}\right)}\\
+ & = & \frac{v_{y}}{\gamma\left(V\right)\left[1-\frac{Vv_{x}}{c^{2}}\right]}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עוברים למערכת המנוחה של החלקיק:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{x}=\frac{\partial x}{\partial t_{0}}=\frac{\partial x}{\partial t}\cdot\frac{\partial t}{\partial t_{0}}=v_{x}\cdot\gamma\left(v\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את התנע להיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{P} & = & m\vec{u}\\
+\tilde{u} & = & \gamma\left(\vec{v},ct\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+אם נתומים שני מאורעים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{x}_{P} & = & \left(\vec{r}_{P},ct_{P}\right)\\
+\tilde{x}_{Q} & = & \left(\vec{r}_{Q},ct_{Q}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי במערכת 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{x}_{P}^{\prime} & = & \Lambda\tilde{x}_{P}\\
+\tilde{x}_{Q}^{\prime} & = & \Lambda\tilde{x}_{Q}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במפורש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x^{\prime}\\
+y^{\prime}\\
+z^{\prime}\\
+ct^{\prime}\end{pmatrix}=\overbrace{\begin{pmatrix}\gamma & 0 & 0 & -\beta\gamma\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+-\beta\gamma & 0 & 0 & \gamma\end{pmatrix}}^{\Lambda}\cdot\begin{pmatrix}x\\
+y\\
+z\\
+ct\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נרצה לראות ההפרש בין שתי האירועים במערכת 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+d\tilde{x}^{\prime}=\tilde{x}_{Q}^{\prime}-\tilde{x}_{P}^{\prime}=\Lambda\tilde{x}_{q}-\Lambda\tilde{x}_{P}=\Lambda\left(\tilde{x}_{Q}-\tilde{x}_{P}\right)=\Lambda d\tilde{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+dx^{\prime} & = & \gamma\left(dx-Vdt\right)\\
+dy^{\prime} & = & dy\\
+dz^{\prime} & = & dz\\
+dt^{\prime} & = & \gamma\left(dt-\frac{V}{c^{2}}dx\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם שתי מאורעים קראו באותו מקום במערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ אבל לא אותו זמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}dx=0\\
+dt\neq0\end{pmatrix}\Rightarrow dt^{\prime}=\gamma\left(V\right)\cdot dt_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם שתי מאורים קראו באותו זמן ולא אותו מקום ב
+\begin_inset Formula $S$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}\Delta x\neq0\\
+\Delta t=0\end{pmatrix} & \Rightarrow & \Delta x^{\prime}=\gamma\left(V\right)dx\\
+L\vert_{S} & = & dx=\frac{1}{\gamma\left(V\right)}dx^{\prime}=\frac{L_{0}}{\gamma\left(V\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אמרנו כי טרנספורמצית לורנס שומרת על הגודל 
+\begin_inset Formula $r^{2}-c^{2}t^{2}=\mbox{const}$
+\end_inset
+
+ בכל המערכות.
+ והגדרנו 
+\begin_inset Formula \begin{eqnarray*}
+\tilde{x}^{2} & = & \tilde{x}\cdot\tilde{x}\\
+ & = & \underbrace{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}_{r^{2}}-\underbrace{x_{4}^{2}}_{c^{2}t^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{x}^{2}=\tilde{x}^{\prime^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מהירויות
+\end_layout
+
+\begin_layout Standard
+אם נתון שכדור נע במהירות 
+\begin_inset Formula $v_{x}$
+\end_inset
+
+ במערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{x}^{\prime} & = & \frac{v_{x}-V}{1-\frac{V}{c^{2}}v_{x}}\\
+v_{y}^{\prime} & = & \frac{\left(\frac{v_{y}}{\gamma\left(V\right)}\right)}{1-\frac{V}{c^{2}}v_{x}}\\
+v_{z}^{\prime} & = & \frac{\left(\frac{v_{z}}{\gamma\left(V\right)}\right)}{1-\frac{V}{c^{2}}v_{x}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי יש בעיה: 
+\begin_inset Formula $v_{y}$
+\end_inset
+
+ ו
+\begin_inset Formula $v_{z}$
+\end_inset
+
+ גם תלויים ב 
+\begin_inset Formula $v_{x}$
+\end_inset
+
+ וגם ב
+\begin_inset Formula $V$
+\end_inset
+
+, אזי אם שניהם באותו כיוון מקבלים הארכה, אם הכיוונים מנוגדים מקבלים התקצרות.
+ כלומר אם יש שתי גופים שנעים במהירויות שונות יתכן שנקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(v_{1}+v_{2}\right)^{\prime}\neq v_{1}^{\prime}+v_{2}^{\prime}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נגדיר המהירות כווקטור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מימדי שהוא כן נשמר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{u} & = & \frac{d\tilde{x}}{dt_{0}}\\
+ & = & \left(\frac{dx}{dt_{0}},\frac{dy}{dt_{0}},\frac{dz}{dt_{0}},c\frac{dt}{dt_{0}}\right)\\
+ & = & \gamma\left(v\right)\left(\vec{v},c\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{u}_{1}^{\prime}+\tilde{u}_{2}^{\prime}=\Lambda\tilde{u}_{1}+\Lambda\tilde{u_{2}}=\Lambda\left(\tilde{u}_{1}+\tilde{u}_{2}\right)=\left(\tilde{u}_{1}+\tilde{u}_{2}\right)^{\prime}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם גוף מסוים נע במהירות 
+\begin_inset Formula $c$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{x}^{'} & = & \frac{v_{x}-V}{1-\frac{V}{c^{2}}v_{x}}\\
+ & = & \frac{c-V}{1-\frac{V}{c}}\\
+ & = & \frac{c\left(1-\frac{V}{c}\right)}{1-\frac{V}{c}}\\
+ & = & c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $u_{x}$
+\end_inset
+
+ של הגוף הזה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u_{x}=\gamma\left(c\right)\cdot c=\frac{c}{\sqrt{1-\frac{c^{2}}{c^{2}}}}\to\infty\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תנע יחסותי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P} & = & m\tilde{u}\\
+ & = & m\gamma\left(v\right)\cdot\left(\vec{v},c\right)\\
+ & = & \left(\gamma\left(v\right)m\vec{v},\gamma\left(v\right)mc\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שזה ווקטור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מימדי
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\frac{v^{2}}{c^{2}}\ll1$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula \[
+\tilde{P}_{\mbox{Spacial}}\overset{\frac{v^{2}}{c^{2}}\ll1}{\to}m\vec{v}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התנע עובר דרך טרנספורמצית לורנס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{P}^{\prime}=\Lambda\tilde{P}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכמו שיודעים 
+\begin_inset Formula \[
+\tilde{P}_{\mbox{Before}}=\tilde{P}_{\mbox{After}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם להציג את 
+\begin_inset Formula $\tilde{P}^{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}^{2} & = & m^{2}\overbrace{\tilde{u}^{2}}^{-c^{2}}\\
+ & = & -m^{2}c^{2}\\
+ & = & -\left(mc\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לקרב 
+\begin_inset Formula $\gamma$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{\sqrt{1-\frac{v^{2}}{c^{2}}}}\overset{\frac{v^{2}}{c^{2}}\ll1}{\to}1+\frac{1}{2}\frac{v^{2}}{c^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי החלק הרביעי של 
+\begin_inset Formula $\tilde{P}$
+\end_inset
+
+ הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{4} & = & \gamma\left(v\right)\cdot mc\overset{\frac{v^{2}}{c^{2}}\ll1}{\to}mc+\frac{1}{2}mv^{2}\cdot\frac{1}{c}\\
+cP_{4} & = & mc^{2}+\underbrace{\frac{1}{2}mv^{2}}_{E_{k}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שזה אנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & cP_{4}\\
+P_{4} & = & \frac{E}{c}\end{eqnarray*}
+
+\end_inset
+
+ אז נכתוב מחדש את 
+\begin_inset Formula $\tilde{P}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{P}=m\tilde{u}=\left(\gamma\left(v\right)\vec{P},\frac{E}{c}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האנרגיה של גוף יחסותית היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \gamma\left(v\right)\cdot mc^{2}\\
+E_{k} & = & \left(1-\gamma\left(v\right)\right)mc^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם 
+\begin_inset Formula $\frac{v^{2}}{c^{2}}\ll1$
+\end_inset
+
+ מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\overset{\frac{v^{2}}{c^{2}}\ll1}{\to}mc^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.????
+\end_layout
+
+\begin_layout Standard
+במערכת 
+\begin_inset Formula $S$
+\end_inset
+
+ יש סרגל נייח באורך 
+\begin_inset Formula $L$
+\end_inset
+
+, ומדען במערכת 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ הנעה ביחס ל
+\begin_inset Formula $S$
+\end_inset
+
+ רוצה למדוד את הסרגל, אזי מה ימדוד?
+\end_layout
+
+\begin_layout Standard
+נצטרך להשתמש בטרנספורמצית לורנס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{\prime} & = & \gamma\left(x-vt\right)\\
+y^{\prime} & = & y\\
+z^{\prime} & = & z\\
+t^{\prime} & = & \gamma\left(t-\frac{vx}{c^{2}}\right)\\
+\gamma & = & \frac{1}{\sqrt{1-\beta^{2}}}\\
+\beta & = & \frac{v}{c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אורך הוא: 
+\begin_inset Formula $r=\left(x,y,z,t\right)$
+\end_inset
+
+ כלומר לחשב אורך צריך למדוד שתי הקצוות בו זמנית, אי אפשר למדוד בזמנים שונים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1} & = & \left(0,0,0,t\right)\\
+r_{2} & = & \left(L,0,0,t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבור ל
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1}^{\prime} & = & \left(-\gamma vt,0,0,\gamma t\right)\\
+r_{2}^{\prime} & = & \left(\gamma\left(L-vt\right),0,0,\gamma\left(t-\frac{vL}{c^{2}}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי הזמנים ב
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ לא נעשה באותו זמן! אזי צריכים למדוד את זה בזמנים 
+\begin_inset Formula $t,\tilde{t}$
+\end_inset
+
+ כך שבמערכת 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ זה יהיה בו זמני.
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{1}^{\prime} & = & \left(-\gamma vt,0,0,\gamma t\right)\\
+r_{2}^{\prime} & = & \left(\gamma\left(L-v\tilde{t}\right),0,0,\gamma\left(\tilde{t}-\frac{vL}{c^{2}}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma t & = & \gamma\left(\tilde{t}-\frac{vL}{c^{2}}\right)\\
+\tilde{t} & = & t+\frac{vL}{c^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מחשבים 
+\begin_inset Formula $x_{1}-x_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{2}-x_{1} & = & \gamma\left(L-vt-\left(\frac{v}{c}\right)^{2}L\right)-\left(\gamma vt\right)\\
+ & = & \gamma\left(1-\beta^{2}\right)L\\
+ & = & \frac{L}{\gamma}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם להוכיח שי 
+\begin_inset Formula $\Delta t^{\prime}=\gamma\Delta t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב גם הטרנספורמציה של המהירות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{x} & = & \frac{\partial x}{\partial t}\\
+u_{y} & = & \frac{\partial y}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי למצא את 
+\begin_inset Formula $u_{x}^{\prime},u_{y}^{\prime}$
+\end_inset
+
+ צריך למצא 
+\begin_inset Formula $dx^{\prime},dy^{\prime},dt^{\prime}$
+\end_inset
+
+.
+ נפעיל הטרנספורמציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+dx^{\prime} & = & \gamma\left(dx-vdt\right)\\
+dy^{\prime} & = & dy\\
+dt^{\prime} & = & \gamma\left(dt-\frac{v}{c^{2}}dx\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{x}^{\prime} & = & \frac{dx^{\prime}}{dt^{\prime}}\\
+ & = & \frac{dx-vdt}{dt-\frac{v}{c^{2}}dx}\\
+ & = & \frac{dx-vdt}{dt-\frac{v}{c^{2}}dx}\cdot\frac{\left(\frac{1}{dt}\right)}{\left(\frac{1}{dt}\right)}\\
+ & = & \frac{u_{x}-v}{1-\frac{vu_{x}}{c^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{t}^{\prime} & = & \frac{dy^{\prime}}{dt^{\prime}}\\
+ & = & \frac{dy}{\gamma\left(dt-\frac{v}{c^{2}}dx\right)}\\
+ & = & \frac{u_{y}}{\gamma\left(1-\frac{vu_{x}}{c^{2}}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערכת כדור הארץ חללית 
+\begin_inset Formula $\hat{A}$
+\end_inset
+
+ נעה במהירות 
+\begin_inset Formula $v_{A}=0.6c$
+\end_inset
+
+ וחללית 
+\begin_inset Formula $B$
+\end_inset
+
+ במהירות 
+\begin_inset Formula $v_{b}=-0.8c$
+\end_inset
+
+ בזמן 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ שתיהן משדרות סיגנאל לכדור הררץ
+\end_layout
+
+\begin_layout Enumerate
+היכן היו החלליות כששגרו את הסיגנאל?
+\end_layout
+
+\begin_layout Enumerate
+במערכת היחוס לש 
+\begin_inset Formula $B$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+מתי שוגר הסיגנאל של 
+\begin_inset Formula $A$
+\end_inset
+
+ והיכן היתה 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Enumerate
+מהיא המהירות של 
+\begin_inset Formula $A$
+\end_inset
+
+?
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+סעיף א' אפשר לפתור בלי יחסות בכלל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{A} & = & v_{A}t_{0}=0.6ct_{0}\\
+x_{B} & = & v_{B}t_{0}=-0.8ct_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\end_layout
+
+\begin_layout Standard
+במערכת כדור הארץ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r_{A}=\left(0.6ct_{0},t_{0}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפעיל טרנספורמציה למערגת 
+\begin_inset Formula $S_{B}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{A}^{\prime} & = & \gamma\left(x_{A}-v_{B}t_{0}\right)\\
+ & = & \frac{1}{\sqrt{1-0.8^{2}}}\left(0.6ct_{0}-\left(0.8c\right)t_{0}\right)\\
+ & = & \frac{0.14ct_{0}}{0.6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+t_{A}^{\prime} & = & \gamma\left(t_{0}-\frac{v_{B}x_{A}}{c^{2}}\right)\\
+ & = & \frac{5}{3}\left(t_{0}-\frac{\left(-0.8c\right)\left(0.6ct_{0}\right)}{c^{2}}\right)\\
+ & = & \frac{5}{3}\cdot1.48t_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב.
+\numeric on
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{A} & = & 0.6c\\
+v_{A}^{\prime} & = & \frac{0.6c-\left(-0.8c\right)}{1-\frac{\left(-0.8c\right)\left(0.6c\right)}{c^{2}}}\\
+ & = & \frac{1.4c}{1.48}\\
+ & \approx & 0.954\cdot c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר עכשיו לחשב את המרחק בדרך ממש קלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{A}^{\prime} & = & v_{A}^{\prime}\cdot t_{A}^{\prime}\\
+ & = & \frac{1.4c}{1.48}\cdot\frac{5}{3}\cdot1.48t_{0}\\
+ & = & \frac{5}{3}\left(1.4ct_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+הגדרנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P} & = & \left(\underbrace{\gamma\left(v\right)m\vec{v}}_{\mbox{Spacial}},\underbrace{\frac{E}{c}}_{\mbox{Energy}}\right)\\
+ & = & \left(\gamma\left(v\right)m\vec{v},\gamma mc\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והגדרנו האנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\gamma mc^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ויודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{P}_{\mbox{Before}}=\tilde{P}_{\mbox{After}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שזה נותן לנו גם את שימור התנע וגם את שימור האנרגיה.
+\end_layout
+
+\begin_layout Standard
+נניח שנתונה ההתנגשות הבאה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c47d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{1} & = & \left(\gamma\left(v_{1}\right)m_{1}v_{1},\frac{E_{1}}{c}\right)\\
+\tilde{P}_{2} & = & \left(0,\frac{E_{2}}{c}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{P}=\left(\gamma\left(V\right)MV,\frac{E}{c}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים שתי משוואות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma\left(v_{1}\right)m_{1}v_{1} & = & \gamma\left(V\right)MV\\
+E_{1}+E_{2} & = & E\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז ממשואה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma\left(v_{1}\right)m_{1}+m_{2} & = & \gamma\left(V\right)M\\
+\gamma\left(V\right) & = & \frac{\gamma\left(v_{1}\right)m_{1}+m_{2}}{M}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים את זה למשוואה מספר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & \frac{\gamma\left(v_{1}\right)m_{1}}{\gamma\left(v_{1}\right)m_{1}+m_{2}}v_{1}\\
+ & = & \frac{m_{1}}{m_{1}+m_{2}}v_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם לפתור את המסות אבל בסתירה לאינטואיציה נקבל 
+\begin_inset Formula $M\neq m_{1}+m_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{\mbox{Before}}^{2} & = & \tilde{P}_{\mbox{After}}^{2}=-\left(Mc\right)^{2}\\
+\tilde{P}_{\mbox{Before}}^{2} & = & \left(\tilde{P}_{1}+\tilde{P_{2}}\right)^{2}\\
+ & = & \tilde{P}_{1}^{2}+\tilde{P}_{2}+2\tilde{P}_{1}\cdot\tilde{P}_{2}\\
+ & = & -\left(m_{1}c\right)^{2}-\left(m_{2}c\right)^{2}+2\left[0-\frac{E_{1}E_{2}}{c^{2}}\right]\\
+ & = & -c^{2}\left(m_{1}^{2}+m_{2}^{2}\right)-\frac{2}{c^{2}}\gamma\left(v_{1}\right)m_{1}m_{2}c^{4}\\
+ & = & -c^{2}\left(m_{1}^{2}+m_{2}^{2}+2m_{1}m_{2}\gamma\left(v_{1}\right)\right)\\
+\tilde{P}_{\mbox{Before}}^{2} & = & \tilde{P}_{\mbox{After}}^{2}\\
+-c^{2}\left(m_{1}^{2}+m_{2}^{2}+2m_{1}m_{2}\gamma\left(v_{1}\right)\right) & = & -M^{2}c^{2}\\
+M & = & \sqrt{m_{1}^{2}+m_{2}^{2}+2m_{1}m_{2}\gamma\left(v_{1}\right)}\\
+ & \neq & m_{1}+m_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נדבר עכשיו על מערכת מרכז המסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{R}_{cm}=\frac{\sum m_{i}\vec{r}_{i}}{\sum m_{i}}\Rightarrow\underbrace{M\dot{\vec{R}}=\sum m_{i}\dot{\vec{r}}_{i}=\sum\vec{P}_{i}=0}_{\mbox{In the center of mass system}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נדרוש במערכת יחסותית כי 
+\begin_inset Formula $\sum\vec{P}_{i}=0$
+\end_inset
+
+ אבל נכתוב את זה כ 
+\begin_inset Formula $\sum\gamma_{i}\left(v\right)\vec{P}_{i}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}^{2} & = & \left(\sum\tilde{P}_{i}\right)^{2}<0\\
+\left(P_{1}+P_{2}\right)^{2} & = & P_{1}^{2}+P_{2}^{2}+2P_{1}P_{2}\\
+ & = & -\left(m_{1}c\right)^{2}-\left(m_{2}c\right)^{2}+\underbrace{-\gamma\left(v_{1}\right)m_{1}v_{1}-\gamma\left(v_{2}\right)m_{2}v_{2}-\gamma\left(v_{1}\right)m_{1}c\cdot\gamma\left(v_{2}m_{2}c\right)}_{<0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{P}^{T^{2}}<0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+תשלים את החצי הראשון של ההרצאה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{P}_{\gamma}=\left(\frac{E}{c}\vec{v},\frac{E}{c}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{1} & = & \left(\gamma\left(v_{1}\right)mv_{1},\overbrace{\frac{E_{1}}{c}}^{E_{1}=\gamma mc^{2}}\right)\\
+\tilde{P}_{2} & = & \left(\gamma\left(v_{2}\right)mv_{2},\frac{E_{2}}{c}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma\left(v_{1}\right)mv_{1}+\gamma\left(v_{2}\right)mv_{2} & = & \frac{E}{c}\vec{v}\\
+\left(\gamma_{1}m+\gamma_{2}m\right)c & = & \frac{E}{c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים שזה אי אפשר להתקיים אזי המצב הזה לא יתקיים ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+vacum
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כלומר צריך לסים אזי שהיא מסה באמצע שתפעול כ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+catalysator
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדי לבצע שימור תנע ואינרגיה.
+\end_layout
+
+\begin_layout Section
+כח של יחסות
+\end_layout
+
+\begin_layout Standard
+נרצה להגדיר כעת את הכח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=\frac{\partial\vec{P}}{\partial t}\Rightarrow\vec{F}=\frac{\partial}{\partial t}\left(\gamma\left(v\right)\vec{P}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E^{2}=c^{2}\left(\gamma\left(v\right)\vec{P}\right)^{2}+\left(mc^{2}\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גוזרים לפי הזמן ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}\left(E^{2}\right) & = & \frac{\partial}{\partial t}\left(c^{2}\left(\gamma\left(v\right)\vec{P}\right)^{2}+\left(mc^{2}\right)^{2}\right)\\
+2E\frac{\partial}{\partial t}E & = & \frac{\partial}{\partial t}\left(c^{2}\left(\gamma\left(v\right)\vec{P}\right)^{2}\right)\\
+2E\frac{\partial}{\partial t}E & = & 2c^{2}\left(\gamma\left(v\right)\vec{P}\right)\cdot\underbrace{\frac{\partial}{\partial t}\left(\gamma\left(v\right)\vec{P}\right)}_{F}\\
+\frac{\partial E}{\partial t} & = & \frac{2c^{2}\gamma\left(v\right)}{2E}\vec{P}\cdot\vec{F}\\
+ & = & \frac{2c^{2}\gamma\left(v\right)m}{2\gamma\left(v\right)mc^{2}}\vec{v}\vec{F}\\
+ & = & \vec{v}\cdot\vec{F}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta E & = & \int\frac{\partial E}{\partial t}\partial t\\
+ & = & \int\vec{F}\frac{\partial\vec{r}}{\partial t}\partial t\\
+ & = & \int\vec{F}\partial\vec{r}\\
+ & = & W\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \frac{\partial}{\partial t}\left(\gamma\vec{P}\right)\\
+ & = & \frac{\partial}{\partial t}\left(\gamma\left(v\right)m\vec{v}\right)\\
+ & = & \gamma\left(v\right)m\underbrace{\frac{\partial v}{\partial t}}_{\vec{a}}+m\vec{v}\frac{\partial}{\partial t}\gamma\left(v\right)\\
+ & = & \gamma\left(v\right)m\vec{a}+\frac{m\vec{v}}{mc^{2}}\left(\vec{v}\cdot\vec{F}\right)\\
+ & = & \gamma\left(v\right)m\vec{a}+\frac{v^{2}}{c^{2}}\left(\hat{v}\cdot\vec{F}\right)\hat{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial\vec{v}}{\partial t}=\frac{F}{\gamma\left(v\right)m}\left\{ \left(1-\frac{v^{2}}{c^{2}}\cos^{2}\theta\right)\hat{x}-\frac{v^{2}}{c^{2}}\cos\theta\sin\theta\hat{y}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c49d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{\gamma} & = & \left(\frac{E\gamma}{c}\hat{x},\frac{E\gamma}{c}\right)\\
+\tilde{P}_{N} & = & \left(0,\frac{E_{N_{0}}}{c}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחרי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{+} & = & \left(\gamma_{+}\vec{P}_{+},\frac{E_{+}}{c}\right)\\
+\tilde{P}_{-} & = & \left(\gamma_{-}\vec{P}_{-},\frac{E_{-}}{c}\right)\\
+\tilde{P}_{N} & = & \left(\gamma_{N}\vec{P}_{N},\frac{E_{N}}{c}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נרצה למצא מערכת מרכז מסה שבה 
+\begin_inset Formula $\tilde{P}=\left(0,\frac{E_{cm}}{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי להעביר תנע מ
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ עושים 
+\begin_inset Formula $P_{1}^{\prime}=\gamma\left(V\right)\left[P_{1}-\beta P_{4}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{\gamma}^{\prime} & = & \gamma\left(V\right)\left[\frac{E_{\gamma}}{c}-\beta\frac{E_{\gamma}}{c}\right]\\
+ & = & \gamma\left(V\right)\left[\frac{E_{\gamma}}{c}\left(1-\beta\right)\right]\\
+P_{N}^{\prime} & = & \gamma\left(V\right)\left[0-\beta\frac{E_{N_{0}}}{c}\right]\\
+ & = & -\gamma\left(V\right)\frac{E_{N_{0}}}{c}\beta\\
+\tilde{P}_{\mbox{Total}}^{\prime} & = & 0\\
+P_{\gamma}^{\prime}+P_{N}^{\prime} & = & 0\\
+\frac{\gamma\left(V\right)}{c}\left\{ E_{\gamma}\left(1-\beta\right)-E_{N_{0}}\beta\right\}  & = & 0\\
+E_{\gamma}-\beta\left(E_{\gamma}+E_{N_{0}}\right) & = & 0\\
+V & = & \frac{E_{\gamma}}{E_{\gamma}+E_{N_{0}}}c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נעבור למערכת הזאת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{cm}=E_{N_{0}}+E_{+_{0}}+E_{-_{0}}>E_{N_{0}}+2m_{e}c^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מלןמל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{\mbox{After}}^{2}\vert_{cm} & = & \tilde{P}_{\mbox{After}}^{2}\vert_{Lab}=\tilde{P}_{\mbox{Before}}^{2}\vert_{Lab}\\
+-\frac{E_{cm}^{2}}{c^{2}} & = & \left(\frac{E_{\gamma}}{c}\right)^{2}-\left(\frac{E_{\gamma}+E_{N_{0}}}{c}\right)^{2}\\
+-E_{c}^{2} & = & E_{\gamma}^{2}-E_{\gamma}^{2}-E_{N_{0}}^{2}-2E_{\gamma}E_{N_{0}}\\
+E_{\gamma} & = & \frac{E_{c}^{2}-E_{N_{0}}^{2}}{2E_{N_{0}}}\\
+E_{\gamma} & \geq & \frac{\left(E_{N_{0}}+2m_{e}c^{2}\right)^{2}-E_{N_{0}}}{2E_{N_{0}}}\\
+E_{\gamma} & \geq & \frac{2E_{N_{0}}\left(2m_{e}c^{2}\right)}{2E_{N_{0}}}+\frac{\left(2m_{e}c^{2}\right)^{2}}{2E_{N_{0}}}\\
+ & \geq & 2m_{e}c^{2}\left(1+\frac{m_{e}}{m_{N_{0}}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה חדשה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename physics/c49d2.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P}_{\mbox{Before}} & = & \left(\gamma\left(v\right)m\vec{v},\gamma\left(v\right)mc\right)\\
+\tilde{P}_{\mbox{After}} & = & \left(\frac{E_{1}}{c}\hat{P}_{1}+\frac{E_{2}}{c}\hat{P}_{2},\frac{E_{1}+E_{2}}{c}\right)\\
+\tilde{P}_{\mbox{Before}} & = & \tilde{P}_{\mbox{After}}\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משוואות: שימור תנע בכיווני 
+\begin_inset Formula $\hat{x},\hat{y}$
+\end_inset
+
+ ושימור אנרגיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{E_{1}}{c}\cos\theta+\frac{E_{2}}{c}\cos\alpha & = & \gamma\left(v\right)mv\\
+\frac{E_{1}}{c}\sin\theta+\frac{E_{2}}{c}\sin\alpha & = & 0\\
+E_{1}+E_{2} & = & \gamma\left(v\right)mc^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משתנים: 
+\begin_inset Formula $\alpha,\theta,E_{1},E_{2}$
+\end_inset
+
+ אזי נניח כי 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ אז יודעים כי 
+\begin_inset Formula $\alpha=0^{\circ},180^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $\alpha=0^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{1}+E_{2} & = & \gamma\left(v\right)mvc\\
+E_{1}+E_{2} & = & \overset{\neq}{\gamma\left(v\right)mc^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסתירה.
+ אזי 
+\begin_inset Formula $\alpha\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha=\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{1}-E_{2} & = & \gamma\left(v\right)mvc\\
+E_{1}+E_{2} & = & \gamma\left(v\right)mc^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מחברים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{1} & = & \frac{1}{2}\gamma\left(v\right)mc\left(c+v\right)\\
+E_{2} & = & \frac{1}{2}\gamma\left(v\right)mc\left(c-v\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפעם נניח כי 
+\begin_inset Formula $\theta=-\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהמשוואה הראשונה מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(E_{1}-E_{2}\right)\frac{\sin\theta}{c} & = & 0\\
+E_{1} & = & E_{2}=E\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהמשוואה השנייה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(E_{1}+E_{2}\right)\cos\theta=\gamma\left(v\right)mvc\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומהמשוואה השלישית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(E_{1}+E_{2}\right)=\gamma\left(v\right)mc^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v=c\cos\theta\]
+
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

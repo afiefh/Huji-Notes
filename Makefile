@@ -8,6 +8,8 @@ add:
 
 lectures: Algebra.pdf appliedMath.pdf discreetMath.pdf physics.pdf physicsWorkshop.pdf
 	tar cvf lectures.tar Algebra.pdf appliedMath.pdf discreetMath.pdf physics.pdf physicsWorkshop.pdf
+	rm lectures.tar.lzma
+	lzma -9 lectures.tar
 
 Algebra.pdf: Algebra.lyx
 	rm -rf Algebra.pdf

@@ -18,7 +18,7 @@ a=[a1,a2,a3,a4,a5,a6];
 
 dc5=a*c5';
 dc5p=polyval(dc5,x);
-plot(x,f,'^;f(x);',x,df,'@;df(x)/dt;',x,dc5p,'-;Pdf(x)/dt;');
+plot(x,f,'--;f(x);',x,df,'@;df(x)/dt;',x,dc5p,'-;Pdf(x)/dt;');
 axis([-1.3,3.55,-4.5,2.6]);
 
 print -dpng workshop2.png

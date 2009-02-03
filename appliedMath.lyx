@@ -12469,5 +12469,450 @@ z\end{pmatrix}\\
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/c34d1.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oint_{c}\vec{f}\cdot\partial\vec{r}=\iint_{\Sigma}\left(\vec{\nabla}\times\vec{f}\right)\cdot\partial\vec{s}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאמת את משפט סטוקס:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ המחצית העליונה של הטרוס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{f}=\begin{pmatrix}-z\\
+x\\
+0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזכר בנוסחאות של טורוס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/Torus.png
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אנחנו רוצים לחשב את כל זה על חצי טורוס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename appliedmath/halftaurus.svg
+	lyxscale 50
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}=\begin{pmatrix}\left(2+\cos u\right)\cos v\\
+\left(2+\cos u\right)\sin v\\
+\sin u\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $0\leq u\leq\pi,0\leq v\leq2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial\vec{S}=\hat{N}\partial S=\left(2+\cos u\right)\begin{pmatrix}\cos u\cos v\\
+\cos u\sin v\\
+\sin u\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\times\vec{f} & = & \begin{pmatrix}\nicefrac{\partial}{\partial x}\\
+\nicefrac{\partial}{\partial y}\\
+\nicefrac{\partial}{\partial z}\end{pmatrix}\times\begin{pmatrix}-z\\
+x\\
+0\end{pmatrix}\\
+ & = & \begin{pmatrix}0\\
+-1\\
+1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מחשבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iint\left(\vec{\nabla}\times\vec{f}\right)\cdot\partial\vec{S} & = & \intop_{0}^{2\pi}\intop_{0}^{\pi}\begin{pmatrix}0\\
+-1\\
+1\end{pmatrix}\cdot\left(2+\cos u\right)\begin{pmatrix}\cos u\cos v\\
+\cos u\sin v\\
+\sin u\end{pmatrix}\partial u\partial v\\
+ & = & \intop_{0}^{2\pi}\intop_{0}^{\pi}\left(2+\cos u\right)\left(-\cos u\sin v+\sin u\right)\partial u\partial v\\
+ & = & \intop_{0}^{2\pi}\intop_{0}^{\pi}\left(-2\cos u\sin v-\cos^{2}u\sin v+2\sin u+\cos u\sin v\right)\partial u\partial v\\
+ & = & 2\pi\left(-2\cos u-\frac{\cos2u}{4}\right)\vert_{0}^{\pi}\\
+ & = & 8\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עכשיו ננסה לחשב את האינטגרל המסילתי ישירות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c_{2} & : & \vec{r}\left(t\right)=\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}=\begin{pmatrix}3\cos t\\
+3\sin t\\
+0\end{pmatrix}\\
+c_{1} & : & \vec{r}\left(t\right)=\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}=\begin{pmatrix}\cos t\\
+-\sin t\\
+0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{c}\vec{f}\cdot\partial\vec{r} & = & \oint_{c_{1}}\vec{f}\cdot\partial\vec{r}+\oint_{c_{2}}\vec{f}\cdot\partial\vec{r}\\
+ & = & \intop_{0}^{2\pi}\begin{pmatrix}0\\
+\cos t\\
+0\end{pmatrix}\cdot\begin{pmatrix}-\sin t\\
+-\cos t\\
+0\end{pmatrix}\partial t+\intop_{0}^{2\pi}\begin{pmatrix}0\\
+3\cos t\\
+0\end{pmatrix}\cdot\begin{pmatrix}-3\sin t\\
+\cos t\\
+0\end{pmatrix}\partial t\\
+ & = & \intop_{0}^{2\pi}\left(-\cos^{2}t\right)\partial t+\intop_{0}^{2\pi}\left(9\cos^{2}t\right)\partial t\\
+ & = & 8\overbrace{\intop_{0}^{2\pi}\cos^{2}t\partial t}^{\pi}\\
+ & = & 8\left[\frac{\frac{\sin2t}{2}+t}{2}\right]_{0}^{2\pi}\\
+ & = & 8\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שימושים במשפטי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Gauss & Stocks
+\end_layout
+
+\begin_layout Subsection
+שימוש במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Gauss
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+ גזירה בריציפות ב 
+\begin_inset Formula $D$
+\end_inset
+
+ ועל שפתו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oiint\vec{f}\cdot\partial\vec{s}=\iiint_{D}\left(\vec{\nabla}\cdot\vec{f}\right)\partial V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח מסה לא נוצרת)כלומר קבועה!(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{v}=\left(x,y,z,t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והצפיפות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho=\rho\left(x,y,z,t\right)\]
+
+\end_inset
+
+ אז נרשום מסה בתחום:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\left(D\right)=\iiintop_{D}\rho\partial V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קצב שינוי המסה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial m}{\partial t} & = & \frac{\partial}{\partial t}\iiintop_{D}\rho\partial V\\
+ & = & \iiintop_{D}\rho_{t}\partial t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המסה היוצאת דרך 
+\begin_inset Formula $\partial D$
+\end_inset
+
+ביחידת זמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oiintop_{\partial D}\rho\vec{v}\cdot\partial\vec{S}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המסה הנכנסת בזמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial m}{\partial t}=-\oiintop_{\partial D}\rho\vec{v}\cdot\partial\vec{S}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iiintop_{D}\rho_{t}\partial V & = & -\iiintop_{D}\vec{\nabla}\left(\rho\vec{v}\right)\partial V\\
+\iiintop_{D}\left(\rho_{t}+\vec{\nabla}\cdot\left(\rho\vec{v}\right)\right)\partial V & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ובגלל שזה צריך להתקיים בכל 
+\begin_inset Formula $V$
+\end_inset
+
+ אזי 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\rho_{t}+\vec{\nabla}\cdot\left(\rho\vec{v}\right)=0$
+\end_inset
+
+ שלזה קוראים משפט הריציפות.
+\end_layout
+
+\begin_layout Subsubsection
+שימוש במשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Stocks
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\iintop_{\Sigma}\left(\vec{\nabla}\times\vec{f}\right)\cdot\hat{N}\partial S=\ointop_{\partial\Sigma}\vec{f}\cdot\partial\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בניסוח הדו מימדי של המשפט הזה הנקרא משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Green
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+\ointop_{c}\begin{pmatrix}P\\
+Q\end{pmatrix}\cdot\begin{pmatrix}\partial x\\
+\partial y\end{pmatrix} & = & \ointop_{c}P\partial x+Q\partial y\\
+ & = & \iintop_{D}\left(Q_{x}-P_{y}\right)\partial x\partial y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
