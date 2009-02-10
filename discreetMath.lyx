@@ -14745,5 +14745,790 @@ f:V\to\left\{ 1,2,\dots,k\right\} \]
 .
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Standard
+מבחן שנת תשס"ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2006
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא דומה למבחן שלנו.
+ המבחן נכתו על ידי רות לורנס נאימרק
+\end_layout
+
+\begin_layout Standard
+שלושה חלקים:
+\end_layout
+
+\begin_layout Enumerate
+שאלה - הוכחה קצרה.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+20
+\numeric off
+%
+\numeric on
+-30
+\numeric off
+%
+\end_layout
+
+\begin_layout Enumerate
+תרגילים שבהם צריך לרשום תשובה בלבד
+\end_layout
+
+\begin_layout Enumerate
+לבחור את האפשרות הנכונה)מבחן אמריקאי( זה כולל שאלות נכון
+\backslash
+לא נכון
+\end_layout
+
+\begin_layout Standard
+מהספר כיסינו את:
+\end_layout
+
+\begin_layout Standard
+פרק תורת הקבוצות)לא כולו(
+\end_layout
+
+\begin_layout Standard
+אינדוקציה
+\end_layout
+
+\begin_layout Standard
+קומבינטוריקה
+\end_layout
+
+\begin_layout Standard
+מה שלמדנו מתורת הגרפים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט טורן
+\end_layout
+
+\begin_layout Standard
+בגרף לא מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ שלא מכיל תתגרף שלם מסדר 
+\begin_inset Formula $k_{t}$
+\end_inset
+
+ יש לכל היותר 
+\begin_inset Formula $n^{2}\cdot\frac{t-2}{2\left(t-1\right)}$
+\end_inset
+
+ צלעות.
+\end_layout
+
+\begin_layout Standard
+אתמול הוכחנו הטענה
+\numeric on
+1
+\numeric off
+ שאומרת בגרף לא מכוון 
+\begin_inset Formula $G$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ כך שמספר הצביעה של 
+\begin_inset Formula $\chi\left(G\right)\leq t-1$
+\end_inset
+
+ יש 
+\begin_inset Formula $n^{2}\frac{t-2}{2\left(t-1\right)}$
+\end_inset
+
+ צלעות)אם 
+\begin_inset Formula $t-1\vert n$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח כי הטענה גוררת משפט טורן ונוכי גם את טענה
+\numeric on
+2
+\numeric off
+ כי אם 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף לא מכוון מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ שלא מכיל תתגרף שלם 
+\begin_inset Formula $k_{t}$
+\end_inset
+
+ אזי קיים גרף לא מכוון 
+\begin_inset Formula $\hat{G}\left(\hat{V},\hat{E}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טוענים כי טענה
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
++ טענה
+\numeric on
+2
+\numeric off
+ 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+משפט טורן.
+\end_layout
+
+\begin_layout Standard
+אז יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ שלא מכיל תתגרף שלם 
+\begin_inset Formula $k_{t}$
+\end_inset
+
+ לפי טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קיים גרף 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $t-1\geq\chi\left(\hat{G}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|E\right|\leq\left|\hat{E}\right|\leq n^{2}\frac{t-2}{2\left(t-1\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחת טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+נוכיח את הטענה באנדוקציה על 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $t=2$
+\end_inset
+
+ - 
+\begin_inset Formula $G$
+\end_inset
+
+ ערף צסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ ללא צלעות.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\hat{G}=G$
+\end_inset
+
+ בעל מספר צביעה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+0=\left|\hat{E}\right|=\left|E\right|\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי טענה
+\numeric on
+2
+\numeric off
+ נכונה ל
+\begin_inset Formula $t-1$
+\end_inset
+
+ ונוכיח ל
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתון גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ שלא מכיל תת-גרף שלם 
+\begin_inset Formula $k_{t}$
+\end_inset
+
+ נבנה גרף 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+: 
+\begin_inset Formula $\chi\left(\hat{G}\right)\leq t-1$
+\end_inset
+
+, 
+\begin_inset Formula $\left|t\right|\leq\left|\hat{E}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ קודקוד בעל דרגה מקסימאלית ב 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\forall u\in V:\deg\left(v\right)\geq\deg\left(u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה: יהי 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ תתגרף המכיל את הקודקודים 
+\begin_inset Formula $\Gamma\left(v\right)$
+\end_inset
+
+)שכני 
+\begin_inset Formula $v$
+\end_inset
+
+( והצלעות ביניהם ב
+\begin_inset Formula $G$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+לא מכיל תתגרף שלם 
+\begin_inset Formula $k_{t-1}$
+\end_inset
+
+ ולכן לפי הנחת האינדוקציה 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $t-2$
+\end_inset
+
+ צביע.
+ אם 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ מכיל תתגרף שלם 
+\begin_inset Formula $k_{t-1}$
+\end_inset
+
+ נתבונן ב
+\begin_inset Formula $k_{t-1}$
+\end_inset
+
+ עם 
+\begin_inset Formula $v$
+\end_inset
+
+ ןכל הצלעות המלחוברות, שזה מיצר גרף שלם.
+\end_layout
+
+\begin_layout Standard
+מסקנה: לפי הנחת האינדוקציה ניתן להחליף את 
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+ בגרף 
+\begin_inset Formula $H$
+\end_inset
+
+ על אותם קודקודים כך ש: 
+\begin_inset Formula $\chi\left(H\right)\leq t-2$
+\end_inset
+
+ ומספר הצלעות ב 
+\begin_inset Formula $H$
+\end_inset
+
+ הוא לפחות כמו מספר הצלעות ב
+\begin_inset Formula $\tilde{G}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למה: הגרף המתקבל מהגרף 
+\begin_inset Formula $H$
+\end_inset
+
+ זה מוגדר על 
+\begin_inset Formula $\Gamma\left(v\right)$
+\end_inset
+
+( בנוסף לקשתות בין הקודקודים 
+\begin_inset Formula $G\setminus\left(\left\{ v\right\} \cup\Gamma\left(v\right)\right)$
+\end_inset
+
+לבין קודקודי 
+\begin_inset Formula $\Gamma\left(v\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula $t-1$
+\end_inset
+
+ צביע.
+\end_layout
+
+\begin_layout Standard
+הוכחת הלמה: 
+\begin_inset Formula $H$
+\end_inset
+
+ הוא 
+\begin_inset Formula $t-2$
+\end_inset
+
+ צביע)מהנחת האיינדוקציה( נצבע את 
+\begin_inset Formula $v$
+\end_inset
+
+ הקודקודים 
+\begin_inset Formula $V\setminus\left(\left\{ v\right\} \cup\Gamma\left(v\right)\right)$
+\end_inset
+
+ בצבע נוסף.
+\end_layout
+
+\begin_layout Section
+צביעת מפות מישוריות
+\end_layout
+
+\begin_layout Standard
+משפט ארבעת הצבעים: כל מפה מישורית ניתנת לצביעה בעזרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צבעים.
+\end_layout
+
+\begin_layout Standard
+נוכיח כי כל גרף מישורי ניתן לצבוע ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צבעים.
+\end_layout
+
+\begin_layout Standard
+הוכחה: יהי 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף מישורי.
+ אם ב 
+\begin_inset Formula $G$
+\end_inset
+
+ לא יותר מ
+\numeric on
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קודקודים הטענה טריוויאלית.
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה על מספר הקודקודים בגרף.
+\end_layout
+
+\begin_layout Standard
+נניח באינדוקציה על מספר הקודקודים בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף בעל מישור בעל 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+הוכחנו בעזרת נוסחת אוילר כי בגרף מישורי תמיד קיים קודקוד בעל דרגה 
+\begin_inset Formula $\deg v\leq5$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתבונן ב 
+\begin_inset Formula $\hat{G}=G\setminus\left\{ v\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ גרף מישורי בעל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ קודקודים לכן לפי הנחת האנדוקציה 
+\begin_inset Formula $\hat{G}$
+\end_inset
+
+ ניתן לצביעה בעזשרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צבעים.
+\end_layout
+
 \end_body
 \end_document

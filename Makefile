@@ -1,14 +1,14 @@
 clean:
 	rm -f `find . -name "*~"`
 	rm -f physics.pdf discreetMath.pdf Algebra.pdf appliedMath.pdf physicsWorkshop.pdf
-	rm -f lectures.tar
+	rm -f lectures.tar.lzma
 add:
 	git add physics.lyx discreetMath.lyx Algebra.lyx appliedMath.lyx physicsWorkshop.lyx
 	git add algebra appliedmath discreetmath physics physicsWorkshop
 
 lectures: Algebra.pdf appliedMath.pdf discreetMath.pdf physics.pdf physicsWorkshop.pdf
 	tar cvf lectures.tar Algebra.pdf appliedMath.pdf discreetMath.pdf physics.pdf physicsWorkshop.pdf
-	rm lectures.tar.lzma
+	rm -f lectures.tar.lzma
 	lzma -9 lectures.tar
 
 Algebra.pdf: Algebra.lyx

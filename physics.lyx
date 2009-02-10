@@ -3651,7 +3651,12 @@ u=-mgh-MgH\]
 \end_layout
 
 \begin_layout Standard
-אבל גם 
+נסמן 
+\begin_inset Formula $l$
+\end_inset
+
+ הוא אורך כל החוט.
+ אבל גם 
 \begin_inset Formula $h$
 \end_inset
 
@@ -8347,6 +8352,7 @@ e^{a+i\theta} & = & e^{a}\left(\cos\theta+i\sin\theta\right)\\
 \begin_inset Graphics
 	filename physics/31d1.svg
 	lyxscale 30
+	width 100text%
 
 \end_inset
 
@@ -8365,7 +8371,7 @@ e^{a+i\theta} & = & e^{a}\left(\cos\theta+i\sin\theta\right)\\
 
 \begin_layout Standard
 רוצים לדבר על ווקטורי היחידה של המערכת המסתובבת: 
-\begin_inset Formula $\hat{x}^{'},\hat{y}^{'}$
+\begin_inset Formula $\hat{x}^{\prime},\hat{y}^{\prime}$
 \end_inset
 
  שהם מסתובבים ביחס למערכת הנייחת
@@ -8373,9 +8379,9 @@ e^{a+i\theta} & = & e^{a}\left(\cos\theta+i\sin\theta\right)\\
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-\dot{\hat{x}}^{'} & = & \vec{\omega}\times\hat{x}^{'}\\
-\dot{\hat{y}}^{'} & = & \vec{\omega}\times\hat{y}^{'}\\
-\dot{\hat{z}}^{'} & = & \vec{\omega}\times\hat{z}^{'}\end{eqnarray*}
+\dot{\hat{x}}^{\prime} & = & \vec{\omega}\times\hat{x}^{\prime}\\
+\dot{\hat{y}}^{\prime} & = & \vec{\omega}\times\hat{y}^{\prime}\\
+\dot{\hat{z}}^{\prime} & = & \vec{\omega}\times\hat{z}^{\prime}\end{eqnarray*}
 
 \end_inset
 
@@ -14764,6 +14770,280 @@ E_{1} & = & E_{2}=E\end{eqnarray*}
 \begin_layout Standard
 \begin_inset Formula \[
 v=c\cos\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.??
+\end_layout
+
+\begin_layout Standard
+בעולם יחסותי התנע הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{P}=\gamma m_{0}\vec{v}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והאנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\underbrace{\gamma m_{0}}_{m}c^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+התפרקות ראדיואקטיבית
+\end_layout
+
+\begin_layout Standard
+מגדירים יחידות חדשות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1MeV & = & 1.6\cdot10^{-13}J\\
+\underbrace{1amu}_{\mbox{Atomic Mass Unit}} & = & 1.66\cdot10^{-27}kg=1.49\cdot10^{-10}J=932MeV\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי יש לנו חלקיק ראדיום שמתפרק לחלקיק ראדון וחלקיק אלפה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{Ra} & = & 226.02540amu\\
+m_{Rn} & = & 222.01757amu\\
+m_{\alpha} & = & 4.00277amu\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימור תנע ואנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(0,0,0,m_{Ra}c^{2}\right)=\left(P_{Rn},0,0,\gamma_{Rn}m_{Rn}c^{2}\right)+\left(P_{\alpha},0,0,\gamma_{\alpha}m_{\alpha}c^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור אנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{Ra} & = & \gamma_{Rn}m_{Rn}+\gamma_{\alpha}m_{\alpha}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+0=\gamma_{Rn}m_{Rn}v_{Rn}+\gamma_{\alpha}m_{\alpha}v_{\alpha}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי חלקיק ה
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קיבל את כל האנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{Ra}=m_{Rn}+m_{\alpha}+E_{k} & \Rightarrow & E_{k}=m_{Ra}-m_{Rn}-m_{\alpha}\\
+E_{k} & = & 0.00506amu\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma_{\alpha}m_{\alpha} & = & m_{\alpha}+E_{k}\\
+\gamma_{\alpha} & = & 1+\frac{E_{k}}{m_{\alpha}}\\
+v_{\alpha} & \approx & 0.05c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא איטי מדאי אבל גם לא מהר מדאי.
+ 
+\begin_inset Formula $\gamma=\frac{1}{\sqrt{1-0.05^{2}}}=1.00125$
+\end_inset
+
+ כלומר אפשר להזניח את זה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m_{\alpha}v_{\alpha}+m_{Rn}v_{Rn}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במשוואת האנרגיה נקרב: 
+\begin_inset Formula $\gamma\approx1+\frac{u^{2}}{2c^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{Ra} & = & \left(1+\frac{v_{Rn}^{2}}{2c^{2}}\right)m_{Rn}+\left(1+\frac{v_{\alpha}^{2}}{2c^{2}}\right)m_{\alpha}\\
+v_{\alpha} & \approx & 0.05c\\
+v_{Rn} & \approx & 9\cdot10^{-4}c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מאיץ חלקיקים
+\end_layout
+
+\begin_layout Standard
+אם יש חלקיק שיש עליו כח 
+\begin_inset Formula $F$
+\end_inset
+
+ קבוע
+\end_layout
+
+\begin_layout Standard
+לפי ניוטון היינו מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a & = & \frac{F}{m_{0}}\\
+v & = & v_{0}+\frac{Ft}{m_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל ביחסות מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \dot{P}=\frac{\partial}{\partial t}\left(\gamma m_{0}v\right)\\
+\gamma m_{0}v & = & Ft+c\end{eqnarray*}
+
+\end_inset
+
+ נניח תנאי התחלה 
+\begin_inset Formula $v\left(t=0\right)=0\Rightarrow c=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\sqrt{1-\beta^{2}}}m_{0}\beta c & = & Ft\\
+\frac{m_{0}^{2}c^{2}\beta^{2}}{1-\beta^{2}} & = & F^{2}t^{2}\\
+m_{0}^{2}c^{2}\beta^{2} & = & F^{2}t^{2}-F^{2}t^{2}\beta^{2}\\
+\beta^{2} & = & \left(\frac{F^{2}t^{2}}{\sqrt{m_{0}^{2}c^{2}+F^{2}t^{2}}}\right)\cdot c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר עבור 
+\begin_inset Formula $t\to\infty$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $v\to c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה זה 
+\begin_inset Formula $t$
+\end_inset
+
+ גדול? 
+\begin_inset Formula $Ft\gg m_{0}c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+t\gg\frac{m_{0}c}{F}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $t\to0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\approx\frac{Ft}{m_{0}}\]
 
 \end_inset
 
