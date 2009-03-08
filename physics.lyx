@@ -8337,7 +8337,9 @@ e^{a+i\theta} & = & e^{a}\left(\cos\theta+i\sin\theta\right)\\
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.???
+תרגול מס.
+\numeric on
+7
 \end_layout
 
 \begin_layout Standard
@@ -9173,7 +9175,9 @@ Q & = & \frac{\omega_{0}}{\gamma}\\
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.>>>>
+תרגול מס.
+\numeric on
+8
 \end_layout
 
 \begin_layout Standard
@@ -9349,7 +9353,7 @@ a=2\sqrt{km} & \dots\mbox{homework}\dots\end{cases}\]
 \begin_layout Chapter
 הרצאה מס.
 \numeric on
-99999
+26
 \end_layout
 
 \begin_layout Standard
@@ -9715,7 +9719,7 @@ mv_{y} & = & -Mv_{m}\\
 \begin_layout Chapter
 הרצאה מס.
 \numeric on
-222
+27
 \end_layout
 
 \begin_layout Standard
@@ -10000,7 +10004,9 @@ l\dot{\theta}\left(\mu l\ddot{\theta}+mg\theta\right) & = & 0\\
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.??
+הרצאה מס.
+\numeric on
+28
 \end_layout
 
 \begin_layout Standard
@@ -10329,7 +10335,9 @@ I_{yz} & = & -\sum m_{i}y_{i}z_{i}=I_{zy}\end{eqnarray*}
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.????
+תרגול מס.
+\numeric on
+9
 \end_layout
 
 \begin_layout Section
@@ -10819,7 +10827,9 @@ r_{0} & = & \frac{L^{2}}{GM\mu^{2}}\\
 \end_layout
 
 \begin_layout Chapter
-האצאה מס.??
+האצאה מס.
+\numeric on
+29
 \end_layout
 
 \begin_layout Standard
@@ -11326,7 +11336,9 @@ I_{zx} & I_{zy} & I_{z}\end{pmatrix}\\
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+30
 \end_layout
 
 \begin_layout Standard
@@ -11717,7 +11729,9 @@ E_{k}\left(0\right) & = & \frac{1}{2}mv_{0}^{2}\end{eqnarray*}
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+31
 \end_layout
 
 \begin_layout Section
@@ -11948,7 +11962,9 @@ L^{\prime}=\frac{\Delta t_{s}}{\Delta t_{s_{0}}}L_{0}=\frac{1}{\gamma}L_{0}\]
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.??
+תרגול מס.
+\numeric on
+10
 \end_layout
 
 \begin_layout Standard
@@ -12560,7 +12576,9 @@ h & = & 2R+\frac{1}{2}R+\frac{1}{5}r^{2}\frac{R}{r^{2}}\end{eqnarray*}
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+32
 \end_layout
 
 \begin_layout Standard
@@ -12725,7 +12743,9 @@ t^{\prime} & = & \gamma\left(t-\frac{v_{x}}{c^{2}}x\right)\end{eqnarray*}
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+33
 \end_layout
 
 \begin_layout Standard
@@ -13016,7 +13036,9 @@ u_{x}=\frac{\partial x}{\partial t_{0}}=\frac{\partial x}{\partial t}\cdot\frac{
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+34
 \end_layout
 
 \begin_layout Standard
@@ -13539,7 +13561,9 @@ E\overset{\frac{v^{2}}{c^{2}}\ll1}{\to}mc^{2}\]
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.????
+תרגול מס.
+\numeric on
+11
 \end_layout
 
 \begin_layout Standard
@@ -13900,7 +13924,9 @@ x_{A}^{\prime} & = & v_{A}^{\prime}\cdot t_{A}^{\prime}\\
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.??
+הרצאה מס.
+\numeric on
+35
 \end_layout
 
 \begin_layout Standard
@@ -14183,7 +14209,9 @@ M & = & \sqrt{m_{1}^{2}+m_{2}^{2}+2m_{1}m_{2}\gamma\left(v_{1}\right)}\\
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+36
 \end_layout
 
 \begin_layout Standard
@@ -14399,7 +14427,9 @@ F & = & \frac{\partial}{\partial t}\left(\gamma\vec{P}\right)\\
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.??
+הרצאה מס.
+\numeric on
+37
 \end_layout
 
 \begin_layout Standard
@@ -14777,7 +14807,9 @@ v=c\cos\theta\]
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.??
+תרגול מס.
+\numeric on
+12
 \end_layout
 
 \begin_layout Standard

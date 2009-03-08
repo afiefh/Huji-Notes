@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="Generator" content="Kate, the KDE Advanced Text Editor" />
+<title>afiefpoly.m (2)</title>
+</head>
+<body>
+<pre>
+<span style='color: #0000ff'>function</span><span style='color: #141312'> [x,p,x2,f] = afiefpoly(n)</span>
+
+<span style='color: #141312'>co = zeros(n+</span><span style='color: #b08000'>1</span><span style='color: #141312'>,</span><span style='color: #b08000'>2</span><span style='color: #141312'>);</span>
+<span style='color: #141312'>x = -</span><span style='color: #b08000'>3</span><span style='color: #141312'>*pi:</span><span style='color: #b08000'>0.1</span><span style='color: #141312'>:</span><span style='color: #b08000'>3</span><span style='color: #141312'>*pi;</span>
+<span style='color: #141312'>p=zeros(length(x),</span><span style='color: #b08000'>1</span><span style='color: #141312'>);</span>
+
+<span style='color: #0000ff'>for</span><span style='color: #141312'> k=</span><span style='color: #b08000'>1</span><span style='color: #141312'>:n</span>
+<span style='color: #141312'>    co(k,</span><span style='color: #b08000'>1</span><span style='color: #141312'>)=(((-</span><span style='color: #b08000'>1</span><span style='color: #141312'>)^k-</span><span style='color: #b08000'>1</span><span style='color: #141312'>)/(k^</span><span style='color: #b08000'>2</span><span style='color: #141312'>*pi));</span>
+<span style='color: #141312'>    co(k,</span><span style='color: #b08000'>2</span><span style='color: #141312'>)=((-</span><span style='color: #b08000'>1</span><span style='color: #141312'>)^(k+</span><span style='color: #b08000'>1</span><span style='color: #141312'>))/k;</span>
+<span style='color: #0000ff'>end</span>
+
+<span style='color: #0000ff'>for</span><span style='color: #141312'> k=</span><span style='color: #b08000'>1</span><span style='color: #141312'>:length(x)</span>
+<span style='color: #141312'>    p(k)=pi/</span><span style='color: #b08000'>4</span><span style='color: #141312'>;</span>
+<span style='color: #141312'>    </span><span style='color: #0000ff'>for</span><span style='color: #141312'> j=</span><span style='color: #b08000'>1</span><span style='color: #141312'>:n</span>
+<span style='color: #141312'>	p(k)=p(k)+co(j,</span><span style='color: #b08000'>1</span><span style='color: #141312'>)*cos(j*x(k))+co(j,</span><span style='color: #b08000'>2</span><span style='color: #141312'>)*sin(j*x(k));</span>
+<span style='color: #141312'>    </span><span style='color: #0000ff'>end</span>
+<span style='color: #0000ff'>end</span>
+
+<span style='color: #141312'>x2=[-</span><span style='color: #b08000'>3</span><span style='color: #141312'>*pi,-</span><span style='color: #b08000'>3</span><span style='color: #141312'>*pi,-</span><span style='color: #b08000'>2</span><span style='color: #141312'>*pi,-pi,-pi,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,pi,pi,</span><span style='color: #b08000'>2</span><span style='color: #141312'>*pi,</span><span style='color: #b08000'>3</span><span style='color: #141312'>*pi];</span>
+<span style='color: #141312'>f=[pi,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,pi,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,pi,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,</span><span style='color: #b08000'>0</span><span style='color: #141312'>,pi];</span>
+
+
+</pre></body>
+</html>

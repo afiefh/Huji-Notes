@@ -10870,7 +10870,9 @@ f\left(1+\Delta x,\pi+\Delta y\right)\sim\pi^{2}+\Delta x+2\pi\cdot\Delta y\]
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.???
+תרגול מס.
+\numeric on
+8
 \end_layout
 
 \begin_layout Standard
@@ -11368,7 +11370,9 @@ f\left(x,y,z\right)=\pm\sqrt{\frac{12}{11}}\left(1+\frac{1}{2}+\frac{1}{3}\right
 \end_layout
 
 \begin_layout Chapter
-תרגול מס.??
+תרגול מס.
+\numeric on
+9
 \end_layout
 
 \begin_layout Section
@@ -11531,7 +11535,9 @@ Max
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.??
+הרצאה מס.
+\numeric on
+22
 \end_layout
 
 \begin_layout Section
@@ -12242,7 +12248,9 @@ z\end{pmatrix}\]
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.????
+הרצאה מס.
+\numeric on
+23
 \end_layout
 
 \begin_layout Section
@@ -12470,7 +12478,9 @@ z\end{pmatrix}\\
 \end_layout
 
 \begin_layout Chapter
-הרצאה מס.???
+הרצאה מס.
+\numeric on
+24
 \end_layout
 
 \begin_layout Standard
