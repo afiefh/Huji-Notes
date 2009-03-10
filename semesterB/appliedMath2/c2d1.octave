@@ -1,0 +1,10 @@
+#!/usr/bin/env octave
+u=0:0.1:pi;
+v=0:0.1:pi;
+
+[uu,vv]=meshgrid(u,v);
+surf(sin(uu).*cos(vv),sin(uu).*sin(vv),cos(uu));
+axis([-1,1,-1,1,-1,1]);
+pause
+
+print -dsvg c2d1.svg

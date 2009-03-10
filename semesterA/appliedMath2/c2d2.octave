@@ -1,0 +1,31 @@
+#!/usr/bin/env octave
+
+function [x,y,z]=shapeZ(u,v)
+    x=sin(u).*cos(v);
+    y=sin(u).*sin(v);
+    z=cos(u);
+
+    for i=1:rows(z)
+	for j=1:columns(z)
+	    if(z(i,j)<(3./5))
+		z(i,j)=3/5;
+	    endif
+	    if(z(i,j)<(3./5))
+		z(i,j)=3/5;
+	    endif
+	    if(z(i,j)<(3./5))
+		z(i,j)=3/5;
+	    endif
+	endfor
+    endfor
+endfunction
+
+uu=0:0.1:2*pi+0.1;
+vv=0:0.1:pi+0.1;
+[u,v]=meshgrid(uu,vv);
+[x,y,z]=shapeZ(u,v);
+
+surf(x,y,z);
+axis([-1,1,-1,1,-1,1]);
+pause
+print -dsvg c2d2.svg

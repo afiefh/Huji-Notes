@@ -1,0 +1,1301 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement h
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מתמטיקה שימושית
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+שולמית סולומון
+\end_layout
+
+\begin_layout Standard
+טלפון: 
+\numeric on
+0527600121
+\end_layout
+
+\begin_layout Standard
+דואר אלקטרוני: 
+\lang english
+shulamit.solomon@gmail.com
+\end_layout
+
+\begin_layout Standard
+שעות קבלה: ג' עד שעה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1:30
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ בהתאם מראש.
+\end_layout
+
+\begin_layout Section
+משפטי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Gauss, Stokes, Green
+\end_layout
+
+\begin_layout Subsection
+אינטגרציה של שדה וקטורי 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+ על מסילה 
+\begin_inset Formula $C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename appliedMath2/c1d1.svg
+	lyxscale 30
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מסילה 
+\begin_inset Formula $C$
+\end_inset
+
+ עם פרמטריזציה 
+\begin_inset Formula $r\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{C}\vec{f}\cdot\partial\vec{r}=\intop_{a}^{b}f\left(r\left(t\right)\right)\dot{r}\left(r\right)\partial t\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסילה 
+\begin_inset Formula $C$
+\end_inset
+
+ יכולה להיות ב 
+\begin_inset Formula $\mathbb{R}^{2}$
+\end_inset
+
+ או 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f}\left(x,y\right) & = & \begin{pmatrix}f_{1}\left(x,y\right)\\
+f_{2}\left(x,y\right)\end{pmatrix}\in\mathbb{R}^{2}\\
+\vec{f}\left(x,y,z\right) & = & \begin{pmatrix}f_{1}\left(x,y,z\right)\\
+f_{2}\left(x,y,z\right)\\
+f_{2}\left(x,y,z\right)\end{pmatrix}\in\mathbb{R}^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אינטגרל על משטח 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\iintop_{\Sigma}f\cdot\partial S=?\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מגדירוים פונקציה 
+\begin_inset Formula $r\left(u,v\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $r:\mathbb{R}^{2}\to\mathbb{R}^{3}$
+\end_inset
+
+ אזי האינגרל שלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename appliedMath2/c1d2.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פרמטריזציה של המשטח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\iintop_{\Sigma}f\cdot\partial S=\iintop_{D}f\left(r\left(u,v\right)\right)\cdot\left(\frac{\partial r}{\partial u}\times\frac{\partial r}{\partial v}\right)\partial u\partial v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+המשפט הייסודי של חדוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[\phi\right]_{a}^{b}=\int_{a}^{b}\frac{\partial}{\partial t}\phi\partial t=\phi\left(b\right)-\phi\left(a\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Green
+\end_layout
+
+\begin_layout Standard
+אזי בכל מקרה דו מימדי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{\partial C}\phi=\intop_{C}\vec{\nabla}\phi\cdot\partial r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נהפוך את זה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{\partial D}P\partial x+Q\partial y=\intop_{D}\left[\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right]\partial x\partial y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Gauss
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\oiintop_{\partial R}f\partial S=\iiintop_{R}\left(\vec{\nabla}\cdot\vec{f}\right)\partial V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Stokes
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ointop_{\partial\Sigma}\vec{f}\cdot\partial\vec{S}=\oiintop_{\sum}\left(\vec{\nabla}\times f\right)\partial\vec{S}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שקילות של שלושת המשפטים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\intop_{C}\nabla\phi\partial r & = & \left[\phi\right]_{a}^{b}\\
+\int_{a}^{b}f^{\prime} & = & \left[f\right]_{a}^{b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להראת שקילות של שתי המשוואות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\intop_{C}\vec{\nabla}\phi\cdot\partial\vec{r} & = & \int_{a}^{b}\left(\vec{\nabla}\phi\right)\left(r\left(t\right)\right)\dot{r}\left(t\right)\partial t\\
+ & \underbrace{=}_{\begin{matrix}\mbox{\R{כלל}}\\
+\mbox{\R{השרשרת}}\end{matrix}} & \int_{a}^{b}\frac{\partial}{\partial t}\left(\phi\left(r\left(t\right)\right)\right)\partial t\\
+ & = & \left[\phi\left(r\left(t\right)\right)\right]_{a}^{b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הוכחת משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Green
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Stokes
+\end_layout
+
+\begin_layout Standard
+עוד זוג משפטים שקולים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{Stokes:}\,\ointop_{\partial\Sigma}\vec{f}\partial\vec{s} & = & \iintop_{\Sigma}\left(\vec{\nabla}\times\vec{f}\right)\partial\vec{S}\\
+\mbox{Green:}\,\ointop_{D\in\mathbb{R}^{2}}P\partial x+Q\partial y & = & \iintop_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Green
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נובע מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Stokes
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{f} & = & \vec{f}\left(x,t,z\right)=\begin{pmatrix}P\left(x,y\right)\\
+Q\left(x,y\right)\\
+0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ointop_{\partial\Sigma}\vec{f}\cdot\partial\vec{S} & = & \iintop_{\Sigma}\left(\vec{\nabla}\times\vec{f}\right)\partial\vec{S}\\
+\ointop_{\partial\Sigma}\begin{pmatrix}P\left(x,y\right)\\
+Q\left(x,y\right)\\
+0\end{pmatrix} & = & \iintop_{\Sigma}\begin{pmatrix}\frac{\partial}{\partial x}\\
+\frac{\partial}{\partial y}\\
+\frac{\partial}{\partial z}\end{pmatrix}\times\begin{pmatrix}P\left(x,y\right)\\
+Q\left(x,y\right)\\
+0\end{pmatrix}\partial\vec{S}\\
+ & = & \iintop\begin{pmatrix}0\\
+0\\
+\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\end{pmatrix}\cdot\overbrace{\begin{pmatrix}0\\
+0\\
+1\end{pmatrix}\partial x\partial y}^{\partial\vec{S}}\\
+ & = & \iintop_{D}\left(\frac{\partial Q}{\partial x}-\frac{\partial P}{\partial y}\right)\partial x\partial y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הוכחת משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Stokes
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+על בסיס משפט
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Green
+\end_layout
+
+\begin_layout Standard
+מגדירים השפה של 
+\begin_inset Formula $D$
+\end_inset
+
+: 
+\begin_inset Formula $\partial D=\left\{ \left(u\left(t\right),v\left(t\right)\right)\vert a\leq t\leq b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ointop_{\partial\Sigma}\vec{f}\cdot\partial\vec{S} & = & \int_{a}^{b}f\left(r\left(u\left(t\right),v\left(t\right)\right)\right)\partial\vec{S}\\
+ & = & \int_{a}^{b}f\left(r\left(u\left(t\right),v\left(t\right)\right)\right)\cdot\left(\frac{\partial r}{\partial u}\dot{u}+\frac{\partial r}{\partial v}\cdot\dot{v}\right)\partial t\\
+ & = & \int_{a}^{b}\begin{pmatrix}f\left(r\left(t\right)\right)\frac{\partial r}{\partial u}\\
+f\left(r\left(t\right)\right)\frac{\partial r}{\partial v}\end{pmatrix}\cdot\begin{pmatrix}\dot{u}\\
+\dot{v}\end{pmatrix}\partial t\\
+ & = & \iintop_{\partial D}\begin{pmatrix}P\\
+Q\end{pmatrix}\cdot\begin{pmatrix}\dot{u}\\
+\dot{v}\end{pmatrix}\partial r\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Green
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{\partial D}\begin{pmatrix}P\\
+Q\end{pmatrix}\partial r=\iintop_{D}\left(\frac{\partial Q}{\partial u}-\frac{\partial P}{\partial v}\right)\partial u\partial v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial P}{\partial v} & = & f\left(r\left(u,v\right)\right)\cdot\frac{\partial}{\partial v}\cdot\frac{\partial r}{\partial u}+\underbrace{\frac{\partial}{\partial v}\left(f\left(r\left(u,v\right)\right)\right)\cdot\frac{\partial r}{\partial u}}_{D_{f}\cdot\frac{\partial r}{\partial v}\,\mbox{\R{מכפלת\,מטריצות}}}\\
+ & = & \vec{f}\frac{\partial^{2}r}{\partial u\partial v}+\left(\frac{\partial r}{\partial v}\right)^{T}\cdot\left(D_{f}\right)^{T}\cdot\frac{\partial r}{\partial u}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדומה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial Q}{\partial u}=\vec{f}\frac{\partial^{2}r}{\partial u\partial v}+\left(\frac{\partial r}{\partial v}\right)^{T}\cdot\left(D_{f}\right)\frac{\partial r}{\partial u}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בביטוי נקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{\partial Q}{\partial u},\frac{\partial P}{\partial v}\right)=\iintop_{D}\left(\frac{\partial r}{\partial v}\right)^{T}\left(D_{f}-D_{f}^{T}\right)\cdot\left(\frac{\partial r}{\partial u}\right)\partial u\partial v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f=\begin{pmatrix}f_{1}\left(x,y,z\right)\\
+f_{2}\left(x,y,z\right)\\
+f_{3}\left(x,y,z\right)\end{pmatrix}\Rightarrow D_{f}=\begin{pmatrix}\frac{\partial f_{1}}{\partial x} & \frac{\partial f_{1}}{\partial y} & \frac{\partial f_{1}}{\partial z}\\
+\frac{\partial f_{2}}{\partial x} & \frac{\partial f_{2}}{\partial y} & \frac{\partial f_{2}}{\partial z}\\
+\frac{\partial f_{3}}{\partial x} & \frac{\partial f_{3}}{\partial y} & \frac{\partial f_{3}}{\partial z}\end{pmatrix}\]
+
+\end_inset
+
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(D_{f}-\left(D_{f}\right)^{T}\right)=\begin{pmatrix}0 & -C & B\\
+C & 0 & -A\\
+-B & A & 0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \frac{\partial f_{3}}{\partial y}-\frac{\partial f_{2}}{\partial z}\\
+B & = & \frac{\partial f_{1}}{\partial z}-\frac{\partial f_{3}}{\partial x}\\
+C & = & \frac{\partial f_{2}}{\partial x}-\frac{\partial f_{1}}{\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי המטריצה של ההעתקה הליניארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}\to\begin{pmatrix}0 & -C & B\\
+C & 0 & -A\\
+-B & A & 0\end{pmatrix}\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היא מטריצה של העתקה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}\to\begin{pmatrix}A\\
+B\\
+C\end{pmatrix}\times\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iintop_{D}\left(\frac{\partial r}{\partial v}\right)^{T}\left(D_{f}-D_{f}^{T}\right)\cdot\left(\frac{\partial r}{\partial u}\right)\partial u\partial v & = & \iintop_{D}\left(\frac{\partial r}{\partial v}\right)^{T}\left(\left(\nabla\times f\right)\times\frac{\partial r}{\partial u}\right)\partial u\partial v\\
+ & = & \iintop_{D}\left(\left(\left(\nabla\cdot f\right)\times\frac{\partial r}{\partial u}\right)\cdot\frac{\partial r}{\partial u}\right)\partial u\partial r\\
+ & = & \iintop_{D}\left(\nabla\times f\right)\cdot\left(\frac{\partial r}{\partial u}\times\frac{\partial r}{\partial v}\right)\partial u\partial v\\
+ & = & \iintop_{D}\left(\nabla\times f\right)\cdot\partial\vec{S}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+עומר עידן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+edhan@math.huji.ac.uk
+\end_layout
+
+\begin_layout Standard
+יום ב' 
+\begin_inset Formula $16:00-17:00$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פעדמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+226
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\iintop_{S}\left(\vec{\nabla}\times\vec{f}\right)\partial\vec{s}=\ointop_{\partial s}\vec{f}\cdot\partial\vec{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\vec{f}=\begin{pmatrix}-z\\
+xz\\
+x\end{pmatrix}$
+\end_inset
+
+ והמשטח 
+\begin_inset Formula $S$
+\end_inset
+
+ שלנו הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}=\begin{pmatrix}a\sin u\cos v\\
+a\sin u\sin v\\
+a\cos u\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $0\leq u\leq\pi,0\leq v\leq\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename appliedMath2/c2d1.svg
+	lyxscale 30
+	width 30page%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+משטח 
+\begin_inset Formula $S$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מחשבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial\vec{S} & = & \vec{r}_{u}\times\vec{r}_{v}\partial u\partial v\\
+ & = & \begin{pmatrix}a\cos u\cos v\\
+a\cos u\sin v\\
+-a\sin u\end{pmatrix}\times\begin{pmatrix}-a\sin u\sin v\\
+a\sin u\cos v\\
+0\end{pmatrix}\partial u\partial v\\
+ & = & \begin{pmatrix}a^{2}\sin^{2}u\cos v\\
+a^{2}\sin^{2}u\sin v\\
+a^{2}\left(\cos u\sin u\cdot1\right)\end{pmatrix}\partial u\partial v\\
+\partial S & = & a^{2}\sqrt{\sin^{4}u+\cos^{2}u\sin^{2}u}\partial u\partial v\\
+ & = & a^{2}\left|\sin u\right|\\
+ & \underbrace{=}_{0\leq u\leq\pi} & a^{2}\sin u\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iint\left(\vec{\nabla}\times\vec{f}\right)\partial S & = & \intop_{0}^{\pi}\intop_{0}^{\pi}\begin{pmatrix}-a\sin u\cos v\\
+-2\\
+a\cos u\end{pmatrix}\cdot\begin{pmatrix}a^{2}\sin^{2}u\cos v\\
+a^{2}\sin^{2}u\sin v\\
+a^{2}\cos u\sin u\end{pmatrix}\partial u\partial v\\
+ & = & \intop_{0}^{\pi}\intop_{0}^{\pi}\left(a^{3}\sin^{3}u\cos^{2}v-2a^{2}\sin u\sin v+a^{3}\cos^{2}u\sin u\right)\partial u\partial v\\
+ & = & -a^{3}\frac{\pi}{2}\intop_{0}^{\pi}\sin^{3}u\partial u-2a^{2}\frac{\pi}{2}\cdot2+\frac{a^{3}}{3}\cdot\overbrace{\left[\left(-\cos^{3}u\right)\right]_{0}^{\pi}}^{2}\\
+ & = & -\frac{\pi a^{3}}{2}\intop_{0}^{\pi}\sin^{3}u\partial u-2\pi a^{2}+2a^{3}\\
+ & = & -\frac{\pi a^{3}}{2}\intop_{0}^{\pi}\left(1-\cos^{2}u\right)\sin u\partial u-2\pi a^{2}+2a^{3}\\
+ & = & -\frac{\pi a^{3}}{2}\left(2-\frac{2}{3}\right)-2\pi a^{2}+2a^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עכשיו נעשה הצד השני: 
+\begin_inset Formula $\ointop_{\partial s}\vec{f}\cdot\partial\vec{r}$
+\end_inset
+
+ כאשר המסילה היא 
+\begin_inset Formula $\vec{r}\left(t\right)=\begin{pmatrix}a\cos t\\
+0\\
+a\sin t\end{pmatrix}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $0\leq t\leq2\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint\vec{f}\cdot\partial\vec{r} & = & \intop_{2\pi}^{0}\begin{pmatrix}-a\sin t\\
+a^{2}\sin t\cos t\\
+a\cos t\end{pmatrix}\cdot\begin{pmatrix}-a\sin t\\
+0\\
+a\cos t\end{pmatrix}\partial t\\
+ & = & -a^{2}\intop_{0}^{2\pi}\partial t\\
+ & = & -2\pi a^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי רואים כי 
+\begin_inset Formula \[
+\iintop_{\Sigma}\left(\vec{\nabla}\times\vec{f}\right)\cdot\partial\vec{S}=\ointop_{\partial\Sigma}\vec{f}\cdot\partial\vec{s}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Gauss
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+F:\mathbb{R}^{3} & \to & \mathbb{R}^{3}\\
+\iiintop_{V}\left(\vec{\nabla}\cdot\vec{F}\right)\partial V & = & \iintop_{\partial V}\vec{F}\cdot\partial\vec{S}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $V$
+\end_inset
+
+ הוא גוף ב 
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ ו
+\begin_inset Formula $\partial V$
+\end_inset
+
+ הוא המעטפת של הגוף הזה.
+\end_layout
+
+\begin_layout Standard
+אזי הגוף שלנו הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V=\left\{ \left(x,y,z\right):\begin{matrix}x^{2}+y^{2}+z^{2}\leq1\\
+z\geq\frac{3}{5}\end{matrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והפונקציה תהיה 
+\begin_inset Formula $f=\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}$
+\end_inset
+
+ אזי רוצים לראות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\iiintop_{V}\left(\vec{\nabla}\cdot\vec{F}\right)\partial V=\iintop_{\partial V}\vec{F}\cdot\partial\vec{S}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נתחיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & = & \intop_{\nicefrac{3}{5}}^{1}\intop_{0}^{2\pi}\intop_{0}^{\sqrt{1-z^{2}}}\rho\partial\rho\partial\varphi\partial z\\
+ & = & \frac{3\cdot2\pi}{2}\intop_{\nicefrac{3}{5}}^{1}\left(1-z^{2}\partial z\right)\\
+ & = & 3\pi\left[z-\frac{5^{3}}{3}\right]_{\nicefrac{3}{5}}^{1}\\
+ & = & 3\pi\left(\frac{2}{3}-\left(\frac{3}{5}-\frac{9}{125}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והצד השני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{N}_{1} & = & \begin{pmatrix}0\\
+0\\
+-1\end{pmatrix}\\
+\hat{N}_{2} & = & \begin{pmatrix}x\\
+y\\
+z\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\partial V=\begin{pmatrix}\sin\varphi\cos\theta\\
+\sin\varphi\sin\theta\\
+\cos\varphi\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iintop_{\partial V}\vec{F}\cdot\partial\vec{S} & = & \iintop_{\partial V_{1}}\begin{pmatrix}x\\
+y\\
+\frac{3}{5}\end{pmatrix}\cdot\begin{pmatrix}0\\
+0\\
+-1\end{pmatrix}\partial x\partial y+\iintop_{\partial V_{2}}1\partial S\\
+ & = & -\frac{3}{5}\cdot\pi\left(\frac{4}{5}\right)^{2}+\intop_{\frac{3}{5}}^{1}\intop_{0}^{2\pi}\sqrt{1-z^{2}}\partial\varphi\partial z\\
+ & \underbrace{=}_{z=\sin t} & 2\pi\intop_{\sin^{-1}\left(\frac{3}{5}\right)}^{\frac{\pi}{2}}\cos^{2}t\partial t\\
+ & = & 2\pi\intop_{\sin^{-1}\left(\nicefrac{3}{5}\right)}^{\nicefrac{\pi}{2}}\frac{1+\cos2t}{2}\partial t\\
+ & = & 2\pi\left[\frac{1}{2}\left(\frac{\pi}{2}-\sin^{-1}\left(\frac{3}{5}\right)\right)+\left[\frac{1}{4}\sin2t\right]_{\sin^{-1}\left(\frac{3}{5}\right)}^{\frac{\pi}{2}}\right]\\
+ & = & \dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בקיצור מה ראינו היום? עוד פעם משפט סטוקס ומשפט גאוס.
+\end_layout
+
+\end_body
+\end_document
