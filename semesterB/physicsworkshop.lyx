@@ -1,0 +1,385 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+סדנת עזר בפיזיקה
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physicsworkshop/c1d1.svg
+	lyxscale 40
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מטען כזר בנקודה 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי יש מטען חשמלי 
+\begin_inset Formula $Q$
+\end_inset
+
+ בראשית.
+ כדי למדוד הכח שמפעיל המטען 
+\begin_inset Formula $Q$
+\end_inset
+
+ נסים מטען בדיקה 
+\begin_inset Formula $q$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $\vec{r}$
+\end_inset
+
+ כלשהיא אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}_{q}=\frac{kQq}{\left|r\right|^{2}}\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נגדיר את השדה בתור 
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & \frac{\vec{F}}{q}\\
+ & = & \frac{kQ}{\left|r\right|^{2}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אפשר דרך השדה למצא את 
+\begin_inset Formula $F$
+\end_inset
+
+: 
+\begin_inset Formula $\vec{F}=\vec{E}\cdot q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם המטען הזה לא נמצא בראשית אזי אפשר לרשום את השדה בתור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & \frac{kQ}{\left|\vec{r}-\vec{r}_{1}\right|^{2}}\widehat{r-r_{1}}\\
+ & = & \frac{kQ}{\left|\vec{r}-\vec{r}_{1}\right|^{3}}\left(\vec{r}-\vec{r}_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+חוק גאוס 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oiintop_{S\left(V\right)}\vec{E}\cdot\partial\vec{S}=\frac{q}{\epsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $q$
+\end_inset
+
+ הוא המטען הנמצא ב
+\begin_inset Formula $V$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+את המשפט הזה אפשר לכתוב בצורת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\intop_{V}\nabla\cdot\vec{E}\partial V=\int\frac{q}{\epsilon}\partial V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם המטען הוא לא נקודתי.
+ כדור טעון במטען 
+\begin_inset Formula $Q$
+\end_inset
+
+ כלשהוא אחיד אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int\vec{E}\partial\vec{S}=4\pi r^{2}E\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז צריך לפתור הבעיה בשתי מקרים: 
+\begin_inset Formula $r>R$
+\end_inset
+
+ ו 
+\begin_inset Formula $r<R$
+\end_inset
+
+.
+ במקרה של 
+\begin_inset Formula $r>R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4\pi r^{2}E & = & \frac{q}{\epsilon_{0}}\\
+E & = & \frac{kq}{r^{2}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $r<R$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4\pi r^{2}E & = & \frac{1}{\epsilon_{0}}\cdot q\left(\frac{r}{R}\right)^{3}\\
+E & = & \frac{kqr}{R^{3}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שדה סביב טייל אינסופי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physicsworkshop/c1d2.svg
+	lyxscale 30
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טייל אינסופי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \int\frac{k\lambda\partial l\hat{r}}{r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי צריך לבנות פרמטריזציה לטייל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r & = & \frac{R}{\cos\theta}\\
+\hat{r} & = & \cos\theta\hat{i}+\sin\theta\hat{j}\\
+\partial l & = & \frac{r\partial\theta}{\cos\theta}=\frac{R\partial\theta}{\cos^{2}\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \int\frac{k\lambda R\partial\theta}{\cos^{2}\theta}\left(\cos\theta\hat{i}+\sin\theta\hat{j}\right)\frac{\cos^{2}\theta}{R^{2}}\\
+ & = & \frac{k\lambda}{R}\int_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\cos\theta\hat{i}+\sin\theta\hat{j}\partial\theta\\
+ & = & \frac{k\lambda}{R}\left(\sin\theta\hat{i}-\cos\theta\hat{j}\right)\vert_{-\frac{\pi}{2}}^{\frac{\pi}{2}}\\
+ & = & \frac{2k\lambda}{R}\hat{i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרך אחרת לפתור את זה הוא דרך חוק גאוס.
+ יש סימיטריה גלילית לבעיה זו אזי 
+\begin_inset Formula $\vec{E}\left(\vec{r}\right)=E\left(\vec{r}\right)\hat{r}=E\left(r\right)\hat{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint\vec{E}\partial\vec{S} & = & \frac{\lambda l}{\epsilon_{0}}\\
+\int R\partial S & = & \frac{\lambda l}{\epsilon_{0}}\\
+E\int\partial S & = & \frac{\lambda l}{\epsilon_{0}}\\
+E\cdot2\pi rl & = & \frac{\lambda l}{\epsilon_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

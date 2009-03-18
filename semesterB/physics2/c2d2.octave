@@ -1,0 +1,25 @@
+#!/usr/bin/env octave
+function [dx,dy]=afiefE(x,y)
+  dx=(1./((x).^2.+y.^2)).*((x)./(((x).^2.+y.^2).^(1./2)));
+  dy=(1./((x).^2.+y.^2)).*((y)./(((x).^2.+y.^2).^(1./2)));
+  
+  for i=1:rows(dx)
+    for j=1:columns(dy)
+      if(dx(i,j).^2+dy(i,j).^2 > 4)
+	tx=dx(i,j);
+	ty=dy(i,j);
+	ntx=2.*tx./((tx.^2.+ty.^2).^(1./2));
+	nty=2.*ty./((tx.^2.+ty.^2).^(1./2));
+	dx(i,j)=ntx;
+	dy(i,j)=nty;
+      endif
+    endfor
+  endfor
+
+endfunction
+
+[x,y]=meshgrid(-2:0.1:2,-2:0.1:2);
+[dx,dy]=afiefE(x,y);
+quiver(x,y,dx,dy)
+pause
+print -dsvg c2d2.svg

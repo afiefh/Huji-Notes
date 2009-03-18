@@ -1118,8 +1118,8 @@ c-b & \in & P\end{eqnarray*}
 
 \end_layout
 
-\begin_layout Section
-שדה סדור
+\begin_layout Subsection
+ערך מוחלט
 \end_layout
 
 \begin_layout Standard
@@ -1399,5 +1399,3056 @@ a+b>0\Rightarrow\left|a+b\right|=a+b=\left|a\right|+\left|b\right|\]
 \end_layout
 
 \end_deeper
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+יהא 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה סדור.
+ קבוצה 
+\begin_inset Formula $A\subset\mathbb{F}$
+\end_inset
+
+ נקראת חסומה מלעיל )
+\lang english
+Upper Bounded
+\lang hebrew
+( אם קיים 
+\begin_inset Formula $M\in\mathbb{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall a\in A:M\geq a$
+\end_inset
+
+.
+ או 
+\begin_inset Formula $\left(\exists M\in\mathbb{F}\right)\left(\forall a\in A\right)\left(a\leq M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נקראת חסומה מלרע)
+\lang english
+Lower bounded
+\lang hebrew
+( אם קיים 
+\begin_inset Formula $m\in\mathbb{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $m\leq a$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ נקראת חסומה אם היא חסומה מלעיל ומלרע.
+\end_layout
+
+\begin_layout Standard
+למה: 
+\begin_inset Formula $A\subset\mathbb{F}$
+\end_inset
+
+ חסומה אם"ם 
+\begin_inset Formula $\left(\exists M\in\mathbb{F}\right)\left(\forall a\in A\right)\left(\left|a\right|\leq M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: נניח כי 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה חסומה לכן היא חסומה מלעל אזי 
+\begin_inset Formula $\left(\exists M_{1}\right)\left(\forall a\in A\right)\left(a<M_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וגם חסומה מלרע לכן 
+\begin_inset Formula $\left(\exists M_{2}\right)\left(\forall a\in A\right)\left(a\geq M_{2}\right)$
+\end_inset
+
+ אבל לכתוב 
+\begin_inset Formula $a\geq M_{2}$
+\end_inset
+
+ זה לפי אקסיומות סדר שווה ל 
+\begin_inset Formula $\left(-a\right)\leq\left(-M_{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניקרא 
+\begin_inset Formula $M=\max\left(M_{1},-M_{2}\right)$
+\end_inset
+
+ נובע מזה כי 
+\begin_inset Formula $\left(\forall a\in A\right)\left(a\leq M_{1}\leq M\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(\forall a\in A\right)\left(\left(-a\right)\leq-M_{2}\leq M\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\forall a\in A\right)\left(\left|a\right|\leq M\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא נוכיח את הכיוון השני כי זה קל.
+\end_layout
+
+\begin_layout Standard
+סימונים: אם 
+\begin_inset Formula $a<b$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[a,b\right]=\left\{ x\in\mathbb{F}:a\leq x\leq b\right\} $
+\end_inset
+
+ קטע סגור
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,b\right)=\left\{ x\in\mathbb{F}:a<x<b\right\} $
+\end_inset
+
+ קטע פתוח
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,b\right]=\left\{ x\in\mathbb{F}:a<x\leq b\right\} $
+\end_inset
+
+ קטע חצי סגור או חצי פתוח
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left[a,\infty\right)=\left\{ x\in\mathbb{F}:x\geq a\right\} $
+\end_inset
+
+ קרן
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(a,\infty\right)=\left\{ x\in\mathbb{F}:x>a\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(-\infty,a\right]=\left\{ x\in\mathbb{F}:x\leq a\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: לא קיים אבר ב 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ שהוא חסם מלעל ל
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: נניח בדרך השלילה שקיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $n\geq k$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $n+1\in\mathbb{N}$
+\end_inset
+
+ הוא גם טבעי וגדול מ 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ סתירה.
+ 
+\end_layout
+
+\begin_layout Standard
+האם גם נכון שלא קיים 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $n\leq r$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+? התשובה: לא ניתן להוכיח.
+\end_layout
+
+\begin_layout Standard
+אקסיומת השדה הארכימדי
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+אקסיומה זו זמנית.
+ נוכיח בהמשך
+\end_layout
+
+\end_inset
+
+: קבוצת הטבעיים אנה חסומה מלעל
+\end_layout
+
+\begin_layout Standard
+מסקמה: לכל 
+\begin_inset Formula $\left(\epsilon>0\right)\in\mathbb{F}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\frac{1}{n}<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: על פי אקסיומת השדה הארכימדי קיים 
+\begin_inset Formula $n\in\mathbb{F}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $n>\frac{1}{\epsilon}\Rightarrow\frac{1}{n}<\epsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+טענה: לכל 
+\begin_inset Formula $x,y>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n\in\mathbb{F}$
+\end_inset
+
+ טבעי כך ש 
+\begin_inset Formula $nx>y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה: מהמסקנה נובע שקיים 
+\begin_inset Formula $n$
+\end_inset
+
+ טבעי כך ש 
+\begin_inset Formula $\frac{1}{n}<\frac{x}{y}\Rightarrow y<nx$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שלמות
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לא קיים 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+ רציונאלי כך ש 
+\begin_inset Formula $r^{2}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיים 
+\begin_inset Formula $r=\frac{a}{b}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a,b\in\mathbb{Z},b\neq0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $r^{2}=\frac{a^{2}}{b^{2}}=2$
+\end_inset
+
+.
+ נניח ש 
+\begin_inset Formula $\frac{a}{b}$
+\end_inset
+
+ שבר מצומצם.
+ 
+\begin_inset Formula $a^{2}=2b^{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a$
+\end_inset
+
+ זוגי אזי 
+\begin_inset Formula $\exists k\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a=2k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4k^{2} & = & \left(2k^{2}\right)=2b^{2}\\
+2k^{2} & = & b^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $b$
+\end_inset
+
+ זוגי אזי ל
+\begin_inset Formula $a,b$
+\end_inset
+
+ מחלק משותף.
+ סתירה
+\end_layout
+
+\begin_layout Standard
+אזי צריכים להוסיף מספרים.
+ אז נוסים 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ אל 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ אבל אי אפשר לעצור בזה, צריך להוסיף 
+\begin_inset Formula $n\cdot\sqrt{2}$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $n\in\mathbb{Q}$
+\end_inset
+
+( וצריך להוסיף לזה עוד מספר.
+ אזי אנחנו מוסיפים 
+\begin_inset Formula $\mathbb{Q}\cup\left\{ q+r\sqrt{2}:q,r\in\mathbb{Q}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור ל 
+\begin_inset Formula $\mathbb{F}=\mathbb{Q}$
+\end_inset
+
+ אזי האם הקבוצה 
+\begin_inset Formula $\left[5,19\right)$
+\end_inset
+
+ האם 
+\begin_inset Formula $A$
+\end_inset
+
+ לסומה מלעל?
+\end_layout
+
+\begin_layout Standard
+תשובה: כן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+חסם מלעיל)וגם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+24
+\numeric off
+(
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה בשדה.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ יקרא חסם עליון
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+באנגלית 
+\begin_inset Formula $\mbox{Least upper bound, Supermum}$
+\end_inset
+
+ ומסמנים אותו 
+\begin_inset Formula $\sup A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ חסם מלעל
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ גם כן חסם מלעל אז 
+\begin_inset Formula $M^{\prime}\geq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה בשדה.
+ 
+\begin_inset Formula $M$
+\end_inset
+
+ יקרא חסם תחתון
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+באנגלית 
+\begin_inset Formula $\mbox{Greatest lower bound, Infimum}$
+\end_inset
+
+ ומסמנים אותו 
+\begin_inset Formula $\inf A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ אם
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ חסם מלרע
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ גם כן חסם מלרע אז 
+\begin_inset Formula $M^{\prime}\leq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{F}$
+\end_inset
+
+ 
+\begin_inset Formula $M$
+\end_inset
+
+חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+ אם"ם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ חסם מלעל
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a>M-\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נתין 
+\begin_inset Formula $m=\sup A$
+\end_inset
+
+ צ"ל 
+\begin_inset Formula $M$
+\end_inset
+
+חסם מלעל 
+\begin_inset Formula $\left(\forall\epsilon>0\right)\left(\exists a\in A\right)\left(a>M-\epsilon\right)$
+\end_inset
+
+.
+ נניח בשלילה 
+\begin_inset Formula $\left(\exists\epsilon>0\right)\left(\forall a\in A\right)\left(a\leq M-\epsilon\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $M-\epsilon$
+\end_inset
+
+ חסם מלעל של 
+\begin_inset Formula $A$
+\end_inset
+
+.
+ אבל 
+\begin_inset Formula $M>M-\epsilon$
+\end_inset
+
+ אזי 
+\begin_inset Formula $M$
+\end_inset
+
+ אינו חסם עליון.
+ סתירה.
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $M$
+\end_inset
+
+ חסם מלעל על 
+\begin_inset Formula $A$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left(\forall\epsilon>0\right)\left(\exists a\in A\right)\left(a>M-\epsilon\right)$
+\end_inset
+
+ צריך להוכיח 
+\begin_inset Formula $M$
+\end_inset
+
+ חסם עליון.
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $M$
+\end_inset
+
+ אינו חסם עליון אזי 
+\begin_inset Formula $\left(\exists M^{\prime}<M\right)\left(\forall a\in A\right)\left(a\leq M^{\prime}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\forall a\in A\right)\left(a\leq M-\underbrace{\left(M-M^{\prime}\right)}_{>0}\right)$
+\end_inset
+
+ בסתורה לכך ש 
+\begin_inset Formula $\left(\exists a\in A\right)\left(a>M-\left(M-M^{\prime}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\subseteq\mathbb{F}$
+\end_inset
+
+ איבר 
+\begin_inset Formula $M$
+\end_inset
+
+ ירא המקסימום
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מסומן 
+\begin_inset Formula $\max A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M$
+\end_inset
+
+ חסם מלעל
+\end_layout
+
+\begin_layout Standard
+איבר 
+\begin_inset Formula $m$
+\end_inset
+
+ ירא המינימום של 
+\begin_inset Formula $A$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מסומן 
+\begin_inset Formula $\min A$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ אם:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $m$
+\end_inset
+
+ חסם מלרע
+\end_layout
+
+\begin_layout Paragraph
+דוגמה: 
+\end_layout
+
+\begin_layout Standard
+הקבוצה 
+\begin_inset Formula $\left[5,19\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+חסומה מלעל)על ידי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+100
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+למשל(
+\end_layout
+
+\begin_layout Itemize
+יש לה חסם עליון)
+\numeric on
+19
+\numeric off
+(
+\end_layout
+
+\begin_layout Itemize
+אין לה מקסימום
+\end_layout
+
+\begin_layout Itemize
+חסומה מלרע על ידי 
+\numeric on
+-2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+למשל
+\end_layout
+
+\begin_layout Itemize
+יש לה חסם תחתון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Itemize
+יש מינימום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם ל
+\begin_inset Formula $A$
+\end_inset
+
+ יש מקסימום אז יש לה חסם עליון ומתקיים 
+\begin_inset Formula $\sup A=\max A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה: 
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $M=\max A$
+\end_inset
+
+.
+ צ"ל 
+\begin_inset Formula $M$
+\end_inset
+
+ חסומה מלעל אזי צ"ל כי לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a>M-\epsilon$
+\end_inset
+
+.
+ 
+\begin_inset Formula $M\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $M$
+\end_inset
+
+ מקיים את זה לכל 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+.משל
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מרצים טוענים כי פירושה של "משל" הוא "מה שרצינו להוכיח" אבל סטודנטים טוענים
+ כי פירושה הוא "מזל שהצלחנו להוכיח"
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+נגדיר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{F}=\mathbb{Q},A=\left\{ r\in\mathbb{Q}:r\geq0,r^{2}<2\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה מלעל
+\end_layout
+
+\begin_layout Subparagraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+כל 
+\begin_inset Formula $r\in A$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $r^{2}<2<2^{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $r<2$
+\end_inset
+
+.
+ משל.
+\end_layout
+
+\begin_layout Paragraph
+אקסיומת השלמות:
+\end_layout
+
+\begin_layout Standard
+שדה סדור ייקרא שלם אם לכל קבוצה לא ריקה וחסומה מלעל קיים חסם עליון
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אין ל
+\begin_inset Formula $A$
+\end_inset
+
+ חסם עליון)ב 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+מתן פרזמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+prezma@math.huji.ac.il
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה סדור אז לכל 
+\begin_inset Formula $x,y\in\mathbb{F}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(-x\right)y=x\left(-y\right)=-\left(xy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(-x\right)y+xy & = & \left(-x+x\right)y\\
+ & = & 0\cdot y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה: 
+\end_layout
+
+\begin_layout Standard
+ההפכי של 
+\begin_inset Formula $xy$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\left(-x\right)y$
+\end_inset
+
+ שזה שווה ל 
+\begin_inset Formula $-\left(xy\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה: 
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x<0<y$
+\end_inset
+
+ אז 
+\begin_inset Formula $xy<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x<0 & \Rightarrow & -x>0\\
+ & \Rightarrow & -xy=\left(-xy\right)>0\\
+ & \Rightarrow & xy<0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x,y<0$
+\end_inset
+
+ אז 
+\begin_inset Formula $xy>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x<0\Rightarrow-x>0,y<0\Rightarrow-y>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $a\in\mathbb{F}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $-\left(-a\right)=a$
+\end_inset
+
+ לכן 
+\begin_inset Formula $xy=yx=-\left(-yx\right)=-y\left(-x\right)=\left(-y\right)\left(-x\right)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\left(x\neq0\right)\in\mathbb{F}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x^{2}>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathbb{C}=\left\{ a+ib\vert a,b\in\mathbb{R},i^{2}=-1\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+האם קיימת קבוצת חיוביים 
+\begin_inset Formula $P\subset\mathbb{C}$
+\end_inset
+
+ שלגביה הפעולות 
+\begin_inset Formula $\cdot,+$
+\end_inset
+
+ ב 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ משרות על 
+\begin_inset Formula $\mathbb{C}$
+\end_inset
+
+ מבנה של שדה סדור?
+\end_layout
+
+\begin_layout Subparagraph
+תשובה:
+\end_layout
+
+\begin_layout Standard
+לא קיימת קבוצה 
+\begin_inset Formula $P\subset\mathbb{C}$
+\end_inset
+
+ העונה על תנאי השאלה.
+\end_layout
+
+\begin_layout Subparagraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי יש 
+\begin_inset Formula $P$
+\end_inset
+
+ כזו אז 
+\begin_inset Formula $1=1\cdot1=1^{2}>0$
+\end_inset
+
+ כלומר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $1\in P$
+\end_inset
+
+ אזי 
+\begin_inset Formula $-1\not\in P$
+\end_inset
+
+)לפי טריכוטומיה( אבל 
+\begin_inset Formula $i^{2}=-1\not\in P$
+\end_inset
+
+ בסתירה למסקנה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לכל רציונל 
+\begin_inset Formula $q\in\mathbb{Q}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $q^{2}\neq2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיים 
+\begin_inset Formula $q\in\mathbb{Q}$
+\end_inset
+
+ כנ"ל אז 
+\begin_inset Formula $q=\frac{m}{n},m,n\in\mathbb{Z},n\neq0$
+\end_inset
+
+.
+ אזי נרשום את 
+\begin_inset Formula $m,n$
+\end_inset
+
+ כגורמים ראשוניים: 
+\begin_inset Formula $m=p_{1}^{r_{1}}\cdot\dots\cdot p_{k}^{r_{k}},n=p_{1}^{\prime^{r_{1}^{'}}}\cdot\dots\cdot p_{k^{\prime}}^{\prime^{r_{k^{\prime}}^{'}}}$
+\end_inset
+
+ אזי אפשר לצמצם גורמים משותפים מהשבר 
+\begin_inset Formula $\frac{m}{n}$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $m^{\prime},n^{\prime}$
+\end_inset
+
+ ללא מחלק משותף)ללא ראשוני משותף בהצגתם( אזי 
+\begin_inset Formula $q=\frac{m^{\prime}}{n^{\prime}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{\left(m^{'}\right)^{2}}{\left(n^{\prime}\right)^{2}}=2\Rightarrow m^{\prime}=2n^{\prime}$
+\end_inset
+
+ אזי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מחלק את 
+\begin_inset Formula $\left(m^{\prime}\right)^{2}$
+\end_inset
+
+ אזי הוא מחלק גם את 
+\begin_inset Formula $m^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+טענה: 
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $2$
+\end_inset
+
+ מחלק 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ אזי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מחלק את 
+\begin_inset Formula $m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ראשוני אזי לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+, 
+\begin_inset Formula $2\neq n^{2}$
+\end_inset
+
+ אשר 
+\begin_inset Formula $2\vert m^{2}$
+\end_inset
+
+ את בפירוק של 
+\begin_inset Formula $m^{2}$
+\end_inset
+
+ למכפלת ראשוניים מופיע 
+\begin_inset Formula $p_{i}=2$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i$
+\end_inset
+
+ כלשהוא עם 
+\begin_inset Formula $r_{i}\geq2$
+\end_inset
+
+
+\begin_inset Formula $\left(m=p_{1}^{r_{1}}\cdots p_{k}^{r_{k}},m^{2}=p_{1}^{2r_{1}}\cdots p_{k}^{2r_{k}}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $4\vert m^{2}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $\frac{\left(m^{\prime}\right)^{2}}{2}=\left(n^{\prime}\right)^{2}$
+\end_inset
+
+.
+ הוכחנו כי 
+\begin_inset Formula $4\vert\left(m^{\prime}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $2\vert\frac{\left(m^{\prime}\right)^{2}}{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $2\vert\left(n^{\prime}\right)^{2}$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $2\vert m^{\prime}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $2\vert n^{\prime}$
+\end_inset
+
+ בסתירה לזה שאין גורמים משותפים.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לכל מספר 
+\begin_inset Formula $r\in\mathbb{N}$
+\end_inset
+
+ שאינו ריבוע של מספר שלם.
+ אזי לא קיים 
+\begin_inset Formula $q\in\mathbb{Q}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $q^{2}=r$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $\sqrt{r}\not\in\mathbb{Q}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה ו 
+\begin_inset Formula $z\in A$
+\end_inset
+
+ אזי נומר כי 
+\begin_inset Formula $A\leq z$
+\end_inset
+
+ אם 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $A,B\in\mathbb{F}$
+\end_inset
+
+ קבוצות לא ריקות.
+ נאמר כי 
+\begin_inset Formula $A$
+\end_inset
+
+ גדולה מ 
+\begin_inset Formula $B$
+\end_inset
+
+)סימון 
+\begin_inset Formula $B\leq A$
+\end_inset
+
+( אם לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $b\leq a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+אקסיומת השלמות:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $u,v\in F$
+\end_inset
+
+ קבוצות לא ריקות 
+\begin_inset Formula $v\leq u$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $z\in\mathbb{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $v\leq z\leq u$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הנחה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ מקיים אקסיומת השלמות
+\end_layout
+
+\begin_layout Paragraph
+משפט החסם העליון:
+\end_layout
+
+\begin_layout Standard
+לכל קב' 
+\begin_inset Formula $\left(A\neq\emptyset\right)\subseteq\mathbb{R}$
+\end_inset
+
+ וחסומה מלעיל
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ שדה סדור שאינו מקיים אקסיומת השלמות
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+יתכן כי 
+\begin_inset Formula $\sup A\not\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ a_{1},\dots,a_{n}\right\} \subseteq\mathbb{F}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה סדור )
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה סופית( אזי 
+\begin_inset Formula $\sup A=\max A=\max\left(a_{1},\dots,a_{n}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\inf A=\min A=\min\left(a_{1},\dots,a_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left[0,1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\left[a,b\right]\equiv\left\{ x\in\mathbb{R}\vert a\leq x\leq b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה מלעיל ע"י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+)לפי הגדרה(
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+חסם עליון כי אם 
+\begin_inset Formula $z$
+\end_inset
+
+ חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+ הרי ש 
+\begin_inset Formula $a\leq z$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $1\leq z$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(a,b\right)\equiv\left\{ x\in\mathbb{R}\vert a<x<b\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+ לפי הגדרה.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $z$
+\end_inset
+
+ חסם מלעיל של 
+\begin_inset Formula $A$
+\end_inset
+
+ אז לפי ההגדרה 
+\begin_inset Formula $a\leq z$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left(A\neq\emptyset\right)\in\mathbb{R}$
+\end_inset
+
+ קבוצה חסומה מלעיל.
+ חסם עליון 
+\begin_inset Formula $z$
+\end_inset
+
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא חסם עליון אם"ם עלכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $z-\epsilon<a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+בהנחת הטענה נוכל לראות כי 
+\begin_inset Formula $\sup\left(0,1\right)=1$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $1-\epsilon<0$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $1-\epsilon<1-\frac{\epsilon}{2}\in\left(0,1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Subparagraph
+כיוון ראשון:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $z$
+\end_inset
+
+ חסם עליון.
+ ונניח השלילה שקיים 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $z-\epsilon\geq a$
+\end_inset
+
+ סתירה לבחירת 
+\begin_inset Formula $z$
+\end_inset
+
+)
+\begin_inset Formula $a\leq z-\epsilon<z$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subparagraph
+כיוון שני:
+\end_layout
+
+\begin_layout Standard
+נניח לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $z-\epsilon<a$
+\end_inset
+
+.
+ יהי 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+ חסם מלעיל ונניח בשלילה ש 
+\begin_inset Formula $z^{\prime}<z$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $\epsilon=z-z^{\prime}$
+\end_inset
+
+ אז לפי ההנחה קיים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $z-\epsilon<a$
+\end_inset
+
+ אבל 
+\begin_inset Formula $z-\epsilon=z-\left(z-z^{\prime}\right)=z^{\prime}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $z^{\prime}<a$
+\end_inset
+
+ בסתירה לבחירת 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+עבור קבוצות לא ריקות 
+\begin_inset Formula $A,B\in\mathbb{R}$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $A+B\equiv\left\{ a+b\vert a\in A,b\in B\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ \frac{1}{2},1\right\} ,B=\left[0,1\right]$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A+B=\left[\frac{1}{2},2\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A,B$
+\end_inset
+
+ קבוצות סדורות חסומות מלעיל אזי גם 
+\begin_inset Formula $A+B$
+\end_inset
+
+חסומה מלעיל.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x\in\left(A+B\right)$
+\end_inset
+
+ אזי יש קיימים 
+\begin_inset Formula $a\in A,b\in B$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x=a+b$
+\end_inset
+
+ אבל 
+\begin_inset Formula $a\leq\sup A$
+\end_inset
+
+ ו 
+\begin_inset Formula $b\leq\sup B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x=a+b\leq\sup A+\sup B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A+B$
+\end_inset
+
+ חסומה מלעיל.
+ אזי קיים 
+\begin_inset Formula $\sup\left(A+B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+עבור קבוצה לא ריקה 
+\begin_inset Formula $A,B\subseteq\mathbb{R}$
+\end_inset
+
+ וחסומות מלעיל אזי 
+\begin_inset Formula $\sup A+\sup B=\sup\left(A+B\right)$
+\end_inset
+
+)בפרט 
+\begin_inset Formula $A+B$
+\end_inset
+
+ חסומה מלעיל(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+עלינו להראות כי 
+\begin_inset Formula $\sup A+\sup B$
+\end_inset
+
+ מקיים הקריטריון לחסם עליון עבור הקבוצה 
+\begin_inset Formula $A+B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\epsilon^{\prime}=\nicefrac{\epsilon}{2}>0$
+\end_inset
+
+, 
+\begin_inset Formula $\sup A$
+\end_inset
+
+ ו 
+\begin_inset Formula $\sup B$
+\end_inset
+
+ מקיימים את הקריטריון ל
+\begin_inset Formula $\sup$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\epsilon^{\prime}$
+\end_inset
+
+ לכן קיימים 
+\begin_inset Formula $a\in A$
+\end_inset
+
+, 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\sup A-\epsilon^{\prime}<a$
+\end_inset
+
+ ו 
+\begin_inset Formula $\sup B-\epsilon^{\prime}<b$
+\end_inset
+
+.
+ לכן אם ניקח 
+\begin_inset Formula $x=a+b\in A+B$
+\end_inset
+
+ יתקיים 
+\begin_inset Formula $\sup A+\sup B-\overbrace{2\epsilon^{\prime}}^{\epsilon}<a+b=x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לכל קבוצה ב 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ בעלת מספר סופי של איברים קיים מינימום ומקסימום
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+באינדוקציה על איברי הקבוצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיים שדה סדור)ארכימידי( ובו קבוצה חסומה מלעל שאין לה חסם עליון
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{F}=\mathbb{Q}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A=\left\{ r\in\mathbb{Q}:r^{2}<2\right\} $
+\end_inset
+
+ אזי ל
+\begin_inset Formula $A$
+\end_inset
+
+ לא קיים חסם עליון
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ברור שאים 
+\begin_inset Formula $\mathbb{F}=\mathbb{R}$
+\end_inset
+
+ אז היה קיים 
+\begin_inset Formula $\sup A$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי קיים 
+\begin_inset Formula $\sup A$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left(\forall r\in A\right)\left(r\leq\sup A\right)$
+\end_inset
+
+ וגם כל חסם מלעל אחר הוא גדול ממנו או 
+\begin_inset Formula $\left(\forall\epsilon>0\right)\left(\exists r\in A\right)\left(r>\sup A-\epsilon\right)$
+\end_inset
+
+.
+ אחת משלוש:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(\sup A\right)^{2}=2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+את זה כבר פסלנו בשיעור שעבר כי הוכחנו כי לא קיים 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $r^{2}=2$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(\sup A\right)^{2}<2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נשים לב כי בהכרח 
+\begin_inset Formula $1\leq\sup A\leq2$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ קבוצה לא חסומה ולכן מובטח לנו כי 
+\begin_inset Formula $\exists n\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $n>\frac{1}{\sup A}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $n>\frac{6}{2-\left(\sup A\right)^{2}}$
+\end_inset
+
+.
+ אז נסתכל על 
+\begin_inset Formula $\sup A+\frac{1}{n}$
+\end_inset
+
+ ונוכיח כי זה איבר ב 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\sup A+\frac{1}{n}\right)^{2} & = & \left(\sup A\right)^{2}+\frac{2}{n}\sup A+\frac{1}{n^{2}}\\
+ & \underbrace{<}_{n>\frac{1}{\sup A}} & \left(\sup A\right)^{2}+\frac{2}{n}\sup A+\frac{1}{n}\sup A\\
+ & \leq & \left(\sup A\right)^{2}+\frac{6}{n}\\
+ & \underbrace{<}_{n>\frac{6}{2-\left(\sup A\right)^{2}}} & \left(\sup A\right)^{2}+\frac{6\left(2-\left(\sup A\right)^{2}\right)}{6}\\
+ & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\left(\sup A\right)^{2}>2$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $\left(\sup A\right)^{2}>2$
+\end_inset
+
+ שוב ננצל העובדה כי 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ לא חסומה נבחר 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $n>\frac{2\sup A}{\left(\sup A\right)^{2}-2}$
+\end_inset
+
+ אזי נראה כי 
+\begin_inset Formula $\left(\sup A-\frac{1}{n}\right)^{2}$
+\end_inset
+
+ הוא סופרמום.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\sup A-\frac{1}{n}\right)^{2} & = & \left(\sup A\right)^{2}-\frac{2}{n}\sup A+\frac{1}{n^{2}}\\
+ & > & \left(\sup A\right)^{2}-\frac{2}{n}\sup A\\
+ & > & \left(\sup A\right)^{2}-\frac{2\sup A}{\left(\frac{2\sup A}{\left(\sup A\right)^{2}-2}\right)}\\
+ & = & \left(\sup A\right)^{2}-\frac{2\sup A}{2\sup A}\left(\left(\sup A\right)^{2}-2\right)\\
+ & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אזי הראנו כי אין חסם עליון ל 
+\begin_inset Formula $A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה סדור.
+ 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ יקרא 
+\noun on
+שלם
+\noun default
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+באנגלית 
+\begin_inset Formula $\mbox{Complete}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ אם לכל קבוצה לא ריקה וחסומה מלעל קיים חסם עליון.
+\end_layout
+
+\begin_layout Standard
+משמע הוכחנו כי 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ הוא לא שדה שלם.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+בשדה שלם לכל קבוצה חסומה מלרע קיים חסם תחתון.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\left(\exists m\in\mathbb{F}\right)\left(\forall a\in A\right)\left(m\leq a\right)$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $B=\left\{ -a:a\in A\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\exists m\in\mathbb{F}\right)\left(\forall a\in A\right)\left(\left(-m\geq-a\right)\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $B$
+\end_inset
+
+ חסומה מלעל ע"י 
+\begin_inset Formula $\left(-m\right)$
+\end_inset
+
+.
+ קיים ל
+\begin_inset Formula $B$
+\end_inset
+
+ חסם עליון 
+\begin_inset Formula $M$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(\forall b\in B\right)\left(M\geq b\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(\forall\epsilon>0\right)\left(\exists b\in B\right)\left(b>M-\epsilon\right)$
+\end_inset
+
+ זה כמו לאומר כי 
+\begin_inset Formula $\left(\forall a\in A\right)\left(M\geq\left(-a\right)\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(\forall\epsilon>0\right)\left(\exists a\in A\right)\left(\left(-a\right)>M-\epsilon\right)$
+\end_inset
+
+ אם נעביר סימן מינוס לצד השני מקבלים 
+\begin_inset Formula $\left(\forall a\in A\right)\left(\left(-M\right)\leq a\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(\forall\epsilon>0\right)\left(\exists a\in A\right)\left(a<\left(-M\right)+\epsilon\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ שני קבוצות לא ריקות בשדה סדור שלם 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+.
+ נתון לכל 
+\begin_inset Formula $a\in A,b\in B,a\leq b$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a\leq M\leq b$
+\end_inset
+
+ לכל 
+\begin_inset Formula $b,a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה: 
+\end_layout
+
+\begin_layout Standard
+הקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה מלעל לכן נקח 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ מהנתון 
+\begin_inset Formula $\left(\forall a\in A\right)\left(a<b\right)$
+\end_inset
+
+.
+ מאקסיומת השלמות נובע שקיים ל
+\begin_inset Formula $A$
+\end_inset
+
+ חסם עליון.
+ נסמן 
+\begin_inset Formula $M=\sup A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה ש 
+\begin_inset Formula $M$
+\end_inset
+
+ חסם מלרע של 
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בדרך השלילה שאין זר כך.
+ כלומר קיים 
+\begin_inset Formula $b\in B,b<M$
+\end_inset
+
+.
+ מהיות 
+\begin_inset Formula $M$
+\end_inset
+
+ חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+ נובע שקיים 
+\begin_inset Formula $a\in A,a>b$
+\end_inset
+
+ בסתירה לכך ש 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ לכך ש 
+\begin_inset Formula $a\leq b$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\in A,b\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+שדה הממשיים מקיים את תכונות הארכימידיות)הטבעיים קבוצה לא חסומה מלעל(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיים 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $n\leq a$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ מאקסיומת השלמות נובע שקיים ל
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ סופרמום נסמן 
+\begin_inset Formula $M=\sup\mathbb{N}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\forall n\in\mathbb{N}:n\leq M$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\forall n\in\mathbb{N},\left(n+1\right)\in\mathbb{N}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\forall n\in\mathbb{N},n+1\leq M$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\forall n\in\mathbb{N},n\leq n\leq M-1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $M-1$
+\end_inset
+
+ חסם מלעל של 
+\begin_inset Formula $\mathbb{N}$
+\end_inset
+
+ בשלילה לזה ש 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא החסם העליון.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+המספרים הרציונאליים "צפופים" בממשיים.
+ כמובן ש 
+\begin_inset Formula $\left(\forall x,y\in\mathbb{R},x<y\right)\left(\exists r\in\mathbb{Q}\right):\left(x<r<y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Z}$
+\end_inset
+
+ אינה חסומה מלעל אזי 
+\begin_inset Formula $\exists m\in\mathbb{Z}:m<x$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{1}{n}<y-x$
+\end_inset
+
+.
+ הוכחנו כי קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ טבעי כך ש 
+\begin_inset Formula $m+\frac{k}{n}>x$
+\end_inset
+
+.
+ נתבונן במספרים הרציונאליים 
+\begin_inset Formula $m+\frac{j}{n},1\leq k\leq k$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $j\leq k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $m+\frac{j}{n}>x$
+\end_inset
+
+ אבל 
+\begin_inset Formula $m+\frac{j-1}{n}\leq x$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $m+\frac{j}{n}$
+\end_inset
+
+ הוא הראשון שעבר את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $z=m+\frac{j}{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $z>x$
+\end_inset
+
+ אבל 
+\begin_inset Formula $z-\frac{1}{n}\leq x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $z\leq x+\frac{1}{n}<\overbrace{x+\left(y-x\right)}^{y}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+חזקות עם מעריכים רציונאליים
+\end_layout
+
+\begin_layout Standard
+הגדרנו כבר 
+\begin_inset Formula $x^{n},x\in\mathbb{N}$
+\end_inset
+
+ להיות 
+\begin_inset Formula $x^{1}=x,x^{k+1}=x\cdot x^{k}$
+\end_inset
+
+.
+ ונגדיר 
+\begin_inset Formula $x^{n},x\in\mathbb{Z}$
+\end_inset
+
+ על ידי 
+\begin_inset Formula $x^{0}=1,x^{-n}=\frac{1}{x^{n}}=\left(x^{n}\right)^{-1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x,y\neq0,m,n\in\mathbb{Z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{m}x^{n}=x^{m+n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x^{m}\right)^{n}=x^{nm}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{n}y^{n}=\left(xy\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0<\alpha<\beta,n>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\beta^{n}>\alpha^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $0<\alpha<\beta,n<0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\beta^{n}<\alpha^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\alpha>1,n>m$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a^{n}>\alpha^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $mga<1,n>m$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a^{n}<\alpha^{m}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא נוכיח את זה כי זה היה בעבודת בית שלכם
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+פירושו של זה "אני יודע להוכיח, אבל לא רוצה לבזבז זמן עליכם"
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

@@ -1,0 +1,1178 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה אזי:
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $a\neq0\mbox{ \R{וגם} }a\cdot x=a\Rightarrow x=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ אזי קיים הפיך כפלי 
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+.
+ כופלים המשוואה הנתונה ב
+\begin_inset Formula $a^{-1}$
+\end_inset
+
+ משמאל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a\cdot x & = & a\\
+\underbrace{a^{-1}\cdot a}_{1}\cdot x & = & \underbrace{a^{-1}\cdot a}_{1}\\
+1\cdot x & = & 1\\
+x & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: 
+\begin_inset Formula $1\cdot x=x$
+\end_inset
+
+ כי 
+\begin_inset Formula $1$
+\end_inset
+
+ הוא האיבר הנוטרלי לכפל.
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $x^{3}-y^{3}=\left(x-y\right)\left(x^{2}+xy+y^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בחוק הפילוג על צד שמאלי של המשוואה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x-y\right)\left(x^{2}+xy+y^{2}\right) & \overset{\mbox{\R{פילוג}}}{=} & x\cdot\left(x^{2}+xy+y^{2}\right)-y\cdot\left(x^{2}+xy+y^{2}\right)\\
+ & \overset{\mbox{\R{פילוג}}}{=} & x\cdot x^{2}+x\cdot xy+x\cdot y^{2}-y\cdot x^{2}-y\cdot xy-y\cdot y^{2}\\
+ & = & x^{3}+x^{2}y+x\cdot y^{2}-x^{2}y-xy^{2}-y^{3}\\
+ & \overset{\mbox{\R{חילוף}}}{=} & x^{3}+x^{2}y-x^{2}y+x\cdot y^{2}-xy^{2}-y^{3}\\
+ & \overset{\mbox{\R{קיבוץ}}}{=} & x^{3}+\left(x^{2}y-x^{2}y\right)+\left(x\cdot y^{2}-xy^{2}\right)-y^{3}\\
+ & \overset{\mbox{\R{הפיך\,חיבורי}}}{=} & x^{3}+0+0-y^{3}\\
+ & \overset{\mbox{\R{נוטרלי\,לחיבור}}}{=} & x^{3}-y^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $b,c\neq0\Rightarrow\frac{a}{b}=\frac{ac}{bc}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{a\cdot c}{b\cdot c} & = & a\cdot c\left(b\cdot c\right)^{-1}\\
+ & = & a\cdot c\cdot b^{-1}\cdot c^{-1}\\
+ & = & a\cdot b^{-1}c\cdot c^{-1}\\
+ & = & a\cdot b^{-1}\cdot1\\
+ & = & a\cdot b^{-1}\\
+ & = & \frac{a}{b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $b,c\neq0\Rightarrow\frac{a}{b}+\frac{c}{d}=\frac{ad+bc}{bd}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{ad+bc}{bd} & = & \left(ad+bc\right)\cdot\left(bd\right)^{-1}\\
+ & = & \left(ad+bc\right)\cdot b^{-1}\cdot d^{-1}\\
+ & = & ad\cdot b^{-1}\cdot d^{-1}+bc\cdot b^{-1}\cdot d^{-1}\\
+ & = & ad\cdot b^{-1}\cdot d^{-1}+bc\cdot b^{-1}\cdot d^{-1}\\
+ & = & a\cdot b^{-1}\cdot d\cdot d^{-1}+c\cdot b\cdot b^{-1}\cdot d^{-1}\\
+ & = & a\cdot b^{-1}\cdot1+c\cdot1\cdot d^{-1}\\
+ & = & a\cdot b^{-1}+c\cdot d^{-1}\\
+ & = & \frac{a}{b}+\frac{c}{d}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שדה סדור
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל 
+\begin_inset Formula $-b<-a\Leftrightarrow a<b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מוכיחים כי 
+\begin_inset Formula $-b<-a\Rightarrow a<b$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $-b<-a$
+\end_inset
+
+ כלומר 
+\begin_inset Formula \begin{eqnarray*}
+\left(\left(-a\right)-\left(-b\right)\right) & \in & P\\
+\left(-a+b\right) & \in & P\\
+\left(b-a\right) & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a<b\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מוכיחים כי 
+\begin_inset Formula $-b<-a\Leftarrow a<b$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+פשוט הולכים בכיוון הפוך ממה שעשינו קודם.
+ אם 
+\begin_inset Formula $a<b$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(b-a\right) & \in & P\\
+\left(-a+b\right) & \in & P\\
+\left(-a+\left(-\left(-b\right)\right)\right) & \in & P\\
+\left(\left(-a\right)-\left(-b\right)\right) & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $-b<-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $a<b\wedge c>d\Rightarrow a-c<b-d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $a<b\wedge c>d$
+\end_inset
+
+ אזי 
+\begin_inset Formula $b-a\in P\wedge c-d\in P$
+\end_inset
+
+ לכן גם 
+\begin_inset Formula $\left(b-a\right)+\left(c-d\right)\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(b-a\right)+\left(c-d\right) & \in & P\\
+b-a+c-d & \in & P\\
+\left(b-d\right)-\left(-\left(c-a\right)\right) & \in & P\\
+\left(b-d\right)-\left(a-c\right) & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(b-d\right)>\left(a-c\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $a<b\wedge c>0\Rightarrow ac<bc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $b-a\in P\wedge c\in P$
+\end_inset
+
+ לכן 
+\begin_inset Formula $c\cdot\left(b-a\right)\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c\cdot\left(b-a\right) & \in & P\\
+cb-ca & \in & P\\
+bc-ac & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $ac<bc$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $-1<a<1\Leftrightarrow a^{2}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+נוכיח כי 
+\begin_inset Formula $-1<a<1\Rightarrow a^{2}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $a+1\in P\wedge1-a\in P$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\left(a+1\right)\left(1-a\right)\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(a+1\right)\left(1-a\right) & \in & P\\
+a+a\left(-a\right)+1-a & \in & P\\
+1-a^{2}+a-a & \in & P\\
+1-a^{2}+0 & \in & P\\
+1-a^{2} & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+נוכיח כי 
+\begin_inset Formula $-1<a<1\Leftarrow a^{2}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $a^{2}<1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $1-a^{2}\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1-a^{2} & \in & P\\
+1-a^{2}+0 & \in & P\\
+1-a^{2}+\left(a-a\right) & \in & P\\
+1+a-a^{2}-a & \in & P\\
+\left(a+1\right)\left(1-a\right) & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $a>-1\wedge1>a\Rightarrow-1<a<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $0\leq a<b\wedge0\leq c<d\Rightarrow ac<bd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחלק למקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+צ"ל כי 
+\begin_inset Formula $0\cdot c<bd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $b>0\wedge d>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $b\in P\wedge d\in P$
+\end_inset
+
+ לכן 
+\begin_inset Formula $bd\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+bd & \in & P\\
+bd-0 & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+bd>0\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $b=0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+צ"ל כי 
+\begin_inset Formula $0\cdot c<bd$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $b>0\wedge d>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $b\in P\wedge d\in P$
+\end_inset
+
+ לכן 
+\begin_inset Formula $bd\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+bd & \in & P\\
+bd-0 & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+bd>0\]
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a\neq0\wedge b\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתון 
+\begin_inset Formula $0<a<b\wedge0<c<d$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left(a\in P\right)\wedge\left(c\in P\right)\wedge\left(b-a\in P\right)\wedge\left(d-c\in P\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $bd-ac\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(b-a\right)\left(d-c\right) & \in & P\\
+bd-bc-ad+ac & \in & P\\
+\left(bd+ac\right)-\left(bc+ad\right) & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $bd+ac>bc+ad$
+\end_inset
+
+ רוצים להוכיח כי 
+\begin_inset Formula $bc+ad>ac+ac$
+\end_inset
+
+ אזי מספיק להוכיח כי 
+\begin_inset Formula $\left(bc>ac\right)\wedge\left(ad>ac\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צ"ל כי 
+\begin_inset Formula $bc>ac$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $bc-ac\in P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $b-a\in P$
+\end_inset
+
+ וגם 
+\begin_inset Formula $c\in P$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $c\left(b-a\right)\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c\left(b-a\right) & \in & P\\
+bc-ac & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $bc>ac$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+צ"ל כי 
+\begin_inset Formula $ad>ac$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $ad-ac\in P$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $d-c\in P$
+\end_inset
+
+ וגם 
+\begin_inset Formula $a\in P$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $a\left(d-c\right)\in P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a\left(d-c\right) & \in & P\\
+ad-ac & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $ad>ac$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+אז קיבלנו כי 
+\begin_inset Formula $\left(ad-ac\in P\right)\wedge\left(bc-ac\in P\right)$
+\end_inset
+
+ וראינו מקודם כי 
+\begin_inset Formula $\left(bd+ac\right)-\left(bc+ad\right)\in P$
+\end_inset
+
+ לכן גם 
+\begin_inset Formula $\left(bd+ac\right)-\left(bc+ad\right)+\left(ad-ac\right)+\left(bc-ac\right)\in P$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(bd+ac\right)-\left(bc+ad\right)+\left(ad-ac\right)+\left(bc-ac\right) & \in & P\\
+\left(bd+ac\right)-\left(bc+ad\right)+\left(ad-ac\right)+\left(bc-ac\right) & \in & P\\
+bd+ac-bc-ad+ad-ac+bc-ac & \in & P\\
+bd+\left(ac-ac\right)+\left(ad-ad\right)+\left(bc-bc\right)-ac & \in & P\\
+bd-ac & \in & P\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $bd>ac$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+צ"ל כי 
+\begin_inset Formula $0\leq a<b\Rightarrow a^{2}<b^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו קודם כי 
+\begin_inset Formula $0\leq a<b\wedge0\leq c<d\Rightarrow ac<bd$
+\end_inset
+
+ אזי מציבים 
+\begin_inset Formula $c=a$
+\end_inset
+
+ ו 
+\begin_inset Formula $d=b$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $a^{2}<b^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+צ"ל כי 
+\begin_inset Formula $\left|x+y+z\right|\leq\left|x\right|+\left|y\right|+\left|z\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|x+y+z\right| & = & \left|\left(x+y\right)+z\right|\\
+ & \leq & \left|x+y\right|+\left|z\right|\\
+ & \leq & \left|x\right|+\left|y\right|+\left|z\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הוכחות על 
+\begin_inset Formula $\max\left(x,y\right)\,\min\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צ"ל כי 
+\begin_inset Formula $\max\left(x,y\right)=\frac{x+y+\left|y-x\right|}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+נבדוק מקרה של 
+\begin_inset Formula $x=y$
+\end_inset
+
+: 
+\begin_inset Formula $\max\left(x,x\right)=\frac{2x+0}{2}=x$
+\end_inset
+
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $x>y$
+\end_inset
+
+ אזי: 
+\begin_inset Formula $\frac{x+y+\left|y-x\right|}{2}=\frac{x+y+-\left(y-x\right)}{2}=\frac{x+y-y+x}{2}=\frac{2x}{2}=x$
+\end_inset
+
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח כי 
+\begin_inset Formula $y>x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{x+y+\left|y-x\right|}{2}=\frac{x+y+y-x}{2}=\frac{2y}{2}=y$
+\end_inset
+
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+פעולות בינאריות
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אסוציאטיבית אבל לא קומוטטיבית: 
+\end_layout
+
+\begin_layout Enumerate
+קומוטטיבית אבל לא אסוציאטיבית: חזקה: 
+\end_layout
+
+\end_deeper
+\begin_layout Section
+אינדוקציה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \[
+1+r+r^{2}+\dots+r^{n}=\frac{1-r^{n+1}}{1-r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1 & \overset{?}{=} & \frac{1-r}{1-r}\\
+1 & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי לכל 
+\begin_inset Formula $n>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula \[
+1+r+r^{2}+\dots+r^{n}=\frac{1-r^{n+1}}{1-r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1+r+\dots+r^{n}+r^{n+1} & = & \frac{1-r^{n+1}}{1-r}+r^{n+1}\\
+ & = & \frac{1-r^{n+1}+r^{n+1}-r^{n+2}}{1-r}\\
+ & = & \frac{1-r^{n+2}}{1-r}\checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula \[
+\sum_{k=1}^{n}k^{3}=\left(\sum_{k=1}^{n}k\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+1^{3} & \overset{?}{=} & 1^{2}\\
+1 & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נניח כי זה מתקיים עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=1}^{n+1}k^{3} & = & \sum_{k=1}^{n}k^{3}+\left(n+1\right)^{3}\\
+ & = & \left(\sum_{k=1}^{n}k\right)^{2}+\left(n+1\right)^{3}\\
+ & = & ???\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+תורת הקבוצות
+\end_layout
+
+\begin_layout Enumerate
+יותר קל לרשומ מה לא נכון:
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $C\in D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $C\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B\subseteq C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B\subseteq E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D\subseteq E$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+גם יותר קל לכתוב רק מה שלא נכון
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+\begin_inset Formula $B\cup\left\{ B\right\} =C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D\cup\left\{ C\right\} =D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D\cup\left\{ A\right\} =E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $B\cap C=B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $D\cap E=D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $E\setminus D=D$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\end_body
+\end_document

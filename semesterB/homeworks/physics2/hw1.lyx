@@ -1,0 +1,576 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw1d1.svg
+	lyxscale 30
+	width 60text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתחיל בניתוח גיאומטרי לבעיה:
+\end_layout
+
+\begin_layout Standard
+במשולש שווה צלעות כל הצלעות הם 
+\begin_inset Formula $60^{\circ}$
+\end_inset
+
+.
+ אמצע המשולש הוא המקום שבו נחתכים האנכים.
+ האנכים מחצים את הזוויות ומחלקים הצלע לחציים.
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים שהמרחק בין כל קודקוד לאמצע הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\left(30^{\circ}\right) & = & \frac{\nicefrac{a}{2}}{d}\\
+d & = & \frac{a}{2\cos\left(30^{\circ}\right)}\\
+ & = & \frac{a}{\sqrt{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיימנו את החלק הגיאומטרי אזי עוברים לפיזיקה
+\end_layout
+
+\begin_layout Standard
+הבעייה היא סימטרית אזי אם מטען אחד ימצא בשיווי משקל כולם גם כן יהיו בשיווי
+ משקל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & F_{1}+F_{2}+F_{q}\\
+ & = & \frac{kQ^{2}}{a^{2}}\hat{x}+\frac{kQ^{2}}{a^{2}}\left(\cos\left(60^{\circ}\right)\hat{x}-\sin\left(60^{\circ}\right)\hat{y}\right)+\frac{kQq}{\left(\nicefrac{a}{4}\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכבל שיווי משקל צריכים 
+\begin_inset Formula $F=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & 0\\
+\frac{kQ^{2}}{a^{2}}\hat{x}+\frac{kQ^{2}}{a^{2}}\left(\cos\left(60^{\circ}\right)\hat{x}-\sin\left(60^{\circ}\right)\hat{y}\right)+\frac{kQq}{\left(\nicefrac{a}{\sqrt{3}}\right)^{2}}\left(\cos\left(30^{\circ}\right)\hat{x}-\sin\left(30^{\circ}\right)\hat{y}\right) & = & 0\\
+\frac{kQ^{2}}{a^{2}}\hat{x}+\frac{kQ^{2}}{a^{2}}\left(\cos\left(60^{\circ}\right)\hat{x}-\sin\left(60^{\circ}\right)\hat{y}\right)+\frac{kQq}{\left(\frac{a^{2}}{3}\right)}\left(\cos\left(30^{\circ}\right)\hat{x}-\sin\left(30^{\circ}\right)\hat{y}\right) & = & 0\\
+kQ^{2}\hat{x}+kQ^{2}\left(\cos\left(60^{\circ}\right)\hat{x}-\sin\left(60^{\circ}\right)\hat{y}\right)+3kQq\left(\cos\left(30^{\circ}\right)\hat{x}-\sin\left(30^{\circ}\right)\hat{y}\right) & = & 0\\
+1\hat{x}+\cos\left(60^{\circ}\right)\hat{x}-\sin\left(60^{\circ}\right)\hat{y}+3\frac{q}{Q}\left(\cos\left(30^{\circ}\right)\hat{x}-\sin\left(30^{\circ}\right)\hat{y}\right) & = & 0\\
+1\hat{x}+\frac{1}{2}\hat{x}-\frac{\sqrt{3}}{2}\hat{y}+3\frac{q}{Q}\cdot\left(\frac{\sqrt{3}}{2}\hat{x}-\frac{1}{2}\hat{y}\right) & = & 0\\
+\left(\frac{3}{2}+\frac{3\sqrt{3}}{2}\frac{q}{Q},-\frac{\sqrt{3}}{2}-\frac{3}{2}\frac{q}{Q}\right) & = & \left(0,0\right)\\
+q & = & -\frac{Q}{\sqrt{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+רואים מסימטריה כי רק הכוח בכיוון 
+\begin_inset Formula $\vec{d}$
+\end_inset
+
+ לא מתאפס.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \frac{kQq}{\left(\frac{a}{\sqrt{3}}-d\right)^{2}}\left(-\hat{y}\right)+2\cdot\frac{kQq}{\left(\left(\frac{a}{2}\right)^{2}+\left(\frac{a}{\sqrt{3}}+d\right)^{2}\right)^{\nicefrac{3}{2}}}\left(\frac{a}{\sqrt{3}}+d\right)\hat{y}\\
+ & = & 2\cdot\frac{kQ\frac{Q}{\sqrt{3}}}{\left(\left(\frac{a}{2}\right)^{2}+\left(\frac{a}{\sqrt{3}}+d\right)^{2}\right)^{\nicefrac{3}{2}}}\left(\frac{a}{\sqrt{3}}+d\right)-\frac{kQ\frac{Q}{\sqrt{3}}}{\left(\frac{a}{\sqrt{3}}-d\right)^{2}}\\
+ & = & \frac{kQ^{2}}{\sqrt{3}}\left(\frac{2\left(\frac{a}{\sqrt{3}}+d\right)}{\left(\left(\frac{a}{2}\right)^{2}+\left(\frac{a}{\sqrt{3}}+d\right)^{2}\right)^{\nicefrac{3}{2}}}-\frac{1}{\left(\frac{a}{\sqrt{3}}-d\right)^{2}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+אני לא רואה את הכיוון של 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ אזי אציב 
+\begin_inset Formula $d=\frac{a}{2\sqrt{3}}$
+\end_inset
+
+ ונראה מה נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & \frac{3a}{\sqrt{3}a^{3}}-\frac{12}{a^{2}}\\
+ & = & -\frac{12\sqrt{3}\left|a\right|^{3}-3a^{3}}{\sqrt{3}\, a^{2}\left|a\right|^{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הכח פועל באותו כיוון של 
+\begin_inset Formula $\vec{D}$
+\end_inset
+
+ אזי המערכת היא לא יציבה.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & 2\hbar\\
+m\vec{v}\times\vec{R} & = & 2\hbar\\
+m\overbrace{v\cdot R}^{\vec{v}\perp\vec{R}} & = & 2\hbar\\
+v\cdot R & = & \frac{2\hbar}{m}\\
+R & = & \frac{2\hbar}{mv}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משיווי משקל במערכת המסתובבת עם האלקטרון נובע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum F & = & 0\\
+F_{Colon}+\frac{mv^{2}}{R} & = & 0\\
+\frac{ke\left(-e\right)}{R^{2}}+\frac{mv^{2}}{R} & = & 0\\
+\frac{ke^{2}}{R^{2}} & = & \frac{mv^{2}}{R}\\
+\frac{ke^{2}}{m} & = & v^{2}R\\
+\frac{ke^{2}}{m} & = & v^{2}\frac{2\hbar}{mv}\\
+ke^{2} & = & 2v\hbar\\
+v & = & \frac{ke^{2}}{2\hbar}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \frac{2\hbar}{mv}\\
+ & = & \frac{2\hbar}{m\left(\frac{ke^{2}}{2\hbar}\right)}\\
+ & = & \frac{4\hbar^{2}}{mke^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+לכל מטען במעגל יש אלקטרון שנמצא בדיוק מקביל לו ביחס לציר 
+\begin_inset Formula $z$
+\end_inset
+
+ לכן הרכיבים המישוריים 
+\begin_inset Formula $xy$
+\end_inset
+
+ מתאפסים והרכיבים בציר 
+\begin_inset Formula $z$
+\end_inset
+
+ מתאספים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \sum_{i=1}^{8}E_{Q_{i}}\\
+ & = & \sum_{i=1}^{8}k\frac{Q}{r_{i}^{2}}\hat{r}_{i}\\
+ & = & \sum_{i=1}^{8}\frac{kQ}{\left\Vert r_{i}\right\Vert ^{3}}\vec{r}_{i}\\
+ & = & \sum_{i=1}^{8}\frac{kQ}{\left(a^{2}+z^{2}\right)^{\nicefrac{3}{2}}}z\hat{z}\\
+ & = & \frac{8kQ}{\left(a^{2}+z^{2}\right)^{\nicefrac{3}{2}}}z\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \sum_{i=1}^{n}E_{Q_{i}}\\
+ & = & \frac{Nk\frac{Q}{N}}{\left(a^{2}+z^{2}\right)^{\nicefrac{3}{2}}}z\hat{z}\\
+ & = & \frac{kQ}{\left(a^{2}+z^{2}\right)^{\nicefrac{3}{2}}}z\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../../physics2/c1d4.svg
+	lyxscale 30
+	width 40text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבעת טעונה במטען 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטען 
+\begin_inset Formula $Q$
+\end_inset
+
+ על טבעת 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ צפיפות 
+\begin_inset Formula $\lambda=\frac{Q}{2\pi a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \intop_{0}^{2\pi}\frac{k\overbrace{\lambda r\partial\theta}^{q}}{\left(a^{2}+r^{2}\right)^{\nicefrac{3}{2}}}a\hat{z}\\
+ & = & \frac{2\pi k\lambda ar}{\left(a^{2}+r^{2}\right)^{\nicefrac{3}{2}}}\hat{z}\\
+ & = & \frac{krQ}{\left(a^{2}+r^{2}\right)^{\nicefrac{3}{2}}}\hat{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+גליל אינסופי זה הוא אוסף אינסופי של טילים אינסופיים.
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי השדה בכיוון 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ מתאפס כי הבעיה סימטרית לציר 
+\begin_inset Formula $y$
+\end_inset
+
+ כלומר לכל מטען שנמצא ב
+\begin_inset Formula $+y$
+\end_inset
+
+ יש מטען שווה לו ב
+\begin_inset Formula $-y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & \intop_{0}^{2\pi}\frac{2k\lambda}{\sqrt{\left(R-a\cos\left(\theta\right)\right)^{2}+\left(a\sin\left(\theta\right)\right)^{2}}}\cdot\frac{R-a\cos\left(\theta\right)}{\sqrt{\left(R-a\cos\left(\theta\right)\right)^{2}+\left(a\sin\left(\theta\right)\right)^{2}}}\partial\theta\\
+ & = & 2k\lambda\intop_{0}^{2\pi}\frac{R-a\cos\left(\theta\right)}{\sqrt{R^{2}-2aR\cos\left(\theta\right)+a^{2}\cos^{2}\left(\theta\right)+\left(a\sin\left(\theta\right)\right)^{2}}}\partial\theta\\
+ & = & 2k\lambda\intop_{0}^{2\pi}\frac{R-a\cos\left(\theta\right)}{\sqrt{R^{2}+a^{2}-2aR\cos\left(\theta\right)}}\partial\theta\\
+ & = & 2k\lambda\intop_{0}^{2\pi}\frac{1-\frac{a}{R}\cos\left(\theta\right)}{\sqrt{1+\frac{a^{2}}{R^{2}}-\frac{2a}{R}\cos\left(\theta\right)}}\partial\theta\\
+ & = & 4\pi k\lambda\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

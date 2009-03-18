@@ -1,0 +1,1033 @@
+#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מבנה נתונים
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+אתר:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+www.cs.huji.ac.il/~dast
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+סיקום של הרצאה קודמת: 
+\begin_inset Formula $o,\Theta,\Omega,O$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קבועים בפנים לא משנים
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(n\right)=\overset{O}{\underset{\Theta}{\Omega}}\left(g\left(n\right)+h\left(n\right)\right)=\overset{O}{\underset{\Theta}{\Omega}}\left(g\left(n\right)\right)$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $h\left(n\right)$
+\end_inset
+
+ זניח יחסית ל 
+\begin_inset Formula $g\left(n\right)$
+\end_inset
+
+ אז אפשר להשמיט את 
+\begin_inset Formula $h\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(n\right)=n^{d},g\left(n\right)=c^{n}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\left(n\right)$
+\end_inset
+
+ מנצח את 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f\left(n\right)=O\left(g\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\left(n\right)=\log^{c}\left(n\right),g\left(n\right)=n^{d}$
+\end_inset
+
+ 
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כאשר אומרים 
+\begin_inset Formula $\log$
+\end_inset
+
+ מתקוונים ל
+\begin_inset Formula $\log_{2}$
+\end_inset
+
+ שהוא שווה ל
+\begin_inset Formula $\log_{10}$
+\end_inset
+
+ עד כדי קבוע
+\end_layout
+
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\left(n\right)$
+\end_inset
+
+ מנצח את 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+מיון בועות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Bubble Sort A[1...n] {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if n>1 {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+bubble(A[1...n])
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+bubblesort(A[1,...,n-1])
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+Bubble(A[1...n]) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for j=1 to n-1 {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if A(j)>A(j+1) then swap
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\lang hebrew
+
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Bubble Sort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוכיות של 
+\begin_inset Formula $Bubble$
+\end_inset
+
+ היא .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & = & T\left(n-1\right)+\Theta\left(n\right)\\
+T\left(1\right) & = & \Theta\left(1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לפתור את הבעיה הזו ולנצל את זה לראות כל מיני שיטות לפתור בעיות ריקורסיה.
+\end_layout
+
+\begin_layout Subsection
+השיטה האיטרטיבית
+\end_layout
+
+\begin_layout Standard
+זה פשוט "לא יודעים אז בואו ננסה" 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & \leq & T\left(n-1\right)+c\cdot n\\
+ & \leq & T\left(n-2\right)+c\left(n-1\right)+cn\\
+ & \leq & T\left(n-3\right)+c\left(n-2\right)+c\left(n-1\right)+cn\\
+ & \leq & T\left(1\right)+2c+3c+\dots+c\left(n-1\right)+cn\\
+ & \leq & T\left(1\right)+\sum_{i=2}^{n}c\cdot i\\
+ & = & T\left(1\right)+c\left(\frac{n\left(n-1\right)}{2}-1\right)\\
+ & = & O\left(n^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מאותו שיקול
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & \geq & T\left(n-1\right)+c^{\prime}n\\
+ &  & \vdots\\
+ & \geq & \Theta\left(n^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסיקים כי 
+\begin_inset Formula $T\left(n\right)=\Omega\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $T\left(n\right)$
+\end_inset
+
+ הוא גם 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\Omega\left(n^{2}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $T\left(n\right)=\Theta\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שיטת הניחוש וההוכחה באינדוקציה
+\end_layout
+
+\begin_layout Standard
+ננסה להוכיח באינדוקציה 
+\begin_inset Formula $T\left(n\right)\leq cn^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & = & T\left(n-1\right)+\Theta\left(n\right),\Theta\left(n\right)\leq cn\\
+T\left(1\right) & = & \Theta\left(1\right)\leq c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $T\left(1\right)\leq c$
+\end_inset
+
+ בסדר.
+\end_layout
+
+\begin_layout Standard
+נניח עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ש 
+\begin_inset Formula $T\left(n\right)\leq cn^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+ כי 
+\begin_inset Formula $T\left(n+1\right)=T\left(n\right)+c\left(n+1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n+1\right) & = & T\left(n\right)+c\left(n+1\right)\\
+ & \overset{\mbox{\R{מהנחת\,האינדוקציה}}}{\leq} & cn^{2}+c\left(n+1\right)\\
+ & = & c\left(n^{2}+n+1\right)\\
+ & \leq & c\left(n+1\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+זה מראה כי 
+\begin_inset Formula $T\left(n\right)=O\left(n^{2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+באותה צירה אפשר להוכיח הצד השני של האינדוקציה
+\end_layout
+
+\begin_layout Section
+מיון מיזוג -
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Merge Sort
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Merge Sort(A[1...n]){
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if n>1 {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+mergesort(A[1...
+\begin_inset Formula $\nicefrac{n}{2}$
+\end_inset
+
+])
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+mergesort(A[
+\begin_inset Formula $\nicefrac{n}{2}+1$
+\end_inset
+
+...n])
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+merge(A[1,...
+\begin_inset Formula $\nicefrac{n}{2}$
+\end_inset
+
+],A[
+\begin_inset Formula $\nicefrac{n}{2}+1$
+\end_inset
+
+...n],A[1...n])
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+Merge(A,B,C) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+l=1,i=1,j=1
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+do while i<
+\begin_inset Formula $\nicefrac{n}{2}$
+\end_inset
+
+ or j<
+\begin_inset Formula $\nicefrac{n}{2}$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+c[l]=min(A[i],B[i])
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if min was A(i) increment i, else incrememnt j
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+increment l
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Merge Sort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עץ הרקורסיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c2d1.svg
+	lyxscale 20
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עץ הריקורסיה של מיון מיזזוג
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה עכשיו את עץ הריקורסיה ונכתוב כמה פעולות קוראות בכל קודקוד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c2d2.svg
+	lyxscale 20
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+משקל כל קודקוד במיזוג מיון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לראות כי בכל שורה בעץ יש 
+\begin_inset Formula $cn$
+\end_inset
+
+ פעולות.
+ אזי האלגורתם הזה עולה 
+\begin_inset Formula $cn\cdot\left(\mbox{\R{גובה\,העץ}}\right)=cn\cdot\log_{2}\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סיבוכיות של אלגורתם אלפרדו משהוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\right)=aT\left(\nicefrac{n}{b}\right)+\Theta\left(n^{k}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c2d3.svg
+	lyxscale 20
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עץ קריאה של אלגוריתם אלפרדו
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $m=\log_{b}n$
+\end_inset
+
+ אזי מספר השורות הוא 
+\begin_inset Formula $m+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העבודה בשורה העליונה היא 
+\begin_inset Formula $\Theta\left(cn^{k}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העבודה השורה התחתונה היא 
+\begin_inset Formula $\Theta\left(a^{\log_{b}n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & \leq & cn^{k}\sum_{l=0}^{m}\left(\underbrace{\frac{a}{b^{k}}}_{k}\right)^{l}\\
+ & \leq & cn^{k}\left(\frac{q^{m+1}-1}{q-1}\right)=cn^{k}\left(\frac{1-q^{m+1}}{1-q}\right)=cn^{k}\left(\frac{1-q^{m+1}}{1-q}\right)\\
+ & \underbrace{\leq}_{q<1} & cn^{k}\frac{1}{q-1}=O\left(n^{k}\right)\\
+T & = & O\left(n^{k}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה אם 
+\begin_inset Formula $q=1$
+\end_inset
+
+ כמו ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+merge sort
+\lang hebrew
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & \leq & cn^{k}\left(m+1\right)\\
+ & = & cn^{k}\left(\log_{b}\left(n+1\right)\right)\\
+ & = & \Theta\left(n^{k}\log n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה אם 
+\begin_inset Formula $q>1$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & \leq & cn^{k}\frac{q^{m+1}-1}{q-1}\\
+ & = & \Theta\left(n^{k}q^{m}\right)\\
+ & = & \Theta\left(n^{k}\left(\frac{a}{b^{k}}\right)^{m}\right)\\
+ & = & \Theta\left(n^{k}\frac{a^{m}}{a^{mk}}\right)\\
+ & \underbrace{=}_{b^{m}=n} & \Theta\left(a^{m}\right)\\
+ & = & \Theta\left(a^{\log_{b}n}\right)\\
+ & \underbrace{=}_{\mbox{\R{תרגיל}}} & \Theta\left(n^{\log_{b}a}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+מעריכים אלגוריתם לפי זמן ריצה וכמה מקום הוא לוקח בזכרון, מתארים את זה דרך
+ פונקציות 
+\begin_inset Formula $O,\theta,\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שיטות לפתור ריקורסיה
+\end_layout
+
+\begin_layout Enumerate
+שיטה איטרטיבית
+\end_layout
+
+\begin_layout Enumerate
+לנחש ולהוכיח באינדוקציה
+\end_layout
+
+\begin_layout Enumerate
+עץ ריקורסיה
+\end_layout
+
+\begin_layout Enumerate
+משפט המאסתר -
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Master Theorem
+\end_layout
+
+\begin_layout Enumerate
+לחסום מלמעלה ומלמטה על ידי פומקציה אחרת
+\end_layout
+
+\begin_layout Subsection
+שיטת עץ הריקורסיה
+\end_layout
+
+\begin_layout Standard
+משתמשים בזה לנחש את הפתרון
+\end_layout
+
+\begin_layout Standard
+אחרי שמנחשים צריך להוכיח
+\end_layout
+
+\begin_layout Standard
+למשל, תמצא חסם עליון על 
+\begin_inset Formula $T\left(1\right)=6,T\left(2\right)=7,T\left(3\right)=10$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(1\right) & = & 6,T\left(2\right)=7,T\left(3\right)=10\\
+T\left(n\right) & = & T\left(\frac{n}{3}\right)+T\left(\frac{2n}{3}\right)+\Theta\left(n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את 
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+ נכתוב בצורת 
+\begin_inset Formula $cn$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c3d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה לעץ ריצה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לראות כי בכל שורה יש 
+\begin_inset Formula $cn$
+\end_inset
+
+ פעולות.
+ אבל זה לא בדיוק נכון כי הענף הימני ארוך יותר מהענף השמאלי.
+\end_layout
+
+\begin_layout Standard
+הגובה המקסימאלי של עץ זה הוא 
+\begin_inset Formula $h=\log_{\nicefrac{3}{2}}\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נרצה להוכיח כי 
+\begin_inset Formula $cn\log_{\nicefrac{3}{2}}n=\mbox{O}\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -817,50 +817,6 @@ status open
 
 \end_layout
 
-\begin_layout Standard
-אזי הכח כתלות במרחב סביב דיפול חשמלי)שנגדיר בהמשך כסדה חשמלי( יראה כך
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-placement H
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\align center
-\begin_inset Graphics
-	filename physics2/c1d6.svg
-	lyxscale 30
-	width 40page%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption
-
-\begin_layout Plain Layout
-שדה חשמלי סביב דיפול חשמלי
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
 \begin_layout Section
 צפיפות המטען
 \end_layout
@@ -1063,6 +1019,609 @@ F & = & \int_{0}^{2\pi}\partial Q\int_{0}^{\infty}\partial a\frac{ka\sigma q}{a^
  & = & 2\pi\sigma k\left[\frac{-r}{\sqrt{a^{2}+r^{2}}}\right]_{a=0}^{a=\infty}\\
  & = & 2\pi k\sigma q\\
  & = & \frac{\sigma q}{2\epsilon_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & \frac{kq_{1}q_{2}}{r^{2}}\hat{r}\\
+\vec{E} & = & \frac{\vec{F}}{q}\\
+ & = & \frac{kQ}{r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c2d2.1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה של מטען בודד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c2d3.1.svg
+	lyxscale 40
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מטען של שני מטענים שווים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c1d6.1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה חשמלי סביב מטענים מנוגדים או דיפול חשמלי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את השטף כאשר 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא משטח)לא דפקא סגור(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi=\iintop_{D}\vec{E}\cdot\partial\vec{s}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לשמשל אם יש כדור ברדיוס 
+\begin_inset Formula $r$
+\end_inset
+
+ ומרכזו מטען 
+\begin_inset Formula $q$
+\end_inset
+
+ אזי נרצה לחשב את השטף.
+ רואים כי כיוון 
+\begin_inset Formula $\partial\vec{s}$
+\end_inset
+
+ ו
+\begin_inset Formula $\vec{E}$
+\end_inset
+
+ תמיד שווה אזי אפשר פשוט לכפול במקום לעשות מכפלה סקלרית ו
+\begin_inset Formula $E$
+\end_inset
+
+ הוא קבוע עבור כל הכדור אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi & = & \iintop_{D}\vec{E}\cdot\partial\vec{s}\\
+ & = & \vec{E}\cdot\iintop_{D}\partial\vec{s}\\
+ & = & \frac{kq}{r^{2}}\cdot4\pi r^{2}\\
+ & = & 4\pi kq\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט גאוס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c2d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+משטח גאוסי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש מטענים כלואים בתוך משטח סגור כלשוא אזי השטף הוא 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi=\iintop_{D}\vec{E}\cdot\partial\vec{s}=4\pi kq\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נובע מזה כי הזווית לא משפיעה על החישווים שלנו וגם כי השטח תלוי ב 
+\begin_inset Formula $r^{2}$
+\end_inset
+
+ והשדה תלוי ב 
+\begin_inset Formula $\frac{1}{r^{2}}$
+\end_inset
+
+ אז הכח למשטח הוא קבוע ברדיוס כלשהוא.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+לחשב השדה סביב טייל אינסופי נבנס סביב הטייל משטח גאוסי גלילי.
+ למכסים אין שטף כי השדה ניצב להם.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2\pi rh\cdot E & = & 4\pi k\lambda h\\
+E & = & \frac{2k\lambda}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לחשב השטף סביב משטח אינסופי נבנה גליל ניצב למשטח ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c3d1.svg
+	lyxscale 20
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+משטח אינסופי עם מעטפת גאוסית כלילית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2S\cdot E & = & 4\pi kS\sigma\\
+E & = & 2\pi k\sigma\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש לנו מישור סופי ושואלים מה השדה בתלות במרחק ממנה אזי אם מסתכלים במרחקים
+ קרובים נקבל שדה של משטח איסופי, אם מתרחקים נקבל שדה של מטען נקודתי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c3d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קירוב של שדה סביב מלבן סופי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אותו דבר עם מלבן צר וארוך רק שבין המשטח האיסופי והמטען הנקודתי נראה טייל
+ אינסופי.
+\end_layout
+
+\begin_layout Section
+חוק גאוס הדיפרנציאלי
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Formula $\rho\left(\vec{r}\right)$
+\end_inset
+
+ אזי נרצה לחשב את השטף על קוביה 
+\begin_inset Formula $\Delta x\Delta y\Delta z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c3d3.svg
+	lyxscale 20
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קוביה 
+\begin_inset Formula $\Delta x\Delta y\Delta z$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4\pi k\Delta x\Delta y\Delta z\epsilon\left(\vec{r}\right) & \approx & \Delta x\Delta y\Delta E_{z}+\Delta y\Delta z\Delta E_{x}\Delta x\Delta z\Delta E_{y}\\
+4\pi k\rho & \approx & \frac{\Delta E_{z}}{\Delta z}+\frac{\Delta E_{x}}{\Delta x}+\frac{\Delta E_{y}}{\Delta y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $\lim\Delta x\to0$
+\end_inset
+
+ אזי זה נהפך לשוויון ולא רק קירוב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4\pi k\rho & = & \frac{\partial E_{x}}{\partial x}+\frac{\partial E_{y}}{\partial y}+\frac{\partial E_{z}}{\partial z}\\
+ & = & \mbox{div}\vec{E}\\
+ & = & \vec{\nabla}\cdot\vec{E}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\vec{\nabla}=\left(\frac{\partial}{\partial x},\frac{\partial}{\partial y},\frac{\partial}{\partial z}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי רואים החוק:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oiint\overbrace{\vec{E}\cdot\partial\vec{s}}^{\vec{E}\cdot\hat{n}\partial s}=\iiint\vec{\nabla}\cdot\vec{E}\partial V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שאלה: 
+\end_layout
+
+\begin_layout Standard
+האם אפשר למצא קונפיגורציה של מטענים)לא זזים( כך שאם נשים מטען באמצע כך שיהיה
+ בשיווי משקל יציב?
+\end_layout
+
+\begin_layout Paragraph
+תשובה:
+\end_layout
+
+\begin_layout Standard
+לא, כי אם נבנה מעטפת גאוסית באמצע נקבל מעטפת שהשטף דרכה אפס)חוק גאוס( אבל
+ היינו רוצים כי השדה יהיה שלילי.
+\end_layout
+
+\begin_layout Section
+עבודה של מטענים
+\end_layout
+
+\begin_layout Paragraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+כמה עבודה צריך לעשות כדי להביא שני מטענים קרוב אחד לשני.
+\end_layout
+
+\begin_layout Standard
+כלומר זה העבודה שצריכים כדי להעביר את זה מ
+\begin_inset Formula $\infty$
+\end_inset
+
+ ל מרחק 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ נניח כי אחד המטענים קבוע ב 
+\begin_inset Formula $\left(0,0\right)$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U & = & \intop_{\infty}^{r}\frac{kq_{1}q_{2}}{r^{\prime^{2}}}\partial r^{\prime}\\
+ & = & \left[-\frac{kq_{1}q_{2}}{r^{\prime}}\right]_{\infty}^{r}\\
+ & = & \frac{kq_{1}q_{2}}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי העבודה הדרושה בשביל להעביר מטען לקונפיגורציה מסוימת של מטענים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U=\sum_{i<j}\frac{kq_{i}q_{j}}{r_{i,j}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אוצים לבדוק אם 
+\begin_inset Formula $\vec{F}=-\nabla U$
+\end_inset
+
+: )משתמשים בכלל השרשרת(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-\nabla U=\frac{kq_{1}q_{2}}{r^{2}}\overbrace{\left(\frac{x}{r},\frac{y}{r},\frac{z}{r}\right)}^{\hat{r}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+מה העבודה שצריכים כדי לקרב מטען 
+\begin_inset Formula $q$
+\end_inset
+
+ לטייל אינסופי?
+\end_layout
+
+\begin_layout Paragraph
+תשובה:
+\end_layout
+
+\begin_layout Standard
+פשוט עושים אינטגרל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-\intop_{\infty}^{r}\frac{2k\lambda}{r}\partial r=2k\lambda q\left(\ln\left(\infty\right)-\ln\left(r\right)\right)=\infty\]
 
 \end_inset
 

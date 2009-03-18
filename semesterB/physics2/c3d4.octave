@@ -1,0 +1,41 @@
+#!/usr/bin/env octave
+function [dx,dy]=afiefE(x,y,q,x0,y0) # x,y is a space, q the charge, 
+				     # x0,y0 is where the charge is positioned
+  dx=(q./((x.-x0).^2.+(y.-y0).^2)).*((x.-x0)./(((x.-x0).^2.+(y.-y0).^2).^(1./2)));
+  dy=(q./((x.-x0).^2.+(y.-y0).^2)).*((y.-y0)./(((x.-x0).^2.+(y.-y0).^2).^(1./2)));
+  
+
+
+endfunction
+
+function [dx,dy]=afiefNormalize(dx,dy,n) #x,y are vectors, n is the longest vector allowed
+  for i=1:rows(dx)
+    for j=1:columns(dy)
+      if(dx(i,j).^2+dy(i,j).^2 > n.^2)
+	tx=dx(i,j);
+	ty=dy(i,j);
+	ntx=n.*tx./((tx.^2.+ty.^2).^(1./2));
+	nty=n.*ty./((tx.^2.+ty.^2).^(1./2));
+	dx(i,j)=ntx;
+	dy(i,j)=nty;
+      endif
+    endfor
+  endfor
+endfunction
+
+[x,y]=meshgrid(-2:0.05:2,-2:0.05:2);
+t=0:2*pi/8:2*pi;
+
+[dx,dy]=afiefE(x,y,1,cos(t(1)),sin(t(1)),-1,2);
+
+for i=2:(columns(t)-1)
+    [dx2,dy2]=afiefE(x,y,1,cos(t(i)),sin(t(i)),-1,2);
+    dx=dx+dx2;
+    dy=dy+dy2;
+endfor
+[dx,dy]=afiefNormalize(dx,dy,2);
+quiver(x,y,dx,dy)
+hold;
+plot(cos(t),sin(t),'*');
+hold;
+pause

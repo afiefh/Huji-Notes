@@ -1297,5 +1297,632 @@ y\\
 בקיצור מה ראינו היום? עוד פעם משפט סטוקס ומשפט גאוס.
 \end_layout
 
+\begin_layout Chapter
+האצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Section
+טנזורים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ העתקה מולטי ליניארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(\lambda\vec{a},\vec{b},\vec{c}\right) & = & \lambda T\left(\vec{a},\vec{b},\vec{c}\right)\\
+T\left(\vec{a},\lambda\vec{b},\vec{c}\right) & = & \lambda T\left(\vec{a},\vec{b},\vec{c}\right)\\
+T\left(\vec{a},\vec{b},\lambda\vec{c}\right) & = & \lambda T\left(\vec{a},\vec{b},\vec{c}\right)\\
+T\left(\lambda\vec{a},\lambda\vec{b},\lambda\vec{c}\right) & = & \lambda^{3}T\left(\vec{a},\vec{b},\vec{c}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}A_{11} & A_{12}\\
+A_{21} & A_{22}\end{pmatrix}=\begin{pmatrix}1 & 2\\
+3 & 4\end{pmatrix}\\
+A\cdot\vec{x} & = & \begin{pmatrix}A_{11}x_{1}+A_{12}x_{2}\\
+A_{21}x_{1}+A_{22}x_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המספרים 
+\begin_inset Formula $A_{ij}^{k}$
+\end_inset
+
+ נקראים רכיבים של טנזור)לפי בסיס מסוים(
+\end_layout
+
+\begin_layout Section
+הסכם של איסטין
+\end_layout
+
+\begin_layout Standard
+הוא אמר פשוט כי 
+\begin_inset Formula $\sum_{i=1}^{n}\sum_{j=1}^{n}A_{ij}^{k}x_{i}x_{j}$
+\end_inset
+
+ כותבים פשוט בצורת 
+\begin_inset Formula $A_{ij}^{k}x_{i}x_{j}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+לכל אינדקס מותר להופיע פעם אחת או פעמיים בלבד.
+ אם אינדקס מופיע פעמיים אזי סוכמים עליו, אם מופיע פעם אחת אז הוא סתם אינדקס
+ סתום כזה.
+\end_layout
+
+\begin_layout Section
+טנזורים חשובים
+\end_layout
+
+\begin_layout Standard
+טנזור 
+\begin_inset Formula $\delta$
+\end_inset
+
+ הוא מחזירה בדיוק את הווקטור שהיא מקבלת אזי 
+\begin_inset Formula $\delta=\begin{pmatrix}1 & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & 1\end{pmatrix}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\delta_{ij}=\begin{cases}
+1 & i=j\\
+0 & i\neq j\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טנזור 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ מקבל שתי ווקטורים 
+\begin_inset Formula $a,b$
+\end_inset
+
+ ומחזיר 
+\begin_inset Formula $a\times b$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\epsilon e_{1}e_{2} & = & e_{3}\\
+\epsilon e_{2}e_{1} & = & -e_{3}\\
+\epsilon e_{1}e_{3} & = & e_{2}\\
+\epsilon e_{2}e_{3} & = & e_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\epsilon_{ijk}=\begin{cases}
+1 & \left(i,j,k\right)\in\left\{ \left(1,2,3\right),\left(3,1,2\right),\left(2,3,1\right)\right\} \\
+-1 & \left(i,j,k\right)\in\left\{ \left(1,3,2\right),\left(2,1,3\right),\left(3,2,1\right)\right\} \\
+0 & \mbox{\R{אחרת}}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות של 
+\begin_inset Formula $\epsilon,\delta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta$
+\end_inset
+
+: דוגמה של שימוש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A_{ij}^{kl}=\begin{cases}
+1 & i=k\mbox{ \R{וגם} }j=l\\
+0 & \mbox{\mbox{\R{אחרת}}}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A_{ij}^{kl}=\delta_{i}^{j}\delta_{k}^{l}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A_{ij}^{kl} & = & \begin{cases}
+1 & i=k\wedge j=l\\
+-1 & i=l\wedge j=k\\
+0 & \mbox{\R{אחרת}}\end{cases}\\
+ & = & \delta_{i}^{k}\delta_{j}^{l}-\delta_{i}^{l}\delta_{j}^{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות של 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\epsilon_{ijk}=-\epsilon_{jik}=\epsilon_{jki}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\epsilon_{ijk}\epsilon^{ilm}=\begin{cases}
+1 & \left[jk\right]=\left[lm\right]\\
+-1 & \left[jk\right]=\left[ml\right]\\
+0 & \mbox{\R{אחרת}}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e_{ijk}\epsilon^{ilm}=\delta_{j}^{l}\delta_{k}^{m}-\delta_{j}^{m}\delta_{k}^{l}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימוש בתכונות של 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\left(x\times y\right)\times z\right)_{i} & = & \epsilon_{ijk}\left(x\times y\right)_{j}z_{k}\\
+ & = & \epsilon_{ijk}\left(\epsilon_{jmn}x_{m}y_{n}\right)z_{k}\\
+ & = & \epsilon_{ijk}\epsilon_{jmn}x_{m}y_{n}z_{k}\\
+ & = & \underbrace{\epsilon_{jki}}_{\epsilon_{ijk}=\epsilon_{jki}}\epsilon_{jmn}x_{m}y_{n}z_{k}\\
+ & = & \left(\delta_{k}^{m}\delta_{i}^{n}-\delta_{k}^{n}\delta_{i}^{m}\right)x_{m}y_{n}z_{k}\\
+ & = & x_{k}y_{i}z_{k}-x_{i}y_{k}z_{k}\\
+ & = & y_{i}\left(x\cdot z\right)-x_{i}\left(y\cdot z\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לכתוב את הזהות כי 
+\begin_inset Formula $\left(x\times y\right)\times z=y\left(x\cdot z\right)-x\left(y\cdot z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+זהויות עם 
+\begin_inset Formula $\mbox{grad,div,curl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}:\phi & \to & \nabla\phi\\
+\vec{\nabla} & \equiv & e_{i}\frac{\partial}{\partial x_{i}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ז"א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\psi=\frac{\partial}{\partial x_{i}}\psi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+grad
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+grad & = & \nabla\cdot\phi\\
+curl & = & \nabla\times A\\
+div & = & \nabla\cdot A\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תכונות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\nabla\times\left(\nabla\phi\right) & = & 0\\
+\nabla\cdot\left(\nabla\times\vec{\phi}\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla\left(\vec{A}\times\vec{B}\right)=\left(\nabla\times A\right)\cdot B-A\cdot\left(\nabla\times B\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+לפלסיאן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Laplacian
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+\triangle=\frac{\partial^{2}}{\partial x_{1}\partial x_{j}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב
+\begin_inset Formula $\mathbb{R}^{3}$
+\end_inset
+
+ 
+\begin_inset Formula $\triangle\phi=\frac{\partial^{2}\phi}{\partial x_{1}^{2}}+\frac{\partial^{2}\phi}{\partial x_{2}^{2}}+\frac{\partial^{2}\phi}{\partial x_{3}^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r & = & \sqrt{x_{1}^{2}+x_{2}^{2}+x_{3}^{2}}\\
+\triangle & r^{2}= & \frac{\partial^{2}}{\partial x_{1}^{2}}\left(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}\right)+\dots+\frac{\partial^{2}}{\partial x_{3}^{2}}\left(x_{1}^{2}+x_{2}^{2}+x_{3}^{2}\right)\\
+ & = & 2\cdot3\\
+ & = & 6\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+בשיעור זה נראה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{\nabla}$
+\end_inset
+
+ בקואורדינטות שונות
+\end_layout
+
+\begin_layout Itemize
+עוד שימושים למשפט גאוס
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+חשמל
+\end_layout
+
+\begin_layout Enumerate
+גיאומטריה דיפרנציאלית
+\end_layout
+
+\end_deeper
+\begin_layout Section
+\begin_inset Formula $\vec{\nabla}$
+\end_inset
+
+ בקואורדינטות שונות
+\end_layout
+
+\begin_layout Standard
+למשל בקואורדינטות כדוריות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x\\
+y\\
+z\end{pmatrix}=\begin{pmatrix}r\sin\theta\cos\varphi\\
+r\sin\theta\sin\varphi\\
+r\cos\varphi\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נרצה לדעת איך נראים האיברים 
+\begin_inset Formula $\frac{\partial}{\partial r},\frac{\partial}{\partial\theta},\frac{\partial}{\partial\varphi}$
+\end_inset
+
+ אזי נפעיל את שלושתם על איזה שהיא פונקציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial f\left(x,y,z\right)}{\partial r} & = & \overbrace{\frac{\partial f}{\partial x}\cdot\frac{\partial x}{\partial r}+\frac{\partial f}{\partial y}\cdot\frac{\partial y}{\partial r}+\frac{\partial f}{\partial z}\cdot\frac{\partial z}{\partial r}}^{\mbox{\R{כלל\,השרשרת}}}\\
+ & = & \frac{\partial f}{\partial r}\cdot\left(\sin\theta\cos\varphi\right)+\frac{\partial f}{\partial y}\left(\sin\theta\sin\varphi\right)+\frac{\partial f}{\partial z}\left(\cos\theta\right)\\
+\frac{\partial f\left(x,y,z\right)}{\partial\theta} & = & r\left(\frac{\partial f}{\partial x}\cos\theta\cos\varphi+\frac{\partial f}{\partial y}\cos\theta\sin\varphi-\frac{\partial f}{\partial z}\sin\theta\right)\\
+\frac{\partial f\left(x,y,z\right)}{\partial\varphi} & = & r\left(-\frac{\partial f}{\partial x}\sin\theta\sin\varphi+\frac{\partial f}{\partial y}\sin\theta\cos\varphi+\frac{\partial f}{\partial z}\cdot0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר לחלץ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x} & = & \sin\theta\cos\varphi\frac{\partial}{\partial r}+\frac{1}{r}\cos\theta\cos\varphi-\frac{1}{r\sin\theta}\sin\varphi\frac{\partial}{\partial\theta}\\
+\frac{\partial}{\partial y} & = & \sin\theta\sin\varphi\frac{\partial}{\partial r}+\frac{1}{r}\cos\theta\sin\varphi\frac{\partial}{\partial\theta}\frac{\partial}{\partial\theta}+\frac{1}{r\sin\theta}\cos\varphi\frac{\partial}{\partial\varphi}\\
+\frac{\partial}{\partial z} & = & \cos\theta\frac{\partial}{\partial r}-\frac{1}{r}\sin\theta\frac{\partial}{\partial\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}_{\left(x,y,z\right)}=\hat{r}\frac{\partial}{\partial r}+\frac{\hat{\theta}}{r}\cdot\frac{\partial}{\partial\theta}+\frac{\hat{\varphi}}{r\sin\theta}\cdot\frac{\partial}{\partial\varphi}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla_{\left(x,y,z\right)}f\left(x,y,z\right)=\nabla_{\left(r,\theta,\varphi\right)}\tilde{f}\left(r,\theta,\varphi\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בקואורדינטוד גליליות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla_{\left(x,y,z\right)}=\hat{\rho}\frac{\partial}{\partial\rho}+\frac{\hat{\varphi}}{\rho}\frac{\partial}{\partial\varphi}+\hat{z}\frac{\partial}{\partial z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\vec{r}}{\left\Vert r\right\Vert ^{3}}=\vec{f}\left(\vec{r}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\tilde{f}\left(x,y,z\right)=\begin{pmatrix}\frac{x}{\left(x^{2}+y^{2}+z^{2}\right)^{\nicefrac{3}{2}}}\\
+\frac{y}{\left(x^{2}+y^{2}+z^{2}\right)^{\nicefrac{3}{2}}}\\
+\frac{z}{\left(x^{2}+y^{2}+z^{2}\right)^{\nicefrac{3}{2}}}\end{pmatrix}\]
+
+\end_inset
+
+ אזי אם נרצה למצא את 
+\begin_inset Formula \begin{eqnarray*}
+\oiintop_{\mbox{\R{ספירה}}}\vec{f}\cdot\partial\vec{s} & = & \oiintop_{\mbox{ \R{ספירה}}}\frac{r}{\underbrace{\left\Vert r\right\Vert ^{3}}_{=R^{3}}}\hat{r}\partial s\\
+ & = & \oiintop_{\mbox{\R{ספירה}}}\frac{1}{R^{2}}\partial s\\
+ & = & \frac{1}{R^{2}}4\pi R^{3}\\
+ & = & 4\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\nabla\cdot\left(f\left(r\right)\right) & = & \left(\hat{r}\frac{\partial}{\partial r}+\frac{\hat{\theta}}{r}\frac{\partial}{\partial\theta}+\frac{\hat{\varphi}}{r\sin\theta}\frac{\partial}{\partial\varphi}\right)\cdot\frac{\vec{r}}{\left\Vert \vec{r}\right\Vert ^{3}}\\
+ & = & \hat{r}\cdot\left(\frac{\partial}{\partial r}\frac{\vec{r}}{\left\Vert r\right\Vert ^{3}}\right)\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נעשה האיטגרל על כדור שלא מכיל את אפס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oiint\vec{f}\left(r\right)\partial\vec{s} & = & \iiint\overbrace{\left(\nabla f\right)}^{0}\partial V\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oiint\vec{f}\cdot\partial\vec{s}=\begin{cases}
+0 & \left(0,0,0\right)\not\in S\\
+4\pi & \left(0,0,0\right)\in S\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה בעצם משפט גאוס.
+\end_layout
+
 \end_body
 \end_document
