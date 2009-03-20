@@ -66,5 +66,126 @@ LatexCommand tableofcontents
 1
 \end_layout
 
+\begin_layout Standard
+אתר:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+www.cs.huji.ac.il/~oop
+\end_layout
+
+\begin_layout Standard
+מרצה: עופר מאימן
+\end_layout
+
+\begin_layout Standard
+עבודות בית:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תרגילים כל אחד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\numeric off
+% מהציון הסופי
+\end_layout
+
+\begin_layout Standard
+חשוב: לפני הגשה תעבור על
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+submission guidelines
+\end_layout
+
+\begin_layout Section
+מה זה "מונחי עצמים"
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document

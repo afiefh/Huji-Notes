@@ -4446,7 +4446,139 @@ status collapsed
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.???
+\end_layout
+
 \begin_layout Standard
+נוכיח ש 
+\begin_inset Formula $y^{n}\geq x$
+\end_inset
+
+: נניח השלילה 
+\begin_inset Formula $y^{n}<x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\epsilon=\min\left(1,\frac{x-y^{n}}{nx}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\epsilon\leq1\wedge\epsilon\leq\frac{x-y^{n}}{nx}$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+nx\epsilon & < & x-y^{n}\\
+y^{n} & < & \left(1-\epsilon n\right)x\leq\left(1-\epsilon\right)^{n}x\\
+y^{n} & < & \left(1-\epsilon\right)^{n}x\\
+\left(\frac{y}{1-\epsilon}\right)^{n} & < & x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה 
+\begin_inset Formula $y$
+\end_inset
+
+ אינו יכול להיות 
+\begin_inset Formula $\sup S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח ש 
+\begin_inset Formula $y^{n}\leq x$
+\end_inset
+
+: נניח בשלילה ש
+\begin_inset Formula $y^{n}>x$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $0<\epsilon<\min\left(1,\frac{y^{n}-x}{ny^{n}}\right)$
+\end_inset
+
+ נובע מזה 
+\begin_inset Formula \begin{eqnarray*}
+ny^{n}\epsilon & < & y^{n}-x\\
+x & < & \left(1-n\epsilon\right)y^{n}\leq\left(1-\epsilon\right)^{n}y^{n}\\
+x & < & \left(1-\epsilon\right)^{n}y^{n}\\
+x & < & \left(\left[1-\epsilon\right]y\right)^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נובע כי 
+\begin_inset Formula $\left(1-\epsilon\right)y$
+\end_inset
+
+ הוא חסם מלעל של 
+\begin_inset Formula $S$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(1-\epsilon\right)y<y$
+\end_inset
+
+ אזי 
+\begin_inset Formula $y$
+\end_inset
+
+ אינו חסם עליון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+תשלים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $\nicefrac{a}{b}=\nicefrac{c}{d}\Rightarrow x^{\nicefrac{a}{b}}=x^{\nicefrac{c}{d}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x^{\nicefrac{a}{b}}\right)^{bd} & = & \left(\left(\left(\left(x^{a}\right)\right)^{\nicefrac{1}{b}}\right)^{b}\right)^{d}\\
+ & = & \left(x^{a}\right)^{d}\\
+ & = & x^{ad}\\
+ & = & x^{bc}\\
+ & = & \left(x^{c}\right)^{b}\\
+ & = & \left(\left(\left(x^{c}\right)^{\nicefrac{1}{d}}\right)^{d}\right)^{b}\\
+ & = & \left(\left(x^{\nicefrac{c}{d}}\right)^{d}\right)^{b}\\
+ & = & \left(x^{\nicefrac{c}{d}}\right)^{bd}\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 

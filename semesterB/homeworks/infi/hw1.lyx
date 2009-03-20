@@ -67,27 +67,153 @@
 1
 \end_layout
 
-\begin_layout Author
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
 עפיף חלומה
-\family roman
-\series medium
-\shape up
-\size large
-\emph off
-\bar no
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם התלמיד
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
 \numeric on
-\bar default
-\noun default
-\color inherit
 302323001
+\numeric off
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מס' ת"ז
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מרליו יהודה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם המתרגל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קבוצת תרגול
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שעה 
+\begin_inset Formula $14:00-16:00$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יום א'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלת מידע אישי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -841,6 +967,231 @@ bd-ac & \in & P\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Subsection
+הוכחה באינדוקציה בשימוש אקסויומות שדה סדור
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל אם 
+\begin_inset Formula $0\leq x<y$
+\end_inset
+
+ אז 
+\begin_inset Formula $x^{n}<y^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $x<y$
+\end_inset
+
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי הטענה מתקיימת עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{n+1} & \overset{?}{<} & y^{n+1}\\
+x^{n}\cdot x & \overset{?}{<} & y^{n}\cdot y\\
+x^{n}\cdot x<y^{n}\cdot x & \overset{?}{<} & y^{n}\cdot y\\
+x & < & y\checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הוכחנו עבור כל 
+\begin_inset Formula $n$
+\end_inset
+
+ טבעי
+\end_layout
+
+\begin_layout Subsubsection
+אם 
+\begin_inset Formula $y>x$
+\end_inset
+
+ ו 
+\begin_inset Formula $n$
+\end_inset
+
+ אי זוכי אזי 
+\begin_inset Formula $x^{n}<y^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה: 
+\begin_inset Formula $x<y$
+\end_inset
+
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי הטענה מתקיימת עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{n+2} & < & y^{n+2}\\
+x^{n}\cdot x^{2} & < & y^{n}\cdot y^{2}\\
+x^{n}\cdot x^{2}<y^{n}x^{2} & < & y^{n}y^{2}\\
+y^{n}x^{2} & < & y^{n}y^{2}\\
+x^{2} & < & y^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי הנחת האינדוקציה גם זה מתקיים 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אם 
+\begin_inset Formula $x^{n}=y^{n}$
+\end_inset
+
+ ו 
+\begin_inset Formula $n$
+\end_inset
+
+ אי זוגי אז 
+\begin_inset Formula $x=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+: 
+\begin_inset Formula $x^{1}=y^{1}$
+\end_inset
+
+ 
+\begin_inset Formula $\checkmark$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי הטענה מתקיימת עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{n+1} & = & y^{n+1}\\
+x^{n}x & = & y^{n}y\\
+y^{n}x & = & y^{n}y\\
+x & = & y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אם 
+\begin_inset Formula $x^{n}=y^{n}$
+\end_inset
+
+ ו 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגי אז 
+\begin_inset Formula $x=y$
+\end_inset
+
+ או 
+\begin_inset Formula $x=-y$
+\end_inset
+
+ ראינו שאם 
+\begin_inset Formula $x^{n}=y^{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ זוגי אז 
+\begin_inset Formula $x$
+\end_inset
+
+ ו 
+\begin_inset Formula $y$
+\end_inset
+
+ הם מספרים שווים או מנוגדים כלומר 
+\begin_inset Formula $x=-y$
+\end_inset
+
+ או 
+\begin_inset Formula $x=y$
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 שאלה
 \family roman
@@ -1071,9 +1422,11 @@ bd-ac & \in & P\end{eqnarray*}
 
 \begin_layout Enumerate
 \begin_inset Formula \begin{eqnarray*}
-\sum_{k=1}^{n+1}k^{3} & = & \sum_{k=1}^{n}k^{3}+\left(n+1\right)^{3}\\
- & = & \left(\sum_{k=1}^{n}k\right)^{2}+\left(n+1\right)^{3}\\
- & = & ???\end{eqnarray*}
+\sum_{k=1}^{n+1}k^{3} & = & \underbrace{1^{3}+2^{3}+\dots+n^{3}}_{\left(\sum_{k=1}^{n}k\right)^{2}}+\left(n+1\right)^{3}\\
+ & = & \left(1+2+\dots+n\right)^{2}+\left(n+1\right)^{3}\\
+ & = & \left(1+2+\dots+n\right)+\left(1^{2}+2^{2}+\dots+n^{2}\right)+\sum_{i>j}^{n}2i\cdot j+\left(n^{2}+2n+1\right)\left(n+1\right)\\
+ & = & \left(1+2+\dots+n+\left(n+1\right)\right)+\left(1^{2}+2^{2}+\dots+n^{2}+\left(n+1\right)^{2}\right)+\sum_{i>j}^{n+1}2i\cdot j\\
+ & = & \left(\sum_{k=1}^{n}k\right)^{2}\end{eqnarray*}
 
 \end_inset
 
@@ -1174,5 +1527,192 @@ bd-ac & \in & P\end{eqnarray*}
 \end_layout
 
 \end_deeper
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+קיים שלם 
+\begin_inset Formula $n$
+\end_inset
+
+ עבורו 
+\begin_inset Formula $n^{2}<n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הטענה: 
+\begin_inset Formula $\left(\exists n\in\mathbb{Z}\right)\left(n>n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השלילה: 
+\begin_inset Formula $\left(\forall n\in\mathbb{Z}\right)\left(n\leq n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קיים קבוע חיובי 
+\begin_inset Formula $a$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim_{x\to\infty}x^{a}e^{-x}=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $\left(\exists a>0\right)\left(\lim_{x\to\infty}x^{a}e^{-x}=\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שלילה: 
+\begin_inset Formula $\left(\forall x>0\right)\left(\lim_{x\to\infty}x^{a}e^{-x}\neq\infty\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קיים מספר ממשי 
+\begin_inset Formula $L$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ המקיים שאם 
+\begin_inset Formula $\left|x-17\right|<\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|f\left(x\right)-L\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $\left(\exists L\in\mathbb{R}\right)\left(\forall\epsilon>0\right)\left(\exists\delta>0\right):\left(x-17<\delta\Rightarrow\left|f\left(x\right)-L\right|<\epsilon\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שלילה: 
+\begin_inset Formula $\left(\forall L\in\mathbb{R}\right)\left(\exists\epsilon>0\right)\left(\forall\delta>0\right):\left(x-17<\delta\Rightarrow\left|f\left(x\right)-L\right|\geq\epsilon\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+לכל 
+\begin_inset Formula $m,n$
+\end_inset
+
+ שלמים 
+\begin_inset Formula $n\geq m$
+\end_inset
+
+ או 
+\begin_inset Formula $-n\geq-m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $\left(\forall m\in\mathbb{Z}\right)\left(\forall n\in\mathbb{Z}\right)\left(n\geq m\vee-n\geq-m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שלילה: 
+\begin_inset Formula $\left(\exists m\in\mathbb{Z}\right)\left(\exists n\in\mathbb{Z}\right)\left(n\leq m\vee-n\leq-m\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Subsection
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ טבעי מתקיים 
+\begin_inset Formula $a,b$
+\end_inset
+
+ טבעיים כך ש 
+\begin_inset Formula $b<n,1<a$
+\end_inset
+
+ ו 
+\begin_inset Formula $n=a\cdot b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה: 
+\begin_inset Formula $\left(\forall n\in\mathbb{N}\right)\left(\exists a\in\mathbb{N}\right)\left(\exists b\in\mathbb{N}\right)\left(n>b\right)\left(a>1\right):\left(a\cdot b=n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שלילה: 
+\begin_inset Formula $\left(\exists n\in\mathbb{N}\right)\left(\forall a\in\mathbb{N}\right)\left(\forall bb\in\mathbb{N}\right)\left(n>b\right)\left(a>1\right):\left(a\cdot b\neq n\right)$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

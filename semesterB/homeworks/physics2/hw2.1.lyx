@@ -1,0 +1,449 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לפי חוק גאוס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iintop_{\partial D}\vec{E}\partial\vec{s} & = & \iiintop_{D}\vec{\nabla}\cdot\vec{E}\partial V\\
+ & = & 4\pi kq\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+בונים קוביה מדומת שאוכך הצלע שלה 
+\begin_inset Formula $2d$
+\end_inset
+
+ והמטען הוא באמצעה אזי השטף דרך קוביה זו הוא גם 
+\begin_inset Formula $4\pi kq$
+\end_inset
+
+.
+ אבל אנחנו לא מתענינים בקוביה זו אזי צריך לעבוד עוד קצת כדי לפרק את מה שרוצים
+ מתוך החישובים האלה.
+\end_layout
+
+\begin_layout Standard
+שלושה צדדים של הקוביה לא עובר דרכם שטף כי הם מאונכים לשדה החשמלי.
+ אזי נשארו לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צדדים אחרים.
+ אבל כל אחד מצדדים אלו הוא רבע של צד של הקוביה הגדולה.
+ 
+\begin_inset Formula $D=\nicefrac{D^{\prime}}{4}$
+\end_inset
+
+ והבעיה היא סימטרית ל
+\numeric on
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+החלקים האלו אזי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi & = & \underbrace{\frac{3}{6}}_{\mbox{Sides}}\cdot\underbrace{\frac{1}{4}}_{\mbox{quotient}}\cdot4\pi kq\\
+ & = & \frac{3}{24}\cdot4\cdot\pi kq\\
+ & = & \frac{1}{8}\cdot4\pi kq\\
+ & = & \frac{\pi kq}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+משתמשים עוד פעם בחוק גאוס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iintop_{\partial D}\vec{E}\partial\vec{s} & = & 4\pi kq_{\mbox{inside}}\\
+ & = & 4\pi k\left(d\cdot\lambda\right)\\
+ & = & 4dk\lambda\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+עוד פעם חוק גאוס.
+\end_layout
+
+\begin_layout Standard
+אם הוא מקבלי לשתי המשטחים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iintop_{\partial D}\vec{E}\partial\vec{s} & = & 4\pi kq_{\mbox{inside}}\\
+ & = & 4\pi k\left(d^{2}\sigma\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הוא עובר דרך האלכסונים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iintop_{\partial D}\vec{E}\partial\vec{s} & = & 4\pi kq_{\mbox{inside}}\\
+ & = & 4\pi k\left(\sqrt{2}d\cdot d\cdot\sigma\right)\\
+ & = & \sqrt{32}\cdot\pi k\sigma d^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נניח כי שני המישורים ממוקמים ב 
+\begin_inset Formula $x=\pm\frac{d}{2}$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\begin{cases}
+x>\frac{d}{2} & 0\\
+-\frac{d}{2}<x<\frac{d}{2} & 2\cdot2\pi k\sigma\\
+x<-\frac{d}{2} & 0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+השדה של המשטח בעח צפיפות 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ הוא 
+\begin_inset Formula $2\pi k\sigma$
+\end_inset
+
+.
+ את השכבה בעלת צפיפות מטען 
+\begin_inset Formula $\rho$
+\end_inset
+
+ מחלקים למשטחים בעלי צפיפות משטח 
+\begin_inset Formula $\rho\partial x$
+\end_inset
+
+ אזי אם המשטח ממוקם ב 
+\begin_inset Formula $x=0$
+\end_inset
+
+ וימינה זה כיוון 
+\begin_inset Formula $+\hat{x}$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\begin{cases}
+x<0 & -2\pi k\sigma-\int_{0}^{d}2\pi k\rho\partial x^{\prime}\\
+0\leq x\leq d & 2\pi k\sigma+\int_{0}^{x}2\pi k\rho\partial x^{\prime}-\int_{x}^{d}2\pi k\rho\partial x^{\prime}\\
+x>d & 2\pi k\sigma+\int_{0}^{d}2\pi k\rho\partial x^{\prime}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחשבים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\begin{cases}
+x<0 & -2\pi k\sigma-2\pi k\rho d\\
+0\leq x\leq d & 2\pi k\sigma+2\pi k\rho x-2\pi k\rho\left(d-x\right)=2\pi k\sigma+2\pi k\rho x-2\pi k\rho d\\
+x>d & 2\pi k\sigma+2\pi k\rho d\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+צריכים לחשב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e & = & \iiintop_{\mbox{\R{קדור}}\mbox{ }}Ae^{-\frac{2r}{a_{0}}}\partial x\partial y\partial z\\
+ & = & \iiintop_{\mbox{\R{קדור}}}Ae^{\frac{2r}{a_{0}}}r^{2}\sin\varphi\partial r\partial\theta\varphi\\
+ & = & A\intop_{0}^{R}\intop_{0}^{2\pi}\intop_{0}^{\pi}r^{2}e^{\frac{2r}{a_{0}}}\sin\varphi\partial\varphi\partial\theta\partial r\\
+ & = & A\intop_{0}^{R}\intop_{0}^{2\pi}r^{2}e^{\frac{2r}{a_{0}}}\left[-\cos\varphi\right]_{0}^{\pi}\partial\theta\partial r\\
+ & = & 2A\intop_{0}^{R}\intop_{0}^{2\pi}r^{2}e^{\frac{2r}{a_{0}}}\partial\theta\partial r\\
+ & = & 4\pi A\intop_{0}^{R}r^{2}e^{\frac{2r}{a_{0}}}\partial r\\
+ & = & 4\pi A\intop_{0}^{R}r^{2}e^{\frac{2r}{a_{0}}}\partial r\\
+ & = & 4\pi A\left[-\frac{\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}}{4}\right]_{0}^{R}\\
+ & = & 4\pi A\left(-\frac{\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2R}{a_{0}}}}{4}-\left(-\frac{0+0+a_{0}^{3}e^{0}}{4}\right)\right)\\
+ & = & 4\pi A\left(-\frac{\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2R}{a_{0}}}+a_{0}^{3}}{4}\right)\\
+ & = & -\pi A\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2R}{a_{0}}}+\pi Aa_{0}^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
