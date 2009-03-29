@@ -1,4 +1,4 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -1622,6 +1622,831 @@ U=\sum_{i<j}\frac{kq_{i}q_{j}}{r_{i,j}}\]
 \begin_layout Standard
 \begin_inset Formula \[
 -\intop_{\infty}^{r}\frac{2k\lambda}{r}\partial r=2k\lambda q\left(\ln\left(\infty\right)-\ln\left(r\right)\right)=\infty\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -\nabla\underbrace{U\left(\vec{r}\right)}_{\mbox{\R{פוטנציאל}}}\\
+\vec{E} & = & -\nabla\underbrace{\phi\left(\vec{r}\right)}_{\begin{matrix}\mbox{\R{פוטנציאל}}\\
+\mbox{\R{ליחידת}}\\
+\mbox{\R{מטען}}\end{matrix}}\\
+U\left(r\right) & = & -\intop_{\infty}^{r}\vec{F}\cdot d\vec{x}=-\intop_{\infty}^{r}\frac{kq_{1}q_{2}}{r}\\
+\varphi\left(r\right) & = & -\intop_{\infty}^{r}\vec{E}\cdot d\vec{x}=-\intop_{\infty}^{r}\frac{kq}{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי קיימת פונקציה 
+\begin_inset Formula $\phi$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\vec{E}=-\nabla\phi$
+\end_inset
+
+ כי 
+\begin_inset Formula $\vec{\nabla}\times\vec{E}=0$
+\end_inset
+
+ והשדה הוא פשוט קשר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\times\vec{E} & = & \begin{vmatrix}\hat{x} & \hat{y} & \hat{z}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+E_{x} & E_{y} & E_{z}\end{vmatrix}\\
+ & = & \left(\frac{\partial E_{y}}{\partial z}-\frac{\partial E_{z}}{\partial E_{y}},\frac{\partial E_{z}}{\partial x}-\frac{\partial E_{x}}{\partial z},\frac{\partial E_{x}}{\partial y}-\frac{\partial E_{y}}{\partial x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+קליפה כדורית טעונה ביחידת מטען 
+\begin_inset Formula $Q$
+\end_inset
+
+.
+ רוצים לדעת מה הפוטנציאל בכל נקודה במרחב?
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c4d1.svg
+	lyxscale 30
+	width 30text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קליפה כדורית טעונה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varphi & = & \intop_{\infty}^{r}\vec{E}dx\\
+ & = & \begin{cases}
+r>R & \intop_{\infty}^{r}\vec{E}d\vec{x}\\
+r\leq R & \intop_{\infty}^{R}\vec{E}d\vec{x}\end{cases}\\
+ & = & \begin{cases}
+r>R & \frac{kQ}{r}\\
+r\leq R & \frac{kQ}{R}\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+אותו מקרה אבל הפעם עם כדור מלא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c4d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה מקורב סביב קדור טעון במישור 
+\begin_inset Formula $xy$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c3d4.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה מקורב סביב טבעת טעונה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula \[
+\varphi\left(r\right)=\begin{cases}
+r>R & \intop_{\infty}^{r}\overbrace{\frac{4\pi kQ\left(\frac{r}{R}\right)^{3}}{4\pi r^{2}}}^{\mbox{\R{חוק\,גאוס}}}=\intop_{\infty}^{r}\frac{kQr}{R^{3}}=\frac{kQr^{2}}{2R^{3}}\\
+r\leq R & \frac{kQ}{r}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מה הפוטנציאל של תייל אינסופי?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}\left(r\right)=\frac{\partial k\lambda}{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוכרים כי בשיעור שעבר קיבלנו כי זה אינסופי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi\varphi\left(r\right)=2k\lambda\ln\left(\frac{L}{r}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physicsworkshop/c2d2.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה סביב טייל טעון במרחקים שונים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+כמה אנרגיה צריכים כדי לבנות מערכת מסויימת?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U & = & \frac{1}{2}\sum_{i\neq j}\frac{kq_{i}q_{j}}{r_{i,j}}\\
+ & = & \frac{1}{2}\sum_{i}\sum_{j\neq i}\frac{kq_{i}q_{j}}{r_{ij}}\\
+ & = & \frac{1}{2}\int\phi\left(r\right)\rho\partial V\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר האנרגיה היא חצי האנרגיה שהיינו צריכים אם הבאנו כל אחד מהמטענים אחרון.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Standard
+היום נדבר על:
+\end_layout
+
+\begin_layout Enumerate
+משוואת פואסון ולפלס
+\end_layout
+
+\begin_layout Enumerate
+צפיפות אנרגיה לפי שדה 
+\begin_inset Formula $E^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+פונקציות הרמוניות
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\vec{\nabla}\times\vec{F}=\mbox{curl}\vec{F}=\mbox{rot}\vec{F}$
+\end_inset
+
+ ומשפט סטוקס
+\end_layout
+
+\begin_layout Section
+משוואת פואסון ולפלס
+\end_layout
+
+\begin_layout Subsection
+משוואת פואסון
+\end_layout
+
+\begin_layout Standard
+נזכיר משפט גאוס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\vec{E}=4\pi k\rho=\frac{\rho}{\epsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\vec{E}=-\vec{\nabla}\varphi$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\left(\vec{\nabla}\varphi\right) & = & -\frac{\rho}{\epsilon_{0}}\\
+\nabla^{2}\varphi & = & -\frac{\rho}{\epsilon_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת היא משוואת פואסון
+\end_layout
+
+\begin_layout Subsection
+משוואת לפלס
+\end_layout
+
+\begin_layout Standard
+זה אותו דבר רק עם 
+\begin_inset Formula $\rho=0$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla^{2}\varphi=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+אם יש מטען 
+\begin_inset Formula $q$
+\end_inset
+
+ ב
+\begin_inset Formula $\left(0,0,0\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\rho\left(\vec{r}\right)=\begin{cases}
+0 & \mbox{\R{אחרת}}\\
+q & \left(\vec{r}\right)=\left(0,0,0\right)\end{cases}$
+\end_inset
+
+ כלומר בכל מקום מתקיימת משוואת לפלס חוץ מנקודה אחת.
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+גם אם אין מטען בכלל מתקיימת משוואת לפלס אבל אז זה כבר לא מעננין אף אחד.
+\end_layout
+
+\begin_layout Subsection
+פתרונות של משוואת לפלס
+\end_layout
+
+\begin_layout Standard
+הפתרון של המשוואות האלה נקראות פונקציות הרמוניות לדוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varphi=\sin xe^{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\left(\vec{\nabla}\varphi\right) & = & \vec{\nabla}\left(\frac{\partial\varphi}{\partial x}\hat{x}+\frac{\partial\varphi}{\partial y}\hat{y}+\frac{\partial\varphi}{\partial z}\hat{z}\right)\\
+ & = & \frac{\partial^{2}\varphi}{\partial x^{2}}+\frac{\partial^{2}\varphi}{\partial y^{2}}+\frac{\partial^{2}\varphi}{\partial z^{2}}\\
+ & = & -\sin xe^{y}+\sin xe^{y}+0\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c5d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פונקציה 
+\begin_inset Formula $\varphi=\sin xe^{y}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת לפלס מבטיחה שאם בונים משטח סביב נקודה מסויימת אזי הממוצע של הפוטנציאל
+ על השטח שווה לפוטנציאל במרכז
+\end_layout
+
+\begin_layout Standard
+נרצה להוכיח את התכונה הזו עבור כדור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c5d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+כדור ומטען מייצר פוטנציאל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varphi\left(r\right)=\frac{\iint\varphi ds}{4\pi R^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נטען את פני הכדור ב 
+\begin_inset Formula $q^{\prime}$
+\end_inset
+
+ באופן אחיד: 
+\begin_inset Formula $\sigma=\frac{q^{\prime}}{4\pi R^{2}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כמה אנרגיה נדרשת כדי לכרב את מרכזו למרחק 
+\begin_inset Formula $r$
+\end_inset
+
+ קטן למטען 
+\begin_inset Formula $q$
+\end_inset
+
+ ומעבירים את זה מאינסוף ל
+\begin_inset Formula $r$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{kqq^{\prime}}{r} & = & \iint\varphi\sigma ds\\
+\frac{kqq^{\prime}}{r} & = & \frac{q^{\prime}}{4\pi R^{2}}\iint\varphi ds\\
+\frac{kq}{r} & = & \iint\frac{\varphi ds}{4\pi R^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+צפיפות אנרגיה לפי 
+\begin_inset Formula $E^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\left(\varphi\vec{\nabla}\varphi\right)=\left(\nabla\varphi\right)^{2}+\varphi\nabla^{2}\varphi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז משתמשים בזה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U & = & \frac{1}{2}\int\varphi\rho dv\\
+ & = & -\frac{\epsilon_{0}}{2}\int\nabla^{2}\varphi dv\\
+ & = & -\frac{\epsilon_{0}}{2}\int\vec{\nabla}\left(\varphi\vec{\nabla}\varphi\right)-\left(\nabla\varphi\right)^{2}dv\\
+ & = & \frac{\epsilon_{0}}{2}\int E^{2}dv-\frac{\epsilon_{0}}{2}\int\varphi\vec{\nabla}\varphi\cdot ds\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $ds$
+\end_inset
+
+ זה משהוא עם רדיוס איסופי והמטענים באמצע מקבלים 
+\begin_inset Formula $\lim\frac{\epsilon_{0}}{2}\int\varphi\vec{\nabla}\varphi\cdot ds\to0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U=\frac{\epsilon_{0}}{2}\int E^{2}dv\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+יודעים כי צריכים 
+\begin_inset Formula $U=\frac{1}{2}\frac{kQ^{2}}{R}$
+\end_inset
+
+ כדי לבנות מעטפת כדורית טעון ב 
+\begin_inset Formula $Q$
+\end_inset
+
+ בעל ראדיוס 
+\begin_inset Formula $R$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{8\pi k}\intop_{R}\left(\frac{kQ}{r^{2}}\right)^{2}\cdot\underbrace{\left(4\pi r^{2}dr\right)}_{dv}=-\frac{k}{2}\frac{Q^{2}}{r}\vert_{R}^{\infty}=U\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה: 
+\end_layout
+
+\begin_layout Standard
+מקוף זה 
+\begin_inset Formula $\int\vec{E}d\vec{l}$
+\end_inset
+
+ כלומר אינטגרל מסילתי שמחשב את האנרגיה שמשקיעים במסלול זה)אם זה מסלול סג
+\end_layout
+
+\begin_layout Standard
+ור אז אפס כי זה שדה משמר(
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\vec{\nabla}\times\vec{F}ds & = & \int\vec{F}dl\\
+\vec{\nabla}\vec{F} & = & \begin{vmatrix}\hat{x} & \hat{y} & \hat{z}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+F_{x} & F_{y} & F_{z}\end{vmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+שדה ש : 
+\begin_inset Formula $F=\frac{\lambda}{r^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c6d1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה בעל רוטור לא שווה אפס
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{x} & = & \frac{\lambda}{\left(x^{2}+y^{2}\right)^{\nicefrac{n}{2}}}\cdot\frac{-y}{\sqrt{x^{2}+y^{2}}}\\
+ & = & \frac{-\lambda y}{\left(x^{2}+y^{2}\right)^{\frac{n+1}{2}}}\\
+F_{y} & = & \frac{\lambda x}{\left(x^{2}+y^{2}\right)^{\frac{n+1}{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial F_{y}}{\partial x} & = & \frac{\lambda}{\left(x^{2}+y^{2}\right)^{\frac{n+1}{2}}}-\frac{2\lambda x^{2}}{\left(x^{2}+y^{2}\right)^{\frac{n+3}{2}}}\cdot\frac{n+1}{2}\\
+ & = & \frac{\lambda\cdot r^{2}-\left(n+1\right)\lambda x^{2}}{r^{n+3}}\\
+\frac{\partial F_{x}}{\partial y} & = & -\frac{\lambda r^{2}-\left(n+1\right)\lambda y^{2}}{r^{n+3}}\\
+\left(\vec{\nabla}\cdot\vec{F}\right)\hat{z} & = & \frac{\partial F_{y}}{\partial x}-\frac{\partial F_{x}}{\partial y}\\
+ & = & \frac{2\lambda r^{2}-\left(n+1\right)\lambda r^{2}}{r^{n+3}}\\
+ & = & \frac{\lambda\left(1-n\right)}{r^{n+1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נרצה להגיע לאותה תשובה בעזרת סטוקס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\vec{F}d\vec{l} & = & 2\pi r\cdot\frac{\lambda}{r^{n}}\\
+ & = & \frac{2\pi\lambda}{r^{n-1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל בצד השני יש לנו משהוא שמשתנה עם המקום, אז לא נוכל לכפול בשטח.
+ אזי נקח הפרש בין שתי טבעות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2\pi r\Delta r\cdot\mbox{rot} & = & \Delta r\frac{2\pi\lambda}{r^{n}}\left(1-n\right)\\
+\mbox{rot} & = & \frac{\lambda\left(1-n\right)}{r^{n+1}}\end{eqnarray*}
 
 \end_inset
 

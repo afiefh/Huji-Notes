@@ -1,4 +1,4 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -4577,6 +4577,1882 @@ status open
  & = & \left(\left(x^{\nicefrac{c}{d}}\right)^{d}\right)^{b}\\
  & = & \left(x^{\nicefrac{c}{d}}\right)^{bd}\end{eqnarray*}
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+חזקות עם מערכים רציונאליים
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $x>0,m\in\mathbb{N}$
+\end_inset
+
+ מגדירים 
+\begin_inset Formula $x^{\frac{1}{n}}=\sup\left\{ z\in\mathbb{R}:z^{n}<x\right\} $
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $r=\nicefrac{m}{n}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x^{r}=\left(x^{m}\right)^{\nicefrac{1}{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x,y>0,r,s\in\mathbb{Q}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{r}x^{s}=x^{r+s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(x^{r}\right)^{s}=x^{\left(r\cdot s\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x^{r}y^{r}=\left(xy\right)^{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x>0,x>y\Rightarrow x^{r}>y^{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x<0,x>y\Rightarrow x^{r}<y^{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x>1,r>s\Rightarrow x^{r}>x^{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x<1,x>s\Rightarrow x^{r}<x^{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $r=\nicefrac{a}{b},S=\nicefrac{c}{d}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $r+s=\frac{ad+bc}{bd}$
+\end_inset
+
+ אזי צריך להוכיח כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{\sup\left\{ z>0:z^{b}<x^{a}\right\} }_{x^{r}}\cdot\underbrace{\sup\left\{ z>0,z^{d}<x^{c}\right\} }_{x^{s}}=\sup\left\{ z>0:z^{bd}<x^{ad+bc}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מוכיחים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x^{r}x^{s}\right)^{bd} & = & \left(x^{r}\right)^{bd}\left(x^{s}\right)^{bd}\\
+ & = & \left(\left(\left(x^{a}\right)^{\frac{1}{b}}\right)^{b}\right)^{d}\left(\left(\left(x^{c}\right)^{\frac{1}{f}}\right)^{d}\right)^{b}\\
+ & = & \left(x^{a}\right)^{d}\cdot\left(x^{c}\right)^{b}\\
+ & = & x^{ad}\cdot x^{cb}\\
+ & = & x^{ad+cb}\\
+ & = & x^{\frac{ad+bc}{bd}bd}\\
+ & = & \left(\left(x^{ad+bd}\right)^{\frac{1}{bd}}\right)^{bd}\\
+ & = & \left(x^{\frac{ad+bc}{bd}}\right)^{bd}\\
+ & = & \left(x^{\frac{a}{b}+\frac{c}{d}}\right)^{bd}\\
+ & = & \left(x^{r+s}\right)^{bd}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל
+\end_layout
+
+\begin_layout Paragraph
+הוכחת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\series medium
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x>y,r>0,r=\frac{a}{b},0<a,b$
+\end_inset
+
+ אזי צ"ל 
+\begin_inset Formula $x^{r}>y^{r}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left(x^{a}\right)^{\frac{1}{b}}>\left(y^{a}\right)^{\frac{1}{b}}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מחוקי החזקות השלמות 
+\begin_inset Formula $x>y\Rightarrow x^{a}>y^{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על מנת להוכיח את סעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מספיק להוכיח ש 
+\begin_inset Formula $x>y$
+\end_inset
+
+, 
+\begin_inset Formula $b\in\mathbb{N}$
+\end_inset
+
+ גורר 
+\begin_inset Formula $x^{\frac{1}{b}}>y^{\frac{1}{b}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח דרך השלילה ש 
+\begin_inset Formula $x^{\frac{1}{b}}\leq y^{\frac{1}{b}}$
+\end_inset
+
+.
+ מחוקי החזקות במערך שלם 
+\begin_inset Formula $\left(x^{\frac{1}{b}}\right)^{b}\leq\left(y^{\frac{1}{b}}\right)^{b}\Rightarrow x\leq y$
+\end_inset
+
+ בסתירה
+\end_layout
+
+\begin_layout Section
+פונקציות
+\end_layout
+
+\begin_layout Subsection
+מה זה פומקציה?
+\end_layout
+
+\begin_layout Standard
+פונקציה היא מבחינתנו מכונה שנותנים לה מספר ממשי ומחזירה מספר ממשי.
+ אם נותנים לה 
+\begin_inset Formula $a$
+\end_inset
+
+ אז היא 
+\emph on
+\bar under
+תמיד
+\emph default
+\bar default
+ תחזיר 
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה מורכבת מ
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+חלקים:
+\end_layout
+
+\begin_layout Enumerate
+קבוצת הקלט, התחום
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+באנגלית 
+\begin_inset Formula $\mbox{Domain}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+קבוצת הפלט, טווח
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+באנגלית 
+\begin_inset Formula $\mbox{Range}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+העתקה, "חוק" שקובע מהוא הפלט לכל קלט
+\end_layout
+
+\begin_layout Paragraph
+סימונים:
+\end_layout
+
+\begin_layout Standard
+פונקציות מסמנין באותיות)לטיניות או ויווניות(.
+ 
+\begin_inset Formula \begin{eqnarray*}
+f:\underbrace{A}_{\mbox{\R{קלט}}} & \to & \underbrace{B}_{\mbox{\R{פלט}}}\\
+f & \left(x\right)= & 6x\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימון אחר לחוק הוא 
+\begin_inset Formula $f:x\mapsto6x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העלאה בריבוע: 
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ )מותר גם 
+\begin_inset Formula $f:\mathbb{R}\to\left[0,\infty\right)$
+\end_inset
+
+, אבל לא מותר 
+\begin_inset Formula $f:\mathbb{R}\to\left[4,5\right)$
+\end_inset
+
+( 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ אזי התמונה של 
+\begin_inset Formula $A$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mbox{Image}\left(f\right)=\left\{ y\in B:\exists x\in A,y=f\left(x\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+פונקציה נקראת חד-חד ערכית אם 
+\begin_inset Formula $\left(\forall y\in B\right)\left(\exists!x\in A\right):\left(y=f\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+פונקציה 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ נקראת על
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\color none
+\lang english
+Onto
+\end_layout
+
+\end_inset
+
+ 
+\begin_inset Formula $B$
+\end_inset
+
+ אם 
+\begin_inset Formula $B=\mbox{Image}\left(f\right)$
+\end_inset
+
+ או 
+\begin_inset Formula $\left(\forall y\in B\right)\left(\exists x\in A\right):\left(y=f\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה לפונקציה:
+\end_layout
+
+\begin_layout Standard
+פונקציה המעתיקה את כל הממשיים 
+\begin_inset Formula $w\neq\pm1$
+\end_inset
+
+ ל 
+\begin_inset Formula $\left(\frac{w^{3}+3w+5}{w^{2}-1}\right)$
+\end_inset
+
+אזי כותבים 
+\begin_inset Formula $\begin{matrix}g:\mathbb{R}\setminus\left\{ 1,-1\right\} \to\mathbb{R}\\
+g\left(t\right)=\frac{w^{3}+3w+5}{w^{2}-1}\end{matrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פונקציה חשובה:
+\end_layout
+
+\begin_layout Standard
+פונקצית דרכלי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Dirichlet
+\lang hebrew
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כנראה היה צרפתי לכן לא מבטים את ה 
+\begin_inset Formula $\mbox{t}$
+\end_inset
+
+ בסוף
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:\mathbb{R} & \to & \left\{ 0,1\right\} \\
+f\left(x\right) & = & \begin{cases}
+0 & x\not\in\mathbb{Q}\\
+1 & x\in\mathbb{Q}\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עוד דוגמה לפונקציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:\mathbb{R} & \to & \mathbb{N}\\
+f\left(x\right) & = & \begin{cases}
+\begin{matrix}\mbox{\R{מספר\,הופעת}}\\
+\mbox{\R{הספרה\,7}}\\
+\mbox{\R{ביצוג\,העשרוני}}\end{matrix} & x<10\\
+16 & x\geq10\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ נגדיר פונקציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{n}:\mathbb{R} & \to & \mathbb{R}\\
+f_{n}\left(x\right) & = & x^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בפרט 
+\begin_inset Formula $f_{1}$
+\end_inset
+
+ נקראת פונקצית הזהות
+\begin_inset Formula $\left(\mbox{ID}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הרכבת פונקציות היא הסוציאטיביות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(h\circ g\right)\circ f=h\circ\left(g\circ f\right)$
+\end_inset
+
+ אפשר לראות בכלות על ידי כתיבת זה באופן יותר מפורט
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Section
+צפיפות הרציונאליים
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\left(a,b\right)\subseteq\mathbb{R}$
+\end_inset
+
+מתקיים ש 
+\begin_inset Formula $\left(a,b\right)\cap\mathbb{Q}=\emptyset$
+\end_inset
+
+)לכל 
+\begin_inset Formula $a,b\in\mathbb{R}$
+\end_inset
+
+ יש 
+\begin_inset Formula $q\in\mathbb{Q}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a<q<b$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A=\left\{ x\vert x\in\mathbb{Q},q<0\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ היא חסומה מלעל אבל היא לא חסומה מלרע: יהי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ אז 
+\begin_inset Formula $-x>0$
+\end_inset
+
+אזי קיים 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ כך ש
+\begin_inset Formula $n\geq-x$
+\end_inset
+
+)ארכימידיות( אזי 
+\begin_inset Formula $-n\leq x$
+\end_inset
+
+ נראה 
+\begin_inset Formula $0\sup A$
+\end_inset
+
+ יהי 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $0-\epsilon<0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(-\epsilon,0\right)\cap\mathbb{Q}\neq\emptyset$
+\end_inset
+
+ אזי יש 
+\begin_inset Formula $q\in\mathbb{Q}$
+\end_inset
+
+כף ש 
+\begin_inset Formula $-\epsilon<q<0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $q\in A$
+\end_inset
+
+ משל.
+\end_layout
+
+\begin_layout Section
+אקסיומת השלימות
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p\left(x\right)=x^{5}-x-1$
+\end_inset
+
+ נגדיר: 
+\begin_inset Formula $L=\left\{ x\in\mathbb{R}\vert p\left(x\leq0\right)\right\} $
+\end_inset
+
+ נראה כי קיים 
+\begin_inset Formula $z\in\mathbb{R}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $p\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ חסומה מלעיל ע"י
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+)לכל 
+\begin_inset Formula $x\geq1$
+\end_inset
+
+ 
+\begin_inset Formula $p\left(x\right)\ge1^{5}+1-1=1$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נראה 
+\begin_inset Formula $z=\sup L$
+\end_inset
+
+ מקיים את 
+\begin_inset Formula $p\left(z\right)=0$
+\end_inset
+
+.
+ נניח בשלילה 
+\begin_inset Formula $p\left(z\right)\neq0$
+\end_inset
+
+ )יודעים כי 
+\begin_inset Formula $0<z\leq1$
+\end_inset
+
+( אז מחלקים למקרים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $p\left(z\right)>0$
+\end_inset
+
+ יהי 
+\begin_inset Formula $0<r<z$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+p\left(z-r\right) & = & \left(z-r\right)^{5}+\left(z-r\right)-1\\
+ & = & z^{5}\left(1-\frac{r}{z}\right)^{5}+\left(z-r\right)-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי משתמשים באי שוויון ברנולי שאומר כי לכל 
+\begin_inset Formula $\alpha>-1$
+\end_inset
+
+ ו 
+\begin_inset Formula $n$
+\end_inset
+
+ טבעי 
+\begin_inset Formula $\left(1+\alpha\right)^{n}<1+n\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z^{5}\left(1-\frac{r}{z}\right)^{5}+\left(z-r\right)-1 & > & z^{5}\left(1-5\frac{r}{z}\right)+\left(z-r\right)-1\\
+ & = & z^{5}-5rz^{4}+z-r-1\\
+ & = & p\left(z\right)-r\left(5z^{4}+1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $r<p\left(z\right)\left(5z^{4}+1\right)^{-1}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\alpha>0\Rightarrow p\left(z-r\right)>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $z-r$
+\end_inset
+
+ חסם מלעל ל 
+\begin_inset Formula $L$
+\end_inset
+
+.
+ סתירה לזה ש 
+\begin_inset Formula $z$
+\end_inset
+
+ חסם מלעל.
+ 
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $p\left(z\right)<0$
+\end_inset
+
+ יהי 
+\begin_inset Formula $0<r<z$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula \begin{eqnarray*}
+p\left(z+r\right) & = & \left(z+r\right)^{5}+\left(z+r\right)-1\\
+ & \geq & z^{5}+5z^{4}r+z+r-1\\
+ & = & p\left(z\right)+r\left(5z^{4}+1\right)\\
+ & \geq & p\left(z\right)+6r\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ניקח 
+\begin_inset Formula $r<\frac{1}{6}\left|p\left(z\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Section
+פונקציות
+\end_layout
+
+\begin_layout Paragraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(A,B\neq\emptyset\right)\subseteq\mathbb{R}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ - 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה מ
+\begin_inset Formula $A$
+\end_inset
+
+ל
+\begin_inset Formula $B$
+\end_inset
+
+ כלומר לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ קיים ויחיד 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ המקיים 
+\begin_inset Formula $f\left(a\right)=b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+פולינומים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\sum_{n=0}^{k}a_{n}x^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרגת הפולינום היא 
+\begin_inset Formula $k$
+\end_inset
+
+ המקסימאלי כך ש 
+\begin_inset Formula $a_{k}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוכמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+p\left(x\right)=c\Rightarrow\deg p=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+זה נכון אם 
+\begin_inset Formula $c\neq0$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $c=0$
+\end_inset
+
+ אומרים 
+\begin_inset Formula $\deg p=-\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שוויון של פונקציות
+\end_layout
+
+\begin_layout Standard
+שתי פונקציות שוות אם
+\end_layout
+
+\begin_layout Enumerate
+התחום אותו תחום
+\end_layout
+
+\begin_layout Enumerate
+הטווח אותו טווח
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a\in A:f\left(a\right)=g\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה לפונקציות לא שוות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}f:\left[0,\infty\right)\to\left[0,\infty\right)\\
+f:x\mapsto\sqrt{x}\end{matrix}\neq\begin{matrix}r:\left[0,\infty\right)\to\mathbb{R}\\
+x\mapsto\sqrt{x}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+פונק' רציונליות
+\end_layout
+
+\begin_layout Standard
+פונקציה שעבורה קיימים פולינומים 
+\begin_inset Formula $p\left(x\right),q\left(x\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x\right)=\frac{p\left(x\right)}{q\left(x\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום 
+\begin_inset Formula $f$
+\end_inset
+
+ הוא כל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $q\left(x\right)\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פעולות על פונקציות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A,B\subseteq\mathbb{R}$
+\end_inset
+
+ אזי נניח 
+\begin_inset Formula $f:A\to B,g:A\to B^{\prime}$
+\end_inset
+
+ נגדיר פונקציה שתסומן 
+\begin_inset Formula $f+g$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(g\right):A\to\left(B+B^{\prime}\right)$
+\end_inset
+
+ המוגדרת על ידי 
+\begin_inset Formula $\left(f+g\right)\left(x\right)=f\left(x\right)+g\left(x\right)$
+\end_inset
+
+ אז נגדיר גם 
+\begin_inset Formula $f\cdot g:A\to\left(B\cdot B^{\prime}\right)$
+\end_inset
+
+ על ידי 
+\begin_inset Formula $\left(f\cdot g\right)\left(x\right)-f\left(x\right)\cdot g\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הרכבה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(f\circ g\right)\left(x\right)=f\left(g\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תכונות של פונקציות
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ תקרא חח"ע אם לכל 
+\begin_inset Formula $a\neq a^{\prime}\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(a\right)\neq f\left(a^{\prime}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $f:X\to Y$
+\end_inset
+
+ 
+\begin_inset Formula $\left(X,Y\subseteq\mathbb{R}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ היא חח"ע אם"ם לכל 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $2$
+\end_inset
+
+ פונק 
+\begin_inset Formula $g,h:A\to X$
+\end_inset
+
+ המקיימות 
+\begin_inset Formula $f\circ g=f\circ h$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $g=h$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $f$
+\end_inset
+
+ ניתן לצמצום משמאל(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה בכיוון ראשון:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f$
+\end_inset
+
+ חח"ע ותהיינה 
+\begin_inset Formula $A\subseteq\mathbb{R},g,h:A\to X$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\circ g=f\circ h$
+\end_inset
+
+ צ"ל כי 
+\begin_inset Formula $g=h$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\forall a\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(f\circ g\right)\left(a\right)=\left(f\circ h\right)\left(a\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(g\left(a\right)\right)=f\left(h\left(a\right)\right)$
+\end_inset
+
+ מחד חד ערכיות של 
+\begin_inset Formula $f$
+\end_inset
+
+ נובע כי 
+\begin_inset Formula $g\left(a\right)=h\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה בכיוון שני:
+\end_layout
+
+\begin_layout Standard
+נניח כי לכל 
+\begin_inset Formula $A\subseteq\mathbb{R}$
+\end_inset
+
+ ו 
+\begin_inset Formula $g,h:A\to X$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\circ g=f\circ h$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $g=h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש 
+\begin_inset Formula $f$
+\end_inset
+
+ לא חח"ע אז קיימין 
+\begin_inset Formula $x,y\in X$
+\end_inset
+
+ 
+\begin_inset Formula $x\neq y$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x\right)=f\left(y\right)$
+\end_inset
+
+ ניקח 
+\begin_inset Formula $A=X$
+\end_inset
+
+ , 
+\begin_inset Formula $g:X\to X,g\left(t\right)=t$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $h:X\to X$
+\end_inset
+
+ ע"י
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h\left(t\right)=\begin{cases}
+t & t\neq x,y\\
+y & t=x\\
+x & t=y\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז לכל 
+\begin_inset Formula $t\in X$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(g\left(t\right)\right)=g\left(h\left(t\right)\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\circ g=f\circ g$
+\end_inset
+
+ אבל 
+\begin_inset Formula $g\neq h$
+\end_inset
+
+ בסתירה לנתון.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+פונקציות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A,B\subseteq\mathbb{R}$
+\end_inset
+
+ אזי המכפלה הקרטזית 
+\begin_inset Formula $A\times B$
+\end_inset
+
+ שווה 
+\begin_inset Formula $A\times B=\left\{ \left(x,y\right)\vert x\in A,y\in B\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אם 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\mbox{Graph}\left(f\right)\subseteq A\times B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mbox{Graph}\left(x\right)=\left\{ \left(x,y\right)\vert x\in A,y=f\left(x\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תכונות גרף
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\mbox{Graph}\left(f\right)\ni\left(x,y\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mbox{Graph}\left(f\right)\ni\left(x,\psi\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x=\psi$
+\end_inset
+
+)כלומר לכל מקור יש תמונה אחת ויחידה(
+\end_layout
+
+\begin_layout Subsection
+חד חד ערכיות
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\mbox{Graph}\left(f\right)\ni\left(x,y\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mbox{Graph}\left(f\right)\ni\left(\vartheta,y\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x=\vartheta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+על
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $y\in B$
+\end_inset
+
+ קיים 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left(x,y\right)\in\mbox{Graph}\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גבול של פונקציה בנקודה
+\end_layout
+
+\begin_layout Standard
+נגדיר מה זה:
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula \[
+\lim_{x\to a}f\left(x\right)=l\]
+
+\end_inset
+
+ הגדרה:
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+סביבה
+\noun default
+ של 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+ הוא קטע פתוח 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ שמכיל את 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+
+\noun on
+סביבה מנוקבת
+\noun default
+ של 
+\begin_inset Formula $x$
+\end_inset
+
+ היא קבוצה 
+\begin_inset Formula $\left(a,b\right)\setminus\left\{ x\right\} $
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a<x<b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נקודה 
+\begin_inset Formula $a\in A\subseteq\mathbb{R}$
+\end_inset
+
+ תקרא 
+\noun on
+נקודה פנימית
+\noun default
+ ל
+\begin_inset Formula $A$
+\end_inset
+
+ אם קיימת לה סביבה שמוכלת ב
+\begin_inset Formula $A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nicefrac{1}{2}\in\left[0,1\right)$
+\end_inset
+
+ נקודה פנימית.
+ 
+\begin_inset Formula $0$
+\end_inset
+
+ לא נקודה פנימית.
+ 
+\begin_inset Formula $1$
+\end_inset
+
+ אפילו לא בקבוצה.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathbb{Q}\subseteq\mathbb{R}$
+\end_inset
+
+ אזי ל
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ אין נקודה פנימית.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $r\in\mathbb{Q}$
+\end_inset
+
+ אזי יש ל
+\begin_inset Formula $r$
+\end_inset
+
+ סביבה מוכלת ב 
+\begin_inset Formula $\mathbb{Q}$
+\end_inset
+
+ אזי קיים קטע 
+\begin_inset Formula $\mathbb{Q}\supseteq\left(a,b\right)\ni r$
+\end_inset
+
+ בסתירה לזה שלכל קטע יש נקודות אי רציונליות
+\end_layout
+
+\begin_layout Standard
+גם ל
+\begin_inset Formula $\mathbb{R}\setminus\mathbb{Q}$
+\end_inset
+
+ אין נקודות פנימיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace bigskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז סוף סוף נוכל להגדיר את הגבול שכתבנו למעלה
+\end_layout
+
+\begin_layout Paragraph
+הגדרה לא פורמלית:
+\end_layout
+
+\begin_layout Standard
+נאמר שהפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ שואפת ל 
+\begin_inset Formula $l$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ שואף ל 
+\begin_inset Formula $a$
+\end_inset
+
+ אם ניתן להגדיר ל 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ להיות קרובה ל
+\begin_inset Formula $l$
+\end_inset
+
+ כרצוננו על ידי כך ש 
+\begin_inset Formula $x$
+\end_inset
+
+ תהיה מספיק קרובה ל 
+\begin_inset Formula $a$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+לא כולל את הנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+!
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה לא פורמאלית:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\mathbb{R}\to R,f:x\mapsto3x$
+\end_inset
+
+ אזי נראה כי 
+\begin_inset Formula $\lim_{x\to5}f\left(x\right)=15$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נניח שרוצים 
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)-15\right| & < & \frac{1}{100}\\
+-\frac{1}{100}< & 3x-15 & <\frac{1}{100}\\
+-\frac{1}{300}< & x-5 & <\frac{1}{300}\\
+\left|x-5\right| & < & \frac{1}{300}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר אם 
+\begin_inset Formula $x$
+\end_inset
+
+ לא מרוחק מ
+\begin_inset Formula $5$
+\end_inset
+
+ יותר מ 
+\begin_inset Formula $\frac{1}{300}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ לא יהיה מרוחק מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $15$
+\end_inset
+
+ יותר מ 
+\begin_inset Formula $\frac{1}{100}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ ו 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ נקודה פנימית של 
+\begin_inset Formula $A$
+\end_inset
+
+ נאמר ש 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=l$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ גורר לזה כי 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\epsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:x\mapsto x^{2}$
+\end_inset
+
+ נראה כי 
+\begin_inset Formula $\lim_{x\to3}f\left(x\right)=9$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צ"ל שלכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $0<\delta$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-3\right|<\delta\Rightarrow\left|x^{2}-9\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|x^{2}-9\right| & < & \epsilon\\
+\left|x-3\right|\left|x+3\right| & < & \epsilon\\
+\left|x-3\right| & < & \frac{\epsilon}{\left|x+3\right|}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בואו נדרוש ש 
+\begin_inset Formula $\left|x-3\right|<1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $2<x<4$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|x+3\right|<7$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|x^{2}-9\right|<7\left|x-3\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם גם נדרוש 
+\begin_inset Formula $\left|x-3\right|<\frac{\epsilon}{7}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|x^{2}-9\right|<7\cdot\frac{\epsilon}{7}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראנו שלכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\min\left(1,\frac{\epsilon}{7}\right)=\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-3\right|<\delta$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|x^{2}-9\right|<\epsilon$
 \end_inset
 
 

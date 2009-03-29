@@ -1,0 +1,266 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & E_{1}+E_{2}\\
+ & = & \frac{kq_{1}}{\left|\vec{r}-\vec{r}_{1}\right|^{3}}\left(\vec{r}-\vec{r}_{1}\right)+\frac{kq_{2}}{\left|\vec{r}-\vec{r}_{2}\right|^{3}}\left(\vec{r}-\vec{r}_{2}\right)\\
+ & = & \frac{kq}{\left|\vec{r}-\left(2,2,1\right)\right|^{3}}\left(\vec{r}-\left(2,2,1\right)\right)+\frac{4kq}{\left|\vec{r}-\left(7,4,2\right)\right|^{3}}\left(\vec{r}-\left(7,4,2\right)\right)\\
+ & = & \begin{matrix}kq\left(\frac{x-2}{\left(\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}\right)^{\nicefrac{3}{2}}}+\frac{4\left(x-7\right)}{\left(\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}\right)^{\nicefrac{3}{2}}}\right)\hat{x}+\\
+kq\left(\frac{y-2}{\left(\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}\right)^{\nicefrac{3}{2}}}+\frac{4\left(y-4\right)}{\left(\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}\right)^{\nicefrac{3}{2}}}\right)\hat{y}+\\
+kq\left(\frac{z-1}{\left(\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}\right)^{\nicefrac{3}{2}}}+\frac{4\left(z-2\right)}{\left(\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}\right)^{\nicefrac{3}{2}}}\right)\hat{z}\end{matrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi & = & \frac{kq}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|}+\frac{4kq}{\left|\left(\vec{r}-\left(7,4,2\right)\right)\right|}\\
+E & = & -\nabla\phi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחשבים הנגזרת עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ ורואים כי זה סימטרי לשאר הקואורדינטות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{x} & = & -kq\left(-\frac{1}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|^{2}}\cdot\frac{\partial\left|\vec{r}-\left(2,2,1\right)\right|}{\partial x}+-\frac{4}{\left|\left(\vec{r}-\left(7,4,2\right)\right)\right|^{2}}\cdot\frac{\partial\left|\vec{r}-\left(7,4,2\right)\right|}{\partial x}\right)\\
+ & = & kq\begin{pmatrix}\frac{1}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|^{2}}\cdot\frac{\partial\sqrt{\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}}}{\partial x}+\\
+\frac{4}{\left|\left(\vec{r}-\left(7,4,2\right)\right)\right|^{2}}\cdot\frac{\partial\sqrt{\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}}}{\partial x}\end{pmatrix}\\
+ & = & kq\begin{pmatrix}\frac{1}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|^{2}}\cdot\frac{\frac{\partial\left(\left(x-2\right)^{2}\right)}{\partial x}}{2\sqrt{\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}}}+\\
+\frac{4}{\left|\left(\vec{r}-\left(7,4,2\right)\right)\right|^{2}}\cdot\frac{\frac{\partial\left(\left(x-7\right)^{2}\right)}{\partial x}}{2\sqrt{\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}}}\end{pmatrix}\\
+ & = & kq\begin{pmatrix}\frac{1}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|^{2}}\cdot\frac{x-2}{\sqrt{\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}}}+\\
+\frac{4}{\left|\left(\vec{r}-\left(7,4,2\right)\right)\right|^{2}}\cdot\frac{x-7}{\sqrt{\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}}}\end{pmatrix}\\
+ & = & kq\left(\frac{1}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|^{2}}\cdot\frac{x-2}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|}+\frac{4}{\left|\left(\vec{r}-\left(7,4,2\right)\right)\right|^{2}}\cdot\frac{x-7}{\left|\left(\vec{r}-\left(2,2,1\right)\right)\right|}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}=\begin{matrix}kq\left(\frac{x-2}{\left(\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}\right)^{\nicefrac{3}{2}}}+\frac{4\left(x-7\right)}{\left(\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}\right)^{\nicefrac{3}{2}}}\right)\hat{x}+\\
+kq\left(\frac{y-2}{\left(\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}\right)^{\nicefrac{3}{2}}}+\frac{4\left(y-4\right)}{\left(\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}\right)^{\nicefrac{3}{2}}}\right)\hat{y}+\\
+kq\left(\frac{z-1}{\left(\left(x-2\right)^{2}+\left(y-2\right)^{2}+\left(z-1\right)^{2}\right)^{\nicefrac{3}{2}}}+\frac{4\left(z-2\right)}{\left(\left(x-7\right)^{2}+\left(y-4\right)^{2}+\left(z-2\right)^{2}\right)^{\nicefrac{3}{2}}}\right)\hat{z}\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+בונים מעטפת גאוסית בעלת רדיוס כדורית 
+\begin_inset Formula $r<r_{1}$
+\end_inset
+
+ ומקבלים כי 
+\begin_inset Formula $4\pi r^{2}\vec{E}=0\Rightarrow\vec{E}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בונים מעטפת גאוסית כדורית 
+\begin_inset Formula $r_{1}<r<r_{2}$
+\end_inset
+
+ ומקבלים כי 
+\begin_inset Formula $4\pi r^{2}\vec{E}=4\pi kq\Rightarrow\vec{E}=\frac{kq}{r^{2}}$
+\end_inset
+
+ מסימטריה רואים גם כי זה בכיוון 
+\begin_inset Formula $\hat{r}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בונים מעטפת גאוסית כדורית 
+\begin_inset Formula $r_{2}<r$
+\end_inset
+
+ ומקבלים כי 
+\begin_inset Formula $4\pi r^{2}\vec{E}=4\pi k\left(q-q\right)\Rightarrow\vec{E}=0$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}=\begin{cases}
+r_{1}<r<r_{2} & \frac{kq}{r^{2}}\\
+\mbox{\R{אחרת}} & 0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

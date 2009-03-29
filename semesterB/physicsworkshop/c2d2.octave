@@ -1,0 +1,139 @@
+#!/usr/bin/env octave
+function [dx,dy]=afiefE(x,y,q,x0,y0,z0) # x,y is a space, q the charge, 
+				     # x0,y0,z0 is where the charge is positioned
+				     # the result is only the xy plane though.
+  rx=x.-x0; #relative x
+  ry=y.-y0; #relative y
+  r=(rx.^2.+ry.^2.+z0.^2).^(1/2);
+  dx=q./r.^2 .* rx./r;
+  dy=q./r.^2 .* ry./r;
+  
+
+
+endfunction
+
+function [dx,dy]=afiefNormalize(dx,dy,n) #x,y are vectors, n is the longest vector allowed
+  for i=1:rows(dx)
+    for j=1:columns(dy)
+      if(dx(i,j).^2+dy(i,j).^2 > n.^2)
+	tx=dx(i,j);
+	ty=dy(i,j);
+	ntx=n.*tx./((tx.^2.+ty.^2).^(1./2));
+	nty=n.*ty./((tx.^2.+ty.^2).^(1./2));
+	dx(i,j)=ntx;
+	dy(i,j)=nty;
+      endif
+    endfor
+  endfor
+endfunction
+
+[x,y]=meshgrid(-0.5:1/25:0.5);
+t=-1:2/100:1;
+
+dx=zeros(columns(x));
+dy=zeros(columns(y));
+
+for i=1:(columns(t)-1)
+    [dx2,dy2]=afiefE(x, y, 1, t(i), 0, 0);
+    dx=dx+dx2;
+    dy=dy+dy2;
+endfor
+[dx,dy]=afiefNormalize(dx,dy,1000);
+
+subplot(2,2,1);
+
+quiver(x,y,dx,dy)
+hold;
+plot(t,0,'*');
+plot(t,0,'-');
+hold;
+axis([-0.5,0.5,-0.5,0.5]);
+
+
+
+[x,y]=meshgrid(-2:4/25:2);
+
+t=-1:2/100:1;
+
+dx=zeros(columns(x));
+dy=zeros(columns(y));
+
+for i=1:(columns(t)-1)
+    [dx2,dy2]=afiefE(x, y, 1, t(i), 0, 0);
+    dx=dx+dx2;
+    dy=dy+dy2;
+endfor
+[dx,dy]=afiefNormalize(dx,dy,100);
+
+
+
+
+subplot(2,2,2);
+
+quiver(x,y,dx,dy)
+hold;
+plot(t,0,'*');
+plot(t,0,'-');
+hold;
+axis([-2,2,-2,2]);
+
+
+
+[x,y]=meshgrid(-10:20/25:10);
+t=-1:2/100:1;
+
+dx=zeros(columns(x));
+dy=zeros(columns(y));
+
+for i=1:(columns(t)-1)
+    [dx2,dy2]=afiefE(x, y, 1, t(i), 0, 0);
+    dx=dx+dx2;
+    dy=dy+dy2;
+endfor
+[dx,dy]=afiefNormalize(dx,dy,10);
+
+
+
+
+subplot(2,2,3);
+
+quiver(x,y,dx,dy)
+hold;
+plot(t,0,'*');
+plot(t,0,'-');
+hold;
+axis([-10,10,-10,10]);
+
+
+
+
+
+[x,y]=meshgrid(-100:200/25:100);
+t=-1:2/100:1;
+
+dx=zeros(columns(x));
+dy=zeros(columns(y));
+
+for i=1:(columns(t)-1)
+    [dx2,dy2]=afiefE(x, y, 100, t(i), 0, 0);
+    dx=dx+dx2;
+    dy=dy+dy2;
+endfor
+[dx,dy]=afiefNormalize(dx,dy,10);
+
+
+
+
+subplot(2,2,4);
+
+quiver(x,y,dx,dy)
+hold;
+plot(t,0,'*');
+plot(t,0,'-');
+hold;
+axis([-100,100,-100,100]);
+
+
+pause
+
+print -dsvg c2d2.svg

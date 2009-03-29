@@ -1,0 +1,9 @@
+#!/usr/bin/env octave
+
+xx=-10:0.2:10;
+yy=-2:0.1:2;
+
+[x,y]=meshgrid(xx,yy);
+surf(x,y,sin(x).*e.^(y));
+#pause;
+print -dsvg c5d1.svg

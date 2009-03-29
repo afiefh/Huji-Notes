@@ -1,0 +1,995 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+צ"ל כי 
+\begin_inset Formula $\underbrace{f\left(x\right)}_{\mbox{Polynom}}=O\left(\underbrace{g\left(x\right)}_{\mbox{Exponential}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר צ"ל כי קיים 
+\begin_inset Formula $t>0$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $x>x_{0}$
+\end_inset
+
+ מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & \leq & t\cdot g\left(x\right)\\
+a_{0}+a_{1}x+\dots+a_{d}x^{d} & \leq & tc^{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבור 
+\begin_inset Formula $x\geq1$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x^{a}\leq x^{a+1}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a\geq0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{0}+a_{1}x+\dots+a_{d}x^{d}\leq x^{d}\left(a_{0}+a_{1}+\dots+a_{d}\right) & \leq & tc^{x}\\
+x^{d}\left(a_{0}+a_{1}+\dots+a_{d}\right) & \leq & tc^{x}\\
+x^{d}a_{T} & \leq & tc^{x}\\
+\ln\left(x^{d}a_{T}\right) & \leq & \ln\left(tc^{x}\right)\\
+d\ln\left(x\right)+\ln\left(a_{T}\right) & \leq & \ln\left(t\right)+x\ln\left(c\right)\\
+d\ln\left(x\right)+\ln\left(a_{T}\right)\leq dx+\ln\left(a_{T}\right) & \leq & \ln\left(t\right)+x\ln\left(c\right)\\
+dx+\ln\left(a_{T}\right) & \leq & \ln\left(t\right)+x\ln\left(c\right)\\
+\ln\left(a_{T}\right)-\ln\left(t\right) & \leq & x\ln\left(c\right)-dx\\
+\ln\left(a_{T}\right)-\ln\left(t\right) & \leq & x\left(\ln c-d\right)\\
+\frac{\ln\left(a_{T}\right)-\ln\left(t\right)}{\ln\left(c\right)-d} & \leq & x\\
+\frac{\ln\left(a_{T}\right)-\ln\left(t\right)}{\ln\left(c\right)-d} & \leq & 2\leq x\\
+\frac{\ln\left(a_{T}\right)-\ln\left(t\right)}{\ln\left(c\right)-d} & \leq & 2\\
+\ln\left(a_{T}\right)-\ln\left(t\right) & \leq & 2\left(\ln\left(c\right)-d\right)\\
+\ln\left(t\right) & \geq & \ln\left(a_{T}\right)-2\left(\ln\left(c\right)-d\right)\\
+t & \geq & e^{\ln\left(a_{T}\right)-2\left(\ln\left(c\right)-d\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מזל שהצלחנו להוכיח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+צ"ל כי 
+\begin_inset Formula $\underbrace{f\left(x\right)}_{\mbox{Polynom}}=\Omega\left(\left(\log x\right)^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפולינום חייב להיות 
+\begin_inset Formula $a_{n}>0$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+לא ייתכן כי זה שלילי גם כי אין מצב לסיבוכיות שלילית
+\end_layout
+
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n>0$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+ניתן להוכיח כי עבור 
+\begin_inset Formula $f\left(x\right)=c$
+\end_inset
+
+ אי אפשר להוכי 
+\begin_inset Formula $f\left(x\right)=\Omega\left(\left(\log x\right)^{c}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ מסמנים 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ זה ב
+\begin_inset Formula $a_{p}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & \geq & t\cdot\left(\log x\right)^{c}\\
+a_{0}+a_{1}x+\dots+a_{d}x^{d} & \geq & t\left(\log x\right)^{c}\\
+a_{0}+a_{1}x+\dots+a_{d}x^{d}\geq a_{p}x & \geq & t\left(\frac{\log_{c}x}{\log_{c}2}\right)^{c}\\
+a_{p}x & \geq & \frac{t}{\log_{c}2}\cdot x\\
+a_{p}x & \geq & \frac{t}{\log_{c}2}\cdot x\\
+a_{p}\cdot\log_{c}2 & \geq & t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר מספיק לבחור 
+\begin_inset Formula $t\leq a_{p}\log_{c}2$
+\end_inset
+
+.
+ משל 
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & \log_{b}n\\
+b^{y} & = & n\\
+\log_{a}b^{y} & = & \log_{a}n\\
+y\log_{a}b & = & \log_{a}n\\
+y & = & \frac{\log_{a}n}{\log_{a}b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a^{\log_{b}n} & = & e^{\log_{b}\left(a\right)\log_{b}\left(n\right)}\\
+ & = & e^{\log_{b}\left(n\right)\log_{b}\left(a\right)}\\
+ & = & n^{\log_{b}\left(a\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\right)=7T\left(\frac{n}{2}\right)+n^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+master theorem
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מקבלים הערכים הבאים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a=7,b=2,f\left(x\right)=n^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(n\right) & \overset{?}{=} & O\left(n^{\log_{b}\left(a\right)-\epsilon}\right)\\
+n^{2} & \overset{?}{=} & O\left(n^{\log_{2}\left(7\right)-\epsilon}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\epsilon$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\log_{2}\left(7\right)-\epsilon=2$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\epsilon=\log_{2}\left(7\right)-2>0$
+\end_inset
+
+ אז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+n^{2}\overset{\checkmark}{=}O\left(n^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & = & \Theta\left(n^{\log_{b}a}\right)\\
+ & = & \Theta\left(n^{\log_{2}7}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\right)=2T\left(\frac{n}{4}\right)+8n\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a=2,b=4,f\left(n\right)=8n\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(n\right) & \overset{?}{=} & O\left(n^{\log_{b}\left(a\right)-\epsilon}\right)\\
+8n & \overset{?}{=} & O\left(n^{\log_{4}2-\epsilon}\right)\\
+8n & \overset{X}{=} & O\left(n^{\frac{1}{2}-\epsilon}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא מתקיים אזי בודקים האפשרות השניה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(n\right) & \overset{?}{=} & \Omega\left(n^{\log_{b}a+\epsilon}\right)\\
+8n & \overset{?}{=} & \Omega\left(n^{\log_{4}2+\epsilon}\right)\\
+8n & \overset{?}{=} & \Omega\left(n^{\left(\nicefrac{1}{2}+\nicefrac{1}{2}\right)}\right)\\
+8n & \overset{\checkmark}{=} & \Omega\left(n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה של תנאי שני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+af\left(\frac{n}{b}\right) & \leq & cf\left(n\right)\\
+2f\left(\frac{n}{4}\right) & \leq & cf\left(n\right)\\
+2\cdot8\frac{n}{4} & \leq & c\cdot8n\\
+4n & \leq & 8cn\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בוחרים 
+\begin_inset Formula $c=0.9<1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+4\overset{\checkmark}{\leq}7.2\cdot n\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\right)=\Theta\left(8n\right)=\Theta\left(n\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עץ של מיון מיזוג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw2d1.svg
+	lyxscale 20
+	width 10text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+משקל כל קודקוד במיזוג מיון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוכיות האלגוריתם היא 
+\begin_inset Formula $\Theta\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $T\left(n\right)=T\left(n-2\right)+\Theta\left(\log\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון בפורום 
+\begin_inset Formula $T\left(1\right)=1,T\left(2\right)=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מנחשים כי סיבוכיות של זה היא 
+\begin_inset Formula $\Theta\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הוכחה עבור 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(2\right) & \leq & c\cdot2\log2\\
+1 & \leq & c\cdot2\\
+\frac{1}{2} & \leq & c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=3$
+\end_inset
+
+ )כי קיימת אי תלות בין מספרים זוגיים לאי זוגיים(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(3\right) & \leq & c\cdot3\log3\\
+T\left(1\right)+\Theta\left(\log3\right) & \leq & c\cdot3\log3\\
+1+c_{2}\log3 & \leq & c\cdot3\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה גם מתקיים
+\end_layout
+
+\begin_layout Standard
+נניח כי ההנחה מתקיימת עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+ ומוכיחים עבור 
+\begin_inset Formula $n=n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n+1\right) & = & T\left(n-1\right)+\Theta\left(\log\left(n+1\right)\right)\\
+ & \leq & T\left(n-1\right)+c_{2}\log\left(n+1\right)\\
+ & \leq & c\left(n-1\right)\log\left(n-3\right)+c_{2}\log\left(n+1\right)\\
+ & = & \log\left(\left(n-2\right)^{c\left(n-1\right)}\right)+\log\left(\left(n+1\right)^{c_{2}}\right)\\
+ & = & \log\left(\left(n-2\right)^{c\left(n-1\right)}\left(n+1\right)^{c_{2}}\right)\\
+ & \leq & \log\left(\left(n-2\right)^{c\left(n-1\right)}\left(n-2\right)^{c_{2}}\right)\\
+ & \leq & \log\left(\left(n-2\right)^{c\left(n-1\right)+c_{2}}\right)\\
+ & \leq & \left(c\left(n-1\right)+c_{2}\right)\log\left(n-2\right)\\
+ & = & \mathcal{O}\left(n\log n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הוכחה עבור 
+\begin_inset Formula $\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(2\right) & \geq & c\cdot2\log2\\
+1 & \geq & c\cdot2\\
+\frac{1}{2} & \geq & c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=3$
+\end_inset
+
+ )כי קיימת אי תלות בין מספרים זוגיים לאי זוגיים(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(3\right) & \geq & c\cdot2\log2\\
+T\left(1\right)+\Theta\left(\log3\right) & \geq & c\cdot2\log2\\
+1+c_{2}\log3 & \geq & c\cdot2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה גם מתקיים
+\end_layout
+
+\begin_layout Standard
+נניח כי ההנחה מתקיימת עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+ ומוכיחים עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n+1\right) & = & T\left(n-1\right)+\Theta\left(\log\left(n+1\right)\right)\\
+ & \geq & T\left(n-1\right)+c_{2}\log\left(n+1\right)\\
+ & \geq & c\left(n-1\right)\log\left(n-1\right)+c_{2}\log\left(n+1\right)\\
+ & = & \log\left(\left(n-1\right)^{c\left(n-1\right)}\right)+\log\left(\left(n+1\right)^{c_{2}}\right)\\
+ & = & \log\left(\left(n-1\right)^{c\left(n-1\right)}\left(n+1\right)^{c_{2}}\right)\\
+ & \geq & \log\left(\left(n+1\right)^{c\left(n-1\right)}\left(n+1\right)^{c_{2}}\right)\geq\log\left(\left(n-1\right)^{c\left(n-1\right)}\left(n+1\right)^{c_{2}}\right)\\
+ & \geq & \log\left(\left(n+1\right)^{c\left(n-1\right)+c_{2}}\right)\\
+ & \geq & \left(c\left(n-1\right)+c_{2}\right)\log\left(n\right)\\
+ & = & \Omega\left(n\log n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+הטעות היא בהזנחת הקבועים.
+ צריך להתחשב בזה כי 
+\begin_inset Formula $\underbrace{c+c+c+\dots+c}_{n}$
+\end_inset
+
+ היא בעלת סיבוכיות 
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+ ולא 
+\begin_inset Formula $\Theta\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & = & 7\cdot T\left(\frac{n}{2}\right)+\Theta\left(n^{2}\cdot\frac{n}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a=7,b=2,f\left(n\right)=n^{3}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(n\right) & = & \Omega\left(n^{\log_{7}2+\epsilon}\right)\\
+\frac{n^{3}}{2} & = & \Omega\left(n^{\log_{7}2+\epsilon}\right)\\
+n^{3} & = & \Omega\left(n^{\log_{7}2+\epsilon}\right)\\
+n^{3} & = & \Omega\left(n^{3}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקת התנאי השני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+af\left(\frac{n}{b}\right) & \leq & cf\left(n\right)\\
+7f\left(\frac{n}{2}\right) & \leq & cf\left(n\right)\\
+7\frac{n^{3}}{2^{3}} & \leq & cn^{3}\\
+\left(\frac{7}{8}\right)n^{3} & \leq & cn^{3}\\
+\left(\frac{7}{8}\right) & \leq & c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז גם תנאי זה מתקיים כי 
+\begin_inset Formula $c=\frac{7}{8}<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הסיבוכיות היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\right)=\theta\left(n^{3}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw2d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+גרף ריקוקסיה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מספקים לפונקציה 
+\begin_inset Formula $x=2^{n}$
+\end_inset
+
+ אזי היא תחזיר 
+\begin_inset Formula $7^{n}\cdot42$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

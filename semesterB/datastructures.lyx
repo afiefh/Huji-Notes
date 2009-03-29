@@ -1,4 +1,4 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -874,7 +874,7 @@ T\left(n\right) & \leq & cn^{k}\frac{q^{m+1}-1}{q-1}\\
 \begin_layout Standard
 מעריכים אלגוריתם לפי זמן ריצה וכמה מקום הוא לוקח בזכרון, מתארים את זה דרך
  פונקציות 
-\begin_inset Formula $O,\theta,\Omega$
+\begin_inset Formula $\mathcal{O},\theta,\Omega$
 \end_inset
 
 
@@ -1023,7 +1023,619 @@ status open
 
 \begin_layout Standard
 אזי נרצה להוכיח כי 
-\begin_inset Formula $cn\log_{\nicefrac{3}{2}}n=\mbox{O}\left(n\log n\right)$
+\begin_inset Formula $cn\log_{\nicefrac{3}{2}}n=\mathcal{O}\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Section
+אלגוריתם
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Quicksort
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Quicksort
+\begin_inset Formula $\left[Left,Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--if(
+\begin_inset Formula $right$
+\end_inset
+
+>
+\begin_inset Formula $left$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----
+\begin_inset Formula $m$
+\end_inset
+
+
+\begin_inset Formula $\leftarrow$
+\end_inset
+
+partition
+\begin_inset Formula $\left[A,Left,Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----Quckisort
+\begin_inset Formula $A\left[Left,m-1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----Quicksort
+\begin_inset Formula $A\left[m+1,Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+Partition 
+\begin_inset Formula $A\left[Left,Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--If 
+\begin_inset Formula $Left<Right$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----
+\begin_inset Formula $L=Left,R=Right,pivot=A\left(Right\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----for 
+\begin_inset Formula $j=Left$
+\end_inset
+
+ to 
+\begin_inset Formula $Right$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------if 
+\begin_inset Formula $A\left(j\right)<pivot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--------
+\begin_inset Formula $B\left(L\right)=A\left(j\right),L++$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------else
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--------
+\begin_inset Formula $B\left(R\right)=A\left(j\right),R--$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----
+\begin_inset Formula $B\left(L\right)=A\left[Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----
+\begin_inset Formula $A\left[Left,Right\right]=B\left[Left,Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----return 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Quicksort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש גרסה יותר יעילה לפונקציה 
+\begin_inset Formula $Partition$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Partition In Place 
+\begin_inset Formula $A\left[Left,Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--
+\begin_inset Formula $pivot=A\left[Right\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--scan A from Left to find A
+\begin_inset Formula $\left(j\right)>pivot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--scan B from Right to find A
+\begin_inset Formula $\left(j\right)<pivot$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--Swap
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--continue until pointers cross
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--swap pivot with that location(where pointers cross)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--return pointer
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Partition In Place
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז רוצים לנתח את 
+\begin_inset Formula $Quicksort$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\right)=T\left(m-1\right)+T\left(n-m\right)+\Theta\left(n\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל את כל זה תלוי ב 
+\begin_inset Formula $m$
+\end_inset
+
+ שאי אפשר לבטא אותו באופן חד חד ערכי.
+ אז נסתכל על כמה מקרי קיצון:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m=n-1$
+\end_inset
+
+ תמיד מקבלים 
+\begin_inset Formula $T\left(n\right)=T\left(n-2\right)+T\left(1\right)+\theta\left(n\right)$
+\end_inset
+
+ ועומק הריקורסיה הוא 
+\begin_inset Formula $n$
+\end_inset
+
+ אזי 
+\begin_inset Formula $T\left(n\right)=\Theta\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $m=\frac{n}{2}$
+\end_inset
+
+ תמיד מקבלים 
+\begin_inset Formula $T\left(n\right)=T\left(\frac{n}{2}-1\right)+T\left(\frac{n}{2}\right)+\Theta\left(n\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $T\left(n\right)=\Theta\left(n\log n\right)$
+\end_inset
+
+ כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Mergesort
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Enumerate
+נניח 
+\begin_inset Formula $m=\frac{9}{10}m$
+\end_inset
+
+ אזי מקבלים 
+\begin_inset Formula $T\left(n\right)=T\left(\frac{9}{10}n\right)+T\left(\frac{n}{10}\right)+\Theta\left(n\right)$
+\end_inset
+
+ אזי העומק המקסימאלי הוא 
+\begin_inset Formula $\log_{\nicefrac{10}{9}}n=\frac{\log_{2}n}{\log_{2}\frac{10}{9}}$
+\end_inset
+
+ אבל הרבה ענפים נפסקים באמצע אזי מקבלים כי זה 
+\begin_inset Formula $\mathcal{O}\left(n\log n\right)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+שים לב, זה
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\noun off
+\color foreground
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Big O
+\family roman
+\series medium
+\shape up
+\size small
+\emph off
+\bar no
+\noun off
+\color foreground
+\lang hebrew
+ ולא 
+\begin_inset Formula $\Theta$
+\end_inset
+
+ כמו קודם
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה: 
+\end_layout
+
+\begin_layout Standard
+לכל קלט 
+\begin_inset Formula $T\left(n\right)=\mathcal{O}\left(n^{2}\right)$
+\end_inset
+
+ וכן 
+\begin_inset Formula $T\left(n\right)=\Omega\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקלט האכי גרוע הוא מערך ממיון וסיבוכיות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Worst Case
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ של 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Quicksort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $O\left(n^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סיבוכיות ממוצעת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\langle T\left(n\right)\right\rangle =\sum_{\delta}\frac{\left(T\left(n\right)\, for\, input\,\delta\right)}{n!}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta$
+\end_inset
+
+ הוא מיון מסויים של המספרים 
+\begin_inset Formula $\left\{ k_{1},\dots,k_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים כי 
+\begin_inset Formula $\left\langle T\left(n\right)\right\rangle =\Theta\left(n\log n\right)$
+\end_inset
+
+ אבל את זה לא נוכיח
+\end_layout
+
+\begin_layout Standard
+דרך אחרת לחשב התוכלת היא להגריל את 
+\begin_inset Formula $m$
+\end_inset
+
+ שזה די נכון לעשות ואז נחשב את התוחלת 
+\begin_inset Formula $E\left(T\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(T\left(n\right)\right)=\sum_{m=1}^{n}\frac{1}{n}\Biggl(E\Bigl(T\left(m-1\right)\Bigr)+E\Bigl(T\left(n-m\right)\Bigr)\Biggr)+\Theta\left(n\right)\]
+
 \end_inset
 
 

@@ -1,9 +1,10 @@
 #!/usr/bin/env octave
-function [dx,dy]=afiefE(x,y,q,x0,y0) # x,y is a space, q the charge, 
-				     # x0,y0 is where the charge is positioned
+function [dx,dy]=afiefE(x,y,q,x0,y0,z0) # x,y is a space, q the charge, 
+				     # x0,y0,z0 is where the charge is positioned
+				     # the result is only the xy plane though.
   rx=x.-x0; #relative x
   ry=y.-y0; #relative y
-  r=(rx.^2.+ry.^2).^(1/2);
+  r=(rx.^2.+ry.^2.+z0.^2).^(1/2);
   dx=q./r.^2 .* rx./r;
   dy=q./r.^2 .* ry./r;
   
@@ -27,23 +28,29 @@ function [dx,dy]=afiefNormalize(dx,dy,n) #x,y are vectors, n is the longest vect
 endfunction
 
 [x,y]=meshgrid(-2:0.05:2,-2:0.05:2);
-t=0:2*pi/1000:2*pi;
+t=0:2*pi/50:2*pi;
+f=0:pi/20:pi;
 
 #[dx,dy]=afiefE(x,y,1,0,0)
 #surf(x,y,(dx.^2+dy.^2).^(1./2));
 #[dx,dy]=afiefNormalize(dx,dy,2);
-[dx,dy]=afiefE(x,y,1,cos(t(1)),sin(t(1)));
+#[dx,dy]=afiefE(x, y, 1, cos(t(1)).*cos(f(1)), sin(t(1)).*cos(f(1)), sin(f(1)));
+dx=zeros(columns(x));
+dy=zeros(columns(y));
 
-for i=2:(columns(t)-1)
-    [dx2,dy2]=afiefE(x,y,1,cos(t(i)),sin(t(i)));
+for i=1:(columns(t)-1)
+  for j=1:(columns(f)-1)
+    [dx2,dy2]=afiefE(x, y, 1, cos(t(i)).*cos(f(j)), sin(t(i)).*cos(f(j)), sin(f(j)));
     dx=dx+dx2;
     dy=dy+dy2;
+  endfor
 endfor
-[dx,dy]=afiefNormalize(dx,dy,2000);
+[dx,dy]=afiefNormalize(dx,dy,1000);
 quiver(x,y,dx,dy)
 hold;
 plot(cos(t),sin(t),'*');
+plot(cos(t),sin(t),'-');
 hold;
 pause
 
-print -dsvg c3d4.svg;
+print -dsvg c4d2.svg;

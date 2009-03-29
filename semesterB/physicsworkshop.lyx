@@ -1,4 +1,4 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -379,6 +379,142 @@ E\cdot2\pi rl & = & \frac{\lambda l}{\epsilon_{0}}\end{eqnarray*}
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physicsworkshop/c2d1.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מערכת מטענים פשוטה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+השבוע שעבר ראאינו חוק גאוס, הפעם נשתמש בזה לחשב אנרגיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U & = & \frac{kq_{1}q}{\left|\vec{r}\right|}\\
+\phi & = & \frac{u}{q}\\
+ & = & \frac{kq_{1}}{r}\\
+U & = & \phi q\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $U$
+\end_inset
+
+ הוא אנרגיה ו 
+\begin_inset Formula $\phi$
+\end_inset
+
+ הוא האנרגיה ליחידת מטען
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & -\vec{\nabla}U\\
+\Delta u & = & -\int\vec{F}d\vec{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & -\vec{\nabla}\phi\\
+\Delta\phi & = & -\int\vec{E}d\vec{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה הזו הפוטנציאל מוגדר עד כדי קבוע אזי נוכל להגדיר איפה להגדיר אותו
+ כאפס.
+ זה לא יהיה תמיד 
+\begin_inset Formula $\infty$
+\end_inset
+
+ כי זה בעיתי במקרים מסוימים)נראה בהמשך(
+\end_layout
+
+\begin_layout Standard
+שדה של טייל אינסופי זה 
+\begin_inset Formula $\vec{E}=\frac{2k\lambda}{r}\hat{r}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi & = & \int_{\infty}^{r}\frac{2k\lambda}{r^{\prime}}dr^{\prime}\\
+ & = & -2k\lambda\ln r\vert_{\infty}^{r}\\
+ & = & -\infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה פתרון לא פיזיקאלי כי הבעיה לא פיזיקאלית, אין טייל אינסופי.
+ כאשר אנחנו רחוקים מאוד מהטייל יהיה לנו שדה של מטען נקודתי, רק כאשר מתקרבים
+ יהיה לנו שדה של טייל אינסופי
 \end_layout
 
 \end_body

@@ -428,17 +428,163 @@ x>d & 2\pi k\sigma+2\pi k\rho d\end{cases}\]
 
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
-e & = & \iiintop_{\mbox{\R{קדור}}\mbox{ }}Ae^{-\frac{2r}{a_{0}}}\partial x\partial y\partial z\\
+-q & = & \iiintop_{\mbox{\R{קדור}}\mbox{ }}Ae^{-\frac{2r}{a_{0}}}\partial x\partial y\partial z\\
  & = & \iiintop_{\mbox{\R{קדור}}}Ae^{\frac{2r}{a_{0}}}r^{2}\sin\varphi\partial r\partial\theta\varphi\\
  & = & A\intop_{0}^{R}\intop_{0}^{2\pi}\intop_{0}^{\pi}r^{2}e^{\frac{2r}{a_{0}}}\sin\varphi\partial\varphi\partial\theta\partial r\\
  & = & A\intop_{0}^{R}\intop_{0}^{2\pi}r^{2}e^{\frac{2r}{a_{0}}}\left[-\cos\varphi\right]_{0}^{\pi}\partial\theta\partial r\\
  & = & 2A\intop_{0}^{R}\intop_{0}^{2\pi}r^{2}e^{\frac{2r}{a_{0}}}\partial\theta\partial r\\
  & = & 4\pi A\intop_{0}^{R}r^{2}e^{\frac{2r}{a_{0}}}\partial r\\
- & = & 4\pi A\intop_{0}^{R}r^{2}e^{\frac{2r}{a_{0}}}\partial r\\
- & = & 4\pi A\left[-\frac{\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}}{4}\right]_{0}^{R}\\
- & = & 4\pi A\left(-\frac{\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2R}{a_{0}}}}{4}-\left(-\frac{0+0+a_{0}^{3}e^{0}}{4}\right)\right)\\
- & = & 4\pi A\left(-\frac{\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2R}{a_{0}}}+a_{0}^{3}}{4}\right)\\
- & = & -\pi A\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2R}{a_{0}}}+\pi Aa_{0}^{3}\end{eqnarray*}
+ & = & 4\pi A\intop_{0}^{\infty}r^{2}e^{\frac{2r}{a_{0}}}\partial r\\
+ & = & 4\pi A\left[-\frac{\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}}{4}\right]_{0}^{\infty}\\
+ & = & 4\pi A\left(-\frac{\left(2a_{0}R^{2}+2a_{0}^{2}R+a_{0}^{3}\right)e^{-\frac{2\infty}{a_{0}}}}{4}-\left(-\frac{0+0+a_{0}^{3}e^{0}}{4}\right)\right)\\
+ & = & 4\pi A\left(-\frac{a_{0}^{3}}{4}\right)\\
+ & = & \pi Aa_{0}^{3}\\
+-q & = & \pi Aa_{0}^{3}\\
+\frac{-q}{\pi a_{0}^{3}} & = & A\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+אנחנו דנים בסימטריה קדורית אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+4\pi E & = & 4\pi kq_{in}\\
+\frac{E}{k} & = & q+\iiintop_{\mbox{\R{קדור}}\mbox{ }}Ae^{-\frac{2r}{a_{0}}}\partial x\partial y\partial z\\
+\frac{E}{k} & = & q+\iiintop_{\mbox{\R{קדור}}\mbox{ }}\frac{-q}{\pi a_{0}^{3}}\cdot e^{-\frac{2r}{a_{0}}}\partial x\partial y\partial z\\
+\frac{E}{k} & = & q-\frac{4q}{a_{0}^{3}}\left[-\frac{\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}}{4}\right]_{0}^{R}\\
+\frac{E}{k} & = & q-\frac{4q}{a_{0}^{3}}\left(-\frac{\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}}{4}+\frac{a_{0}^{3}}{4}\right)\\
+\frac{E}{k} & = & q+\frac{4q}{a_{0}^{3}}\left(\frac{\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}}{4}-\frac{a_{0}^{3}}{4}\right)\\
+E & = & k\left(q+\frac{q}{a_{0}^{3}}\left(\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}\right)-q\right)\\
+ & = & k\frac{q}{a_{0}^{3}}\left(\left(2a_{0}r^{2}+2a_{0}^{2}r+a_{0}^{3}\right)e^{-\frac{2r}{a_{0}}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+זה תלוי בהגדרה של "מרחק אופייני"
+\end_layout
+
+\begin_layout Standard
+)שאלנו במרכת התקשורת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Owl
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ואף אחד לא ענה אז לא טעות שלנו שלא קיבלנו הגדרה(
+\end_layout
+
+\begin_layout Standard
+מהאינטואיציה שלנו: המשוואה דומה למשוואת טעינת קבל, אז כנראה 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ מספק תפקיד של 
+\begin_inset Formula $\tau$
+\end_inset
+
+ שהוא הזמן האופיינו, ורורים גם כי אחרי 
+\begin_inset Formula $5a_{0}$
+\end_inset
+
+ השדה כמעט מתאפס.
+ רואים גם כי אחרי 
+\begin_inset Formula $a_{0}$
+\end_inset
+
+ יותר מ 
+\begin_inset Formula $60\%$
+\end_inset
+
+ מהשדה כבר מנוטרל.
+ אזי זה היא כמעט הראדיוס של המטען)מבחינה חשמלית(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שדה כתלות במרחק 
+\begin_inset Formula $E\left(r\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

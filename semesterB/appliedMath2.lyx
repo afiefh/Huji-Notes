@@ -1,4 +1,4 @@
-#LyX 1.6.1 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -16,7 +16,7 @@
 \font_tt_scale 100
 
 \graphics default
-\float_placement h
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -1922,6 +1922,1554 @@ r\cos\varphi\end{pmatrix}\]
 
 \begin_layout Standard
 זה בעצם משפט גאוס.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+היום נדבר על:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\triangle,\nabla$
+\end_inset
+
+ בקואורדינטות קוטביות.
+\end_layout
+
+\begin_layout Enumerate
+להמשיך עם דוגמאות של פוטנציאלים.
+\end_layout
+
+\begin_layout Enumerate
+נוסחאות נסיגה.
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\triangle,\nabla$
+\end_inset
+
+ בקואורדינטות קוטביות
+\end_layout
+
+\begin_layout Standard
+אז רוצים לעבור 
+\begin_inset Formula $\left(x,y\right)\to\left(r,\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & = & r\cos\left(\theta\right)\\
+y & = & r\sin\left(\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial r}=\cos\theta &  & \frac{\partial y}{\partial r}=\sin\theta\\
+\frac{\partial x}{\partial\theta}=-r\sin\theta &  & \frac{\partial y}{\partial\theta}=r\cos\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+J=\begin{pmatrix}\cos\theta & \sin\theta\\
+-r\sin\theta & r\cos\theta\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}\frac{\partial f}{\partial r}\\
+\frac{\partial f}{\partial\theta}\end{pmatrix} & = & J\begin{pmatrix}\frac{\partial f}{\partial x}\\
+\frac{\partial f}{\partial y}\end{pmatrix}\\
+\begin{pmatrix}\frac{\partial}{\partial r}\\
+\frac{\partial}{\partial\theta}\end{pmatrix} & = & J\begin{pmatrix}\frac{\partial}{\partial x}\\
+\frac{\partial}{\partial y}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אופרטורים לא חייבים להתחלף, 
+\begin_inset Formula $AB\neq BA$
+\end_inset
+
+ בדרך כלל)יתכן מקרה פרטי שבו זה קן מתקיים(
+\end_layout
+
+\begin_layout Standard
+כדי למצא מטריצה הפיכה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}a & b\\
+c & d\end{pmatrix}^{-1}=\frac{1}{\det A}\begin{pmatrix}d & -b\\
+-c & a\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}\frac{\partial}{\partial x}\\
+\frac{\partial}{\partial y}\end{pmatrix} & = & \begin{pmatrix}\cos\theta & -\frac{1}{r}\sin\left(\theta\right)\\
+\sin\left(\theta\right) & \frac{1}{r}\cos\left(\theta\right)\end{pmatrix}\begin{pmatrix}\frac{\partial}{\partial r}\\
+\frac{\partial}{\partial\theta}\end{pmatrix}\\
+ & = & \begin{pmatrix}\cos\left(\theta\right)\\
+\sin\left(\theta\right)\end{pmatrix}\frac{\partial}{\partial r}+\begin{pmatrix}-\frac{1}{r}\sin\theta\\
+\frac{1}{r}\cos\theta\end{pmatrix}\frac{\partial}{\partial\theta}\\
+ & = & \hat{r}\frac{\partial}{\partial r}+\hat{\theta}\frac{\partial}{\partial\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}=\hat{r}\frac{\partial}{\partial r}+\hat{\theta}\frac{\partial}{\partial\theta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+ שדה וקטורי 
+\begin_inset Formula \begin{eqnarray*}
+\vec{f} & = & f_{1}\begin{pmatrix}1\\
+0\end{pmatrix}+f_{2}\begin{pmatrix}0\\
+1\end{pmatrix}\\
+ & = & f_{r}\hat{r}+f_{\theta}\hat{\theta}\\
+ & = & f_{r}\begin{pmatrix}\cos\\
+\sin\end{pmatrix}+f_{\theta}\begin{pmatrix}-\sin\\
+\cos\end{pmatrix}\\
+ & = & \begin{pmatrix}f_{r}\cos-f_{\theta}\sin\\
+f_{r}\sin+f_{\theta}\cos\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\begin_inset Formula \[
+f_{1}=f_{r}\cos\theta-f_{\theta}\sin\theta,f_{2}=f_{r}\sin\theta+f_{\theta}\cos\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\vec{f} & = & \frac{\partial f_{1}}{\partial x}+\frac{\partial f_{2}}{\partial y}\\
+ & = & \begin{array}{c}
+\left(\underbrace{\cos\frac{\partial}{\partial r}-\frac{1}{r}\sin\frac{\partial}{\partial\theta}}_{\frac{\partial}{\partial x}}\right)\left(\underbrace{f_{r}\cos-f_{\theta}\sin}_{f_{1}}\right)+\\
++\left(\underbrace{\sin\frac{\partial}{\partial r}+\frac{1}{r}\cos\frac{\partial}{\partial\theta}}_{f_{1}}\right)\left(\underbrace{f_{r}\sin+f_{\theta}\cos}_{f_{2}}\right)\end{array}\\
+ & = & \frac{\partial f_{r}}{\partial r}+\frac{1}{r}\frac{\partial f_{\theta}}{\partial\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}f=\frac{\partial f_{r}}{\partial r}+\frac{1}{r}\frac{\partial f_{\theta}}{\partial\theta}+\frac{1}{r}f_{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla^{2}\phi=\nabla\underbrace{\left(\nabla\phi\right)}_{f}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f & = & \nabla\phi\\
+ & = & \hat{r}\frac{\partial\phi}{\partial r}+\frac{1}{r}\hat{\theta}\frac{\partial\phi}{\partial\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{r} & = & \frac{\partial\phi}{\partial r}\\
+f_{\theta} & = & \frac{1}{r}\frac{\partial\phi}{\partial\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז עכשיו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\nabla^{2}\phi & = & \nabla f\\
+ & = & \frac{\partial f_{r}}{\partial r}+\frac{1}{r}\frac{\partial f_{\theta}}{\partial\theta}+\frac{1}{r}f_{r}\\
+ & = & \frac{\partial^{2}\phi}{\partial r^{2}}+\frac{1}{r}\frac{\partial}{\partial\theta}\left(\frac{1}{r}\frac{\partial\phi}{\partial\theta}\right)+\frac{1}{r}\frac{\partial\phi}{\partial r}\\
+ & = & \frac{\partial^{2}\phi}{\partial r^{2}}+\frac{1}{r^{2}}\frac{\partial^{2}\phi}{\partial\theta^{2}}+\frac{1}{r}\frac{\partial\phi}{\partial r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמאות של פוטנציאל סקלרי:
+\end_layout
+
+\begin_layout Standard
+עשינו שדה כבדה של מסה נקודתית בנקודה 
+\begin_inset Formula $\vec{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F & = & -\frac{Gm}{r^{3}}\vec{r}\\
+ & = & \nabla\left(\frac{Gm}{r}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפונקציה 
+\begin_inset Formula $-\frac{Fm}{r}$
+\end_inset
+
+היא הפוטנציאל הסקלרי של 
+\begin_inset Formula $\vec{F}$
+\end_inset
+
+ בכל נקודות 
+\begin_inset Formula $\vec{r}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים 
+\begin_inset Formula $\vec{\nabla}\cdot\vec{F}=\nabla^{2}\left(\frac{Gm}{r}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל משטח 
+\begin_inset Formula $\partial R=\Sigma,0\not\in R$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oiintop_{\Sigma}\vec{F}d\vec{s}\underbrace{=}_{\mbox{\R{משפט\,גאוס}}}\iiintop_{R}\nabla\cdot\vec{F}\partial V=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גם יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oiintop_{\begin{matrix}\mbox{\R{ספירה}}\\
+r=a\end{matrix}}\vec{F}\partial\vec{s} & = & \oiint-\frac{Gm}{r^{3}}\vec{r}\cdot\hat{r}dxdy\\
+ & = & \oiint-\frac{Gm}{a^{3}}adxdy\\
+ & = & -\frac{Gm}{a^{2}}\cdot\left(\mbox{\R{שטח\,הספירה}}\right)\\
+ & = & 4\pi Gm\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה נוספת:
+\end_layout
+
+\begin_layout Standard
+שדה כבידה 
+\begin_inset Formula $F$
+\end_inset
+
+ של גוף קשיח בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ עם צפיפיפות
+\begin_inset Formula $\rho\left(\vec{r}\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=\iiintop_{D}-\frac{G}{\left|r-r^{\prime}\right|}\left(\vec{r}-\vec{r}^{\prime}\right)d^{3}r^{\prime}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו כי 
+\begin_inset Formula $\oiintop_{\Sigma}\vec{F}\partial\vec{s}=-4\pi G\left(\mbox{\R{מסה}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקח עכשיו 
+\begin_inset Formula $\Sigma=\partial R$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oiintop_{\Sigma}\vec{F}d\vec{s} & = & \iiintop_{R}\vec{\nabla}\vec{F}dV\\
+ & = & -4\pi G\left(\mbox{\R{מסה}}\right)\\
+ & = & -4\pi G\iiintop_{R}\rho dV\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula \[
+\vec{\nabla}\vec{F}=-4\pi G\rho\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת היא משוואת הרציפות
+\end_layout
+
+\begin_layout Standard
+נזכר כי 
+\begin_inset Formula $\vec{F}=\vec{\nabla}\left(\frac{Gm}{r}\right)$
+\end_inset
+
+ לכן אם נקח 
+\begin_inset Formula $\phi=\iiintop_{D}\frac{G\rho\left(r^{\prime}\right)}{\left|r-r^{\prime}\right|}d^{3}r^{\prime}$
+\end_inset
+
+ אז 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{F} & = & \nabla\phi\\
+\vec{\nabla}\vec{F} & = & -\nabla^{2}\phi\\
+ & = & -4\pi G\rho\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla^{2}\phi=4\pi G\rho\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת היא משוואת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Poisson
+\end_layout
+
+\begin_layout Standard
+נובע מזה שתמיד אפשר לפתור משוואת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Laplace
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שזה 
+\begin_inset Formula $\nabla^{2}\cdot\underbrace{\phi}_{\mbox{\R{משתנה}}}=\underbrace{f}_{\mbox{\R{קבוע}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה ג:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $D$
+\end_inset
+
+ הוא כדור בעל רדיוס 
+\begin_inset Formula $a$
+\end_inset
+
+ וצפיפות 
+\begin_inset Formula $\rho$
+\end_inset
+
+ קבועה.
+ סכהכל מס בכדור 
+\begin_inset Formula $M$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{F}=F\left(r\right)\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oiint\vec{F}\cdot d\vec{s} & = & \oiint F\left(r\right)\hat{r}d\vec{s}\\
+ & = & F\left(r\right)\cdot\left(\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Section
+טנזורים
+\end_layout
+
+\begin_layout Standard
+טנזור 
+\begin_inset Formula $R$
+\end_inset
+
+ מימדי זו "מכונה" שמקבלת 
+\begin_inset Formula $R$
+\end_inset
+
+ וקטורים ונותנת סקלר כך שבכל אחד מהקואורדינטות היא ליניארית
+\end_layout
+
+\begin_layout Paragraph
+דוגמה לפונקציה 
+\begin_inset Formula $k=2$
+\end_inset
+
+ ליניארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(Ax\right)\cdot y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם למשל קובעים את 
+\begin_inset Formula $y$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\left(x^{\prime}+x\right)\cdot y=\left(Ax^{\prime}+Ax\right)\cdot y=Ax^{\prime}\cdot y+Ax\cdot y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סימן קרונקר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\delta_{ij}=\begin{cases}
+1 & i=j\\
+0 & i\neq j\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\delta=\begin{pmatrix}1 & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & 1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סימן לוי-ציוויטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename appliedMath2/c6d1.svg
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+סידורים שונים של 
+\begin_inset Formula $1,2,3$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varepsilon_{ijk}=\begin{cases}
++1 & A\\
+-1 & B\\
+0 & \mbox{\R{אם\,לא\,כולם\,שונים}}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הסכם הסכימה
+\end_layout
+
+\begin_layout Standard
+אם יש שתי טנזורים 
+\begin_inset Formula $F_{ijk},G_{lmn}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{jjk}G_{imn}\equiv\sum_{i}^{n}F_{ijk}G_{imn}=H_{jkmn}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז למשל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{ijk}G_{ijn}=\sum_{i,k=1}^{n}F_{ijk}G_{ikn}=H_{kn}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A_{ij}x_{i}=\left(\sum_{i=}^{n}a_{ij}x_{i}\right)_{j}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\delta_{ij}\delta_{ik} & = & \sum_{i=1}^{n}\delta_{ij}\delta_{ik}\\
+ & = & \begin{cases}
+1 & j=k\\
+0 & \mbox{\R{אחרת}}\end{cases}\\
+ & = & \delta_{jk}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\epsilon_{ijk}\epsilon_{imn} & = & \sum_{i=1}^{n}\epsilon_{ijk}\epsilon_{imn}\\
+ & = & \begin{cases}
++1 & \begin{matrix}\left(ijk\right)\to A\wedge\left(imn\right)\to A\\
+\left(ijk\right)\to B\wedge\left(imn\right)\to B\end{matrix}\\
+-1 & \begin{matrix}\left(ijk\right)\to A\wedge\left(imn\right)\to B\\
+\left(ijk\right)\to B\wedge\left(imn\right)\to A\end{matrix}\\
+0 & \mbox{\R{לפחות\,אחד\,האינדקסים\,חוזר\,על\,עצמו}}\end{cases}\\
+ & = & \delta_{im}\delta_{kn}-\delta_{jn}\delta_{km}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\epsilon_{ijk}\epsilon_{lmn}=\mbox{det}\begin{pmatrix}\delta_{il} & \delta_{im} & \delta_{in}\\
+\delta_{jl} & \delta_{jm} & \delta_{jn}\\
+\delta_{kl} & \delta_{km} & \delta_{kn}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a\times b=\epsilon_{ijk}\hat{e}_{i}a_{j}b_{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\left(\nabla\times\vec{v}\right)\times\vec{v}\right) & = & \left(\epsilon_{ijk}\hat{e}_{i}\frac{\partial}{\partial x_{j}}v_{k}\right)\times\vec{v}\\
+ & = & \epsilon_{lin}\hat{e}_{l}\left(\epsilon_{ijk}\hat{e}_{i}\frac{\partial}{\partial x_{j}}v_{k}\right)v_{n}\\
+ & = & \epsilon_{inl}\hat{e}_{l}\left(\epsilon_{ijk}\hat{e}_{i}\frac{\partial}{\partial x_{j}}v_{k}\right)v_{n}\\
+ & = & \left(\epsilon_{inl}\epsilon_{ijk}\hat{e}_{i}\right)\hat{e}_{l}\frac{\partial}{\partial x_{j}}v_{k}v_{n}\\
+ & = & \left(\delta_{nj}\delta_{lk}-\delta_{nk}\delta_{lj}\right)\hat{e}_{l}\frac{\partial}{\partial x_{j}}v_{k}v_{n}\\
+ & = & \hat{e}_{k}\frac{\partial}{\partial x_{n}}v_{k}v_{n}-\hat{e}_{j}\left(\frac{\partial}{\partial x_{j}}v_{k}\right)v_{k}\\
+ & = & \hat{e}_{k}\left(\frac{\partial}{\partial x_{n}}v_{n}\right)v_{k}-\hat{e}_{j}\left(\frac{\partial}{\partial x_{j}}v_{k}\right)v_{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial}{\partial x_{j}}v_{k}^{2}=2\cdot\frac{\partial v_{k}}{\partial x_{j}}\cdot v_{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\hat{e}_{k}\left(\frac{\partial}{\partial x_{n}}v_{n}\right)v_{k}-\hat{e}_{j}\left(\frac{\partial}{\partial x_{j}}v_{k}\right)v_{k}=\left(v\cdot\vec{\nabla}\right)\vec{v}-\frac{1}{2}\vec{\nabla}\left|v\right|^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Section
+פרק
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+- נוסחאות נסיגה
+\end_layout
+
+\begin_layout Standard
+הודעות נסיגה מסדר 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n+k}=f_{n}\left(x_{n},x_{n+1}\dots x_{n+k-1}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל 
+\begin_inset Formula $x_{n+2}=-x_{n}$
+\end_inset
+
+ היא מסדר 
+\begin_inset Formula $2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כדי לחשב נוסחה מפורשת לנוסחת נסיגה צריכים תנאי התחלה 
+\begin_inset Formula $x_{0}=a,x_{1}=b,\dots,x_{k-1}=z$
+\end_inset
+
+.
+ יש 
+\begin_inset Formula $k$
+\end_inset
+
+ דרגות חופש בנוסחה מדרגה 
+\begin_inset Formula $k$
+\end_inset
+
+ לכן צריכים 
+\begin_inset Formula $k$
+\end_inset
+
+ תנאי התחלה.
+\end_layout
+
+\begin_layout Subsection
+נוסחת נסיגה ליניארית והומוגנית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n+k}=f_{0}\left(n\right)x_{n}+f\left(n\right)x_{n+1}+\dots+f_{k-1}\left(n\right)x_{n+k-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נסמן 
+\begin_inset Formula $T$
+\end_inset
+
+ מרחב פתרונות של הנוסחה הזאת.
+\end_layout
+
+\begin_layout Standard
+סדרבה 
+\begin_inset Formula $\left(x_{n}\right)$
+\end_inset
+
+ נקראת פתרון של נוסחת נסיגה אם היא מקיימת המשוואה לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+טענה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ הוא מרחב ווקטורי)ליניארי( כלומר אם 
+\begin_inset Formula $x_{n}\in T$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\lambda x_{n}\right)\in T$
+\end_inset
+
+.
+ גם אם 
+\begin_inset Formula $\left(x_{n}\right),\left(y_{n}\right)\in T$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(x_{n}+y_{n}\right)\in T$
+\end_inset
+
+ )אפשר להוכיח באלגברה ליניארית(
+\end_layout
+
+\begin_layout Paragraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+מה המימד של 
+\begin_inset Formula $T$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+נקרא ההעתקה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T & \to & \mathbb{R}^{k}\\
+A:\left(x_{n}\right) & \mapsto & \begin{pmatrix}x_{0}\\
+\vdots\\
+x_{k-1}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ היא על כי הנוסחה לא מגבילה 
+\begin_inset Formula $k$
+\end_inset
+
+ האיברים הראשונים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ היא חד חד ערכית ז"א שאין שתי פתרונות שונים לאותה נוסחה כך שההתחלה שלהם
+ היא אותה התחלה
+\end_layout
+
+\begin_layout Standard
+מסקנה: 
+\begin_inset Formula $\dim T=\dim\mathbb{R}^{k}=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בפרט קיים בסיס ל 
+\begin_inset Formula $T$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $k$
+\end_inset
+
+ סדרות 
+\begin_inset Formula $\left(x_{n}^{1}\right),\left(x_{n}^{2}\right),\dots,\left(x_{n}^{k}\right)$
+\end_inset
+
+ כך שכל פתרון הוא צירוף ליניארי שלהם.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n+2}=\frac{3n-2}{n-1}x_{n+1}-\frac{2n}{n-1}x_{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוסחה ליניארית והומוגנית מסדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+מנחשים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+פתרונות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n}=n=1,2,3,4\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק אם 
+\begin_inset Formula $x_{n}$
+\end_inset
+
+היא פתרון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+n+2 & \overset{?}{=} & \frac{3n-2}{n-1}\left(n+1\right)-\frac{2n}{n-1}n\\
+\left(n+2\right)\left(n-1\right) & \overset{?}{=} & \left(3n-2\right)\left(n+1\right)-2n^{2}\\
+n^{2}-n+2n+2 & \overset{?}{=} & 3n^{2}+3n-2n-2-2n^{2}\\
+n^{2}+n+2 & = & n^{2}+n-2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מנחשים הפתרון השני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{n}=2^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי בודקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n+2}\overset{?}{=}\frac{3n-2}{n-1}2^{n+1}-\frac{2n}{n-1}2^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מרחב הפתרונות ו 
+\begin_inset Formula $T$
+\end_inset
+
+ ההעתקה מ
+\begin_inset Formula $X\to\mathbb{R}^{k}$
+\end_inset
+
+ מקבלים כי 
+\begin_inset Formula $\left(n\right),\left(2^{n}\right)\in X$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T:X & \to & \mathbb{R}^{2}\\
+\left(n\right) & \mapsto & \begin{pmatrix}2\\
+3\end{pmatrix}\\
+\left(2^{n}\right) & \mapsto & \begin{pmatrix}4\\
+8\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש
+\begin_inset Formula $X$
+\end_inset
+
+ הוא ממימד 
+\begin_inset Formula $2$
+\end_inset
+
+ אנחנו יכולים לטעון שכל פתרון הכללי של הנוסחה שלנו הוא הראה כזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(x_{n}\right)=A\left(n\right)+B\left(2^{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איןך למצא פתרון עם תנאי התחלה נתונים?
+\end_layout
+
+\begin_layout Paragraph
+לדוגמה:
+\end_layout
+
+\begin_layout Standard
+רוצים 
+\begin_inset Formula $\begin{cases}
+x_{n+2}=\frac{3n-2}{n-1}x_{n+1}-\frac{2n}{n-1}x_{n}\\
+x_{2}=3\\
+x_{3}=5\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציעים כי 
+\begin_inset Formula $x_{n}=A\left(n\right)+B\left(2^{n}\right)$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x_{2}=3$
+\end_inset
+
+ אזי 
+\begin_inset Formula $3=A\cdot2+B\cdot2$
+\end_inset
+
+ ו 
+\begin_inset Formula $x_{3}=5$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x_{3}=3A+B\cdot2^{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\{ \begin{matrix}2A+4B=3\\
+3A+8B=5\end{matrix}\right.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים 
+\begin_inset Formula $A=1,B=\frac{1}{4}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $x_{n}=n+\frac{1}{4}2^{n}=n+2^{n-2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+איך למצא נוסחה זו?
+\end_layout
+
+\begin_layout Standard
+יש מתכון למצא פתרונות לנוסחת נסיגה ליניארית עם מקדמים קבועים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n+k}=a_{0}x_{n}+a_{1}x_{n+1}+\dots+a_{k-1}x_{n+k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\forall i:a_{i}$
+\end_inset
+
+ מספר קבוע)זה לא עובד לנוסחה שהדגמנו קודם(
+\end_layout
+
+\begin_layout Standard
+ניקח את המשוואה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x^{k}=a_{0}+a_{1}x+\dots+a_{k-1}k^{k-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונפתור אותה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x=\lambda_{1},\lambda_{2}\dots\lambda_{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז סדרה 
+\begin_inset Formula \[
+\left(\lambda_{i}^{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היא פתרון של נוסחת נסיגה.
+ נבדוק את 
+\begin_inset Formula $\left(\lambda_{1}^{n}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{1}^{n+k} & \overset{?}{=} & a_{0}\lambda_{1}^{n}+a_{1}\lambda_{1}^{n+1}+\dots+a_{k-1}\lambda_{1}^{n+k-1}\\
+\lambda_{1}^{n}\lambda_{1}^{k} & \overset{?}{=} & \lambda_{1}^{n}\left(a_{0}+a_{1}\lambda_{1}+\dots+a_{k-1}\lambda_{1}^{k-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה שווה כי זו היא המשוואה שפתרנו מקודם.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lambda_{1}\dots\lambda_{k}$
+\end_inset
+
+ הם פתרונות שונות של 
+\begin_inset Formula $x^{k}=a_{0}+\dots+a_{k-1}x^{k-1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(\lambda_{1}^{n}\right),\dots,\left(\lambda_{k}^{n}\right)$
+\end_inset
+
+ הם פתרונות בלתי תלויים של הנוסחה אזי כל פתרון של הנוסחה נראה כך: 
+\begin_inset Formula $A_{1}\left(\lambda_{1}^{n}\right)+\dots+A_{k}\left(\lambda_{k}^{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמאות:
+\end_layout
+
+\begin_layout Standard
+סדרת פיבונצי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{n+2}=x_{n}+x_{n+1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נפתור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x^{2} & = & 1+x\\
+x & = & \frac{1\pm\sqrt{5}}{2}\\
+\lambda_{1} & = & \frac{1+\sqrt{5}}{2}\\
+\lambda_{2} & = & \frac{1-\sqrt{5}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ז"א שהסדרות 
+\begin_inset Formula $\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(\left(\frac{1-\sqrt{5}}{2}\right)^{n}\right)$
+\end_inset
+
+ הן פתרונות של 
+\begin_inset Formula $x_{n+2}=x_{n+1}+x_{n}$
+\end_inset
+
+ לכן של פתרון של פיבונצי נראה כ
+\begin_inset Formula $x_{n}=A\left(\frac{1+\sqrt{5}}{2}\right)^{n}+B\left(\frac{1-\sqrt{5}}{2}\right)^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח תנאי התחלה 
+\begin_inset Formula $x_{0}=1,x_{1}=1$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+1 & = & A\left(\frac{1+\sqrt{5}}{2}\right)^{0}+B\left(\frac{1-\sqrt{5}}{2}\right)^{0}\\
+1 & = & A\left(\frac{1+\sqrt{5}}{2}\right)^{1}+B\left(\frac{1-\sqrt{5}}{2}\right)^{1}\end{eqnarray*}
+
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1 & = & A+B\\
+1 & = & A\left(\frac{1+\sqrt{5}}{2}\right)+B\left(\frac{1-\sqrt{5}}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הוא 
+\begin_inset Formula $A=\frac{1+\sqrt{5}}{2\sqrt{5}},B=-\frac{1-\sqrt{5}}{2\sqrt{5}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+מה לעשות אם יש שורש כפול ל 
+\begin_inset Formula $x^{k}=a_{0}+\dots+a_{k-1}x^{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ הוא שורש כפול אז לא רק 
+\begin_inset Formula $\left(\lambda^{n}\right)$
+\end_inset
+
+ פתרון אלה גם 
+\begin_inset Formula $\left(n\lambda^{n}\right)$
+\end_inset
+
+
 \end_layout
 
 \end_body
