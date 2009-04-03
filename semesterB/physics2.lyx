@@ -2453,5 +2453,183 @@ F_{y} & = & \frac{\lambda x}{\left(x^{2}+y^{2}\right)^{\frac{n+1}{2}}}\end{eqnar
 
 \end_layout
 
+\begin_layout Section
+מוליכים
+\end_layout
+
+\begin_layout Standard
+זה חומר שגם אם נטען אותו השדה בו עדיין יהיה אפס)בתוך החומר(
+\end_layout
+
+\begin_layout Standard
+השדה על שפת המוליך הוא אפס בכיוון המקביל, אבל לא חייב להיות אפס בכיוון המאונך
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+מטען נמצא מעל משטח אינסופי מוליך אזי כל המטענים במוליך חייבים להתפזר כך
+ שהשדה המקביל למישור שווה לאפס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename physics2/c6d2.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מטען ומשטח אינסופי מוליך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז זה נראה כמו חצי דיפול.
+ והאמת הוא שהמטענים יסתדרו בצורה שבאמת יהיה לנו שדה של דיפול בחצי העליון
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+מוליך=גוף שבו המטענים יכולים לנוע בהתאם לשדה חשמלי.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+מוליך + אלקטרוסטטיקה = 
+\begin_inset Formula $\vec{E}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תכונות מוליך באלקטרוסטטיקה:
+\end_layout
+
+\begin_layout Enumerate
+בתוכו 
+\begin_inset Formula $E=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+על השפה 
+\begin_inset Formula $E_{\parallel}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+על השפה 
+\begin_inset Formula $E_{\perp}=\frac{\sigma}{\varepsilon_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הפוטנציאל קבוע
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\rho=0$
+\end_inset
+
+ בתוך המוליך
+\end_layout
+
+\begin_layout Section
+משפט היחידות
+\end_layout
+
+\begin_layout Standard
+בתחום בו 
+\begin_inset Formula $\nabla^{2}\varphi=-\frac{\rho}{\varepsilon_{0}}$
+\end_inset
+
+ עם תנאי השפה על 
+\begin_inset Formula $\varphi$
+\end_inset
+
+, יש פתרון יחיד
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\varphi_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\varphi_{2}$
+\end_inset
+
+ פתרומות.
+ 
+\begin_inset Formula $\nabla^{2}\left(\varphi_{1}-\varphi_{2}\right)=0$
+\end_inset
+
+ ותנאי השפה 
+\begin_inset Formula $\varphi_{1}-\varphi_{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\varphi_{1}-\varphi_{2}$
+\end_inset
+
+ פונקציה הרמונית, אזי אין לה מינימום או מקסימום אזי 
+\begin_inset Formula $\varphi_{1}-\varphi_{2}=0$
+\end_inset
+
+
+\end_layout
+
 \end_body
 \end_document

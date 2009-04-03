@@ -1,0 +1,281 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+לפי סימטריה כדורית המטען על המעטפת הכדורית יתפלג באופן אחיד)אין ברירה בכלל(.
+ אזי המעטפת לא מייצרת שדה חשמלי ב 
+\begin_inset Formula $r<r_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי יכולים לחשוב על התפלגות המטען על הכדור 
+\begin_inset Formula $r_{1}$
+\end_inset
+
+ כאילו שאין מעטפת מסביבו.
+\end_layout
+
+\begin_layout Standard
+המטען על הכדור 
+\begin_inset Formula $r_{2}$
+\end_inset
+
+ יתפלג בצורה שתגרום לשדה ב 
+\begin_inset Formula $r<r_{2}$
+\end_inset
+
+ להתאפס, כלומר המטען יתפלג באופן אחיד על המעטפת
+\end_layout
+
+\begin_layout Standard
+אזי השדה במרחב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}\left(\vec{r}\right)=\begin{cases}
+r<r_{1} & 0\\
+r_{1}\leq r & \frac{kq}{r^{2}}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מחברים שתי הכדורים אז מקבלים כי הפוטנציאל החשמלי גם על המעטפת וגם על
+ הכדור וגם על החוט שעובר ביניהם שוים, כלומר אין שדה ב 
+\begin_inset Formula $r<r_{2}$
+\end_inset
+
+ אזי המטען יתפלג על המעטפת.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\left|\vec{r}+a\hat{x}\right|>r_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|\vec{r}-a\hat{x}\right|>r_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{kQ_{1}}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{kQ_{2}}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\\
+ & = & -\frac{k\frac{4}{3}\pi r_{1}^{3}\rho}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{k\frac{4}{3}\pi r_{2}^{3}\rho}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\left|\vec{r}+a\hat{x}\right|\leq r_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|\vec{r}-a\hat{x}\right|>r_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{kQ_{1}}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{kQ_{2}}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\\
+ & = & -\frac{k\frac{4}{3}\pi\left|\vec{r}+a\hat{x}\right|^{3}\rho}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{k\frac{4}{3}\pi r_{2}^{3}\rho}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\left|\vec{r}+a\hat{x}\right|>r_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|\vec{r}-a\hat{x}\right|\leq r_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{kQ_{1}}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{kQ_{2}}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\\
+ & = & -\frac{k\frac{4}{3}\pi r_{1}^{3}\rho}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{k\frac{4}{3}\pi\left|\vec{r}-a\hat{x}\right|^{3}\rho}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של 
+\begin_inset Formula $\left|\vec{r}+a\hat{x}\right|\leq r_{1}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|\vec{r}-a\hat{x}\right|\leq r_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & \frac{kQ_{1}}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{kQ_{2}}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\\
+ & = & -\frac{k\frac{4}{3}\pi\left|\vec{r}+a\hat{x}\right|^{3}\rho}{\left(\vec{r}+a\hat{x}\right)^{3}}\left(\vec{r}+a\hat{x}\right)+\frac{k\frac{4}{3}\pi\left|\vec{r}-a\hat{x}\right|^{3}\rho}{\left(\vec{r}-a\hat{x}\right)^{3}}\left(\vec{r}-a\hat{x}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

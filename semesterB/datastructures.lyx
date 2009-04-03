@@ -1462,43 +1462,18 @@ Mergesort
 
 
 \begin_inset Foot
-status collapsed
+status open
 
 \begin_layout Plain Layout
-שים לב, זה
-\family roman
-\series medium
-\shape up
-\size small
-\emph off
-\bar no
-\noun off
-\color foreground
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\bar default
-\noun default
-\color inherit
-\lang english
-Big O
-\family roman
-\series medium
-\shape up
-\size small
-\emph off
-\bar no
-\noun off
-\color foreground
-\lang hebrew
+שים לב, זה 
+\begin_inset Formula $\mathcal{O}$
+\end_inset
+
  ולא 
 \begin_inset Formula $\Theta$
 \end_inset
 
- כמו קודם
+
 \end_layout
 
 \end_inset
@@ -1635,6 +1610,198 @@ Quicksort
 \begin_layout Standard
 \begin_inset Formula \[
 E\left(T\left(n\right)\right)=\sum_{m=1}^{n}\frac{1}{n}\Biggl(E\Bigl(T\left(m-1\right)\Bigr)+E\Bigl(T\left(n-m\right)\Bigr)\Biggr)+\Theta\left(n\right)\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+התוכלת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Randomized Quicksort
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(T\left(n\right)\right) & = & \sum_{m=1}^{n}\frac{1}{n}\Biggl(E\Bigl(T\left(m-1\right)\Bigr)+E\Bigl(T\left(n-m\right)\Bigr)\Biggr)+\Theta\left(n\right)\\
+ & = & \sum_{m=0}^{n-1}\frac{1}{n}\cdot2\cdot E\left(T\left(m\right)\right)+\Theta\left(n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בקורס זה תמיד 
+\begin_inset Formula $T\left(1\right)=\mathcal{\Theta}\left(1\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{m=0}^{n-1}\frac{2}{n}E\left(T\left(m\right)\right)+c_{2}n & \leq & E\left(T\left(n\right)\right)\leq\sum_{m=0}^{n-1}\frac{2}{n}E\left(T\left(m\right)\right)+c_{1}n\\
+c_{2}\leq & E\left(T\left(1\right)\right) & \leq c_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נגדיר 
+\begin_inset Formula \begin{eqnarray*}
+U_{C}\left(n\right) & = & \sum_{m=0}^{n-1}\frac{2}{n}U_{c}\left(m\right)+cn\\
+U_{c}\left(1\right) & = & U_{c}\left(0\right)=c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{c_{2}}\leq E\left(T\left(n\right)\right)\leq U_{c_{1}}\left(n\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להוכיח באינדוקציה)ההוכחה בתרגיל(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & =\\
+ & =\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-\left\{ \begin{array}{rcl}
+nU_{c}\left(n\right) & = & 2\sum_{m=0}^{n-1}U_{c}\left(m\right)+cn^{2}\\
+\left(n+1\right)U_{c}\left(n+1\right) & = & 2\sum_{m=0}^{n}U_{c}\left(m\right)+c\left(n+1\right)^{2}\end{array}\right.\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(n+1\right)U_{c}\left(n+1\right)-nU_{c}\left(n\right) & = & 2U_{c}\left(n\right)+c\left(n+1\right)^{2}-cn^{2}\\
+\left(n+1\right)U_{c}\left(n+1\right) & = & \left(n+2\right)U_{c}\left(n\right)+2cn+c\\
+U_{c}\left(n+1\right) & = & \frac{n+2}{n+1}U_{c}\left(n\right)+\frac{2cn+c}{n+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+טענה קלה: 
+\begin_inset Formula \[
+c\leq\frac{2cn+c}{n+1}\leq2c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{c}\left(n+1\right)\leq\frac{n+2}{n+1}U_{c}\left(n\right)+2c\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור את זה בשיטת האיטרציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U_{c}\left(n+1\right) & \leq & \frac{n+2}{n+1}\left(\frac{n+1}{n}u_{c}\left(n-1\right)+2c\right)+2c\\
+ & = & \frac{n+2}{n+1}\cdot\frac{n+1}{n}U_{c}\left(n-1\right)+\frac{n+2}{n+1}\cdot2c+\frac{n+2}{n+2}\cdot2c\\
+ & \leq & \frac{n+2}{n+1}\cdot\frac{n+1}{n}\left(\frac{n}{n-1}U_{c}\left(n-2\right)+2c\right)+\frac{n+2}{n+1}+\frac{n+2}{n+2}2c\\
+ & \leq & \frac{n+2}{n+2}\cdot2c+\frac{n+2}{n+1}\cdot2c+\frac{n+2}{n}+2c+\frac{n+2}{n+1}\cdot\frac{n+1}{n}\left(\frac{n}{n-1}U_{c}\left(n-2\right)+2c\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי כל כופלי 
+\begin_inset Formula $U_{C}\left(\dots\right)$
+\end_inset
+
+ מצתמצמים ונשאר המונה הראשון והמכנה האחרון אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U_{c}\left(n+1\right) & \leq & \left(n+2\right)2c\sum_{j=1}^{n+2}\frac{1}{j}+\left(n+2\right)\cdot2c\end{eqnarray*}
 
 \end_inset
 

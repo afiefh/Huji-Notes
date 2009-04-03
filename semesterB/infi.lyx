@@ -16,7 +16,7 @@
 \font_tt_scale 100
 
 \graphics default
-\float_placement h
+\float_placement H
 \paperfontsize default
 \spacing single
 \use_hyperref false
@@ -6453,6 +6453,1855 @@ status collapsed
 
  גורר 
 \begin_inset Formula $\left|x^{2}-9\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Paragraph
+למה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|\left(x+y\right)-\left(x_{0}+y_{0}\right)\right|<\varepsilon\Leftarrow\left|x-x_{0}\right|<\frac{\varepsilon}{2},\left|y-y_{0}\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left|xy-x_{0}y_{0}\right|<\varepsilon\Leftarrow\left|x-x_{0}\right|<\min\left(1,\frac{\varepsilon}{2\left(\left|y_{0}\right|+1\right)}\right),\left|y-y_{0}\right|<\min\left(1,\frac{\varepsilon}{2\left(\left|x_{0}\right|+1\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $y_{0}\neq0$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|y-y_{0}\right|<\min\left(\frac{\left|y\right|}{2},\frac{\varepsilon y_{0}^{2}}{2}\right)$
+\end_inset
+
+אזי 
+\begin_inset Formula $\left|\frac{1}{y}-\frac{1}{y_{0}}\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|y_{0}\right| & = & \left|y+\left(y_{0}-y\right)\right|\\
+\left|y_{0}\right| & \leq & \left|y\right|+\left|y_{0}+y\right|\\
+\left|y_{0}\right| & \leq & \left|y\right|+\frac{\left|y_{0}\right|}{2}\\
+\left|y\right| & > & \frac{\left|y_{0}\right|}{2}>0\\
+\left|\frac{1}{y}-\frac{1}{y_{0}}\right| & = & \frac{y-y_{0}}{\left|y\right|\left|y_{0}\right|}\\
+ & < & \frac{\left|y-y_{0}\right|}{\frac{\left|y_{0}\right|}{2}\left|y_{0}\right|}\\
+ & < & \frac{\varepsilon\frac{\left|y_{0}\right|^{2}}{2}}{\left|y_{0}\right|\left|y_{0}\right|}=\varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f,g:A\to R$
+\end_inset
+
+, 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=l,\lim_{x\to a}g\left(x\right)=m$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to a}\left(f+g\right)\left(x\right)=l+m$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+מהנתון על הגבולות של 
+\begin_inset Formula $f$
+\end_inset
+
+ ו 
+\begin_inset Formula $g$
+\end_inset
+
+ אז נובע כי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta_{1}\Rightarrow\left|f\left(x\right)-l\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וגם קיים 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta_{2}\Rightarrow\left|g\left(x\right)-m\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\delta=\min\left(\delta_{1},\delta_{2}\right)$
+\end_inset
+
+ אזי מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+של הלמה נובע כי 
+\begin_inset Formula $\left|\underbrace{\left(f\left(x\right)-g\left(x\right)\right)}_{\left(f+g\right)\left(x\right)}-\left(l+m\right)\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{x\to a}\left(f\cdot g\right)\left(x\right)=l\cdot m$
+\end_inset
+
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+מהנתון על הגבולות של 
+\begin_inset Formula $f,g$
+\end_inset
+
+ נובע שלכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-1\right|<\delta_{1}$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\min\left(1,\frac{\varepsilon}{2\left(\left|m\right|+1\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וגם קיים 
+\begin_inset Formula $\delta_{2}>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta_{2}$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|g\left(x\right)-m\right|<\min\left(1,\frac{\epsilon}{2\left(\left|l\right|+1\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\delta=\min\left(\delta_{1},\delta_{2}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ גורר כי 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\min\left(1,\frac{\varepsilon}{2\left(\left|m\right|+1\right)}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|g\left(x\right)-m\right|<\min\left(1,\frac{\epsilon}{2\left(\left|l\right|+1\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מהלמה נובע כי 
+\begin_inset Formula $\left|\underbrace{f\left(x\right)\cdot g\left(x\right)}_{\left(f\cdot g\right)\left(x\right)}-l\cdot m\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $l\neq0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{x\to a}\left(\frac{1}{f}\right)\left(x\right)=\frac{1}{l}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+מהנתון על הגבול של 
+\begin_inset Formula $f$
+\end_inset
+
+ נובע כי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\min\left(\frac{\left|l\right|}{2},\frac{\left|l\right|^{2}}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מסעיף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+של הלמה נובע ש 
+\begin_inset Formula $\left|\frac{1}{f\left(x\right)}-\frac{1}{l}\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+אם קיים 
+\begin_inset Formula $\lim_{x\to a}\left(f+g\right)\left(x\right)$
+\end_inset
+
+ אז לא בהכרח יש ל 
+\begin_inset Formula $f$
+\end_inset
+
+ ו
+\begin_inset Formula $g$
+\end_inset
+
+ גבול ב 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ דוגמה לזה 
+\begin_inset Formula $f\left(x\right)=1+\frac{1}{x},g\left(x\right)=1-\frac{1}{x}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+, 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ נקודה פנימית.
+ נאמר כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ אם הגבול של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $a$
+\end_inset
+
+ קיים וכי 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=f\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}\setminus\left\{ 0\right\} \to\mathbb{R}$
+\end_inset
+
+ ו 
+\begin_inset Formula $f:x\mapsto x\cdot\sin\left(\frac{1}{x}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename infi/c9d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)=x\cdot\sin\left(\frac{1}{x}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{x\to0}f\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפונקציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:\mathbb{R} & \to & \mathbb{R}\\
+f\left(x\right) & = & \begin{cases}
+x=0 & 0\\
+x\neq0 & x\sin\left(x\right)\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רציפה לכל 
+\begin_inset Formula $x\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+הוכחנו 
+\begin_inset Formula $f:x\mapsto x^{2}$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\lim_{x\to3}f\left(x\right)=9$
+\end_inset
+
+ ומכיוון ש 
+\begin_inset Formula $f\left(3\right)=9$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:x\mapsto\frac{1}{x}$
+\end_inset
+
+ הוכחנו שלכל 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=\frac{1}{a}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בכל נקודה חוץ מאפס.
+\end_layout
+
+\begin_layout Section
+הערות
+\end_layout
+
+\begin_layout Standard
+נאמר שהגבול מימין של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא 
+\begin_inset Formula $l$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a<x<a+\delta$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\varepsilon$
+\end_inset
+
+ ומסמנים 
+\begin_inset Formula $\lim_{x'\to a^{+}}f\left(x\right)=f\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאמר ש 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה מימין בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ אם: 
+\begin_inset Formula $\lim_{x\to a^{+}}f\left(x\right)=f\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a\in A$
+\end_inset
+
+ נקודה פנימית.
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ ו 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפות ב 
+\begin_inset Formula $a$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f+g,f\cdot g$
+\end_inset
+
+ רציפות ב 
+\begin_inset Formula $a$
+\end_inset
+
+ אם בנוסף 
+\begin_inset Formula $g\left(a\right)\neq0$
+\end_inset
+
+ אז 
+\begin_inset Formula $\frac{1}{f\left(x\right)}$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=f\left(a\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lim_{x\to a}g\left(x\right)=g\left(a\right)$
+\end_inset
+
+ ממשפט האריתמטיקה של הגבולות 
+\begin_inset Formula $\lim_{x\to a}\left(f+g\right)\left(x\right)=f\left(a\right)+g\left(a\right)=\left(f+g\right)\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)=\frac{x^{3}+7x^{5}}{1+x^{2}}$
+\end_inset
+
+ אציפה בכל נקודה 
+\begin_inset Formula $a\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+האם 
+\begin_inset Formula $f\left(x\right)=\sin\left(x^{2}\right)$
+\end_inset
+
+ רציפה?
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:A\to B,g:B\to C$
+\end_inset
+
+ אם 
+\begin_inset Formula $a$
+\end_inset
+
+ נקודה פנימית של 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+ נקודה פנימית של 
+\begin_inset Formula $B$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $f\left(A\right)$
+\end_inset
+
+אז 
+\begin_inset Formula $g\circ f$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $a$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+מהרציפות של 
+\begin_inset Formula $g$
+\end_inset
+
+ נובע שלכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta_{1}>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|y-f\left(a\right)\right|<\delta_{1}$
+\end_inset
+
+ גוררת 
+\begin_inset Formula $\left|g\left(y\right)-g\left(f\left(a\right)\right)\right|<\varepsilon$
+\end_inset
+
+.
+ מהרציפות של 
+\begin_inset Formula $f$
+\end_inset
+
+ נובע שקיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|x-a\right|<\delta$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|f\left(x\right)-f\left(a\right)\right|<\delta_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $\left|g\left(f\left(x\right)\right)-g\left(f\left(a\right)\right)\right|<\varepsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\lim_{x\to a}\left(g\circ f\right)\left(x\right)=\left(g\circ f\right)\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.??
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נאמר כי הפונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביבת 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+ אם קיים קטע פתוח מוכלל)
+\begin_inset Formula $I=\left(a,b\right),a<b,a,b\in\mathbb{R}\cup\left\{ \pm\infty\right\} $
+\end_inset
+
+ּ( כך ש 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת ב 
+\begin_inset Formula $I\setminus\left\{ x_{0}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נאמר שהגבול של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $y\in\mathbb{R}$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in I\setminus\left\{ x_{0}\right\} $
+\end_inset
+
+ המקיים 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(x\right)-y\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $x_{0}\in\mathbb{R}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בקטע 
+\begin_inset Formula $\left(x_{0},b\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $b>x_{0}$
+\end_inset
+
+.
+ נאמר שהגבול של 
+\begin_inset Formula $f$
+\end_inset
+
+ מימין ב
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $y$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כף שאם 
+\begin_inset Formula $\left|x-x_{0}\right|<\delta$
+\end_inset
+
+ וגם 
+\begin_inset Formula $x\in\left(x_{0},b\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(x\right)-y\right|<\varepsilon$
+\end_inset
+
+ ונסמן את זה ב 
+\begin_inset Formula $\lim_{x\to x_{0}^{+}}f\left(x\right)=y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Standard
+אתר הבית של המרצה:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+www.math.huji.ac.il/~razk
+\end_layout
+
+\begin_layout Section
+רציפות
+\end_layout
+
+\begin_layout Standard
+הגדרנו רציפות בנקודה וראינו כי הפונרציה 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+x & x\in\mathbb{Q}\\
+0 & x\not\in\mathbb{Q}\end{cases}$
+\end_inset
+
+ רציפה באפס ורק שם.
+\end_layout
+
+\begin_layout Paragraph
+נשפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $0<f\left(a\right)$
+\end_inset
+
+ אז קיימת סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+ שבה 
+\begin_inset Formula $0<f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה מימין ב 
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $0<f\left(a\right)$
+\end_inset
+
+ אז קיימת בסביבה 
+\begin_inset Formula $\left[a,a+\delta\right)$
+\end_inset
+
+ שבה 
+\begin_inset Formula $f$
+\end_inset
+
+ חיובית.
+\end_layout
+
+\begin_layout Subsection
+משפט ערך הביניים
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה על קטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ומתקיים 
+\begin_inset Formula $f\left(a\right)<0,f\left(b\right)>0$
+\end_inset
+
+ אז קיימת נקודה 
+\begin_inset Formula $a<c<b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+המשפט תקף גם אם 
+\begin_inset Formula $f\left(a\right)>0$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(b\right)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה על 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(a\right)<\alpha<f\left(b\right)$
+\end_inset
+
+ אזי קיימת נקודה 
+\begin_inset Formula $a<c<b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c\right)=\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נפעיל את משפט ערך הביניים עבור 
+\begin_inset Formula $f-\alpha$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אז עכשיו נוכיח המשפט שהצגנו בתחילת השיעור: אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ ו 
+\begin_inset Formula $0<f\left(a\right)$
+\end_inset
+
+ אז קיימת סביבה של 
+\begin_inset Formula $a$
+\end_inset
+
+ שבה 
+\begin_inset Formula $0<f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נגדיר קבוצה: 
+\begin_inset Formula $A=\left\{ x\in\left[a,b\right]:f\left(y\right)<0,\forall y\in\left[a,x\right]\right\} $
+\end_inset
+
+ )כל הנקודות ש 
+\begin_inset Formula $f$
+\end_inset
+
+ מקבלת ערכים שליליים עבור נקודות משמאלה( הקבוצה 
+\begin_inset Formula $a$
+\end_inset
+
+ היא לא ריקה)היא מכילה 
+\begin_inset Formula $a$
+\end_inset
+
+( מהמשפט הקודם נובע שקיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a+\delta\in A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $b\not\in A$
+\end_inset
+
+ מהמשפט הקודם נובע שקיימת 
+\begin_inset Formula $0<\delta_{2}$
+\end_inset
+
+ כף ש 
+\begin_inset Formula $b-\delta_{2}\not\in A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בפרט 
+\begin_inset Formula $A$
+\end_inset
+
+ קבוצה לא ריקה וחסומה מלעל.
+ מאכסיומת השלמות נובע שיש לה חסם עליון בקטע 
+\begin_inset Formula $\left(a,b\right)$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\sup A=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+נוכיח כי 
+\begin_inset Formula $f\left(c\right)=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נשתמש בטריכוטומיה ונפסול את האפשרות 
+\begin_inset Formula $f\left(c\right)<0$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(c\right)>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח תחלה ש 
+\begin_inset Formula $f\left(c\right)>0$
+\end_inset
+
+ )ולכן אינו שייך ל
+\begin_inset Formula $A$
+\end_inset
+
+( מהמשפט הקודם נובע שקיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<f\left(c-\delta\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $c-\delta$
+\end_inset
+
+ לסם מלעל של 
+\begin_inset Formula $A$
+\end_inset
+
+ בסתירה לזה כי 
+\begin_inset Formula $c=\sup A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסקנה: 
+\begin_inset Formula $0\geq f\left(c\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח עתה ש 
+\begin_inset Formula $0>f\left(c\right)$
+\end_inset
+
+ מכיוון ש 
+\begin_inset Formula $c$
+\end_inset
+
+ חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+ נובע שכל 
+\begin_inset Formula $x<c$
+\end_inset
+
+ מוכל ב 
+\begin_inset Formula $A$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\forall x\leq c:f\left(x\right)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהמשפט הקודם קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כף ש 
+\begin_inset Formula $c-\delta\leq x\leq c+\delta$
+\end_inset
+
+ 
+\begin_inset Formula $f\left(x\right)<0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\forall x\leq c+\delta:c+\delta\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $c+\delta\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $c$
+\end_inset
+
+ אינו חסם עליון.
+\end_layout
+
+\begin_layout Paragraph
+למה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ ו 
+\begin_inset Formula $a$
+\end_inset
+
+ נקודה פנימית של 
+\begin_inset Formula $A$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $a$
+\end_inset
+
+ אז קיימת סדרה של 
+\begin_inset Formula $a$
+\end_inset
+
+ שהב 
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה מלעל.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+מהרציפות של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $a$
+\end_inset
+
+ נובע קיום סביבה 
+\begin_inset Formula $\left(a-\delta,a+\delta\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(a\right)-1<f\left(x\right)<f\left(a\right)+1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $a-\delta<x<a+\delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ אם 
+\begin_inset Formula $f$
+\end_inset
+
+ קציפה על 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ לסומה מלעל על קטע זה
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נגדיר קבוצה 
+\begin_inset Formula $A=\left\{ a\leq x\leq b:f\mbox{ \R{חסומה\,על\,הקטע} }\left[a,x\right]\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ מכילה את 
+\begin_inset Formula $a$
+\end_inset
+
+ ולכן לא ריקה.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ לסומה על ידי 
+\begin_inset Formula $b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מאקסיומת השלמות נובע כי ל
+\begin_inset Formula $A$
+\end_inset
+
+ יש חסם עליון.
+ מסמן 
+\begin_inset Formula $c=\sup A$
+\end_inset
+
+ נוכיח כי 
+\begin_inset Formula $b=c$
+\end_inset
+
+ ידוע כי לכל נקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ קטנה מ 
+\begin_inset Formula $c$
+\end_inset
+
+ מתקיימת 
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה על 
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה ש 
+\begin_inset Formula $c\in A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיימת 
+\begin_inset Formula $0<\delta$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f$
+\end_inset
+
+ חסומה על 
+\begin_inset Formula $\left[c-\delta,c\right]$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+פונקציה רציפה על קטע סגור מקבלת בו מקסמום)ומנימום(
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.??
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+עיקרון המקסיום: אם 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה על קטע סגור 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אז קיימת 
+\begin_inset Formula $a\leq c\leq b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall x\in\left[a,b\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)\geq f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נתבונן ב 
+\begin_inset Formula $\mbox{Image}\left(f\right)=\left\{ f\left(x\right):a\leq x\leq b\right\} $
+\end_inset
+
+ המשפט הקודם קוהע שזו קבוצה חסומה מלעיל זו גם קבוצה לא ריקה שכן היא מכילה
+ 
+\begin_inset Formula $f\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן ל
+\begin_inset Formula $\mbox{Image}\left(f\right)$
+\end_inset
+
+ יש חסם עליון נסמן 
+\begin_inset Formula $\sup\mbox{Image}\left(f\right)=\alpha$
+\end_inset
+
+ צ"ל כי קיימת נקודה 
+\begin_inset Formula $a\leq c\leq b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c\right)=\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה ש 
+\begin_inset Formula $f\left(x\right)<\alpha$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר פונקציה 
+\begin_inset Formula $g:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ 
+\begin_inset Formula $g\left(x\right)=\frac{1}{\alpha-f\left(x\right)}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $g$
+\end_inset
+
+ מוגדרת היטב מפני שהמכנה לא מתאפס)על פי הנחת המשפט על אריכמטיקה של רציפות
+ נובע ש 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה על קטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula $\alpha=\sup\mbox{Image}\left(f\right)$
+\end_inset
+
+ הרי שלכל 
+\begin_inset Formula $M>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $a\leq x\leq b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\alpha-\frac{1}{M}<f\left(x\right)\leq\alpha$
+\end_inset
+
+ עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ הנ"ל 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+g\left(x\right)=\frac{1}{\alpha-f\left(x\right)}>\frac{1}{\alpha-\left(\alpha-\frac{1}{M}\right)}=M\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן התמונה אינה חסומה מלעיל בסתירה למשפט הקודם.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ אי זוגי
+\end_layout
+
+\begin_layout Standard
+נתבונן בפונקציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=x^{n}+a_{n-1}x^{n-1}+\dots+a_{1}x+a_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $a_{0},a_{1},\dots a_{n-1}$
+\end_inset
+
+ מספרים ממשיים
+\end_layout
+
+\begin_layout Standard
+אזי קיימת נקודה 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c\right)=0$
+\end_inset
+
+ )לכל פולינום ממעלה אי זוגית קיים לפחות שורש אחד(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Subparagraph
+הרעיון:
+\end_layout
+
+\begin_layout Standard
+להוכיח ש קיים 
+\begin_inset Formula $0<M$
+\end_inset
+
+ כף ש 
+\begin_inset Formula $x>M\Rightarrow f\left(x\right)>0$
+\end_inset
+
+ ו 
+\begin_inset Formula $x<-M\Rightarrow f\left(x\right)<0$
+\end_inset
+
+ ומכיוון ש 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה על קטע 
+\begin_inset Formula $-M,M$
+\end_inset
+
+ נובע שקיים 
+\begin_inset Formula $c\in\left[-M,M\right]$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(c\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=x^{n}\left[1+\frac{a_{n-1}}{x}+\dots+\frac{a_{1}}{x^{n-1}}+\frac{a_{0}}{x^{n}}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $0<x$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)\geq x^{n}\left[1-\frac{\left|a_{n-1}\right|}{x}-\dots-\frac{\left|a_{1}\right|}{x^{n-1}}-\frac{\left|a_{0}\right|}{x^{n}}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נדרוש 
+\begin_inset Formula $x>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)\geq x^{n}\left[1-\frac{\left|a_{n-1}\right|}{x}-\dots-\frac{\left|a_{1}\right|}{x}-\frac{\left|a_{0}\right|}{x}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם נדרוש 
+\begin_inset Formula $x>\frac{1}{2n\left|a_{k}\right|}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ אזי 
+\begin_inset Formula \[
+f\left(x\right)\geq x^{n}\left\{ 1-\frac{1}{2n}-\frac{1}{2n}\dots\frac{1}{2n}\right\} \geq\frac{1}{2}x^{n}>0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $M=\max\left(1,2n\left|a_{0}\right|,2n\left|a_{n-1}\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x<-M$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x^{n}\left[1+\frac{a_{n-1}}{x}+\dots+\frac{a_{0}}{x^{n}}\right]\\
+ & \leq & x^{n}\left[1-\frac{\left|a_{n-1}\right|}{\left|x\right|}-\dots-\frac{\left|a_{0}\right|}{\left|x\right|}\right]\\
+ & \leq & x^{n}\left[1-\frac{\left|a_{n-1}\right|}{\left|x\right|}-\dots-\frac{\left|a_{0}\right|}{\left|x\right|}\right]\\
+ & \leq & x^{n}\frac{1}{2}<0\end{eqnarray*}
+
 \end_inset
 
 

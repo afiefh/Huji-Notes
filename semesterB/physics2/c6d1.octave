@@ -8,5 +8,5 @@ y=r.*sin(t);
 dx=-sin(t);
 dy=cos(t);
 quiver(x,y,dx,dy);
-pause;
 print -dsvg c6d1.svg
+pause;

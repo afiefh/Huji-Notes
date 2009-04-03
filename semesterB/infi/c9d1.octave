@@ -1,0 +1,7 @@
+#!/usr/bin/env octave
+
+
+x=-1:0.001:1;
+plot(x,x.*sin(1./x));
+print -dsvg c9d1.svg;
+pause
