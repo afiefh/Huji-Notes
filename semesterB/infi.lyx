@@ -7308,10 +7308,10 @@ x\neq0 & x\sin\left(x\right)\end{cases}\end{eqnarray*}
 \end_inset
 
  אם קיים קטע פתוח מוכלל)
-\begin_inset Formula $I=\left(a,b\right),a<b,a,b\in\mathbb{R}\cup\left\{ \pm\infty\right\} $
+\begin_inset Formula $I=\left(a,b\right),a<b,\left(a,b\right)\in\left(\mathbb{R}\cup\left\{ \pm\infty\right\} \right)$
 \end_inset
 
-ּ( כך ש 
+(  כך ש 
 \begin_inset Formula $f$
 \end_inset
 

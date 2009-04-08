@@ -6,23 +6,23 @@ add:
 	git add physics.lyx discreetMath.lyx Algebra.lyx appliedMath.lyx physicsWorkshop.lyx
 	git add algebra appliedmath discreetmath physics physicsWorkshop
 
-lectures: Algebra.pdf appliedMath.pdf discreetMath.pdf physics.pdf physicsWorkshop.pdf
-	tar cvf lectures.tar Algebra.pdf appliedMath.pdf discreetMath.pdf physics.pdf physicsWorkshop.pdf
+lectures: appliedMath2.pdf datastructures.pdf physics2.pdf infi.pdf physicsworkshop.pdf
+	tar cvf lectures.tar appliedMath2.pdf datastructures.pdf physics2.pdf infi.pdf physicsworkshop.pdf
 	rm -f lectures.tar.lzma
-	lzma -9 lectures.tar
+	#lzma -9 lectures.tar
 
-Algebra.pdf: Algebra.lyx
-	rm -rf Algebra.pdf
-	lyx -e pdf2 Algebra.lyx
-appliedMath.pdf: appliedMath.lyx
-	rm -rf appliedMath.pdf
-	lyx -e pdf2 appliedMath.lyx
-discreetMath.pdf: discreetMath.lyx
-	rm -rf discreetMath.pdf
-	lyx -e pdf2 discreetMath.lyx
-physics.pdf: physics.lyx
-	rm -rf physics.pdf
-	lyx -e pdf2 physics.lyx
-physicsWorkshop.pdf: physicsWorkshop.lyx
-	rm -rf physicsWorkshop.pdf
-	lyx -e pdf2 physicsWorkshop.lyx
+appliedMath2.pdf: appliedMath2.lyx
+	rm -rf appliedMath2.pdf
+	lyx -e pdf2 appliedMath2.lyx
+datastructures.pdf: datastructures.lyx
+	rm -rf datastructures.pdf
+	lyx -e pdf2 datastructures.lyx
+physics2.pdf: physics2.lyx
+	rm -rf physics2.pdf
+	lyx -e pdf2 physics2.lyx
+infi.pdf: infi.lyx
+	rm -rf infi.pdf
+	lyx -e pdf2 infi.lyx
+physicsworkshop.pdf: physicsworkshop.lyx
+	rm -rf physicsworkshop.pdf
+	lyx -e pdf2 physicsworkshop.lyx
