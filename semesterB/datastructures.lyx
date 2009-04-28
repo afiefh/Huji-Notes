@@ -1557,7 +1557,7 @@ Quicksort
 \noun default
 \color inherit
 הוא 
-\begin_inset Formula $O\left(n^{2}\right)$
+\begin_inset Formula $\mathcal{O}\left(n^{2}\right)$
 \end_inset
 
 
@@ -1806,6 +1806,1681 @@ U_{c}\left(n+1\right) & \leq & \left(n+2\right)2c\sum_{j=1}^{n+2}\frac{1}{j}+\le
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+השיעורים הקודמים היו סתם הכנה למתמטיקה.
+ היום נכנס למבנה הנתונים.
+\end_layout
+
+\begin_layout Standard
+סוג נתונים אבסטרקטי
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Abstract Data Type}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ הוא אוסף נתונים + פעולות.
+ דוגמעות
+\end_layout
+
+\begin_layout Itemize
+מחסנית:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+push, pop LIFO
+\end_layout
+
+\begin_layout Itemize
+תור:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+enqueue, dequeue FIFO
+\end_layout
+
+\begin_layout Section
+תור קדימיות
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Priority Queue}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיימים שתי סוגים של תור זה:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Min Priority Queue}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Max Priority Queue}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פעולות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $max\left(S\right)$
+\end_inset
+
+ מחזירה רשומה עם ערך קדימות הכי גבוה.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $extract-max\left(S\right)$
+\end_inset
+
+ אותו דבר אבל עם הוצאת הרשומה מהתור.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $insert\left(S,x\right)$
+\end_inset
+
+ מכניסה לתור רשומה עם קדימות 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $increase\_key\left(S,i,key\right)$
+\end_inset
+
+ מעלה את קדימות של האיבר ה
+\begin_inset Formula $i$
+\end_inset
+
+ בתור ל
+\begin_inset Formula $key$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מימוש בעזרת ערימה
+\end_layout
+
+\begin_layout Standard
+ערימה זו עץ קמעט שלם שמקיים תכונת הערימה כלומר: 
+\begin_inset Formula $\forall i:A\left[parent\left(i\right)\right]\geq A\left(i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c6d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עץ קמעט שלם עם הצגתו במערך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במערך של העץ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+left\left(i\right) & = & 2i\\
+right\left(i\right) & = & 2i+4\\
+parent\left(i\right) & = & \left\lfloor \frac{i}{2}\right\rfloor \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לממש את הפעולות של ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ADT
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+של תור הקדימות כך שמבנה הערימה ישמר.
+\end_layout
+
+\begin_layout Standard
+אז נממש את הפעולות שהגדרנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+max
+\begin_inset Formula $\left(S\right)$
+\end_inset
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return A
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+extract-max
+\begin_inset Formula $\left(S\right)$
+\end_inset
+
+{
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+max=S
+\begin_inset Formula $\left(1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+swap
+\begin_inset Formula $\left(min\left(S\right),S\left(1\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+heapsize--;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+max_heapify(A,1);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+min
+\begin_inset Formula $\left(S\right)$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return 
+\begin_inset Formula $S\left[heapsize\left(S\right)\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+max_heapify(A,i) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+l=left
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+r=right
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if
+\begin_inset Formula $\left(l\leq heapsize\left[A\right]\right)$
+\end_inset
+
+ then {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if
+\begin_inset Formula $\left(r>heapsize\left[A\right]\right)$
+\end_inset
+
+ then r=reapsize
+\begin_inset Formula $\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if
+\begin_inset Formula $\left(A\left(l\right)>A\left(i\right)\right)$
+\end_inset
+
+ largest=l, else largest=i
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if
+\begin_inset Formula $\left(A\left(r\right)>A\left(largest\right)\right)$
+\end_inset
+
+ largest=r
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if
+\begin_inset Formula $\left(largest\neq i\right)$
+\end_inset
+
+ then swap 
+\begin_inset Formula $\left(A\left[largest\right],A\left[i\right]\right)$
+\end_inset
+
+, max_heapify(A,largest)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פעולת 
+\begin_inset Formula $extract\_max\left(S\right)$
+\end_inset
+
+ בערימת קדימות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסיבוכיות של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+maxheapify
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא 
+\begin_inset Formula $\mathcal{O}\left(D\right)=\mathcal{O}\left(\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+increase_key
+\begin_inset Formula $\left(A,i,key\right)$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if
+\begin_inset Formula $\left(key<A\left[i\right]\right)$
+\end_inset
+
+ error 
+\begin_inset Quotes eld
+\end_inset
+
+new key smaller than old
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+A
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+=key
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+while i>1 and A
+\begin_inset Formula $\left[parent\left(i\right)\right]<A\left[i\right]$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+swap
+\begin_inset Formula $\left(A\left[i\right],A\left[parent\left(i\right)\right]\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+i=parent
+\begin_inset Formula $\left(i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פעולת 
+\begin_inset Formula $increase\_key\left(A,i,key\right)$
+\end_inset
+
+ בערימת קדימות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוכיות של פעולה זו היא גם 
+\begin_inset Formula $\mathcal{O}\left(\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+heapsize
+\begin_inset Formula $\left(a\right)$
+\end_inset
+
+++
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+A
+\begin_inset Formula $\left(heapsize\left(A\right)\right)=-\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+increase_key
+\begin_inset Formula $\left[A,heapsize\left(A\right),key\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פעולת 
+\begin_inset Formula $\mbox{insert}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+איך מייצרים ערימה?
+\end_layout
+
+\begin_layout Standard
+יש כל מיני פתרונות שעובדות ב 
+\begin_inset Formula $\mathcal{O}\left(n\log n\right)$
+\end_inset
+
+ אבל יש גם דרך לעשות את זה ב
+\begin_inset Formula $\mathcal{O}\left(n\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+build_heap
+\begin_inset Formula $\left(A\right)$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+heapsize
+\begin_inset Formula $\left[A\right]$
+\end_inset
+
+=length
+\begin_inset Formula $\left[A\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for(i=n to 1) max_heapify(A,i)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+בנית ערימה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נראה כמו 
+\begin_inset Formula $\mathcal{O}\left(n\log n\right)$
+\end_inset
+
+ אבל באמת זה יוצא 
+\begin_inset Formula $\mathcal{O}\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האלגוריתם הזה עובד כי:
+\end_layout
+
+\begin_layout Enumerate
+כל שורש בקודקוד בערימת מקסימום זה שורש של ערימת מקסימום.
+\end_layout
+
+\begin_layout Enumerate
+כל קודקוד בעץ כמעט שלם הוא שורש של עץ קמעט שלם
+\end_layout
+
+\begin_layout Enumerate
+אם מפעילים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max_heapify
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+על קודקוד 
+\begin_inset Formula $i$
+\end_inset
+
+ ששני בניו שורשי ערימות מקסימום אזי 
+\begin_inset Formula $i$
+\end_inset
+
+ יהיה שורש של ערימת מקסימום
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+ערמה זה עץ כמעט שלם
+\end_layout
+
+\begin_layout Standard
+כל קודקוד גדול אושווה לבניו.
+\end_layout
+
+\begin_layout Standard
+נרצה לכתוב את האלגוריתם לבנות ערמה חדשה ממערך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+buildHeap
+\begin_inset Formula $\left(A\right)$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+n=length
+\begin_inset Formula $\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for i=n to 1 do{
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+max_heapify
+\begin_inset Formula $\left(A,i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+בנית ערימה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+BuildHeap
+\begin_inset Formula $\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה עכשיו לראות למה זה עובד ומה הזמן ריצה של זה.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+זאת הבעיה הראשונה שאנחנו נוכיח כי היא עובדת.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדרך להוכיח את זה הוא דרך אינדוקציה.
+\end_layout
+
+\begin_layout Standard
+אינטואיציה: האלגוריתם כל פעם מתקן הערימה הקטנה שיש לו ומתחיל מהסוף עד להתחלה.
+ אז כל פעם שאנחנו מפעילים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max_heapify
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+יש לנו כבר שתי תתי ערימות תקינות שמחוברים לקודקוד שאנחנו מפעילים אותה עליו(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה פורמלית:
+\end_layout
+
+\begin_layout Standard
+נשתמש במשהוא שנקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Loop Invariant
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שיש לו שלוש תכונות:
+\end_layout
+
+\begin_layout Enumerate
+קודקוד בעץ כמעט שלם הוא שורש של עץ כמעט שלם.
+\end_layout
+
+\begin_layout Enumerate
+קודקוד בערימת מקסימום הוא שורש של ערימת מקסימום.
+\end_layout
+
+\begin_layout Enumerate
+אם מריצים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max_heapify
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+על קודקוד שבניו הם ערימת מקסימום אז מתקבלת ערימת מקסימום.
+\end_layout
+
+\begin_layout Standard
+בשלו ה
+\lang english
+i
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ הקודקודים 
+\begin_inset Formula $n,n-1\dots n-i+1$
+\end_inset
+
+ הם שורשים של ערימת מקסימום
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Subparagraph
+בסיס אינדוקציה:
+\end_layout
+
+\begin_layout Standard
+עבור בסיס 
+\begin_inset Formula $k=1$
+\end_inset
+
+ זה טריוויאלי כי כל עלה הוא כבר ערימת מקסימום.
+\end_layout
+
+\begin_layout Subparagraph
+הנחת האינדוקציה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n,n-1\dots n-k+1$
+\end_inset
+
+ הם שורשים לערימת מקסימום.
+\end_layout
+
+\begin_layout Subparagraph
+היכחה עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+לפי הנחת האנדוקציה 
+\begin_inset Formula $left\left(n-k\right),right\left(n-k\right)$
+\end_inset
+
+)כי האינקסים האילו יותר גדולים מ
+\begin_inset Formula $n-k$
+\end_inset
+
+( הם ערימות מקסימום.
+ לכן מותר לבצע
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max_heapify
+\lang hebrew
+.
+ לכן אחרי הפעלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max_heapify
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+על 
+\begin_inset Formula $n-k$
+\end_inset
+
+ הוא נהפך שורש של ערימת מקסימום.
+ ולפי ההנחה כל תת-עץ הוא גם ערימת מקסימום.
+ זה מה שרוצים להוכיח.
+\end_layout
+
+\begin_layout Section
+זמן ריצה של
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Max_Heapify
+\end_layout
+
+\begin_layout Standard
+יודעים כבר כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max_heapify
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא רץ בסיבוכיות זמן 
+\begin_inset Formula $\mathcal{O}\left(\log n\right)$
+\end_inset
+
+.
+ אבל זה זמן ריצה מקסימאלי)
+\begin_inset Formula $\mathcal{O}\left(\log n\right)$
+\end_inset
+
+ ולא 
+\begin_inset Formula $\Theta\left(\log n\right)$
+\end_inset
+
+( אז נרשום ביטוי יותר מדויק: מסמנים עימק העץ ב 
+\begin_inset Formula $D$
+\end_inset
+
+ אז ברמה הראשונה)השורש( יש 
+\begin_inset Formula $D$
+\end_inset
+
+ פעולות.
+ ברמה השניה יש לכל קודקוד 
+\begin_inset Formula $D-1$
+\end_inset
+
+ פעולות אזי 
+\begin_inset Formula $2^{1}\left(D-1\right)$
+\end_inset
+
+.
+ הביטוי הכללי עבור כל רמה 
+\begin_inset Formula $d$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\left(D-d\right)2^{d}=h2^{D-h}$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{n=1}^{D}h\cdot2^{D-h}=2^{D}\sum_{h=1}^{d}h2^{-h}=2^{D}\sum_{h=1}^{d}h\left(\frac{1}{2}\right)^{-h}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי אם 
+\begin_inset Formula $x\in\left(0,1\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{h\to\infty}\sqrt{x}^{h}=0$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $k^{\prime}$
+\end_inset
+
+ כך שבו מתקיים 
+\begin_inset Formula $\sqrt{x}^{k^{\prime}}=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=1}^{\infty}kx^{k} & = & \sum_{k=1}^{k^{\prime}}kx^{k}+\sum_{k=k^{\prime}+1}^{\infty}kx^{k}\\
+ & = & C+\sum_{k=k^{\prime}+1}^{\infty}\underbrace{k\sqrt{x}^{k}}_{<1}\sqrt{x}^{k}\\
+ & \leq & C+\sum_{k=k^{\prime}+1}^{\infty}1\cdot\sqrt{x}^{k}\\
+ & \leq & C+\frac{1}{1-\sqrt{x}}+c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שהביטוי הזה תלוי רק ב 
+\begin_inset Formula $x$
+\end_inset
+
+ שזה במקרה שלנו 
+\begin_inset Formula $\left(\frac{1}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עץ חיפוש בינארי
+\end_layout
+
+\begin_layout Standard
+עץ בינארי בו עבור כל קודקוד 
+\begin_inset Formula $x$
+\end_inset
+
+ מתקיים
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $y$
+\end_inset
+
+ בתת עץ שמאלי של 
+\begin_inset Formula $key\left(y\right)\leq key\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור 
+\begin_inset Formula $y$
+\end_inset
+
+ בתת עץ ימיני של 
+\begin_inset Formula $key\left(y\right)>key\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים שעץ הזה יתמוך בפעולות הבאות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Insert(T,x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Remove(T,x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Search(T,x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{min(T)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{max(T,x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Successor(T,x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\mbox{Pre....(T,x)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז הקל ביותר זה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Max,Min
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ ומחזירים האיבר הימיני ביותר או השמאלי ביותר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+search(n,x) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(key(n)==x || n==null) return n
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(key(n)<x) return search(right(n),x);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+else return search(left(n),x);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Search(node,value)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+successor
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Itemize
+אם ל 
+\begin_inset Formula $x$
+\end_inset
+
+ יש בן ימני 
+\begin_inset Formula $y$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\mbox{min(T,y)}$
+\end_inset
+
+ עוקב של 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+אין בן ימיני אזי נעלה בעץ עד שנמצא עץ ש
+\begin_inset Formula $x$
+\end_inset
+
+ הוא בן ימיני שלו.
+\end_layout
+
+\begin_layout Itemize
+אם 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא ה
+\begin_inset Formula $\mbox{maximum}$
+\end_inset
+
+ 
 \end_layout
 
 \end_body

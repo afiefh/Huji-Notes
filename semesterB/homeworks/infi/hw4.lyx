@@ -1,0 +1,1125 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+עפיף חלומה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם התלמיד
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+302323001
+\numeric off
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מס' ת"ז
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מר מתן פרזמה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם המתרגל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קבוצת תרגול
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שעה 
+\begin_inset Formula $10:00-11:45$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יום ג'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלת מידע אישי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+צפיפות
+\end_layout
+
+\begin_layout Subsection
+
+\numeric on
+1
+\end_layout
+
+\begin_layout Subsubsection
+א
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $a\neq0$
+\end_inset
+
+ או 
+\begin_inset Formula $b\neq0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a+b\sqrt{2} & = & 0\\
+a & = & -b\sqrt{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח כרגע כי כפל של אי רציונאלי עם רציונאלי הוא אי אי רציונאלי
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\nicefrac{p}{q}\neq0$
+\end_inset
+
+ רציונאלי ו 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא אי רציונאלי.
+ נניח ש 
+\begin_inset Formula $x\cdot\nicefrac{p}{q}\in\mathbb{Q}$
+\end_inset
+
+ אזי קיים מספר 
+\begin_inset Formula $\nicefrac{m}{n}\in\mathbb{Q}$
+\end_inset
+
+ כך ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $x\cdot\nicefrac{p}{q}=\nicefrac{m}{n}$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $x=\frac{mq}{np}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x$
+\end_inset
+
+ רציונאלי בסתירה להנחה.
+\end_layout
+
+\begin_layout Standard
+כפל של רציונאלי באי רציונאלי זה אי רציונאלי, בסתירה לזה ש 
+\begin_inset Formula $a,b\in\mathbb{Q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ב
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $a\neq c$
+\end_inset
+
+ ו 
+\begin_inset Formula $d\neq b$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a+b\sqrt{2} & = & c+d\sqrt{2}\\
+a-c & = & d\sqrt{2}-b\sqrt{2}\\
+\underbrace{\left(a-c\right)}_{\in\mathbb{Q}} & = & \underbrace{\underbrace{\left(d-b\right)}_{\in\mathbb{Q}}\sqrt{2}}_{\in\mathbb{R}\setminus\mathbb{Q}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המספרים שייכים לקבוצות זרות אזי לא יכולים להיות שווים.
+ בסתירה לנתון
+\end_layout
+
+\begin_layout Subsubsection
+ג
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\nicefrac{m}{n}\in\mathbb{Q}$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\in\mathbb{R}\setminus\mathbb{Q}$
+\end_inset
+
+.
+ נניח בשלילה כי 
+\begin_inset Formula $x+\nicefrac{m}{n}\in\mathbb{Q}$
+\end_inset
+
+.
+ אזי קיים מספר 
+\begin_inset Formula $\nicefrac{p}{q}\in\mathbb{Q}$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $x+\nicefrac{m}{n}=\nicefrac{p}{q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x+\nicefrac{m}{n} & = & \nicefrac{p}{q}\\
+x & = & \frac{p}{q}-\frac{m}{n}\\
+ & = & \underbrace{\frac{pn-mq}{qn}}_{\in\mathbb{Q}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסתירה לנתון.
+\end_layout
+
+\begin_layout Subsubsection
+ד
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח כי לכל 
+\begin_inset Formula $a,b\in\mathbb{R}\setminus\mathbb{Q},a<b,\left(a,b\right)\subseteq\mathbb{R}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $r\in\mathbb{R}\setminus\mathbb{Q}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $r\in\left(a,b\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\left(b+a\right)}{2}\in\left(a,b\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומספר זה הוא חיבור של מספרים אי רציונאליים אזי גם הוא אי רציונאלי.
+\end_layout
+
+\begin_layout Subsubsection
+ה
+\end_layout
+
+\begin_layout Standard
+נוכיח את האקסיומות של השדה עבור קבוצה 
+\begin_inset Formula $\mathbb{F}$
+\end_inset
+
+ שהוגדרה
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b\in\mathbb{F}$
+\end_inset
+
+ מתקיים: 
+\begin_inset Formula $a+b\in\mathbb{F},a\cdot b\in\mathbb{F}$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a=m+n\sqrt{2},b=x+z\sqrt{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a+b=\left(m+x\right)+\left(n+z\right)\sqrt{2}\in\mathbb{F}$
+\end_inset
+
+ ו 
+\begin_inset Formula $a\cdot b=mx+2nz+\left(mz+nx\right)\sqrt{2}\in\mathbb{F}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b\in\mathbb{F}:a+b=b+a$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a+b=\left(m+x\right)+\left(n+z\right)\sqrt{2}=\left(x+m\right)+\left(z+n\right)\sqrt{2}=b+a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $a\cdot b=mx+2nz+\left(mz+nx\right)\sqrt{2}=xm+2zn+\left(zm+xn\right)\sqrt{2}=b\cdot a$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $\forall a,b,c\in\mathbb{F}:\left(a+b\right)+c=a+\left(b+c\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+\begin_inset Formula $a+b=\left(m+x\right)+\left(n+z\right)\sqrt{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(a+b\right)+c=\left(m+x\right)+\left(n+z\right)\sqrt{2}+p+q\sqrt{2}=\left(m+x+p\right)+\left(n+z+q\right)\sqrt{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $b+c=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+...............
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+
+\numeric on
+2
+\end_layout
+
+\begin_layout Section
+שלמות
+\end_layout
+
+\begin_layout Subsection
+
+\size larger
+\numeric on
+4
+\end_layout
+
+\begin_layout Subsubsection
+א
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $B$
+\end_inset
+
+ חסומה מלעיל אזי קיים 
+\begin_inset Formula $r\in\mathbb{R}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $r\geq x$
+\end_inset
+
+.
+ מכיוון ש 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אז זה נכון גם לגבי כל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה מלעל על ידי 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+ב
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\in B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $B$
+\end_inset
+
+ חסומה מלרע אזי קיים 
+\begin_inset Formula $r\in\mathbb{R}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $r\leq x$
+\end_inset
+
+.
+ מכיוון ש 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אז זה נכון גם לגבי כל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה מלרע על ידי 
+\begin_inset Formula $r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+ג
+\end_layout
+
+\begin_layout Standard
+אם כל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ הוא חסם מלעיל של 
+\begin_inset Formula $A$
+\end_inset
+
+ אזי לכל 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $b\geq\sup A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם כל 
+\begin_inset Formula $b\geq\sup A$
+\end_inset
+
+ אזי רואים כי לכל 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ ו 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $b\geq\sup A\geq a$
+\end_inset
+
+.
+ כלומר כל איבר ב 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא חסם מלרע ל
+\begin_inset Formula $B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ד
+\end_layout
+
+\begin_layout Standard
+דוגמה נגדית: נסמן 
+\begin_inset Formula $A=\left\{ \frac{1}{2},\frac{3}{2},\frac{5}{2}\dots\frac{2n+1}{2}\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\cap\mathbb{Z}=\emptyset$
+\end_inset
+
+ שזה חסום מלעיל, אבל הקבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ לא חסומה מלעיל.
+ 
+\end_layout
+
+\begin_layout Subsection
+
+\numeric on
+5
+\end_layout
+
+\begin_layout Enumerate
+שקול
+\end_layout
+
+\begin_layout Enumerate
+אף אחד מהקשרים)אפשר לקשר את זה חם חסם מלעיל ולא חסם עליון(
+\end_layout
+
+\begin_layout Enumerate
+סותר
+\end_layout
+
+\begin_layout Enumerate
+נובע
+\end_layout
+
+\begin_layout Enumerate
+נובע
+\end_layout
+
+\begin_layout Section
+גבולות של פונקציה
+\end_layout
+
+\begin_layout Subsection
+
+\numeric on
+6
+\end_layout
+
+\begin_layout Subsubsection
+א
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\left|x-2\right|\leq\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(x\right)-14\right|\leq\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\delta=\frac{\varepsilon}{7}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|x-2\right| & \leq & \frac{\varepsilon}{7}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)-14\right| & \overset{?}{\leq} & \varepsilon\\
+\left|7\cdot x-14\right| & \overset{?}{\leq} & \varepsilon\\
+7\cdot\left|x-2\right| & \overset{?}{\leq} & \varepsilon\\
+7\cdot\left(\frac{\varepsilon}{7}\right) & \overset{\checkmark}{\leq} & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ב
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $\left|x\right|\leq\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(x\right)-3\right|\leq\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=\sqrt{\varepsilon}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|x\right| & \leq & \sqrt{\varepsilon}\\
+\left|x\right|^{2} & \leq & \varepsilon\\
+\left|x^{2}\right| & \leq & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)-3\right| & \overset{?}{\leq} & \varepsilon\\
+\left|x^{2}+3-3\right| & \overset{?}{\leq} & \varepsilon\\
+\left|x^{2}\right| & \overset{\checkmark}{\leq} & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ג
+\end_layout
+
+\begin_layout Standard
+גבול לא קיים.
+\end_layout
+
+\begin_layout Subsubsection
+ד
+\end_layout
+
+\begin_layout Standard
+קיים גבול בכל נקודה חוץ מאפס.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x>0$
+\end_inset
+
+ אזי הגבול הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\delta=x_{0}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|x-x_{0}\right|<x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+0<x<2x_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה ש 
+\begin_inset Formula $x$
+\end_inset
+
+ בתחום זה 
+\begin_inset Formula $f\left(x\right)=1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)-1\right| & < & \varepsilon\\
+0 & \overset{\checkmark}{<} & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x<0$
+\end_inset
+
+ אזי הגבול הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+-1
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\delta=-x_{0}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|x-x_{0}\right|<-x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2x_{0}<x<0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה ש 
+\begin_inset Formula $x$
+\end_inset
+
+ בתחום זה 
+\begin_inset Formula $f\left(x\right)=-1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)+1\right| & < & \varepsilon\\
+0 & \overset{\checkmark}{<} & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ה
+\end_layout
+
+\begin_layout Standard
+הגבול בכל נקודה הוא 
+\begin_inset Formula $\left|x_{0}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\delta=\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|x-x_{0}\right|<\varepsilon\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)-\left|x_{0}\right|\right| & < & \varepsilon\\
+\left|\left|x\right|-\left|x_{0}\right|\right| & < & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי אי שוויון המשולש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\left|x\right|-\left|x_{0}\right|\right|<\left|x-x_{0}\right|<\varepsilon\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ו
+\end_layout
+
+\begin_layout Standard
+הגבול הוא אפס
+\end_layout
+
+\begin_layout Standard
+נבחר 
+\begin_inset Formula $\delta=\sqrt{\varepsilon}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|x\right|<\varepsilon\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(x\right)\right| & < & \varepsilon\\
+\sqrt{\left|x\right|} & < & \varepsilon\\
+\sqrt{\varepsilon} & < & \varepsilon\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מתקיים לכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ חיובי.
+ משל.
+\end_layout
+
+\end_body
+\end_document

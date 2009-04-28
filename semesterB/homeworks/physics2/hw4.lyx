@@ -1,0 +1,394 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}\left(x,y\right)=E_{0}xy\hat{x}+E_{1}\left(x^{2}+y^{2}\right)\hat{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+חישוב ישיר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\intop_{c}\vec{E}d\vec{l} & = & \intop_{c_{1}}\vec{E}d\vec{l}+\intop_{c_{2}}\vec{E}d\vec{l}+\intop_{c_{3}}\vec{E}d\vec{l}\\
+ & = & \int_{0}^{3}\vec{E}\left(ax,0\right)\cdot\left(a,0\right)dx+\int_{0}^{2}\vec{E}\left(3a,ay\right)\cdot\left(0,a\right)dy+\intop_{c_{3}}\vec{E}d\vec{l}\\
+ & = & \int_{0}^{3}\left(0,E_{1}a^{2}x^{2}\right)\cdot\left(a,0\right)dx+\int_{0}^{2}\left(3E_{0}a^{2}y,E_{1}\left(9a^{2}+a^{2}y\right)\right)\cdot\left(0,a\right)dy+\intop_{c_{3}}\vec{E}d\vec{l}\\
+ & = & \int_{0}^{3}0dx+\int_{0}^{2}E_{1}a\left(9a^{2}+a^{2}y\right)dy+\intop_{c_{3}}\vec{E}d\vec{l}\\
+ & = & E_{1}a\left(18a^{2}+2a^{2}\right)dy+\intop_{c_{3}}\vec{E}d\vec{l}\\
+ & = & 20E_{1}a^{3}+\int_{1}^{0}\vec{E}\left(3at,2at\right)\cdot\left(3a,2a\right)dt\\
+ & = & 20E_{1}a^{3}+\int_{1}^{0}\left(6E_{0}a^{2}t^{2},9E_{1}a^{2}t^{2}+4E_{1}a^{2}t^{2}\right)\cdot\left(3a,2a\right)dt\\
+ & = & 20E_{1}a^{3}+\int_{1}^{0}\left(18E_{0}a^{3}t^{2}+18E_{1}a^{3}t^{2}+8E_{1}a^{3}t^{2}\right)dt\\
+ & = & 20E_{1}a^{3}+\int_{1}^{0}\left(18E_{0}a^{3}t^{2}+26E_{1}a^{3}t^{2}\right)dt\\
+ & = & 20E_{1}a^{3}-\frac{18E_{0}a^{3}}{3}-\frac{26E_{1}a^{3}}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\intop_{\partial s}\vec{E}d\vec{l} & = & \iintop_{s}\vec{\nabla}\times\vec{E}d\vec{s}\\
+ & = & \int_{0}^{3}\int_{0}^{\frac{2}{3}x}\begin{vmatrix}\hat{x} & \hat{y} & \hat{z}\\
+\frac{\partial}{\partial x} & \frac{\partial}{\partial y} & \frac{\partial}{\partial z}\\
+E_{0}xy & E_{1}\left(x^{2}+y^{2}\right) & 0\end{vmatrix}\cdot\left(0,0,1\right)dydx\\
+ & = & \int_{0}^{3a}\int_{0}^{\frac{2}{3}x}\left(2E_{1}x-E_{0}x\right)dydx\\
+ & = & \frac{2}{3}\left(2E_{1}-E_{0}\right)\int_{0}^{3}x^{2}dx\\
+ & = & \frac{2}{3}\left(2E_{1}-E_{0}\right)\frac{3^{3}a^{3}}{3}\\
+ & = & 3\cdot4E_{1}-3\cdot2E_{0}\\
+ & = & 12E_{1}a^{3}-6E_{0}a^{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+כדי שיהיה שדה משמר צריכים 
+\begin_inset Formula $E_{1}=\frac{E_{0}}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+על כדור ראשון 
+\begin_inset Formula $\frac{kQ_{1}}{R_{1}}$
+\end_inset
+
+ על כדור שני 
+\begin_inset Formula $\frac{KQ_{2}}{R_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U=\frac{1}{2}\int\rho\varphi dv=\frac{1}{2}\rho\varphi\cdot\left(\frac{4}{3}\pi r^{3}\right)=\frac{1}{2}Q\cdot\frac{kQ}{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+U_{T}=\frac{kQ_{1}^{2}}{2R_{1}}+\frac{kQ_{2}^{2}}{2R_{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+המטענים יתפלגו כך שהפוטנציאל בשני הכדורים יהיה שווה כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{KQ_{2}}{R_{2}} & = & \frac{kQ_{1}}{R_{1}}\\
+\frac{Q_{2}}{Q_{1}} & = & \frac{R_{2}}{R_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Q_{1}=\frac{R_{1}}{R_{2}}Q_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Q_{1}+Q_{2}=Q_{T}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Q_{1} & = & \frac{R_{1}}{R_{2}}\left(Q_{T}-Q_{1}\right)\\
+Q_{1}+\frac{R_{1}}{R_{2}}Q_{1} & = & \frac{R_{1}}{R_{2}}Q_{T}\\
+Q_{1}\left(\frac{R_{2}+R_{1}}{R_{2}}\right) & = & \frac{R_{1}}{R_{2}}Q_{T}\\
+Q_{1} & = & \left(\frac{R_{2}}{R_{2}+R_{1}}\right)\frac{R_{1}}{R_{2}}Q_{T}\\
+ & = & \frac{R_{1}}{R_{2}+R_{1}}Q_{T}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה כי זה מינימאלי דרך נגזרת:
+\end_layout
+
+\begin_layout Standard
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula \begin{eqnarray*}
+U_{T} & = & \frac{kQ_{1}^{2}}{2R_{1}}+\frac{kQ_{2}^{2}}{2R_{2}}\\
+U_{T} & = & \frac{kQ_{1}^{2}}{2R_{1}}+\frac{k\left(Q_{T}-Q_{1}\right)^{2}}{2R_{2}}\\
+\frac{\partial U_{T}}{\partial Q_{1}} & = & \frac{kQ_{1}}{R_{1}}+\frac{-2kQ_{T}+2kQ_{1}}{2R_{2}}\\
+0 & = & \frac{Q_{1}}{R_{1}}+\frac{-Q_{T}+Q_{1}}{R_{2}}\\
+0 & = & \frac{Q_{1}}{R_{1}}-\frac{Q_{T}}{R_{2}}+\frac{Q_{1}}{R_{2}}\\
+Q_{1}\left(\frac{1}{R_{1}}+\frac{1}{R_{2}}\right) & = & \frac{Q_{T}}{R_{2}}\\
+Q_{1}\left(\frac{R_{2}+R_{1}}{R_{1}R_{2}}\right) & = & \frac{Q_{T}}{R_{2}}\\
+Q_{1} & = & \frac{Q_{T}\cdot R_{1}R_{2}}{R_{2}\left(R_{2}+R_{1}\right)}\\
+ & = & \frac{Q_{T}R_{1}}{R_{2}+R_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לגזור עוד פעם ולהוכיח כי זו נקודת מינימום, אבל זה קבר ברור כי לחלק
+ המטענים בין שתי כדורים עולה פחות אנרגיה מאשר לאסוף אותם בכדור אחד)כלומר
+ לפונקציה אין מקסימום לוקאלי(
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+המראה הכי סימטרית ותואמת את הבעיה היא משושה אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & \frac{kq}{\sqrt{\left(x-\cos30\right)^{2}+\left(y-\sin30\right)^{2}}}+\\
+ &  & \frac{-kq}{\sqrt{\left(x-\cos90\right)^{2}+\left(y-\sin90\right)^{2}}}+\\
+ &  & \frac{kq}{\sqrt{\left(x-\cos150\right)^{2}+\left(y-\sin150\right)^{2}}}+\\
+ &  & \frac{-kq}{\sqrt{\left(x-\cos210\right)^{2}+\left(y-\sin210\right)^{2}}}+\\
+ &  & \frac{kq}{\sqrt{\left(x-\cos270\right)^{2}+\left(y-\sin270\right)^{2}}}+\\
+ &  & \frac{-kq}{\sqrt{\left(x-\cos330\right)^{2}+\left(y-\sin330\right)^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\end_body
+\end_document

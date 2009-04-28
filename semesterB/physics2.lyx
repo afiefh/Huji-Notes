@@ -2631,5 +2631,1073 @@ status open
 
 \end_layout
 
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+קבלים
+\end_layout
+
+\begin_layout Subsection
+קבל קדורי
+\end_layout
+
+\begin_layout Standard
+קליפה כדורית טעונה במטען 
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{kQ}{R}=v\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על פני מוליך הפוטנציאל תלוי ליניארי ב
+\begin_inset Formula $Q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקיבול 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא 
+\begin_inset Formula $c=\frac{Q}{v}$
+\end_inset
+
+ אזי עבור כדור מוליך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C=\frac{Q}{v}=\frac{QR}{kQ}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היחידה של זה היא 
+\begin_inset Formula $\frac{\mbox{Colomb}}{\mbox{Volt}}=\mbox{Farad}$
+\end_inset
+
+ אבל כדי לקבל קבל של 
+\begin_inset Formula $1\mbox{Farad}$
+\end_inset
+
+ צריכים כדור ברדיוס 
+\begin_inset Formula $9\cdot10^{9}m$
+\end_inset
+
+.
+ לכן משתמשים ב 
+\begin_inset Formula $mF=\frac{1}{1000}F,\mu F=\frac{1}{1000}mF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קבל לוחותם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=4\pi k\sigma=\frac{\sigma}{\epsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename physics2/c8d1.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קבל לוחות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Delta v=\frac{\sigma d}{\epsilon_{0}}=\frac{\sigma A}{\epsilon_{0}}\cdot\frac{d}{A}=\frac{Q}{\varepsilon_{0}}\frac{d}{A}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C=\frac{Q}{v}=\frac{QA\varepsilon_{0}}{d}=\varepsilon_{0}\frac{A}{d}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שני קדורים קונצנטרים
+\end_layout
+
+\begin_layout Standard
+כדור מוליך בראדיוס 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ טעון ב 
+\begin_inset Formula $Q$
+\end_inset
+
+, כדור שני ברדיוס 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ טעון ב 
+\begin_inset Formula $-Q$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v=\begin{cases}
+R_{2}<r & 0\\
+R_{1}\leq r<R_{2} & \frac{kQ}{r}-\frac{kQ}{R_{2}}\\
+r<R_{1} & c\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c & = & \frac{Q}{v}\\
+ & = & \frac{Q}{\frac{kQ}{R_{1}}-\frac{kQ}{R_{2}}}\\
+ & = & \frac{1}{k}\cdot\frac{1}{\frac{1}{R_{1}}-\frac{1}{R_{2}}}\\
+ & = & 4\pi\epsilon_{0}\frac{R_{1}R_{2}}{R_{2}-R_{1}}\\
+ & = & 4\pi\epsilon_{0}\frac{R_{1}R_{2}}{\Delta R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קבל גלילי
+\end_layout
+
+\begin_layout Standard
+שני גלילים קונצנטרים ברדיוס 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $R_{2}$
+\end_inset
+
+ האחד טעון בצפיפות מטען אורכית 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ והשני ב 
+\begin_inset Formula $-\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename physics2/c8d2.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ררר
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם הפרש הראדיוסים הרבה יותר קטן מאשר שטח הפנים את זה יתקרב ל 
+\begin_inset Formula $c=\frac{2\pi Rh}{\Delta R}\epsilon_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varphi=\begin{cases}
+0 & r>R_{2}\\
+-2k\lambda\ln\left(r\right)+2k\lambda\ln\left(c\right)=2k\lambda\ln\left(\frac{c}{r}\right) & R_{1}<r<R_{2}\\
+2k\lambda\ln\left(\frac{R_{2}}{R_{1}}\right) & r<R_{1}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C & = & \frac{Q}{v}\\
+ & = & \frac{\lambda l}{\Delta v}\\
+ & = & \frac{\lambda l}{2k\lambda\ln\left(\frac{R_{2}}{R_{1}}\right)}\\
+ & = & \frac{2\pi\epsilon_{0}l}{\ln\left(\frac{R_{2}}{R_{1}}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אנרגיה בקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+du & = & vdq\\
+u & = & \int_{0}^{Q}vdq\\
+ & = & \frac{1}{c}\int_{0}^{Q}qdq\\
+ & = & \frac{Q^{2}}{2c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+חיבור קבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename physics2/c8d3.svg
+	lyxscale 30
+	width 50text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+חיבור קבלים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{1}-v_{2} & = & \frac{Q_{1}}{c_{1}}\\
+v_{2}-v_{3} & = & \frac{Q_{1}}{c_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחבר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v_{1}-v_{3}=Q_{1}\left(\frac{1}{c_{1}}+\frac{1}{c_{2}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c=\frac{1}{c_{1}}+\frac{1}{c_{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שני קבלים במקביל
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c9d1.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קבלים במקביל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Q=Q_{1}+Q_{2}=vc_{1}+vc_{2}=v\left(c_{1}+c_{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c=c_{1}+c_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+תצפית:
+\end_layout
+
+\begin_layout Standard
+הכנסת חומר דיאלקטרי לתוך קבל מגדיל את הקיבול פי קבוע התלוי רק בחומר לכל
+ חומר אפשר למדוד קבוע 
+\begin_inset Formula $\varepsilon_{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c9d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קבל עם חומר דיאלקטרי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+פעם שעברה פיתחנו מולטיפולל, הגדרת דיפול, מודל ראשוני, צפיפות קוטב 
+\begin_inset Formula $\vec{P}$
+\end_inset
+
+, 
+\begin_inset Formula $\chi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היום: מטרתנו לצאת ממודל מיקרוסקופי ולהסדק את 
+\begin_inset Formula $\chi$
+\end_inset
+
+ ממנו.
+ + משוואת גאוס בנוכחות דיאלקטריות.
+\end_layout
+
+\begin_layout Section
+כח ומומנט על דיפול בשדה חשמלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c10d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דיפול בשדה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את 
+\begin_inset Formula $F_{x}$
+\end_inset
+
+ בשדה לא אחיד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{x} & = & -qE_{x}\left(x,y,z\right)+q\left[E_{x}\left(x,y,z\right)+dx\frac{\partial E_{x}}{\partial x}+dy\frac{\partial E_{y}}{\partial y}+dz\frac{\partial E_{z}}{\partial z}\right]\\
+ & = & q\vec{d}\cdot\underbrace{\left(\vec{\nabla}\cdot E_{x}\right)}_{\mbox{Gradient}}\\
+ & = & \vec{p}\cdot\left(\vec{\nabla}\cdot E_{x}\right)\end{eqnarray*}
+
+\end_inset
+
+ אותו דבר עבור 
+\begin_inset Formula $y,z$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{x} & = & \vec{p}\cdot\left(\vec{\nabla}\cdot E_{x}\right)\\
+F_{y} & = & \vec{p}\cdot\left(\vec{\nabla}\cdot E_{y}\right)\\
+F_{z} & = & \vec{p}\cdot\left(\vec{\nabla}\cdot E_{z}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מומנט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c10d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דיפול בשדה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{N} & = & \vec{r}\times\vec{F}_{+}+\left(-\vec{r}\right)\times\vec{F}_{-}\\
+\left|\vec{N}\right| & = & \frac{d}{2}Eq\sin\theta+\frac{d}{2}Eq\sin\theta\\
+ & = & dEq\sin\theta\\
+ & = & pE\sin\theta\\
+\vec{N} & = & \vec{P}\times\vec{E}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מה היא העבודה הנדרשת לסובב דיפול לזווית 
+\begin_inset Formula $\theta$
+\end_inset
+
+ משדה אחיד?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\intop_{0}^{\theta_{0}}Nd\theta & = & \int_{0}^{\theta_{0}}pE\sin\theta d\theta\\
+ & = & pE\left(1-\cos\theta_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי חוק בולצמאן ההסתברות שדיפול יהיה בזווית מסוימת היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+n\left(\theta_{0}\right) & \propto & e^{\nicefrac{-v\left(\theta\right)}{k_{0}t}}\\
+ & = & n_{0}e^{\frac{oE\cos\theta_{0}}{k_{B}T}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעשה קירוב לטמפרטורה 
+\begin_inset Formula $v$
+\end_inset
+
+ גדולה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+n\left(\theta_{0}\right)=n_{0}\left(1+\frac{pE\cos\theta_{0}}{k_{B}T}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר נרמול 
+\begin_inset Formula $n_{0}=\frac{N}{4\pi}$
+\end_inset
+
+.
+ מהי צפיפות הקיטב עהבור ההתפלגות 
+\begin_inset Formula $n\left(\theta_{0}\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P & = & \int_{0}^{\pi}n\left(\theta_{0}\right)\underbrace{p_{0}\cos\left(\theta_{0}\right)}_{\vec{E}\mbox{ \R{הטל\,על\,כיוון}}}\cdot\underbrace{2\pi\sin\theta_{0}d\theta_{0}}_{\mbox{\R{יעקוביאן\,מרחבי}}}\\
+ & = & \mbox{\R{אחרי\,מלא\,אלגברה}}\\
+ & = & \frac{Np^{2}E}{3k_{B}T}V\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור דיפול מושרה מקובל לסמן 
+\begin_inset Formula $\mbox{Atomic Polarizability}=\underbrace{\vec{p}=\alpha\varepsilon_{0}\vec{E}}_{\vec{P}=N\alpha\varepsilon_{0}\vec{E}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח משטח סגור 
+\begin_inset Formula $S$
+\end_inset
+
+ כמה מטען קשר יוצא מהנפח?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta Q_{pol} & = & -\int_{S}\vec{P}\hat{n}da\\
+ & = & -\int_{S}\vec{P}\cdot d\vec{s}\\
+ & = & -\int_{V}\vec{\nabla}\vec{P}dv\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה מקירים עד עכשיו ממשואות מקסוול:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\cdot\vec{E} & = & \nicefrac{\rho}{\epsilon_{0}}\\
+\vec{\nabla}\times\vec{E} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה הזו 
+\emph on
+תמיד
+\emph default
+ נכונה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho=\rho_{free}+\rho_{pol}\Rightarrow\vec{\nabla}\vec{E}=\frac{\rho_{free}-\vec{\nabla}\vec{P}}{\varepsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla\left(\vec{E}+\frac{\vec{P}}{\varepsilon_{0}}\right)=\frac{\rho_{free}}{\varepsilon_{0}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שוב ליניאריות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\cdot\left(\left(1+\chi\right)\vec{E}\right)=\vec{\nabla}\left(\varepsilon_{r}\vec{E}\right)=\frac{\rho_{free}}{\varepsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסטורית מקסוול הגדיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{D}=\varepsilon_{0}\vec{E}+\vec{P}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{\nabla}\cdot\vec{D} & = & \rho_{free}\\
+\vec{\nabla}\times\vec{E} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תנאי שפה:
+\end_layout
+
+\begin_layout Standard
+)במעבר מחומר דיאלקטרי אחד לאחר(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta E_{\parallel} & = & 0\\
+\Delta E_{\perp} & = & \frac{\sigma_{pol}}{\varepsilon_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\times\vec{D}\neq0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c10d3.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצא הכח הפועל על החומר הדיאלקטרי
+\end_layout
+
+\begin_layout Standard
+זה דומה לחיבור של שתי קבלים במקביל אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C=C_{\mbox{\R{דיאלקטרי}}}+C_{\mbox{\R{ריק}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C & = & \frac{\varepsilon_{0}L\left(\varepsilon_{r}x+\left(L-x\right)\right)}{d}\\
+U & = & \frac{\varepsilon_{0}L}{2d}\left(\varepsilon_{r}x+\left(L-x\right)\right)V^{2}\\
+F_{x} & = & -\frac{\partial U}{\partial x}\\
+ & = & \frac{V^{2}}{2}\cdot\frac{\varepsilon_{0}L}{d}\left(\varepsilon_{r}-1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ גזירה ב 
+\begin_inset Formula $a$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+צ"ל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{h\to a}f\left(a+h\right)=f\left(a\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{h\to0}\alpha\left(h\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן ב 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ מוגדרת על סביבה מנוקבת של אפס
+\end_layout
+
+\begin_layout Chapter
+תרגיל מס.?
+\end_layout
+
+\begin_layout Standard
+התרגיל משעמם מאוד ואין משהו חשוב כל כך לכתוב אותו כלומר אין חומר אז עדיף
+ שתלך הביתה.
+\end_layout
+
+\begin_layout Standard
+אני משעממת? 
+\end_layout
+
+\begin_layout Standard
+מה פתאום!!!!!! אני לקחתי ללב שלי וכועסת עליך 
+\end_layout
+
+\begin_layout Standard
+ילא לך הביתה מותי שלום ותודה אם תקרא לי למטה אקרא למשטרה אז תלך תעשה חיים
+ כי אין לך בררה
+\end_layout
+
+\begin_layout Standard
+היתה לנו אהבה......
+ תשלים החסר
+\end_layout
+
+\begin_layout Standard
+את משגעת במפתך 
+\end_layout
+
 \end_body
 \end_document

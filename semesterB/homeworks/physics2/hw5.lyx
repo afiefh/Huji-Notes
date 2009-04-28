@@ -1,0 +1,171 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נסמן: 
+\begin_inset Formula $\frac{\partial}{\partial x}\phi\left(x,y\right)=\alpha\left(x,y\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\frac{\partial}{\partial x}\phi\left(x,y\right)=\beta\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}\phi\left(X\left(x,y\right),Y\left(x,y\right)\right) & = & \alpha\left(X\left(x,y\right),Y\left(x,y\right)\right)\cdot\left(\frac{\partial X\left(x,y\right)}{\partial x}+\frac{\partial Y\left(x,y\right)}{\partial x}\right)\\
+\frac{\partial^{2}}{\partial x^{2}}\phi\left(X\left(x,y\right),Y\left(x,y\right)\right) & = & \beta\left(X\left(x,y\right),Y\left(x,y\right)\right)\cdot\left(\frac{\partial X\left(x,y\right)}{\partial x}+\frac{\partial Y\left(x,y\right)}{\partial x}\right)\cdot\frac{\partial X\left(x,y\right)}{\partial x}\\
+ &  & +\alpha\left(X\left(x,y\right),Y\left(x,y\right)\right)\cdot\left(\frac{\partial^{2}X\left(x,y\right)}{\partial x^{2}}+\frac{\partial^{2}Y\left(x,y\right)}{\partial x^{2}}\right)\\
+\frac{\partial^{2}}{\partial y^{2}}\phi\left(X\left(x,y\right),Y\left(x,y\right)\right) & = & \beta\left(X\left(x,y\right),Y\left(x,y\right)\right)\cdot\left(\frac{\partial X\left(x,y\right)}{\partial y}+\frac{\partial Y\left(x,y\right)}{\partial y}\right)\cdot\frac{\partial X\left(x,y\right)}{\partial y}\\
+ &  & +\alpha\left(X\left(x,y\right),Y\left(x,y\right)\right)\cdot\left(\frac{\partial^{2}X\left(x,y\right)}{\partial y^{2}}+\frac{\partial^{2}Y\left(x,y\right)}{\partial y^{2}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & = & \frac{x^{2}+y^{2}-1}{\left(x-1\right)^{2}+y^{2}}\\
+Y & = & \frac{-2y}{\left(x-1\right)^{2}+y^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial x}X & = & \frac{2x\cdot\left(\left(x-1\right)^{2}+y^{2}\right)-\left(x^{2}+y^{2}-1\right)\cdot\left(2x-2\right)}{\left(\left(x-1\right)^{2}+y^{2}\right)^{2}}\\
+ & = & \frac{2\left(y-x+1\right)\left(y+x-1\right)}{\left(y^{2}+x^{2}-2x+1\right)^{2}}\\
+\frac{\partial^{2}}{\partial x^{2}}X & = & -\frac{4\left(x-1\right)\left(3y^{2}-x^{2}+2x-1\right)}{\left(y^{2}+x^{2}-2x+1\right)^{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

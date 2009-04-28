@@ -8307,5 +8307,1368 @@ f\left(x\right) & = & x^{n}\left[1+\frac{a_{n-1}}{x}+\dots+\frac{a_{0}}{x^{n}}\r
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ נקודה פנימית.
+ נאמר שהגבול של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא אינסוף ונסמן 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=\infty$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $M$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(x\right)>M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+.
+ תהא 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ נקודה פנימית.
+ נאמר שהגבול של 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא מינוס אינסוף ונסמן 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=-\infty$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $M$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(x\right)<M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f:x & \mapsto & \begin{cases}
+\frac{1}{\left|x-3\right|} & x\neq3\\
+17 & x=3\end{cases}\\
+f:\mathbb{R} & \to & \mathbb{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה ש 
+\begin_inset Formula $\lim_{x\to3}=\infty$
+\end_inset
+
+ בהתן 
+\begin_inset Formula $M$
+\end_inset
+
+ נבחר 
+\begin_inset Formula $\delta=\frac{1}{\left|M\right|}$
+\end_inset
+
+ אז 
+\begin_inset Formula $0<\left|x-3\right|<\delta$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $0<\left|x-3\right|<\frac{1}{\left|M\right|}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{1}{\left|x-3\right|}>M$
+\end_inset
+
+ כי 
+\begin_inset Formula $f\left(x\right)>\left|M\right|\geq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נאמר כי 
+\begin_inset Formula $\lim_{x\to\infty}f\left(x\right)=l$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x>M$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+פונקציה נקראת מונוטונית עולה אם 
+\begin_inset Formula $x<y$
+\end_inset
+
+ גורר 
+\begin_inset Formula $f\left(x\right)<f\left(y\right)$
+\end_inset
+
+ והיא נקראת מונוטונית עולה אם 
+\begin_inset Formula $x<y$
+\end_inset
+
+ גורר 
+\begin_inset Formula $f\left(x\right)<f\left(y\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\left[a,b\right]\to B$
+\end_inset
+
+ רציפה חד חד ערכית ועל את היא מונוטונית.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ רציפה וחד חד ערכית עולה )אפשר גם יורדת( אז 
+\begin_inset Formula $f^{-1}:\left[f\left(a\right),f\left(b\right)\right]\to\left[a,b\right]$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+נקודת השבת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Brower
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\left[0,1\right]\to\left[0,1\right]$
+\end_inset
+
+ רציפה אז קיימת 
+\begin_inset Formula $x_{0}\in\left[0,1\right]$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x_{0}\right)=x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שלכל 
+\begin_inset Formula $x\in\left[0,1\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)\neq x$
+\end_inset
+
+ אז נגדיר 
+\begin_inset Formula $g\left(x\right)=\frac{1}{f\left(x\right)-x}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $g:\left[0,1\right]\to\mathbb{R}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה מאריטמטיקה של פונקציות רציפות.
+ יודעים כי 
+\begin_inset Formula $f\left(0\right)\neq0$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(1\right)\neq1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(1\right)<1$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $g\left(0\right)=\frac{1}{f\left(0\right)}>0$
+\end_inset
+
+ ו 
+\begin_inset Formula $g\left(1\right)=\frac{1}{f\left(1\right)-1}<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+על ידי משפט ערך הביניים עבור 
+\begin_inset Formula $g$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $x_{0}\in\left[0,1\right]$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{1}{f\left(x_{0}\right)-x_{0}}=g\left(x_{0}\right)=0$
+\end_inset
+
+.
+ סתירה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+ נקראת רציפה במידה שווה אם לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta=\delta\left(\epsilon\right)$
+\end_inset
+
+ כף ש 
+\begin_inset Formula $\left|y-x\right|<\delta,y\in A\Rightarrow\left|f\left(x\right)-f\left(y\right)\right|<\epsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ סדרה של פונקציות רציפות על 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+ אומרים ש 
+\begin_inset Formula $f_{n}\left(x\right)$
+\end_inset
+
+ חסומה במידה שווה)על 
+\begin_inset Formula $n$
+\end_inset
+
+( אם קיים קבוע 
+\begin_inset Formula $M$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f_{n}\left(x\right)<M$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{n}\left(x\right)=n$
+\end_inset
+
+ לא לא חסומה במידה שווה, אבל 
+\begin_inset Formula $f_{n}\left(x\right)=\sin\left(nx\right)$
+\end_inset
+
+ היא כן
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f:\left[a,b\right]\to\mathbb{R}$
+\end_inset
+
+ רציפה אז היא רציםה במידה שווה)פונקציה רציפה בקטע סגור היא רציפה במידה שווה(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+מה צריך להוכיח?
+\end_layout
+
+\begin_layout Standard
+צ"ל שלכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|x-y\right|<\delta\Rightarrow\left|f\left(x\right)-f\left(y\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהנתן 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ נאמר ש 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ אם קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כף ש 
+\begin_inset Formula $x,y\in\left[a,b\right],\left|x-y<\delta\right|\Rightarrow\left|f\left(x\right)-f\left(y\right)\right|<\varepsilon$
+\end_inset
+
+ כלומר צ"לש 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+טענת עזר:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[b,c\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,c\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $A=\left\{ x\in\left[a,b\right]\right\} $
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,x\right]$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ אינה ריקה כי 
+\begin_inset Formula $a\in A$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ לסומה מלעל על ידי 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ מאקסיומת השלמות קיים 
+\begin_inset Formula $\sup A$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $\alpha=\sup A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ידוע כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $gA$
+\end_inset
+
+ כלומר קיים 
+\begin_inset Formula $0<\delta_{0}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|x-\alpha\right|<\delta_{0}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|f\left(x\right)-f\left(\alpha\right)\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על הקטע 
+\begin_inset Formula $\left[a,b\right]\cap\left[a-\delta_{0},\alpha+\delta\right]$
+\end_inset
+
+ כי אם 
+\begin_inset Formula $y\in\left(\alpha-\delta_{0},\alpha+\delta_{0}\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|f\left(x\right)-f\left(y\right)\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $\left|f\left(y\right)-f\left(x\right)\right|<\frac{\epsilon}{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|f\left(x\right)-f\left(y\right)\right|<\varepsilon$
+\end_inset
+
+ ובהכרח 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[\alpha-\frac{\delta_{0}}{2},\alpha+\frac{\delta_{0}}{2}\right]$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,\alpha-\frac{\delta_{0}}{2}\right]$
+\end_inset
+
+ אזי מכל זה נובע ש 
+\begin_inset Formula $f$
+\end_inset
+
+ היא 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ טובה על 
+\begin_inset Formula $\left[a,\alpha+\frac{\delta_{0}}{2}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+הגדרנו גבול לפונקציה 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $f:A\to B$
+\end_inset
+
+.
+ 
+\begin_inset Formula $a\in A$
+\end_inset
+
+ נקודה פנימית 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)$
+\end_inset
+
+.
+ מגדירים 
+\begin_inset Formula $g\left(x\right)=f\left(x+a\right)$
+\end_inset
+
+.
+ תחום ההגדרה 
+\begin_inset Formula $\left\{ x:x+a\in A\right\} $
+\end_inset
+
+.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נקודה פנימית של תחום ההגדרה של 
+\begin_inset Formula $g$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{x\to0}g\left(x\right)=\lim_{x\to a}f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $\lim_{x\to a}f\left(x\right)=l$
+\end_inset
+
+ כלומר לכל 
+\begin_inset Formula $\epsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\left|x-a\right|<\delta$
+\end_inset
+
+ גורר 
+\begin_inset Formula $\left|f\left(x\right)-l\right|<\varepsilon$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $y=x-a$
+\end_inset
+
+: 
+\begin_inset Formula $\left|f\left(y+a\right)-l\right|<\varepsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left|g\left(y\right)-l\right|<\varepsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\lim_{z\to0}g\left(z\right)=l$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+אפשר לסמן 
+\begin_inset Formula $\lim_{x\to0}f\left(x+a\right)=l$
+\end_inset
+
+ בצורה 
+\begin_inset Formula $f\circ\left(x\mapsto x+a\right)=l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נגזרות
+\end_layout
+
+\begin_layout Standard
+ההגדרה של נגזרת נובעת מהצורך להגדיר קצב השינוי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{h\to0}\frac{f\left(a+h\right)-f\left(a\right)}{h}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+סימון של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Leibniz
+\lang hebrew
+: 
+\end_layout
+
+\begin_layout Standard
+הוא 
+\begin_inset Formula $\frac{df}{dx}\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:x\mapsto c$
+\end_inset
+
+.
+ נחשב הנגזרת בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $g:h\mapsto\frac{f\left(a+h\right)-f\left(a\right)}{h}=\frac{c-c}{h}=\begin{cases}
+0 & h\neq0\\
+\mbox{Undefined} & h=0\end{cases}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{h\to0}g\left(h\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:x\mapsto x^{2}$
+\end_inset
+
+ נחשב 
+\begin_inset Formula $f^{\prime}\left(a\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+g:h & \mapsto & \frac{f\left(a+h\right)-f\left(a\right)}{h}\\
+ & = & \frac{\left(a+h\right)^{2}-a^{2}}{h}\\
+ & = & \frac{a^{2}+2ah+h^{2}-a^{2}}{h}\\
+ & = & 2a+h\\
+\lim_{h\to0}g\left(h\right) & = & 2a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $f^{\prime}\left(a\right)=2a$
+\end_inset
+
+ מכיוון שזה נכון לכל 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+משפט ווירשטראוס
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\overbrace{\left[a,b\right]}^{I}\to\mathbb{R}$
+\end_inset
+
+ רציפה 
+\begin_inset Formula $\forall x\in I,f\left(x\right)>0$
+\end_inset
+
+ ו 
+\begin_inset Formula $g\left(x\right)=\frac{1}{f\left(x\right)}$
+\end_inset
+
+ חסומה מלרע על ידי 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה בשתי שיטות שונות כי 
+\begin_inset Formula $g$
+\end_inset
+
+ חסומה מלעיל
+\end_layout
+
+\begin_layout Subparagraph
+שיטה א:
+\end_layout
+
+\begin_layout Standard
+מאריטמטיקה של פונקציות רציפות ומזה ש 
+\begin_inset Formula $\forall x\in I,f\left(x\right)\neq0$
+\end_inset
+
+ אז 
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממשפט ווירשטראוס הראשון, מפני ש
+\begin_inset Formula $g$
+\end_inset
+
+ רציפה בקטע סגור 
+\begin_inset Formula $g$
+\end_inset
+
+ חסומה ובפרט חסומה מלעיל.
+\end_layout
+
+\begin_layout Subparagraph
+שיטה ב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $I$
+\end_inset
+
+ ולכן ממשפט ווירשטראוס השני מקבלת מינימום גלובאלי.
+ כלומר קיים 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)\geq f\left(x_{0}\right)$
+\end_inset
+
+ אבל 
+\begin_inset Formula $0<m=f\left(x_{0}\right)$
+\end_inset
+
+ לכן לכל 
+\begin_inset Formula $x\in I$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)\geq m>0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\left(a,b\right)\to\mathbb{R}$
+\end_inset
+
+ רציפה ו 
+\begin_inset Formula $\lim_{x\to a^{+}}f\left(x\right)=\infty$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lim_{x\to b^{-}}f\left(x\right)=\infty$
+\end_inset
+
+ אז נוכיח כי ל 
+\begin_inset Formula $f$
+\end_inset
+
+ יש מינימום גלובאלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename infi/c17d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה ל צ
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $x_{0}\in I$
+\end_inset
+
+)
+\begin_inset Formula $I=\left(a,b\right)$
+\end_inset
+
+( ו 
+\begin_inset Formula $y_{0}=f\left(x_{0}\right)$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $M$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a<x<a+\delta$
+\end_inset
+
+ גורר 
+\begin_inset Formula $f\left(x\right)>M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בפרט אם ניקח 
+\begin_inset Formula $M=y_{0}$
+\end_inset
+
+ ונקטין את 
+\begin_inset Formula $\delta$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\overbrace{a+\delta}^{c}<x_{0}$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a<x<c$
+\end_inset
+
+ גורר 
+\begin_inset Formula $f\left(x\right)>y_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{x\to b^{-}}f\left(x\right)=\infty$
+\end_inset
+
+ כלומר לכל 
+\begin_inset Formula $M^{\prime}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta^{\prime}$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $b-\delta^{\prime}<x<b$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(x\right)>M^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ניקח 
+\begin_inset Formula $m^{\prime}=y_{0}$
+\end_inset
+
+, נקטין את 
+\begin_inset Formula $\delta^{\prime}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x_{0}<b-\delta^{\prime}$
+\end_inset
+
+ ו 
+\begin_inset Formula $d=b-\delta^{\prime}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $d<x<b$
+\end_inset
+
+, 
+\begin_inset Formula $f\left(x\right)>y_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $\left[c,d\right]$
+\end_inset
+
+ פונקציה בקטע סגור אז היא מקבלת מינימום ב
+\begin_inset Formula $x_{1}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $m=f\left(x_{1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\series medium
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f:\mathbb{R}\to\mathbb{R}$
+\end_inset
+
+ רציפה.
+ 
+\begin_inset Formula $\exists x\in\mathbb{R},f\left(x\right)>0$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\lim_{x\to\infty}f\left(x\right)=0$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lim_{x\to-\infty}f\left(x\right)=0$
+\end_inset
+
+.
+ רוצים להוכיח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ מקבלת מקסימום
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $y_{0}=f\left(x_{0}\right)>0$
+\end_inset
+
+.
+ ניקח 
+\begin_inset Formula $\varepsilon=y_{0}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $b$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $x>b$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $\left|f\left(x\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $a$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $x<a$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $\left|f\left(x\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ חסומה אזי הוא מקבל מקסיומם בקטע הזה.
+ אפשר לראות השמקסימום הזה הוא המקסימום עבור כל 
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+ 
+\end_layout
+
 \end_body
 \end_document

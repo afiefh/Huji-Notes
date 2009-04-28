@@ -3968,5 +3968,1070 @@ A_{\varphi}\end{pmatrix}\]
 
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+משוואות דיפרנציאליות רגילות מסדר ראשון
+\end_layout
+
+\begin_layout Subsection
+בת הפרדה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{dy}{dx} & = & g\left(x\right)\cdot h\left(y\right)\\
+\int\frac{\partial y}{h\left(y\right)} & = & \int g\left(x\right)dx\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הומוגינית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x,y\right)=f\left(\frac{y}{x}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{dy}{dx}=f\left(\frac{y}{x}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $v=\frac{y}{x}\Rightarrow y=xv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v & = & v\left(x\right)\\
+xv^{\prime}+v & = & f\left(v\right)\\
+\frac{\partial v}{\partial x} & = & \frac{f\left(v\right)-v}{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז הגענו לפונקציה בת הפרדה
+\end_layout
+
+\begin_layout Subsection
+משוואה מדויקת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{A\left(x,y\right)\partial x+B\left(x,y\right)\partial y}_{d\phi=\frac{\partial\phi}{\partial x}+\frac{\partial\phi}{\partial y}\partial y}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר קיימת פונקציה 
+\begin_inset Formula $\phi\left(x,y\right)$
+\end_inset
+
+ כך ש 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\left(x,y\right) & = & \frac{\partial\phi}{\partial x}\\
+A\left(x,y\right) & = & \frac{\partial\phi}{\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial A}{\partial y}=\frac{\partial B}{\partial x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז הפתרון יהיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi=C\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ליניארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{dy}{dx}+P\left(x\right)y=g\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משתמשים ב 
+\begin_inset Formula $\mu=e^{\int Pdx}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu\frac{dy}{dx}+\mu Py & = & \mu g\\
+\frac{dy}{dx}\left(\mu y\right) & = & \mu g\\
+\mu y & = & \int\mu g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{d^{2}y}{dx^{2}}=f\left(y,\frac{dy}{dx}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב 
+\begin_inset Formula $v=\frac{dy}{dx}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{dv}{dx}=\frac{d^{2}y}{dx^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{dv}{dy}=\frac{\left(\frac{dv}{dx}\right)}{\left(\frac{dy}{dx}\right)}=\frac{1}{v}f\left(y,v\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו משוואה שיודעים איך לפתור.
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\end_layout
+
+\begin_layout Standard
+בהינתן 
+\begin_inset Formula $\omega$
+\end_inset
+
+ קבוע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{d^{2}y}{dx^{2}}=-\omega^{2}y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז נציב 
+\begin_inset Formula $v=\frac{dy}{dx}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\frac{dv}{dy}=\frac{1}{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{v\frac{dv}{dy}}_{\frac{dy}{dx}\frac{dv}{dy}=\frac{dv}{dx}=\frac{d^{2}y}{dx^{2}}}=-\omega^{2}y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int vdv & = & \int-\omega^{2}ydy+c\\
+\frac{v^{2}}{2} & = & -\omega^{2}\frac{y^{2}}{2}+c\\
+v^{2} & = & c-\omega^{2}y^{2}\\
+\underbrace{\frac{dy}{dx}}_{v} & = & \sqrt{c^{2}-\omega^{2}y^{2}}\\
+\frac{dy}{\sqrt{c^{2}-\omega^{2}y^{2}}} & = & dx\\
+\int\frac{dy}{\sqrt{c^{2}-\omega^{2}y^{2}}} & = & \int dx+a\\
+\frac{1}{\omega}\sin^{-1}\left(\frac{\omega y}{c}\right) & = & x+a\\
+\sin^{-1}\left(\frac{\omega y}{c}\right) & = & \omega x+\omega a\\
+y & = & \frac{c}{\omega}\sin\left(\omega x+\omega a\right)\\
+ & = & A\sin\left(\omega x-\phi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Picard
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(t,x\right)$
+\end_inset
+
+ רציפה בתחום 
+\begin_inset Formula $D$
+\end_inset
+
+ ו 
+\begin_inset Formula $\nicefrac{\partial f}{\partial x}$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $D$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\left(t_{0},x_{0}\right)\in D$
+\end_inset
+
+ אז קיים פתרון יחיד ל 
+\begin_inset Formula $\frac{\partial x}{\partial t}=f\left(t,x\right),x\left(t_{0}\right)=x_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שיטת
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Euler
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עם צעד 
+\begin_inset Formula $h$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{n} & = & x\left(t_{0}+nh\right)\\
+x_{n+1} & = & x\left(t_{0}+nh+h\right)\\
+ & \approx & x\left(t_{0}+nh\right)+h\frac{\partial x}{\partial t}\vert_{t_{0}+nh}\\
+ & = & x_{n}+hf\left(t_{0}+nh,x_{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+משוואות דיפרנציאליות רגילות מסדר גבוה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y^{\left(n\right)}=f\left(x,y^{\prime},\dots,y^{\left(n01\right)}\right)$
+\end_inset
+
+ לפונקציה 
+\begin_inset Formula $y=y\left(x\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $y^{\prime}=y_{1},y^{\prime\prime}=y_{2}$
+\end_inset
+
+ עד הסוף.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{dy_{1}}{dx} & = & y_{2}\\
+\frac{dy_{2}}{dx} & = & y_{3}\\
+ & \vdots\\
+\frac{dy_{n}}{dx} & = & \frac{d}{dx}\left(y^{\left(n-1\right)}\right)=\frac{d^{n}y}{dx^{n}}=f\left(x,y_{1},y_{2}\dots y_{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אפשר לפתור את המשוואה בסדר גבוה דרך פתרון כל המשוואות ה"פשוטות" האילו.
+\end_layout
+
+\begin_layout Standard
+אז ממשפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Picard
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+רואים כי צריכים 
+\begin_inset Formula $n$
+\end_inset
+
+ תנאי התחלה כדי לקבל פתרון יחיד.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+משוואות דיפרנציאליות ליניאריות מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{d^{n}y}{dx^{n}}=f\left(y,y^{\prime},y^{\prime\prime},y^{\left(n-1\right)},x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה ליניארית עם מקדמים פונקציות של 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a_{n}\left(x\right)y^{\left(n\right)}+a_{n-1}y^{\left(n-1\right)}+\dots+a_{1}\left(x\right)y^{\prime}+a_{0}\left(x\right)y=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L\cdot y=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L:y\mapsto a_{n}\left(x\right)y^{\left(n\right)}+\dots+a_{0}\left(x\right)y\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\left(y_{1}+y_{2}\right) & = & L\left(y_{1}\right)+L\left(y_{2}\right)\\
+L\left(cy\right) & = & cL\left(y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז 
+\begin_inset Formula $L$
+\end_inset
+
+ הוא אופרטור ליניארי.
+\end_layout
+
+\begin_layout Section
+מערכת מסדר ראשון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{1}\left(x\right),\dots y_{n}\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{dy_{1}}{dx} & = & a_{11}\left(x\right)y_{1}+\dots+a_{n1}\left(x\right)y_{n}\\
+\vdots & \vdots & \vdots\\
+\frac{dy_{n}}{dx} & = & a_{n1}\left(x\right)y_{1}+\dots+a_{nm}\left(x\right)y_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כותבים את המערכת באופן מטריציוני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & \begin{pmatrix}y_{1}\left(x\right)\\
+\vdots\\
+y_{n}\left(x\right)\end{pmatrix}\\
+\frac{dy}{dx} & = & \underbar{A}\left(x\right)\cdot\underbar{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קבוצה של פתרונות של משוואה זו היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ker L=\left\{ \underbar{y}\left(x\right)\vert L\underbar{y}=\underbar{0}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L\left(\underbar{y}\right)=\frac{dy}{dx}-\underbar{A}\left(x\right)\cdot\underbar{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ היא העתקה ליניארית
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y_{1}^{\prime} & = & y_{2}\\
+y_{2}^{\prime} & = & xy_{1}-y_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L\cdot\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\mapsto\begin{pmatrix}y_{1} & -y_{2}\\
+y_{2}^{\prime} & -xy_{1}+y_{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbar{A}=\begin{pmatrix}0 & 1\\
+x & -1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $V$
+\end_inset
+
+ מרחב ווקטורי אזי אם נתונים
+\end_layout
+
+\begin_layout Standard
+אם נתונים תנאי התחלה 
+\begin_inset Formula $y\left(x_{0}\right)\dots y^{\left(n-1\right)}\left(x_{0}\right)$
+\end_inset
+
+ נסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T_{x_{0}}:V & \to & \mathbb{R}^{n}\\
+y\left(x\right) & \mapsto & \begin{pmatrix}y\left(x_{0}\right)\\
+\vdots\\
+y^{\left(n-1\right)}\left(x_{0}\right)\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז לפי משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Picard
+\lang hebrew
+ 
+\begin_inset Formula $T_{x_{0}}$
+\end_inset
+
+חח"ע ועל
+\end_layout
+
+\begin_layout Standard
+חח"ע כלומר יש פתרון אחד ויחיד לתנאי ההתחלה הנתונים
+\end_layout
+
+\begin_layout Standard
+על כלומר לכל תנאי התחלה קיים פתרון אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dim V=n\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אם מצאנו 
+\begin_inset Formula $n$
+\end_inset
+
+ פתרונות למשוואה בלתי תלויים ליניארית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ הם בסיס ל
+\begin_inset Formula $V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f_{1}\dots f_{n}$
+\end_inset
+
+ פתרונות למשוואה אזי 
+\begin_inset Formula $\left\{ f_{1}\dots f_{n}\right\} $
+\end_inset
+
+בלתי תלויים ליניארית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ T_{x_{0}}\left(f_{1}\right),\dots,T_{x_{0}}\left(f_{n}\right)\right\} $
+\end_inset
+
+ בלתי תלויים ליניארית)אילו הם ווקטורים ב 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\overbrace{W\left(f_{1},\dots,f_{n}\right)}^{\mbox{Weronskian}}=\begin{vmatrix}f_{1}\left(x_{1}\right) & \dots & f_{n}\left(x_{1}\right)\\
+f_{1}^{\prime}\left(x_{1}\right) & \dots & f_{n}^{\prime}\left(x_{2}\right)\\
+\vdots & \vdots & \vdots\\
+f_{1}^{\left(n-1\right)}\left(x_{0}\right) & \dots & f_{n}^{\left(n-1\right)}\left(x_{0}\right)\end{vmatrix}\neq0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+אם ב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $W\left(f_{1},\dots,f_{n}\right)\neq0$
+\end_inset
+
+ מתאפסת בכל נקודה 
+\begin_inset Formula $x$
+\end_inset
+
+ אחרת בתחום ההגדרה שהפתרונות 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+במקרה של מערכת
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $\vec{f_{1}},\dots,\vec{f}_{n}\in V$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left\{ f_{1}\dots f_{n}\right\} $
+\end_inset
+
+ בלתי תלויים ליניארית 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ וקטורים בלתי תלוים ליניארית ב 
+\begin_inset Formula $\mathbb{R}^{n}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\begin{vmatrix}\vec{f}_{1}\left(x_{0}\right) & \vec{f}_{2}\left(x_{0}\right) & \dots & \vec{f}_{n}\left(x_{0}\right)\end{vmatrix}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left\{ f_{1},\dots,f_{n}\right\} $
+\end_inset
+
+ מערכת יסודית של פתרונות
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Fundamental system of solution}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משוואות דיפרנציאליות ליניאריות והומוגניות
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(x-1\right)y^{\prime\prime}-xy^{\prime}+y=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונים ש 
+\begin_inset Formula $y_{1}\left(x\right)=e^{x},y_{2}=x$
+\end_inset
+
+ נבדוק ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(x-1\right)e^{x}-xe^{x}+e^{x} & = & 0\checkmark\\
+\left(x-1\right)\cdot0-x\cdot1+x & = & 0\checkmark\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז יש לנו שתי פתרונות, נרצה לבדוק אם הם תלויים ליניארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+W\left(x,e^{x}\right)=\begin{vmatrix}x & e^{x}\\
+1 & e^{x}\end{vmatrix}=\left(x-1\right)e^{x}\underbrace{\neq0}_{x\neq1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל מה אם 
+\begin_inset Formula $x=1$
+\end_inset
+
+? במקרה זה לא מקבלים מששואה דיפרנציאלית מסדר שני ואם מחלקים ב 
+\begin_inset Formula $\left(x-1\right)$
+\end_inset
+
+ לא יהיה מוגדר אז אי אפשר להפעיל משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Picard
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+אז הפתרון הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(x\right)=Ax+Be^{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{d}{dt}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix} & = & \begin{pmatrix}1+\nicefrac{1}{t} & -t\\
+\nicefrac{1}{t} & -1\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרונות הם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1} & = & \begin{pmatrix}t\\
+1\end{pmatrix}\\
+x_{2} & = & \begin{pmatrix}t^{2}\\
+t-1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים ובודקים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}1\\
+0\end{pmatrix} & = & \begin{pmatrix}1-\nicefrac{1}{t} & -t\\
+\nicefrac{1}{t} & -1\end{pmatrix}\begin{pmatrix}t\\
+1\end{pmatrix}\\
+\begin{pmatrix}2t\\
+1\end{pmatrix} & = & \begin{pmatrix}1-\nicefrac{1}{t} & -t\\
+\nicefrac{1}{t} & -1\end{pmatrix}\begin{pmatrix}t^{2}\\
+t-1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y^{\prime\prime}-4y^{\prime}-5y & = & 0\\
+\lambda^{2}-4\lambda-5 & = & 0\\
+\left(\lambda-5\right)\left(\lambda+1\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=Ae^{5x}+Be^{-x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y^{\prime\prime}-4y^{\prime}+4y & = & 0\\
+\lambda^{2}-4\lambda+4 & = & 0\\
+\left(\lambda-2\right)^{2} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=Ae^{2x}+Bx^{2x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
 \end_body
 \end_document
