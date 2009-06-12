@@ -1,0 +1,8 @@
+#!/usr/bin/env octave
+
+x=-2:0.1:2;
+y=x.^2;
+plot(x,y);
+axis([-2,2,-4,4]);
+grid('on');
+print -dsvg hw6c1.svg

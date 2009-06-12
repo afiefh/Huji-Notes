@@ -1,0 +1,7 @@
+x=-1:0.01:1;
+y=sqrt(1.-x.^2);
+plot(x,y);
+axis([-1,1,-1,1]);
+grid('on');
+pause;
+print -dsvg c21d2.svg;

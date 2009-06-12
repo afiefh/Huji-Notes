@@ -428,29 +428,6 @@ f\left(x\right)=\left\lfloor x\right\rfloor \]
 \bar default
 \noun default
 \color inherit
-1
-\end_layout
-
-\begin_layout Section
-שאלה
-\family roman
-\series bold
-\shape up
-\size large
-\emph off
-\bar no
-\noun off
-\color none
- 
-\family default
-\series default
-\shape default
-\size default
-\emph default
-\numeric on
-\bar default
-\noun default
-\color inherit
 2
 \end_layout
 
@@ -933,6 +910,84 @@ g\left(x\right) & x\in\left[b,c\right]\end{cases}\]
 שאלות נוספות
 \end_layout
 
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ב-
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ וכי 
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+ נניח כי הפונקציה מקבלת שתי ערכים שונים בתחום זה עבור 
+\begin_inset Formula $x,y\in[a,b]$
+\end_inset
+
+ , 
+\begin_inset Formula $f\left(x\right)=a$
+\end_inset
+
+ ו- 
+\begin_inset Formula $f\left(y\right)=b$
+\end_inset
+
+.
+ ידוע לנו כי לפי משפט ערך הביינים קיים 
+\begin_inset Formula $a<c<b$
+\end_inset
+
+ , כך ש- עבור 
+\begin_inset Formula $w\in[a,b]$
+\end_inset
+
+ ממתקיים 
+\begin_inset Formula $f\left(w\right)=c$
+\end_inset
+
+, ובגלל צפיפות האי-רציונליים ב-
+\begin_inset Formula $\mathbb{R}$
+\end_inset
+
+, בהכרח בתוך 
+\begin_inset Formula $[a,b]$
+\end_inset
+
+ קיים מספר אי-רציונלי, ולכן 
+\begin_inset Formula $f\left(w\right)$
+\end_inset
+
+ יכול להיות אי רציונלי, דבר זה סותר את ההנחה כי 
+\begin_inset Formula $f\left(x\right)\in\mathbb{Q}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+ במידה והפונקציה 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ תהיה פונקציה קבועה ורציונלית אזי ההנחה תתקים תמיד.
+ ז"א האפיון הכי מדויק לפונקציה זו, הוא שפונקציה זו הינה פונקציה קבועה ורציונלית
+ עבור כל 
+\begin_inset Formula $x\in[a,b]$
+\end_inset
+
+.
+ 
+\end_layout
+
 \begin_layout Section
 שאלה
 \family roman
@@ -1101,12 +1156,107 @@ g\left(x\right) & x\in\left[b,c\right]\end{cases}\]
 א
 \end_layout
 
+\begin_layout Subsubsection*
+\begin_inset Formula $\lim_{x\to a^{+}}f(x)=\infty$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הגדרה א':
+\end_layout
+
 \begin_layout Standard
-)תיקח מ
-\lang english
-Andrey
-\lang hebrew
-(
+תהי פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביבה מנוקבת של 
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ שואפת לאינסוף כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ שואף ל-
+\begin_inset Formula $a$
+\end_inset
+
+ מימין אמ"מ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\forall M>0\,\,\,\exists\delta>0\,\,,0<x-a<\delta\Rightarrow f(x)>M\]
+
+\end_inset
+
+
+\begin_inset Formula $\lim_{x\to a^{-}}f(x)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה ב':
+\end_layout
+
+\begin_layout Standard
+תהי פונקציה 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביבה מנוקבת של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $a$
+\end_inset
+
+, 
+\begin_inset Formula $f$
+\end_inset
+
+ שואפת לאינסוף כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ שואף ל-
+\begin_inset Formula $a$
+\end_inset
+
+ משמאל אמ"מ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\forall M>0\,\,\,\exists\delta>0\,\,,-\delta<x-a<0\Rightarrow f(x)>M\]
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Subsection
@@ -1228,14 +1378,72 @@ Andrey
 \end_layout
 
 \begin_layout Standard
-\begin_inset Formula \begin{eqnarray*}
-\sqrt{x^{2}+2x}-x & = & x\left(\sqrt{\frac{x^{2}+2x}{x^{2}}}-1\right)\\
- & = & x\left(\sqrt{1+\frac{2}{x}}-1\right)\\
- & = & \dots\end{eqnarray*}
+\begin_inset Formula \[
+\lim_{x\to\infty}\sqrt{x^{2}+2x}-x=?\]
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+נשים לב כי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sqrt{x^{2}+2x}-x=\frac{(x^{2}+2x)-x^{2}}{\sqrt{x^{2}+2x}+x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+=\frac{2x}{\sqrt{x^{2}+2x}+x}=\frac{2}{\frac{1}{x}\left(\sqrt{x^{2}+2x}+x\right)}=\frac{2}{\sqrt{1+\frac{2}{x}}+1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כעת יש למצוא מהו הגבול של 
+\begin_inset Formula $\frac{2}{x}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x\to\infty$
+\end_inset
+
+, מאריתמטיקה של גבולות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{x\to\infty}\frac{2}{x}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן מכאן ניתן לראות כי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{x\to\infty}\frac{2}{\sqrt{1+\frac{2}{x}}+1}=\frac{2}{\sqrt{1+0}+1}=\frac{2}{1+1}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מ.ש.ל.
 \end_layout
 
 \end_body

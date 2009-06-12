@@ -1,0 +1,323 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הזרם בכל חתך שווה לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+J & = & \frac{I}{2\pi r}\\
+\vec{E} & = & \frac{I}{2\pi r\sigma}\hat{r}\\
+ & = & \frac{I}{2\pi r\left(gr^{4}+z\right)}\hat{r}\\
+ & = & \frac{I}{2\pi gr^{5}+zr}\hat{r}\\
+V & = & \int_{a}^{b}\vec{R}d\vec{r}\\
+ & = & \int_{a}^{b}\frac{I}{2\pi gr^{5}+zr}\\
+ & = & I\left[\frac{\ln\left(2\pi gr^{4}\right)-4\ln\left(x\right)}{4z}\right]_{a}^{b}\\
+ & = & I\cdot\left(\frac{\ln\left(2\pi gb^{4}\right)-4\ln\left(b\right)}{4z}-\frac{\ln\left(2\pi ga^{4}\right)-4\ln\left(a\right)}{4z}\right)\\
+R & = & \frac{V}{I}\\
+ & = & \frac{\ln\left(2\pi gb^{4}\right)-4\ln\left(b\right)}{4z}-\frac{\ln\left(2\pi ga^{4}\right)-4\ln\left(a\right)}{4z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace vfill
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מקבלים המשוואות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{1}-I_{4}r_{1}-I_{5}R_{1} & = & 0\\
+V_{3}-I_{1}r_{3}-I_{3}R_{3}+I_{4}r_{1}-V_{1} & = & 0\\
+V_{2}-I_{2}r_{2}-I_{2}R_{2}-I_{3}R_{3} & = & 0\\
+I_{1}+I_{2} & = & I_{3}\\
+I_{1}+I_{4} & = & I_{5}\\
+I_{2}+I_{5} & = & I_{3}+I_{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אומרים ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Maxima
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המשפט הבא:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+solve([ v1-i4*r1-i5*R1=0, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+v3-i1*r3-i3*R3+i4*r1-v1=0, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+v2-i2*r2-i2*R2=0, i1+i2=i3, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+i1+i4=i5, i2+i5=i3+i4, R3=30, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+R2=27, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+R1=100, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+r1=3, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+r2=4, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+r3=8, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+v1=15, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+v2=2, 
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+v3=7 ]
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+,[i1,i2,i3,i4,i5,R1,R2,R3,r1,r2,r3,v1,v2,v3]);
+\end_layout
+
+\begin_layout Standard
+מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+{\it I_{1}} & = & -\frac{30329}{130634}\\
+I_{2} & = & \frac{2}{31}\\
+I_{3} & = & -\frac{21901}{130634}\\
+I_{4} & = & \frac{24235}{65317}\\
+I_{5} & = & \frac{18141}{130634}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

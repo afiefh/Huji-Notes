@@ -1,0 +1,238 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $f,g$
+\end_inset
+
+ רציפות במידה שווה אזי:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\varepsilon_{f}>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta_{f}>0$
+\end_inset
+
+ כך שעבור כל 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ אם מתקיים 
+\begin_inset Formula $\left|x_{1}-x_{2}\right|<\delta_{f}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|f\left(x_{1}\right)-f\left(x_{2}\right)\right|<\varepsilon_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $\varepsilon_{g}>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta_{g}>0$
+\end_inset
+
+ כך שעבור כל 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ אם מתקיים 
+\begin_inset Formula $\left|x_{1}-x_{2}\right|<\delta_{g}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left|g\left(x_{1}\right)-g\left(x_{2}\right)\right|<\varepsilon_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח כי עבור הפונקציה 
+\begin_inset Formula $t\left(x\right)=f\left(x\right)\cdot g\left(x\right)$
+\end_inset
+
+ מתקיים כי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שעבור כל 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ אם מתקיים 
+\begin_inset Formula $\left|x_{1}-x_{2}\right|<\delta$
+\end_inset
+
+ אזי גם 
+\begin_inset Formula $\left|t\left(x_{1}\right)-t\left(x_{2}\right)\right|<\varepsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left|f\left(x_{1}\right)g\left(x_{1}\right)-f\left(x_{2}\right)g\left(x_{2}\right)\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתכונה אחד יודעים כי אם 
+\begin_inset Formula $\left|x_{1}-x_{2}\right|<\delta_{g}$
+\end_inset
+
+ אזי מתקיים 
+\begin_inset Formula $\left|g\left(x_{1}\right)-g\left(x_{2}\right)\right|<\varepsilon_{g}$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $-\varepsilon_{g}<g\left(x_{1}\right)-g\left(x_{2}\right)<\varepsilon_{g}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כלומר מתקיים ש 
+\begin_inset Formula $g\left(x_{1}\right)<g\left(x_{2}\right)+\varepsilon_{g}$
+\end_inset
+
+ ו 
+\begin_inset Formula $g\left(x_{1}\right)>g\left(x_{2}\right)-\varepsilon_{g}$
+\end_inset
+
+.
+ אזי ניתן לכתוב 
+\begin_inset Formula $ $
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,595 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw5d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ערימה שעבורה האלגוריתם לא עובד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+עץ כמעט שלם הוא עץ שממלא את כל הרמות שלו פרט אולי לרמה האחרונה שהוא ממלה
+ משמאלה
+\end_layout
+
+\begin_layout Standard
+כלומר צריך להוכיח כי:
+\end_layout
+
+\begin_layout Itemize
+בתת עץ יש לכל היותר רמה אחת לא מלאה
+\end_layout
+
+\begin_layout Itemize
+הרמה הזו מלאה משמאל.
+\end_layout
+
+\begin_layout Standard
+אם קודקוד נמצא ברמה 
+\begin_inset Formula $i$
+\end_inset
+
+ בתוך עץ בעל עומק 
+\begin_inset Formula $n$
+\end_inset
+
+ אז הרמה של תתעץ זה היא 
+\begin_inset Formula $n-i$
+\end_inset
+
+.
+ נתון כי לכל היותר יש רמה אחת לא מלאה אזי 
+\begin_inset Formula $n-1$
+\end_inset
+
+ רמות מלאות.
+ אז מקבלים כי בתתעץ יש 
+\begin_inset Formula $n-i-1$
+\end_inset
+
+ רמות מלאות כלומר הרמה אחרונה היא לא מלאה.
+\end_layout
+
+\begin_layout Standard
+רואים כי תת העצ מלא משמאלה כי פעולת קיבול תת עץ לא מערבבת את הבנים של העץ.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+רוצים להראות כי סכום הקודקודים בעץ עד רמה 
+\begin_inset Formula $n-1$
+\end_inset
+
+ שווה למספר העלים פלוס אחד.
+ כלומר 
+\begin_inset Formula $\sum_{i=0}^{n-1}2^{i}=2^{n}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ אורך העץ.
+\end_layout
+
+\begin_layout Paragraph
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{1-1}2^{i} & \overset{?}{=} & 2^{n}-1\\
+2^{0} & \overset{?}{=} & 2^{1}-1\\
+1 & \overset{\checkmark}{=} & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הנחת האינדוקציה:
+\end_layout
+
+\begin_layout Standard
+נניח כי זה מתקיים עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{k}2^{i} & \overset{?}{=} & 2^{k+1}-1\\
+\sum_{i=0}^{k-1}2^{i}+2^{k} & \overset{?}{=} & 2^{k+1}-1\\
+2^{k}-1+2^{k} & \overset{?}{=} & 2^{k+1}-1\\
+2^{k+1}-1 & \overset{\checkmark}{=} & 2^{k+1}-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+המינימאלי זה כאשר יש רק איבר אחד ברמה התחתית ביותר.
+ לפי ההוכחה הקודמת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{k}2^{i}=2^{k+1}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עבור עצ בעומק 
+\begin_inset Formula $n-1$
+\end_inset
+
+ יש 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אנחנו רוצים עץ בעומק 
+\begin_inset Formula $n$
+\end_inset
+
+ אז מוסיפים עוד איבר ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר קודקודים בעץ שלם באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n+1}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+יודעים כי בכל רמה יש 
+\begin_inset Formula $2^{i}$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+אז בעץ בעל עומק 
+\begin_inset Formula $d$
+\end_inset
+
+ יש בדיוק 
+\begin_inset Formula $\sum_{i=0}^{d}2^{i}$
+\end_inset
+
+ קודקודים.
+ מהוכחה הקודמת יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{d}2^{i}=2^{d+1}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם מספר הקודקודים הוא 
+\begin_inset Formula $n$
+\end_inset
+
+ מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2^{d+1}-1 & = & n\\
+2^{d+1} & = & n-1\\
+d+1 & = & \log\left(n-1\right)\\
+d & = & \log\left(n-1\right)+1\\
+ & = & \log\left(2n-2\right)\\
+ & < & \log\left(2n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Undefined variable: n
+\end_layout
+
+\begin_layout Standard
+אי אפשר לפתור שאלה אם יש בה ערכים לא מוגדרים.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Standard
+מגדירים כי שני איברים הם חברים אם השוונו ביניהם.
+\end_layout
+
+\begin_layout Standard
+בתחילה יש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ קבוצות של חברים)כל איבר חבר רק עם עצמו(
+\end_layout
+
+\begin_layout Standard
+מבצעים השוואה באופן יעיל כלומר אם מבצעים השוואה בין שתי קבוצות חברים עושים
+ ההשואה בין שתי האיברים המינימאליים בקבוצה וכך מקבלים האיבר המינימאלי הבא.
+\end_layout
+
+\begin_layout Standard
+בכל פעם עושים השוואה מספר הקבוצות קטן ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ אזי אחרי שמשווים בין כל הקבוצות מקבלים 
+\begin_inset Formula $n-1$
+\end_inset
+
+ השוואות.
+\end_layout
+
+\end_body
+\end_document

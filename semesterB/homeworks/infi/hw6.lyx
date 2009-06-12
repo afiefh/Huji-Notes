@@ -1,0 +1,989 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+עפיף חלומה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם התלמיד
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+302323001
+\numeric off
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מס' ת"ז
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מר מתן פרזמה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם המתרגל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קבוצת תרגול
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שעה 
+\begin_inset Formula $10:00-11:45$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יום ג'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלת מידע אישי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $g\left(x\right)=f\left(x\right)-f\left(x+\frac{1}{2}\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g$
+\end_inset
+
+ היא פונקציה רציפה כי לפי אריטמטיקה של גבולות אם 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(x+\frac{1}{2}\right)$
+\end_inset
+
+ פונקציות רציפות אז גם 
+\begin_inset Formula $f\left(x\right)-f\left(x+\frac{1}{2}\right)$
+\end_inset
+
+ רציפה.
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $g$
+\end_inset
+
+ לא מתאפסת בתחום 
+\begin_inset Formula $\left[0,\nicefrac{1}{2}\right]$
+\end_inset
+
+.
+ נתבונן ב
+\begin_inset Formula \begin{eqnarray*}
+g\left(0\right) & = & f\left(0\right)-f\left(\nicefrac{1}{2}\right)\\
+g\left(\nicefrac{1}{2}\right) & = & f\left(\nicefrac{1}{2}\right)-f\left(1\right)\\
+ & = & f\left(\nicefrac{1}{2}\right)-f\left(0\right)\\
+ & = & -\left(f\left(0\right)-f\left(\nicefrac{1}{2}\right)\right)\\
+ & = & -g\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $g\left(\nicefrac{1}{2}\right)\neq0$
+\end_inset
+
+ אזי אם 
+\begin_inset Formula $g\left(\nicefrac{1}{2}\right)$
+\end_inset
+
+ חיובי אז 
+\begin_inset Formula $g\left(0\right)$
+\end_inset
+
+ שלילי ולהפך.
+ משתמשים במשפט ערך הביניים ומקבלים כי קיים 
+\begin_inset Formula $c\in\left[0,\nicefrac{1}{2}\right]$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $g\left(c\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(c\right)-f\left(c+\frac{1}{2}\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(c\right)=f\left(c+\frac{1}{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם 
+\begin_inset Formula $g\left(\nicefrac{1}{2}\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(\nicefrac{1}{2}\right)-f\left(1\right)=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(\nicefrac{1}{2}\right)=f\left(1\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $f\left(x\right)\neq\sqrt{1-x^{2}}$
+\end_inset
+
+ וגם 
+\begin_inset Formula $f\left(x\right)\neq\sqrt{1-x^{2}}$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $\left[-1,1\right]$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(f\left(x\right)\right)^{2} & \neq & \left(\pm\sqrt{1-x^{2}}\right)^{2}\\
+\left(f\left(x\right)\right)^{2} & \neq & 1-x^{2}\\
+\left(f\left(x\right)\right)^{2}+x^{2} & \neq & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשלילה לנתון
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\lambda$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<\lambda<M$
+\end_inset
+
+ בוחרים 
+\begin_inset Formula $c$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lambda<c<M$
+\end_inset
+
+)לפי צפיפות של מספרים ממשיים קיים 
+\begin_inset Formula $c$
+\end_inset
+
+ כזה(.
+ 
+\begin_inset Formula $f$
+\end_inset
+
+ היא רציפה ו
+\begin_inset Formula $M=\sup_{\left[a,b\right]}f$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $a<t<b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(t\right)=c$
+\end_inset
+
+.
+ אזי כבר יודעים כי קיימים לפונקציה שני ערכים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{array}{ccccc}
+\lambda & < & f\left(t\right) & < & M\\
+ & f\left(a\right) & < & \lambda\end{array}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז לפי משפט ערך הביניים קיים 
+\begin_inset Formula $a<x_{1}<t$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x_{1}\right)=\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצד שני גם יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{array}{ccccc}
+\lambda & < & f\left(t\right) & < & M\\
+ & f\left(b\right) & < & \lambda\end{array}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי לפי משפט ערך הביניים קיים 
+\begin_inset Formula $t<x_{2}<b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x_{2}\right)=\lambda$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מתחום ההגדרה של 
+\begin_inset Formula $x_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ רואים כי 
+\begin_inset Formula $x_{1}\neq x_{2}$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\forall\lambda\in\left[a,b\right]\exists\left(x_{1},x_{2}\right):f\left(x_{1}\right)=f\left(x_{2}\right)=\lambda\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+זה לא יתכן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(x\right)>0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\in\left[a,b\right]$
+\end_inset
+
+ אזי לפי משפט ווירשטראוס 
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+ מקבלת מינימום בתחום.
+ נסמן 
+\begin_inset Formula $A=\min_{\left[a,b\right]}f\left(x\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $A>0$
+\end_inset
+
+ כי 
+\begin_inset Formula $f\left(x\right)\underset{\left[a,b\right]}{>}0$
+\end_inset
+
+.
+ אזי קיים 
+\begin_inset Formula $\varepsilon=\frac{A}{2}<A$
+\end_inset
+
+ שמקיים 
+\begin_inset Formula $\forall z:\varepsilon<f\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+באופן כללי זה לא מתקיים.
+ דוגמה נגדית לזה היא 
+\begin_inset Formula $f\left(x\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל קיימים מקרים פרטיים לדוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x\right) & = & x^{2}\\
+x_{0} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw6c1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $f\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור כל 
+\begin_inset Formula $x\neq x_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)>f\left(x_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לא נכון.
+ 
+\begin_inset Formula $f\left(x\right)=\frac{1}{x^{2}+1}$
+\end_inset
+
+ לא מקבל מקסימום אבל 
+\begin_inset Formula $\lim_{x\to\pm\infty}f\left(x\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי ל 
+\begin_inset Formula $c\in\mathbb{R}$
+\end_inset
+
+ לא קיים 
+\begin_inset Formula $f\left(x_{0}\right)=c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה של 
+\begin_inset Formula $\lim_{x\to\infty}f\left(x\right)=\infty$
+\end_inset
+
+ יודעים כי לכל 
+\begin_inset Formula $M$
+\end_inset
+
+ קיים 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x>x_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)>x_{0}$
+\end_inset
+
+.
+ אזי בפרט קיים 
+\begin_inset Formula $t$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(t\right)>c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה של 
+\begin_inset Formula $\lim_{x\to-\infty}f\left(x\right)=-\infty$
+\end_inset
+
+ יודעים כי לכל 
+\begin_inset Formula $M$
+\end_inset
+
+ קיים 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x<x_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(x\right)<x_{0}$
+\end_inset
+
+.
+ אזי בפרט קיים 
+\begin_inset Formula $p$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(p\right)<c$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה ו 
+\begin_inset Formula $f\left(p\right)<c<f\left(t\right)$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $p<x_{0}<t$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(x_{0}\right)=c$
+\end_inset
+
+ בסתירה להנחת השלילה שלנו.
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+זה לא נכון.
+ דוגמה: 
+\begin_inset Formula $f\left(x\right)=x^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ היא רציפה אזי לפי משפט קנטור 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה במידה שווה בקטע סגור 
+\begin_inset Formula $f\in\left[a,b\right]$
+\end_inset
+
+ כלשהוא, בפרט 
+\begin_inset Formula $\left[n,n+1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $f$
+\end_inset
+
+ לא רציפה במידה שווה כי אם בוחרים 
+\begin_inset Formula $\varepsilon_{0}=2$
+\end_inset
+
+ אזי עבור כל 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ מתקיים שאם 
+\begin_inset Formula $\left|x_{1}-x_{2}\right|<\delta$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|f\left(x_{1}\right)-f\left(x_{2}\right)\right|\geq\varepsilon_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\delta=\frac{1}{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n\in\left(0,\infty\right)$
+\end_inset
+
+)שזה כל 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+( ונסמן 
+\begin_inset Formula $x_{1}=n$
+\end_inset
+
+ ו 
+\begin_inset Formula $x_{2}=n+\frac{1}{n}$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+\left|n^{2}-\left(n^{2}+\frac{1}{n}\right)^{2}\right| & \overset{?}{\geq} & \varepsilon_{0}\\
+\left|n^{2}-n^{2}-\frac{2n}{n}-\frac{1}{n^{2}}\right| & \overset{?}{\geq} & \varepsilon_{0}\\
+2+\frac{1}{n^{2}} & \geq & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+זה נכון כי אם 
+\begin_inset Formula $f,g$
+\end_inset
+
+ רציפות במידה שווה אז קיימים 
+\begin_inset Formula $\delta_{f},\delta_{g}$
+\end_inset
+
+ שמקיימים את הגדרת רציפות במידה שווה.
+ אזי במקרה של 
+\begin_inset Formula $\alpha f+\beta g$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $\delta=\min\left(\alpha\delta_{f},\beta\delta_{g}\right)$
+\end_inset
+
+.
+ ומתקיימת ההגדרה של רציפות במידה שווה.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+זה לא נכון.
+ דוגמה נגדית: 
+\begin_inset Formula $f=x,g=x$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\cdot g=x^{2}$
+\end_inset
+
+ שזו אינה פונקציה רציפה במידה שווה.
+\end_layout
+
+\end_body
+\end_document

@@ -514,7 +514,261 @@ U & = & \phi q\end{eqnarray*}
 \begin_layout Standard
 זה פתרון לא פיזיקאלי כי הבעיה לא פיזיקאלית, אין טייל אינסופי.
  כאשר אנחנו רחוקים מאוד מהטייל יהיה לנו שדה של מטען נקודתי, רק כאשר מתקרבים
- יהיה לנו שדה של טייל אינסופי
+ יהיה לנו שדה של טייל אינסופי.
+\end_layout
+
+\begin_layout Chapter
+סדנא מס.?
+\end_layout
+
+\begin_layout Standard
+כדי לחשב אנרגיה יש שתי נוסחאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & \frac{1}{2}\int\varphi\left(r\right)\rho\left(r\right)dv\\
+u & = & \frac{1}{8\pi k}\int E^{2}dv\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזתמש בנוסחאות האילו לחשב אנרגיה אגורה בקבל לוחות בעל שטח 
+\begin_inset Formula $A$
+\end_inset
+
+ ומרחק 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ צפיפות המטען היא 
+\begin_inset Formula $\sigma=\frac{q}{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & \frac{1}{8\pi k}\int E^{2}dv\\
+ & = & \frac{1}{8\pi k}\left(4\pi k\frac{q}{A}\right)^{2}Ad\\
+ & = & \frac{2\pi kq^{2}d}{A}\\
+ & = & \frac{q^{2}d}{2\varepsilon_{0}A}\\
+ & = & \frac{q^{2}}{2c}\\
+ & \underbrace{=}_{q=cv} & \frac{1}{2}cv^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נשתמש בנוסחה השניה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & \frac{1}{2}\int\varphi\left(r\right)\sigma ds\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי על הלוח השלילי הפוטנציאל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $0$
+\end_inset
+
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ועל החיובי 
+\begin_inset Formula $v$
+\end_inset
+
+ אזי זה נותן 
+\begin_inset Formula $0$
+\end_inset
+
+ על הלוח השלילי, אבל על הלוח החיובי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & \frac{1}{2}v\frac{q}{A}A\\
+ & = & \frac{1}{2}qv\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור את זה בדרך שלישית על ידי טעינה איטית של הקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+du & = & V\left(q\right)dq=\frac{q}{c}dq\\
+u & = & \int_{0}^{q}\frac{q}{c}dq\\
+ & = & \frac{1}{2}\frac{q^{2}}{c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תרגיל ממבחן
+\end_layout
+
+\begin_layout Standard
+יש קבל בנוי משתי מעטפות כדוריות, כמה אנרגיה עולה להביא מטען 
+\begin_inset Formula $q$
+\end_inset
+
+ מאינסוף למרכז הכליפות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physicsworkshop/c3d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbrace{E_{1}}_{\mbox{Before}} & = & \frac{kq}{r^{2}}\hat{r}\\
+\underbrace{E_{2}}_{\mbox{After}} & = & \begin{cases}
+\frac{kq}{r^{2}}\hat{r} & r<a\\
+0 & a<r<b\\
+\frac{kq}{r^{2}}\hat{r} & b<r\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{1} & = & \frac{1}{8\pi k}\int E_{1}^{2}dv\\
+u_{2} & = & \frac{1}{8\pi k}\int E_{2}^{2}dv\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta u & = & u_{2}-u_{1}\\
+ & = & \frac{1}{8\pi k}\left(\int E_{2}^{2}dv-\int E_{1}^{2}dv\right)\\
+ & = & \frac{1}{8\pi k}\int\left(E_{2}^{2}-E_{1}^{2}\right)dv\\
+ & = & \frac{1}{8\pi k}\int_{a}^{b}-E_{1}^{2}dv\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה לפני אחרונה
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body

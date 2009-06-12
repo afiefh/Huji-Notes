@@ -1,0 +1,738 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+עפיף חלומה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם התלמיד
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+302323001
+\numeric off
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מס' ת"ז
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מר מתן פרזמה
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שם המתרגל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell multicolumn="1" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קבוצת תרגול
+\end_layout
+
+\end_inset
+</cell>
+<cell multicolumn="2" alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+שעה 
+\begin_inset Formula $10:00-11:45$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+יום ג'
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלת מידע אישי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{n}\left(x\right)=\sum_{i=0}^{n}\left(-1\right)^{n}x^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{cauchy}}=\left(n+1\right)\frac{1}{\left(1+c\right)^{n+1}}\left(x-c\right)^{n}\cdot x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{lagrange}}=\frac{1}{\left(1+c\right)^{n+1}}x^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{n}\left(x\right)=\sum_{i=0}^{n}\frac{x^{n}}{i!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{cauchy}}=\frac{0.5\left(e^{c}+\left(-1\right)^{n}e^{-c}\right)}{n!}\left(x-c\right)^{n}\cdot x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{Lagrange}}=\frac{0.5\left(e^{c}+\left(-1\right)^{n}e^{-c}\right)}{\left(n+1\right)!}x^{n+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{n}\left(x\right)=9+21\left(x-1\right)+23\left(x-1\right)^{2}+13\left(x-1\right)^{3}+4\left(x-1\right)^{4}+\left(x-1\right)^{5}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{cauchy}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{lagrange}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $p_{n}\left(x\right)=x^{6}-12x^{5}+69x^{4}-124x^{3}-160x+85$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{cauchy}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $R_{n_{lagrange}}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+רוצים כי השארית תהיה קטנה מ 
+\begin_inset Formula $0.01$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{n} & < & 0.01\\
+\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1} & < & 0.01\\
+\frac{e^{c}}{\left(n+1\right)!}\left(0.5\right)^{n+1} & < & 0.01\\
+\frac{e^{c}}{\left(n+1\right)!}\left(0.5\right)^{n+1}<\frac{3^{0.5}}{\left(n+1\right)!}\cdot0.5^{n+1} & < & 0.01\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=3$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $R_{n}<0.0045$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{0.5} & = & 1+0.5+\frac{0.5^{2}}{2}+\frac{0.5^{3}}{6}\\
+ & = & 1.645\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{n} & < & 0.01\\
+\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1} & < & 0.01\\
+\frac{f^{\left(n+1\right)}\left(c\right)}{\left(n+1\right)!}\left(x-x_{0}\right)^{n+1}<\frac{1}{\left(n+1\right)!}\cdot0.5^{n+1} & < & 0.01\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=3$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $R_{n}<0.002$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\left(0.5\right) & = & 1-\frac{0.5^{2}}{2}\\
+ & = & 0.875\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $g\left(x\right)=f\left(2x\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $g^{\left(n\right)}\left(x\right)=2^{n}f\left(2x\right)$
+\end_inset
+
+ אזי אם 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{g_{n}}=\sum2^{k}a_{n}\cdot x^{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{n}=1+x+\frac{x^{2}}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+פולינום טילור של 
+\begin_inset Formula $g\left(x\right)$
+\end_inset
+
+ סביב 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{n_{g\left(x\right)}}=\sum_{i=0}^{n}\frac{g^{\left(i\right)}\left(x_{0}\right)}{i!}\cdot\left(x-x_{0}\right)^{i}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $g=f^{\prime}$
+\end_inset
+
+ מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{n-1_{f^{\prime}\left(x\right)}} & = & \sum_{i=0}^{n-1}\frac{f^{\left(i+1\right)}\left(x_{0}\right)}{i!}\cdot\left(x-x_{0}\right)^{i}\\
+P_{n_{f\left(x\right)}} & = & \sum_{i=0}^{n-1}\frac{f^{i}\left(x_{0}\right)}{i!}\cdot\left(x-x_{0}\right)^{i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי אם 
+\begin_inset Formula $P_{n_{f\left(x\right)}}=\sum a_{i}\left(x-x_{0}\right)^{n}$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{n-1_{f^{\prime}\left(x\right)}}=\sum_{i=0}^{n}a_{i+1}\cdot\left(i+1\right)\cdot\left(x-x_{0}\right)^{i}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{x\to0}\frac{\cos\left(x\right)-1+\frac{x^{2}}{2}}{x^{4}} & = & \lim_{x\to0}\frac{1-\frac{x^{2}}{2}+\frac{x^{4}}{24}+O\left(x^{5}\right)-1+\frac{x^{2}}{2}}{x^{4}}\\
+ & = & \lim_{x\to0}\frac{\frac{x^{4}}{24}+O\left(x^{5}\right)}{x^{4}}\\
+ & = & \frac{1}{24}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{x\to0}\frac{\cos\left(x\right)\sin\left(x\right)-x}{x^{4}} & = & \lim_{x\to0}\frac{x-\frac{2}{3}x^{3}+O\left(x^{4}\right)-x}{x^{4}}\\
+ & = & \lim_{x\to0}\frac{-\frac{2}{3}x^{3}+O\left(x^{4}\right)}{x^{4}}\\
+ & = & -\frac{2}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{x\to0}\frac{\left(e^{x}-1\right)^{2}}{\ln\left(1+x\right)+\frac{x^{2}}{2}} & = & \lim_{x\to0}\frac{\left(1+x+O\left(x^{2}\right)-1\right)^{2}}{x-\frac{x^{2}}{2}+O\left(x^{3}\right)+\frac{x^{2}}{2}}\\
+ & = & \lim_{x\to0}\frac{\left(x+O\left(x^{2}\right)\right)^{2}}{x+O\left(x^{3}\right)}\\
+ & = & \lim_{x\to0}\frac{x^{2}+O\left(x^{3}\right)}{x+O\left(x^{3}\right)}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{x\to0}\frac{\sin^{2}\left(x\right)\left(e^{x}-1\right)\cos\left(x\right)}{\cos\left(x\right)-1} & = & \lim_{x\to0}\frac{\left(x+O\left(x^{3}\right)\right)^{2}\left(1+x+O\left(x^{2}\right)\right)\left(1+O\left(x^{2}\right)\right)}{1-\frac{x^{2}}{2}+O\left(x^{4}\right)-1}\\
+ & = & \lim_{x\to0}\frac{\left(x^{2}+O\left(x^{4}\right)\right)\left(1+x+O\left(x^{2}\right)\right)}{\frac{x^{2}}{2}}\\
+ & = & \lim_{x\to0}\frac{x^{2}+x^{3}+O\left(x^{4}\right)}{\frac{x^{2}}{2}}\\
+ & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Standard
+זה לא נכון עבור הפונקציה 
+\begin_inset Formula $f\left(x\right)=\begin{cases}
+e^{-\frac{1}{x^{2}}} & x\neq0\\
+0 & x=0\end{cases}$
+\end_inset
+
+ והפונקציה 
+\begin_inset Formula $g\left(x\right)=\begin{cases}
+2e^{-\frac{1}{x^{2}}} & x\neq0\\
+0 & x=0\end{cases}$
+\end_inset
+
+ עבור שתי הפונקציות פולינום טילור שווה ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ אבל הפונקציות לא שוות.
+\end_layout
+
+\end_body
+\end_document

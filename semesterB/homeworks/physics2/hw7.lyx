@@ -1,0 +1,459 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הלוח תחת תופעת השדה האחיד מתקטב ונוצרת הצטברות של מטען שלילי על השפה האחת
+ ומטען חיובי על האחרת של הלוח.
+\end_layout
+
+\begin_layout Standard
+בתוך הלוח השדה יהיה סופרפוזיציה של השדה החיצוני 
+\begin_inset Formula $E_{0}$
+\end_inset
+
+ והשדה שיווצר בפנים הלוח בהשפעת הדיפולים שנוצרו.
+ כעת נמצא שדה פנימי זה.
+\end_layout
+
+\begin_layout Standard
+ידוע לנו כי מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{0_{\parallel}} & = & E_{1_{\parallel}}\\
+D_{0_{\perp}} & = & D_{1_{\perp}}\\
+ & \Updownarrow\\
+\varepsilon_{0}E_{0_{\perp}} & = & \varepsilon E_{1_{\perp}}\\
+E_{0_{\perp}} & = & E_{0}\cos\theta\\
+E_{0_{\parallel}} & = & E_{0}\sin\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{1_{\perp}} & = & \frac{\varepsilon_{0}}{\varepsilon}E_{0_{\perp}}=\frac{\varepsilon_{0}}{\varepsilon}E_{0_{\perp}}\cos\theta\\
+E_{1_{\parallel}} & = & E_{0_{\parallel}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי השדה בתוך הלוח הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E}_{1} & = & \frac{\varepsilon_{0}}{\varepsilon}E_{0}\cos\theta+E_{0}\sin\theta\\
+ & = & \left(\frac{\varepsilon_{0}}{\varepsilon}\cos\theta+\sin\theta\right)\vec{E}_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+לפתור בעיה זו נשתמש בשיטת המראות.
+\end_layout
+
+\begin_layout Standard
+נמקם כדור זהה בעל מימדים זהים בעל צפיפות קיטוב 
+\begin_inset Formula $\vec{P}$
+\end_inset
+
+.
+ בכדי שיתקיים שהפוטנציאל על המשטח האינסופי ב 
+\begin_inset Formula $z=0$
+\end_inset
+
+ יתאפס.
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+במרכז הכדור מתקיים כי השדה הוא סופרפוזיציה של שני השדות בהשפעת שני הכדורים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{1_{\odot}} & = & -\frac{\vec{P}}{3\varepsilon_{0}}-\frac{P_{0}}{3\varepsilon_{0}}\frac{1}{z}\\
+E_{2_{\odot}} & = & \frac{2Pk}{r^{3}}\cos\theta\cdot\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}_{\odot_{tot}}=\left(-\frac{P_{0}}{3\varepsilon_{0}}+\frac{2P_{0}k}{8R^{3}}\right)\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי בנקודת המגע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{\perp}=-\frac{P}{3\varepsilon_{0}},E_{\perp}=-\frac{P}{3\varepsilon_{0}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}_{\perp_{tot}}=-\frac{2P}{3\varepsilon_{0}}\hat{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+העבודה הנדרשת היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W & = & \int\vec{F}d\vec{x}\\
+F_{z} & = & \vec{P}\cdot\vec{\nabla}E_{z}\\
+E_{z} & = & \frac{P_{0}\cos\theta}{2\pi\varepsilon_{0}r^{3}}\\
+F_{z} & = & P\cdot\frac{\partial}{\partial z}\frac{P}{2\pi\varepsilon_{0}z^{3}}\\
+ & = & -\frac{3P^{2}}{2\pi\varepsilon_{0}z^{4}}\\
+W & = & \int_{\infty}^{2R}-\frac{3P^{2}}{2\pi\varepsilon_{0}z^{4}}dz\\
+ & = & \frac{3P^{2}}{2\pi\varepsilon_{0}}\int_{\infty}^{2R}\frac{1}{z^{4}}dz\\
+ & = & \frac{P^{2}}{2\pi\varepsilon_{0}}\cdot\frac{1}{8R^{3}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+ידוע לנו כי מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+D_{1_{\perp}} & = & D_{2_{\perp}}\\
+\varepsilon_{1}E_{1_{\perp}} & = & \varepsilon_{2}E_{2_{\perp}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וכמו כן כי מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{1_{\parallel}}=E_{2_{\parallel}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tan\theta_{1} & = & \frac{E_{1_{\parallel}}}{E_{1_{\perp}}}\\
+\tan\theta_{2} & = & \frac{E_{2_{\parallel}}}{E_{2_{\perp}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\tan\theta_{1}}{\tan\theta_{2}} & = & \frac{\left(\frac{E_{1_{\parallel}}}{E_{1_{\perp}}}\right)}{\left(\frac{E_{2_{\parallel}}}{E_{2_{\perp}}}\right)}\\
+ & = & \frac{E_{1_{\parallel}}}{E_{1_{\perp}}}\cdot\frac{E_{2_{\perp}}}{E_{2_{\parallel}}}\\
+ & = & \frac{E_{2_{\perp}}}{E_{1_{\perp}}}\\
+ & = & \frac{\nicefrac{D_{2_{\perp}}}{\varepsilon_{2}}}{\nicefrac{D_{1_{\perp}}}{\varepsilon_{1}}}\\
+ & = & \frac{D_{2_{\perp}}}{\varepsilon_{2}}\cdot\frac{\varepsilon_{1}}{D_{1_{\perp}}}\\
+ & = & \frac{\varepsilon_{1}}{\varepsilon_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+מתקיימת סימטריה סביב ציר 
+\begin_inset Formula $x$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{D}=\begin{cases}
+\vec{D}_{2}\left(r\right)\hat{r} & x>0\\
+\vec{D}_{1}\left(r\right)\hat{r} & x<0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן ידוע לנו כי מתקיים 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2\pi r^{2}\left(D_{1}+D_{2}\right) & = & \frac{q}{\varepsilon_{0}}\\
+D_{1}+D_{2} & = & \frac{q}{2\pi\varepsilon_{0}r^{2}}\\
+D_{1} & = & \frac{\varepsilon_{1}}{\varepsilon_{2}}D_{2}\\
+D_{2}\frac{\varepsilon_{1}}{\varepsilon_{2}}+D_{2} & = & \frac{q}{2\pi\varepsilon_{0}r^{2}}\\
+D_{2}\left(\frac{\varepsilon_{1}+\varepsilon_{2}}{\varepsilon_{2}}\right) & = & \frac{q}{2\pi\varepsilon_{0}r^{2}}\\
+\vec{D}_{2} & = & \frac{\varepsilon_{2}}{\varepsilon_{1}+\varepsilon_{2}}\cdot\frac{q}{2\pi\varepsilon_{0}r^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{D} & = & \vec{D}_{1}+\vec{D}_{2}\\
+ & = & \frac{\left(\varepsilon_{1}+\varepsilon_{2}\right)q}{\left(\varepsilon_{1}+\varepsilon_{2}\right)2\pi r^{2}\varepsilon_{0}}\hat{r}\\
+ & = & \frac{q}{2\pi r^{2}\varepsilon_{0}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{D} & = & \epsilon\vec{E}\\
+\vec{E} & = & \frac{\vec{D}}{\varepsilon}\\
+ & = & \frac{\frac{2kq}{r^{2}}}{\varepsilon_{1}+\varepsilon_{2}}\\
+ & = & \frac{2}{\varepsilon_{1}+\varepsilon_{2}}\cdot\frac{kq}{r^{2}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & \int_{R_{2}}^{R_{1}}\vec{E}d\vec{l}\\
+ & = & \frac{2kq}{\varepsilon_{1}+\varepsilon_{2}}\left(\frac{1}{R_{1}}-\frac{1}{R_{2}}\right)\\
+ & = & \frac{2kq}{\varepsilon_{1}+\varepsilon_{2}}\cdot\frac{R_{1}+R_{2}}{R_{2}\cdot R_{1}}\\
+C & = & \frac{q}{V}\\
+ & = & \frac{2k}{\varepsilon_{1}+\varepsilon_{2}}\cdot\frac{R_{1}+R_{2}}{R_{2}\cdot R_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

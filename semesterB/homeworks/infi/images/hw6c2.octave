@@ -1,0 +1,10 @@
+#!/usr/bin/env octave
+
+x=-2:0.1:2;
+#y=-1./(x.^2.+1);
+y=-e.^(-x.^2);
+plot(x,y);
+axis([-2,2,-4,4]);
+grid('on');
+#print -dsvg hw6c2.svg
+print -dsvg andrey.svg

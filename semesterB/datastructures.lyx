@@ -3483,5 +3483,913 @@ successor
  
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Explore
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+ {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+visited
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+=1;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+previsit
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for all u,(v,u)
+\begin_inset Formula $\in$
+\end_inset
+
+E if(visited(u)=0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+eplore
+\begin_inset Formula $\left(u\right)$
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+postvisit
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Explore(v)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+הפרוצדורה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+explore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מגיע לכל הקודקודים בגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ שניתן להגיע אלהם מ 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח כי יש מסלול מקודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ לקודקוד 
+\begin_inset Formula $z$
+\end_inset
+
+: 
+\begin_inset Formula $v\to v_{1}\to v_{2}\to\dots\to z$
+\end_inset
+
+ אם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Explore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לא הגיע ל
+\begin_inset Formula $z$
+\end_inset
+
+ יש קודקוד אחרון 
+\begin_inset Formula $v_{j}$
+\end_inset
+
+ שכן הגיע אליו ולא הגיע ל 
+\begin_inset Formula $v_{j+1}$
+\end_inset
+
+ וזה לא יתכן כי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+explore
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+סורקת את כל הכנים של 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\forall v\in V:$
+\end_inset
+
+visited
+\begin_inset Formula $\left(v\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\forall v\in V:$
+\end_inset
+
+ if visited
+\begin_inset Formula $\left(v\right)=0$
+\end_inset
+
+, explore
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+DFS
+\begin_inset Formula $\left(G\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c8d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה של 
+\begin_inset Formula $DFS\left(G\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפונרציה תעבור על הקודקודים בצירה הבאה)כו מקווקו זה צלע שלא עברה עליהם
+ הריקורסיה(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c8d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+גרף ריקורסיה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבוכיות של 
+\begin_inset Formula $DFS$
+\end_inset
+
+ זה 
+\begin_inset Formula $\mathcal{O}\left(\left|E\right|\right)+\mathcal{O}\left(\left|V\right|\right)=\mathcal{O}\left(\left|E\right|+\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+רכיבי קשיורות בגרף לא מכוון
+\end_layout
+
+\begin_layout Paragraph
+נגדיר
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Connected Component}$
+\end_inset
+
+ - רכיב קשירות
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{CC}\left(v\right)$
+\end_inset
+
+ מחזיר רכיב הקשירות שבו נמצא הקודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout List
+\labelwidthstring 00.00.0000
+\begin_inset Formula $\mbox{CCNum}$
+\end_inset
+
+ יספור רכיבי קשירות.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+CCNum=0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בתחילת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+DSF
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+בכל פעם ששקוראים ל
+\begin_inset Formula $explore$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $DFS$
+\end_inset
+
+ נעסה 
+\begin_inset Formula $\mbox{CCNum}\leftarrow\mbox{CCNum}+1$
+\end_inset
+
+ ונגדיר הפונקציה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+previsit
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+להיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+CC
+\begin_inset Formula $\left(v\right)\leftarrow\mbox{CCNum}$
+\end_inset
+
+
+\lang hebrew
+.
+ זה יגדיר לנו את רכיב הקשירות של כל קודקוד.
+\end_layout
+
+\begin_layout Section
+גרף מכוון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename datastructures/c8d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה לגרף מכוון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש כמה סוגים של צלעות בגרף זה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mbox{Tree Edges}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mbox{Forward Edges}$
+\end_inset
+
+: צלע לצאצא לא ישיר בגרף
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mbox{Backedges}$
+\end_inset
+
+: צלע שהולכת לאב קדמון בעץ
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mbox{Cross Edges}$
+\end_inset
+
+: כל דרך אחר
+\end_layout
+
+\begin_layout Subsection
+גרף מכוון ללא מעגלים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+DAG: Directed Acyclic Graph
+\end_layout
+
+\begin_layout Standard
+נרצה למצא מיון טופולוכי הגרף כזה: שזה סידור של קודקודים כך שלכל צלע 
+\begin_inset Formula $v\to w$
+\end_inset
+
+, 
+\begin_inset Formula $w$
+\end_inset
+
+ יופיע אחרי 
+\begin_inset Formula $v$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל באיור 
+\begin_inset Formula $8.3$
+\end_inset
+
+ 
+\begin_inset Formula $A,B,D,C$
+\end_inset
+
+ זה מיון טופולוגי אם מוחקים את הצלע 
+\begin_inset Formula $CA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש מיון טופולוגי אם"ם אין צלע מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Backedge
+\end_layout
+
+\begin_layout Subsection
+רכיבי קשירות בגרף מכוון
+\end_layout
+
+\begin_layout Standard
+רכיב קשיורות חזק זה אוסף מקסימאלי של קודקודים כך שלכל זוג קודקודים 
+\begin_inset Formula $v,w$
+\end_inset
+
+ יש מסלול מ 
+\begin_inset Formula $v$
+\end_inset
+
+ ל
+\begin_inset Formula $w$
+\end_inset
+
+ ומ 
+\begin_inset Formula $w$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+clock=0
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+previsit
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+pre
+\begin_inset Formula $\left(v\right)=$
+\end_inset
+
+clock
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+clock=clock+1
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+postvisit
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+post
+\begin_inset Formula $\left(v\right)=$
+\end_inset
+
+clock
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+clock=clock+1
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שעון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לכל צלע בגרף 
+\begin_inset Formula $DAG$
+\end_inset
+
+ 
+\begin_inset Formula $v\to w$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\mbox{post}\left(v\right)>\mbox{post}\left(w\right)$
+\end_inset
+
+ אם נמיין לפי ערכי ה
+\begin_inset Formula $post$
+\end_inset
+
+ בסדר יורד נקבל מיון טופולוגי של 
+\begin_inset Formula $DAG$
+\end_inset
+
+.
+\numeric on
+1
+\end_layout
+
 \end_body
 \end_document

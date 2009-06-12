@@ -1,0 +1,290 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+
+\numeric on
+6
+\end_layout
+
+\begin_layout Paragraph
+דוגמה נגדית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename ../datastructures/hw6d1.svg
+	lyxscale 10
+	width 70cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה נגדית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+זה לא מתקיים עבור עץ בינארי כלשהוא.
+ העץ צריך להיות כמעט שלם
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מעניין מאוד כמה הייתי מקבל על שאלה זו אם הייתי כותב כי הטענה לא נכונה ונותן
+ דוגמה נגדית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה להוכיח באינדוקציה כי עבור עץ בעל 
+\begin_inset Formula $m$
+\end_inset
+
+ עלים מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{m}\sum_{l\in leafs\left(T\right)}d\left(l\right)\geq\log\left(m\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $m=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1\cdot1 & \geq & \log\left(1\right)\\
+1 & \geq & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי זה מתקיים עבור כל 
+\begin_inset Formula $m=k$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{l\in leafs\left(T\right)}d\left(l\right)\geq k\cdot\log\left(k\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח עבור 
+\begin_inset Formula $m=k+1$
+\end_inset
+
+ ונסמן העלה החדש ב 
+\begin_inset Formula $q$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{k+1}\sum_{l\in leafs\left(T\cup\left\{ q\right\} \right)}d\left(l\right) & \geq & \log\left(k+1\right)\\
+\frac{\sum_{l\in leafs\left(T\right)}d\left(l\right)+d\left(q\right)}{k+1} & \geq & \log\left(k+1\right)\\
+\frac{\sum_{l\in leafs\left(T\right)}d\left(l\right)+d\left(q\right)}{k+1}\geq\frac{k\cdot\log\left(k\right)+d\left(q\right)}{k+1} & \geq & \log\left(k+1\right)\\
+k\cdot\log\left(k\right)+\underbrace{d\left(q\right)}_{\geq\log\left(k+1\right)} & \geq & \left(k+1\right)\cdot\log\left(k+1\right)\\
+\left(k+1\right)\cdot\log\left(k\right) & \geq & \left(k+1\right)\cdot\log\left(k+1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה לא יצא לי! אני יודע כי ההפרש בין 
+\begin_inset Formula $\left(\log\left(k+1\right)-\log\left(k\right)\right)$
+\end_inset
+
+ הולך וקטן וכנראה הוא נאבד איפה שהוא בקירובים שעשיתי...
+ אבל אני לא רואה מה הייתי אמור לעשות.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+יודעים כבר כי אפשר לבנות אלגוריתם שיעבוד בסיבוכיות זמן 
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+, גם אם זה לא תמיד יעיל מבחינת זכרון.
+ ויודעים גם כי אי אפשר למיין מערך בלי לעבור על כל הערכים שלו אזי החסם המינימאלי
+ זה 
+\begin_inset Formula $\Omega\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

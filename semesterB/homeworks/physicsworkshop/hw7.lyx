@@ -1,0 +1,212 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho\left(r\right)=\nicefrac{A}{r^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $r<a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int Dd\vec{s} & = & 4\pi k\int\rho dr\\
+D4\pi r^{2} & = & 4\pi k\int_{0}^{r}4\pi r^{2}dr\cdot4\pi kA4\pi r\\
+Dr^{2} & = & 4\pi kAr\\
+D & = & \frac{4\pi kA}{r}\hat{r}\\
+D & = & \varepsilon E\\
+\vec{E} & = & \frac{4\pi kA}{\varepsilon r}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בתוך מוליך השדה תמיד אפס: 
+\begin_inset Formula $a<r<b\Rightarrow E=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $r>b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Er^{2} & = & 4\pi kAa\\
+\vec{E} & = & \frac{4\pi kAa}{r^{2}}\hat{r}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\cdot\left(f\left(r\right)\hat{r}\right)=\frac{\partial f\left(r\right)}{\partial r}+\frac{2}{r}f\left(r\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{P}:\frac{\vec{E}\left(\varepsilon-1\right)}{4\pi k}=\frac{4\pi kA}{\varepsilon r}\cdot\frac{\left(\varepsilon-1\right)}{4\pi k}=\frac{A\left(\varepsilon-1\right)}{\varepsilon r}\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho=-\vec{\nabla}\vec{P}\left(\vec{r}\right)=-\frac{A\left(\varepsilon-1\right)}{\varepsilon}\nabla\frac{1}{r}\hat{r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\nabla\frac{1}{r}\hat{r}=\frac{\partial f\left(r\right)}{\partial r}+\frac{2}{r}P\left(r\right)=-\frac{1}{r^{2}}+\frac{2}{r}\cdot\frac{1}{r}=\frac{1}{r^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho=-\frac{A\left(\varepsilon-1\right)}{\varepsilon}\frac{1}{r^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sigma=\rho\Rightarrow\frac{A\left(\varepsilon-1\right)}{\varepsilon a}\hat{r}=\sigma P\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

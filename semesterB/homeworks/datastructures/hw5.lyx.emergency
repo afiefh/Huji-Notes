@@ -1,0 +1,377 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+עבור כל עלה צריך להתאים מקום מסויים במערך התוצאה.
+ אז האיבר הראשון שממינים הוא האיבר הקטן ביותר)או הגדול ביותר, בלי הפרעה
+ לכלליות ההוכחה(
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה עבור מספר האיבר שממינים.
+\end_layout
+
+\begin_layout Standard
+עבור המספר הראשון זה עולה 
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+רוצים להראות כי סכום הקודקודים בעץ עד רמה 
+\begin_inset Formula $n-1$
+\end_inset
+
+ שווה למספר העלים פלוס אחד.
+ כלומר 
+\begin_inset Formula $\sum_{i=0}^{n-1}2^{i}=2^{n}-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ אורך העץ.
+\end_layout
+
+\begin_layout Paragraph
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{1-1}2^{i} & \overset{?}{=} & 2^{n}-1\\
+2^{0} & \overset{?}{=} & 2^{1}-1\\
+1 & \overset{\checkmark}{=} & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הנחת האינדוקציה:
+\end_layout
+
+\begin_layout Standard
+נניח כי זה מתקיים עבור 
+\begin_inset Formula $n=k$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n=k+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{i=0}^{k}2^{i} & \overset{?}{=} & 2^{k+1}-1\\
+\sum_{i=0}^{k-1}2^{i}+2^{k} & \overset{?}{=} & 2^{k+1}-1\\
+2^{k}-1+2^{k} & \overset{?}{=} & 2^{k+1}-1\\
+2^{k+1}-1 & \overset{\checkmark}{=} & 2^{k+1}-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+המינימאלי זה כאשר יש רק איבר אחד ברמה התחתית ביותר.
+ לפי ההוכחה הקודמת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=0}^{k}2^{i}=2^{k+1}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי עבור עצ בעומק 
+\begin_inset Formula $n-1$
+\end_inset
+
+ יש 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל אנחנו רוצים עץ בעומק 
+\begin_inset Formula $n$
+\end_inset
+
+ אז מוסיפים עוד איבר ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר קודקודים בעץ שלם באורך 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n+1}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\log2n=\log2+\log n=\log n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך לדון במקרה המקסימאלי שבו אורך העץ הוא 
+\begin_inset Formula $n$
+\end_inset
+
+, מספר הקודקודים בעצ כזה הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n+1}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שהעץ הזה הוא שלם העומק שלו 
+\begin_inset Formula $\log d$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $\log\left(2^{n+1}-1\right)=\log\left(2^{n+1}\right)=\left(n+1\right)\log2$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

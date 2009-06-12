@@ -3438,7 +3438,7 @@ P & = & \int_{0}^{\pi}n\left(\theta_{0}\right)\underbrace{p_{0}\cos\left(\theta_
 
 \begin_layout Standard
 \begin_inset Formula \[
-\vec{\nabla\left(\vec{E}+\frac{\vec{P}}{\varepsilon_{0}}\right)=\frac{\rho_{free}}{\varepsilon_{0}}}\]
+\nabla\left(\vec{E}+\frac{\vec{P}}{\varepsilon_{0}}\right)=\frac{\rho_{free}}{\varepsilon_{0}}\]
 
 \end_inset
 
@@ -3697,6 +3697,1261 @@ F_{x} & = & -\frac{\partial U}{\partial x}\\
 
 \begin_layout Standard
 את משגעת במפתך 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c13d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מומנט דיפול
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+כדור מקוטב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c13d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+כדור מקוטב
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה השדה?
+\end_layout
+
+\begin_layout Standard
+נשתמש בסופר פוזיציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c13d3.svg
+	lyxscale 30
+	width 30cm
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+סופרפוזיציה של הבעיה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{0}=Qd=\frac{4\pi}{3}r_{0}^{3}\cdot Nq\cdot d=\frac{4\pi r^{3}}{3}\vec{P}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}=\frac{k3\left(\vec{P}_{0}\cdot\hat{r}\right)\hat{r}-\vec{P}_{0}}{r^{3}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מה קורה בתוך הכדור?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varphi_{\mbox{\R{שפה}}} & = & \frac{kp_{0}\cos\theta}{r_{0}^{2}}\\
+ & = & \frac{4\pi k}{3}Pr_{0}\cos\theta\\
+ & = & \frac{Pr\cos\theta}{3\varepsilon_{0}}\\
+ & = & \frac{Pz}{3\varepsilon_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & -\vec{\nabla}\varphi\\
+\vec{E} & = & -\frac{\vec{P}}{3\varepsilon_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נניח כי קיטוב הכדור נובע משדה חיצוני אחיד 
+\begin_inset Formula $E_{0}\hat{z}$
+\end_inset
+
+ אזי עוצמת השדה הכוללת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & \vec{E}_{0}+\vec{E}\left\{ \vec{P}_{0}\right\} \\
+E_{z}^{in} & = & E_{0}-\frac{\varepsilon_{0}\left(\varepsilon_{r}-1\right)E_{z}^{in}}{3\varepsilon_{0}}\\
+ & = & \frac{3}{\varepsilon_{r}+2}E_{0}<E_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{E}$
+\end_inset
+
+ שדה חשמלי
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\vec{P}$
+\end_inset
+
+ דיפול 
+\begin_inset Formula $\vec{P}=\int_{V}\rho\left(\vec{r}\right)\vec{r}^{\prime}dv^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\varphi$
+\end_inset
+
+ של דיפול 
+\begin_inset Formula $\varphi\left(\vec{r}\right)=\frac{k\hat{r}\cdot\vec{P}}{r^{2}}$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ ע"י גזירה 
+\begin_inset Formula $\vec{E}_{\mbox{\R{דיפול}}}-\nabla\varphi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+כח על דיפול: בשדה אחיד זה אפס.
+ בשדה שאינו אחיד 
+\begin_inset Formula $F_{x}=\vec{P}\cdot\left(\nabla E_{x}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $F_{y}$
+\end_inset
+
+ ו 
+\begin_inset Formula $F_{z}$
+\end_inset
+
+ דומה.
+\end_layout
+
+\begin_layout Itemize
+מומנט על דיפול: 
+\begin_inset Formula $\vec{N}=\vec{P}\times\vec{E}$
+\end_inset
+
+ ואנרגיה 
+\begin_inset Formula $u\left(\theta\right)=PE\left(1-\cos\theta\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Itemize
+חומר דיאלקטרי=אוסף של דיפולים בצפיפות 
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+דיפול מושרה: 
+\begin_inset Formula $\vec{P}=\alpha\varepsilon_{0}E$
+\end_inset
+
+ )בחומרים סימטריים אין דיפול קבוע( ל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+מימדים של נפח
+\end_layout
+
+\begin_layout Itemize
+דופול קבוע: קיים בהרבה מולקולוט נחשב לפי ההגדרה הנ"ל
+\end_layout
+
+\begin_layout Itemize
+צפיפות הקטוב: 
+\begin_inset Formula $\vec{P}$
+\end_inset
+
+ גודל הדיפול בנפח 
+\begin_inset Formula $dv$
+\end_inset
+
+ שווה 
+\begin_inset Formula $\vec{P}dv$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור דיפול מושרה)בצפיפות נמוכה( 
+\begin_inset Formula $\vec{P}=N\alpha\varepsilon_{0}\vec{E}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+עבור דיפול קבוע)בצפיפות נמוכה( 
+\begin_inset Formula $\vec{P}=\frac{Np^{2}E}{3k_{B}T}$
+\end_inset
+
+)בטמפרטורה 
+\begin_inset Formula $T$
+\end_inset
+
+ )בקלוין( גבוהה(
+\end_layout
+
+\begin_layout Itemize
+נסיונות במקרים רבים 
+\begin_inset Formula $\vec{P}=\chi\varepsilon_{0}\vec{E}$
+\end_inset
+
+ )סוסיציאביליות 
+\begin_inset Formula $\chi$
+\end_inset
+
+( נקראת מוניחות בעברית
+\end_layout
+
+\begin_layout Itemize
+קבל מלא בחומר דיאלקטרי: 
+\begin_inset Formula $c=\varepsilon_{r}\cdot\begin{pmatrix}\mbox{\R{קיבול}}\\
+\mbox{\R{ולא\,החומר}}\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\varepsilon_{r}=1+\chi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+צפפות מטען מקוטב)קשור( ופחית 
+\begin_inset Formula $\rho_{pol}=-\vec{\nabla}\vec{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+נגדיר 
+\begin_inset Formula $\vec{D}$
+\end_inset
+
+: 
+\begin_inset Formula $\vec{D}=\varepsilon_{0}\vec{E}+\vec{P}$
+\end_inset
+
+)שימו לב למימדים השונים מ 
+\begin_inset Formula $\vec{E}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\nabla\vec{D}=\nabla\left(\varepsilon_{0}\vec{E}+\vec{P}\right)=\rho_{free}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+תנאי שפה בדיאלקטרים 
+\begin_inset Formula $\Delta E_{\parallel}=0,\Delta E_{\perp}=\frac{\sigma_{pol}}{\varepsilon_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+זרם
+\end_layout
+
+\begin_layout Standard
+זרם זה מטענים בנועה בדרך כלל במוליכים)אפשר גם במבודדים!( הזרם בתייל חשמלי
+ מוגדר ככמות המטען העוברת בתיל בזמן.
+ 
+\begin_inset Formula $1A=\nicefrac{C}{sec}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רק המטען נטו מעניין
+\end_layout
+
+\begin_layout Standard
+הכיוון של הזרם הוגדר כחיובי לפני שידעו מה נושא את הזרם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left|\vec{J}\right|$
+\end_inset
+
+ כמות המטען ליחידת זמן ליחידת שטח 
+\begin_inset Formula $I=\int\vec{J}d\vec{A}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rho$
+\end_inset
+
+ צפיפות נושאי המטען.
+ נעים במהירות 
+\begin_inset Formula $v$
+\end_inset
+
+ אז 
+\begin_inset Formula $\Delta J=\rho\vec{v}\cdot d\vec{A}\cdot dt$
+\end_inset
+
+, 
+\begin_inset Formula $\vec{J}=\rho\vec{v}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזרם היוצא ממטענים 
+\begin_inset Formula $I=\oint_{S}\vec{J}\cdot d\vec{A}=-\frac{\partial}{\partial t}\left(Q_{inside}\right)=-\frac{\partial}{\partial t}\left(\int_{V}\rho dv\right)$
+\end_inset
+
+ אז מקבלים 
+\begin_inset Formula $\vec{\nabla}\cdot\vec{J}=-\frac{\partial\rho}{\partial t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הצפיפות הנשואית 
+\begin_inset Formula $\vec{J}=\sigma\vec{E}$
+\end_inset
+
+)במקים רבים(
+\end_layout
+
+\begin_layout Standard
+ע"י אינטגרציה מקבלים 
+\begin_inset Formula $V=IR$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $J=\nicefrac{I}{A},J=\sigma E,J=\frac{1}{\rho}E$
+\end_inset
+
+ אבל 
+\begin_inset Formula $\rho$
+\end_inset
+
+ זה התנגדות סגולית ולא צפיפות מטען
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E=\frac{V}{L},R=\frac{V}{L}=\frac{L}{\sigma}A=\rho\frac{L}{A}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c14d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+לא יודע
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.? השראה א"ם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c15d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מסגרת נעה בשדה מגנטי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ישנו כח לורנץ על נושאי המטען בלולאה המוליכה 
+\begin_inset Formula $\vec{f}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+הקטעים האופקיים מבטלים אחד את השני
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oint_{S}\vec{f}\cdot d\vec{l}=qv\left(B_{1}-B_{2}\right)w\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר כא"ם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varepsilon=\frac{1}{q}\oint_{S}\vec{f}\cdot d\vec{l}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש במשפט סטוקס.
+ נגדיר שטף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi_{S}=\int_{S}\vec{B}\cdot d\vec{a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי השטח 
+\begin_inset Formula $a$
+\end_inset
+
+ זז, אזי השטף דרכו משתנה באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{d\phi}{dt} & = & -\left(B_{1}-B_{2}\right)vw\\
+ & \Downarrow\\
+\varepsilon & = & -\frac{d\phi_{S}}{dt}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקרא לזה 
+\noun on
+חוק פארדיי
+\noun default
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+ה"-" נקרא לו חוק לנס.
+ זה אומר שהכא"ם המושרה שואף לבטל את השינוי בשטף.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c15d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+הפרש השטף כאשר מסגרת זזה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי כאשר 
+\begin_inset Formula $B$
+\end_inset
+
+ קהוע בזמן)לא במרחב!( מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{s}\left(t+dt\right) & = & \int_{S+ds}\vec{B}\cdot d\vec{a}\\
+ & = & \phi\left(t\right)+\int_{ds}\vec{B}\cdot d\vec{a}\\
+d\phi & = & \int_{ds}\vec{B}\left[\vec{v}dtxd\vec{l}\right]\\
+\frac{d\phi}{dt} & = & \int_{c}\vec{B}\cdot\left(\vec{v}\times d\vec{l}\right)\\
+ & = & -\int_{c}\left(\vec{v}\times\vec{B}\right)\cdot d\vec{l}\end{eqnarray*}
+
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varepsilon=\int_{c}\left(\vec{v}\times\vec{B}\right)d\vec{l}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם יש התנגדות בכריכה וזורם זרם אזי נוצר חום.
+ מניין האנרגיה?
+\end_layout
+
+\begin_layout Standard
+עבודה כנגד הכח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c15d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+הכוחות על מסגרת בשדה מגנטי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעצם זה מה שמשתמים בו כדי לייצר חשמל.
+ מסובבים מסגרת בשדה מגנטי אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi\left(t\right) & = & SB\cdot\sin\left(\omega t\right)\\
+\varepsilon & = & -SB\omega\sin\left(\omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מסגרת נייחת בשדה של מקור נע
+\end_layout
+
+\begin_layout Standard
+אותו מערכת כמו מקודם פשוט נעבור למערכת ייחוס של המקור.
+ אזי נעשה טרנספורמצית השדות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E}_{1}^{\prime} & = & \vec{v}\times\vec{B}_{1}\\
+\vec{E}_{2}^{\prime} & = & \vec{v}\times\vec{B}_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)את זה לא למדנו אבל ניתן להוכיח דרך חוק לורנס.
+ אתם תאמינו לזה פשוט(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oint\vec{E}^{\prime}\cdot d\vec{l}=wv\left(B_{1}-B_{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והשטף 
+\begin_inset Formula $\phi^{\prime}$
+\end_inset
+
+ משתנה בזמן כי המקור נע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varepsilon^{\prime}=-\frac{d\phi^{\prime}}{dt}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שדה מגנטי משתנה
+\end_layout
+
+\begin_layout Standard
+אם השדה נחלש לאט אזי כל מה שאנחנו רואים זה השדה נחלש, אז במובן מסוים לא
+ נוכל להבחין אם המקור זז או זאם המקור נחלש.
+ יוצא שלא משנה בכלל אם מי זהה או אם המקור נחלש, כל מה שצריכים לדעת זה השינוי
+ בשטף.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varepsilon & = & -\frac{d}{dt}\int\vec{B}\cdot d\vec{a}\\
+ & = & -\frac{d\phi}{dt}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varepsilon & = & \int\vec{E}\cdot d\vec{l}\\
+ & = & \int\left(\vec{\nabla}\times\vec{E}\right)d\vec{a}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{\nabla}\times\vec{E}=-\frac{\partial\vec{B}}{\partial t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו היא הגרסה הדיפרנציאלית של חוק פארדיי.
+\end_layout
+
+\begin_layout Standard
+שטף נמדד ב 
+\begin_inset Formula $Tesla\times\left(Meter\right)^{2}=Weber$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+השראה הדדית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c15d4.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שתי מסגרות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\phi_{21}\equiv\int_{S_{2}}\vec{B}_{1}\cdot d\vec{a}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשנה את 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+, 
+\begin_inset Formula $\phi_{21}$
+\end_inset
+
+ יהי תלוי בזמן אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varepsilon_{21} & = & -\frac{d\phi_{21}}{dt}\\
+ & = & -M_{21}\frac{dI_{1}}{dt}\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $M_{21}$
+\end_inset
+
+ קבוע ההשראות ההדדית נמדד ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Henry
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Subsection
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c15d5.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה להשראה הדדית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{1}\gg R_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+B_{1}\approx\frac{\mu_{0}I}{2R_{1}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{21} & \approxeq & \phi R_{2}^{2}\frac{\mu_{0}I_{1}}{2R_{1}}=\frac{\pi R_{2}^{2}\mu_{0}I_{1}}{2R_{1}}\\
+\varepsilon_{21} & = & -\frac{\pi R_{2}^{2}\mu_{0}}{2R_{1}}\left(\frac{dI_{1}}{dt}\right)\\
+ & \Downarrow\\
+M_{21} & = & \frac{-\varepsilon_{21}}{\left(\frac{dI_{1}}{dt}\right)}\\
+ & = & \frac{\pi R_{2}^{2}\mu_{0}}{2R_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משפט ההדיות אומר כי 
+\begin_inset Formula $M_{21}=M_{12}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+השראה עצמית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varepsilon_{11} & = & -\frac{d\phi_{11}}{dt}\\
+ & = & -L_{1}\frac{dI_{1}}{dt}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+מעגל 
+\begin_inset Formula $RL$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename physics2/c16d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל 
+\begin_inset Formula $RL$
+\end_inset
+
+ במצב טעינה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+טעינה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varepsilon_{0}-L\frac{\partial I}{\partial t} & = & RI\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון של המשוואה הזו הוא 
+\begin_inset Formula $I=\frac{\varepsilon_{0}}{R}\left(I-e^{-\frac{t}{\nicefrac{L}{R}}}\right)$
+\end_inset
+
+, זה עם תנאי התחלתי 
+\begin_inset Formula $I\left(0\right)=0$
+\end_inset
+
+.
+ נגדיר קבוע הזמן במקרה זה להיות 
+\begin_inset Formula $\tau=\nicefrac{L}{R}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+פריקה
+\end_layout
+
+\begin_layout Standard
+אם מנתקים את המעגל אחרי שהזרם כבר התיצב המשרן יגיב לשינוי המהיר בזרם בכא"ם
+ מנוגד שיכול לפגוע בספק הכח במעגל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+0=L\frac{\partial I}{\partial t}+RI\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הוא 
+\begin_inset Formula $I=I_{0}e^{-\frac{t}{\nicefrac{L}{R}}}$
+\end_inset
+
+ עבור תנאי התחלה 
+\begin_inset Formula $I\left(0\right)=I_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+אנרגיה שהשתחררה בנגד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+U & = & \int_{0}^{\infty}I^{2}Rdt\\
+ & = & \int_{0}^{\infty}I_{0}^{2}Re^{-2\frac{t}{\nicefrac{L}{R}}}=\frac{1}{2}LI_{0}^{2}=U_{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+כדי לפתור האינטגרל השתמשנו בעובדה ש 
+\begin_inset Formula $\int_{0}^{\infty}e^{-\alpha t}dt=\frac{1}{\alpha}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מזכיר את מה שמצאנו עבור קבל 
+\begin_inset Formula $U_{c}=\frac{1}{2}CV^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
 \end_layout
 
 \end_body
