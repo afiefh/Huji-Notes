@@ -1,0 +1,59 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language english
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\epsilon_{i,j,k}a_{i}b_{j}c_{k} & = & a\cdot\left(b\times c\right)\\
+\epsilon_{i,j,k}a_{j}b_{k} & = & \left(x\times b\right)_{i}\\
+\delta_{i,j}a_{i} & = & \delta_{j,i}a_{i}=a_{j}\\
+\delta_{i,j}a_{i}b_{j} & = & a_{i}b_{i}=a_{j}b_{j}\\
+\epsilon_{i,j,k}=\epsilon_{j,i,j}=\epsilon_{j,k,i} & = & -\epsilon_{i,j,k}=-\epsilon_{j,i,k}=-\epsilon_{k,j,i}\\
+\epsilon_{i,j,k}\epsilon_{i,l,m} & = & \delta_{j,l}\delta_{k,m}-\delta_{j,m}\delta_{k,l}\\
+\epsilon_{i,j,k}\underbrace{a_{i}b_{j}c_{k}}_{\mbox{symmetric}} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -12944,5 +12944,1138 @@ f\left(x\right) & = & a_{n}+\left(a_{n+1}-a_{n}\right)\left(x-n\right)\end{eqnar
  משל
 \end_layout
 
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+סדרה 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ נקראת סדרת קושי
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+או מקיימת תנאי קושי
+\end_layout
+
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|a_{n}-a_{m}\right|<\varepsilon$
+\end_inset
+
+ לכל 
+\begin_inset Formula $N<n,m$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+דרך נוספת לסמן שסדרה היא סדרת קושי 
+\begin_inset Formula $\lim_{n,m\to\infty}\left|a_{n}-a_{m}\right|=0$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אבל אנחנו עדיין לא הגדרנו מה זה גבול עם שני אינדקסים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר: תנאי קושי 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ התכנסות
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+הוכח בשיעור שעבר כי התכנסות גוררת תנאי קושי.
+ נשאר להוכיח הכיוון השני.
+\end_layout
+
+\begin_layout Standard
+שלבי ההוכחה:
+\end_layout
+
+\begin_layout Enumerate
+נוכיח שהסדרה חסומה
+\end_layout
+
+\begin_layout Enumerate
+נסתמך על משפט בולצנו ויירשטרס לטעון כי קיימת ל 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ תת סדרה מתכנסת)נקרא לגבול שלה 
+\begin_inset Formula $a$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Enumerate
+נראה כי 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא הגבול של הסדרה כולה
+\end_layout
+
+\begin_layout Paragraph
+מהלך ההוכחה:
+\end_layout
+
+\begin_layout Enumerate
+מהנתון כי 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ סדרת קושי נובע כי קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|a_{n}-a_{m}\right|<1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $N<m,n$
+\end_inset
+
+ בפרט אם ניקח 
+\begin_inset Formula $m=N+1$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left|a_{n}-a_{N+1}\right|<1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a_{N+1}-1<a_{n}<a_{N+1}+1$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ סדרה חסומה
+\end_layout
+
+\begin_layout Enumerate
+ממשפט בולצנו ויירשטרס קימת תת סדרה 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $n_{k}$
+\end_inset
+
+ זו סדרה מסוימת( כך ש 
+\begin_inset Formula $\lim_{k\to\infty}a_{n_{k}}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צ"ל 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=a$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $n,k\in\mathbb{N}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|a_{n}-a\right|=\left|a_{n}-a_{n_{k}}+a_{n_{k}}-a\right|\leq\left|a_{n}-a_{n_{k}}\right|+\left|a_{n_{k}}-a\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בהינתן 
+\begin_inset Formula $0<\varepsilon$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|a_{n}-a_{m}\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+ כךכ 
+\begin_inset Formula $N<n,m$
+\end_inset
+
+ קיים 
+\begin_inset Formula $k\in\mathbb{N}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|a_{n_{k}}-a\right|<\frac{\varepsilon}{2}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $k>K$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יהא 
+\begin_inset Formula $k$
+\end_inset
+
+ מספיק גדול כך שהוא גדול מ
+\begin_inset Formula $k$
+\end_inset
+
+ וכם 
+\begin_inset Formula $N<n_{k}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $N<n$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|a_{n}-a\right|\leq\underbrace{\left|a_{n}-a_{n_{k}}\right|}_{\nicefrac{\varepsilon}{2}}+\underbrace{\left|a_{n_{k}}-a\right|}_{\nicefrac{\varepsilon}{2}}<\varepsilon$
+\end_inset
+
+.
+ משל
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+הוכחנו כי בעולם המספרים הממשיים)שדות סדורים ושלמים( כל סדרת קושי מתכנסת.
+\end_layout
+
+\begin_layout Section
+טורים
+\end_layout
+
+\begin_layout Standard
+יש סדרה 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ סכום שלו הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+a_{1}+a_{2}+a_{3}+\dots+a_{n}=\sum_{n=1}^{\infty}a_{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר את סדרת הסכומים החלקיים של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S_{n}=\sum_{k=1}^{n}a_{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נאמר שסדרה היא סכימה
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Summable}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ אם סדרת הסכומים החלקיים מתכנסים ונסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{n\to\infty}S_{n}=\sum_{n=1}^{\infty}a_{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה והסדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ סכימה נאמר שהטור של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מתכנס אחרת נאמר שהוא מתבדר
+\end_layout
+
+\begin_layout Paragraph
+הדוגמה:
+\end_layout
+
+\begin_layout Standard
+הסדרה ההנדסית 
+\begin_inset Formula $a_{n}=q^{n}$
+\end_inset
+
+ אם 
+\begin_inset Formula $0<q<1$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+S_{n} & = & \sum_{k=1}^{n}q^{k}\\
+ & = & q\frac{1-q^{n}}{1-q}\\
+\lim_{n\to\infty}S_{n} & = & \frac{q}{1-q}\end{eqnarray*}
+
+\end_inset
+
+ אזי ניתן לסמן 
+\begin_inset Formula $-1<q<1:\sum_{n=1}^{\infty}q^{n}=\frac{q}{1-q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+לטור 
+\begin_inset Formula $\frac{1}{n}$
+\end_inset
+
+ קוראים טור הרמוני.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+1+\underbrace{\frac{1}{2}+\frac{1}{3}}_{>\frac{1}{2}}+\underbrace{\frac{1}{4}+\frac{1}{5}+\frac{1}{6}+\frac{1}{7}+\frac{1}{8}}_{>\frac{1}{2}}+\frac{1}{9}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הטור 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהינה 
+\begin_inset Formula $\left(a_{n}\right),\left(b_{n}\right)$
+\end_inset
+
+ סדרות סכמות אז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{n=1}^{\infty}\left(a_{n}+b_{n}\right) & = & \sum_{n=1}^{\infty}a_{n}+\sum_{n=1}^{\infty}b_{n}\\
+\sum_{n=1}^{\infty}\left(ca_{n}\right) & = & c\sum_{n=1}^{\infty}a_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ סדרה.
+ אז היא סכימה אם ורק אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N\in\mathbb{N}$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $m,n>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|a_{n+1}+a_{n+2}\dots+a_{m}\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+אם סדרה סכימה אז היא שואפת לאפס
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+סדרה אי שלילית היא סכימה אם ורק אם סדרת הסכומים החלקיים חסומה.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+עבור איברים אי שליליים סדרת הסכומים החלקיים מונוטונית.
+ הוכחנו כי כל סדרה מונוטונית וחסומה מתכנסת
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהינה 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $\left(b_{n}\right)$
+\end_inset
+
+ סדרות חיוביות כך ש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{n\to\infty}\frac{a_{n}}{b_{n}}=c\neq0\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ מתכנס אם"ם 
+\begin_inset Formula $\sum_{n=1}^{\infty}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a_{n}\neq0$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=a>0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{n\to\infty}\frac{1}{a_{n}}=\frac{1}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+מבחן המנה
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ סדרה חיובית כך ש 
+\begin_inset Formula $\lim_{n\to\infty}\frac{a_{n+1}}{a_{n}}=r$
+\end_inset
+
+ קיים אזי
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $r<1$
+\end_inset
+
+ אז הטור 
+\begin_inset Formula $\sum^{\infty}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $r>1$
+\end_inset
+
+ אז הטור 
+\begin_inset Formula $\sum^{\infty}a_{n}$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $r=1$
+\end_inset
+
+ אז לא ניתן לגבוע על ידי משפט זה
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $r<1$
+\end_inset
+
+ אזי קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $0<\frac{a_{n+1}}{a_{n}}<S<1$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $0<S<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפרט 
+\begin_inset Formula $a_{N+1}<Sa_{N}$
+\end_inset
+
+, 
+\begin_inset Formula $a_{N+2}<Sa_{N+1}<Sa_{N}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $a_{N+k}<S^{k}a_{N}$
+\end_inset
+
+.
+ אזי מחלקים את הטור לחלקים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=1}^{n}a_{k} & = & \sum_{k=1}^{N}a_{k}+\sum_{k=N+1}^{n}a_{k}\\
+ & \leq & \sum_{k=1}^{N}a_{k}+a_{N}\underbrace{\sum_{k=N+1}^{n}S^{k}}_{\mbox{\R{טור\,הנסדי\,מתכנס}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסכומים החלקיים של הטור מתכנסים
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כי 
+\begin_inset Formula $0<S<1$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ לכן הטור מתכנס
+\end_layout
+
+\begin_layout Section
+טורים מוקרים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{2}}$
+\end_inset
+
+ מתכנס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n}$
+\end_inset
+
+ מתבדר
+\end_layout
+
+\begin_layout Standard
+מה לגבי 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{p}}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $p>0$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{a}^{\infty}f=\lim_{x\to\infty}\int_{a}^{x}f\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+השפט:
+\end_layout
+
+\begin_layout Standard
+מבחן האינטגרל
+\end_layout
+
+\begin_layout Standard
+תהא 
+\begin_inset Formula $f$
+\end_inset
+
+ פונקציה מונוטונית יורדת על 
+\begin_inset Formula $\left[1,\infty\right)$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $a_{n}=f\left(n\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\sum_{n=1}^{\infty}a_{n}$
+\end_inset
+
+ קיים אם ורק אם 
+\begin_inset Formula $\int_{1}^{\infty}f$
+\end_inset
+
+ קיים
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נתבונן ב 
+\begin_inset Formula $f\left(x\right)=\frac{1}{x^{p}}$
+\end_inset
+
+ אז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{1}^{x}\frac{1}{x^{p}}=\begin{cases}
+\frac{1}{1-p}\left[\frac{1}{x^{p-1}}-1\right] & p\neq1\\
+\log\left(x\right) & p=1\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $\int_{1}^{\infty}f$
+\end_inset
+
+ קיים רק עבור 
+\begin_inset Formula $p>1$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\sum_{n=1}^{\infty}\frac{1}{n^{p}}$
+\end_inset
+
+ קיים אם"ם 
+\begin_inset Formula $p>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+התכנסות בהחלט ובתנאי
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ סדרה נאמר שהטור שלה מתכנס בהחלט אם הטור 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ מתכנס.
+ טור מתכנס אך אינו מתכנס בהחלט נקרא מתכנס בתנאי.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{n} & = & \left\{ 1,-\frac{1}{2},+\frac{1}{3},-\frac{1}{4},+\frac{1}{5}\dots\right\} \\
+a_{n} & = & \frac{\left(-1\right)^{n+1}}{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט רימן:
+\end_layout
+
+\begin_layout Standard
+בטור תנאי לכל 
+\begin_inset Formula $\alpha\in\mathbb{R}$
+\end_inset
+
+ קיים "סידור מחדש" של הטור שמתכנס ל 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ )לא נוכיח את זה(
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+התכנסות בהחלט 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ התכנסות.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+ידוע ש 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left|a_{n}\right|$
+\end_inset
+
+ קיים.
+ מקריטריון קושי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|a_{n+1}\right|+\left|a_{n+1}\right|+\dots+\left|a_{m}\right|<\varepsilon$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\left|a_{n+1}+\dots+a_{m}\right|\leq\left|a_{n+1}\right|+\dots+\left|a_{m}\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ מקיים את קריטריון קושי להתכנסות טורים
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+טור 
+\begin_inset Formula $\sum a_{n}$
+\end_inset
+
+ מתכנס בהחלט אם"ם שני הטורים המתקבלים מהערכים החיוביים ומהערכים השלילים
+ מתכנסים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{n}^{+} & = & \begin{cases}
+a_{n} & a_{n}>0\\
+0 & a_{n}<0\end{cases}\\
+a_{n}^{-} & = & \begin{cases}
+a_{n} & a_{n}<0\\
+0 & a_{n}>0\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{n} & = & a_{n}^{+}+a_{n}^{-}\\
+\left|a_{n}\right| & = & a_{n}^{+}-a_{n}^{-}\\
+a_{n}^{+} & = & \frac{1}{2}\left(a_{n}+\left|a_{n}\right|\right)\\
+a_{n}^{-} & = & \frac{1}{2}\left(a_{n}-\left|a_{n}\right|\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשפט נובע מאריכמטיקה של טורים
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+תתי סדרות
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה, 
+\begin_inset Formula $\left(n_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ סדרה עולה ממש של הטבעיים נגדיר 
+\begin_inset Formula $b_{k}=a_{n_{k}}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left(b_{k}\right)_{k=1}^{\infty}$
+\end_inset
+
+ תת סדרה של 
+\begin_inset Formula $\left(a_{n}\right)_{n=1}^{\infty}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a_{n}=-1,0,1,-1,0,1\dots$
+\end_inset
+
+ תהי 
+\begin_inset Formula $n_{k}=1,2,4,5,7,8,10\dots$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $n_{1}=1$
+\end_inset
+
+ ו 
+\begin_inset Formula $n_{k+1}=n_{k}+1+\frac{1+\left(-1\right)^{k}}{2}$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $b_{k}=a_{n_{k}}$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+b_{k}=-1,0,-1,0,-1,0\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(n_{k}\right)_{n=1}^{\infty}$
+\end_inset
+
+ סדרה של טבעיים עולה ממש אז 
+\begin_inset Formula $\forall k:n_{k}\geq k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+משפט הירושה
+\end_layout
+
+\begin_layout Standard
+סדרה 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ מתכנסת ל 
+\begin_inset Formula $L$
+\end_inset
+
+ אם ורק אם כל תת-סדרה מתכנסת ל 
+\begin_inset Formula $L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+אם כל תת-סדרה מתכנסת אז גם 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ מתכנסת כי כל סדרה היא תת-סדרה של עצמו 
+\begin_inset Formula $n_{k}=k$
+\end_inset
+
+...
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדרת בסביב מנוקבת של 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ נסמן אותה ב 
+\begin_inset Formula $u$
+\end_inset
+
+ אז 
+\begin_inset Formula $\lim_{x\to x_{0}}f\left(x\right)=L$
+\end_inset
+
+ אם"ם לכל סדרה 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ ב 
+\begin_inset Formula $u$
+\end_inset
+
+ המתכנסת ל 
+\begin_inset Formula $x_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lim_{x\to\infty}f\left(a_{n}\right)=L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+טוכ מתכנס בהחלט אם"ם שני הטורים המתקבלים מהאיברים החיוביים והשליליים של
+ הסדרה מתכנסים.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left(a_{n}\right)$
+\end_inset
+
+ סדרה אי שלילית יורדת)במובן החלש, כלומר 
+\begin_inset Formula $\leq$
+\end_inset
+
+( וגם 
+\begin_inset Formula $\lim_{n\to\infty}a_{n}=0$
+\end_inset
+
+ אזי הטר 
+\begin_inset Formula $\sum_{n=1}^{\infty}\left(-1\right)^{n+1}a_{n}$
+\end_inset
+
+ מתכנס
+\end_layout
+
 \end_body
 \end_document

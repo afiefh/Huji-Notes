@@ -1,0 +1,368 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ ?
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+מבניית לוחות אמפר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\partial Bx & = & \mu_{0}I\frac{x}{b}\\
+B & = & \mu_{0}\frac{IB}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהתרומה של שתי הצלעות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B & = & \frac{\mu_{0}I}{b}\\
+\phi & = & \frac{\mu_{0}I}{b}hl\\
+\frac{L}{l} & = & \frac{\mu_{0}h}{b}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+השדה הוא 
+\begin_inset Formula $B\left(r\right)=\frac{\mu_{0}I}{2\pi r}$
+\end_inset
+
+.
+ זרם מפולג אחיד וצפיפות הזרם בגליל היא 
+\begin_inset Formula $J=\frac{I}{\pi a^{2}}$
+\end_inset
+
+ ובקליפה החיצונית 
+\begin_inset Formula $J=\frac{I}{\pi\left(c^{2}-b^{2}\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I=\begin{cases}
+I\left(\frac{r}{a}\right)^{2} & r<a\\
+I & a<r<b\\
+I-I\frac{r^{2}-b^{2}}{c^{2}-b^{2}} & b<r<c\\
+0 & r>c\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנרגיה של המערכת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W & = & \frac{1}{2\mu_{0}}\int B^{2}dV\\
+ & = & \frac{1}{2\mu_{0}}2\pi H\int_{0}^{c}\left(\mu_{0}\frac{I\left(r\right)}{2\pi r}\right)dr\\
+ & = & \mu_{0}\frac{HI^{2}}{4\pi}\int_{0}^{c}\frac{\left(\nicefrac{I\left(r\right)}{I}\right)^{2}}{r}dr\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W_{1} & = & \mu_{0}\frac{HI^{2}}{4\pi}\int_{0}^{a}\frac{r^{3}}{a^{4}}dr=\frac{\mu_{0}HI^{2}}{16\pi}\\
+W_{2} & = & \mu_{0}\frac{HI^{2}}{4\pi}\int_{a}^{b}\frac{dr}{r}=\frac{\mu_{0}HI^{2}}{4\pi}\ln\left(\frac{b}{a}\right)\\
+W_{3} & = & \mu_{0}\frac{HI^{2}}{4\pi}\int_{b}^{c}\left(\frac{c^{2}-r^{2}}{c^{2}-b^{2}}\right)^{2}\frac{dr}{r}\\
+ & = & \mu_{0}\frac{HI^{2}}{4\pi}\left(\frac{c^{4}}{\left(c^{2}-b^{2}\right)^{2}}\ln\left(\frac{c}{b}\right)+\frac{b^{2}-3c^{2}}{4\left(c^{2}-b^{2}\right)}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W & = & \frac{1}{2}LI^{2}\\
+\frac{2\left(W_{1}+W_{2}+W_{3}\right)}{I^{2}} & = & L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+ההשראה ההדדית של הטורואידים היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+M=\frac{\mu_{0}N_{1}N_{2}}{2\pi}\left(n_{2}\ln\left(R_{2}-r_{2}\right)-n_{1}\ln\left(R_{1}-r_{1}\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V-L\frac{dI_{1}}{dl}-I_{3}R & = & 0\\
+I_{2}R+L\frac{dI_{2}}{dl}-I_{3}R & = & 0\\
+R\dot{I}_{2}+L\ddot{I}_{2}-R\dot{I}_{3} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V-L\dot{I}_{1}-I_{2}R-L\dot{I}_{2} & = & 0\\
+V-\frac{L^{2}}{R}\ddot{I}_{2}-2L\dot{I}_{2}-I_{2}R-L\dot{I}_{2} & = & 0\\
+I_{1} & = & I_{2}+I_{3}\\
+\dot{I}_{1} & = & \dot{I}_{2}+\dot{I}_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב את במשוואה האחרונה ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{I}_{1} & = & \dot{I}_{2}+\dot{I}_{2}+\frac{L}{R}\ddot{I}_{2}\\
+ & = & \frac{L}{R}\ddot{I}_{2}+2\ddot{I}_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{I}_{2}+\frac{3R}{L}\dot{I}_{2}+\frac{R^{2}}{L^{2}}I_{2}-\frac{VR}{L^{2}} & = & 0\\
+r^{2}+3\frac{R}{L}r+\frac{R^{2}}{L^{2}} & = & 0\\
+r & = & \left(-\frac{3}{2}\pm\frac{\sqrt{5}}{2}\right)\frac{R}{L}=\varphi_{\pm}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{2}\left(t\right)=\frac{V}{R}+C_{1}\exp\left(-\varphi_{+}t\right)+c_{2}\exp\left(-\varphi_{-}t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי התחלה הם 
+\begin_inset Formula $I_{2}\left(t=0\right)=0,\dot{I}_{2}\left(t=0\right)=0$
+\end_inset
+
+ מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{1}=\frac{V}{R}\left(\frac{1+\varphi_{-}}{\varphi_{+}-\varphi_{-}}\right),C_{2}=\frac{V}{R}\left(\frac{1+\varphi_{+}}{\varphi_{-}-\varphi_{+}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{3} & = & I_{2}\left(t\right)-L\varphi_{+}C_{1}\exp\left(-\varphi_{+}t\right)-L\varphi_{-}C_{2}\exp\left(-\varphi_{-}t\right)\\
+I_{1} & = & 2I_{2}\left(t\right)-L\varphi_{+}C_{1}\exp\left(-\varphi_{+}t\right)-L\varphi_{-}C_{2}\exp\left(-\varphi_{-}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

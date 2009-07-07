@@ -1,0 +1,1173 @@
+#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+עבור כל עץ חיפוש בינארי יודעים כי הקודקוד השמאלי הוא יותר קטן מהקודקוד עצמו,
+ והקודקוד הימני יותר גדול מהקודקוד עצמו.
+ אבל כל תת עץ גם מקיים את התכונה הזו, אזי אם מחליפים מילת "מדפיס" באלגוריתם
+ שקיבלנו אז זה ידפיס בסדר עולה.
+\end_layout
+
+\begin_layout Standard
+זו היא כן הוכחה שלמה כי הראנו כי עבור כל קודקוד מדפיסים את כל הקודקודים
+ הקטנים ממנו לפני שמדפישים אותו, ואחר כך מדפיסים כל הקודקודים הגדולים ממנו.
+\end_layout
+
+\begin_layout Standard
+נוסחת הריקורסיה היא 
+\begin_inset Formula $T\left(n\right)=T\left(n+1\right)+T\left(n+1\right)+\Theta\left(1\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ הוא גובה העץ.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & = & 2T\left(n+1\right)+\left(2^{1}-1\right)c\\
+ & = & 2\left(2T\left(n+2\right)+c\right)+c\\
+ & = & 2^{2}T\left(n+2\right)+\left(2^{2}-1\right)c\\
+ & = & 2^{2}\left(2T\left(n+3\right)+c\right)+\left(2^{2}-1\right)c\\
+ & = & 2^{3}T\left(n+3\right)+\left(2^{3}-1\right)c\\
+ & = & \vdots\\
+ & = & \left(2^{n}-1\right)c\\
+ & = & \mathcal{O}\left(2^{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נשתמש בעץ חיפוש בינארי עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Order Statstics
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אשר על כל קודקוד שומרים מספר הקודקודים בתת עץ ימיני ומספר הקודקודים בתת
+ אץ הימיני שלו.
+\end_layout
+
+\begin_layout Standard
+את כל הפעולות ראינו כבר בכיתה חוץ מפעולת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Count-Range
+\lang hebrew
+.
+ נשתמש בפונקצית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Find-LVP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מהתרגיל הקודם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+function Range-count(T,a,b) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+junction=find-LVP(T,a,b);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+countme=0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+BiggerThanA=0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+SmallerThanB=0 if(value(junction)!=a && value(junction)!=b) countme=1;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+try {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(junction)!=a)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+BiggerThanA=countBiggerThanA(left(T), a);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(junction)!=b) SmallerThanA=countSmallerThanB(right(T), a);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+catch { 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return "One of the value does not exist in the tree"; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return countme+BiggerThanA+SmallerThanA 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+function countBiggerThanA(T, a) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(T==null) throw exception("A does not exist in tree"); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(T)==a) return rightSubtreeCount(T); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(T)<a) return countBiggerThanA(right(T), a);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(T)>a) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return 1 + rightSubtreeCount(T) + countBiggerThanA(left(T), a); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+function countSmallerThanB(T, a) { 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(T==null) throw exception("A does not exist in tree"); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(T)==a) return leftSubtreeCount(T);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(T)>a) return countBiggerThanA(left(T), a); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(value(T)<a) return 1 + leftSubtreeCount(T) + countSmallerThanA(left(T),
+ a); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Count-Range(T,a,b)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונרציה זו עולה 
+\begin_inset Formula $\Theta\left(h\right)$
+\end_inset
+
+ כי כל פונקציה פנימית עולה 
+\begin_inset Formula $\Theta\left(h\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Recursive-Fibonaci(n) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(n==1 OR n==2) return 1;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return Recursive-Fibonaci(n-1)+Recursive-Fibonaci(n-2);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Recursive-Fibonaci
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתוח זמן ריצה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+T\left(n\in\left\{ 3,4,5\dots\right\} \right)=T\left(n-1\right)+T\left(n-2\right)+\Theta\left(1\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח כי 
+\begin_inset Formula $T\left(n\right)=\Omega\left(2^{\nicefrac{n}{2}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק עבור 
+\begin_inset Formula $n=3$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(3\right) & \overset{?}{>} & t2^{\nicefrac{3}{2}}\\
+T\left(2\right)+T\left(1\right)+c & \overset{?}{>} & t2^{\nicefrac{3}{2}}\\
+3c & \overset{?}{>} & 4t>t2^{\nicefrac{3}{2}}\\
+\frac{3c}{4} & \overset{?}{>} & t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתקיים עבור קבוע 
+\begin_inset Formula $t<\frac{3c}{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי ההנחה מתקיימת עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ומוכיחים עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n+1\right) & > & T\left(n\right)+T\left(n-1\right)+c\\
+T\left(n+1\right) & > & T\left(n-1\right)+T\left(n-2\right)+T\left(n-2\right)+T\left(n-3\right)+c\\
+ & > & t\cdot2^{\nicefrac{n}{2}}+t\cdot2^{\frac{n-1}{2}}+c\\
+ & > & t\cdot\left(2^{\frac{n}{2}}+2^{\frac{n-1}{2}}\right)+c\\
+ & > & t\cdot\left(\sqrt{2}+1\right)\left(2^{\frac{n-1}{2}}\right)+c\\
+ & > & t\cdot2\left(2^{\frac{n-1}{2}}\right)+c\\
+ & > & t\cdot2^{\left(\frac{n+1}{2}\right)}+c\\
+ & > & \Omega\left(2^{\frac{n+1}{2}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Iterative-Fibonacci(n) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+n1=n2=1
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for(i=2;i<n;i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+tmp=n1+n2;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+n2=n1;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+n2=tmp;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return n2;
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Iterative-Fibonacci
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתוח סיבוכיות ריצה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\left(n\right) & = & \Theta\left(1\right)+\left(n-3\right)Loop\left(n\right)\\
+ & = & \Theta\left(1\right)+\left(n-3\right)\Theta\left(1\right)\\
+ & = & c+\left(n-3\right)d\\
+ & = & c+dn-3c\\
+ & = & \Theta\left(n\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{1} & \overset{?}{=} & 1\\
+\frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{1}-\left(\frac{1-\sqrt{5}}{2}\right)^{1}\right) & \overset{?}{=} & 1\\
+\frac{1}{\sqrt{5}}\left(\frac{1+\sqrt{5}-1+\sqrt{5}}{2}\right) & \overset{?}{=} & 1\\
+\frac{\sqrt{5}}{\sqrt{5}} & \overset{?}{=} & 1\\
+1 & \overset{\checkmark}{=} & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי זה מתקיים עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{n+1} & \overset{?}{=} & F_{n}+F_{n-1}\\
+ & = & F_{n}+F_{n-1}\\
+ & = & \frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n}-\left(\frac{1-\sqrt{5}}{2}\right)^{n}\right)+\frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}-\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right)\\
+ & = & \frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n}-\left(\frac{1-\sqrt{5}}{2}\right)^{n}+\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}-\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right)\\
+ & = & \frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n}+\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}-\left(\frac{1-\sqrt{5}}{2}\right)^{n}-\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right)\\
+ & = & \frac{1}{\sqrt{5}}\left(\left(1+\left(\frac{1+\sqrt{5}}{2}\right)\right)\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}-\left(1+\frac{1-\sqrt{5}}{2}\right)\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי 
+\begin_inset Formula $1+\frac{1\pm\sqrt{5}}{2}=\left(\frac{1\pm\sqrt{5}}{2}\right)^{2}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{n+1} & \overset{?}{=} & \frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{2}\left(\frac{1+\sqrt{5}}{2}\right)^{n-1}-\left(\frac{1-\sqrt{5}}{2}\right)^{2}\left(\frac{1-\sqrt{5}}{2}\right)^{n-1}\right)\\
+F_{n+1} & \overset{\checkmark}{=} & \frac{1}{\sqrt{5}}\left(\left(\frac{1+\sqrt{5}}{2}\right)^{n+1}-\left(\frac{1-\sqrt{5}}{2}\right)^{n+1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Find-max-distance(T) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+distances=recusiveFind-max-distance(root(T));
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(distances.length==1) return distances[0]; //this tree has only one leaf,
+ return distance from root to leaf
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return distances[0]+distances[1];
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+recusiveFind-max-distance(t){
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+r=list();
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(t)=null {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return r;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+} else if(right(t)==null && left(t)==null) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+r.add(0);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return r;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}else{
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+r1=recusiveFind-max-distance(left(t));
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+r2=recusiveFind-max-distance(right(t));
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+r=findTwoMaxValues(r1,r2); //obvious implementation.
+ this is psudo code.
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+increaseAllValuesInListByOne(r);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return r;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Find-max-range
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור כל קודקוד הפונקציה מחזירה את המרחק של שתי העלים הרחוקים ביותר בתת העץ
+ של הקודקוד.
+ שתי הקודקודים הרחוקים ביותר אחד מהשני חייבים להיות עלים)נניח בשלילה שהם
+ לא עלים אז קיים קודקוד שהוא בן של אחד מהם שהוא יותר רחוק(.
+\end_layout
+
+\begin_layout Standard
+אזי סכום המרחק בין שתי העלים הרחוקים ביותר הוא התשוב הנכונה.
+\end_layout
+
+\begin_layout Standard
+הערה: לא ביקשתם שהמסלול לא יחזור על אותו קודקוד/צלע פעמיים, אז זה נכון)ואין
+ לי כח לתקן אותו בשביל משהוא לא מבוקש(
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+האלגוריתם שהצגדתי הוא האכי יעיל, הוא עובד ב
+\begin_inset Formula $\Theta\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+פרט לצלעות בין 
+\begin_inset Formula $\min T$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mbox{root}T$
+\end_inset
+
+ עוברים על כל צלע פעמיים.
+\end_layout
+
+\begin_layout Standard
+הפעולה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+successor
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אומרת לרדת שמאלה או לעלות עד שמוצאים מסלול לרדת ימינה.
+ כלומר יורדים פעם אחת ואז עולים.
+ אם כבר עלינו לא נחזור על מסלול זה עוד פעם.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+מקבלים חסם עליון 
+\begin_inset Formula $\mathcal{O}\left(n\right)$
+\end_inset
+
+ ויותר הדק מקבלים 
+\begin_inset Formula $T\left(n\right)\leq2\left(n-1\right)$
+\end_inset
+
+ יותר מקבלים תשובה יותר הדקה אם מחסרים את הקודקודים בין 
+\begin_inset Formula $\min T$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mbox{root}T$
+\end_inset
+
+ : 
+\begin_inset Formula $T\left(n\right)\leq2\left(n-1\right)-\log_{2}n$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
