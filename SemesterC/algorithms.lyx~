@@ -1,0 +1,10570 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אלגוריתמים
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+לשלוח את ההרצאות אל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+abdullah_kamal@yahoo.com
+\lang hebrew
+ 
+\lang english
+avi.m.1990@gmail.com tomer.peled@mail.huji.ac.il
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+פרטים טכניים
+\end_layout
+
+\begin_layout Standard
+תרגילי בית מהווים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+15
+\numeric off
+% מהציון.
+ ההגשה לתא.
+\end_layout
+
+\begin_layout Standard
+כל תלמיד יעבור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ראיונות שבהם יהיו שאלות על התרגילים שהוגשו.
+\end_layout
+
+\begin_layout Standard
+אתר הקורס:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+www.cs.huji.ac.il/~algo
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+ספר:
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Algorithms by Dosgapta, Vazirani, Papadimitioa
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Section
+אלגוריתם חמדני
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Greedy Algorithms
+\end_layout
+
+\begin_layout Standard
+הרעיון הוא פשוט לעשות הפעולה שנראת היותר משתעמת בשלב זה ולא להתחקם ולחשוב
+ על שלבים עתידיים.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+בעיה זו באה מתחום בעיות תזמון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Scheduling
+\end_layout
+
+\begin_layout Standard
+יש לנו פרק זמן נתון ויש מסימות שרוצים לבצע.
+ לכל מסימה יש זמן התחלה 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ וזמן סיום 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+.
+ מכיוון שאין ביכולתינו לבצע יותר ממסימה אחת הינו רוצים לבצע כמה שיותר מסימות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+התחל מהמסימה בעחת זמן הסיום המוקדם ביותר.
+ כלומר בעלת 
+\begin_inset Formula $b_{i}$
+\end_inset
+
+ מינימאלי.
+\end_layout
+
+\begin_layout Plain Layout
+בצע מסימה 
+\begin_inset Formula $i$
+\end_inset
+
+, פסול כל מסימה אחרת שמתנגשת בה והמשך באותו אופן
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+אלגוריתם חמדן למיין מסימות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+האלגוריתם הנ"ל מבצע את המספר המירבי האפשרי של מסימות
+\end_layout
+
+\begin_layout Subparagraph
+טענת עזר:
+\end_layout
+
+\begin_layout Standard
+יהיו 
+\begin_inset Formula $i_{1},\dots,i_{k}$
+\end_inset
+
+ האינדקסים של המסימות שאותן יבצע האלגוריתם החמדן ויהיו 
+\begin_inset Formula $j_{1},\dots,j_{m}$
+\end_inset
+
+ המשימות שמבצע אלגוריתם אחר.
+ הקטעים בהם אנחנו מטפלים הם אם כן 
+\begin_inset Formula $\left[a_{i_{1}},b_{i_{1}}\right],\left[a_{i_{2}},b_{i_{2}}\right]\dots$
+\end_inset
+
+ והמסימות שהאלגוריתם האחר מטפל הם 
+\begin_inset Formula $\left[a_{j_{1}},b_{j_{1}}\right],\left[a_{j_{2}},b_{j_{2}}\right]\dots$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Subparagraph
+טענתנו:
+\end_layout
+
+\begin_layout Standard
+לכל אינדקס 
+\begin_inset Formula $r\leq k$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $b_{i_{r}}\leq b_{j_{r}}$
+\end_inset
+
+ )במלים אחרות החמדן מסים את המסימות שלו בזמן לא יותר מאשר האלגוריתם האחר
+ מסים המסימה ה
+\begin_inset Formula $r$
+\end_inset
+
+ית שלו(
+\end_layout
+
+\begin_layout Standard
+את הטענה הזו אנו נוכיח באינדוקציה על 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ הבסיס הוא 
+\begin_inset Formula $r=1$
+\end_inset
+
+ כי ב
+\begin_inset Formula $r=1$
+\end_inset
+
+ אנחנו בודקים בדיוק את הטענה.
+\end_layout
+
+\begin_layout Standard
+עכשיו נראה שטענת העזר גוררת שהאלגוריתם החמדן מבצע את המס' המירבי של משימות
+ כלומר 
+\begin_inset Formula $l\geq m$
+\end_inset
+
+ לם זה נשתמש בטענת העזר ל
+\begin_inset Formula $r=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $m>k$
+\end_inset
+
+ ע"פ טענת העזר זמן הסיום של האלג' החמדן קטן או שווה לזמן שבו האלג האחר סיים
+ את מסימותיו ה
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Subsection
+בית תזמון חדשה
+\end_layout
+
+\begin_layout Standard
+חהנהח בי"ס יש צורך לארגן חדרים לפעילויות הוראה.
+ כל פעילות היא קטע בזמן אי אפשר לקיים שתי פעיליות בו זמנית באותו החדר.
+ רוצים למזער את מס' החדרים שיש להוראה.
+\end_layout
+
+\begin_layout Paragraph
+אינטואיציה:
+\end_layout
+
+\begin_layout Standard
+אם יש איזשהוא רגע שבו מתקיימים 
+\begin_inset Formula $d$
+\end_inset
+
+ פעיליות נצרקך לפחות 
+\begin_inset Formula $d$
+\end_inset
+
+ חדרים.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יהיה 
+\begin_inset Formula $d^{*}$
+\end_inset
+
+ המס' המירבי של פעיליות הוראה המתקיימות בו זמנית אז ניתן לשכן ב 
+\begin_inset Formula $d^{*}$
+\end_inset
+
+ חדרים יתר על כן, ניתן למצא השמה של שיעורים לחדרים ע"י אלג' חמדן.
+\end_layout
+
+\begin_layout Paragraph
+האלגוריתם:
+\end_layout
+
+\begin_layout Standard
+נעבור על הקטעים)של השיעורים( משמאל לימינה ע"פ שעת ההתחלה שלהם כל שיעור נפנה
+ לחדר הפנוי הראשון.
+\end_layout
+
+\begin_layout Paragraph
+הוכחת הטענה:
+\end_layout
+
+\begin_layout Standard
+ברור שנדרשים לפחות 
+\begin_inset Formula $d^{*}$
+\end_inset
+
+ חדרים ע"מ לשכן אתהשעורים נראה שהאלכג' החמדן אכן נותן לנו ....
+ כזה.
+ נעבור על הקטעים כסדרה ונביט במשרה הראשונה שבו אנו נכשל, זהו המצב הראשון
+ הבו כל החדרים 
+\begin_inset Formula $1\dots d^{*}$
+\end_inset
+
+ תפוסים ויש לנו שיעור נוסף שצריך לצרף.
+\end_layout
+
+\begin_layout Subsection
+בעיה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series medium
+\shape default
+\size normal
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+cache
+\end_layout
+
+\begin_layout Standard
+יש לנו זיכרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+cache
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+)בעברית זכרון מטמון( 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המכיל נאמר 
+\begin_inset Formula $k$
+\end_inset
+
+ יחידות זכרון "דפים" ואנו נזדקקים במהלך ריצה של המחשב ליחידות שחלקן נמצא
+ כרגע במטמון ומפעם לפעם גם לדף שנמצא בזיכרון איטי יותר וגדול יותר.
+\end_layout
+
+\begin_layout Standard
+כל פנייה לדף יכולה להיות קליעה)כלומר הדף הרצוי נמצא במטמון( או "החטאה"
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+miss
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+במצב כזה אנחנו מסלקים איזשהו דף מן המטמון ומכניסים במקומו את הדף המבוקש)מהמטמון(
+\end_layout
+
+\begin_layout Paragraph
+הבעייה:
+\end_layout
+
+\begin_layout Standard
+יש לנו זכרון שמכיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+k
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+דפים ומאוכלס בתחילה על ידי הדפים 
+\begin_inset Formula $x_{1}\dots x_{k}$
+\end_inset
+
+ בהמשך תהיינה דרישות לדפים מתוך הקבוצה 
+\begin_inset Formula $P=p_{1}\dots p_{n}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x_{1}\dots x_{k}\in P$
+\end_inset
+
+ .
+ כאשר מכיע דרישה לדף 
+\begin_inset Formula $p\in P$
+\end_inset
+
+ שאינו נמצא כרגע בזיכרון המטמון עלינו להכניס את 
+\begin_inset Formula $p$
+\end_inset
+
+ ולהוציא דף אחר)החטאה(.
+\end_layout
+
+\begin_layout Standard
+המטרה הוא למזער המספר הכולל של החטאות.
+\end_layout
+
+\begin_layout Standard
+נניח כי במטמון נמצאים הדפים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+abce
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+והקריאות לדפים יהיה בסדר הבא)משמאל לימין(
+\lang english
+dabfeabc
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Paragraph
+האלגוריתם החמדן:
+\end_layout
+
+\begin_layout Standard
+נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Furthest Into The Future
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שבו אנו נסלק מהמטמון אותו הדף שנדרש שוב בעתיד הרחוק ביותר.
+\end_layout
+
+\begin_layout Standard
+השינויים במטמון יהיו באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+abce & , & dabfeabc\\
+abde & , & abfeabc\\
+abfe & , & c\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $k<n$
+\end_inset
+
+ ולכל סדרה של דרישות דפים לאלג'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+יהיה מספר מזערי של החטאות.
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+באופן עקרוני אנחנו מתירים לאלגוריתם גם לבצע פעולת סליקה של דף שאינו דרוש
+ כרגע.
+ אלגוריתם שאיננו עושה צעדים כאלה יקרא אלגוריתם מצומצם.
+\end_layout
+
+\begin_layout Paragraph
+מסקנה אינטואיתיבית:
+\end_layout
+
+\begin_layout Standard
+האלגוריתם הטוב ביותר הוא אלגוריתם מצומצם, כי האלג' הלא מצומצם הכניס ברגע
+ מסויים בדף שאינו נדרש לתוך זכרון המטמון.
+ נבנה אלג' אחר 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+ שמבצעת אותן פעולות כמו 
+\begin_inset Formula $A$
+\end_inset
+
+ לפרט שהוא לא עושה את הפעולה הלא דרושה הזו, אז 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+ יותר טוב מ 
+\begin_inset Formula $A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A$
+\end_inset
+
+ לא הטוב ביותר.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יהיה 
+\begin_inset Formula $S$
+\end_inset
+
+ אלג מצומצם שפעולותיו מזדהות עם אלה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עד זמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+j
+\lang hebrew
+.
+ אזי אלג' 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ המתלכד עד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לפתחות עד זמן 
+\begin_inset Formula $j+1$
+\end_inset
+
+ ורואים כי 
+\begin_inset Formula $\mbox{cost}\left(S^{\prime}\right)\leq\mbox{cost}\left(S\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נמשיך ונראה ש 
+\begin_inset Formula $S$
+\end_inset
+
+ וכם 
+\begin_inset Formula $FF$
+\end_inset
+
+ ביחד אם גם בזמן 
+\begin_inset Formula $j+1$
+\end_inset
+
+ הם זהים.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+קוד האופמן
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+נתון א"ב 
+\begin_inset Formula $A=\left\{ a_{1},\dots,a_{n}\right\} $
+\end_inset
+
+ לכל אות ב 
+\begin_inset Formula $A$
+\end_inset
+
+ נתונה התדירות שלה 
+\begin_inset Formula $f\left(a_{i}\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\sum_{i=1}^{n}f\left(a_{i}\right)=1$
+\end_inset
+
+.
+ נרצה לקודד טקסט שתדירויותייו נתונות ע"י 
+\begin_inset Formula $f$
+\end_inset
+
+ ע"י קוד בינארי 
+\begin_inset Formula $C:A\to\left\{ 0,1\right\} $
+\end_inset
+
+ כך ש 
+\begin_inset Formula $L=\sum_{i=1}^{n}f\left(a_{i}\right)l\left(c\left(a_{i}\right)\right)$
+\end_inset
+
+ יהיה מינימאלי )
+\begin_inset Formula $L$
+\end_inset
+
+ נקרא אורך הקידוד הממוצע(
+\end_layout
+
+\begin_layout Paragraph
+דרישות על 
+\begin_inset Formula $c$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+דרישה מינימאלית היא ש 
+\begin_inset Formula $c$
+\end_inset
+
+ יהיה חד חד ערכי
+\end_layout
+
+\begin_layout Enumerate
+הרחבה של 
+\begin_inset Formula $c$
+\end_inset
+
+ לרציפים של אותיות מ 
+\begin_inset Formula $A$
+\end_inset
+
+ כלומר: 
+\begin_inset Formula $c^{\prime}:A^{*}\to\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+, 
+\begin_inset Formula $c^{\prime}\left(\alpha_{1},\alpha_{2},\dots\alpha_{n}\right)=c\left(\alpha_{1}\right)c\left(\alpha_{2}\right)\dots c\left(\alpha_{n}\right)$
+\end_inset
+
+ תהיה חד חד ערגית)כלומר לא יהיה 
+\begin_inset Formula $c\left(0\right)='0',c\left(1\right)=00$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+קוד 
+\begin_inset Formula $c$
+\end_inset
+
+ יקרא חסר רישא אם לכל שתי מילות קוד 
+\begin_inset Formula $\omega_{1},\omega_{2}\in\mbox{Image}\left(c\right)$
+\end_inset
+
+ מתקיים ש 
+\begin_inset Formula $\omega_{1}$
+\end_inset
+
+ איננו רישא של 
+\begin_inset Formula $\omega_{2}$
+\end_inset
+
+ כלומר קיים 
+\begin_inset Formula $\beta\in\left\{ 0,1\right\} ^{*}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\omega_{2}=\omega_{1}\beta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+קוד חסר רישא ניתן לפענוח יחיד.
+\end_layout
+
+\begin_layout Paragraph
+עצי קודוד:
+\end_layout
+
+\begin_layout Standard
+הם ייצוג לקודים חסרי רישא.
+ לקוד נתון נתאים עץ בינארי שעליו יתאימו למילות הקוד שלו.
+ כאשר הבן השמאלי של קודקוד מסויים יקבל על ידי שרשור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+והבן הימני על ידי שרשור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Paragraph
+רעיון:
+\end_layout
+
+\begin_layout Standard
+נקודד אותיות יותר נדירות ע"י מילים ארוכות ואותיות נפוצות ע"י מילים קצרות.
+\end_layout
+
+\begin_layout Subsection
+קידוד האופמאן
+\end_layout
+
+\begin_layout Enumerate
+נמצא את האותיות ב 
+\begin_inset Formula $A$
+\end_inset
+
+ שמופיעות הכי מעט 
+\begin_inset Formula $x,y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נאחד אותן לאות אחת 
+\begin_inset Formula $z$
+\end_inset
+
+ בעלת תדירות 
+\begin_inset Formula $f\left(z\right)=f\left(x\right)+f\left(y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+נגדיר א"ב 
+\begin_inset Formula $A^{\prime}=\left(A\setminus\left\{ x,y\right\} \cup\left\{ z\right\} \right)$
+\end_inset
+
+ ונריץ שוב את קוד האופמן על 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+בעץ אופטימאלי קודקוד יש לו שני בנים או אפס.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה יש קודקוד 
+\begin_inset Formula $v$
+\end_inset
+
+ עם בן אחד.
+ אז נבנה 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ עץ המתקבל מחיבור ישיר של בנו של 
+\begin_inset Formula $v$
+\end_inset
+
+ לאביו.
+ עץ זה מקצר את אורך הקידוד של חלק מהאותיות מבלי להאריך את של האחרות שלומר
+ 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ טוב מ 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ בסתירה לזה כי 
+\begin_inset Formula $T$
+\end_inset
+
+ אידיאלי.
+\end_layout
+
+\begin_layout Paragraph
+טענה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series medium
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+קיים עץ אופטימאלי שבו 
+\begin_inset Formula $x,y$
+\end_inset
+
+)האותיות הנדירות ביותר( הם אחים ברמה התחתונה בעץ.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $T$
+\end_inset
+
+ עץ אופטימאלי לפי הטענה הקודמת יש לו שני קודקודים אחים ברמה התחתונה.
+ נסמנם 
+\begin_inset Formula $z_{1},z_{2}$
+\end_inset
+
+.
+ נבנה עץ 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ שבו נחליף את 
+\begin_inset Formula $x$
+\end_inset
+
+ ב 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ ונראה ש 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ אופטימאלי.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\left(T\right)-L\left(T^{\prime}\right) & = & \sum_{i=1}^{n}f\left(a_{i}\right)\underbrace{d_{T}\left(a_{i}\right)}_{\mbox{\R{\text{עומק}}}}-\sum_{i=1}^{n}f\left(a_{i}\right)d_{T^{\prime}}\left(a_{i}\right)\\
+ & = & f\left(x\right)d_{T}\left(x\right)+f\left(z_{1}\right)d_{T}\left(z_{1}\right)-f\left(x\right)d_{T^{\prime}}\left(x\right)-f\left(z_{1}\right)d_{T^{\prime}}\\
+ & = & f\left(x\right)d_{T}\left(x\right)+f\left(z_{1}\right)d_{T}\left(z_{1}\right)-f\left(x\right)d_{T}\left(z_{1}\right)-f\left(z_{1}\right)d_{T}\left(x\right)\\
+ & = & \overbrace{\left(f\left(x\right)-f\left(z_{1}\right)\right)}^{\leq0}\overbrace{\left(d_{T}\left(x\right)-d_{T}\left(z_{1}\right)\right)}^{\leq0}\geq0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר להחליף את 
+\begin_inset Formula $d_{T^{\prime}}$
+\end_inset
+
+ ב 
+\begin_inset Formula $d_{T}$
+\end_inset
+
+ כי 
+\begin_inset Formula $T$
+\end_inset
+
+ ו 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ זהים עבור 
+\begin_inset Formula $A\setminus\left\{ x,z_{1}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שתי החלקים הם קטנים מאפס כי הקודקוד נמצא ברמה התחתונה ביותר, וכי יש לו תדירות
+ מינימאלית.
+\end_layout
+
+\begin_layout Paragraph
+טענה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+)הוכחת נכונות האלג'( בהינתן 
+\begin_inset Formula $A,f$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $A^{\prime}=\left(A\setminus\left\{ x,y\right\} \right)\cup\left\{ z\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x,y$
+\end_inset
+
+ הם האותיות המינימאליות ב 
+\begin_inset Formula $A$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(z\right)=f\left(x\right)+f\left(y\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ הוא אופטימאלי עבור 
+\begin_inset Formula $A^{\prime}$
+\end_inset
+
+ אז 
+\begin_inset Formula $T$
+\end_inset
+
+ המתקבל מ-
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ ע"י החלפת העלה של 
+\begin_inset Formula $z$
+\end_inset
+
+ בעץ של 
+\begin_inset Formula $\left\{ x,y\right\} $
+\end_inset
+
+ אופטימאלי עבור 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\left(T\right) & = & \sum_{a\in A^{\prime}\setminus\left\{ z\right\} }f\left(a\right)d_{T}\left(a\right)+f\left(x\right)\underbrace{d_{T}\left(x\right)}_{d_{T^{\prime}}\left(z\right)+1}+f\left(y\right)\underbrace{d_{T}\left(y\right)}_{d_{T^{\prime}}\left(z\right)+1}\\
+ & = & \sum_{a\in A^{\prime}\setminus\left\{ z\right\} }f\left(a\right)d_{t}\left(a\right)+\underbrace{f\left(x\right)d_{T^{\prime}}\left(z\right)+f\left(y\right)d_{T^{\prime}}\left(z\right)}_{d_{T^{\prime}}\left(z\right)f\left(z\right)}+f\left(x\right)+f\left(y\right)\\
+ & = & L\left(T^{\prime}\right)+f\left(x\right)+f\left(y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $P$
+\end_inset
+
+ עץ אופטימאלי עבור 
+\begin_inset Formula $A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x,y$
+\end_inset
+
+ עלי 
+\begin_inset Formula $P$
+\end_inset
+
+ בו ברמה התחתונה ביותר)קיים לפי טענות קודמות( יהי 
+\begin_inset Formula $P^{\prime}$
+\end_inset
+
+ עץ המתקבל מ 
+\begin_inset Formula $P$
+\end_inset
+
+ ע"י הלעפת תת העץ של 
+\begin_inset Formula $\left\{ x,y\right\} $
+\end_inset
+
+ העלה 
+\begin_inset Formula $z$
+\end_inset
+
+ אז מאופטימאליות 
+\begin_inset Formula $T^{\prime}$
+\end_inset
+
+ נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\left(T^{\prime}\right) & \leq & L\left(P^{\prime}\right)\\
+L\left(P\right) & = & L\left(P^{\prime}\right)+f\left(x\right)+f\left(y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ועל כן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\left(t\right) & = & L\left(T^{\prime}\right)\\
+ & \leq & L\left(P^{\prime}\right)+f\left(x\right)+f\left(y\right)\\
+ & = & L\left(P\right)\end{eqnarray*}
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+ולכן מאופטימאליות 
+\begin_inset Formula $P$
+\end_inset
+
+ סיימנו.
+\end_layout
+
+\begin_layout Chapter
+אי שוויון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Kraft
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $l_{1}\dots l_{n}$
+\end_inset
+
+ הם אורכי מילות קוד של קוד חסרי רישא אז 
+\begin_inset Formula $\sum2^{-l}\leq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $l_{1}\geq l_{2}\geq\dots\geq l_{n}$
+\end_inset
+
+ נתבונן בעץ המתאים לקוד ונשלים אותו לעץ שלם בעומק 
+\begin_inset Formula $l_{1}$
+\end_inset
+
+.
+ לעץ המלא יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $2^{l_{1}}$
+\end_inset
+
+ עלים כל עלה העץ המקורי ברמה 
+\begin_inset Formula $l_{i}$
+\end_inset
+
+ תורם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $2^{l_{1}-l_{i}}$
+\end_inset
+
+ עלים לרמה התחתונה לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{i=1}^{n}2^{l_{1}-l_{i}}\leq2^{l_{i}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $l_{1}\dots l_{n}$
+\end_inset
+
+ טבעיים כך ש 
+\begin_inset Formula $\sum2^{-l_{i}}\leq1$
+\end_inset
+
+ אז קיים קוד חסר רישא שאלה אורכי מילות הקוד שלו.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+המשך הוכחת אופטימאליות של 
+\begin_inset Formula $FF$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+S
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אלגוריתם כלשהוא לפתרון הבעיה ונומר שהוא מתלקד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עד זמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+j
+\lang hebrew
+.
+ אזי יש אלג' 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ לפתרון הבעיה שמקיים שתי תנאים:
+\end_layout
+
+\begin_layout Enumerate
+מתלקד עם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\lang hebrew
+ 
+\begin_inset Formula $j+1$
+\end_inset
+
+ זמן
+\end_layout
+
+\begin_layout Enumerate
+המחיר של 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ לא עולה על המחיר של 
+\begin_inset Formula $S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+תזכורת:
+\end_layout
+
+\begin_layout Standard
+נזכיר כי ראינו כי די לנו לדון במקרה ש 
+\begin_inset Formula $S$
+\end_inset
+
+ אלג' מצומצם כלומר הוא לעולם אינו מסלק דף אלה כשיש צורך.
+ ראינו גם שכל אלג' שאינו מצומצם ניתן למצא אלג' אחר מצומצם שמחירו אינו גבוה
+ יותר.
+\end_layout
+
+\begin_layout Paragraph
+בניית 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $S$
+\end_inset
+
+ מתלכד עם 
+\begin_inset Formula $FF$
+\end_inset
+
+ גם בצעד ה
+\begin_inset Formula $j+1$
+\end_inset
+
+ אזי ניקח 
+\begin_inset Formula $S=S^{\prime}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אחרת:
+\end_layout
+
+\begin_layout Standard
+)הרעיון( עד הצעד ה 
+\begin_inset Formula $j$
+\end_inset
+
+ 
+\begin_inset Formula $S^{\prime}=S$
+\end_inset
+
+ בצעד ה 
+\begin_inset Formula $j+1$
+\end_inset
+
+ הוא עושה כמה ש 
+\begin_inset Formula $FF$
+\end_inset
+
+ עושה.
+ 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ ינסה "לישר קו" עם 
+\begin_inset Formula $S$
+\end_inset
+
+ מהר ככל האפשר.
+\end_layout
+
+\begin_layout Standard
+לפי ההנחה בצעד 
+\begin_inset Formula $j+1$
+\end_inset
+
+ 
+\begin_inset Formula $S$
+\end_inset
+
+ דרש את 
+\begin_inset Formula $f$
+\end_inset
+
+ ו 
+\begin_inset Formula $FF$
+\end_inset
+
+דרש את 
+\begin_inset Formula $e$
+\end_inset
+
+ אבל 
+\begin_inset Formula $f\neq e$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הם ימשיכו ביחד עד שיקרא אחד הדברים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+נדרש דף 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $g\neq e$
+\end_inset
+
+ ו
+\begin_inset Formula $S$
+\end_inset
+
+ מסלק את 
+\begin_inset Formula $e$
+\end_inset
+
+ לטובתו.
+ 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ יסלק את 
+\begin_inset Formula $f$
+\end_inset
+
+ לטובת 
+\begin_inset Formula $g$
+\end_inset
+
+ ומכאן ייצר מצב 
+\begin_inset Formula $S^{\prime}=S$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הדף 
+\begin_inset Formula $f$
+\end_inset
+
+ נדרש: 
+\begin_inset Formula $S$
+\end_inset
+
+ יסלק לטובתו את 
+\begin_inset Formula $e$
+\end_inset
+
+ ואת 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ אינו עושה דבר מכאן 
+\begin_inset Formula $S^{\prime}=S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נדרש 
+\begin_inset Formula $f$
+\end_inset
+
+, 
+\begin_inset Formula $S$
+\end_inset
+
+ מסלק את 
+\begin_inset Formula $e^{\prime}\neq e$
+\end_inset
+
+ לטובת 
+\begin_inset Formula $f$
+\end_inset
+
+.
+ 
+\begin_inset Formula $S^{\prime}$
+\end_inset
+
+ מחליף את 
+\begin_inset Formula $e^{\prime}$
+\end_inset
+
+ ב 
+\begin_inset Formula $e$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+מההגדרה של 
+\begin_inset Formula $FF$
+\end_inset
+
+ נובע כי הזמן הראשון שהו 
+\begin_inset Formula $f$
+\end_inset
+
+ נדרש קודם לזמן הראשון שבו 
+\begin_inset Formula $e$
+\end_inset
+
+ נדרש.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+האלג' החמדן לעץ פורש מינימאלי.
+\end_layout
+
+\begin_layout Paragraph
+הקלט:
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ופונקצית משקל 
+\begin_inset Formula $w:E\to\mathbb{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הפלט הרצוי:
+\end_layout
+
+\begin_layout Standard
+עץ פורש ב 
+\begin_inset Formula $G$
+\end_inset
+
+ בעל משקל כולל מזערי)המשקל על עץ 
+\begin_inset Formula $T$
+\end_inset
+
+ מוגדר כ 
+\begin_inset Formula $\forall e\in T:\sum w\left(e\right)$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+בעית העץ הפורש המינימאלי והמקסימאלי שקולות בעצם.
+\end_layout
+
+\begin_layout Paragraph
+מדוע:
+\end_layout
+
+\begin_layout Standard
+בכל עץ פורש בגרף עם 
+\begin_inset Formula $n$
+\end_inset
+
+ קודקודים יש 
+\begin_inset Formula $n-1$
+\end_inset
+
+ צלעות לכן אם נחליף בכך צלע 
+\begin_inset Formula $e$
+\end_inset
+
+ את המשקל 
+\begin_inset Formula $w\left(e\right)$
+\end_inset
+
+ במשקל 
+\begin_inset Formula $w^{\prime}\left(e\right)=M-w\left(e\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $M$
+\end_inset
+
+ גדול מספיק.
+\end_layout
+
+\begin_layout Paragraph
+האלג החמדן:
+\end_layout
+
+\begin_layout Standard
+בכל צעד צרף את הצלע בעלת המשקל המירבי כך שבידך עדיין יער.
+\end_layout
+
+\begin_layout Paragraph
+ההקשר הרחב ביותר:
+\end_layout
+
+\begin_layout Standard
+יש קב' בסיס 
+\begin_inset Formula $E$
+\end_inset
+
+ ומשפחה 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ של תת קבוצות של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ )בדוגמה הקודמת 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ אוסף כל היערות ב 
+\begin_inset Formula $G$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ תורשתית זאות אומרת סגורה למעבר לתת קבוצה 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ סגורה להשמטת איברים
+\end_layout
+
+\begin_layout Standard
+ז"א 
+\begin_inset Formula $A\in\mathcal{F}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $B\subseteq A$
+\end_inset
+
+
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+
+\begin_inset Formula $B\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן יש פ' משקל 
+\begin_inset Formula $w:E\to\mathbb{R}^{+}$
+\end_inset
+
+ ואנו רוצים לפתור הבעיה הבאה: "מצא 
+\begin_inset Formula $A\in\mathcal{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall e\in A:\sum w\left(e\right)$
+\end_inset
+
+ מקסימאלי 
+\end_layout
+
+\begin_layout Subsection
+עוד דוגמה
+\end_layout
+
+\begin_layout Standard
+יהיה 
+\begin_inset Formula $G$
+\end_inset
+
+ גרף, זיווג
+\begin_inset Formula $\left(\mbox{matching}\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $G$
+\end_inset
+
+ זהו אוסף צלעות ללא קודקודים משותפים ביניהם.
+\end_layout
+
+\begin_layout Standard
+בעיית הזיווג הממושקל המקסימאלי:
+\end_layout
+
+\begin_layout Paragraph
+קלט:
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ופ' 
+\begin_inset Formula $w:E\to\mathbb{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פלט:
+\end_layout
+
+\begin_layout Standard
+מצא זיווג 
+\begin_inset Formula $M$
+\end_inset
+
+ ב 
+\begin_inset Formula $G$
+\end_inset
+
+ בעל משקל מירבי ז"א 
+\begin_inset Formula $\forall e\in M:\sum w\left(e\right)$
+\end_inset
+
+ מקסימאלי.
+\end_layout
+
+\begin_layout Section
+האלגוריתם החמדן לבעיה
+\end_layout
+
+\begin_layout Standard
+נתחיל מ 
+\begin_inset Formula $S=\emptyset$
+\end_inset
+
+.
+ בכל צעד צרף ל 
+\begin_inset Formula $S$
+\end_inset
+
+ איבר 
+\begin_inset Formula $e$
+\end_inset
+
+ כך ש: 
+\begin_inset Formula $S\cup\left\{ e\right\} \in\mathcal{F}$
+\end_inset
+
+ ו 
+\begin_inset Formula $w\left(e\right)$
+\end_inset
+
+ מקסימאלי התמאי זה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename algorithms/c6d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+בעית מיזווג מקסימאלי שהאלג' החמדן נכשל בה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההאצה של האלג החמדן תהיה באופן הבא:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\left\{ A\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $S=\left\{ A,C\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אבל רואים כי הבחירה בנכונה היר 
+\begin_inset Formula $S=\left\{ B,C\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קל לראות שהדוגמה שבנינו זה עתה ניתנת להכללה:
+\end_layout
+
+\begin_layout Standard
+נניח שיש ב 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ שתי קבוצות 
+\begin_inset Formula $A,B\in\mathcal{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ ואין אף איבר 
+\begin_inset Formula $e\in B\setminus A$
+\end_inset
+
+ כך שגם 
+\begin_inset Formula $A\cup\left\{ e\right\} \in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה שאם יש ב 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ שתי קב' 
+\begin_inset Formula $A,B$
+\end_inset
+
+ כנ"ל אזי האלג החמדן ייכשל על 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+המשקלות:
+\end_layout
+
+\begin_layout Standard
+על איבר 
+\begin_inset Formula $a\in A$
+\end_inset
+
+: 
+\begin_inset Formula $w\left(a\right)=1+\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על איבר 
+\begin_inset Formula $e\in B\setminus A$
+\end_inset
+
+: 
+\begin_inset Formula $w\left(e\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+על כל איבר אחר ב 
+\begin_inset Formula $E$
+\end_inset
+
+: 
+\begin_inset Formula $w\left(e\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה יעשה האלג החמדן:
+\end_layout
+
+\begin_layout Standard
+יצרף בזה אחר זה את האיברים שב
+\begin_inset Formula $A$
+\end_inset
+
+ עד שיגיע ל 
+\begin_inset Formula $S=A$
+\end_inset
+
+)כי אלו האיברים הגדדים ביותר(.
+ הוא יעצר כי אין איבר ב 
+\begin_inset Formula $B$
+\end_inset
+
+ שניתן לצאף ל 
+\begin_inset Formula $A$
+\end_inset
+
+ ולהישאר ב .
+ המשקל המתשבל: 
+\begin_inset Formula $\left(1+\varepsilon\right)\left|A\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש גם האופציה לבחור ב 
+\begin_inset Formula $B\in\mathcal{F}$
+\end_inset
+
+ במקרה זה המשקל שנקבל הוא 
+\begin_inset Formula $\left|B\right|\leq$
+\end_inset
+
+אם 
+\begin_inset Formula $\left|B\right|>\left(1+\varepsilon\right)\left|A\right|$
+\end_inset
+
+* האלג החמדן לא מוצא את הפתרון הטוב ביותר.
+ היות שע"פ ההנחה 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ יש 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ שבשבילו * תקף.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ משפחה תורשתית של תת-קב' של הקב' 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ האלג החמדן יצליח למצא 
+\begin_inset Formula $S\in\mathcal{F}$
+\end_inset
+
+ בעלת משקל מירבי לכל 
+\begin_inset Formula $w:E\to\mathbb{R}^{+}$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ לכל 
+\begin_inset Formula $A,B\in\mathcal{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $e\in B\setminus A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A\cup\left\{ e\right\} \in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מטרואידים
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ משפחה תורשתית של תת קב' של הקבוצה 
+\begin_inset Formula $E$
+\end_inset
+
+ אומר ש 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ מקיימת את תכונת ההחלפה אם לכל שתי קבוצות 
+\begin_inset Formula $A,B\in\mathcal{F}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ יש 
+\begin_inset Formula $e\in B\setminus A$
+\end_inset
+
+ כך שגם 
+\begin_inset Formula $A\cup\left\{ e\right\} \in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+משפחה תורשתית של קבוצות 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ המקיימת את תכונת ההחלפה נקראת אוסף הקבוצות הבלתי תלויות של מטרואידים
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ משפחה תורשתית של קב' האלג' החמדן מוצא את 
+\begin_inset Formula $A\in\mathcal{F}$
+\end_inset
+
+ בעלת משקל מירבי לכל פ' משקל 
+\begin_inset Formula $w$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+היא אוסף הקב' הבלתי של מטרואידים.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+יהיב 
+\begin_inset Formula $E$
+\end_inset
+
+ אוסף סופי של ווקטורים במרחב ווקטורי כלשהוא.
+ 
+\begin_inset Formula $A\in\mathcal{F}$
+\end_inset
+
+כך ש 
+\begin_inset Formula $A\subseteq E$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+
+\begin_inset Formula $A$
+\end_inset
+
+ בלתי תלוייה חיניארית.
+ נסים לב ש 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+היא אוסף הקב' הבלתי תלויות של מטרואידים.
+\end_layout
+
+\begin_layout Subparagraph
+תורשתית:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $S$
+\end_inset
+
+ ב"ת, 
+\begin_inset Formula $W\subseteq S$
+\end_inset
+
+ אז כם 
+\begin_inset Formula $W$
+\end_inset
+
+ בת"ל
+\end_layout
+
+\begin_layout Subparagraph
+תכונת ההחלפה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A,B\in\mathcal{F}$
+\end_inset
+
+ )ז"א שתיהן בת"ל( 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\dim\left(B\right)>\dim\left(A\right)$
+\end_inset
+
+ ולכן יש 
+\begin_inset Formula $x\in B\setminus A$
+\end_inset
+
+ כך שכם 
+\begin_inset Formula $A\cup\left\{ x\right\} $
+\end_inset
+
+ בת"ל.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+יהיה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ כרף ותהיה 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ אוסף כל ב 
+\begin_inset Formula $S\subseteq E$
+\end_inset
+
+ שהן יער כם 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ היא אוסף הקב' הב"ת של מטרואיד
+\end_layout
+
+\begin_layout Paragraph
+פירוש הטענה:
+\end_layout
+
+\begin_layout Standard
+יהיה 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ גרף קשיר)אפשר גם לא קשיר( ויהיו 
+\begin_inset Formula $A,B\subseteq E$
+\end_inset
+
+ שהן יערות.
+ 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ אזי יש 
+\begin_inset Formula $e\in B\setminus A$
+\end_inset
+
+ כך שגם 
+\begin_inset Formula $A\cup\left\{ e\right\} $
+\end_inset
+
+ יער
+\end_layout
+
+\begin_layout Paragraph
+נסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $u_{i}$
+\end_inset
+
+ מספר הקודקודים ברכיב הקשירות ה 
+\begin_inset Formula $i$
+\end_inset
+
+ של היער 
+\begin_inset Formula $\left(V,A\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\sum u_{i}=n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נסמן ב 
+\begin_inset Formula $n$
+\end_inset
+
+ את מס' הקודקודים ב 
+\begin_inset Formula $G$
+\end_inset
+
+ ונסמן ב 
+\begin_inset Formula $k$
+\end_inset
+
+ את מס' הצלעות ב 
+\begin_inset Formula $A$
+\end_inset
+
+, 
+\begin_inset Formula $\left|A\right|=k$
+\end_inset
+
+.
+ מנפר רכיבי הקשירות ביער היא 
+\begin_inset Formula $n-k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צלע ב 
+\begin_inset Formula $B$
+\end_inset
+
+ פסולה מלהצטרף ל 
+\begin_inset Formula $A$
+\end_inset
+
+ 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ שני קדקדיה הם באותו רכיב קשירות של 
+\begin_inset Formula $\left(V,A\right)$
+\end_inset
+
+ ז"א מטרתנו להראות שיש ב 
+\begin_inset Formula $B$
+\end_inset
+
+ צלע הקשורה בין שני רכיבים שונים של 
+\begin_inset Formula $\left(V,A\right)$
+\end_inset
+
+.
+ מס' הצלעות של 
+\begin_inset Formula $B$
+\end_inset
+
+ ששני קדקודיהן ב 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ הורא
+\begin_inset Formula $\left|R_{i}\right|-1=u_{i}-1\geq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן נפשלו 
+\begin_inset Formula $\geq$
+\end_inset
+
+ 
+\begin_inset Formula $\sum_{i=1}^{n-k}\left(u_{i}-1\right)=\sum u_{i}-\left(n-k\right)=n-\left(n-k\right)=k$
+\end_inset
+
+ מן הצלעות שב 
+\begin_inset Formula $B$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $\left|B\right|>\left|A\right|=k$
+\end_inset
+
+ ולכן הותרה ב 
+\begin_inset Formula $V$
+\end_inset
+
+ לפחות צלע אחת מותרת.
+\end_layout
+
+\begin_layout Section
+תכנון דינאמי
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Dynamic Programming
+\end_layout
+
+\begin_layout Subsection
+כפל ארוך של מטריצות
+\end_layout
+
+\begin_layout Standard
+אם מכפילים מטריצות 
+\begin_inset Formula $A_{r\times S}\times B_{S\times t}=C_{r\times t}$
+\end_inset
+
+ פעולת הכפל עולה 
+\begin_inset Formula $\mathcal{O}\left(r\times s\times t\right)$
+\end_inset
+
+ נניח שרוצים להכפיל 
+\begin_inset Formula $A_{1,}A_{2},\dots A_{n}$
+\end_inset
+
+ כש 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+היא מטריצה 
+\begin_inset Formula $\alpha_{i-1}\times\alpha_{i}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+מטרואידים
+\end_layout
+
+\begin_layout Standard
+כל מטרואיד מוגדר על ידי זוג 
+\begin_inset Formula $\left(S,I\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ העולם שלנו)קבוצה סופית בדרך כלל( ו 
+\begin_inset Formula $I\subseteq2^{S}$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+הסימון 
+\begin_inset Formula $2^{S}$
+\end_inset
+
+ פירושו 
+\begin_inset Formula $\left\{ T\vert T\subseteq S\right\} $
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+ הקבוצות הבלתי תלויות
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+גם אפשר לקרא להם המלפפונים, אין כשר כרגע
+\end_layout
+
+\end_inset
+
+.
+ כאשר 
+\begin_inset Formula $\left(S,I\right)$
+\end_inset
+
+ מקיימים:
+\end_layout
+
+\begin_layout Enumerate
+תורשתיות: אם 
+\begin_inset Formula $B\in I$
+\end_inset
+
+ ו 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\in I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+תכונת ההחלפה: אם 
+\begin_inset Formula $A,B\in Z$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ אזי קיים איבר 
+\begin_inset Formula $b\in B$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $b\not\in A$
+\end_inset
+
+ ו 
+\begin_inset Formula $A\cup\left\{ B\right\} \in I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $M$
+\end_inset
+
+ היא מטריצה מעל שדה כלשהוא בגודל 
+\begin_inset Formula $k\times n$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $k<n$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $M$
+\end_inset
+
+ נגדיר מטרואיד:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצת העמודות של 
+\begin_inset Formula $M$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I$
+\end_inset
+
+, 
+\begin_inset Formula $T\in I$
+\end_inset
+
+ אם"ם איברי 
+\begin_inset Formula $T$
+\end_inset
+
+ הם בלתי תלויים ליניארית
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+פה כבר יש משמעות לשם הזה.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח כי זה מטרואיד
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(S,I\right)$
+\end_inset
+
+ הוא מטרואיד
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Subparagraph
+תורשתיות:
+\end_layout
+
+\begin_layout Standard
+אם קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ היא בלתי תלויה ליניארית אזי לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ גם 
+\begin_inset Formula $A\setminus\left\{ x\right\} $
+\end_inset
+
+ בלתי תלויה ליניארית.
+\end_layout
+
+\begin_layout Subparagraph
+תכונת ההחלפה:
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $B,A\in I$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\dim\left(\mbox{span}\left(B\right)\right)=\left|B\right|$
+\end_inset
+
+ ו 
+\begin_inset Formula $\dim\left(\mbox{span}\left(A\right)\right)=\left|A\right|$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+מכיוון כי האיברים ב 
+\begin_inset Formula $A$
+\end_inset
+
+ והאיברים ב
+\begin_inset Formula $B$
+\end_inset
+
+ בלתי תלויים ליניארית
+\end_layout
+
+\end_inset
+
+ נניח בשלילה שלא קיים איבר 
+\begin_inset Formula $b\in B,b\not\in A$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A\cup\left\{ b\right\} \in I$
+\end_inset
+
+ אזי כל 
+\begin_inset Formula $b\in B\setminus A$
+\end_inset
+
+ נמצא ב 
+\begin_inset Formula $\mbox{span}\left(A\right)$
+\end_inset
+
+ ככן 
+\begin_inset Formula $\mbox{span}\left(B\right)\subseteq\mbox{span}\left(A\right)$
+\end_inset
+
+.
+ בסתירה ליחס בין המימדים של 
+\begin_inset Formula $\mbox{span}\left(A\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mbox{span}\left(B\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Paragraph
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S=\left\{ 1,2,3,4,5\right\} ,I=\left\{ \left\{ 1,2\right\} ,\left\{ 1\right\} ,\left\{ 2\right\} ,\left\{ 3\right\} ,\emptyset\right\} $
+\end_inset
+
+.
+ זה לא מטרואיד כי אם 
+\begin_inset Formula $A=\left\{ 1,2\right\} ,B=\left\{ 3\right\} $
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left\{ 1,3\right\} \not\in I,\left\{ 2,3\right\} \not\in I$
+\end_inset
+
+, אם 
+\begin_inset Formula $\left\{ 2,3\right\} \in I$
+\end_inset
+
+ אז זה היה מטרואיד.
+\end_layout
+
+\begin_layout Paragraph
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ כלשהוא, 
+\begin_inset Formula $I=2^{S}$
+\end_inset
+
+.
+ מטרואיד.
+\end_layout
+
+\begin_layout Paragraph
+דוגמא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S$
+\end_inset
+
+ כלשהוא 
+\begin_inset Formula $I=\left\{ T\vert T\subseteq S,\left|T\right|\leq k\right\} $
+\end_inset
+
+ גם מטרואיד.
+\end_layout
+
+\begin_layout Subsection
+למה למדנו את זה?
+\end_layout
+
+\begin_layout Standard
+נתונה לנו פונקצית משקל חיובית על איברי 
+\begin_inset Formula $S$
+\end_inset
+
+, 
+\begin_inset Formula $f:S\to\mathbb{R}^{+}$
+\end_inset
+
+ אנו מעונינים למצא קבוצה בלתי תלויה 
+\begin_inset Formula $T\in I$
+\end_inset
+
+ שמשקלה מקסימאלי.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+האלג' החמדני עובד במטרואיד
+\end_layout
+
+\begin_layout Subparagraph
+האלג' החמדני:
+\end_layout
+
+\begin_layout Standard
+נסדר את איברי 
+\begin_inset Formula $S$
+\end_inset
+
+ ע"כ משקלם, מהכבד לקל.
+ נעבור על איברי 
+\begin_inset Formula $S$
+\end_inset
+
+ לפי סדר זה ונוסיף כל איבר ל 
+\begin_inset Formula $T$
+\end_inset
+
+ אם"ם הוא לא הופך את 
+\begin_inset Formula $T$
+\end_inset
+
+ לקבוצה תלויה)כלומר 
+\begin_inset Formula $T\not\in I$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Greedy(S,I,f)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--
+\begin_inset Formula $T\leftarrow\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--for 
+\begin_inset Formula $\forall s\in S$
+\end_inset
+
+ (by order of f)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----if(
+\begin_inset Formula $T\cup\left\{ s\right\} \in I$
+\end_inset
+
+) 
+\begin_inset Formula $T\leftarrow T\cup\left\{ s\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+Greedy(S,I,f)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\mbox{Unit Time Task Scheduling}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונה קבוצת מסימות 
+\begin_inset Formula $1\dots n$
+\end_inset
+
+ כל משימה מתבצעת ביחידת זמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+ לכל מסימה יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+deadline
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ אם המסימה מתבצעת אחרי הדידלין נשלם כנס 
+\begin_inset Formula $f_{i}$
+\end_inset
+
+ רוצים שיבוץ שבו התשלום מינימאלי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Tabular
+<lyxtabular version="3" rows="3" columns="6">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+4
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+\begin_inset Formula $d_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+10
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+15
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה לערכים 
+\begin_inset Formula $d_{i},f_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו מחפשים סדר מטרואיד נתון קבוצה.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+עבור סידור מסויים המשימות שבוצעו בזמן יקרא המקדימות והיתר המאחרות.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+נניח שכל המשימות המקדימות מבצעות לפני המאוחרות
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח שיש מאחרת שמוצעת לפני מקדימה נחליף ביניהן והכנסות לא ישתנו.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אפשר להניח שהמסימות המקדימות מבוצעות לפי סדר הדדלין שלהן
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+אחרת נחליף.
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+בעיה שקולה: למקסם את סכום הקנסות של המשימות שבוצעו בזמן.
+\end_layout
+
+\begin_layout Paragraph
+מטרואיד:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצת המסימות
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $I$
+\end_inset
+
+ קבוצה 
+\begin_inset Formula $A$
+\end_inset
+
+ תקרא בלתי תלויה אם"ם ניתן לשים את כל איברי 
+\begin_inset Formula $A$
+\end_inset
+
+ בזמן
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Itemize
+תורשתיות: טריוויאלי
+\end_layout
+
+\begin_layout Itemize
+תכונת ההחלפה: הגדרה: 
+\begin_inset Formula $N_{t}\left(A\right)$
+\end_inset
+
+ מס המשימות ב 
+\begin_inset Formula $A$
+\end_inset
+
+ שהדדלין שלהן הוא עד 
+\begin_inset Formula $t$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $N_{t}\left(A\right)=\left\{ i\in A|t_{i}\leq t\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A\in I$
+\end_inset
+
+ אם"ם לכל 
+\begin_inset Formula $t$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $N_{t}\left(A\right)\leq t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+כיוון ראשון:
+\end_layout
+
+\begin_layout Standard
+אם קיים סידור ללא איחורים אזי לכל זמן 
+\begin_inset Formula $t$
+\end_inset
+
+ מספר המסימות שיתבצעו הוא לכל היותר 
+\begin_inset Formula $t$
+\end_inset
+
+, מספר המסימות הרצוי לבצע בוא 
+\begin_inset Formula $N_{t}\left(A\right)$
+\end_inset
+
+ לכן 
+\begin_inset Formula $N_{t}\left(A\right)\leq t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שני:
+\end_layout
+
+\begin_layout Standard
+נסדר את איברי 
+\begin_inset Formula $A$
+\end_inset
+
+ בסדר עולה ע"פ 
+\begin_inset Formula $d_{i}$
+\end_inset
+
+ נניח בשלילה שאין סידור חוקי, בזמן 
+\begin_inset Formula $t$
+\end_inset
+
+ כשננסה לשבץ את מסימס 
+\begin_inset Formula $i$
+\end_inset
+
+, 
+\begin_inset Formula $d_{i}<t$
+\end_inset
+
+, 
+\begin_inset Formula $d_{i}\leq t-1$
+\end_inset
+
+ לתיח כן שיבצנו 
+\begin_inset Formula $t-1$
+\end_inset
+
+ משימות הדדלין שלהן 
+\begin_inset Formula $d_{j}\leq d_{i}\leq t-1$
+\end_inset
+
+ לכן 
+\begin_inset Formula $N_{t-1}\left(A\right)=t$
+\end_inset
+
+ בסתירה
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+תזכורת:
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $E$
+\end_inset
+
+ קבוצה סופית אומרים ש 
+\begin_inset Formula $I$
+\end_inset
+
+ הוא אוסף הקבוצות הבלתי תלויות של מטרואיד עם קבוצת בסיס 
+\begin_inset Formula $E$
+\end_inset
+
+ אם 
+\begin_inset Formula $I$
+\end_inset
+
+ היא משפחה תורשתית)ז"א 
+\begin_inset Formula $A\in I$
+\end_inset
+
+, 
+\begin_inset Formula $A\subseteq A$
+\end_inset
+
+ גורר 
+\begin_inset Formula $B\in I$
+\end_inset
+
+( המקיימת את תכונת ההחלפה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B\in I$
+\end_inset
+
+, 
+\begin_inset Formula $\left|B\right|>\left|A\right|$
+\end_inset
+
+ אז יש 
+\begin_inset Formula $x\in B\setminus A$
+\end_inset
+
+ כך שגם 
+\begin_inset Formula $A\cup\left\{ x\right\} \in I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו אם 
+\begin_inset Formula $F$
+\end_inset
+
+ משפחה תורשתית של קב' אשר איננה מקיימת את תנאי ההחלפה אז יש מערכת משקלות
+ 
+\begin_inset Formula $w$
+\end_inset
+
+ על 
+\begin_inset Formula $E$
+\end_inset
+
+ המכשילה את האלג' החמדן כשהוא מנסה למצא קבוצה ב 
+\begin_inset Formula $I$
+\end_inset
+
+ בעלת משקל מירבי.
+\end_layout
+
+\begin_layout Standard
+אמרנו למרות זאת, שאם תנאי ההחלפה מתקיים ז"א 
+\begin_inset Formula $I$
+\end_inset
+
+ היא משפחה הקבוצות הבלתי תלויים של מטרואיד אז האלג' החמדן יצליח לכל מערכת
+ משקלות.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+בסיס הוא קב' בלתי תלוייה בעלת גודל מקסימאלי)אינה מוכלת בקבוצה בלתי תלוייה
+ אחרת( זה הוא האנלוג של עץ פורש ובאלגברה ליניארית זה בסיס של מרחב ווקטורי
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $C$
+\end_inset
+
+ מעגל אם: קב' תלוייה)אינינה ב 
+\begin_inset Formula $I$
+\end_inset
+
+( שהיא מינימאלית בתנאי שזה ז"א אם 
+\begin_inset Formula $B\subsetneq C$
+\end_inset
+
+ אז 
+\begin_inset Formula $B\in I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+חתך: קבוצה שיש לה חיתוך לא רק עם כל בסיס והיא מינימאלית בתנאי זה
+\end_layout
+
+\begin_layout Section
+תכנון דינאמי
+\end_layout
+
+\begin_layout Standard
+הכפלה יעילה של סידרת מטריצות
+\end_layout
+
+\begin_layout Paragraph
+הנחות:
+\end_layout
+
+\begin_layout Standard
+כפל מטריצה 
+\begin_inset Formula $A_{\alpha\times\beta}B_{\beta\times\gamma}$
+\end_inset
+
+ מחירו 
+\begin_inset Formula $\alpha\beta\gamma$
+\end_inset
+
+ פעולות
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+נתונות לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ מטריצות 
+\begin_inset Formula $A_{1}\dots A_{n}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ היא מטריצה 
+\begin_inset Formula $\alpha_{i-1}\times\alpha_{i}$
+\end_inset
+
+.
+ לכן ניתן לבצע את הכפל 
+\begin_inset Formula $A_{i}A_{2}\dots A_{n}$
+\end_inset
+
+ היות שכפל מטריצות היא פעולה רסוציאטיבית תוצאת הכפל תהיה לכל הסגור חוקי
+ נבחר בו.
+ המליר לא דווקא שווה.
+ רוצים למצא המסגור הזול ביותר.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+כאשר המטריצות הם 
+\begin_inset Formula $A_{1}\Rightarrow\alpha_{0}\alpha_{1},A_{2}\Rightarrow\alpha_{1}\alpha_{2},A_{3}\Rightarrow\alpha_{2}\alpha_{3}$
+\end_inset
+
+ המחירים הם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{Operation} & \Rightarrow & \mbox{Price}\\
+\left(A_{1}A_{2}\right)A_{3} &  & \alpha_{0}\alpha_{1}\alpha_{2}+\alpha_{0}\alpha_{2}\alpha_{3}\\
+A_{1}\left(A_{2}A_{3}\right) &  & \alpha_{0}\alpha_{1}\alpha_{3}+\alpha_{1}\alpha_{2}\alpha_{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזכרנו כבר שמספר המסגורים המותרים הוא מספר קטלן הגדל מעריכית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אקספוננציאלית
+\end_layout
+
+\end_inset
+
+ עם 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יש הרבה מסגורים שבהם נמצאים הסוגריים במקום מסויים אזי:
+\end_layout
+
+\begin_layout Enumerate
+יש מושג מוגדק היטב של תת בעיה
+\end_layout
+
+\begin_layout Enumerate
+כל תת בעיה כזו עלינו לפתור בפני עצמה באופן אופטימאלי
+\end_layout
+
+\begin_layout Enumerate
+פתרונות גלובאליים שומים עשויים להזגקק לפתרונה של אותה תת בעיה
+\end_layout
+
+\begin_layout Paragraph
+רעיון מרכזי:
+\end_layout
+
+\begin_layout Standard
+לזהות תת בעיות כאלה, לרשום את פתרונותים, לבנות מהן פתרון גלובאלי אופטימאלי.
+\end_layout
+
+\begin_layout Standard
+בעצר אנחנו נחשוב לא רק את המכפלה 
+\begin_inset Formula $A_{1}\dots A_{n}$
+\end_inset
+
+ אלא את כל המכפלות 
+\begin_inset Formula $A_{k}\dots A_{l}$
+\end_inset
+
+כךכ 
+\begin_inset Formula $k<l$
+\end_inset
+
+ ונחשב כ"א מהביטויים בצורה האופטימאלית.
+\end_layout
+
+\begin_layout Standard
+נגדיר לכל 
+\begin_inset Formula $k\leq l$
+\end_inset
+
+ אז 
+\begin_inset Formula $c_{kl}$
+\end_inset
+
+ להיות המחיר המזערי לחישוב המעפלה 
+\begin_inset Formula $A_{k}\dots A_{l}$
+\end_inset
+
+.
+ בסך הכל יש 
+\begin_inset Formula ${n \choose 2}$
+\end_inset
+
+ זוגים.
+ הגודל שבו התעניינו איננו אלא 
+\begin_inset Formula $C_{1n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה מערך דו מימדי שבמקום ה
+\begin_inset Formula $k,l$
+\end_inset
+
+ שלו נרצה לרשום 
+\begin_inset Formula $C_{kl}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $C_{kk}=0$
+\end_inset
+
+, 
+\begin_inset Formula $C_{k,k+1}=\alpha_{k-1}\alpha_{k}+\alpha_{k}\alpha_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"מ לחשב את 
+\begin_inset Formula $C_{kl}$
+\end_inset
+
+ אנחנו נעבור על כל הדרכים האפשריים שבהן יכולה להיות פעולת העפל האחרונה בחישור
+ אופטימאלי של 
+\begin_inset Formula $A_{k}\dots A_{l}$
+\end_inset
+
+ נאמר שזה קורה הזמן 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $C_{kl}=\min_{t}\left(C_{kt}+c_{t+1,l}+\alpha_{k-1}\alpha_{t}\alpha_{l}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+שרשרת של כפלי מטריצות.
+\end_layout
+
+\begin_layout Standard
+נזכיר יש לנו 
+\begin_inset Formula $n$
+\end_inset
+
+ מטריצות 
+\begin_inset Formula $A_{1}\dots A_{n}$
+\end_inset
+
+ כשהמימדים של 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ הם 
+\begin_inset Formula $\alpha_{i-1}\times\alpha_{i}$
+\end_inset
+
+ אנו מניחים שהכפלת מטריצות 
+\begin_inset Formula $\left(r\times r\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $\left(p\times q\right)$
+\end_inset
+
+ שולה 
+\begin_inset Formula $pqr$
+\end_inset
+
+ בגלל החל האסוציאטיבי יש מבחר גדול)מעריכי ב 
+\begin_inset Formula $n$
+\end_inset
+
+( של מסגורים אפשריים ומחפשים את המססגור שייתן מליר מזערי לפעולת הכפל.
+\end_layout
+
+\begin_layout Enumerate
+יש מושג טבעי של תת בעייה במערכת שלפנינו 
+\begin_inset Formula $A_{k}\dots A_{l}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+בפתרון כלל אופטימאלי התת בעיות נפתרות באופן אופטימאלי אף הן
+\end_layout
+
+\begin_layout Enumerate
+"מלמטה למעלה", "מן הפרט אל הכלל" ניתן לצרף יחד פתרונות של תת בעיות ולקבל
+ פתרון של הבעייה הכוללת.
+\end_layout
+
+\begin_layout Enumerate
+לא מנסה למצא ישירות פתרון כולל אופטימאלי.
+ אלה אותם לפתרון כולל אופטימאלי
+\end_layout
+
+\begin_layout Standard
+מגדירים 
+\begin_inset Formula $c_{kl}$
+\end_inset
+
+ כמחיר המזערי של החישוב 
+\begin_inset Formula $A_{k}\dots A_{l}$
+\end_inset
+
+.
+ אתחול: 
+\begin_inset Formula $c_{kk}=0$
+\end_inset
+
+, 
+\begin_inset Formula $c_{k,k+1}=\alpha_{k-1}\alpha_{k}\alpha_{k+1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $c_{kl}=\min_{k\leq t\leq l-1}\left(c_{kt}+c_{t+1,l}+\alpha_{k-1}\alpha_{t}\alpha_{l}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+בעיה בביואינפורמטיקה:
+\end_layout
+
+\begin_layout Standard
+המבנה השניוני של מולקולט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RNA
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+על מולקולה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RNA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ניתו לחשוב כמולה בא"ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ACGU
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לאותיות האלה קוראים בסיסים, בגלל התכונות הכימיות של הבסיסים הם עשויים ליצא
+ ביניהם קשרים ע"פ הכלל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $C-G$
+\end_inset
+
+ ו 
+\begin_inset Formula $A-U$
+\end_inset
+
+ קשר זה מקטין את האנרגיה הפוטנציאלית.
+ והמולקולה נוטה ללהתארגן בצורה שממזערת את האנרגיה הזו.
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+נתון רץף באותיות 
+\begin_inset Formula $A,C,G,U$
+\end_inset
+
+ מצא את זיווגהבסיסים בעל האנרגיה המזערית.
+\end_layout
+
+\begin_layout Enumerate
+מידת הגמישות של המולקולה מוגבלת ולכן על מנת ששני בסיסים יזווגו עליהם להיות
+ במחכחך 
+\begin_inset Formula $4\leq$
+\end_inset
+
+ בסידרה.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename algorithms/c9d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מולקולת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RNA
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+אין "פסאודו קשרש" אזי.
+ נניח 
+\begin_inset Formula $i_{1}<i_{2}<i_{3}<i_{4}$
+\end_inset
+
+ לא ייתכן שזווגו הבסיסים במקומות 
+\begin_inset Formula $i_{1},i_{3}$
+\end_inset
+
+ וכן במקומות 
+\begin_inset Formula $i_{2},i_{4}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename algorithms/c9d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קשרים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+איך ניגשים לפתרון הבעייה:
+\end_layout
+
+\begin_layout Standard
+המקום לנסות ולמצא בבת אחת את זיווג הבסיסים האופטימאלי אנחנו נחשב שת הפתרון
+ לתת בעיות המתאימות לתתת קטעים של סידרת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RNA
+\lang hebrew
+.
+ דהיינו נגדיר 
+\begin_inset Formula $OPT\left(i,j\right)$
+\end_inset
+
+ זוהי האנרגיה המזערית האפשרית בזיווג בסיסים של הקטע ממקום ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RNA
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המנתון ממקום 
+\begin_inset Formula $i$
+\end_inset
+
+ עד למקום 
+\begin_inset Formula $j$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+נחזור לבעיה של מטריצות
+\end_layout
+
+\begin_layout Standard
+מהי הסיבוכיות של האלגוריתם למציאת הדרך האופטימאלי לכפל שרשרת של מטריצות?
+\end_layout
+
+\begin_layout Standard
+אנחנו ממלאים חצי מטריצה של ערכים אזי 
+\begin_inset Formula $\frac{n^{2}}{2}$
+\end_inset
+
+, כל חישוב של 
+\begin_inset Formula $c_{kl}$
+\end_inset
+
+ מחירו 
+\begin_inset Formula $n$
+\end_inset
+
+ ובסך הכל זה 
+\begin_inset Formula $\frac{n^{3}}{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\mathcal{O}\left(n^{3}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+רימוזום עוד פעם
+\end_layout
+
+\begin_layout Standard
+נתון רצף באותיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+A,C,G,U
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+רוצים לזווג כמה שיותר זוגות ע"פ הכללים הבאים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $C-G,A-U$
+\end_inset
+
+ )לכל היותר בן זוג אחד(
+\end_layout
+
+\begin_layout Enumerate
+אין "קשת" קצרה מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Enumerate
+אין הצטלבויות
+\end_layout
+
+\begin_layout Standard
+נקרא בשם 
+\begin_inset Formula $OPT\left(i,j\right)$
+\end_inset
+
+ לערך המיטבי המתאים לקטע בסידרה הנתונה המתחיל במקום ה 
+\begin_inset Formula $i$
+\end_inset
+
+ ומסתיים במקום ה 
+\begin_inset Formula $j$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהנחב כי 
+\begin_inset Formula $l>k$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+OPT\left(k,l\right)=\max\left(\begin{matrix}OPT\left(k,l-1\right)\\
+1+\max\left(OPT\left(k,t-1\right)+OPT\left(t+1,l-1\right)\right)\end{matrix}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+בעיה:
+\end_layout
+
+\begin_layout Standard
+נתון לנו שתי מילים 
+\begin_inset Formula $x_{1}\dots x_{n}$
+\end_inset
+
+ , 
+\begin_inset Formula $y_{1}\dots y_{n}$
+\end_inset
+
+ בא"ב 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|\Sigma\right|=20$
+\end_inset
+
+ כמו כן נתון לנו )פעם ולתמיד( טבלה 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+ המספקת הערכה למידת השוני בין האות ה 
+\begin_inset Formula $i$
+\end_inset
+
+ ב 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+ לאות ה 
+\begin_inset Formula $j$
+\end_inset
+
+ ב 
+\begin_inset Formula $\Sigma$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+בדרך כלל מחפסים התאמה לא דווקה מלאה בין האותיות 
+\begin_inset Formula $x_{1}x_{s}\dots$
+\end_inset
+
+ ל 
+\begin_inset Formula $y_{2},y_{2}$
+\end_inset
+
+ תוך מתן אפשריות כם ל "דילוג"
+\end_layout
+
+\begin_layout Paragraph
+דרישות:
+\end_layout
+
+\begin_layout Enumerate
+התאמה צריכה להיות ללא הצלבות
+\end_layout
+
+\begin_layout Enumerate
+על התאמה בין האות 
+\begin_inset Formula $\sigma_{i}$
+\end_inset
+
+ המופיעה ב 
+\begin_inset Formula $x$
+\end_inset
+
+ לאות 
+\begin_inset Formula $\sigma_{j}$
+\end_inset
+
+ ב 
+\begin_inset Formula $y$
+\end_inset
+
+ "נשלם מחיר" של 
+\begin_inset Formula $a_{ij}$
+\end_inset
+
+, כמובן 
+\begin_inset Formula $a_{ii}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+השמתה אות ב 
+\begin_inset Formula $x$
+\end_inset
+
+ או אות ב 
+\begin_inset Formula $y$
+\end_inset
+
+ שאינן מזווגות אנחנו משלמים מחיר של 
+\begin_inset Formula $\Delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המטרה למצא ההתאמה הזולה ביותר
+\end_layout
+
+\begin_layout Standard
+התאמה ניתנת לתיאור חד ערכי ע"י מהלך היוצא מ 
+\begin_inset Formula $\left(1,1\right)$
+\end_inset
+
+ בטבלה ומגיע לקואורדינטת ה 
+\begin_inset Formula $\left(m,n\right)$
+\end_inset
+
+ וכל צעד נע שמאלה ימינה או באלכסון.
+\end_layout
+
+\begin_layout Standard
+האינטרפרטציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\rightarrow$
+\end_inset
+
+ דילוע על אות ב 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\uparrow$
+\end_inset
+
+ דלוג על אות ב 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\nearrow$
+\end_inset
+
+ התאמה מאות ב 
+\begin_inset Formula $x$
+\end_inset
+
+ לאות ב 
+\begin_inset Formula $y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כרגיל בתכנות דינאמי אנו רוצים לבטא את 
+\begin_inset Formula $c_{ij}$
+\end_inset
+
+ באמצעות 
+\begin_inset Formula $c$
+\end_inset
+
+ים קודמים 
+\begin_inset Formula $C_{i,j}=\min\left(c_{i,j-1}+\Delta,c_{i-1,j}+\Delta,c_{i-1,j-1}+a_{x_{i}y_{j}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\mbox{Bellman-Ford}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בעיה: נתון גרף מכוון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\omega:E\to\mathbb{R}$
+\end_inset
+
+ נתון קודקוד מסויים 
+\begin_inset Formula $s\in V$
+\end_inset
+
+ ונרצה למצא את המסלולים הקלים היותר ממנו לכל קודקוד אחר ב 
+\begin_inset Formula $V$
+\end_inset
+
+)משקל של מסלול הוא סכום משקלי הצלעות שלו( אם לא קיים מסלול כללי נגדיר את
+ המקחק להיות 
+\begin_inset Formula $\infty$
+\end_inset
+
+ ואם יש מעגלים שליליים נפלוט "לא מוגדר".
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם ב 
+\begin_inset Formula $G$
+\end_inset
+
+ אין מעגלים שליליים אז אורך)בצלעות( כל המסלול המינימליים הוא קטן שווה ל
+ 
+\begin_inset Formula $\left|V\right|-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $P$
+\end_inset
+
+ מסלול אופטימאלי בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+.
+ אם אורך 
+\begin_inset Formula $P$
+\end_inset
+
+ גדול שווה ל 
+\begin_inset Formula $\left|V\right|$
+\end_inset
+
+ אז הוא מכיל מעגל.
+ מכוון שאין מעגלים שליליים ניתן להסיר אותו מ 
+\begin_inset Formula $P$
+\end_inset
+
+ ולקבל מסלול קל יותר.
+ בסתירה לאופטימאליות.
+\end_layout
+
+\begin_layout Paragraph
+אוסף הבעיות שהאלגוריתם הזה פותר:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $v\in V$
+\end_inset
+
+ נגדיר את 
+\begin_inset Formula $A\left[v,l\right]$
+\end_inset
+
+ להיות משקל המסלול הקל ביותר באורך קטן שווה ל 
+\begin_inset Formula $i$
+\end_inset
+
+ 
+\begin_inset Formula $\left(0\leq i\leq\left|v\right|-1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שאם אין מעגלים שליליים אז 
+\begin_inset Formula $\left\{ A\left[v,\left|v\right|-1\right]\right\} _{v\in V}$
+\end_inset
+
+ הם משקלים המסלולים הרצויים.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $P$
+\end_inset
+
+ מסלול קל ביותר 
+\begin_inset Formula $u,v$
+\end_inset
+
+ אז אם 
+\begin_inset Formula $P$
+\end_inset
+
+ עובר ב 
+\begin_inset Formula $w$
+\end_inset
+
+ אז 
+\begin_inset Formula $P=\left(P_{1},w,P_{2}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ הם המסלולים הקלים ביותר בין 
+\begin_inset Formula $u,w$
+\end_inset
+
+ ו 
+\begin_inset Formula $w,v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ לא אופטימאלי בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $w$
+\end_inset
+
+ אז קיים 
+\begin_inset Formula $P_{1}^{\prime}$
+\end_inset
+
+ קל ממנו בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $w$
+\end_inset
+
+ ואז נתבונן ב 
+\begin_inset Formula $P=P_{1}^{\prime}\omega P_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\omega\left(P^{\prime}\right)=\omega\left(P_{1}\right)=\omega\left(P_{1}^{\prime}\right)+\omega\left(P_{2}\right)<\omega\left(P_{1}\right)+\omega\left(P_{2}\right)=P$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אזי הנוסחה הריקורסיבית היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\left[u,i\right]=\min\left(A\left[i,i-1\right],\min_{v\in T\left(u\right)}A\left[v,i-1\right]+\omega\left(v,u\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הנוסחה נכונה מכיוון שאם 
+\begin_inset Formula $P$
+\end_inset
+
+ אופטימאלי באורך 
+\begin_inset Formula $i$
+\end_inset
+
+ בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $u$
+\end_inset
+
+ או שו ש 
+\begin_inset Formula $P$
+\end_inset
+
+ האורך 
+\begin_inset Formula $i-1$
+\end_inset
+
+ ואז 
+\begin_inset Formula $A\left[u,i\right]=A\left[u,i-1\right]$
+\end_inset
+
+ אחרת נבוננן ב 
+\begin_inset Formula $u$
+\end_inset
+
+שלפני 
+\begin_inset Formula $u$
+\end_inset
+
+ ב 
+\begin_inset Formula $P$
+\end_inset
+
+ אם נסיר את 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+ מ-
+\begin_inset Formula $P$
+\end_inset
+
+ נקבל אופטימאלי בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ באורך קטן שווה ל 
+\begin_inset Formula $i-1$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $A\left[u,i\right]=A\left[v,i-1\right]+\omega\left(v,u\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לשחזר את המסלול האופטימאלי בין 
+\begin_inset Formula $s$
+\end_inset
+
+ לכל 
+\begin_inset Formula $u\in V$
+\end_inset
+
+ ע"י ידיעת מהו הקודקוד הרודם ל 
+\begin_inset Formula $u$
+\end_inset
+
+ במסלול הקל ביותר באורך 
+\begin_inset Formula $\left|v\right|-1$
+\end_inset
+
+.
+ זאת מכיוון שהמדלול האופטימאלי בין 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $u$
+\end_inset
+
+ מורכב ממסלול אופטימאלי בין 
+\begin_inset Formula $s$
+\end_inset
+
+ לאותו קודקוד קודם 
+\begin_inset Formula $\left(v\right)$
+\end_inset
+
+ בין כל המסלולים בכל האורכים משורש לצלע 
+\begin_inset Formula $\left(v,u\right)$
+\end_inset
+
+.
+ מכיוון שהמסלול הקל ביותר ללא מגבלת אורך מזדהה עם המסלול הקצר ביותר הקטן
+ שווה ל 
+\begin_inset Formula $\left|v\right|-1$
+\end_inset
+
+, ניתן לבנות את המסלול בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ כאמור לעיל
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+ב 
+\begin_inset Formula $G$
+\end_inset
+
+ אין מעגלים שליליים אם ורק אם 
+\begin_inset Formula $A\left[i,\left|v\right|-1\right]=A\left[u,\left|v\right|\right]$
+\end_inset
+
+ לכל 
+\begin_inset Formula $u\in V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נובע מהטענה בתחילת השיעור.
+\end_layout
+
+\begin_layout Section
+בעיה אחרת
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+נתון כרף מכוון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ ופונק' 
+\begin_inset Formula $\omega:E\to\mathbb{R}$
+\end_inset
+
+ נרצה לחשב את משקל המסלול הקל ביותר בין כל זוג קודקודים או לפלוט "יש מעגלים
+ שליליים"
+\end_layout
+
+\begin_layout Paragraph
+אוסף תתי-הבעיות:
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $A\left[u,v,i\right]$
+\end_inset
+
+ להיות משקל המסלול הקל ביותר בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $v$
+\end_inset
+
+ באורך 
+\begin_inset Formula $i\geq$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\left[u,v,i\right]=\min_{x\in V}\left\{ A\left[u,x,i-1\right]+\omega\left(x,v\right)\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל זה בערך זה כמו להפעיל את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Bellman Ford
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+על כל הקודקודים.
+\end_layout
+
+\begin_layout Standard
+ניתן להשתמש במקומו בנוסחה זו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A\left[u,v,i\right]=\min_{x\in V}\left\{ A\left[u,x,\frac{i}{2}\right]+A\left[x,v,\frac{i}{2}\right]\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר מתחיחים ב 
+\begin_inset Formula $A\left[u,v,1\right]=\begin{cases}
+0 & u=v\\
+\omega\left(u,v\right) & \left(u,v\right)\in E\\
+\infty & else\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחת נכונות:
+\end_layout
+
+\begin_layout Standard
+נתבונן במסלול הקל ביותר בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+)
+\begin_inset Formula $P$
+\end_inset
+
+( באורך 
+\begin_inset Formula $i\geq$
+\end_inset
+
+.
+ נניח ש 
+\begin_inset Formula $x$
+\end_inset
+
+ הוא הקודקוד האמצעי בו, אז אם 
+\begin_inset Formula $P=P_{1}xP_{2}$
+\end_inset
+
+ אז 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+ אופטימאלי בין מליולים בין 
+\begin_inset Formula $u$
+\end_inset
+
+ ל
+\begin_inset Formula $x$
+\end_inset
+
+ באורך 
+\begin_inset Formula $\frac{i}{2}\geq$
+\end_inset
+
+ ו 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+ אופטימאלי בין מסלולים בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ באורך 
+\begin_inset Formula $\frac{i}{2}\geq$
+\end_inset
+
+.
+ )הוכחנו קודם את זה(
+\end_layout
+
+\begin_layout Paragraph
+האלגוריתם:
+\end_layout
+
+\begin_layout Standard
+חשב את 
+\begin_inset Formula $A\left[\cdot,\cdot,1\right]$
+\end_inset
+
+)נתון( באמצעות 
+\begin_inset Formula $A\left[\cdot,\cdot,1\right]$
+\end_inset
+
+ ניתן לחשב את 
+\begin_inset Formula $A\left[\cdot,\cdot,2\right]$
+\end_inset
+
+ ממנו 
+\begin_inset Formula $A\left[\cdot,\cdot,4\right]$
+\end_inset
+
+ ועד 
+\begin_inset Formula $A\left[\cdot,\cdot,2^{s}\right]$
+\end_inset
+
+כך ש 
+\begin_inset Formula $2^{s}\geq\left|v\right|-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הערב:
+\end_layout
+
+\begin_layout Standard
+ניתן לבדוק קיום מעגלים שליליים כמו מקודם.
+\end_layout
+
+\begin_layout Paragraph
+ז"ר:
+\end_layout
+
+\begin_layout Standard
+חישוב 
+\begin_inset Formula $A\left[\cdot,\cdot,2i\right]$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $A\left[\cdot,\cdot,i\right]$
+\end_inset
+
+ לוקח 
+\begin_inset Formula $O\left(\left|V\right|\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\left(u,v\right)\in V^{2}$
+\end_inset
+
+ ולכן סה"ך יש 
+\begin_inset Formula $S=O\left(\log\left|V\right|\right)$
+\end_inset
+
+ איטרציות ולכן ז"ר 
+\begin_inset Formula $O\left(\left|V\right|^{3}\log\left|V\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+בעיית הזרימה ברשת
+\end_layout
+
+\begin_layout Paragraph
+הקלט:
+\end_layout
+
+\begin_layout Standard
+רשת, כלומר גרף מכוון יחד עם שני קודקודים מצוינים 
+\begin_inset Formula $s\neq t\in V$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $s$
+\end_inset
+
+ נקרא המקור ו 
+\begin_inset Formula $t$
+\end_inset
+
+ הבור וכן פ' קיבול 
+\begin_inset Formula $C:E\to\mathbb{R}^{+}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מניחים שדרגת הכניסה של 
+\begin_inset Formula $S$
+\end_inset
+
+ היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ושדרגת היציאה של 
+\begin_inset Formula $t$
+\end_inset
+
+ היא אפס.
+\end_layout
+
+\begin_layout Paragraph
+זרימה:
+\end_layout
+
+\begin_layout Standard
+זו פ' 
+\begin_inset Formula $f:E\to\mathbb{R}^{+}$
+\end_inset
+
+ המשיימת:
+\end_layout
+
+\begin_layout Enumerate
+בכל צלע 
+\begin_inset Formula $e$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $c\left(e\right)\geq f\left(e\right)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $v\neq s,t$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{out}f\left(e\right)=\sum_{in}f\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שטף של זרימה 
+\begin_inset Formula $v\left(f\right)=\sum_{outgoing}f\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הפלט:
+\end_layout
+
+\begin_layout Standard
+זרימה מותרת 
+\begin_inset Formula $f$
+\end_inset
+
+ בעלת זרימה מירבי
+\end_layout
+
+\begin_layout Standard
+זו בעית אופטימיזציה.
+ יש איזשהוא תחום 
+\begin_inset Formula $D$
+\end_inset
+
+)קבוצה( ופונקציה 
+\begin_inset Formula $g:D\to\mathbb{R}$
+\end_inset
+
+ הבעייה למצא 
+\begin_inset Formula $\max_{x\in D}g\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D=\left\{ f\left(e_{1}\right),\dots,f\left(e_{n}\right)\vert e_{i}\in E\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למקסם את הביטוי 
+\begin_inset Formula $\sum f\left(e\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $e$
+\end_inset
+
+ יוצא מ
+\begin_inset Formula $s$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+בעיה:
+\end_layout
+
+\begin_layout Standard
+נתונה רשת ונתון מספר חיובי 
+\begin_inset Formula $k$
+\end_inset
+
+, האם יש זרימה בעלת שטף 
+\begin_inset Formula $k\geq$
+\end_inset
+
+? אם מצאנו פתרון אז קל לאמת שהוא עומד בדרישות
+\end_layout
+
+\begin_layout Paragraph
+חתך:
+\end_layout
+
+\begin_layout Standard
+חלוקה של 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $v=A\dot{\cup}B$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $t\in B,s\in B$
+\end_inset
+
+ נקראת חתך
+\end_layout
+
+\begin_layout Standard
+הקיבול של החתך הוא מוגדר 
+\begin_inset Formula $C\left(A,B\right)=\sum_{e\in A\to B}c\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל חתך 
+\begin_inset Formula $C$
+\end_inset
+
+ וכל זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $v\left(f\right)\leq c\left(A,B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+ההשטף והחתך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+max flow min cut
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+השטף המירבי של זרימה מסוימת שווה לקיבול המזערי של חתך ברשת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename algorithms/c11d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+רשת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+בעיית הזרימה ברשת
+\end_layout
+
+\begin_layout Paragraph
+רשת:
+\end_layout
+
+\begin_layout Standard
+גרף מכוון 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ שיש בו קודקוד 
+\begin_inset Formula $s\in V$
+\end_inset
+
+ )מקור( וקודקוד 
+\begin_inset Formula $t\in V$
+\end_inset
+
+ )בור( וכן פ' קיבול 
+\begin_inset Formula $C:E\to\mathbb{R}^{+}$
+\end_inset
+
+.
+ לצורך הדיון היום נניח כי 
+\begin_inset Formula $C$
+\end_inset
+
+ מקבלת רק ערכים שלימים.
+\end_layout
+
+\begin_layout Standard
+כמו כן נניח שאין צלעות נכנסות לתוך 
+\begin_inset Formula $s$
+\end_inset
+
+ ואין צלעות יוצאות מ 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+זרימה ברשת הנ"ל 
+\begin_inset Formula $f:E\to\mathbb{R}^{+}$
+\end_inset
+
+ המקיימת
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $v\neq s,t$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\sum_{\mbox{outgoing e}}f\left(e\right)=\sum_{\mbox{incoming e}}f\left(e\right)$
+\end_inset
+
+)היוצא שווה לנכנס(
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\forall e:c\left(e\right)\geq f\left(e\right)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+השטף של 
+\begin_inset Formula $f$
+\end_inset
+
+ מוגדר כי 
+\begin_inset Formula $v\left(f\right)=\sum f\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הבעייה בהינתן הרשת למצא זרימה בעלת שטף מירבי.
+\end_layout
+
+\begin_layout Standard
+בהינתן רשת 
+\begin_inset Formula $G$
+\end_inset
+
+וזרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ אנו מגדירים את הרשת השאורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ עדלקמן זו רשת זרימה עם קב' קודקודים 
+\begin_inset Formula $V$
+\end_inset
+
+ מקור 
+\begin_inset Formula $s$
+\end_inset
+
+ ובור 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קב' הצלעות של 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ היא איחוד של שני קבוצות: נסמן 
+\begin_inset Formula $\overleftarrow{e}$
+\end_inset
+
+ הצלע ההפוךה של 
+\begin_inset Formula $e$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & \left\{ \vec{e}\vert\vec{e}\in E,f\left(e\right)<c\left(e\right)\right\} \\
+ & \left\{ \overleftarrow{e}\vert\vec{e}\in E,f\left(e\right)\geq0\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה השני 
+\begin_inset Formula $c\left(\overleftarrow{e}\right)$
+\end_inset
+
+ בגרף הוא 
+\begin_inset Formula $f\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הסכמה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Ford-Fulkerson
+\end_layout
+
+\begin_layout Standard
+על מנת לפתור את בעית הזרימה ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+צא מהזרימה 
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בנה את הרשת השיורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מצא בה מסילה מכוונת מ 
+\begin_inset Formula $S$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+, 
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הזרם על 
+\begin_inset Formula $P$
+\end_inset
+
+את הערך המירבי האפשרי ב 
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עדכן את 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+חזור ל 
+\begin_inset Formula $2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+)ההוכחה תבוא בהמשך( אם 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+ ואם אין ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+ אזי יש ב 
+\begin_inset Formula $G$
+\end_inset
+
+ אתך 
+\begin_inset Formula $\left(A,B\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $v\left(f\right)=c\left(A,B\right)$
+\end_inset
+
+ ובפרט 
+\begin_inset Formula $f$
+\end_inset
+
+ אופטימאלי והחתך 
+\begin_inset Formula $\left(A,B\right)$
+\end_inset
+
+ מינימאלי.
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה ב
+\begin_inset Formula $G$
+\end_inset
+
+ ו 
+\begin_inset Formula $V\subseteq A$
+\end_inset
+
+ אז נסמן ב 
+\begin_inset Formula $f^{out}\left(A\right)$
+\end_inset
+
+ את 
+\begin_inset Formula $\sum_{\mbox{outgoing e}}f\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $G$
+\end_inset
+
+ רשת ו 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה בה, תהיה 
+\begin_inset Formula $\left(A,B\right)$
+\end_inset
+
+ חתך ברשת)ז"א 
+\begin_inset Formula $s\in A,t\in B,V=A\dot{\cup}B$
+\end_inset
+
+( אזי 
+\begin_inset Formula $v\left(f\right)=f^{out}\left(A\right)=f^{in}\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+היות ש 
+\begin_inset Formula $v\left(f\right)=f^{out}\left(s\right)$
+\end_inset
+
+ והיות ש 
+\begin_inset Formula $f^{out}\left(s\right)=0$
+\end_inset
+
+ ניתן לרשום 
+\begin_inset Formula $v\left(f\right)=f^{out}\left(s\right)=f^{in}\left(s\right)$
+\end_inset
+
+ מכיוון ש 
+\begin_inset Formula $f^{out}-f^{in}\left(s\right)=0$
+\end_inset
+
+ לכל 
+\begin_inset Formula $v\neq s,t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\left(f\right)=f^{out}\left(s\right)-f^{in}\left(s\right)+\sum_{a\in A\setminus S}\left(f^{out}\left(a\right)-f^{in}\left(a\right)\right)=\sum\left(f^{out}\left(a\right)-f^{in}\left(a\right)\right)=f^{out}\left(A\right)-f^{in}\left(a\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+נביט בטענה הנ"ל כש 
+\begin_inset Formula $A=V\setminus\left\{ t\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\left(f\right) & = & f^{out}\left(A\right)=f^{in}\left(\left\{ t\right\} \right)\\
+f^{in}\left(A\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+לכל זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ מתקיים גם 
+\begin_inset Formula $v\left(f\right)=f^{in}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left(A,B\right)$
+\end_inset
+
+ הוא חתך ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+ אז מגדירים 
+\begin_inset Formula $c\left(A,B\right)=\sum_{e\in\left(A\to B\right)}c\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+לכל זרימה 
+\begin_inset Formula $f$
+\end_inset
+
+ ב 
+\begin_inset Formula $G$
+\end_inset
+
+ ולכלחתך 
+\begin_inset Formula $\left(A,B\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $v\left(f\right)\leq c\left(A,B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\left(f\right)=f^{out}\left(a\right)-f^{in}\left(A\right)\leq f^{out}\left(A\right)=\sum_{r\in A\to B}f\left(e\right)<\sum_{e\in A\to B}c\left(e\right)=c\left(A,B\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+ ונניח כי ברשת השיורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ אין מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\begin_inset Formula $t$
+\end_inset
+
+.אז יש חתך 
+\begin_inset Formula $\left(A^{*},B^{*}\right)$
+\end_inset
+
+ כך שהשטף של 
+\begin_inset Formula $f$
+\end_inset
+
+ שווה לקיבול החתך הזה, בפרט 
+\begin_inset Formula $f$
+\end_inset
+
+ היא בעלת שטף מירבי, ו 
+\begin_inset Formula $\left(A^{*},B^{*}\right)$
+\end_inset
+
+ היא בעלת קיבול מזערי.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נגדיר כ 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+ את קבוצת כל הקודקודים ב
+\begin_inset Formula $V$
+\end_inset
+
+ שניתן להגיע אליהם במסילה מעוונת מ 
+\begin_inset Formula $S$
+\end_inset
+
+ ברשת השיורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+רשתות זרימה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Waves/c13d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+רשת זרימה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+רשת זרימה 
+\begin_inset Formula $G\left(V,E,c,s,t\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left(V,E\right)$
+\end_inset
+
+ גרף מכוון.
+ 
+\begin_inset Formula $s,t\in V$
+\end_inset
+
+)מקור ובור( , 
+\begin_inset Formula $c:E\to\mathbb{R}^{+}$
+\end_inset
+
+ לפעמים מגדירים
+\begin_inset Formula $c\left(u,v\right)=0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\left(u,v\right)\not\in E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מרחב הפתרונות האפשריים כן מכיל ב"זרימות" שהן 
+\begin_inset Formula $f:V^{2}\to\mathbb{R}$
+\end_inset
+
+ המקיימת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\forall u,v\in V:\, f\left(u,v\right) & = & -f\left(v,u\right)\\
+f\left(u,v\right) & \leq & c\left(u,v\right)\\
+\forall v\neq s,t\sum_{u\in V}f\left(u,v\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+מצא את ה 
+\begin_inset Formula $f$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|f\right|=\sum_{u\in V}f\left(s,u\right)$
+\end_inset
+
+ הוא מקסימאלי
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+חתך ברשת זרימה הוא 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $V=S\dot{\cup}T$
+\end_inset
+
+ ו 
+\begin_inset Formula $s\in S$
+\end_inset
+
+, 
+\begin_inset Formula $t\in T$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הקיבול של חתך הוא 
+\begin_inset Formula $c\left(S,T\right)=\sum_{u\in S,v\in T}c\left(u,v\right)$
+\end_inset
+
+ והזרימה 
+\begin_inset Formula $f\left(S,T\right)=\sum_{u\in s,v\in T}f\left(u,v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים מאילוצי הקיבול כי לכל 
+\begin_inset Formula $f\left(S,T\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(S,T\right)\leq c\left(S,T\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מוכיחים כי לכל חתך 
+\begin_inset Formula $f\left(S,T\right)=\left|f\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן לכל 
+\begin_inset Formula $f$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\right|<c\left(S,T\right)$
+\end_inset
+
+לכן אם נמצא 
+\begin_inset Formula $f$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|f\right|c\left(S,T\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f$
+\end_inset
+
+ מקסימאלי ו 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ בעל קבולת מינימאלית
+\end_layout
+
+\begin_layout Standard
+משפט השטף והחתך מראה שתמיד ניתן למצר 
+\begin_inset Formula $f$
+\end_inset
+
+ שממצב חתך מסויים הרשת
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ רשת זרימה ו 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה נגדיר את הרשת השיורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ להיות: 
+\begin_inset Formula $V_{f}=V$
+\end_inset
+
+, 
+\begin_inset Formula $E_{f}=\left\{ \left(u,v\right):f\left(u,v\right)\leq c\left(u,v\right)\right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $c_{f}\left(u,v\right)=c\left(u,v\right)-f\left(u,v\right)$
+\end_inset
+
+ , 
+\begin_inset Formula $s,t$
+\end_inset
+
+ נשארים זהים
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+סים לב כי 
+\begin_inset Formula $E_{f}\not\subseteq E$
+\end_inset
+
+ כי יתכן שמתווספות צלעות בעלות זרימה שלילית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אלגוריתם 
+\begin_inset Formula $FF$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+כך עוד קיימת מסילת הרחבה 
+\begin_inset Formula $P$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+צור זריה 
+\begin_inset Formula $g$
+\end_inset
+
+ שמזרימה על 
+\begin_inset Formula $P$
+\end_inset
+
+ זרימה השווה למימימום בקיבולת על 
+\begin_inset Formula $P$
+\end_inset
+
+ ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ והוסך את 
+\begin_inset Formula $g$
+\end_inset
+
+ ל 
+\begin_inset Formula $f$
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+החזר את 
+\begin_inset Formula $f$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שאם 
+\begin_inset Formula $f$
+\end_inset
+
+ מקסימאלית אז 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ כן ש }כך שניתן להגיע ל
+\begin_inset Formula $u$
+\end_inset
+
+ מ
+\begin_inset Formula $s$
+\end_inset
+
+{
+\begin_inset Formula $S=$
+\end_inset
+
+ הוא מינימאלית זה נותן גם דרך אלגוריתמית למצא חתך מינימאלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/c13d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+הרצת האלג על הרשת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/c13d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מצב הרשת הקיורית אחרי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמה
+\end_layout
+
+\begin_layout Standard
+נתונה לגה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מספר נצחונוצ
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+גליל עלון
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+21
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מכבי ת"א
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+20
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הפועל ת"א
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+22
+\numeric off
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+הפועל י-ם
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משחקים צפויים:
+\end_layout
+
+\begin_layout Standard
+הפ' י-ם - הפ ת"א
+\end_layout
+
+\begin_layout Standard
+הפ' י-ם - מכבי ת"א
+\end_layout
+
+\begin_layout Standard
+הפ' תא - מכבי ת"א
+\end_layout
+
+\begin_layout Standard
+הפ' תא - כליל עליון
+\end_layout
+
+\begin_layout Standard
+מכבי ת"א - גליל עליון
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Standard
+נתונה 
+\begin_inset Formula $S$
+\end_inset
+
+ קבוצת קב' לכל אחת נתונה מס' הנצחונות עד כה 
+\begin_inset Formula $\left\{ \omega_{x}\right\} _{x\in S}$
+\end_inset
+
+ בין כל זוג קבוצות נתון מס' המשחקים הצפוי ביניהם 
+\begin_inset Formula $\left\{ g_{xy}\right\} _{x,y\in S}$
+\end_inset
+
+ )אין חשיבות בסדר בין 
+\begin_inset Formula $x,y$
+\end_inset
+
+( נתונה 
+\begin_inset Formula $z\in S$
+\end_inset
+
+ נרצה לדעת האם ל
+\begin_inset Formula $z$
+\end_inset
+
+ יש סיכוי לנצח)תיקו במקום הראשון נחשב נצחון(
+\end_layout
+
+\begin_layout Standard
+הבעיה שקולה לשלה האם ניתן לקבוע את תוצאות המשחקים בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ל 
+\begin_inset Formula $y$
+\end_inset
+
+ ששונים מ 
+\begin_inset Formula $z$
+\end_inset
+
+ כך שקבוצה אחת לא תנצח יותר מ 
+\begin_inset Formula $w_{z}+\sum_{x\in S}g_{xz}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר רשת זרימה 
+\begin_inset Formula $v=\left\{ s,t\right\} \cup\left\{ u_{xy}:x,y\in S\setminus\left\{ z\right\} \right\} \cup\left\{ v_{x}:x\in S\setminus\left\{ z\right\} \right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $E=\left\{ \left(s,u_{x,y}\right):x,y\in S\setminus\left\{ z\right\} \right\} \cup\left(u_{xy},v_{x}\right),\left(u_{x,y},v_{x}:x,y\in S\setminus\left\{ z\right\} \right)\cup\left\{ \left(u_{x},t\right):x\in S\setminus\left\{ z\right\} \right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+וקובעים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c\left(S,u_{xy}\right) & = & g_{xy}\\
+C\left(u_{xy},v_{x}\right) & = & \infty\\
+c\left(v_{x},s\right) & = & m-\omega_{x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה להוכיח של 
+\begin_inset Formula $z$
+\end_inset
+
+ יש סיכוי לנצח אמ"מ הזרימה מקסימלית הרשת שווה ל 
+\begin_inset Formula $g^{*}=\sum_{x,y\neq z}g_{xy}$
+\end_inset
+
+.
+ את זה אפשר לבדוק באמצעות אלג' למציאת זרימה מקסימלית
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם קיימת השמה חלקית ל 
+\begin_inset Formula $k$
+\end_inset
+
+ משחקים כך שבסום 
+\begin_inset Formula $z$
+\end_inset
+
+ מובילה אז קיימת זרימה השלמים עם שטף 
+\begin_inset Formula $k$
+\end_inset
+
+ ברשת
+\end_layout
+
+\begin_layout Standard
+אם קיימת זרימה בשלמים בשטף 
+\begin_inset Formula $k$
+\end_inset
+
+ אז יש השמה חלקית ל 
+\begin_inset Formula $k$
+\end_inset
+
+ משחקים שבסופם 
+\begin_inset Formula $z$
+\end_inset
+
+ מובילה
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח השמה ל צצל משחקים.
+ נגדיר )מספר המשחקים בין 
+\begin_inset Formula $x$
+\end_inset
+
+ ל
+\begin_inset Formula $y$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $k$
+\end_inset
+
+( 
+\begin_inset Formula $f\left(S,u_{xy}\right)=$
+\end_inset
+
+, )מספר הנצחונות של 
+\begin_inset Formula $x$
+\end_inset
+
+ על 
+\begin_inset Formula $y$
+\end_inset
+
+(
+\begin_inset Formula $f\left(u_{xy},v_{x}\right)=$
+\end_inset
+
+, )מס' הנצחונות של 
+\begin_inset Formula $x$
+\end_inset
+
+ ב 
+\begin_inset Formula $k$
+\end_inset
+
+ משחקים(
+\begin_inset Formula $f\left(x_{x},t\right)=$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קל לראות שמתקיים שימור חומר לגבי אילוצי קיבול מכיוון ש 
+\begin_inset Formula $z$
+\end_inset
+
+ מובילה מתקיים שלכל 
+\begin_inset Formula $x$
+\end_inset
+
+ - 
+\begin_inset Formula \[
+\omega_{x}f\left(v_{x},t\right)\leq m\Rightarrow f\left(v_{x},t\right)\leq c\left(v_{x},t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמו כן 
+\begin_inset Formula $\left|f\right|=\sum_{x,y\neq z}f\left(S,u_{xy}\right)=k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונה זרימה בשלמים 
+\begin_inset Formula $f$
+\end_inset
+
+ אז נקבע תוצאות של 
+\begin_inset Formula $\left|f\right|=k$
+\end_inset
+
+ משחקים ע"י קביעת 
+\begin_inset Formula $f\left(s,u_{xy}\right)$
+\end_inset
+
+ משחקים בין 
+\begin_inset Formula $x,y$
+\end_inset
+
+ מתוכם 
+\begin_inset Formula $f\left(u_{xy},v_{x}\right)$
+\end_inset
+
+, 
+\begin_inset Formula $x$
+\end_inset
+
+ מנצחת ו 
+\begin_inset Formula $f\left(u_{xy},v_{y}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{\R{\text{ס"ה המשחקים ההחדשים שמנצחת}}}=\lambda=\sum_{y}f\left(u_{xy},v_{x}\right)=f\left(v_{x},t\right)\leq c\left(v_{x},t\right)=m-\omega_{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\omega_{x}+\lambda\leq m\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהטענה ניתן להסיק שקיימת זרימה בשלמים בשטף 
+\begin_inset Formula $g^{*}$
+\end_inset
+
+ אמ"מ 'יימת השמה לכל המשחקים כך ש 
+\begin_inset Formula $z$
+\end_inset
+
+ מובילה בסופם.
+\end_layout
+
+\begin_layout Standard
+נשתמש במשפט הזרימה השלמה שרומר שהרשת שהב כל הקיבולות שלמות קיימת זרימה מקסימלית
+ בשלמים.
+\end_layout
+
+\begin_layout Standard
+מהשטף נובע שקיימת זרימה מקסימלית בשטף 
+\begin_inset Formula $g^{*}$
+\end_inset
+
+ אמ"מ קיימת השמה לכל המשחקים שבסום 
+\begin_inset Formula $z$
+\end_inset
+
+ מובילה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+תזכורת :
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $G$
+\end_inset
+
+ רשת ו 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה ואם 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ הרשת השיורית המתאימה אז אלג 
+\begin_inset Formula $FF$
+\end_inset
+
+ אומר:
+\end_layout
+
+\begin_layout Enumerate
+מצא ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+מסילה 
+\begin_inset Formula $P$
+\end_inset
+
+ מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ חשה את ערך צוור הבקבוק של 
+\begin_inset Formula $P$
+\end_inset
+
+ "הזרם 
+\begin_inset Formula $a$
+\end_inset
+
+ על 
+\begin_inset Formula $P$
+\end_inset
+
+ במובן הבא:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+על כל עץ קדמית 
+\begin_inset Formula $\overline{e}\in E\cap P$
+\end_inset
+
+ החלף את 
+\begin_inset Formula $f\left(e\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $f\left(e\right)+a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+על כך צלע אחרת 
+\begin_inset Formula $\overline{e}\in\overline{E}\cap P$
+\end_inset
+
+ החלך את 
+\begin_inset Formula $f\left(e\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $f\left(e\right)-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+על כך צךע אחרת השאר את 
+\begin_inset Formula $f$
+\end_inset
+
+ בעינה
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+עדכן את 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עצור כאשר ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ אין מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אחת ממטרותינו הקרובות היא להראות כי אלג' 
+\begin_inset Formula $FF$
+\end_inset
+
+ עוצר אז בידינו זרימה אופטימלית וזאת מפני שמתקבל גם חתך שקיבולו שווה לשטף
+ 
+\begin_inset Formula $v\left(f\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראינו את המסקנה הבאה:
+\end_layout
+
+\begin_layout Standard
+לכל חתך 
+\begin_inset Formula $\left(A,B\right)$
+\end_inset
+
+ ברשת ולכל זרימה הב 
+\begin_inset Formula $f$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $v\left(f\right)\leq C\left(A,B\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+הוכח: 
+\begin_inset Formula $v\left(f\right)=f^{out}\left(A\right)-f^{in}\left(A\right)\leq f^{out}\left(A\right)=\sum_{e:A\to B}f\left(e\right)\leq\sum_{e:A\to B}c\left(e\right)=c\left(A,B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פירוש האי שוויון הוא:
+\end_layout
+
+\begin_layout Enumerate
+לכל צלע 
+\begin_inset Formula $e:B\to A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(e\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל צלע 
+\begin_inset Formula $e:A\to B$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(e\right)=c\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+תהיה 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+ ונניח שב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ אין מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ אז יש חתך 
+\begin_inset Formula $\left(A^{*},B^{*}\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $G$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $v\left(f\right)=c\left(A^{*},B^{*}\right)$
+\end_inset
+
+ בפרט ל 
+\begin_inset Formula $f$
+\end_inset
+
+ שטף מירבי ול 
+\begin_inset Formula $\left(A^{*},B^{*}\right)$
+\end_inset
+
+ קיבול מזערי.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נגדיר את 
+\begin_inset Formula $A^{*}$
+\end_inset
+
+ כקבוצת כל הקדקדים 
+\begin_inset Formula $v$
+\end_inset
+
+ב 
+\begin_inset Formula $V$
+\end_inset
+
+ כך שב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ יש מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B^{*}=V\setminus A^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ראשית 
+\begin_inset Formula $\left(A^{*},B^{*}\right)$
+\end_inset
+
+ הוא חתך כי 
+\begin_inset Formula $s\in A^{*}$
+\end_inset
+
+ ואילו 
+\begin_inset Formula $t\not\in A^{*}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $t\in B^{*}$
+\end_inset
+
+ ע"מ להוכיח את טענתנו יש שני תנאים שעלינו לכבד:
+\end_layout
+
+\begin_layout Enumerate
+עלינו לוודא שיש 
+\begin_inset Formula $e:B^{*}\to A^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+ע"פ הגדרת הרשת השיורית אילו היה 
+\begin_inset Formula $x=f\left(e\right)>0$
+\end_inset
+
+ הייתה צלע מכוונת ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מ 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ שקיבולה 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נזכור שיש מסילה מכוונת ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מ 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ שקיבולה 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ נזכור שיש מסחלה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ ) זו הסיבה שבגללה 
+\begin_inset Formula $v\in A^{*}$
+\end_inset
+
+( אם כן יש גם מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+)הולכים מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v$
+\end_inset
+
+ מממשיכת בצלע ( בניגוד לכך ש 
+\begin_inset Formula $u\not\in A^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+יש הראות שכל צלע 
+\begin_inset Formula $e:A^{*}\to B^{*}$
+\end_inset
+
+ רוויה ז"א 
+\begin_inset Formula $f\left(e\right)=c\left(e\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אחרת אם 
+\begin_inset Formula $c\left(e\right)-f\left(e\right)=y$
+\end_inset
+
+, 
+\begin_inset Formula $y>0$
+\end_inset
+
+ היינו מוצאים בגרך 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ צלע מכוונת מ 
+\begin_inset Formula $v$
+\end_inset
+
+ ל 
+\begin_inset Formula $u$
+\end_inset
+
+ בקיבול 
+\begin_inset Formula $y$
+\end_inset
+
+ שוב עמרום יש מסילה מכוונת מ 
+\begin_inset Formula $s$
+\end_inset
+
+ל 
+\begin_inset Formula $v$
+\end_inset
+
+ וניתן להאך אותה ולהגיע גם ל 
+\begin_inset Formula $u$
+\end_inset
+
+ אך כי ע"פ ההנחה 
+\begin_inset Formula $u\not\in A^{*}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Paragraph
+מסקנות:
+\end_layout
+
+\begin_layout Enumerate
+כאשר אלג 
+\begin_inset Formula $FF$
+\end_inset
+
+ עוצר יש בידינו זרימה אופטימלית
+\end_layout
+
+\begin_layout Enumerate
+כאשר ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+ כל הריבולים שלמים: 
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+אלגוריתם 
+\begin_inset Formula $FF$
+\end_inset
+
+ פותר את בעיית הזרימה בזמן 
+\begin_inset Formula $O\left(mC\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ מספא הצלעות ו 
+\begin_inset Formula $C$
+\end_inset
+
+ סגום כל הקיבולים.
+ 
+\end_layout
+
+\begin_layout Enumerate
+כאשר ברשת 
+\begin_inset Formula $G$
+\end_inset
+
+ כל הקיבולים שלמים אז יש זרימה אופטימאלית שכל ערכיה הם שלמים )ואלג' 
+\begin_inset Formula $FF$
+\end_inset
+
+ ימצא זרימה כזו(
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+משפט השטף והחתך
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Max Flow Min Cut}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+: לכל רשת זרימה 
+\begin_inset Formula $G\left(V,E,s,t,c\right)$
+\end_inset
+
+ השטף המירבי האפשרי ב 
+\begin_inset Formula $G$
+\end_inset
+
+ שווה לקיבול המזערי של חתך ברשת.
+\end_layout
+
+\begin_layout Standard
+עוד מילה על רשת עם קיבולים לא שלימים:
+\end_layout
+
+\begin_layout Standard
+הטיפול שהצגנו במקרה של קיבולים שלמים פותר גם את המקרה של רציונלים)מכפילים
+ את כל הקיבולים במכנה המשותף(
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+שני מימושים יעילים של סכימת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Ford-Fulkerson
+\end_layout
+
+\begin_layout Enumerate
+אלגוריתם דירוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+scaling
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Enumerate
+אלגוריתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Edwards-Karp
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+אבל לא נגדיר אותם כנראה
+\end_layout
+
+\begin_layout Section
+תכנון ליניארי
+\end_layout
+
+\begin_layout Standard
+רק סיכום כך שתדעו על מה מדובר
+\end_layout
+
+\begin_layout Standard
+אמרנו שבעיית אופתימיזציה זו שאלה מהסוג הבא: נתונה קב' כלשהיא 
+\begin_inset Formula $D$
+\end_inset
+
+ ופונקציה ממשית 
+\begin_inset Formula $f:D\to\mathbb{R}$
+\end_inset
+
+ מחפשת את 
+\begin_inset Formula $\max_{x\in D}f\left(x\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+האם ל 
+\begin_inset Formula $D$
+\end_inset
+
+ מסויימות "פשוטות", 
+\begin_inset Formula $\phi$
+\end_inset
+
+ "פשוטה" יש לנו דרך לפתור את הבעייה.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $D\subseteq\mathbb{R}^{n}$
+\end_inset
+
+ המוגדרת ע"י אוסף של משוואות ליניאריות ואי שויונים ליניאריים ובנוסף 
+\begin_inset Formula $\phi$
+\end_inset
+
+ היא פ' ליניארית אז בעיית האופטימיזציה נקראת בעיית תכנון ליניארית 
+\begin_inset Formula $LP\Rightarrow\mbox{Linear Programming}$
+\end_inset
+
+ ולבעייה זו יש אלג' יעיל.
+\end_layout
+
+\begin_layout Standard
+בעיית הזרימה ברשת היא מקרה פרטי של בעיית התכנות הליניארי.
+ כן 
+\begin_inset Formula $D\subseteq\mathbb{R}^{m}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא מספר הצלעות ברשת.
+ לכל קואורדינטה 
+\begin_inset Formula $1\dots m$
+\end_inset
+
+ מצמידים צלע ואז רושמים 
+\begin_inset Formula $\left(f\left(e_{1}\right)\dots f\left(e_{m}\right)\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $D$
+\end_inset
+
+ הוא אוסף כל הזרימות המותרות.
+\end_layout
+
+\begin_layout Standard
+שימו לב ש 
+\begin_inset Formula $D$
+\end_inset
+
+ אכן מוגדרת ע"י אוסף של משוואות ואי שויונים ליניאריים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\forall j:c\left(e_{j}\right) & \geq & f\left(e_{j}\right)\geq0\\
+\forall i:\sum_{e_{i}\to v}f\left(e_{i}\right)-\sum_{v\to e_{i}}f\left(e_{j}\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי במקרה הזה 
+\begin_inset Formula $\phi=\nu$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+איך ידענו בבעית הזרימה שזרימה מסויימת היא אופטימלית? מצאנו חתך שבעזרתו הוכחנו
+ זאת)מצאנו אחתך בעל קיבול שווה לזרימה(
+\end_layout
+
+\begin_layout Standard
+לכל תוכנית ליניארית אפשר לבנות תוכנית ליניארית אחרת)הדואלית( המקורית כך
+ שהפתרון המינימאלי של התוכנית הדואלית שווה לפתרון המקסימאלי של התוכנית המקורית,
+ אז אם יכולים לפתור אחת יודעים ערך של המקסימאלי/מינימאלי של הבעיה האחרת.
+\end_layout
+
+\begin_layout Section
+אלג מדורג לבעיית הזרימה
+\end_layout
+
+\begin_layout Standard
+זה אלג בעל סיבוכיות זמן ריצה 
+\begin_inset Formula $\mathcal{O}\left(m^{2}\log c\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ הוא מס' הצלעות ו 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא סכום הקיבוליות.
+\end_layout
+
+\begin_layout Standard
+אלג' מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+FF
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ ובעצם נראה שהוא מבצע פחות או שווה 
+\begin_inset Formula $O\left(m\log c\right)$
+\end_inset
+
+ איטרציות ומחיר כל איטרציה 
+\begin_inset Formula $O\left(m\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הרעיון:
+\end_layout
+
+\begin_layout Standard
+למצא ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מסילה מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ שערך צוור הבקבוק שלה "גדול".
+ אם זו מטרתנו עלינו להימנע מצלעות ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ שקיבולן קטן.
+\end_layout
+
+\begin_layout Standard
+מאיצד גיסה, אסור לנו להציב רף גדול מדי כי בזה אנו עלולים לגרום לכך שלא תהיה
+ כלל מסילה 
+\begin_inset Formula $S\to f$
+\end_inset
+
+ ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+.
+ אנו נציב הרף בגובה שהוא חזקה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+.
+\end_layout
+
+\begin_layout Paragraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ הוא מספר חיובי נסמן ב 
+\begin_inset Formula $G_{f}\left(\Delta\right)$
+\end_inset
+
+ את הקשט המתקבלת מ 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ ע"י מחיקת כל צלע שקיבולה קטן מ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+תיאור האלג:
+\end_layout
+
+\begin_layout Standard
+נתחיל מ 
+\begin_inset Formula $\Delta_{0}=\max\left\{ 2^{k}\right\} $
+\end_inset
+
+ כאשר יש צלע היוצאת מ 
+\begin_inset Formula $S_{N}$
+\end_inset
+
+ וקיבולה גדול שווה ל 
+\begin_inset Formula $2^{k}$
+\end_inset
+
+.
+ נצא מ 
+\begin_inset Formula $f\equiv0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+האיטרציה:
+\end_layout
+
+\begin_layout Standard
+מצא מסילות ב 
+\begin_inset Formula $G_{f}\left(\Delta\right)$
+\end_inset
+
+ ועדכן את 
+\begin_inset Formula $f$
+\end_inset
+
+ כל עוד יש ב 
+\begin_inset Formula $G_{f}\left(\Delta\right)$
+\end_inset
+
+ מסילה מ 
+\begin_inset Formula $S$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הקטן את 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ ל 
+\begin_inset Formula $\Delta/2$
+\end_inset
+
+ וחזור לאיטרציה.
+ עצור ב 
+\begin_inset Formula $\Delta=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Standard
+נבנה רשת זרימה שבה כל פתרון חוקי)כלומר 
+\begin_inset Formula $B,J$
+\end_inset
+
+ שעומדים באילוצים( מתריל לחתך ברשת ונראה שבחתך המינימאלי מתאים לפתרון חוקי
+ מקסימאלי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename algorithms/c12d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+רשת שלנו
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה רשת באופן הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & \left\{ s,t\right\} \cup\left\{ u_{j}\right\} _{j\in A}\\
+E & = & \left\{ \left(s,v_{j}\right)\right\} _{j\in I}\cup\left\{ u_{j},t\right\} _{j\in I}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומוסיפים ל 
+\begin_inset Formula $E$
+\end_inset
+
+ עוד את הקבוצה 
+\begin_inset Formula $\left(v_{j},u_{k}\right)$
+\end_inset
+
+ כך ש המשקיע ה 
+\begin_inset Formula $j$
+\end_inset
+
+ דרש את השחקן ה 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C\left(s,v_{j}\right) & = & m_{i}\\
+C\left(u_{j},t\right) & = & p_{j}\\
+C\left(v_{j},u_{k}\right) & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבנה התאמה עבור חתך 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+ ברשת נתאים לו 
+\begin_inset Formula $V\subseteq A,J\subseteq I$
+\end_inset
+
+ ע"י 
+\begin_inset Formula $B=S\cap\left\{ u_{j}\right\} _{j\in A}$
+\end_inset
+
+, 
+\begin_inset Formula $I=S\cap\left\{ v_{j}\right\} _{j\in I}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+חתח מתאים לפתרון חוקי אמ"מ הקיבוליות שלו סופית.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נביט בחתך 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C\left(S,T\right) & = & \sum_{\left(i.v\right)\in T}c\left(u,v\right)\\
+ & = & \sum_{j\in B}c\left(u_{j},t\right)+\sum_{j\in I\setminus J}c\left(s,v_{j}\right)+\sum_{\begin{matrix}\left(v_{j},u_{i}\right)\in E\\
+j\in J,k\not\in B\end{matrix}}c\left(v_{j},u_{k}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת מכיוון שאם נעבור על הצלעות שעוברות בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ נגלה שהם עשויים להיות צלעות משלושה סוגים:
+\end_layout
+
+\begin_layout Enumerate
+בין 
+\begin_inset Formula $s$
+\end_inset
+
+ למשקיעים שלא נבחרו
+\end_layout
+
+\begin_layout Enumerate
+בין משקיעים שנבחרו לשחקנים שהם נבחרו
+\end_layout
+
+\begin_layout Enumerate
+בין שחקנים שנבחרו ל 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים שהצלע מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קיימת אם"ם הפתרון לא חוקי.
+\end_layout
+
+\begin_layout Standard
+צלעות מסוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לא מופעות כי החתך סופי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & = & \sum_{j\in B}P_{j}-\sum_{j\in I\setminus J}m_{j}\\
+ & = & \sum_{j\in I}m_{j}-\left(\sum_{j\in J}m_{j}0\sum_{j\in B}\right)\sum_{j\in B}P_{j}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Dilworth
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+קבוצה סגורה חלקית)בסדר חזק( היא קבוצה 
+\begin_inset Formula $S$
+\end_inset
+
+ שמוגדר עליה יחס בינארי שמסמנים ב 
+\begin_inset Formula $>$
+\end_inset
+
+ המקיים:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $a\in S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lnot a<a$
+\end_inset
+
+)לא קטן מעצמו(
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $a,b\in S$
+\end_inset
+
+ אם 
+\begin_inset Formula $a>b$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lnot b>a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $a,b,c\in S$
+\end_inset
+
+ מתקיים שאם 
+\begin_inset Formula $a>b,b>c$
+\end_inset
+
+ אזי 
+\begin_inset Formula $a>c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+שרשרת בקס"ח היא סדרה 
+\begin_inset Formula $\left\langle a_{1},a_{2},a_{3}\dots a_{n}\right\rangle $
+\end_inset
+
+כך שלכל 
+\begin_inset Formula $i$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $a_{i}<a_{i+1}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+אנטי שרשרת בקס"ח היא 
+\begin_inset Formula $A\subseteq S$
+\end_inset
+
+ שלכל 
+\begin_inset Formula $x,y\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\lnot x<y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+פירוק לשרשראות של קס"ח 
+\begin_inset Formula $\left(S,<\right)$
+\end_inset
+
+ הוא אוסף של שרשראות 
+\begin_inset Formula $\left\{ c_{1},c_{2},\dots c_{n}\right\} $
+\end_inset
+
+ כך שכך איבר ב 
+\begin_inset Formula $S$
+\end_inset
+
+ מופיע בדיוק בשרשרת אחת.
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+מספר השרשראות ההמינימאלי הדרוש לגסות קס"ח 
+\begin_inset Formula $n_{c}$
+\end_inset
+
+= גודל האנטי שרשרת המקסימאלי 
+\begin_inset Formula $n_{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{a}\leq n_{c}$
+\end_inset
+
+ מכיוון שכל שרשרת יכולה להיחתך עם כל אנטי שרשרת לכל היותר באיבר אחד ולככן
+ דרושות לפחות כגודל האנטי שרשרת המקסימלית שדרושות לחסות את 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n_{a}\geq n_{c}$
+\end_inset
+
+ ניעזר במשפט הבא:
+\end_layout
+
+\begin_layout Paragraph
+משפט
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+hall
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המורחב:
+\end_layout
+
+\begin_layout Standard
+בגרף דו צדדי 
+\begin_inset Formula $\left(L\cup R,E\right)$
+\end_inset
+
+ גודל הזיווג המקסימאלי שווה ל 
+\begin_inset Formula $\left|L\right|-\max_{x\subseteq L}\left\{ \left|x\right|-\left|\Gamma\left(x\right)\right|\right\} $
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\Gamma\left(x\right)$
+\end_inset
+
+ הוא קבוצת השכנים של 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה התאמה בין זיווגים בגרף דו צדדי מסויים לפרוקים לרשתות.
+\end_layout
+
+\begin_layout Standard
+בהינתן קס"ח 
+\begin_inset Formula $\left(S,<\right)$
+\end_inset
+
+ נניח 
+\begin_inset Formula $S=\left\{ 1,2\dots n\right\} $
+\end_inset
+
+ נבנה גרף 
+\begin_inset Formula $L=\left\{ x_{1}\dots x_{n}\right\} $
+\end_inset
+
+, 
+\begin_inset Formula $R=\left\{ y_{1}\dots y_{n}\right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $E=\left\{ \left(x_{i},y_{i}\right):j>i\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+עבור כל זיווג באורך 
+\begin_inset Formula $l$
+\end_inset
+
+ ניתן להתאים פירוק לשרשראות בגודל 
+\begin_inset Formula $n-l$
+\end_inset
+
+ וליפך עבור פירוק בגודל 
+\begin_inset Formula $l$
+\end_inset
+
+ ניתן להתאים זיווג בגודל 
+\begin_inset Formula $n-l$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+עבור זיווג בגודל 
+\begin_inset Formula $l$
+\end_inset
+
+ ניתן לבנות פירוק ע"י שנתחיל מפירוק שבו כל איבר הוא בנפרד ונחבר אותו ע"פ
+ צלעות הזיווג.
+ מספר בהשרשראות יורד באחד עם כל צלע שמוסיפים וסה"כ לכן יש 
+\begin_inset Formula $n-l$
+\end_inset
+
+ שרשראות בסוף.
+\end_layout
+
+\begin_layout Standard
+עבור פירוק בגודל 
+\begin_inset Formula $l$
+\end_inset
+
+ ניתן לבנות זיווג ע"י שניקח את הצלע 
+\begin_inset Formula $\left(x_{i},y_{i}\right)$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $i,j$
+\end_inset
+
+ שהופיעו אחד אחרי השני באחת השרשראות, הזיווג יהיה בגודל 
+\begin_inset Formula $\sum_{i=1}^{k}\left(\left|c_{i}\right|-1\right)=n-k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהטענה נובע שזיווג מקסימאלי מתאים לפירוק מינימאלי ולכן גודלו הוא 
+\begin_inset Formula $n-n_{c}$
+\end_inset
+
+ ולכן ממשפט 
+\lang english
+Hall
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המורחב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+n-n_{c} & = & n-\max_{x\subseteq L}\left\{ \left|x\right|-\left|\Gamma\left(x\right)\right|\right\} \\
+n_{c} & = & \max_{x\subseteq L}\left\{ \left|x\right|-\left|\Gamma\left(x\right)\right|\right\} \leq n_{A}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה שעבור 
+\begin_inset Formula $x\subseteq L$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $n_{A}\geq\left|x\right|-\left|\Gamma\left(x\right)\right|$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+אלגוריתם מדורג לזרימה ברשת
+\end_layout
+
+\begin_layout Paragraph
+תזכורת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $G$
+\end_inset
+
+ רשת 
+\begin_inset Formula $f$
+\end_inset
+
+ זרימה בה ו
+\begin_inset Formula $\Delta$
+\end_inset
+
+ טבעי אז מגדירים את 
+\begin_inset Formula $G_{f}\left(\Delta\right)$
+\end_inset
+
+ כרשת המתקבלת מהרשת השיורית 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ ע"י מחיקת כל צלע שקיבולה קטן מ 
+\begin_inset Formula $\Delta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מאתחלים 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ כך שהוא יהיה המקסימום של 
+\begin_inset Formula $2^{k}$
+\end_inset
+
+ כך ש קיימת צלע מ 
+\begin_inset Formula $s$
+\end_inset
+
+ שקיבולה גדול מ 
+\begin_inset Formula $2^{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+איטרציה:
+\end_layout
+
+\begin_layout Standard
+כאשר לא נשארות מסילות מחלקים את 
+\begin_inset Formula $\Delta$
+\end_inset
+
+ ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+וחוזרים על התהליך
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+האלג מתבצע ב 
+\begin_inset Formula $\mathcal{O}\left(m\log c\right)$
+\end_inset
+
+ איטרציות ולכן זמן הריצה הכולל שלו הוא 
+\begin_inset Formula $\mathcal{O}\left(m^{2}\log c\right)$
+\end_inset
+
+ )זה זמן ריצה פולינומי(
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אלגוריתם 
+\begin_inset Formula $EK$
+\end_inset
+
+ פותר את בעית הזרימה בזמן 
+\begin_inset Formula $\mathcal{O}\left(m^{2}n\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $m$
+\end_inset
+
+ מספר הקודקודים ו 
+\begin_inset Formula $n$
+\end_inset
+
+ מספר הצלעות.
+\end_layout
+
+\begin_layout Standard
+המשפט ינבע אם נוכל להראות שמס' האיטרציות של 
+\begin_inset Formula $EK$
+\end_inset
+
+ היא 
+\end_layout
+
+\begin_layout Standard
+זה נובע משתי הטענות הבאות
+\end_layout
+
+\begin_layout Enumerate
+המרחק ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ אינו יורד אך פעם במהלך האיצה של האלג
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+נאמר שברגע מסוים מיצינו את הצלע 
+\begin_inset Formula $e$
+\end_inset
+
+ אם הזרמנו בה 
+\begin_inset Formula $c\left(e\right)$
+\end_inset
+
+ או שהורדנו הזרימה ב 
+\begin_inset Formula $e$
+\end_inset
+
+ ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+בין שני מיצויים עוקבים של אותה הצלע המרחק ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ גדל ממש
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+ל
+\begin_inset Formula $EK$
+\end_inset
+
+ יש 
+\begin_inset Formula $O\left(mn\right)$
+\end_inset
+
+ איטרציות, המרחק מ 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ ב 
+\begin_inset Formula $G_{f}$
+\end_inset
+
+ עשוי לגדול לכל היותר מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אחת ל 
+\begin_inset Formula $m$
+\end_inset
+
+ צעדים לכל היותר אנו ממצים צלע ולכן מדי 
+\begin_inset Formula $m$
+\end_inset
+
+ צעדים המרחק הנ"ל גדל ממש.
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $P=?NP$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש אוסף של אלפי בעיות אופטימיזתיה שאין לנו אלג' פולינומי ףפתורן וידוע לנו
+ 
+\begin_inset Formula $H\in e$
+\end_inset
+
+ שכולן ניתנות לפתורן בזמן פולינומי)כנראה לא...( או שאף אחת אינה ניתנת לפתרון
+ יעיל
+\end_layout
+
+\begin_layout Standard
+הבעיה הראשונה מסוג זה היא בעית הכיסוי הקודקודי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Vertex Cover
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Paragraph
+הקלט:
+\end_layout
+
+\begin_layout Standard
+גרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הפלט:
+\end_layout
+
+\begin_layout Standard
+קב' קטנה ביותר 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ כך שלכל צלע 
+\begin_inset Formula $e=\left(x,y\right)$
+\end_inset
+
+ בגרף, או ש 
+\begin_inset Formula $x\in S$
+\end_inset
+
+ או 
+\begin_inset Formula $y\in S$
+\end_inset
+
+ או שניהם
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+החל משנות ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+70
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ידועות לנו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1000
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בעיות אופטימיזציה שאין בידינו אלג' יעיל לפתרונה אבל ידוע לנו שאם אפילו לאחת
+ מהן יש אלג בעל זמן ריצה פולינומי אז יש לכולן.
+ אוסף זה של בעיות נקרא "בעיות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+NP
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שלמות."
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\max_{x\in D}f\left(x\right)$
+\end_inset
+
+, 
+\begin_inset Formula $f>0$
+\end_inset
+
+, אם אנו יודעים למצא 
+\begin_inset Formula $y\in D$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $x\in D$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(y\right)>\frac{f\left(x\right)}{A}$
+\end_inset
+
+ אז נוכל לומר שיש לנו 
+\begin_inset Formula $A$
+\end_inset
+
+ קירוב לאופטימום.
+\end_layout
+
+\begin_layout Section
+בעיית הכיסוי הקודקודי
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+באנגלית
+\begin_inset Formula $\mbox{VC}=\mbox{Vertex Cover}$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הבעיה:
+\end_layout
+
+\begin_layout Subparagraph
+הקלט:
+\end_layout
+
+\begin_layout Standard
+כרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אומרים ש 
+\begin_inset Formula $S\subseteq V$
+\end_inset
+
+ היא כיסוי קודקודי של 
+\begin_inset Formula $G$
+\end_inset
+
+ אם לכל צלע 
+\begin_inset Formula $xy\in E$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left\{ x,y\right\} \cap S\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+הבעיה: 
+\end_layout
+
+\begin_layout Standard
+למצא כיסוי קודקודי ל 
+\begin_inset Formula $G$
+\end_inset
+
+ מיוצמה מזערית
+\end_layout
+
+\begin_layout Paragraph
+עובדה:
+\end_layout
+
+\begin_layout Standard
+בעית ה 
+\begin_inset Formula $VC$
+\end_inset
+
+ היא שלמה ב 
+\begin_inset Formula $NP$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נראה אלג' פולינומי הנתון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2-
+\numeric off
+קירוב לבעית האופטימיזציה הזו.
+ ז"א האלג מקבל קלט 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ הוא מוצא בזמן פולינומיאלי קב' 
+\begin_inset Formula $Z\subseteq V$
+\end_inset
+
+ שהוא כיסוי קודקודי כך שלכל כיסוי קודקודי אחר)ובפרט לאופטימאלי( 
+\begin_inset Formula $S$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|Z\right|\leq2\left|S\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+אלגוריתם:
+\end_layout
+
+\begin_layout Subparagraph
+נזכיר:
+\end_layout
+
+\begin_layout Standard
+זיווג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+matching
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בגרך זהו אוסף של צלעות זרות בגרף
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $M$
+\end_inset
+
+ הוא זיווג ב 
+\begin_inset Formula $G$
+\end_inset
+
+ אז 
+\begin_inset Formula $VC\left(G\right)\geq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+האלגוריתם:
+\end_layout
+
+\begin_layout Standard
+נמצא ב 
+\begin_inset Formula $G$
+\end_inset
+
+ זיווג בלתי ניתן להרחבה ז"א 
+\begin_inset Formula $M\subseteq E$
+\end_inset
+
+ שהוא זיווג גך שלכל 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ יש לפחות קודקוד אחד שמשתתף עם איזשהי צלע ב 
+\begin_inset Formula $M$
+\end_inset
+
+)קל למצא 
+\begin_inset Formula $M$
+\end_inset
+
+ כנל: בכל צעד מוספים איזשהיא צלע שאינה פוגעת אף צלע שכבר נבחרה עד שנעצרים(
+\end_layout
+
+\begin_layout Standard
+מצד אחר כפי שראינו 
+\begin_inset Formula $VC\left(G\right)\geq\left|M*\right|$
+\end_inset
+
+ הפתרון שלנו 
+\begin_inset Formula $S=hx\in V$
+\end_inset
+
+ כמובן 
+\begin_inset Formula $\left|S\right|=2\left|M*\right|\leq2VC\left(G\right)$
+\end_inset
+
+.
+ ונשים לב ש 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא כיסוי קדקדי מפני שאילו היתה צלע 
+\begin_inset Formula $e=\left(u,v\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left\{ u,v\right\} \cap S\neq\emptyset$
+\end_inset
+
+ ...
+\end_layout
+
+\begin_layout Section
+בעיית הכיסוי הקבוצתי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+The Set Cover Problem
+\end_layout
+
+\begin_layout Standard
+נתונה קבוצה 
+\begin_inset Formula $X$
+\end_inset
+
+ ואוסף תת קבוצות שלה: 
+\begin_inset Formula $A_{1}\dots A_{t}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\cup A_{i}=X$
+\end_inset
+
+ רוצים למצא תת משפחה קטנה 
+\begin_inset Formula $J\subseteq\left\{ 1,\dots,t\right\} $
+\end_inset
+
+ כך שגם 
+\begin_inset Formula $\cup_{j\in J}=X$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+אלג' חמדן:
+\end_layout
+
+\begin_layout Standard
+הכל צעד נצרף קב' 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ המוסיפה לנו מס' רב ביותר של ריברי 
+\begin_inset Formula $x$
+\end_inset
+
+ שטרם כוסו.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+האלג הזה נותן 
+\begin_inset Formula $O\left(\log n\right)$
+\end_inset
+
+ קירוב לרופטימום כאשר 
+\begin_inset Formula $m=\left|X\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+בעיית ה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Carpool
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Paragraph
+הבעייה:
+\end_layout
+
+\begin_layout Standard
+נתונה קבוצה של 
+\begin_inset Formula $n$
+\end_inset
+
+ אנשים 
+\begin_inset Formula $P$
+\end_inset
+
+ וקבוצה של 
+\begin_inset Formula $m$
+\end_inset
+
+ ימים 
+\begin_inset Formula $D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Standard
+נגדיר רשת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename algorithms/c13d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+רשת של הבעייה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & \left\{ s,t\right\} \cup\left\{ x_{i}\right\} _{i\in P}\cup\left\{ y_{j}\right\} _{j\in D}\\
+D & = & \left\{ \left(s,x_{i}\right)\right\} \cup\left\{ \left(y_{j},t\right)\right\} _{j\in D}\cup\left\{ \left(x_{i},y_{j}\right):j\in L_{i}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר הקיבול של כל צלע הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C\left(s,x_{i}\right) & = & c_{i}\\
+C\left(x_{i},y_{j}\right) & = & 1\\
+C\left(y_{j},t\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+עבור זרימה בשלמים 
+\begin_inset Formula $n$
+\end_inset
+
+ בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+ קיימת השמה ל 
+\begin_inset Formula $k$
+\end_inset
+
+ ימים שעומדות באילוצים ולהיפך, עבור השמה ל 
+\begin_inset Formula $k$
+\end_inset
+
+ימים קייממת זרימה השלני בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+ההתאמה היא: בהינתן זרימה בשלמים 
+\begin_inset Formula $f$
+\end_inset
+
+, נגדיר השמה עבור 
+\begin_inset Formula $k$
+\end_inset
+
+ הימים שנכנסות אליהם זרימה חיובית.
+ נבחר בתור נהג עבור יום 
+\begin_inset Formula $j$
+\end_inset
+
+ את ב 
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ היחיד שמזרים זרימה חיובית לקודקוד 
+\begin_inset Formula $y_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אלג' קירוב
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נאמר שאלג' הוא 
+\begin_inset Formula $C$
+\end_inset
+
+ קירוב להעיית מינימיזציה אם לכל מופע של הבעייה בוא מחזיר פתרון שאירותו 
+\begin_inset Formula $q\left(o\right)$
+\end_inset
+
+ מקיים 
+\begin_inset Formula $c\cdot q\left(opt\right)\geq q\left(o\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעית
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series medium
+\shape default
+\size normal
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Makespan(Load loadbalancing)
+\end_layout
+
+\begin_layout Standard
+נתונות 
+\begin_inset Formula $k$
+\end_inset
+
+ מכוונות זהוצ ונתונות 
+\begin_inset Formula $n$
+\end_inset
+
+ משימות שמשריהן 
+\begin_inset Formula $t_{1},\dots,t_{n}$
+\end_inset
+
+ לביצוע כל מסימה צריכה להיות משובצת למעונב אחת, ויכולה להתבצע בכל זמן נגדיר
+ את
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+makespan
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לביות זמן הסיום של המשימה שמסיימת אחרונה.
+ נרצה למזער אותו.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מכונות.
+ זמנים 
+\begin_inset Formula $13,12,5,6,10,2,4$
+\end_inset
+
+.
+ שבוץ אפשר: 
+\begin_inset Formula $\left(4,10,2\right),\left(13,12\right),\left(5,6\right)$
+\end_inset
+
+.
+ ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+makespan
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $25$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+רעיון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+מסדר את המשימות בסדר כלשהו.
+ נתחיל עם 
+\begin_inset Formula $k$
+\end_inset
+
+ מכונות ריקות וכאשר נגיע למשימה ה 
+\begin_inset Formula $i$
+\end_inset
+
+ משבץ אותה במכונה שמסיימת ראשונה אחרי השיבוץ של 
+\begin_inset Formula $i-1$
+\end_inset
+
+ הראשונות.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+אם נסמן את הפתרון של האלג' ב 
+\begin_inset Formula $O$
+\end_inset
+
+ את 
+\begin_inset Formula $q\left(o\right)\leq\left(2-\frac{1}{k}\right)q\left(opt\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נשיג חסמים על 
+\begin_inset Formula $q\left(opt\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $i$
+\end_inset
+
+: 
+\begin_inset Formula $q\left(opt\right)\geq t_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $q\left(opt\right)\geq\frac{\sum_{i=1}^{n}t_{i}}{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שזמן הסיום ב 
+\begin_inset Formula $OPT$
+\end_inset
+
+ הם 
+\begin_inset Formula $f_{1}^{opt},\dots,f_{k}^{opt}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $q\left(opt\right)=\max_{1\leq i\leq k}f_{j}^{opt}\geq\frac{\sum_{j=1}^{k}f_{k}^{opt}}{k}=\frac{\sum_{i=1}^{n}t_{i}}{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגיד משהוא חיובי על אלג' שלנו: נסמן ב 
+\begin_inset Formula $i$
+\end_inset
+
+ את המשימה המסיימת אחרונה.
+ נניח שלמכונה עליה היא הושמה , הושמו קודם משימות במשך כולל 
+\begin_inset Formula $T$
+\end_inset
+
+.
+ 
+\begin_inset Formula $g\left(o\right)=T+t_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן את זמני הסיום אחרי 
+\begin_inset Formula $i-1$
+\end_inset
+
+ משימות ב 
+\begin_inset Formula $f_{1},\dots,f_{k}$
+\end_inset
+
+ אז 
+\begin_inset Formula $T=\min_{1\leq j\leq k}f_{j}$
+\end_inset
+
+ )מאופן פעולת האלג'( לכן 
+\begin_inset Formula $T=\min_{1\leq j\leq k}f_{j}\leq\frac{\sum_{j=1}^{k}f_{j}}{k}=\frac{\sum_{j=1}^{i-1}t_{j}}{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula \begin{eqnarray*}
+g\left(o\right) & = & T+t_{i}\leq\frac{\sum_{i=1}^{i}t_{i}}{k}+t_{i}\\
+ & = & \frac{\sum_{j=1}^{i}t_{j}}{k}+\left(1-\frac{1}{k}\right)t_{i}\\
+ & \leq & \frac{\sum_{i=1}^{n}t_{i}}{k}+\left(1-\frac{1}{k}\right)t_{i}\\
+ & \overbrace{\leq}^{\begin{matrix}g\left(opt\right)\geq t_{i}\\
+g\left(opt\right)\geq\frac{\sum_{i=1}^{n}t_{i}}{k}\end{matrix}} & \left(2-\frac{1}{k}\right)g\left(opt\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+רעיון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+נסדר את המשימות בסדר יורד)הארוכות לפני הקצרות( של מכים ואת נפעיל את האלג
+ וריתם הקודם
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+במקרה זה 
+\begin_inset Formula $g\left(o\right)\leq\left(1.5-\frac{1}{2k}\right)g\left(opt\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסצן ב 
+\begin_inset Formula $i$
+\end_inset
+
+ את המשימה שהסתיימה אחרונה.
+ אם 
+\begin_inset Formula $i\leq k$
+\end_inset
+
+ אז 
+\begin_inset Formula $g\left(o\right)=t_{i}=g\left(opt\right)$
+\end_inset
+
+)מקרה קל(
+\end_layout
+
+\begin_layout Standard
+רחרת כל פתרון חייב לשבץ לפחות 
+\begin_inset Formula $2$
+\end_inset
+
+ משימות מ 
+\begin_inset Formula $t_{1},\dots,t_{i}$
+\end_inset
+
+ על לפחות אחת המעונות, לכן 
+\begin_inset Formula $g\left(opt\right)\geq2t_{i}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+וע"פ טענה קודמת קיימת 
+\begin_inset Formula $g\left(opt\right)\geq\frac{\sum_{i=1}^{n}t_{i}}{k}$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

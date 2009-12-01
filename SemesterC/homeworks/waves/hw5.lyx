@@ -1,0 +1,357 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+המהירות היא 
+\begin_inset Formula $c=\frac{1}{\sqrt{\mu_{0}\varepsilon_{0}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\varepsilon=\frac{\varepsilon_{1}}{\varepsilon_{0}}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+n & = & \sqrt{\varepsilon_{r}\mu_{r}}=\sqrt{\varepsilon_{r}}=1\\
+u & = & \frac{c}{n}=\frac{1}{\sqrt{\varepsilon_{r}\varepsilon_{0}\mu_{0}}}=\frac{1}{\sqrt{\varepsilon_{1}\mu_{0}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}E_{1}}{\partial t^{2}} & = & \frac{1}{\mu_{0}\varepsilon_{0}}\frac{\partial^{2}E\left(x,z\right)}{\partial x^{2}}\\
+\frac{\partial^{2}E_{2}\left(x,t\right)}{\partial t^{2}} & = & \frac{1}{\mu_{0}\varepsilon_{1}}\frac{\partial^{2}E_{2}\left(x,z\right)}{\partial x^{2}}\\
+k_{1} & = & \frac{\omega}{c}=\omega\sqrt{\mu_{0}\varepsilon_{0}}\\
+k_{2} & = & \frac{\omega\sqrt{\varepsilon_{r}}}{c}=\omega\sqrt{\varepsilon_{1}\mu_{0}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\in\left(-\infty,0\right) & \Rightarrow & E_{1}\left(x,t\right)=A_{1}\cos\left(\omega t-k_{1}x\right)+B_{1}\cos\left(\omega t+kx+\varphi_{1}\right)\\
+x\in\left(-\infty,0\right) & \Rightarrow & E_{2}\left(x,t\right)=A_{2}\cos\left(\omega t-k_{2}x+\varphi_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכיתה ראינו כי 
+\begin_inset Formula $\varphi_{2}=0$
+\end_inset
+
+, 
+\begin_inset Formula $\varphi_{1}=\pi,0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאן 
+\begin_inset Formula $\varphi_{1}=\pi$
+\end_inset
+
+ כי בשבירה החזרה של הגל יכולה להיות פאזה של 
+\begin_inset Formula $\pi$
+\end_inset
+
+.
+ על פי מה שלמדנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B_{1} & = & \frac{k_{2}-k_{1}}{k_{2}+k}A_{1}\\
+A_{2} & = & \frac{2k_{1}}{k_{1}+k_{2}}A_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\in\left(-\infty,0\right) & \in & E_{1}\left(x,t\right)=A_{1}\left(\omega t-k_{1}x\right)+\frac{k_{2}-k_{1}}{k_{1}+k_{2}}A_{1}\cos\left(\omega t+k_{1}x+\pi\right)\\
+x\in\left(0,\infty\right) & \in & E_{1}\left(x,t\right)=\frac{2k_{!}}{k_{1}+k_{2}}A\cos\left(\omega t-k_{2}x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $k_{1},k_{2}$
+\end_inset
+
+ ידועים.
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+ע"פ מה שראינו בכיתה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z_{1} & = & \sqrt{\frac{\mu_{0}}{\varepsilon_{0}}}\\
+z_{2} & = & \sqrt{\frac{\mu_{0}}{\varepsilon_{1}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח את היחס בין 
+\begin_inset Formula $z_{1},\varepsilon_{0}$
+\end_inset
+
+ ו 
+\begin_inset Formula $z_{2},\varepsilon_{1}$
+\end_inset
+
+ ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z_{1} & = & \frac{k_{1}}{\omega\varepsilon_{0}}\\
+z_{2} & = & \frac{k_{2}}{\omega\varepsilon_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב ל 
+\begin_inset Formula $A_{2},B_{1}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B_{1} & = & \frac{\varepsilon_{r}z_{2}-z_{1}}{\varepsilon_{r}z_{2}+z_{1}}\\
+A_{1} & = & \frac{2z_{1}}{\varepsilon_{r}z_{2}+z_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v^{2} & = & \frac{T_{0}}{\rho_{0}}=\frac{1000}{\nicefrac{0.06}{6}}=100000\\
+v & = & 316\mbox{\frac{m}{sec}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z=\sqrt{T\rho_{0}}=\sqrt{10}\mbox{\frac{N\cdot sec}{m}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(t\right) & = & A^{2}\omega^{2}z\cos^{2}\left(kx-\omega t\right)\\
+\left\langle P\left(t\right)\right\rangle  & = & \frac{1}{2}zA^{2}\omega^{2}=\frac{1}{2}\sqrt{10}\cdot4\pi^{2}\left(5000\right)^{2}\left(0.001\right)^{2}\\
+ & = & 15.6\left[\mbox{W}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

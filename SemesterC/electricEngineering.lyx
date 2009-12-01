@@ -1,0 +1,4813 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+מבא להנדסת חשמל
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+פרטים טכנים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $20\%$
+\end_inset
+
+ תרגילים ו 
+\begin_inset Formula $80\%$
+\end_inset
+
+ מבחן
+\end_layout
+
+\begin_layout Standard
+שעת קבלה של מרצה לא מוגדרת.
+ לתאם דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ulevy@cc.huji.ac.i.il
+\end_layout
+
+\begin_layout Standard
+יש אתר לקורס שנכנסים אליו דרך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+owl
+\end_layout
+
+\begin_layout Standard
+מתרגל זמני:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+igoykhmam@gmail.com
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Section
+מתרגל
+\end_layout
+
+\begin_layout Standard
+גלעד לרמן
+\end_layout
+
+\begin_layout Standard
+בניין ברגמן חדר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+301
+\numeric off
+)אפשר להגיש תרגילים פו(
+\end_layout
+
+\begin_layout Standard
+מייל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+tirgulee@gmail.com
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+20
+\numeric off
+%
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תרגילים.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Section
+טיפול במעגל חשמלי
+\end_layout
+
+\begin_layout Itemize
+הכרה הנדסית של חוקי הפיזיקה בנושא חשמל
+\end_layout
+
+\begin_layout Itemize
+בחירת כלים מתמטים נכונים
+\end_layout
+
+\begin_layout Itemize
+הפשטת הבעיה
+\end_layout
+
+\begin_layout Itemize
+תרגום הבעיה למשוואות
+\end_layout
+
+\begin_layout Itemize
+פתרון המשוואות
+\end_layout
+
+\begin_layout Standard
+נשתמש בקורס זה ביחידות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+mks
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Section
+אלמנט מקובץ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+lumped
+\end_layout
+
+\begin_layout Standard
+אלמנט בעל גודל זניח.
+ עלל אלמנט כזה חלים חוכי קירכוף.
+\end_layout
+
+\begin_layout Standard
+לעומת זה יש אלמנט מפולג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+distributed
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ כל אלמנט מעשי הוא מפולג, אבל נזניח את זה.
+\end_layout
+
+\begin_layout Section
+הגדרות בסיסיות
+\end_layout
+
+\begin_layout Standard
+יציאות של האלמנט המקובץ נקראים ענפים
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Branches
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הצטלבויות של ענפים נקראות צמתים
+\end_layout
+
+\begin_layout Section
+כיווני יחוס
+\end_layout
+
+\begin_layout Standard
+זרם הולך מ + ל - באלמנט וזרם הולך מ - ל + במקור.
+\end_layout
+
+\begin_layout Section
+זרם ומתח
+\end_layout
+
+\begin_layout Paragraph
+זרם:
+\end_layout
+
+\begin_layout Standard
+הזרם דרך שטח חתך 
+\begin_inset Formula $A$
+\end_inset
+
+ מוגדר על ידי כמות המטען העוברת דרך שטח החתך ליחידת זמן.
+ 
+\begin_inset Formula $I=\frac{\partial Q}{\partial t}$
+\end_inset
+
+ ביחידת אמפר 
+\begin_inset Formula $\left[A\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מתח:
+\end_layout
+
+\begin_layout Standard
+הפרש מתחים בין שתי נקודות קובע את יכולת העברת האנרגיה של מטען.
+ 
+\begin_inset Formula $V=\frac{\overbrace{\partial W}^{\mbox{\R{אנרגיה}}}}{\partial Q}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הספק:
+\end_layout
+
+\begin_layout Standard
+קצב מעבר אנרגיה המועברת ליחידת זמן 
+\begin_inset Formula $P=\frac{\partial W}{\partial t}=\frac{\partial W}{\partial q}\cdot\frac{\partial q}{\partial t}=V\cdot I$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+רכיבים בסיסיים
+\end_layout
+
+\begin_layout Paragraph
+נגד:
+\end_layout
+
+\begin_layout Standard
+מתנגד למעבר זרם על ידי יצירת מפל מתח.
+ עבור נגד ליניארי מתקיים חטק אוהם 
+\begin_inset Formula $v\left(t\right)=R\cdot i\left(t\right)$
+\end_inset
+
+.
+ מסמנים נגד באות 
+\begin_inset Formula $R$
+\end_inset
+
+ וההתנגדות ביחידת אוהם 
+\begin_inset Formula $\left[\Omega\right]$
+\end_inset
+
+.
+ לפעמים מדברים גם על מוליכות 
+\begin_inset Formula $G=\frac{1}{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+קבל:
+\end_layout
+
+\begin_layout Standard
+קבל הוא רכיב בו המתח בין הדקיו קובע את המטען עליו.
+ 
+\begin_inset Formula $q=q\left(v\right)$
+\end_inset
+
+.
+ קבל ליניארי עבורו הפונקציה 
+\begin_inset Formula $q\left(v\right)$
+\end_inset
+
+ ליניארית .
+ 
+\begin_inset Formula $c$
+\end_inset
+
+ הוא הקיבול ומודדים אותו ב יחידת פרד 
+\begin_inset Formula $\left[F\right]$
+\end_inset
+
+ 
+\begin_inset Formula $i=\frac{\partial q}{\partial t}=\frac{\partial\left(cv\right)}{\partial t}=c\frac{\partial v}{\partial t}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $v=v\left(0\right)+\frac{1}{c}\int_{0}^{t}i\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משרן)סליל(
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\series bold
+\size normal
+\color none
+\lang english
+inductor
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\phi$
+\end_inset
+
+ השטף המגנטי נקבע חד ערכית על ידי הזרם דרך הסליל: 
+\begin_inset Formula $\phi=\phi\left(i\right)=L\cdot i$
+\end_inset
+
+ לכן 
+\begin_inset Formula $V=\frac{\partial\phi}{\partial t}=\frac{\partial\left(Li\right)}{\partial t}\Rightarrow V=L\frac{\partial i}{\partial t}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $i=i\left(0\right)+\frac{1}{L}\int_{0}^{t}v\left(t^{\prime}\right)dt\prime$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הספקים ואנרגיות של רכיבים
+\end_layout
+
+\begin_layout Standard
+הספק רגעי שנצרך ע"י אלמנט הוא 
+\begin_inset Formula $P\left(t\right)=V\left(t\right)\cdot i\left(t\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $w=\int_{t_{0}}^{t}P\left(t^{\prime}\right)dt^{\prime}$
+\end_inset
+
+ מזמן 
+\begin_inset Formula $t_{0}$
+\end_inset
+
+ עד 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נגד
+\end_layout
+
+\begin_layout Standard
+עבור נגד ליניארי מתקיים 
+\begin_inset Formula $P\left(t\right)=V\cdot i=R\cdot i^{2}=i^{2}R=\frac{V^{2}}{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קבל
+\end_layout
+
+\begin_layout Standard
+עבור קבל: 
+\begin_inset Formula $w=\int_{t_{0}}^{t}V\left(t^{\prime}\right)i\left(t^{\prime}\right)dt^{\prime}=\int_{q_{0}}^{q}V\left(q\right)dq^{\prime}$
+\end_inset
+
+.
+ יודעים כי 
+\begin_inset Formula $v=\frac{1}{c}q$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\varepsilon=\int_{0}^{q}\frac{1}{c}q^{\prime}dq^{\prime}=\frac{1}{2c}q^{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\varepsilon=\frac{1}{2}cv^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סליל
+\end_layout
+
+\begin_layout Standard
+עבור סליל 
+\begin_inset Formula $w=\int_{t_{0}}^{t}v\left(t^{\prime}\right)i\left(t^{\prime}\right)dt^{\prime}=\int_{\phi_{0}}^{\phi}i\left(\phi\right)d\phi$
+\end_inset
+
+ יודעים כי 
+\begin_inset Formula $i=\frac{\phi}{L}\Rightarrow d\phi=Ldi$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\varepsilon=L\int_{0}^{i}i^{\prime}di^{\prime}=L\int_{0}^{\phi}\frac{\phi^{\prime}}{L}\cdot\frac{d\phi^{\prime}}{L}=\frac{1}{2L}\phi^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שיקול מיכני
+\end_layout
+
+\begin_layout Subsection
+של נגד
+\end_layout
+
+\begin_layout Standard
+כח חיכוך עם אוויר: 
+\begin_inset Formula $f=D\cdot\underbrace{u}_{\mbox{\R{מהירות}}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w & = & \int_{0}^{x}fdx\\
+ & = & \int_{0}^{t}du\cdot udt\\
+ & = & \int_{0}^{t}Du^{2}dt\Leftrightarrow R\cdot i^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+של סליל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w & = & \int_{0}^{x}fdx\\
+ &  & \int_{0}^{t}M\frac{du^{\prime}}{dt^{\prime}}udt^{\prime}\\
+ &  & \int_{0}^{u}Mu^{\prime}du^{\prime}\\
+ & = & \frac{1}{2}Mu^{2}\Leftrightarrow\frac{1}{2}Li^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+של קבל
+\end_layout
+
+\begin_layout Standard
+נניח קבל בעל קבוע קפיץ 
+\begin_inset Formula $k$
+\end_inset
+
+ או מקדם דחיסות 
+\begin_inset Formula $S=\frac{1}{k}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f=kx=\frac{1}{s}x\Rightarrow x=sf\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w & = & \int_{0}^{x}fdx\\
+ & = & \int_{0}^{x}fd\left(fs\right)\\
+ & = & \int_{0}^{f}sfdf\\
+ & = & \frac{1}{2}sf^{2}\Leftrightarrow\frac{1}{2}cv^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מקורות
+\end_layout
+
+\begin_layout Subsection
+מקור מתח אידיאלי
+\end_layout
+
+\begin_layout Standard
+התקן שהמתח בין הדקיו אינו תלוי בזרם.
+\end_layout
+
+\begin_layout Subsection
+מקור זרם
+\end_layout
+
+\begin_layout Standard
+אתקן זרם שהזרם הזורם דרגו אינו דלוי במתח הנופל עליו.
+\end_layout
+
+\begin_layout Standard
+אפשר להחליף מקור מתח במקור זרם ולהפך בקלות.
+\end_layout
+
+\begin_layout Section
+חוקי קירכוף
+\end_layout
+
+\begin_layout Standard
+חוק הזרמים של קירכוף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+KCL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ עבור כל מעגל בכל זמן נתון הסכום האלגברי של זרם הענפים היוצאים מצומת כלשהיא
+ הוא אפס.
+\end_layout
+
+\begin_layout Subsection
+ענף
+\end_layout
+
+\begin_layout Standard
+הוא מחבר בין שני צמתים
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Section
+חוק קירכוף למתחים ולזרמים
+\end_layout
+
+\begin_layout Standard
+חוק הזרמים אומר שכל המטען שנכנס לצומת גם יוצא מהצומת.
+\end_layout
+
+\begin_layout Standard
+חוק המתח אומר כי סכום המתחים בלולאה הוא אפס.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+אותות
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Signals
+\end_layout
+
+\begin_layout Subsection
+מדרגה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Unit Step
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u\left(t\right)=\begin{cases}
+0 & t<0\\
+1 & t>0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+פולס
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Pulse
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+\begin_inset Formula \[
+P_{s}\left(t\right)=\begin{cases}
+0 & t<0\\
+\frac{1}{\Delta} & 0<t<\Delta\\
+0 & t>\Delta\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לבנות פולס משתי מדרגות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{s}\left(t\right)=\frac{u\left(t\right)-u\left(t-\Delta\right)}{\Delta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הלם
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Impulse
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\delta\left(t\right)=\begin{cases}
+0 & t\neq0\\
+\infty & t=0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{-\varepsilon}^{\varepsilon}\delta\left(t\right)dt=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיים קשר בין פונקצית 
+\begin_inset Formula $\delta$
+\end_inset
+
+ לפונקצית מדרגה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\delta\left(t\right) & = & \frac{\partial u\left(t\right)}{\partial t}\\
+u\left(t\right) & = & \int_{-\infty}^{\infty}\delta\left(\tau\right)d\tau\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mbox{Ramp}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r\left(t\right)=\begin{cases}
+t & t\geq0\\
+0 & t<0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+חיבורים טוריים ומקבילים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c5d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+חיבור של שתי רכיבים בטור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נגדים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i & = & i_{1}=i_{2}\\
+v & = & v_{1}+v_{2}\\
+R & = & \frac{v}{i}\\
+ & = & \frac{v_{1}}{i}+\frac{v_{2}}{i}\\
+ & = & \frac{v_{1}}{i_{1}}+\frac{v_{2}}{i_{2}}\\
+ & = & R\\
+R & = & \sum_{n=1}^{N}R_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{n}\left(t\right) & = & V_{0}\left(0\right)+\frac{1}{c_{n}}\int_{0}^{t}i_{n}\left(t^{\prime}\right)dt^{\prime}\\
+V\left(t\right) & = & \sum_{n}V_{n}\left(t\right)\\
+ & = & \sum_{n}V_{n}\left(0\right)+\sum_{n}\frac{1}{c_{n}}\int_{0}^{t}i_{n}\left(t^{\prime}\right)dt^{\prime}\\
+ & = & V\left(0\right)+\left[\int_{0}^{t}i\left(t^{\prime}\right)dt\right]\sum_{n}\frac{1}{c_{n}}\\
+\frac{1}{c} & = & \sum_{n}\frac{1}{c_{n}}\\
+V\left(0\right) & = & \sum V_{n}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סלילים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{n} & = & L_{n}\frac{\partial i_{n}}{\partial t}\\
+V & = & \sum_{n}V_{n}-\sum_{n}L_{n}\frac{\partial i_{n}}{\partial t}\\
+ & = & \frac{\partial i}{\partial t}\sum_{n}L_{n}\\
+L & = & \sum_{n}L_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מקורות מתח בטור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c5d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מקורות זרם בטור
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V=V_{1}V_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה של מקור מתח הכיוונים משנים.
+\end_layout
+
+\begin_layout Section
+מקורות זרם בטור
+\end_layout
+
+\begin_layout Standard
+אי אפשר לעשות דבר כזה אלה אם כן 
+\begin_inset Formula $I_{1}=I_{2}$
+\end_inset
+
+ שבמקרה הזה לא משנה שיש שתי מקורות זרם.
+\end_layout
+
+\begin_layout Section
+חיבור מקבילי של רכיבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c5d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+חיבור מקבילי של רכיבים
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נגדים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i_{n} & = & \frac{V_{n}}{R_{n}}=\frac{V}{R_{n}}\\
+i & = & \sum_{n}i_{n}\\
+ & = & \sum_{n}\frac{V_{n}}{R_{n}}\\
+ & = & V\sum_{n}\frac{1}{R_{n}}\\
+\frac{V}{R} & = & V\sum\frac{1}{R_{n}}\\
+\frac{1}{R} & = & \sum\frac{1}{R_{n}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקרה פרטי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{R} & = & \frac{1}{R_{1}}+\frac{1}{R_{2}}\\
+\frac{1}{R} & = & \frac{R_{2}+R_{1}}{R_{1}R_{2}}\\
+R & = & \frac{R_{1}R_{2}}{R_{1}+R_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i_{n} & = & c_{n}\frac{\partial v_{n}}{\partial t}=c_{n}\frac{\partial V}{\partial t}\\
+i & = & \sum_{n}c_{n}\frac{\partial V_{n}}{\partial t}\\
+ & = & \frac{\partial V}{\partial t}\sum_{n}c_{n}\\
+C & = & \sum_{n}c_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+סלילים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i_{n} & = & i_{n}\left(0\right)+\frac{1}{L_{n}}\sum_{0}^{t}v_{n}\left(t^{\prime}\right)dt^{\prime}\\
+i & = & \sum_{n}i_{n}\\
+ & = & \sum_{n}i_{n}\left(0\right)+\sum_{n}\frac{1}{L_{n}}\int_{0}^{t}V_{n}\left(t\right)dt\\
+ & = & i\left(0\right)+\left[\int_{0}^{t}v\left(t^{\prime}\right)dt^{\prime}\right]\sum_{n}\frac{1}{L_{n}}\\
+\frac{1}{L} & = & \sum_{n}\frac{1}{L_{n}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תרגיל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c5d4.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל פשוט
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במעגל הזה שלושת הקבלים בטור אזי 
+\begin_inset Formula $\frac{1}{C}=\frac{1}{C_{1}}+\frac{1}{C_{2}}+\frac{1}{C_{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הסלילים מחוברים במקביל אזי 
+\begin_inset Formula $\frac{1}{L}=\frac{1}{L_{1}}+\frac{1}{L_{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הדיודה כבר לא מקירים אז מגדירים אותה:
+\end_layout
+
+\begin_layout Standard
+אם הזרם על הדיודה הוא חיובי אז הדיודה בקצר.
+ אם הזרם הוא שלילי אז הדיודה בנתג.
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c5d5.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פתרון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סופר פוזיציה
+\end_layout
+
+\begin_layout Standard
+כאשר יש קשר ליניארי בין עירור לתוצאה, השפעת מספר עירורים הפועלים שווה לסכום
+ השפעות של כל אחד מהעירורים הפועלים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c5d6.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל עם שתי מקורות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון רגיל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{2} & = & ?\\
+V & = & \left(I_{2}-I\right)R_{1}+I_{2}R_{2}\\
+I_{2} & = & \frac{V}{R_{1}+R_{2}}+I\frac{R_{1}}{R_{1}+R_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון בסופר פוזיציה:
+\end_layout
+
+\begin_layout Standard
+פותרים ראשית את מקור המתח, אזי מנתקים את הענף של מקור הזרם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{2}^{V}=\frac{V}{R_{1}+R_{L}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו מקצרים את מקור המתח ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{2}^{A}=\frac{I}{R_{1}+R_{2}}R_{1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העיכרון הזה עובד טוב במקרה זרם ומתח כי הם ליניארים, אבל זה לא עובד במקרה
+ של הספק כי זה לא ליניארי)
+\begin_inset Formula $I^{2}R$
+\end_inset
+
+(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{V} & = & \left(\frac{V}{R_{1}+R_{2}}\right)^{2}R_{2}\\
+P_{I} & = & \left(\frac{R_{1}}{R_{1}+R_{2}}\right)^{2}R_{2}\\
+P_{T} & \neq & P_{V}+P_{I}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+שיטת מתח הצמתים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c6d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל דוגמה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להפוך את זה למעגל עם מקורות זרם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c6d12svg.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-\frac{V_{1}}{12}-\frac{V_{1}}{5}-\frac{V_{1}-V_{2}}{4}+\frac{3}{4}+2+2 & = & 0\\
+-\frac{V_{2}}{12}-\frac{V_{2}}{10}+\frac{V_{1}-V_{2}}{4}-2-\frac{1}{4}-0.8 & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{1}\left(-\frac{1}{12}-\frac{1}{5}-\frac{1}{4}\right)+V_{2}\frac{1}{4} & = & -\left(\frac{3}{4}+2+2\right)\\
+V_{1}\left(\frac{1}{4}\right)+V_{2}\left(-\frac{1}{12}-\frac{1}{10}-\frac{1}{4}\right) & = & \left(2+\frac{1}{4}+0.8\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום את זה כמטריצה 
+\begin_inset Formula $R\cdot I=V$
+\end_inset
+
+ אבל בצורה אחרת 
+\begin_inset Formula $G\cdot V=I$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $G$
+\end_inset
+
+ זה מוליכיות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\frac{1}{12}+\frac{1}{5}+\frac{1}{4} & -\frac{1}{4}\\
+-\frac{1}{4} & \frac{1}{12}+\frac{1}{10}+\frac{1}{4}\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix}=\begin{pmatrix}\frac{3}{4}+2+2\\
+-\left(2+\frac{1}{4}+0.8\right)\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{2} & = & -2.6V\\
+V_{1} & = & 7.68V\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+טיפול באלמנטים לא ליניארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c7d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל עם אלמנט לא ליניארי ומקור משתנהבזמן
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $v_{s}\ll E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $i=g\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $E+v_{s}=iR_{s}+v\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא נקודת עבודה בלי להתיחס ל
+\begin_inset Formula $v_{s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי פותרים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{0} & = & g\left(V_{0}\right)\\
+E & = & I_{0}R_{s}+V_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נצייר גרף של 
+\begin_inset Formula $I\left(v\right)=\frac{E-v}{R_{s}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c7d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+גרף מתח זרם של 
+\begin_inset Formula $i$
+\end_inset
+
+ ו 
+\begin_inset Formula $g\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח עכשיו בחשבון ההשפעה של השינויים הקטנים במתח המקור.
+ לשינויים קטנים במתח על האלמנט)נסמן את השינוי כ 
+\begin_inset Formula $V_{1}$
+\end_inset
+
+( יהיו שינויים קטנים בזרם דרך האלמנט)נסמן ב 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+(.
+ סה"כ המתח על האלמנט 
+\begin_inset Formula $V_{0}+V_{1}$
+\end_inset
+
+ וזרם דרך האלמנט 
+\begin_inset Formula $I_{0}+I_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I & = & g\left(v\right)\\
+I_{0}+I_{1} & = & g\left(v_{0}+v_{1}\right)\\
+ & = & g\left(v_{0}\right)+\frac{\partial g}{\partial v}\vert_{v_{0}}\cdot v_{1}\\
+I_{1} & = & \frac{\partial g}{\partial V}\vert_{v_{0}}\cdot v_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+לסיכום:
+\end_layout
+
+\begin_layout Enumerate
+פותרים את המעגל עבור מקור 
+\begin_inset Formula $E$
+\end_inset
+
+ ומוצאים נק' עבודה 
+\begin_inset Formula $I_{0},V_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מוצאים את השיפוע בנקודת העבודה 
+\begin_inset Formula $\frac{1}{R}=\frac{\partial g}{\partial v}\vert_{v_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+מחשבים את 
+\begin_inset Formula $V_{1},I_{1}$
+\end_inset
+
+ כתוצאה מ
+\begin_inset Formula $v_{s}$
+\end_inset
+
+ כאשר מחליפים את האלמנט הלא ליניארי בנגד ליניארי
+\end_layout
+
+\begin_layout Enumerate
+מחבים
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1,3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ומקבלים פתרון כללי
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $E=100V,v_{s}=\sin\left(2\pi t\right),R_{s}=1\Omega$
+\end_inset
+
+ והאופיין של האלמנט הוא 
+\begin_inset Formula $g\left(v\right)=100\left(1-e^{-\frac{v}{100}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Standard
+נרודת עבודה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i\left(t\right) & = & g\left(v\left(t\right)\right)\\
+E+v_{s}\left(t\right) & = & i\left(t\right)R_{s}+v\left(t\right)\\
+I_{0} & = & 100\left(1-e^{-\frac{v}{100}}\right)\\
+100 & = & I_{0}\cdot1+V_{0}\\
+100-V_{0} & = & I_{0}=100\left(1-e^{-\frac{v_{0}}{100}}\right)\\
+v_{0} & = & 100e^{-\frac{v}{100}}\\
+v_{0} & = & 56.7V\\
+I_{0} & = & 43.3A\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמת סיכום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c7d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פותרים דרך סופר פוזיציה:
+\end_layout
+
+\begin_layout Standard
+מנתקים את מקור הזרם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{v}=\frac{50}{\left(14\parallel10\right)+5}=\frac{10}{10+14}=\frac{50}{26}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש במחלק זרם 
+\begin_inset Formula $I_{1}=I\frac{R_{2}}{R_{1}+R_{2}}$
+\end_inset
+
+ בשביל לקבל הזרם בענף
+\end_layout
+
+\begin_layout Standard
+כרגע נקצר את מקור המתח ונחזיר את מקור הזרם.
+ אזי אפשר להמיר את מקור הזרם ונגד ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $12\Omega$
+\end_inset
+
+ למרור מתח.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Section
+מעגלים מסדר ראשון
+\end_layout
+
+\begin_layout Paragraph
+עקרונות הפתרון
+\end_layout
+
+\begin_layout Enumerate
+רושמים משוואות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+KVL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+KCL
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ומקבלים משד"פ
+\end_layout
+
+\begin_layout Enumerate
+פותרים מתמטית: פתרון פרטי + פתרון הומוגיני.
+ פיזיקלית:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZIR
+\lang hebrew
+: תגובה לתנאי התחלה בלבד ללא עירור.
+\end_layout
+
+\begin_deeper
+\begin_layout Standard
+לכל משוואה מהצורה 
+\begin_inset Formula $y^{\prime}+\frac{1}{\tau}y=0$
+\end_inset
+
+ עבור תנאי התחלה 
+\begin_inset Formula $y\left(0\right)=k$
+\end_inset
+
+ אזי 
+\begin_inset Formula $y_{ZIR}=ke^{-\frac{t}{\tau}}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+פתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZSR
+\lang hebrew
+: תגובה לעירור עם תנאי התחלה אפס.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $y^{\prime}=\frac{1}{\tau}y=f\left(t\right)$
+\end_inset
+
+ עם תנאי התחלה 
+\begin_inset Formula $y\left(0\right)=0$
+\end_inset
+
+.
+ קיים 
+\begin_inset Formula $y_{zsr}=y_{p}+y_{h}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $y_{h}$
+\end_inset
+
+ דומה ל 
+\begin_inset Formula $y_{ZIR}$
+\end_inset
+
+)מקדם אחר( והפתרון הפרטי דומה לפונקצית העירור.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+עבור 
+\begin_inset Formula $\sin\left(\omega t\right)$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $y_{p}=A\sin\left(\omega t+\varphi\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $at$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $y_{p}=bt+c$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{ZSR}=\left(y_{p}+Ne^{-\frac{t}{\tau}}\right)u\left(t\right)$
+\end_inset
+
+ ת.ה.
+ 
+\begin_inset Formula $y_{p}\left(0\right)+N=0$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+תכונות ליניאריות קיימות רק עבור 
+\begin_inset Formula $ZSR$
+\end_inset
+
+: אם ניתן 
+\begin_inset Formula $f\left(t\right)\to g\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+סופר פוזיציה: 
+\begin_inset Formula $\sum f_{n}\left(t\right)\to\sum g_{n}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+הזזה בזמן 
+\begin_inset Formula $f\left(t-t_{0}\right)\to g\left(t-t_{0}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+גזירה 
+\begin_inset Formula $f^{\prime}\left(t\right)\to g^{\prime}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אינטגרציה 
+\begin_inset Formula $\int fdt\to\int gdt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לכל אופרטור ליניארי 
+\begin_inset Formula $G\left[af_{1}\left(t\right)+bf_{2}\left(t\right)\right]=aG\left(f_{1}\right)+bG\left(f_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פרט לעירור הלב ונגזרותיו מתקיים: 
+\begin_inset Formula $V_{c}\left(0^{-}\right)=V_{C}\left(0^{+}\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $u_{C}\left(0^{-}\right)=I_{c}\left(0^{+}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לכפול פתרון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZSR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ב
+\begin_inset Formula $u\left(t\right)$
+\end_inset
+
+ לפני החיבור ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZIR
+\end_layout
+
+\begin_layout Standard
+אם ידוע הפתרון עבור כניסת מדרגה 
+\begin_inset Formula $y_{u}=y_{zdr}^{u}+y_{zdr}^{u}$
+\end_inset
+
+ אזי הפתרון עבור הלם יהיה 
+\begin_inset Formula $y_{f}=\left(y_{ZSR}^{u}\right)^{\prime}+y_{ZIR}^{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היחידות של 
+\begin_inset Formula $RC$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{L}{R},\sqrt{LC}$
+\end_inset
+
+ הם 
+\begin_inset Formula $second$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמאות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c8d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שתי קבלים ונגד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+KVL
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{C_{2}}+V_{R}-V_{C_{1}} & = & 0\\
+\frac{1}{c_{2}}\int_{-\infty}^{t}idt+iR-\frac{i}{c_{1}}\int_{-\infty}^{t}-idt & = & 0\\
+\left(\frac{1}{c_{1}}+\frac{1}{c_{2}}\right)\int idt+iR & = & 0\\
+\frac{\partial i}{\partial t}+\frac{1}{R}\left(\frac{1}{c_{1}}+\frac{1}{c_{2}}\right)i & = & 0\\
+\frac{\partial i}{\partial t}+\frac{1}{\tau}i & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\tau=\frac{RC}{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מציאת תנאי התחלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{C_{2}}+R\cdot i\left(0^{+}\right)-V_{c_{1}}\left(0^{+}\right) & = & 0\\
+i\left(0^{+}\right) & = & \frac{V_{C_{1}}\left(0^{+}\right)-V_{C_{2}}\left(0^{+}\right)}{R}\\
+ & = & \frac{V_{C_{1}}\left(0^{-}\right)-V_{C_{2}}\left(0^{-}\right)}{R}\\
+ & = & \frac{V_{0}-0}{R}\\
+ & = & \frac{V_{0}}{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נכון בגלל רציפות מתח בקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i\left(t\right) & = & \frac{V_{0}}{R}e^{-\frac{t}{\tau}}\\
+ & = & \frac{V_{0}}{R}e^{-\frac{2t}{RC}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתחי קבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c_{1}}\left(t\right) & = & V_{0}+\frac{1}{c_{1}}\int-i\left(t\right)dt\\
+ & = & V_{0}+\frac{V_{0}}{RC}\int_{0}^{t}e^{-\frac{2t}{RC}}dt\\
+ & = & \frac{V_{0}}{2}+\frac{V_{0}}{2}e^{-\frac{2t}{RC}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+אנרגיה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{R}\left(t\right) & = & i^{2}\left(t\right)\cdot R=\frac{V_{0}^{2}}{R}e^{-\frac{4t}{RC}}\\
+E_{R}\left(t\right) & = & \int_{0}^{t}P\left(t\right)dt\\
+ & = & \frac{CV_{0}^{2}}{4}\left(1-e^{-\frac{4t}{RC}}\right)\\
+E_{R}\left(\infty\right) & = & \frac{CV_{0}^{2}}{4}\\
+E_{C_{1}}\left(\infty\right) & = & E_{C_{2}}\left(\infty\right)\\
+ & = & \frac{1}{2}C\left(\frac{V_{0}}{2}\right)^{2}\\
+ & = & \frac{1}{8}CV_{0}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E_{tot}=2\frac{1}{8}CV_{0}^{2}+\frac{1}{4}CV_{0}^{2}=\frac{1}{2}CV_{0}^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $i\left(t<0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נכתוב הפונק' בצורה מתמטית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i\left(t\right)=u\left(t\right)+2r\left(t\right)-4r\left(t-1\right)+6r\left(r-3\right)-6r\left(t-4\right)+6r\left(t-6\right)-\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המתח על הנגד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{r}=12\cdot\left[u\left(t\right)+2r\left(t\right)-4r\left(t-1\right)+6r\left(t-3\right)-6r\left(t-4\right)+6r\left(t-6\right)\dots\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתח על סליל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{L}=2\delta\left(t\right)+4u\left(t\right)-8u\left(t-1\right)+12\left(t-3\right)-12\left(t-4\right)+12\left(t-6\right)\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/afief/university/SemesterC/electricEngineering/c8d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+לא יודע
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי התחלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i\left(0^{+}\right) & = & 1A\\
+V_{s}\left(t\right) & = & 10\sin\left(2t\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום 
+\begin_inset Formula $KVL$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{s} & = & V_{L}+V_{R_{2}}=L\frac{\partial i}{\partial t}+i_{2}R_{2}\\
+ & = & L\frac{\partial i}{\partial t}+R_{2}i+\frac{R_{2}}{R_{1}}V_{L}\\
+ & = & L\frac{\partial i}{\partial t}+R_{2}i+\frac{R_{2}}{R_{1}}L\frac{\partial i}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i^{\prime}+i=\frac{V_{s}}{2}=5\sin\left(2t\right)u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ZIR$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i^{\prime}+i & = & 0\\
+i\left(0^{+}\right) & = & 1\\
+\Rightarrow i_{ZIR} & = & e^{-t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ZSR$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i^{\prime}+i & = & 5\sin\left(2t\right)u\left(t\right)\\
+i\left(0^{+}\right) & = & 0\\
+\Rightarrow i_{ZSR} & = & \left[i_{p}+ke^{-t}\right]u\left(t\right)\\
+i_{p} & = & a\sin\left(2t+\varphi\right)=A\sin\left(2t\right)+B\cos\left(2t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב במשד"פ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i_{ZSR} & = & \left[A\sin\left(2t\right)+B\cos\left(2t\right)+ke^{-r}\right]u\left(t\right)\\
+\begin{matrix}\left[2A\cos\left(2t\right)-2B\sin2t-ke^{-t}\right]u\left(t\right)\\
++\left[A\sin\left(2t\right)+B\cos\left(2t\right)+ke^{-t}\right]\delta\left(t\right)\\
++\left[A\sin\left(2t\right)+B\cos\left(2t\right)+ke^{-t}\right]u\left(t\right)\end{matrix} & = & 5\sin\left(2t\right)\cdot u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקדמים 
+\begin_inset Formula $\delta$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\sin2t+B\cos2t+ke^{-t}\vert_{t=0} & = & 0\\
+B+k & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקדמי 
+\begin_inset Formula $u\left(t\right):$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\cos$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2A+B=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-2B+A=5\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & 1\\
+B & = & -2\\
+k & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{ZSR}=\left[\sin\left(2t\right)-2\cos\left(2t\right)+2e^{-t}\right]u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+מה זה מעגל של סדר ראשון? זה מעגל שהתגובה שלהם ניתנת לתיאור על ידי משוואה
+ דיפרנציאלית מסדר ראשון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c9d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל נגד קבל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב 
+\begin_inset Formula $t<0$
+\end_inset
+
+ המתח על הקבל הוא 
+\begin_inset Formula $V_{0}$
+\end_inset
+
+, ב 
+\begin_inset Formula $t=0$
+\end_inset
+
+ פותחים את 
+\begin_inset Formula $S_{1}$
+\end_inset
+
+ וסוגרים את 
+\begin_inset Formula $S_{2}$
+\end_inset
+
+, כעת יש לנו מעגל של קבל ושל נגד עם תנאי התחלה 
+\begin_inset Formula $V_{c}\left(0^{-}\right)=V_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c} & = & V_{R}\\
+i_{c} & = & -i_{R}\\
+i_{c} & = & c\frac{\partial V_{c}}{\partial t}\\
+i_{R} & = & \frac{V_{R}}{R}=\frac{V_{c}}{R}=-c\frac{\partial V_{c}}{\partial t}\\
+V_{c}^{\prime}+\frac{1}{RC}V_{c} & = & 0\\
+V_{C}\left(0\right) & = & V_{0}\\
+V & = & ke^{\beta t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב הפתרון במשוואה ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(v_{0}e^{\beta t}\right)^{\prime}+\frac{1}{RC}v_{0}e^{\beta t} & = & 0\\
+\beta V_{0}+\frac{v_{0}}{RC} & = & 0\\
+\beta & = & -\frac{1}{RC}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c9d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל סליל נגד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{R} & = & V_{L}\\
+V_{L} & = & L\frac{\partial I_{L}}{\partial t}\\
+ & = & -L\frac{\partial I_{R}}{\partial t}\\
+ & = & -\frac{L}{R}\frac{\partial V_{R}}{\partial t}\\
+ & = & -\frac{L}{R}\frac{\partial V_{L}}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל המתח הוא לא רציף על סליל, אזי אי אפשר להשתמש במשוואה זו לפתור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{L} & = & L\frac{\partial I_{L}}{\partial t}=I_{R}\cdot R=-i_{L}\cdot R\\
+\frac{\partial I_{L}}{\partial t}+\frac{R}{L}I_{L} & = & 0\\
+I_{L}\left(0^{-}\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפתרון הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{L}=I_{0}e^{-t\frac{R}{L}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+בעית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZSR
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c9d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל יותר מסובך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כותבים משוואות 
+\begin_inset Formula $KVL$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c} & = & V_{R}=V\\
+I & = & I_{c}+I_{R}\\
+ & = & c\frac{\partial V}{\partial t}+\frac{V}{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המשוואות הם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V^{\prime}+\frac{1}{RC}V & = & \frac{1}{C}I\\
+V\left(0\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי ב 
+\begin_inset Formula $t=0$
+\end_inset
+
+ כל הזרם נמצא על הקבל: 
+\begin_inset Formula $I_{C}=C\frac{\partial V}{\partial t}=I$
+\end_inset
+
+.
+ ב 
+\begin_inset Formula $t=\infty$
+\end_inset
+
+ הקבל יהיה טעון אזי כל הזרם על הנגד
+\end_layout
+
+\begin_layout Standard
+פתרון של מד"ר לא הומוגינית 
+\begin_inset Formula $V=V_{H}+V_{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ידועים את הפתרון ההומוגיני: 
+\begin_inset Formula $V=ke^{-\frac{t}{RC}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את הפתרון הפרטי מנחשים אותו, הוא יראה בערך כמו החלק הלא הומוגיני של המשוואה:
+ 
+\begin_inset Formula $V_{p}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{p}^{\prime}+\frac{1}{RC}V_{P} & = & \frac{I}{C}\\
+A & = & IR\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסיגים את 
+\begin_inset Formula $k$
+\end_inset
+
+ של הפתרון ההומוגיני על ידי הצבת הפתרון)כולו( בתנאי ההתחלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{p}\left(0\right)+V_{H}\left(0\right) & = & 0\\
+k & = & -IR\\
+V & = & IR\left(1-e^{-\frac{t}{RC}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור על אותה בעיה עם מקור זרם המשתנה בזמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I\left(t\right)=I_{0}\cos\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צורת הפתרון ההומוגיני לא משתנה 
+\begin_inset Formula $V_{H}=k_{2}e^{-\frac{t}{RC}}$
+\end_inset
+
+ הפתרון ההומוגיני יהיה מהצורה 
+\begin_inset Formula $V_{p}=\gamma\cos\left(\omega t+\phi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V^{\prime}+\frac{1}{RC}V & = & I_{0}\cos\omega t\\
+V_{P} & = & A\cos\left(\omega t\right)+B\sin\left(\omega t\right)\\
+\left(A\cos\left(\omega t\right)+B\sin\left(\omega t\right)\right)^{\prime}+\frac{1}{RC}\left(A\cos\left(\omega t\right)+B\sin\left(\omega t\right)\right) & = & I_{0}\cos\omega t\\
+\left(B\omega+\frac{A}{RC}\right)\cos\left(\omega t\right)+\left(\frac{B}{RC}-A\omega\right)\sin\left(\omega t\right) & = & I_{0}\cos\omega t\\
+A & = & \frac{B}{RC\omega}\\
+B\omega+\frac{A}{RC} & = & \frac{I_{0}}{C}\\
+B & = & \frac{I_{0}R^{2}C\omega}{1+\left(RC\omega\right)^{2}}\\
+A & = & \frac{I_{0}R}{1+\left(RC\omega\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{p}=\frac{I_{0}R}{1+\left(RC\omega\right)^{2}}\cos\left(\omega t\right)+\frac{I_{0}R^{2}C\omega}{1+\left(RC\omega\right)^{2}}\sin\left(\omega t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים בתנאי התחלה ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+k_{2}=-\frac{I_{0}R}{1+\left(RC\omega\right)^{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפתרון הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{ZSR}=\left[-\frac{I_{0}R}{1+\left(RC\omega\right)^{2}}e^{-\frac{t}{RC}}+\frac{I_{0}R}{1+\left(RC\omega\right)^{2}}\cos\left(\omega t\right)+\frac{I_{0}R^{2}C\omega}{1+\left(RC\omega\right)^{2}}\sin\left(\omega t\right)\right]u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ליניאריות של תגובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZSR
+\end_layout
+
+\begin_layout Standard
+עבור מעגלים חשמליים בעלי ליניאריים יש קשר ליניארי בין העירור)המבוא( לבין
+ המוצא, כלומר תגובת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZSR
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+היא ליניארית לכן ניתן להשתמש בסןפר פוזיציה.
+ אם נסמן 
+\begin_inset Formula $y=H\left(x\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $x$
+\end_inset
+
+ כניסה 
+\begin_inset Formula $y$
+\end_inset
+
+ תגובת המערכת )המוצא( אזי המערכת ליניארית אם מתקיים
+\begin_inset Formula $H\left(ax\right)=aH\left(x\right),H\left(x_{1}+x_{2}\right)=H\left(x_{1}\right)+H\left(x_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אי תלות בזמן של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ZSR
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+עבור מקור מופעל ברגע מסויים למשל 
+\begin_inset Formula $t=0$
+\end_inset
+
+ מתקבלות תגובה מסויימת.
+ עבור אותו מקור המופעל בזמן אחר 
+\begin_inset Formula $t=\tau$
+\end_inset
+
+ נקבל אותה תגובה אבל מוזזת בזמן)למשל מוזזת ב 
+\begin_inset Formula $\tau$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}y}{\partial t^{2}}+2\alpha\frac{\partial y}{\partial t}+\omega_{0}^{2}y=f\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם תנאי התחלה 
+\begin_inset Formula $y\left(0\right)=y_{0}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\dot{y}\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ קבוע הריסון ו 
+\begin_inset Formula $\omega_{0}$
+\end_inset
+
+ היא התדירות האופינית
+\end_layout
+
+\begin_layout Standard
+נגדיר גורם האיכות 
+\begin_inset Formula $Q=\frac{\omega_{0}}{2a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=y_{zsr}+y_{zir}=\left(y_{p}+y_{h_{0}}\right)u\left(t\right)+y_{h_{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $y_{p}$
+\end_inset
+
+ דומה לעירור 
+\begin_inset Formula $y_{h}=e^{st}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מציבים את זה מקבלים המשוואה האופינית של המעגל
+\end_layout
+
+\begin_layout Standard
+.....
+\end_layout
+
+\begin_layout Standard
+מקרה ראשון:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שורשים ממשיים ושליליים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q<\frac{1}{2},\alpha>\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{h}=Ae^{s_{1}t}+Be^{s_{2}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נקרא ריסון יתר, אין תנודות במעגל זה.
+\end_layout
+
+\begin_layout Standard
+מקרה שני:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שורשים ממשיים שליליים וזהים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha=\omega_{0},Q=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $s_{1}=s_{2}=-\alpha t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{h}=Ae^{s_{1}t}+Ate^{s_{1}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נקרא ריסון קריטי
+\end_layout
+
+\begin_layout Standard
+מקרה שלישי: שני שורשים מורכבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a<\omega_{0},Q>\frac{1}{2}$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $\omega_{d}=\sqrt{\omega_{0}^{2}-\alpha^{2}}$
+\end_inset
+
+, 
+\begin_inset Formula $s_{1,2}=-\alpha\pm i\omega_{d}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{h}=e^{-\alpha t}\left(A\sin\left(\omega_{d}t\right)+B\cos\left(\omega_{d}t\right)\right)=ke^{-\alpha t}\cos\left(\omega_{d}t+\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר תנודות דועכות, זה נקרא תת-ריסון.
+ התנודות הם בעלות זמן מחזור 
+\begin_inset Formula $T=\frac{2\pi}{\omega_{d}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצב רביעי:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שורשים דמיוניים טהורים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Q\to\infty,\alpha\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S_{1,2}=\pm i\omega_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{h}=A\sin\left(\omega_{0}t\right)+B\cos\left(\omega_{0}t\right)=k\cos\left(\omega_{0}t+\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c10d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרישה: 
+\begin_inset Formula $Q=\frac{1}{2}$
+\end_inset
+
+.
+ נתון: 
+\begin_inset Formula $c=\frac{1}{3}f,\omega_{0}=12\frac{rad}{sec}$
+\end_inset
+
+ ותנאי התחלה: 
+\begin_inset Formula $V_{c}\left(0^{-}\right)=-1V,i\left(0^{-}\right)=2A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה הכללית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y^{\prime\prime}+2\alpha y^{\prime}+\omega_{0}^{2}y=f\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור דרך 
+\begin_inset Formula $kvl$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}+V_{R}+V_{L} & = & 0\\
+V_{C}\left(0^{-}\right)+\frac{1}{c}\int idt+iR+L\frac{\partial i}{\partial t} & = & 0\\
+i^{\prime\prime}+\frac{R}{L}i^{\prime}+\frac{1}{LC}i & = & 0\\
+2\alpha & = & \frac{R}{L}\\
+\omega_{0} & = & \frac{1}{LC}\\
+\Rightarrow L & = & \frac{1}{\omega_{0}^{2}c}=\frac{1}{48}H\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Q & = & \frac{1}{2}=\frac{\omega_{0}}{2\alpha}\\
+\Rightarrow\alpha & = & \omega_{0}=12\\
+R & = & 2\alpha L\\
+ & = & \frac{1}{2}\Omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i^{\prime\prime}=24i^{\prime}+144i=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור הפולינום האופייני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(s\right) & = & s^{2}+24+144=0\\
+S_{1,2} & = & -12\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הפתרון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{ZIR}=Ae^{-12t}+Bte^{-12t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד שאלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c10d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל את תגובת הזרם למדרגה.
+ אזי מעננין אותנו 
+\begin_inset Formula $ZSR$
+\end_inset
+
+)כי 
+\begin_inset Formula $ZIR$
+\end_inset
+
+ לא תלוי במקורות(
+\end_layout
+
+\begin_layout Standard
+נתון: 
+\begin_inset Formula $L=20mH,R=0.125\Omega,c=0.5F$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+KCL:i_{s} & = & i_{L}+i_{c}+i_{R}\\
+i_{s} & = & \frac{1}{L}\int_{-\infty}^{t}V\left(t\right)dt+C\frac{dV}{dt}+\frac{V}{R}\\
+\frac{1}{c}i_{s}^{\prime} & = & v^{\prime\prime}+16v^{\prime}+\frac{1}{LC}v\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v^{\prime\prime}+16v^{\prime}+100v & = & 2\delta\left(t\right)\\
+v\left(0\right) & = & v^{\prime}\left(0\right)=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שתי דרכים לפתור את זה: או שפותרים עבור מדרגה וגוזרים או שעושים אינטגרל
+ ופותרים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0^{-}}^{0^{+}}v^{\prime\prime}+16\int_{0^{-}}^{0^{+}}+100\int_{0^{-}}^{0^{+}}v & = & 2\int_{0^{-}}^{0^{+}}\delta\left(t\right)\\
+\left[v^{\prime}\left(0^{+}\right)-v^{\prime}\left(0^{-}\right)\right]+16\left[v\left(0^{+}\right)-v\left(0^{-}\right)\right]+0 & = & 2\\
+v^{\prime}\left(0^{+}\right)+16v\left(0^{+}\right) & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עושים שיקולי איזון אי רציפות ומקבלים 
+\begin_inset Formula $v\left(0^{+}\right)=0,v^{'}\left(0^{+}\right)=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(s\right) & = & S^{2}+16s+100=0\\
+s & = & -8\pm6j\\
+v & = & e^{-8t}\left(A\cos\left(6t\right)+B\sin\left(6t\right)\right)u\left(t\right)\\
+v\left(0\right) & \Rightarrow & A=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v^{\prime}\left(0^{+}\right) & = & \frac{\partial}{\partial t}\left[e^{-8t}B\sin\left(6t\right)\cdot u\left(t\right)\right]\\
+ & = & B\left[-8e^{-8t}\sin\left(6t\right)u\left(t\right)+6e^{-8t}\cos\left(6t\right)\right]u\left(t\right)+0\delta\left(t\right)\\
+6B & = & 2\\
+B & = & \frac{1}{3}\\
+V_{ZSR} & = & \frac{1}{3}e^{-8t}\sin\left(6t\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תגובת הלם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v^{\prime\prime}+16v^{\prime}+100v & = & 2i_{s}^{\prime}=2\delta^{\prime}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula $u^{\prime}\left(t\right)=\delta\left(t\right)$
+\end_inset
+
+ נגזור הפתרון שהיה לנו ומקבלים את הפתרון של זה.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c11d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מצא 
+\begin_inset Formula $v\left(t\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $I_{s}\left(t\right)=I_{s}u\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+KVL
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Li_{L}^{\prime} & = & i_{R}R\\
+i_{s} & = & i_{R}+i_{L}\\
+i_{L}\left(t\right)+\frac{L}{R}i_{L}^{\prime} & = & I_{s}u\left(t\right)\\
+i_{L}^{\prime}+\frac{R}{L}i_{L} & = & \frac{R}{L}I_{s}u\left(t\right)\\
+i_{L}\left(t\right) & = & I_{s}\left(1-e^{-\frac{R}{L}t}\right)u\left(t\right)\\
+v_{L}\left(t\right) & = & Li_{L}^{\prime}\\
+ & = & Re^{-\frac{R}{L}t}I_{s}u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מעגל מסדר שני
+\end_layout
+
+\begin_layout Standard
+הוא מעגל שהתגובה שלו)גם מתח וגם זרם( ניתן לניתוח על ידי מד"ר מסר שני.
+\end_layout
+
+\begin_layout Subsection
+מעגל
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+RLC
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מקבילי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c11d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{RLC}$
+\end_inset
+
+ מקבילי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתח: 
+\begin_inset Formula $V_{R}=V_{C}=V_{L}=V$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זרם: 
+\begin_inset Formula $I_{s}=i_{r}+i_{c}+Ll$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קשרי מתח זרם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{R} & = & \frac{V_{R}}{R}\\
+I_{L} & = & i_{L}\left(0\right)+\frac{1}{L}\int_{0}^{t}V_{L}\left(t^{\prime}\right)dt^{\prime}\\
+I_{c} & = & C\cdot V_{c}^{\prime}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+CV_{C}^{\prime}+i_{L}\left(0\right)+\frac{1}{L}\int_{0}^{t}Vdt+\frac{V}{R} & = & I_{s}\\
+V^{\prime\prime}+\frac{1}{RC}V^{\prime}+\frac{1}{LC}V & = & \frac{1}{C}i_{s}^{\prime}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כדי לפתור את זה צריכים שתי תנאי התחלה.
+ לפעמים לא יהיה נתון לנו שני תנאים אבל אפשר להסיק את התנאי השני מרציפות
+ המתח או הזרם.
+\end_layout
+
+\begin_layout Chapter
+תרגול מה.?
+\end_layout
+
+\begin_layout Section
+שיטת 
+\begin_inset Formula $S$
+\end_inset
+
+ למציאת מד"ר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left\{ y\left(t\right)\right\}  & = & y\left(s\right)=\int_{-\infty}^{\infty}y\left(t\right)e^{^{-st}}dt\\
+\mathcal{L}\left(\frac{\partial y\left(t\right)}{\partial y}\right) & = & s\cdot y\left(s\right)\\
+\mathcal{L}\left(\int y\left(t\right)dt\right) & = & \frac{1}{s}y\left(s\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="4" columns="3">
+<features>
+<column alignment="center" valignment="bottom" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מישור 
+\begin_inset Formula $s$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+מישוא 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V\left(s\right)=i\left(s\right)\cdot R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V=i\left(t\right)R$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+נגד
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V=\frac{1}{CS}I\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V=\frac{1}{C}\int i\left(t\right)dt$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+קבל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V\left(s\right)=LsI\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $V=L\frac{\partial i\left(t\right)}{\partial t}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+סליל
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+קשר בין מישוא 
+\begin_inset Formula $s$
+\end_inset
+
+ ומישור 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במישור 
+\begin_inset Formula $S$
+\end_inset
+
+ המתח הוא תמיד פונק ליניארית של הזרם.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c12d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה למעגל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & 2H\\
+C & = & 3F\\
+R_{1} & = & 2\Omega\\
+E_{2} & = & 4\Omega\\
+V_{c}\left(0^{-}\right) & = & 8V\\
+i_{c}\left(0^{-}\right) & = & 3A\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריכים להעביר המעגל למקור זרם אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/c12d3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+זרם
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+G\cdot V & = & I\\
+\begin{pmatrix}\frac{1}{R_{1}}+\frac{1}{LS} & -\frac{1}{LS}\\
+-\frac{1}{LS} & \frac{1}{R_{2}}+cs+\frac{1}{LS}\end{pmatrix}\cdot\begin{pmatrix}v_{1}\left(s\right)\\
+v_{2}\left(s\right)\end{pmatrix} & = & \begin{pmatrix}\frac{V_{s}\left(s\right)}{R_{1}}\\
+0\end{pmatrix}\\
+V_{c} & = & V_{2}\\
+ & = & \frac{\nicefrac{V_{S}}{R_{1}SL}}{\left(\frac{1}{R_{1}}+\frac{1}{sL}\right)\left(\frac{1}{R_{2}}+\frac{1}{Ls}+sC\right)-\frac{1}{s^{2}L^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את פותרים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}\left(s\right) & = & \frac{V_{s}\left(s\right)}{\frac{sL}{E_{2}}+1+\frac{R_{1}}{R_{2}}+\frac{R_{1}}{Ls}+s^{2}CL+SCR-\frac{R_{1}}{Ls}}\\
+ & = & \frac{\nicefrac{V_{s}\left(s\right)}{CL}}{s^{2}+\left(\frac{1}{R_{2}C}+\frac{R_{1}}{L}\right)s+\frac{1}{LC}\left(1+\frac{R_{1}}{R_{2}}\right)}\\
+ & = & s^{2}+\left(\frac{1}{R_{2}C}+\frac{R_{1}}{L}\right)s+\frac{1}{LC}\left(1+\frac{R_{1}}{R_{2}}\right)V_{c}\left(s\right)=\frac{1}{LC}V_{s}\left(s\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{c}^{\prime\prime}\left(t\right)+\left(\frac{1}{R_{2}C}+\frac{R_{1}}{L}\right)V_{c}^{\prime}\left(t\right)+\frac{1}{LC}\left(1+\frac{R_{1}}{R_{2}}\right)V_{c}\left(t\right)=\frac{1}{LC}V_{s}\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פותרים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}^{\prime\prime}+\frac{13}{12}V_{c}^{\prime}+\frac{1}{4}V_{C} & = & \frac{1}{6}V_{s}\\
+\omega_{0} & = & \frac{1}{2}\\
+2\alpha & = & \frac{13}{12}\\
+Q & = & \frac{\omega_{0}}{2\alpha}=\frac{6}{3}<\frac{1}{2}\\
+\\\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו בתחום של ריסון יתר.
+\end_layout
+
+\begin_layout Standard
+מציאת תנאי ההתחלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{L}\left(0^{-}\right) & = & \frac{V_{c}\left(0^{-}\right)}{R_{2}}+CV_{C}^{\prime}\left(0^{-}\right)\\
+V_{c}^{\prime}\left(0^{-}\right) & = & \frac{i_{L}\left(0^{-}\right)-\nicefrac{V_{c}}{R_{2}}}{C}\\
+V_{c}^{\prime}\left(0^{-}\right) & = & \frac{1}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ZIR$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(s\right) & = & s^{2}+\frac{13}{12}s+\frac{1}{4}=0\\
+S_{1,2} & = & -\frac{1}{3},-\frac{3}{4}\\
+V_{c}^{ZIR} & = & Ae^{-\frac{1}{3}t}+Be^{-\frac{3}{4}t}\\
+A+B & = & 8\\
+\frac{1}{3}A-\frac{3}{4}B & = & \frac{1}{3}\\
+\Rightarrow V_{C}^{ZIR} & = & 15.2e^{-\frac{t}{3}}-7.2e^{-\frac{-t}{4}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $ZSR$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}^{\prime\prime}+\frac{13}{12}V_{c}^{\prime}+\frac{1}{4}V_{c} & = & \overbrace{\frac{1}{6}}^{\frac{1}{LC}V_{s}}\left(1+2t\right)u\left(t\right)\\
+V_{p} & = & a+bt\\
+V_{C}^{ZSR} & = & \left(V_{p}+V_{h}\right)u\left(t\right)\\
+ & = & \left[a+bt+Ae^{-\frac{t}{3}}+Be^{-\frac{3t}{4}}\right]u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{13}{12}b+\frac{1}{4}a+\frac{1}{4}bt & = & \frac{1}{c}\left(1+2t\right)\\
+\Rightarrow a & = & -5\frac{1}{9}\\
+b & = & \frac{4}{3}\\
+V_{c}^{ZSR} & = & \left(-5\frac{1}{9}+\frac{3}{4}t+Ae^{-\frac{t}{3}}+Be^{-\frac{3t}{4}}\right)u\left(t\right)\\
+V_{C}\left(0^{+}\right):\,-5\frac{1}{9}+A+B & = & 0\\
+V_{C}^{\prime}\left(0^{+}\right):\,\frac{4}{3}-\frac{1}{3}A-\frac{3}{4}B & = & 0\\
+A & = & 6\\
+B & = & -\frac{8}{9}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}^{ZSR}\left(t\right) & = & \left[-5\frac{1}{9}+\frac{4}{3}t+6e^{-\frac{t}{3}}-\frac{8}{9}e^{-\frac{3t}{4}}\right]u\left(t\right)\\
+V_{c}\left(t\right) & = & V_{C}^{ZIR}+V_{C}^{ZSR}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פתרון מעגל מסדר שלישי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}^{\prime\prime\prime}+4V_{c}^{\prime\prime\prime}+6V_{c}^{\prime\prime}+4V_{C} & = & 0\\
+s^{3}+4^{2}+6s+4 & = & 0\\
+S_{1,2} & = & -2\\
+S_{2,3} & = & -1\pm j\\
+V_{c} & = & Ae^{-2t}+e^{-t}\left[B\sin\left(t\right)+C\cos\left(t\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/c11d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{RLC}$
+\end_inset
+
+ מקבילי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{s} & = & i_{R}+i_{c}+i_{L}\\
+i^{\prime\prime}+\frac{1}{RC}i^{\prime}+\frac{1}{LC}i & = & \frac{1}{LC}I_{s}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לפתור עבור 
+\begin_inset Formula $I_{s}=u\left(t\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i^{\prime\prime}+\frac{1}{RC}i^{\prime}+\frac{1}{LC}i=\frac{1}{LC}u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש לנו תנאי התחלה 
+\begin_inset Formula $i^{\prime}\left(0\right)=0$
+\end_inset
+
+ ו 
+\begin_inset Formula $i\left(0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא פתרון פרטי: 
+\begin_inset Formula $i_{p}=D$
+\end_inset
+
+ נציב במשוואה ומקבלים 
+\begin_inset Formula $D=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{L}\left(t\right)=\left[\frac{1}{s_{1}-s_{2}}\left[s_{2}e^{s_{1}t}-s_{1}e^{s_{2}t}\right]+1\right]u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

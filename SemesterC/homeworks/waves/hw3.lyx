@@ -1,0 +1,834 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V & = & IR+\dot{I}L+\frac{Q}{C}\\
+0 & - & \dot{I}R+L\ddot{I}+\frac{1}{C}I\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ננחש פתרון 
+\begin_inset Formula $I\left(t\right)=e^{ist}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Ls^{2}-isR-\frac{1}{C} & = & 0\\
+s_{1,2} & = & \frac{iR\pm\sqrt{R^{2}+\frac{4L}{C}}}{2L}\\
+ & = & \frac{iR}{2L}\pm\sqrt{\frac{1}{LC}-\frac{R^{2}}{4L^{2}}}\\
+\eta & = & \frac{R}{2L}\\
+\omega_{1,2} & = & \pm\sqrt{\frac{1}{LC}-\frac{R^{2}}{4L^{2}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב את הערכים שקיבלנו ונקבל פתרון סופי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I\left(t\right)=e^{-\frac{R}{2L}t}\left(Ae^{i\sqrt{-\frac{R^{2}}{4L^{2}}-\frac{1}{LC}}}+Be^{-i\sqrt{-\frac{R^{2}}{4L^{2}}-\frac{1}{LC}}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\Delta=-\frac{R^{2}}{4L^{2}}-\frac{1}{LC}$
+\end_inset
+
+ אזי מקבלים המקרים הבאים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2q1d1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta>0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2q1d2.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta=0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2q1d3.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\Delta<0$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נשתמש בקירובים 
+\begin_inset Formula $\sin\alpha\approx\alpha,\cos\alpha\approx1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מגיאומטריה רואים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{y_{1}}{l} & = & \tan\alpha_{1}\approx\alpha_{1}\\
+\alpha_{2} & = & \frac{y_{2}-y_{1}}{l}\\
+\alpha_{3} & = & \frac{h-y_{2}}{l}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-T\sin\alpha_{1}+T\sin\alpha_{2} & = & m\ddot{y}_{1}\\
+-T\sin\alpha_{2}+T\sin\alpha_{3} & = & m\ddot{y}_{2}\\
+T\left[\frac{y_{2}-y_{1}}{l}-\frac{y_{1}}{l}\right] & = & m\ddot{y}_{1}\\
+T\left[\frac{h-y_{1}}{l}-\frac{y_{2}-y_{1}}{l}\right] & = & m\ddot{y}_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רושמים במטריצות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}0\\
+\frac{Th}{ml}\end{pmatrix}+\begin{pmatrix}\ddot{y}_{1}\\
+\ddot{y}_{2}\end{pmatrix}=\frac{T}{lm}\begin{pmatrix}-2 & 1\\
+1 & -2\end{pmatrix}\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פותרים את המשוואה ההומוגינית.מוצאים את הערכים העצמיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{vmatrix}-2-\lambda & 1\\
+1 & -2-\lambda\end{vmatrix} & = & 0\\
+\left(2+\lambda\right)^{2}+1 & = & 0\\
+\lambda^{2}+4\lambda+3 & = & 0\\
+\lambda_{1,2} & = & -3,-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda=-3$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}-2-\lambda & 1\\
+1 & -2-\lambda\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+-1\end{pmatrix}=\vec{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda=-1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}-2-\lambda & 1\\
+1 & -2-\lambda\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+1\end{pmatrix}=\vec{u}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון פרטי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}1 & 1\\
+1 & -1\end{pmatrix}\\
+\begin{pmatrix}\ddot{S}_{1}\\
+\ddot{S}_{2}\end{pmatrix}\begin{pmatrix}1 & 1\\
+1 & -1\end{pmatrix} & = & \begin{pmatrix}0\\
+\frac{Th}{ml}\end{pmatrix}\\
+\ddot{S}_{1} & = & -\ddot{S}_{2}\\
+\ddot{S}_{1} & = & -\frac{Th}{ml}\\
+S_{1} & = & -\frac{Th}{\omega^{2}ml}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}\ddot{y}_{1}\\
+\ddot{y}_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+1\end{pmatrix}S_{1}+\begin{pmatrix}1\\
+-1\end{pmatrix}S_{2}=\begin{pmatrix}0\\
+2S_{1}\end{pmatrix}\\
+\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+1\end{pmatrix}Ae^{i\sqrt{\frac{T}{lm}}\cdot t}+\begin{pmatrix}1\\
+-1\end{pmatrix}Be^{i\sqrt{\frac{3T}{lm}}\cdot t}+\begin{pmatrix}0\\
+-\frac{Th_{0}}{lm\omega^{2}}\cos\omega t\end{pmatrix}\\
+y_{1}\left(0\right) & = & 0\\
+y_{2}\left(0\right) & = & 0\\
+\dot{y}_{1}\left(0\right) & = & 0\\
+\dot{y}_{2}\left(0\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+כוחות במטולטלת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T\cos\theta & = & mg\\
+m\ddot{x} & = & -T\sin\theta\\
+m\ddot{x} & = & -\frac{mg\sin\theta}{\cos\theta}\\
+\ddot{x} & = & -g\underbrace{\tan\theta}_{\frac{\sin\theta}{\cos\theta}=\frac{\theta}{1}}\\
+\frac{\partial^{2}x}{\partial t^{2}} & = & -g\theta\\
+\frac{\partial^{2}\left(l\sin\theta\right)}{\partial t^{2}} & = & -g\theta\\
+\frac{\partial^{2}\left(l\theta\right)}{\partial t^{2}} & = & -g\theta\\
+\ddot{\theta} & = & -\frac{g}{l}\theta\\
+\ddot{\theta}+\frac{g}{l}\theta & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מנחשים פתרון 
+\begin_inset Formula $\theta=A\cos\left(\omega\theta\right)+B\sin\left(\omega\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{matrix}-A\omega^{2}\cos\left(\omega\theta\right)-B\omega^{2}\sin\left(\omega\theta\right)+\\
++\frac{g}{l}\left(A\cos\left(\omega\theta\right)+B\sin\left(\omega\theta\right)\right)\end{matrix} & = & 0\\
+\omega & = & \sqrt{\frac{g}{l}}\\
+\theta & = & A\cos\left(\sqrt{\frac{g}{l}}\cdot\theta\right)+B\sin\left(\sqrt{\frac{g}{l}}\cdot\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שתי מטוטלות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T_{1}\cos\theta_{1} & = & m_{1}g+T_{2}\cos\theta_{2}\\
+T_{1} & = & \frac{m_{1}g+T_{2}\cos\theta_{2}}{\cos\theta_{1}}\\
+T_{2}\cos\theta_{2} & = & m_{2}g\\
+T_{2} & = & \frac{m_{2}g}{\cos\theta_{2}}\\
+T_{1} & = & \frac{m_{1}g+\frac{m_{2}g}{\cos\theta_{2}}\cos\theta_{2}}{\cos\theta_{1}}\\
+T_{2} & = & \frac{m_{2}g}{1}=m_{2}g\\
+T_{1} & = & \frac{m_{1}g+\frac{m_{2}g}{1}\cdot1}{1}\\
+ & = & m_{1}g+m_{2}g\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מציבים את זה בציר 
+\begin_inset Formula $x$
+\end_inset
+
+ שלנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1}\ddot{x}_{1} & = & -T_{1}\sin\theta_{1}-T_{2}\sin\left(-\theta_{2}\right)\\
+ & = & -T_{1}\sin\theta_{1}+T_{2}\sin\theta_{2}\\
+m_{2}\left(\ddot{x}_{1}+\ddot{x}_{2}\right) & = & -T_{2}\sin\theta_{2}\\
+m_{1}l\ddot{\theta}_{1} & = & -\left(m_{1}g+m_{2}g\right)\theta_{1}+m_{2}g\theta_{2}\\
+m_{2}\left(l_{2}\ddot{\theta}_{2}+l_{1}\ddot{\theta}_{1}\right) & = & -m_{2}g\theta_{2}\\
+\ddot{\theta}_{1} & = & -\frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{1}}\theta_{1}+\frac{m_{2}g}{m_{1}l_{1}}\theta_{2}\\
+m_{2}l_{2}\ddot{\theta}_{2}+m_{2}l_{1}\ddot{\theta}_{1} & = & -m_{2}g\theta_{2}\\
+m_{2}l_{2}\ddot{\theta}_{2} & = & -m_{2}g\theta_{2}-m_{2}l_{1}\ddot{\theta}_{1}\\
+\ddot{\theta}_{2} & = & -\frac{m_{2}g}{m_{2}l_{2}}\theta_{2}-\frac{m_{2}l_{1}}{m_{2}l_{2}}\ddot{\theta}_{1}\\
+ & = & -\frac{m_{2}g}{m_{2}l_{2}}\theta_{2}-\frac{m_{2}l_{1}}{m_{2}l_{2}}\left(-\frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{1}}\theta_{1}+\frac{m_{2}g}{m_{1}l_{1}}\theta_{2}\right)\\
+ & = & -\frac{m_{2}g}{m_{2}l_{2}}\theta_{2}-\left(-\frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{2}}\theta_{1}+\frac{m_{2}g}{m_{1}l_{2}}\theta_{2}\right)\\
+ & = & -\frac{m_{2}g}{m_{2}l_{2}}\theta_{2}+\frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{2}}\theta_{1}-\frac{m_{2}g}{m_{1}l_{2}}\theta_{2}\\
+ & = & \frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{2}}\theta_{1}-\frac{m_{2}g}{m_{1}l_{2}}\theta_{2}-\frac{m_{2}g}{m_{2}l_{2}}\theta_{2}\\
+ & = & \frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{2}}\theta_{1}-\frac{\left(m_{2}+m_{2}\right)g}{m_{1}l_{2}}\theta_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}}{\partial t^{2}}\begin{pmatrix}\theta_{1}\\
+\theta_{2}\end{pmatrix} & = & \begin{pmatrix}\frac{-\left(m_{1}+m_{2}\right)g}{m_{1}l_{1}} & \frac{m_{2}g}{m_{1}l_{1}}\\
+\frac{\left(m_{1}+m_{2}\right)g}{m_{1}l_{2}} & \frac{-\left(m_{2}+m_{2}\right)g}{m_{1}l_{2}}\end{pmatrix}\begin{pmatrix}\theta_{1}\\
+\theta_{2}\end{pmatrix}\\
+\frac{\partial^{2}}{\partial t^{2}}\begin{pmatrix}\theta_{1}\\
+\theta_{2}\end{pmatrix} & = & \begin{pmatrix}\frac{-2mg}{ml} & \frac{mg}{ml}\\
+\frac{2mg}{ml} & \frac{-2mg}{ml}\end{pmatrix}\begin{pmatrix}\theta_{1}\\
+\theta_{2}\end{pmatrix}\\
+\frac{\partial^{2}}{\partial t^{2}}\begin{pmatrix}\theta_{1}\\
+\theta_{2}\end{pmatrix} & = & \frac{g}{l}\begin{pmatrix}-2 & 1\\
+2 & -2\end{pmatrix}\begin{pmatrix}\theta_{1}\\
+\theta_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|A-I\lambda\right| & = & 0\\
+\begin{vmatrix}-2-\lambda & 1\\
+2 & -2-\lambda\end{vmatrix} & = & 0\\
+\left(-2-\lambda\right)^{2}-2 & = & 0\\
+\lambda^{2}+4\lambda+4-2 & = & 0\\
+\lambda^{2}+4\lambda+2 & = & 0\\
+\lambda & = & \frac{-4\pm\sqrt{16-4\cdot2}}{2}\\
+ & = & \frac{-4\pm\sqrt{8}}{2}\\
+ & = & -2+\sqrt{2},-2-\sqrt{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda_{1}=\frac{g}{l}\left(-2+\sqrt{2}\right)$
+\end_inset
+
+ מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}-2+2-\sqrt{2} & 1\\
+2 & -2+2-\sqrt{2}\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}-\sqrt{2} & 1\\
+2 & -\sqrt{2}\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+\sqrt{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda_{2}=\frac{g}{l}\left(-2-\sqrt{2}\right)$
+\end_inset
+
+ מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}-2+2+\sqrt{2} & 1\\
+2 & -2+2+\sqrt{2}\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}\sqrt{2} & 1\\
+2 & \sqrt{2}\end{pmatrix}\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}0\\
+0\end{pmatrix}\\
+\begin{pmatrix}v_{1}\\
+v_{2}\end{pmatrix} & = & \begin{pmatrix}1\\
+-\sqrt{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו ווקטורים עצמיים 
+\begin_inset Formula $\begin{pmatrix}1\\
+\sqrt{2}\end{pmatrix},\begin{pmatrix}1\\
+-\sqrt{2}\end{pmatrix}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & Sy\\
+ & = & \begin{pmatrix}1 & 1\\
+\sqrt{2} & -\sqrt{2}\end{pmatrix}\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}y_{1}+y_{2}\\
+\sqrt{2}y_{1}-\sqrt{2}y_{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}\ddot{z}_{1}\\
+\ddot{z}_{2}\end{pmatrix} & = & \begin{pmatrix}-2+\sqrt{2} & 0\\
+0 & -2-\sqrt{2}\end{pmatrix}\begin{pmatrix}z_{1}\\
+z_{2}\end{pmatrix}\\
+ & = & \begin{pmatrix}A_{1}e^{-\sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\cdot t}+B_{1}e^{\sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\cdot t}\\
+A_{2}e^{-\sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\cdot t}+B_{2}e^{\sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\cdot t}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזור ל 
+\begin_inset Formula $y_{1},y_{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}z_{1}\\
+z_{2}\end{pmatrix} & = & \begin{pmatrix}y_{1}+y_{2}\\
+\sqrt{2}y_{1}-\sqrt{2}y_{2}\end{pmatrix}\\
+\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix} & = & \begin{pmatrix}\frac{1}{4}\left(2z_{1}+\sqrt{2}z_{2}\right)\\
+\frac{\sqrt{2}z_{1}-z_{2}}{2\sqrt{2}}\end{pmatrix}\\
+ & = & \begin{pmatrix}\begin{matrix}\frac{1}{2}\left(A_{1}e^{-\sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\cdot t}+B_{1}e^{\sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\cdot t}\right)+\\
++\frac{\sqrt{2}}{4}\left(A_{2}e^{-\sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\cdot t}+B_{2}e^{\sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\cdot t}\right)\end{matrix}\\
+\begin{matrix}\frac{\sqrt{2}\left(A_{1}e^{-\sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\cdot t}+B_{1}e^{\sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\cdot t}\right)}{2\sqrt{2}}-\\
+-\frac{\left(A_{2}e^{-\sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\cdot t}+B_{2}e^{\sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\cdot t}\right)}{2\sqrt{2}}\end{matrix}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\omega_{1} & = & \sqrt{\frac{g}{l}\left(-2+\sqrt{2}\right)}\\
+\omega_{2} & = & \sqrt{\frac{g}{l}\left(-2-\sqrt{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

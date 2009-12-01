@@ -1,0 +1,818 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw3/drawing.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+המעגל אחרי המרה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחשבים את 
+\begin_inset Formula $R$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{T} & = & 3+\left(\left(4+8\right)\parallel\left(4+8\right)\right)\\
+ & = & 3+\frac{12}{2}\\
+ & = & 9\Omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים שזרם בענף של המקור הוא 
+\begin_inset Formula $I=\frac{15}{9}A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטעמי סימטריה הזרם בשני הענפים האחרים שווים אזי 
+\begin_inset Formula $I_{1}=I_{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $I_{1}+I_{2}=I_{1}+I_{1}=I$
+\end_inset
+
+ לכן 
+\begin_inset Formula $I_{1}=I_{2}=\frac{15}{18}A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+התוצאה לא משתנה כי בנגד 
+\begin_inset Formula $2\Omega$
+\end_inset
+
+ לא יזרום זרם, כי המתחים בשני הצדדים שווים.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נתחיל בהמרת מקור הזרם למקור מתח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename hw3/d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+המעגל על מקורות מתח
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקצרים את כל מקורות הזרם ומחשבים את 
+\begin_inset Formula $R_{total}$
+\end_inset
+
+ בין הנקודות 
+\begin_inset Formula $a,b$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{total} & = & 50\parallel\left(25+50\parallel50\right)\\
+ & = & 50\parallel\left(25+25\right)\\
+ & = & 50\parallel50\\
+ & = & 25\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את המתח בין הנקודות, צריך למצא את הזרם על הנגד של 
+\begin_inset Formula $50\Omega$
+\end_inset
+
+ שיושב לבד בענף.
+ נניח זרם 
+\begin_inset Formula $I_{1}$
+\end_inset
+
+ בענף השמאלי ו 
+\begin_inset Formula $I_{2}$
+\end_inset
+
+ בענף הימני אזי בענף האמצעי זורם 
+\begin_inset Formula $I_{3}=I_{1}+_{2}$
+\end_inset
+
+ למטה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{1}\cdot50+I_{3}\cdot50 & = & 0\\
+-I_{3}\cdot50-I_{2}\cdot25-I_{2}\cdot50 & = & 50-12\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{1} & = & I_{3}\\
+I_{1} & = & I_{1}+I_{2}\\
+I_{2} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+-50I_{1} & = & 38\\
+I_{1} & = & -\frac{38}{50}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן מקבלים כי 
+\begin_inset Formula $V_{A\to B}$
+\end_inset
+
+ היא 
+\begin_inset Formula $12V$
+\end_inset
+
+)כי אין זרם בנגד שיושב לבד(
+\end_layout
+
+\begin_layout Standard
+אזי שקול תבינין:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{TH}=25\Omega,V_{TH}=12V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומזה מחשבים שקול נורטון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{N}=25\Omega,I_{N}=\frac{12}{15}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+כאשר נגד העומס הוא 
+\begin_inset Formula $12.5\Omega$
+\end_inset
+
+ אזי המתח הוא 
+\begin_inset Formula $12\cdot\frac{12.5}{12.5+25}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{Th}=1k\parallel\left(1k\parallel1k\right)=\frac{1}{3}k\Omega\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename hw3/d3.svg
+	lyxscale 30
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+המעגל עוד פעם
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{1}+I_{2}+I_{3} & = & I_{4}+I_{5}\\
+I_{4}+I_{5} & = & I_{6}\\
+20 & = & -I_{2}\\
+I_{2}-I_{3} & = & 0\\
+I_{3}+I_{4}+I_{6} & = & 10\\
+-I_{4}+I_{5} & = & -10\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{6}=\frac{50}{3}mA\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $V_{A\cdot B}=\frac{50}{3\cdot1000}\cdot1000$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+אם מקצרים את נמקור של 
+\begin_inset Formula $20V$
+\end_inset
+
+ מקבלים נגד עומס של 
+\begin_inset Formula $1K\Omega$
+\end_inset
+
+, אזי המעגל הראשון הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V=10V,R=1K\Omega,I=10mA\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ואם מקצרים את המקור של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $10V$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $0.5K\Omega$
+\end_inset
+
+ מקביל למקור ו
+\begin_inset Formula $0.5K\Omega$
+\end_inset
+
+ בענף של הקצר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V=20V,R_{1}=0.5k\Omega,R_{2}=0.5k\Omega,I=\frac{20}{0.25K}=40mA\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים הזרם השקול 
+\begin_inset Formula $I=10+40=50mA$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+אם מוסיפים נגד עומס מקבלים אותו מעגל שכבר היה לנו ועוד נגד העומס במקביל
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I & = & 50mA\\
+R_{1} & = & \frac{1}{3}k\Omega\\
+R_{L} & = & ?\\
+P_{L} & = & I_{L}^{2}\cdot R_{L}\\
+I_{L} & = & I\frac{\frac{1}{3}}{\frac{1}{3}+RL}\\
+P_{L} & = & I^{2}\left(\frac{\frac{1}{3}}{\frac{1}{3}+R_{L}}\right)^{2}R_{L}=I^{2}\frac{\frac{1}{9}R_{L}}{\left(\frac{1}{3}+R_{L}\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשביל למקסם את התוצאה עושים נגזרת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial P_{L}}{\partial R_{L}} & = & 0\\
+I^{2}\left[\frac{\frac{1}{9}}{\left(\frac{1}{3}+R_{L}\right)^{2}}+\frac{-\frac{2}{9}R_{L}}{\left(\frac{1}{3}+R_{L}\right)^{3}}\right] & = & 0\\
+\frac{\frac{1}{9}}{\left(\frac{1}{3}+R_{L}\right)^{2}}+\frac{-\frac{2}{9}R_{L}}{\left(\frac{1}{3}+R_{L}\right)^{3}} & = & 0\\
+\frac{1}{9}-\frac{2}{9}R_{L} & = & 0\\
+R_{L} & = & \frac{1}{2}k\Omega\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים 
+\begin_inset Formula \begin{eqnarray*}
+P_{L} & = & \left(50mA\right)^{2}\left(\frac{\frac{1}{3}}{\frac{1}{3}+\frac{1}{2}}\right)^{2}\frac{1}{2}\\
+ & = & 4W\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+באמת, בשביל מה השאלה הזו?! אם סטודנט יכול לעשות סופר פוזיציה ל
+\numeric on
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מקורות אז הוא כם יעשה ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+100
+\numeric off
+, אבל אין לנו זמן! תרחמו עלינו קצת! אני כבר לא אכניס הציורים למחשב כי לא
+ צריך!
+\end_layout
+
+\begin_layout Standard
+נקצר מקרות המתח וננתק מקורות הזרם אזי מחשבים 
+\begin_inset Formula $R_{T}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{T}=5\parallel15=\frac{15}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזיר מקור זרם ראשון ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{L}=\frac{15}{5+15}5=\frac{15}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזיר מקור זרם שני ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+I_{L}=\frac{15}{5+15}5=\frac{15}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזיר מקור מתח ראשון ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{L}=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחזיר מקור המתח השני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{L}=10\cdot\frac{5}{15+5}=\frac{10}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מחברים את כל המתחים ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{L}=\frac{10}{4}+0+\frac{15}{4}\cdot5+\frac{15}{4}\cdot5=40V\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי שקול תביניו הוא בעל 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\frac{15}{4},V=40\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

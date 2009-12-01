@@ -1,0 +1,41 @@
+#include<stdio.h>
+
+typedef (*int)(double a1,double a2, double a3) CheckFunc
+
+int mani() {
+}
+
+
+double additionCheck(double a1,double a2, double a3) {
+    return a1 + a2 + a3;
+}
+
+double multiplicationCheck(double a1,double a2, double a3) {
+    return a1 * a2 * a3;
+}
+
+int checkMagicSquare(int type,double A11, double A12, double A13, double A21, double A22, double A23, double A31, double A32, double A33) {
+    
+    CheckFunc checkfunc
+    //pick the function that'll do the calculations for us
+    if(type == 1) checkfunc=additionCheck;
+    else checkfunc = multiplicationCheck;
+    
+    //temporary variables to hold all our calculated stuff
+    double col1, col2, col3, row1, row2, row3, diagonal1, diagonal2;
+    col1 = checkfunc(A11,A21,A31);
+    col2 = checkfunc(A12,A22,A32);
+    col3 = checkfunc(A13,A23,A33);
+    
+    row1 = checkfunc(A11,A12,A13);
+    row2 = checkfunc(A21,A22,A23);
+    row3 = checkfunc(A31,A32,A33);
+    
+    diagonal1 = checkfunc(A11,A22,A33);
+    diagonal2 = checkfunc(A13,A22,A31);
+    
+    //comparing them all to the same variable should give better cache optimization
+    if(col1==col2 && col1==col3 && col1==row1 && col1==row2 && col1==row3 && col1==diagnoal1 && col1==diagonal2) return 1;
+    
+    return 0;
+} 

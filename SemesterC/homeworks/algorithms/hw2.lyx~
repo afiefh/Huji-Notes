@@ -1,0 +1,762 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הוכחנו בכיתה שאם מתקימים 
+\begin_inset Formula $n$
+\end_inset
+
+ פעולות הוראה בו זמנית אזי צריכים לפחות 
+\begin_inset Formula $n$
+\end_inset
+
+ חדרי לימוד.
+\end_layout
+
+\begin_layout Standard
+אותו דבר בשאלה הזו רק ש"חדר לימוד" במקרה שלנו זה צבע.
+\end_layout
+
+\begin_layout Standard
+הוכחה שזה נכון:
+\end_layout
+
+\begin_layout Standard
+נניח כי לאיזה שהוא קודקוד יש יותר מ 
+\begin_inset Formula $A$
+\end_inset
+
+)מספר הצבעים( שכנים אזי יש בו לפחות 
+\begin_inset Formula $A+1$
+\end_inset
+
+ שכנים, בסתירה להגדרה של 
+\begin_inset Formula $A$
+\end_inset
+
+ שזה המספר המקסימאלי של שכנים לקודקוד.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+יודעים כי קוד הופמאן הוא הקידוד האופטימאלי, אזי מוכיחים פשוט שלכל קידוד
+ הופמאן מתקבל כי האורך הממוצע של הקידוד יותר גדול מה
+\lang english
+Entropy
+\begin_inset Formula $=H$
+\end_inset
+
+ 
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+נסמן אורך מילה 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ וממוצע אורך מילות ב 
+\begin_inset Formula $\overline{\lambda}$
+\end_inset
+
+, אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+H-\overline{\lambda} & = & \sum_{i=0}^{N}\left(\log\left(\frac{1}{p_{i}}\right)-\lambda_{i}\right)p_{i}\\
+ & = & \sum_{i=1}^{N}\left(\log\left(\frac{2^{-\lambda_{i}}}{p_{i}}\right)p_{i}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משתמשים באי שוויון ינסן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & \leq & \log\left(\sum_{i=1}^{N}\frac{2^{-\lambda_{i}}}{p_{i}}p_{i}\right)\\
+ & = & \log\left(\sum_{i=1}^{N}2^{-\lambda_{i}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי אי שוויון קרפת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\log\left(\sum_{i=1}^{N}2^{-\lambda_{i}}\right) & \leq & \log\left(1\right)\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+לכל גרף חסר מעגלים קיים קודקוד 
+\begin_inset Formula $D\left(v\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+function find_if_acyclic(V,E,D) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+if(
+\begin_inset Formula $\left|V\right|==0$
+\end_inset
+
+) return 
+\begin_inset Quotes eld
+\end_inset
+
+Can create acyclic graph
+\begin_inset Quotes erd
+\end_inset
+
+;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+-- for 
+\begin_inset Formula $\forall v\in V$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+----if 
+\begin_inset Formula $D\left(v\right)==0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------
+\begin_inset Formula $D^{\prime}=D$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------
+\begin_inset Formula $E^{\prime}=E$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------for 
+\begin_inset Formula $\forall w\in V$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--------
+\begin_inset Formula $D^{\prime}\left(w\right)=D\left(v\right)-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--------
+\begin_inset Formula $E^{\prime}=E^{\prime}\setminus\left(v,w\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------
+\begin_inset Formula $V^{\prime}=V\setminus\left\{ v\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+------return find_if_acyclic
+\begin_inset Formula $\left(V^{\prime},E^{\prime},D^{\prime}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+Return 
+\begin_inset Quotes eld
+\end_inset
+
+Cannot create acyclic graph
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+אלגוריתם לפתרון הבעיה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $k=2^{n}-1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אם ממירים את זה לבסיס בינארי רואים כי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1_{b}}{A},\frac{10_{b}}{A},\frac{100_{b}}{A},\frac{1000_{b}}{A}\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי האיבר 
+\begin_inset Formula $f_{i+2}>f_{i}+f_{i+1}$
+\end_inset
+
+ בבניה של קוד הופמאן אזי הגרף יראה כזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw2d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עץ האופמאן להסתברויות 
+\begin_inset Formula $2^{-i}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נגדיר עבור חפץ 
+\begin_inset Formula $i$
+\end_inset
+
+ את 
+\begin_inset Formula $r_{i}=\frac{price_{i}}{weight_{i}}$
+\end_inset
+
+.
+ האלגוריתם יבחר את החפץ בעל 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ מקסימאלי עד שמתמאלא.
+ אם התיק כמעט מלא ואין מקום לחפץ הבא אז לוקחים כמה שאפשר ממנו והורחים.
+\end_layout
+
+\begin_layout Standard
+ההוכחה של תרגיל זה היא בדיוק אותה הוכחה של תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+רק בלי המתמטיקה המסובכת, אז אני אדלג על זה)אתם
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+נגדיר סידור 
+\begin_inset Formula $\Xi_{FF}$
+\end_inset
+
+ כסידור המסימות כך ש 
+\begin_inset Formula $\Xi_{FF}\left(1\right)<\Xi_{FF}\left(2\right)<\dots<\Xi_{FF}\left(n\right)$
+\end_inset
+
+, כאשר 
+\begin_inset Formula $\Xi_{FF}\left(i\right)$
+\end_inset
+
+ הוא הזמן שלוקח למסימה 
+\begin_inset Formula $i$
+\end_inset
+
+ להתבצע.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\Xi_{0}$
+\end_inset
+
+ סידור אחר כלשהוא.
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $t_{v}^{S}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\Xi_{x}\left(t_{v}^{S}\right)=\Xi_{FF}\left(v\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר סידור 
+\begin_inset Formula $\Xi_{i}$
+\end_inset
+
+ להיות מתלכד עם הסידור 
+\begin_inset Formula $\Xi_{i-1}$
+\end_inset
+
+ חוץ מזה שהחלפנו את האיברים באינדקסים 
+\begin_inset Formula $i,t_{i}^{i-1}$
+\end_inset
+
+)כלומר 
+\begin_inset Formula $\Xi_{i}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\Xi_{FF}$
+\end_inset
+
+ מתלכדים עד למקום ה
+\begin_inset Formula $i$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Avg\left(\Xi_{x}\right)$
+\end_inset
+
+ זמן הסיום ההמוצע של המסימות לפי סידור 
+\begin_inset Formula $\Xi_{x}$
+\end_inset
+
+, ונראה כי 
+\begin_inset Formula $Avg\left(\Xi_{i}\right)\leq Avg\left(\Xi_{i-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צ"ל: 
+\begin_inset Formula $Avg\left(\Xi_{i}\right)\leq Avg\left(\Xi_{i-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Avg\left(\Xi_{i}\right) & \overset{?}{\leq} & Avg\left(\Xi_{i-1}\right)\\
+\frac{\sum_{k=0}^{n-1}\left(n-k\right)\Xi_{i}\left(k\right)}{n} & \overset{?}{\leq} & \frac{\sum_{i=0}^{n-1}\left(n-k\right)\Xi_{i-1}\left(k\right)}{n}\\
+\sum_{k=0}^{n-1}\left(n-k\right)\Xi_{i}\left(k\right) & \overset{?}{\leq} & \sum_{i=0}^{n-1}\left(n-k\right)\Xi_{i-1}\left(k\right)\\
+\left(n-i\right)\Xi_{i}\left(i\right)+\left(n-t_{i}^{i-1}\right)\Xi_{i}\left(t_{i}^{i-1}\right) & \overset{?}{\leq} & \left(n-i\right)\Xi_{i-1}\left(i\right)+\left(n-t_{i}^{i-1}\right)\Xi_{i-1}\left(t_{i}^{i-1}\right)\\
+\left(n-i\right)\Xi_{i}\left(i\right)+\left(n-t_{i}^{i-1}\right)\Xi_{i}\left(t_{i}^{i-1}\right) & \overset{?}{\leq} & \left(n-i\right)\Xi_{i}\left(t_{i}^{i-1}\right)+\left(n-t_{i}^{i-1}\right)\Xi_{i}\left(i\right)\\
+\underbrace{\left(n-i\right)}_{o}a+\underbrace{\left(n-x_{i}^{s_{i-1}}\right)}_{u}b & \overset{?}{\leq} & \left(n-i\right)b+\left(n-x_{i}^{s_{i-1}}\right)a\\
+oa+ub & \overset{?}{\leq} & ob+ua\\
+0 & \overset{?}{\leq} & ob+ua-oa-ub\\
+0 & \overset{?}{\leq} & o\underbrace{\left(b-a\right)}_{>0}+u\left(a-b\right)\\
+0 & \overset{?}{\leq} & \underbrace{o-u}_{o\geq u}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הוכחנו כי כל פעם שמתקרבים ל
+\begin_inset Formula $FF$
+\end_inset
+
+ אנחנו נהיה יותר יעילעם מאשר כל האפשרויות שלא מתקרבות, אזי 
+\begin_inset Formula $S_{n}=FF$
+\end_inset
+
+ אזי 
+\begin_inset Formula $FF$
+\end_inset
+
+ הוא יותר יעיל מכל האפטסיוט האחרות.
+ משל.
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,175 @@
+%% LyX 1.6.4 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[a4paper,twoside,english,hebrew]{article}
+\usepackage[latin9,cp1255]{inputenc}
+\usepackage{float}
+\usepackage{graphicx}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+%% Because html converters don't know tabularnewline
+\providecommand{\tabularnewline}{\\}
+
+\makeatother
+
+\usepackage{babel}
+
+\begin{document}
+
+\title{תרגיל מס.{\beginL 5\endL}}
+
+
+\author{עפיף חלומה{\normalsize{} }{\beginL 302323001\endL}}
+
+\maketitle
+
+\section{שאלה\textmd{\normalsize{} }{\beginL 1\endL}}
+
+
+\subsection{א}
+
+עבור שני זרימות מקסימליות \L{$f_{1}\neq f_{2}$} צריך להתקיים \L{$v\left(f_{1}\right)=v\left(f_{2}\right)$})לפי
+הגדרה של מקסימאליות.( לפי משפט החתך המנימאלי והזרימה המקסימאלית קיימים
+שני חתכים)לא בהכרח שונים( \L{$c_{1},c_{2}$} כך ש \L{$C\left(c_{1}\right)=C\left(c_{2}\right)=v\left(f_{1}\right)=v\left(f_{2}\right)$}.
+
+יודעים כי כל זרימה \L{$f$} בעלת שטף \L{$v\left(f\right)$} \char`\"{}מאפסת\char`\"{}
+את החתך \L{$c$} אם מתקיים \L{$C\left(c\right)=v\left(f\right)$}.
+
+נניח בשלילה שקיים קודקוד \L{$v$} שיש ממנו מסלול ל \L{$s$} ב \L{$G_{f_{1}}$}
+אבל אין כזה ב \L{$G_{f_{2}}$}, אזי מקבלים כי יש חתך שהתאפס ב \L{$G_{f_{2}}$}
+אבל לא ב\L{$G_{f_{1}}$}, בסתירה לכך שזרימות בעלות אותה זרימה מאפסות
+אותם חתכים.
+
+
+\subsection{ב}
+
+לפי משפט החתך המינימאלי והקיבול המקסימאלי מתקבל כי זה עבור זרימה מקסימלת
+החתך המתאפס הוא מינימאלי, השאר נובע מסעיף א.
+
+
+\subsection{ג}
+
+לא. אם יש בשתי חתכים שונים בעל אותו קיבול אז הם יהיו שונים.
+
+
+\section{שאלה {\beginL 2\endL}}
+
+
+\subsection{א}
+
+הזרימה היא {\beginL 8\endL})רואים מהקודקודים שיוצאים מ \L{$s$}. אזי
+אם זו זרימה מקסימאלית אזי ברשת השיורית לא מקבלים עוד מסילות מ \L{$s$}
+ל \L{$t$} ויש חתך מינימאלי בעל קיבול {\beginL 8\endL}.
+
+%
+\begin{figure}[H]
+\begin{centering}
+\L{\includegraphics[width=0.7\textwidth]{images/hw1d1}}
+\par\end{centering}
+
+\caption{גרף שיורי}
+
+\end{figure}
+
+
+%
+\begin{figure}[H]
+\begin{centering}
+\L{\includegraphics[width=0.7\textwidth]{images/hw5d2}}
+\par\end{centering}
+
+\caption{חתך בעל קיבול {\beginL 8\endL})קיבול הכוון(}
+
+\end{figure}
+
+
+
+\subsection{ב}
+
+זה לא גרף מקסימאלי כי יש מסילה משפרת:
+
+%
+\begin{figure}[H]
+\begin{centering}
+\L{\includegraphics[width=0.7\textwidth]{images/hw1d3}}
+\par\end{centering}
+
+\caption{מסילה משפרת}
+
+\end{figure}
+
+
+
+\section{שאלה\textmd{\normalsize{} }{\beginL 3\endL}}
+\begin{enumerate}
+\item מחפסים מסילה בעלת זרימה {\beginL 1\endL} שעוברת דרך הצלע שרוצים לשנות
+ומוחקים אותה)דרך שני הרצות של \L{$DFS$} או בדרךים אחרות(
+\item מקטינים את הצלע
+\item מחפסים מסילה חדשה מ\L{$s$} ל \L{$t$})היא תהיה בעלת זרימה {\beginL 1\endL}
+או שאין מסילה כזו( ב \L{$G_{f}$} באמצעות אלג' \L{$DFS$}.)אלג זה
+הוא ליניארי(
+\end{enumerate}
+
+\section{שאלה\textmd{\normalsize{} }{\beginL 4\endL}}
+
+
+\subsection{א}
+
+\L{\[
+f=801\]
+}
+
+
+\subsection{ב}
+
+%
+\begin{figure}[H]
+\begin{centering}
+\L{\includegraphics[width=0.7\textwidth]{images/hw5d3}}
+\par\end{centering}
+
+\caption{רשת ורשת שיורית}
+
+\end{figure}
+
+
+
+\subsection{ג}
+
+\begin{tabular}{|c||c|c|c|}
+\hline 
+ & \R{\L{$e_{1}$}} & \R{\L{$e_{2}$}} & \R{\L{$e_{3}$}}\tabularnewline
+\hline
+\hline 
+ & \R{\L{$a_{n}$}} & \R{\L{$a_{n+1}$}} & \R{\L{$0$}}\tabularnewline
+\hline 
+\R{\L{$p_{1}$}} & \R{\L{$a_{n}-a_{n+1}=a_{n+2}$}} & \R{\L{$0$}} & \R{\L{$a_{n+1}$}}\tabularnewline
+\hline 
+\R{\L{$p_{2}$}} & \R{\L{$a_{n+2}$}} & \R{\L{$a_{n+1}$}} & \R{\L{$0$}}\tabularnewline
+\hline 
+\R{\L{$p_{1}$}} & \R{\L{$0$}} & \R{\L{$a_{n+1}-a_{n+2}=a_{n+3}$}} & \R{\L{$a_{n+2}$}}\tabularnewline
+\hline 
+\R{\L{$p_{3}$}} & \R{\L{$a_{n+2}$}} & \R{\L{$a_{n+3}$}} & \R{\L{$0$}}\tabularnewline
+\hline
+\end{tabular}
+
+
+\subsection{ד}
+
+צריכים לספור הזרם דרך כל אחד מהצלעות היוצאות מ \L{$S$}.
+
+לצלע העליונה מוסיפים \L{$a_{n+1}$} ב \L{$p_{1}$}, והפעם הראשונה
+יזרום דרכה \L{$r$}. אזי \L{$\frac{r^{2}}{1-r^{2}}$}.
+
+לצלע האמצעית מוסיפים {\beginL 1\endL} בסעיפים הקודמים ואחר כך מתחילים
+להוסיף את המסלולים שלנו אזי מוסיפים \L{$r^{2}$} ומתחילים מ \L{$r$}
+אזי \L{$1+\frac{r}{1-r^{2}}$}
+
+לצלע התחתונה מוסף כל פעם \L{$r^{2}$} ואנחנו מתחילים מ \L{$r^{2}$}
+אזי \L{$\frac{r^{2}}{1-r^{2}}$}
+
+\L{\[
+v\left(f\right)=\frac{r^{2}}{1-r^{2}}+1+\frac{r}{1-r^{2}}+\frac{r^{2}}{1-r^{2}}\]
+}
+\end{document}

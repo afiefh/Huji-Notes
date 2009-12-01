@@ -1,0 +1,8 @@
+#!/usr/bin/env octave
+
+x=0:0.001:5;
+y=cos(100*x) + cos(102*x);
+plot(x,y);
+pause
+
+print -dsvg c3d3.svg

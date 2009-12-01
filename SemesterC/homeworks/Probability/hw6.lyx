@@ -1,0 +1,387 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & \mbox{Pois}\left(5\right)\\
+P\left(X=\alpha\right) & = & \frac{\lambda^{\alpha}e^{-5}}{\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהינתן שנכנסו 
+\begin_inset Formula $X$
+\end_inset
+
+ זבבות לחדר ההסתברות ש
+\begin_inset Formula $Y$
+\end_inset
+
+ מהם יתפסו היא בדיוק 
+\begin_inset Formula $P\left(Y=\beta\vert X\right)={X \choose \beta}p^{\beta}\left(1-p\right)^{X-\beta}$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=\beta\right) & = & \sum_{\alpha=0}^{\infty}P\left(Y=\beta\vert X\right)\cdot P\left(X=\alpha\right)\\
+ & = & \sum_{\alpha=0}^{\infty}P\left(Y=\beta\right)\cdot P\left(X=\alpha\right)\\
+ & = & \sum_{\alpha=0}^{\infty}{\alpha \choose \beta}\left(\frac{1}{2}\right)^{\beta}\left(1-\frac{1}{2}\right)^{\alpha-\beta}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=0\right) & = & \sum_{\alpha=0}^{\infty}{\alpha \choose 0}\left(\frac{1}{2}\right)^{0}\left(\frac{1}{2}\right)^{\alpha}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}\frac{5^{\alpha}e^{-5}}{2^{\alpha}\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=1\right) & = & \sum_{\alpha=0}^{\infty}{\alpha \choose 1}\left(\frac{1}{2}\right)^{1}\left(\frac{1}{2}\right)^{\alpha-1}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}\left(\frac{1}{2}\right)^{\alpha}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}\frac{5^{\alpha}e^{-5}}{2^{\alpha}\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=k\right) & = & \sum_{\alpha=0}^{\infty}{\alpha \choose k}\left(\frac{1}{2}\right)^{k}\left(\frac{1}{2}\right)^{\alpha-k}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}{\alpha \choose k}\frac{5^{\alpha}e^{-5}}{2^{\alpha}\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Subsubsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=0\right) & = & \sum_{\alpha=0}^{\infty}{\alpha \choose 0}\left(\frac{1}{4}\right)^{0}\left(\frac{3}{4}\right)^{\alpha}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}\frac{3^{\alpha}5^{\alpha}e^{-5}}{4^{\alpha}\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=1\right) & = & \sum_{\alpha=0}^{\infty}{\alpha \choose 1}\left(\frac{1}{4}\right)^{1}\left(\frac{3}{4}\right)^{\alpha-1}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}\frac{3^{\alpha-1}5^{\alpha}e^{-5}}{4^{\alpha}\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(Y=k\right) & = & \sum_{\alpha=0}^{\infty}{\alpha \choose k}\left(\frac{1}{4}\right)^{k}\left(\frac{3}{4}\right)^{\alpha-k}\cdot\frac{5^{\alpha}e^{-5}}{\alpha!}\\
+ & = & \sum_{\alpha=0}^{\infty}{\alpha \choose k}\frac{3^{\alpha-k}5^{\alpha}e^{-5}}{4^{\alpha}\alpha!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ הוא מספר הנסיונות של הפיכח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x=k\right) & = & \left(\sum_{i=1}^{k-1}\left(\frac{n-i-1}{n-i}\right)\right)\cdot\frac{1}{n-k+1}\\
+E\left(x\right) & = & \sum_{j=1}^{n}j\cdot\left(\sum_{i=1}^{j-1}\left(\frac{n-i-1}{n-i}\right)\right)\cdot\frac{1}{n-j+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ הוא השיכור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(X=k\right) & = & \left(\frac{n-1}{n}\right)^{k-1}\left(\frac{1}{n}\right)^{1}\\
+ & = & \frac{\left(n-1\right)^{k-1}}{n^{k}}\\
+E\left(x\right) & = & \sum_{i=1}^{n}i\cdot\frac{\left(n-1\right)^{i-1}}{n^{i}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw6d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עץ הסתברות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(X=0\right) & = & \frac{1}{2}\cdot0.7\\
+P\left(X=1\right) & = & \frac{1}{2}\cdot0.6+\frac{1}{2}\cdot0.3\\
+P\left(x=2\right) & = & \frac{1}{2}\cdot0.4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P=\frac{1}{2}\cdot0.3+\frac{1}{2}\cdot0.4\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

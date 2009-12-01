@@ -1,0 +1,913 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+אחרי זמן רב הקבל הוא נתק, אזי 
+\begin_inset Formula \begin{eqnarray*}
+V\left(0^{-}\right) & = & V_{c}\left(0^{-}\right)=V_{R_{2}}\left(0^{-}\right)\\
+V_{R_{2}}\left(0^{-}\right) & = & V\cdot\frac{R_{1}}{R_{1}+R_{2}}\\
+ & = & 10\cdot\frac{1}{1+1.5}\\
+ & = & 4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+ברגע שהמקור מנותק מקבלים מעגל של פריקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i_{c} & = & -i_{r}\\
+C\frac{\partial V_{c}}{\partial t} & = & -\frac{V_{R}}{R}\\
+C\frac{\partial V_{c}}{\partial t} & = & -\frac{V_{C}}{R}\\
+\frac{\partial V_{c}}{\partial t}+\frac{1}{RC}V_{C} & = & 0\\
+V_{C}\left(t\right) & = & Ae^{-\frac{1}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מרציפות המתח על הקבל 
+\begin_inset Formula $V_{c}\left(0^{-}\right)=V_{c}\left(0^{+}\right)=4$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}\left(0\right) & = & 4\\
+Ae^{-\frac{1}{RC}\cdot0} & = & 4\\
+A & = & 4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{c}\left(t\right)=4e^{-\frac{1}{RC}t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{c}\left(t\right) & = & \frac{1}{2}C\left(V\left(t\right)\right)^{2}\\
+ & = & \frac{1}{2}\cdot1\cdot16\cdot e^{-\frac{2}{RC}t}\\
+ & = & 8e^{-\frac{2}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האנרגיה המתבזבזת בנגד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{R}\left(t\right) & = & \int_{0}^{t}I^{2}Rdt^{\prime}\\
+ & = & \int_{0}^{t}\frac{4e^{-\frac{2}{RC}t}}{R}\cdot Rdt^{\prime}\\
+ & = & -4RCe^{-\frac{2}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+האנרגיה תשאר בקבל ולא תצא ממנו לנצח.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+ניקח את שתי הנגדים ושני סלילים ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & L_{1}+L_{2}\\
+R & = & \left(\frac{1}{R}+\frac{1}{R}\right)^{-1}\\
+ & = & \frac{R_{1}R_{2}}{R_{1}+R_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום משוואת המתחים ומוצאים תנאי התחלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\frac{\partial i}{\partial t}+Ri & = & \delta\left(t\right)\\
+L\int_{0^{-}}^{0^{+}}\frac{\partial i}{\partial t}+R\int_{0^{-}}^{0^{+}}i & = & \int_{0^{-}}^{0^{+}}\delta\left(t\right)\\
+L\left[i\left(0^{+}\right)-i\left(0^{-}\right)\right]+0 & = & 1\\
+i\left(0^{+}\right) & = & \frac{1}{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עובדים בזמן 
+\begin_inset Formula $t>0^{+}$
+\end_inset
+
+ אזי אפשר לרשום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\frac{\partial i}{\partial t}+Ri & = & 0\\
+\frac{\partial i}{\partial t}+\frac{R}{L}i & = & 0\\
+i & = & Ae^{-\frac{R}{L}t}\\
+A & = & \frac{1}{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נרשום משוואת המתחים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}+V_{R} & = & e_{s}\\
+V_{c}+RC\frac{\partial V_{c}}{\partial t} & = & e_{s}\\
+\frac{\partial V_{c}}{\partial t}+\frac{V_{c}}{RC} & = & \frac{1}{RC}e_{s}\\
+\frac{\partial V_{c}}{\partial t}+\frac{V_{c}}{RC} & = & \frac{30}{RC}\cos\left(2\pi\cdot10^{-3}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור את 
+\begin_inset Formula $ZIR$
+\end_inset
+
+ כלומר פתרון הומוגיני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial V_{c}}{\partial t}+\frac{V_{c}}{RC} & = & 0\\
+V_{c} & = & Ae^{-\frac{1}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר ערך התחלתי 
+\begin_inset Formula $V\left(0\right)=1$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $V_{c}=e^{-\frac{1}{RC}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו 
+\begin_inset Formula $ZSR$
+\end_inset
+
+, מקבלים בערך אותו דבר וה 
+\begin_inset Formula $\cos$
+\end_inset
+
+ נותן פתרון פרטי 
+\begin_inset Formula $\cos+\sin$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{h} & = & Ae^{-\frac{1}{RC}t}\\
+V_{p} & = & B\cos\left(\omega t\right)+C\sin\left(\omega t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\omega=2\pi\cdot10^{-3}$
+\end_inset
+
+.
+ נציב פתרון פרטי במשוואה ונקבל אחרי הרבה אלגברה שממש אין לי חשק לכתוב אותה
+ כי השעה כבר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בלילה ויש לי עוד
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ עבודות בית אחרות לעשות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+B & = & \frac{30\omega\cdot500}{500^{2}+\omega^{2}}\\
+C & = & \frac{30\cdot500^{2}}{500^{2}+\omega^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $v_{c}=v_{p}+v_{h}$
+\end_inset
+
+.
+ מציבים בתנאי התחלה ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{c} & = & Ae^{-\frac{1}{500}t}+\frac{30\cdot500}{500^{2}+\omega^{2}}\left[500\cos\left(\omega t\right)+\omega\sin\left(\omega t\right)\right]\\
+v_{c}\left(0\right) & = & 0\\
+A & = & -\frac{30\cdot500^{2}}{500^{2}+\omega^{2}}\\
+v_{C} & = & \left[-\frac{30\cdot500^{2}}{500^{2}+\omega^{2}}e^{-\frac{1}{500}t}+\frac{30\cdot500}{500^{2}+\omega^{2}}\left[500\cos\left(\omega t\right)+\omega\sin\left(\omega t\right)\right]\right]u\left(t\right)+e^{-\frac{1}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי גוזרים ומקבלים 
+\begin_inset Formula $i$
+\end_inset
+
+)אתם מאמינים לי כאשר אני אומר לכם שאני יודע איך לעשות נגזרת נכון? אז אין
+ צורך לעשות את זה כבר(
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נחזור על הבלגן שעשינו ומקבלים 
+\begin_inset Formula $A$
+\end_inset
+
+ שונה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\frac{30\cdot500}{500^{2}+\omega^{2}}\left[500\cos\left(\varphi\right)+\omega\sin\left(\varphi\right)\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז אם נדרוש שהמקדם של האקספוננט שווה ל
+\numeric on
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עבור 
+\begin_inset Formula $t>0$
+\end_inset
+
+ מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1-\frac{30\cdot500}{500^{2}+\omega^{2}}\left[500\cos\left(\varphi\right)+\omega\sin\left(\varphi\right)\right] & = & 0\\
+500\cos\left(\varphi\right)+\omega\sin\left(\varphi\right) & = & \frac{500^{2}+\omega^{2}}{30\cdot500}\\
+\varphi & = & 20.2^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+מכיוון שמשוואה היא ליניארית מסדר ראשון אפשר לבצע עליה פעולות של משוואה ליניארית)
+כפל בקבוע והזזה וגזירה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & -1\cdot v\left(t\right)+3v\left(t-4\right)\\
+ & = & -2\left(1-e^{-t}\right)u\left(t\right)+6\left(1-e^{-t+4}\right)u\left(t-4\right)\\
+ & = & -2u\left(t\right)-2e^{-t}u\left(t\right)+6u\left(t-4\right)+6e^{-t+4}u\left(t-4\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עם פולס אנחנו צריכים להוסיף נגזרת של הפונקציה המקורית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v^{\prime}\left(t-7\right) & = & \left(2\left(1-e^{-t+7}\right)u\left(t-7\right)\right)^{\prime}\\
+ & = & 2\cdot\left(1-e^{-t+7}\right)\delta\left(t-7\right)+2\left(\left(-t+7\right)e^{-t+7}\right)u\left(t-7\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונק 
+\begin_inset Formula $\delta\left(t-7\right)$
+\end_inset
+
+ חיה רק ב 
+\begin_inset Formula $t=\left(7^{-},7^{+}\right)$
+\end_inset
+
+ ובתחום הזה היא מוכפלת ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אזי מקבבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v^{\prime}\left(t-7\right)=2\left(-t+7\right)e^{-t+7}u\left(t-7\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=-2u\left(t\right)-2e^{-t}u\left(t\right)+6u\left(t-4\right)+6e^{-t+4}u\left(t-4\right)+2\left(-t+7\right)e^{-t+7}u\left(t-7\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw3/Elec5-4.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+ציור של הפתרון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+משוואת הנגד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V=\begin{cases}
+2000i & -2<V<2\\
+500i+1.5 & V>2\\
+500i-1.5 & V<2\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בתחום 
+\begin_inset Formula $-2<V<2$
+\end_inset
+
+ מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c} & = & V\\
+ & = & 500\left(-C\frac{\partial V}{\partial t}\right)+1.5\\
+\frac{\partial V}{\partial t}+200V & = & 300\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור 
+\begin_inset Formula $ZIR$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial V}{\partial t}+200V & = & 0\\
+V\left(0\right) & = & 0\\
+V\left(t\right) & = & 5e^{-200t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוברים ל 
+\begin_inset Formula $ZSR$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial V}{\partial t}+200v & = & 300\\
+V\left(0\right) & = & 5\\
+v\left(t\right) & = & \left(A+Be^{-200t}\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב בתנאי ההתחלה ונקבל 
+\begin_inset Formula $A=1.5$
+\end_inset
+
+, עכשיו נציב בתנאי התחלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+)כי זה 
+\begin_inset Formula $ZSR$
+\end_inset
+
+( ומקבלים 
+\begin_inset Formula $B=-1.5$
+\end_inset
+
+.
+ אזי הפתרון הכללי הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+v\left(t\right)=\left(1.5-1.5e^{-200t}\right)u\left(t\right)+5e^{-200t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונקציה מגיעה למתח של 
+\begin_inset Formula $2$
+\end_inset
+
+ ברגע 
+\begin_inset Formula $t_{2}=9.7\cdot10^{-3}sec$
+\end_inset
+
+.
+ במקרה הזה יש לנו נגד רגיל של 
+\begin_inset Formula $2K\Omega$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V+RC\frac{\partial v}{dt} & = & 0\\
+V\left(t_{2}\right) & = & 2\\
+V\left(t-t_{2}\right) & = & Ae^{-RC\left(t-t_{2}\right)}\\
+A & = & V\left(t_{2}\right)=2\\
+V\left(t_{2}\right) & = & 2e^{-RC\left(t-t_{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אילה הם הפתרונות בתחומים המסומנים.
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,1049 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\left(\overline{B}\cap\overline{C}\right)\cap A\right)\cup\left(\overline{A}\cap B\cap C\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(B\cup\left(A\cap\overline{C}\right)\cup\left(C\cap\overline{A}\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\left(A\cap B\right)\cap\overline{C}\right)\cup\left(C\cap\overline{B}\cap\overline{A}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\left(A\cap B\right)\cap\overline{C}\right)\cup\left(\left(A\cap C\right)\cap\overline{B}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Enumerate
+הגברים שהם מעל כיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+65
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+וגם הנשים מעל גיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+60
+\end_layout
+
+\begin_layout Enumerate
+האלמנות)נשים( שגילם שווה או פחות מ
+\numeric on
+60
+\end_layout
+
+\begin_layout Enumerate
+אף אחד)אלה שכן יש מישהו שגילו מעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+65
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+וכם מתחת ל
+\numeric on
+60
+\numeric off
+(
+\end_layout
+
+\begin_layout Enumerate
+האלמים והאלמנות שגילם בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+60
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+65
+\numeric off
+)או שווה ל
+\numeric on
+65
+\numeric off
+(
+\end_layout
+
+\begin_layout Enumerate
+האנשים שגילם בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+60
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+65
+\numeric off
+)או שווה ל
+\numeric on
+65
+\numeric off
+(
+\end_layout
+
+\begin_layout Enumerate
+קבוצת האלמנות)נשים( שגילם מעל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+60
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw1d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דיאגראמה של 
+\lang english
+W,Z,Y,F,M
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $K\subseteq L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $M\subseteq L$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $K\cap L\cap M\neq\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(K\cap\overline{L}\right)\subseteq M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $K\cap L\neq\emptyset\wedge K\cap M\neq\emptyset\wedge L\cap M=\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $A\cup B\subseteq A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+ אזי או ש 
+\begin_inset Formula $x\in A,x\not\in B$
+\end_inset
+
+או 
+\begin_inset Formula $x\in B,x\not\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in A,x\in B$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\not\in B$
+\end_inset
+
+: אזי 
+\begin_inset Formula $x\in A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B,x\not\in A$
+\end_inset
+
+: אזי 
+\begin_inset Formula $x\in\left(\overline{A}\cap B\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A,x\in B$
+\end_inset
+
+: אזי 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $A\cup B\supseteq A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+ אזי או ש 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ או 
+\begin_inset Formula $x\in B,x\not\in A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\cup B$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\in B,x\not\in A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in\left(\overline{A}\cap B\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x\in A\cup\left(\overline{A}\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A\cup B\cup C\cup D & = & A\cup\left(\overline{A}\cap\left(B\cup C\cup D\right)\right)\\
+ & = & A\cup\left(\overline{A}\cap\left(B\cup\left(\overline{B}\cap\left(C\cup D\right)\right)\right)\right)\\
+ & = & A\cup\left(\overline{A}\cap\left(B\cup\left(\overline{B}\cap\left(C\cup\left(\overline{C}\cap D\right)\right)\right)\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1,2,3\dots n & = & \sum_{i=1}^{n}n\\
+3,4,5,6\dots n+2 & = & \sum_{i=3}^{n+2}i\\
+5,6,7,8\dots n+4 & = & \sum_{i=5}^{n+4}i\\
+\vdots & = & \vdots\\
+2n+1,2n+2\dots2n+n & = & \sum_{i=2n+1}^{2n+n}i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+=\sum_{k=0}^{2n}\sum_{i=k+1}^{k+n}i\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2^{n}=\left(1+1\right)^{n}=\sum_{i=0}^{n}{n \choose k}1^{i}\cdot1^{n-i}=\sum_{i=0}^{n}{n \choose k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה:
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=1}^{2}\sum_{j=1}^{k}\left(-1\right)^{j+1}j & \overset{?}{=} & 0\\
+1+1+-2 & \overset{\checkmark}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי ההנחה מתקיימת עבור 
+\begin_inset Formula $n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=1}^{2n+2}\sum_{j=1}^{k}\left(-1\right)^{j+1}j & \overset{?}{=} & 0\\
+\underbrace{\sum_{k=1}^{2n}\sum_{j=1}^{k}\left(-1\right)^{j+1}j}_{0}+\sum_{j=1}^{2n+1}\left(-1\right)^{j+1}j+\sum_{j=1}^{2n+2}\left(-1\right)^{j+1}j & \overset{?}{=} & 0\\
+\sum_{j=1}^{2n+1}\left(-1\right)^{j+1}j+\sum_{j=1}^{2n+2}\left(-1\right)^{j+1}j & \overset{?}{=} & 0\\
+\sum_{j=1}^{2n+1}\left(-1\right)^{j+1}j+\sum_{j=1}^{2n+1}\left(-1\right)^{j+1}j+\underbrace{\left(-1\right)^{2n+3}}_{-1}\left(2n+3\right) & \overset{?}{=} & 0\\
+2\sum_{j=1}^{2n+1}\left(-1\right)^{j+1}j-\left(2n+3\right) & \overset{?}{=} & 0\\
+2\sum_{j=1}^{2n}\left(-1\right)^{j+1}j+2\cdot\left(-1\right)^{2n+2}\left(2n+2\right)-\left(2n+3\right) & \overset{?}{=} & 0\\
+2\sum_{j=1}^{n}\left[\left(j\right)-\left(+j+1\right)\right]+2\cdot\left(2n+2\right)-\left(2n+3\right) & \overset{?}{=} & 0\\
+2\sum_{j=1}^{n}-1+2n & \overset{?}{=} & 0\\
+-2n+2n & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+מספר האפשריות לבחור 
+\begin_inset Formula $k$
+\end_inset
+
+ איברים מבין 
+\begin_inset Formula $n$
+\end_inset
+
+ בלי חשיבות לסדר שווה למספר האפשריות לבחור 
+\begin_inset Formula $n-k$
+\end_inset
+
+ איברים מתוך 
+\begin_inset Formula $n$
+\end_inset
+
+ כי במקרה השני אנחנו בעצם בוחרים איזה איברים לא לבחר, שזה 
+\begin_inset Formula $k$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Standard
+צ"ל 
+\begin_inset Formula $\sum_{k=0}^{n}{n \choose k}\left(-1\right)^{k}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=0}^{n}{n \choose k}\left(-1\right)^{k} & \overset{?}{=} & 0\\
+\overbrace{\left(1-1\right)^{n}}^{\left(1+x\right)^{n}\sum_{k=0}^{n}{n \choose k}x^{k}} & \overset{?}{=} & 0\\
+0^{n} & \overset{\checkmark}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $B=A\dot{\cup}\left(B\setminus A\right)$
+\end_inset
+
+ כאשר האיחוד הוא זר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{P}\left(A\right) & \overset{?}{\leq} & \mathcal{P}\left(B\right)\\
+\mathcal{P}\left(A\right) & \overset{?}{\leq} & \mathcal{P}\left(A\dot{\cup}\left(B\setminus A\right)\right)\\
+\mathcal{P}\left(A\right) & \overset{?}{\leq} & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\setminus A\right)\\
+0 & \overset{\checkmark}{\leq} & \mathcal{P}\left(B\setminus A\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נכון תמיד כי 
+\begin_inset Formula $1\geq\mathcal{P}\left(X\right)\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $C=A\cap B$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A\cup B=\left(A\setminus C\right)\dot{\cup}\left(B\setminus C\right)\dot{\cup}C$
+\end_inset
+
+ כאשר האיחודים הם זרים, וההסרות הם שלמים)כלומר 
+\begin_inset Formula $C\subseteq A$
+\end_inset
+
+ ו 
+\begin_inset Formula $C\subseteq B$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{P}\left(A\cup B\right) & \overset{?}{=} & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(A\cap B\right)\\
+\mathcal{P}\left(\left(A\setminus C\right)\dot{\cup}\left(B\setminus C\right)\dot{\cup}C\right) & \overset{?}{=} & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(A\cap B\right)\\
+\mathcal{P}\left(A\setminus C\right)+\mathcal{P}\left(B\setminus C\right)+\mathcal{P}\left(C\right) & \overset{?}{=} & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(A\cap B\right)\\
+\mathcal{P}\left(A\right)-\mathcal{P}\left(c\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(c\right)+\mathcal{P}\left(c\right) & \overset{?}{=} & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(A\cap B\right)\\
+\mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(c\right) & \overset{?}{=} & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(A\cap B\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

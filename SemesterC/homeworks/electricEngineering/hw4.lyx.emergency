@@ -1,0 +1,295 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+אחרי זמן רב הקבל הוא נתג, אזי 
+\begin_inset Formula \begin{eqnarray*}
+V\left(0^{-}\right) & = & V_{c}\left(0^{-}\right)=V_{R_{2}}\left(0^{-}\right)\\
+V_{R_{2}}\left(0^{-}\right) & = & V\cdot\frac{R_{1}}{R_{1}+R_{2}}\\
+ & = & 10\cdot\frac{1}{1+1.5}\\
+ & = & 4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ב
+\end_layout
+
+\begin_layout Standard
+ברגע שהמקור מנותק מקבלים מעגל של פריקה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i_{c} & = & i_{r}\\
+C\frac{\partial V_{c}}{\partial t} & = & \frac{V_{R}}{R}\\
+C\frac{\partial V_{c}}{\partial t} & = & \frac{V_{C}}{R}\\
+\frac{\partial V_{c}}{\partial t}-\frac{1}{RC}V_{C} & = & 0\\
+V_{C}\left(t\right) & = & Ae^{-\frac{1}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מרציפות המתח על הקבל 
+\begin_inset Formula $V_{c}\left(0^{-}\right)=V_{c}\left(0^{+}\right)=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{c}\left(0\right) & = & 5\\
+Ae^{-\frac{1}{RC}\cdot0} & = & 5\\
+A & = & 5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{c}\left(t\right)=5e^{-\frac{1}{RC}t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{c}\left(t\right) & = & \frac{1}{2}C\left(V\left(t\right)\right)^{2}\\
+ & = & \frac{1}{2}\cdot1\cdot e^{-\frac{2}{RC}t}\\
+ & = & \frac{e^{-\frac{2}{RC}t}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האנרגיה המתבזבזת בנגד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{R}\left(t\right) & = & \int_{0}^{t}I^{2}Rdt^{\prime}\\
+ & = & \int_{0}^{t}\frac{5e^{-\frac{1}{RC}t}}{R}\cdot Rdt^{\prime}\\
+ & = & -5RCe^{-\frac{1}{RC}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+האנרגיה תשאר בקבל ולא תצא ממנו לנצח.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+ניחד את שתי הנגדים ושני הקבלים ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & L_{1}+L_{2}\\
+R & = & \left(\frac{1}{R}+\frac{1}{R}\right)^{-1}\\
+ & = & \frac{R_{1}+R_{2}}{R_{1}R_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום משוואת המתים ומוצאים תנאי התחלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L\frac{\partial i}{\partial t}+Ri & = & \delta\left(t\right)\\
+L\int_{0^{-}}^{0^{+}}\frac{\partial i}{\partial t}+R\int_{0^{-}}^{0^{+}}i & = & \int_{0^{-}}^{0^{+}}\delta\left(t\right)\\
+L\left[i\left(0^{+}\right)-i\left(0^{-}\right)\right]+0 & = & 1\\
+i\left(0^{+}\right) & = & \frac{1}{L}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עובדים בזמן 
+\begin_inset Formula $t>0^{+}$
+\end_inset
+
+ אזי אפשר לרשום
+\end_layout
+
+\begin_layout Standard
+=
+\begin_inset Formula \begin{eqnarray*}
+L\frac{\partial i}{\partial t}+Ri & = & 0\\
+\frac{\partial i}{\partial t}+\frac{R}{L}i & = & 0\\
+i & = & Ae\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

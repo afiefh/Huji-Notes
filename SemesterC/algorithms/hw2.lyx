@@ -1,0 +1,294 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+הוכחנו בכיתה שאם מתקימים 
+\begin_inset Formula $n$
+\end_inset
+
+ פעולות הוראה בו זמנית אזי צריכים לפחות 
+\begin_inset Formula $n$
+\end_inset
+
+ חדרי לימוד.
+\end_layout
+
+\begin_layout Standard
+אותו דבר בשאלה הזו רק ש"חדר לימוד" במקרה שלנו זה צבע.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+נגדיר אלג 
+\begin_inset Formula $FF$
+\end_inset
+
+, שיסדר את המסימות כך ש 
+\begin_inset Formula $t_{1}<t_{2}<\dots<t_{n}$
+\end_inset
+
+, נסמן את הסידור הזה ב 
+\begin_inset Formula $\Xi_{FF}$
+\end_inset
+
+ והאיבר ה 
+\begin_inset Formula $i$
+\end_inset
+
+ בסידור הוא 
+\begin_inset Formula $\Xi_{FF}\left(i\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $S_{0}$
+\end_inset
+
+ אלג כלשהוא שמסדר את האיברים 
+\begin_inset Formula $t_{1\dots n}$
+\end_inset
+
+, נסמן את הסידור הזה 
+\begin_inset Formula $\Xi_{S_{0}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $x_{i}^{s}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\Xi_{s}\left(x_{i}^{s}\right)=\Xi_{s}\left(i\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $S_{i}$
+\end_inset
+
+ מתלקד עם 
+\begin_inset Formula $S_{i-1}$
+\end_inset
+
+ עד לאינדקס ה 
+\begin_inset Formula $i-1$
+\end_inset
+
+, אבל בהמשך הוחלפו האינדקסים 
+\begin_inset Formula $x_{i}^{s_{i-1}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $i$
+\end_inset
+
+ )נסמן האיברים האלה ב 
+\begin_inset Formula $a,b$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Avg\left(S\right)$
+\end_inset
+
+ זמן הסיום של 
+\begin_inset Formula $S$
+\end_inset
+
+, ונראה כי 
+\begin_inset Formula $Avg\left(S_{i}\right)<Avg\left(S_{i-1}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צ"ל: 
+\begin_inset Formula $Avg\left(S_{i}\right)<Avg\left(S_{i-1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Avg\left(S_{i}\right) & \overset{?}{<} & Avg\left(S_{i-1}\right)\\
+\frac{\sum_{k=0}^{n-1}\left(n-k\right)\Xi_{s_{i}}\left(k\right)}{n} & \overset{?}{<} & \frac{\sum_{i=0}^{n-1}\left(n-k\right)\Xi_{s_{i-1}}\left(k\right)}{n}\\
+\sum_{k=0}^{n-1}\left(n-k\right)\Xi_{s_{i}}\left(k\right) & \overset{?}{<} & \sum_{i=0}^{n-1}\left(n-k\right)\Xi_{s_{i-1}}\left(k\right)\\
+\sum_{k=0}^{i-1}\left(n-k\right)\Xi_{s_{i}}\left(k\right)+\sum_{k=i}^{n-1}\left(n-k\right)\Xi_{s_{i}}\left(k\right) & \overset{?}{<} & \sum_{i=0}^{i-1}\left(n-k\right)\Xi_{s_{i-1}}\left(k\right)+\sum_{i=i}^{n-1}\left(n-k\right)\Xi_{s_{i-1}}\left(k\right)\\
+\sum_{k=i}^{n-1}\left(n-k\right)\Xi_{s_{i}}\left(k\right) & \overset{?}{<} & \sum_{i=i}^{n-1}\left(n-k\right)\Xi_{s_{i-1}}\left(k\right)\\
+\left(n-i\right)\Xi_{s_{i}}\left(i\right)+\left(n-x_{i}^{s_{i-1}}\right)\Xi_{s_{i}}\left(x_{i}^{s_{i-1}}\right) & \overset{?}{<} & \left(n-i\right)\Xi_{s_{i}}\left(i\right)+\left(n-x_{i}^{s_{i-1}}\right)\Xi_{s_{i}}\left(x_{i}^{s_{i-1}}\right)\\
+\underbrace{\left(n-i\right)}_{o}a+\underbrace{\left(n-x_{i}^{s_{i-1}}\right)}_{u}b & \overset{?}{<} & \left(n-i\right)b+\left(n-x_{i}^{s_{i-1}}\right)a\\
+oa+ub & \overset{?}{<} & ob+ua\\
+0 & \overset{?}{<} & ob+ua-oa-ub\\
+0 & \overset{?}{<} & o\underbrace{\left(b-a\right)}_{>0}+u\left(a-b\right)\\
+0 & \overset{?}{<} & \underbrace{o-u}_{o>u}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הוכחנו כי כל פעם שמתקרבים ל
+\begin_inset Formula $FF$
+\end_inset
+
+ אנחנו נהיה יותר יעילעם מאשר כל האפשרויות שלא מתקרבות, אזי 
+\begin_inset Formula $S_{n}=FF$
+\end_inset
+
+ אזי 
+\begin_inset Formula $FF$
+\end_inset
+
+ הוא יותר יעיל מכל האפטסיוט האחרות.
+ משל.
+\end_layout
+
+\end_body
+\end_document

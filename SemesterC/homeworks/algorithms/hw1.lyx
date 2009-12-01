@@ -1,0 +1,1140 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+p_{1} & = & \sum_{i=0}^{d_{1}}a_{i}n^{i}\\
+p_{2} & = & \sum_{i=0}^{d_{2}}b_{i}n^{i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+צ"ל 
+\begin_inset Formula $p_{1}\left(n\right)=\Theta\left(p_{2}\left(n\right)\right)\Leftrightarrow d_{1}=d_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל 
+\begin_inset Formula $p_{1}\left(n\right)=\Theta\left(p_{2}\left(n\right)\right)\Leftarrow d_{1}=d_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $d_{1}=d_{2}=d$
+\end_inset
+
+ אזי 
+\begin_inset Formula \begin{eqnarray*}
+p_{1} & = & a_{d}n^{d}+\dots+a_{0}\\
+p_{2} & = & b_{d}n^{d}+\dots+b_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממשפט שלמדנו בקורס מבני נתונים יודעים כי אם 
+\begin_inset Formula $\lim_{n\to\infty}\frac{p_{1}\left(n\right)}{p_{2}\left(n\right)}=c\neq0$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $p_{1}=\Theta\left(p_{2}\right)$
+\end_inset
+
+.
+ ממשפט אחר שלמדנו בקורס אינפי יודעים כי במקרה זה 
+\begin_inset Formula $\lim_{n\to\infty}\frac{p_{1}\left(n\right)}{p_{2}\left(n\right)}=\frac{a_{d}}{b_{d}}$
+\end_inset
+
+.
+ מכיוון ש 
+\begin_inset Formula $a_{d}>0$
+\end_inset
+
+ ו 
+\begin_inset Formula $b_{d}>0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\frac{a_{d}}{b_{d}}>0$
+\end_inset
+
+.
+ אזי מתקיימים תנאי המשפט הראשון אזי הוכחנו 
+\begin_inset Formula $p_{1}\left(n\right)=\Theta\left(p_{2}\left(n\right)\right)\Leftarrow d_{1}=d_{2}$
+\end_inset
+
+.
+ אני לא אצטט ההוכחה של המשפטים האלה ואשאיר את זה כתרגיל בית לבודק התרגילים
+ למצא אותם
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+האמת שאני מרגיש כי אין צורך לפתור תרגיל זה בכלל.
+ כל מי שעבר בקורס מבני נתונים מקיר את הפתרון לשאלות האלה.
+ אזי התרגיל כולו הופך לבזבוז זמן לסטודנטים ולא מלמד משהוא חדש.
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsubsection
+צ"ל 
+\begin_inset Formula $p_{1}\left(n\right)=\Theta\left(p_{2}\left(n\right)\right)\Rightarrow d_{1}=d_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $d_{1}\neq d_{2}$
+\end_inset
+
+.
+ לצורך ההוכחה נניח)בלי הגבלת הכלליות( כי 
+\begin_inset Formula $d_{1}<d_{2}$
+\end_inset
+
+)
+\begin_inset Formula $d_{1}>d_{2}$
+\end_inset
+
+( אזי מתקיים כי 
+\begin_inset Formula $\lim_{n\to\infty}\frac{p_{1}}{p_{2}}=0$
+\end_inset
+
+)
+\begin_inset Formula $\lim_{n\to\infty}\frac{p_{1}}{p_{2}}=\infty$
+\end_inset
+
+( אזי לפי משפט שלמדנו בקורס מבני נתונים מתקיים כי 
+\begin_inset Formula $p_{1}=\mathcal{O}\left(p_{2}\right)$
+\end_inset
+
+ אבל 
+\begin_inset Formula $p_{1}\neq\Omega\left(p_{2}\right)$
+\end_inset
+
+)
+\begin_inset Formula $p_{1}=\Omega\left(p_{2}\right)$
+\end_inset
+
+ אבל 
+\begin_inset Formula $p_{1}\neq\mathcal{O}\left(p_{2}\right)$
+\end_inset
+
+( בסתירה לנתון כי 
+\begin_inset Formula $p_{1}\left(n\right)=\Theta\left(p_{2}\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+סיום הוכחה
+\end_layout
+
+\begin_layout Standard
+מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1.1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1.2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נובעת ההוכחה של
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $p_{1}\left(n\right)=o\left(p_{2}\left(n\right)\right)\Leftrightarrow d_{1}<d_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $p_{1}\left(n\right)=o\left(p_{2}\left(n\right)\right)\Leftarrow d_{1}<d_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $d_{1}<d_{2}$
+\end_inset
+
+ אזי מתקיים 
+\begin_inset Formula $\lim_{n\to\infty}\frac{p_{1}}{p_{2}}=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $p_{1}\left(n\right)=o\left(p_{2}\left(n\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+סידור מגדול לקטן, שמאלה לימינ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+n!>n^{\log\log n}>\log\left(n!\right)>n^{\nicefrac{1}{3}}>\log^{2}\left(n\right),\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n!$
+\end_inset
+
+ יותר גול מ
+\begin_inset Formula $n^{\log\log n}$
+\end_inset
+
+ כי 
+\begin_inset Formula $n!$
+\end_inset
+
+ זה דומה הרבה ל 
+\begin_inset Formula $n^{n}$
+\end_inset
+
+, ו 
+\begin_inset Formula $n^{\log n}$
+\end_inset
+
+ נראה לי מסדר גודל של 
+\begin_inset Formula $a^{n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula $n!$
+\end_inset
+
+ יותר גדולה מ 
+\begin_inset Formula $a^{n}$
+\end_inset
+
+ ברור כי 
+\begin_inset Formula $\log\left(n!\right)$
+\end_inset
+
+ יותר גדולה מפונקציה ליניארית, אזי היא יותר גדולה מ 
+\begin_inset Formula $n^{\nicefrac{1}{3}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\log^{2}\left(n\right)$
+\end_inset
+
+ ויותר קטנה מאשר פונקציה אקספוננטיאלית.
+\end_layout
+
+\begin_layout Standard
+מכיוון ש 
+\begin_inset Formula $\log n<\sqrt{n}$
+\end_inset
+
+ ולא רק בקשר ליניארי או ריבועי אזי ברור כי 
+\begin_inset Formula $n^{\nicefrac{1}{3}}>\log^{2}\left(n\right)$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+שאלה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Subsection
+פסודו קוד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+merge_sort(
+\begin_inset Formula $arr$
+\end_inset
+
+,
+\begin_inset Formula $start$
+\end_inset
+
+,
+\begin_inset Formula $end$
+\end_inset
+
+) {
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--if 
+\begin_inset Formula $start==end$
+\end_inset
+
+: return
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--
+\begin_inset Formula $weirdmid=\frac{2}{3}\cdot\left(end-start\right)+start$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--merge_sort(
+\begin_inset Formula $arr$
+\end_inset
+
+,
+\begin_inset Formula $start$
+\end_inset
+
+,
+\begin_inset Formula $weirdmid$
+\end_inset
+
+)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--merge_sort(
+\begin_inset Formula $arr$
+\end_inset
+
+,
+\begin_inset Formula $weirdmid$
+\end_inset
+
++1,end)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--mege(arr,start,weirdmid,weirdmid+1,end)
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--return
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+}
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $\frac{2}{3}$
+\end_inset
+
+-merge-sort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הערה: אני מניח העברת מערך
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+by-reference
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ופונקצית
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+merge
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שמקבלת את המקומות של שתי חלקי המערך ויודעת למזג אותם בלי בעיות.
+\end_layout
+
+\begin_layout Subsection
+ניתוח זמן ריצה
+\end_layout
+
+\begin_layout Standard
+האלגוריתם ירוץ בזמן של 
+\begin_inset Formula $\Theta\left(n\log n\right)$
+\end_inset
+
+.
+ זה בגלל שהוא יותר מהר מאלגורתיתם
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+
+\begin_inset Formula $\frac{1}{3}-\frac{1}{3}-\frac{1}{3}-\mbox{merge-sort}$
+\end_inset
+
+
+\lang hebrew
+שפועל בזמן 
+\begin_inset Formula $\mathcal{\Theta}\left(n\log n\right)$
+\end_inset
+
+ והוא יותר מהר מאלגוריתם 
+\begin_inset Formula $\frac{1}{2}-\frac{1}{2}-\mbox{merge-sort}$
+\end_inset
+
+ שרץ בזמן 
+\begin_inset Formula $\Theta\left(n\log n\right)$
+\end_inset
+
+ לכן לפי משפט הסנדוויץ
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+משפט שמרצה החד"ה בטכניון אוהבים הרבה
+\end_layout
+
+\end_inset
+
+ זמן הריצה של האלגוריתם 
+\begin_inset Formula $\frac{2}{3}-\frac{1}{3}-\mbox{merge-sort}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\Theta\left(n\log n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $f\left(n\right)=\Theta\left(g\left(n\right)\right)$
+\end_inset
+
+ כלומר קיים 
+\begin_inset Formula $c_{1}$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $n>n_{1}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(n\right)<c_{1}\cdot g\left(n\right)$
+\end_inset
+
+ וגם קיים 
+\begin_inset Formula $c_{n}$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $n>n_{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(n\right)>c_{2}\cdot g\left(n\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\log\left(f\left(n\right)\right)=\Theta\left(\log\left(g\left(n\right)\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\log\left(f\left(n\right)\right)=\mathcal{O}\left(\log\left(g\left(n\right)\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך למצא 
+\begin_inset Formula $c$
+\end_inset
+
+ ו 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך ש עבור 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\log\left(f\left(n\right)\right)<c\log\left(g\left(n\right)\right)$
+\end_inset
+
+.
+ יודעים כי עבור 
+\begin_inset Formula $n_{1},c_{1}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(n\right)<c_{1}\cdot g\left(n\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\log\left(f\left(n\right)\right) & < & \log\left(g\left(n\right)\right)<c\log\left(c_{1}\cdot f\left(n\right)\right)\\
+\log\left(f\left(n\right)\right) & < & c\log\left(c_{1}f\left(n\right)\right)\\
+\log\left(f\left(n\right)\right) & < & c\log\left(c_{1}\right)+c\log\left(f\left(n\right)\right)\\
+0 & < & c\log\left(c_{1}\right)+\left(c-1\right)\log\left(f\left(n\right)\right)\\
+k & < & c^{\prime}\log\left(f\left(n\right)\right)\\
+\frac{k}{\log\left(f\left(n\right)\right)} & < & c^{\prime}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בוחרים את 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ מינימאלי בתחום 
+\begin_inset Formula $\left(n_{1},\infty\right)$
+\end_inset
+
+ ואז אין בעיה בבחירה של 
+\begin_inset Formula $c^{\prime}$
+\end_inset
+
+ כזה ואת לחשב את 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ משל.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\log\left(f\left(n\right)\right)=\Omega\left(\log\left(g\left(n\right)\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך למצא 
+\begin_inset Formula $c$
+\end_inset
+
+ ו 
+\begin_inset Formula $n_{0}$
+\end_inset
+
+ כך ש עבור 
+\begin_inset Formula $n>n_{0}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\log\left(f\left(n\right)\right)>c\log\left(g\left(n\right)\right)$
+\end_inset
+
+.
+ יודעים כי עבור 
+\begin_inset Formula $n_{2},c_{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(n\right)>c_{2}\cdot g\left(n\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\log\left(f\left(n\right)\right) & > & \log\left(g\left(n\right)\right)<c\log\left(c_{2}\cdot f\left(n\right)\right)\\
+\log\left(f\left(n\right)\right) & > & c\log\left(c_{2}f\left(n\right)\right)\\
+\log\left(f\left(n\right)\right) & > & c\log\left(c_{2}\right)+c\log\left(f\left(n\right)\right)\\
+0 & > & c\log\left(c_{2}\right)+\left(c-1\right)\log\left(f\left(n\right)\right)\\
+k & > & c^{\prime}\log\left(f\left(n\right)\right)\\
+\frac{k}{\log\left(f\left(n\right)\right)} & > & c^{\prime}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בוחרים את 
+\begin_inset Formula $n$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(n\right)$
+\end_inset
+
+ מקסימאלי בתחום 
+\begin_inset Formula $\left(n_{2},\infty\right)$
+\end_inset
+
+ ואז אין בעיה בבחירה של 
+\begin_inset Formula $c^{\prime}$
+\end_inset
+
+ ואחר כך לחשב את 
+\begin_inset Formula $c$
+\end_inset
+
+.
+ משל.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $2^{f\left(x\right)}=\Theta\left(2^{g\left(x\right)}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה נגדית 
+\begin_inset Formula $f\left(x\right)=3x,g\left(x\right)=2x$
+\end_inset
+
+ אזי מתקבל 
+\begin_inset Formula $2^{f\left(x\right)}=2^{3x}=8^{x}$
+\end_inset
+
+ ו 
+\begin_inset Formula $2^{g\left(x\right)}=2^{2x}=4^{x}$
+\end_inset
+
+.
+ יודעים כי פונקציות אלה לא מקיימות תנאי 
+\begin_inset Formula $\Theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\sum_{v\in V}d\left(v\right)=2\left|E\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ קיימים שתי קודקודים 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+.
+ לכן מהיות הצלע 
+\begin_inset Formula $e$
+\end_inset
+
+ בגרף עלתה דרגת הקודקודים 
+\begin_inset Formula $v_{1},v_{2}$
+\end_inset
+
+ באחד.
+ כלומר כל צלע טורמת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שתי דרגות בגרף.
+ אזי אזי אם מחברים את דרגות כל הקודקודים בגרף מקבלים 
+\begin_inset Formula $2\left|E\right|$
+\end_inset
+
+.
+ משל.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+האמת שזה די ברור ולא נראלי כמשהוא שצריך הוכחה.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+כל עץ כולל לפחות עלה אחד
+\end_layout
+
+\begin_layout Standard
+
+\lang english
+Computation error: Cannot be proven because statement is incorrect.
+\end_layout
+
+\begin_layout Standard
+דוגמה לעצים שאין בהם שתי אלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename hw1d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמאות לעצים בעלי עלה אחד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Standard
+נתון כי לכל 
+\begin_inset Formula $e\in E$
+\end_inset
+
+ הגרף 
+\begin_inset Formula $\left(V,E\setminus\left\{ e\right\} \right)$
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+כתיב מתמטי נכון
+\end_layout
+
+\end_inset
+
+ הוא עץ.
+ צ"ל כי הגרף 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ הוא מעגל פשוט.
+\end_layout
+
+\begin_layout Standard
+הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ לא יכול להכיל יותר ממעגל אחד, כי במקרה זה הסרת צלע אחת כלשהיא תשאיר מעגל.
+ אזי יש בגרף לא יותר ממעגל אחד.
+\end_layout
+
+\begin_layout Standard
+הגרך 
+\begin_inset Formula $G$
+\end_inset
+
+ לא יכול לא להכיל מעגלים כי במקרה זה הסרת צלע כלשהיא מייצרת גרף לא קשיר.
+ אזי יש בגרף לא פחות ממעגל אחד.
+\end_layout
+
+\begin_layout Standard
+הגרף 
+\begin_inset Formula $G$
+\end_inset
+
+ לא יכול להכיל עלים כי במקרה זה הסרת הצלע של העלה משאירה מעגל.
+\end_layout
+
+\end_body
+\end_document

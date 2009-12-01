@@ -1,0 +1,1090 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נחשב את 
+\begin_inset Formula $\frac{P\left(x=k+1\right)}{P\left(x=k\right)}$
+\end_inset
+
+ ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{P\left(x=k+1\right)}{P\left(x=k\right)} & = & \frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k+1}}{\left(k+1\right)!}\right)}{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}\\
+ & = & \frac{\lambda}{k+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר הפונק עולה כאשר 
+\begin_inset Formula $k+1<\lambda$
+\end_inset
+
+ ועולה במקרה של 
+\begin_inset Formula $k+1>\lambda$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\lambda=k+1$
+\end_inset
+
+ היחס שווה בדיוק ל
+\numeric on
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ולכן 
+\begin_inset Formula $P\left(x=k\right)=P\left(x=k+1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $k<\lambda<k+1$
+\end_inset
+
+ אז המקסימום מתקבל ב 
+\begin_inset Formula $P\left(x=k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+ההסתברות שרכיב יתקלקל שווה בכל אחד מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+החודשים.
+ המכשיר פועל כל עוד יש לפחות אחד מהרכיבים תקין.
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+ההסתברות שרכיב אחד יתכלכל בחצי שנה הוא 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ לכן ההסתברות ששלושתם יתכלכלו)באופן בלתי תלוי( היא 
+\begin_inset Formula $\left(\frac{1}{2}\right)^{3}=\frac{1}{8}$
+\end_inset
+
+, אזי ההסתברות שלא כולם התכלכלו במשך 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ שנה היא 
+\begin_inset Formula \[
+1-\frac{1}{8}=\frac{7}{8}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+ההסתברות שלפחות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+תקינים היא ההסתברות שנקבל או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+9
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בניסוי הזה כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x\geq9\right) & = & P\left(x=9\right)+P\left(x=10\right)\\
+ & = & {10 \choose 9}\left(\frac{7}{8}\right)^{9}\left(\frac{1}{8}\right)+{10 \choose 10}\left(\frac{7}{8}\right)^{10}\\
+ & = & 0.63\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Formula $w$
+\end_inset
+
+ כדורים לבנים ו 
+\begin_inset Formula $b$
+\end_inset
+
+ שחורים.
+\end_layout
+
+\begin_layout Standard
+ההסתברות שנצליח למצא 
+\begin_inset Formula $a$
+\end_inset
+
+ לבנים בדיוק היא 
+\begin_inset Formula $\frac{{k \choose a}{w-k \choose k-a}}{{w \choose k}}$
+\end_inset
+
+ ולכן הסיכוי שנכשל הוא 
+\begin_inset Formula $1-\frac{{k \choose a}{w-k \choose k-a}}{{w \choose k}}$
+\end_inset
+
+.
+ כדי לחזור על הניסוי בדיוק 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים צריכים להיכשל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ פעמים ולהצליח בפעם ב 
+\begin_inset Formula $n$
+\end_inset
+
+ כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(X=n\right)=\left(1-\frac{{k \choose a}{w-k \choose k-a}}{{w \choose k}}\right)^{n-1}\cdot\left(\frac{{k \choose a}{w-k \choose k-a}}{{w \choose k}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נסמן את 
+\begin_inset Formula $p$
+\end_inset
+
+ להיות ההצלחה בקבלת ערך זוגי, אזי 
+\begin_inset Formula $\left(1-p\right)p_{n-1}$
+\end_inset
+
+ להיכשל 
+\begin_inset Formula $n-1$
+\end_inset
+
+ פעמים ולהצליח 
+\begin_inset Formula $\left(1-p_{n-1}\right)$
+\end_inset
+
+ הפעם ב 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אזי מקבלים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P_{n}=p\left(1-P_{n-1}\right)+\left(1-p\right)P_{n-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה עבור 
+\begin_inset Formula $n$
+\end_inset
+
+, אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{1} & = & \frac{1}{2}\left(1+\left(1-2\cdot p\right)^{1}\right)\\
+ & = & 1-p\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נכון תמיד אזי נניח נכונות הטענה עבור 
+\begin_inset Formula $n-1$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{n-1} & = & \frac{1}{2}\left(1+\left(1-2p\right)^{n-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2P_{n} & = & 1+\left(1-2p\right)^{n}\\
+ & = & 1+\left(1-2p\right)^{n-1}\cdot\left(1-2p\right)\\
+ & = & 2p_{n-1}\cdot\left(1-2p\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נכון לפי סעיף א
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נחשב ההסתברות ש 
+\begin_inset Formula $A$
+\end_inset
+
+ ניצחה בסדרה, כלומר קיבלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נצחונות לפני 
+\begin_inset Formula $B$
+\end_inset
+
+.
+ אזי ההסתברות היא ששיחקו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משחקים ו 
+\begin_inset Formula $A$
+\end_inset
+
+ ניצחה בכולם או שיחקו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משחקים ו
+\begin_inset Formula $A$
+\end_inset
+
+ ניצחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מהם או שחקו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+משחקים ו 
+\begin_inset Formula $A$
+\end_inset
+
+ ניצחה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מהם, כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x=A\right) & = & {3 \choose 3}p^{3}+{4 \choose 3}p^{3}\left(1-p\right)^{1}+{4 \choose 3}p^{3}\left(1-p\right)^{2}\\
+ & = & \sum_{i=3}^{5}{i \choose 3}p^{3}\left(1-p\right)^{i-3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $B$
+\end_inset
+
+ לנצח ב
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מהמשחקים)אחרי המשחק הראשון(, ו 
+\begin_inset Formula $A$
+\end_inset
+
+ לנצח במשחק הראשון אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\cap B\right)=p\left(p\cdot p+p\left(1-p\right)p+\left(1-p\right)p\cdot p+\left(1-p\right)\left(1-p\right)pp+\left(1-p\right)p\left(1-p\right)p\right)\]
+
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\vert B\right) & = & \frac{p\left(p\cdot p+p\left(1-p\right)p+\left(1-p\right)p\cdot p+\left(1-p\right)\left(1-p\right)pp+\left(1-p\right)p\left(1-p\right)p\right)}{p}\\
+ & = & p^{2}+2\left(1-p\right)p^{2}+2\left(1-p\right)\left(1-p\right)p^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(B\vert A\right) & = & \frac{P\left(A\vert B\right)}{P\left(A\cap B\right)}\\
+ & = & \frac{p^{2}+2\left(1-p\right)p^{2}+2\left(1-p\right)\left(1-p\right)p^{2}}{\begin{pmatrix}p^{2}+2\left(1-p\right)p^{2}+2\left(1-p\right)\left(1-p\right)p^{2}+\\
+\left(1-p\right)\left(2\left(1-p\right)p^{3}+p^{3}+3\left(1-p\right)p^{3}+\right)\end{pmatrix}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(y=k\right) & = & e^{-\lambda}\cdot\frac{\lambda^{k}}{k!}-e^{-\lambda}\cdot\frac{\lambda^{0}}{0!}\\
+ & = & e^{-\lambda}\cdot\frac{\lambda^{k}}{k!}-e^{-\lambda}\\
+ & = & e^{-\lambda}\cdot\left(\frac{\lambda^{k}}{k!}-1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+צ"ל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{k=0}^{n}P\left(x=k\right)=\sum\frac{{A \choose k}{N-A \choose n-k}}{{N \choose n}}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי תרגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+: 
+\begin_inset Formula $\sum_{k=0}^{n}{A \choose k}{N-A \choose n-k}={N \choose n}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{{N \choose n}}{{N \choose n}}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\end_body
+\end_document

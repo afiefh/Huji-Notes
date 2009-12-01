@@ -1,0 +1,4396 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תורת ההסתבאות
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+פרטים טכניים
+\end_layout
+
+\begin_layout Standard
+שם מתרגל:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+ronprtz@math.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+ניתן להוריד את הזרגילים מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+www.math.huji.ac.il/~ronprtz
+\end_layout
+
+\begin_layout Standard
+שעת קבלה: בתאום)עדיף יום א'(
+\end_layout
+
+\begin_layout Standard
+ניתן להוריד ההרצאות של רז קופרמן
+\end_layout
+
+\begin_layout Section
+עברתי לקורס אחר
+\end_layout
+
+\begin_layout Standard
+מייל של מתרגל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+lravner@gmail.com
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Section
+מרצה:
+\end_layout
+
+\begin_layout Standard
+נעם ברגר
+\end_layout
+
+\begin_layout Standard
+משרד:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+310
+\end_layout
+
+\begin_layout Standard
+רמייל:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+berger@math.huji.ac.il
+\end_layout
+
+\begin_layout Standard
+שעת קבלה: יום א
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+16:30
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+-
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+17:30
+\end_layout
+
+\begin_layout Standard
+ציון:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+90
+\numeric off
+% בחינה,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\numeric off
+% תרגיל
+\end_layout
+
+\begin_layout Standard
+חובה להגיש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+80
+\numeric off
+% מהתרגילים.
+\end_layout
+
+\begin_layout Section
+ספרים:
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+A first course in probability S.Ross
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+An introduction to probability theory and applications W.Feller
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Weighing the odds D.williams
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+Lecture notes in probability R.Kupferman
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang hebrew
+נגיש באתר של רז קופרמן באוניברסיטה העברית
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Standard
+לא נלמד כלומ היום כי עדיין לא היתה הרצאה אזי נשחק משחקים ובעתיד נלמד איך
+ לפתור אותם.
+\end_layout
+
+\begin_layout Standard
+בעיה ממתמטיקה דיסקרטית.
+\end_layout
+
+\begin_layout Standard
+קיים מוסג של
+\begin_inset Formula $\mbox{Hyper-Set}$
+\end_inset
+
+:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $H=\left(V,E\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $E\subseteq P\left(V\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר בגרף הצלעות לא רק מחברות שתי קודקודי, אלה הוא קבוצה)לא ממוינת( של
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+היפר-גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+צביע הוא 
+\begin_inset Formula $\exists f:V\to\left\{ 1,2\right\} $
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\forall a\in E:f\left(E\right)=\left\{ 1,2\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+היפר-גרף הוא 
+\begin_inset Formula $r$
+\end_inset
+
+ יוניפורמי אם בכל צלע יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $r$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Probability/c2d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+היפר גרף
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+יוניפורמי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+מספר הצלעות בהיפר-גרף 
+\begin_inset Formula $r$
+\end_inset
+
+ יוניפורמי שאינו 
+\begin_inset Formula $2$
+\end_inset
+
+ צביע 
+\begin_inset Formula $2^{r-1}\leq$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+סדרה באוך 
+\begin_inset Formula $n$
+\end_inset
+
+ בנויה מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+, האם ניתן לכתוב אותה באופן שכל תת סדרה באורך 
+\begin_inset Formula $k$
+\end_inset
+
+ תופיע לא יותר מפעם אחת?
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $2^{k}=n$
+\end_inset
+
+ קיימת סדרה)קל(, 
+\begin_inset Formula $2^{k}<\sqrt{n}$
+\end_inset
+
+ קיימת סדרה)דרוש הוכחה(
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+מרחב הסתברות הוא שלשה 
+\begin_inset Formula $\left(\Omega,\mathcal{F},\mathcal{P}\right)$
+\end_inset
+
+ כאשר:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\Omega$
+\end_inset
+
+ הוא קבוצה מאחב המדגם
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ היא אוסף של תת קבוצות של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ שמקיימת מספר תכונות שיפרטו להלן.
+ "אוסף המאורעות"
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{P}:\mathcal{F}\to\left[0,1\right]$
+\end_inset
+
+ שמקיימת מספר תכונות שיפרטו בהמשך.
+ "פונקצית ההסתברות"
+\end_layout
+
+\begin_layout Section
+תכונות 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\in\mathcal{F}$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A\in\mathcal{F}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $A^{c}=\Omega\setminus A\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1},A_{2},A_{3}\dots\in\mathcal{F}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\cup_{n=1}^{\infty}A_{n}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אוסף שמקיים דרישות אלה נקרא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה
+\end_layout
+
+\begin_layout Section
+תכונות 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\mathcal{P}\left(\emptyset\right)=0$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{P}\left(\Omega\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1},A_{2},A_{3}\dots$
+\end_inset
+
+)אוסף בן מניה( זרות אז 
+\begin_inset Formula $\mathcal{P}\left(\cup_{n=1}^{\infty}A_{n}\right)=\sum_{n=1}^{\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה: 
+\end_layout
+
+\begin_layout Standard
+ברוב המקרים שנדון בהם 
+\begin_inset Formula $\left|\Omega\right|<\infty$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|\mathcal{F}\right|=2^{\left|\Omega\right|}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+הראו כי 
+\begin_inset Formula $\mathcal{F}=2^{\Omega}$
+\end_inset
+
+ הוא 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה כלומר מקיים את התכונות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ ו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+הטלת קוביה.
+ אזי 
+\begin_inset Formula $\Omega=\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\mathcal{F}=2^{\Omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה למאורעות:
+\end_layout
+
+\begin_layout Enumerate
+יצא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+.
+ בשפה הפורמאלית: 
+\begin_inset Formula $\left\{ 3\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יצא מספר זוגי.
+ בשפה פורמאלית: 
+\begin_inset Formula $\left\{ 2,4,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+לא יצא כלום.
+ 
+\begin_inset Formula $\emptyset$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+יצא מספר כלשהוא.
+ 
+\begin_inset Formula $\left\{ 1,2,3,4,5,6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל מאורע 
+\begin_inset Formula $A$
+\end_inset
+
+ ההסתברות היא 
+\begin_inset Formula $\mathcal{P}\left(A\right)=\frac{\left|A\right|}{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה יותר מסובכת:
+\end_layout
+
+\begin_layout Standard
+מטילים שתי קוביות.
+\end_layout
+
+\begin_layout Standard
+מרחב המדגם: 
+\begin_inset Formula $\Omega=\left\{ \left(i,j\right):1\leq i\leq6,1\leq j\leq6\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אוסף המאורעות: 
+\begin_inset Formula $\mathcal{F}=2^{\Omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{P}\left(A\right)=\frac{\left|A\right|}{36}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הוא המאורע שיצא דאבל? 
+\begin_inset Formula $D=\left\{ \left(1,1\right),\left(2,2\right),\left(3,3\right),\left(4,4\right),\left(5,5\right),\left(6,6\right)\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הסיכוי לקבל דאבל? 
+\begin_inset Formula $\mathcal{P}\left(D\right)=\frac{\left|D\right|}{36}=\frac{6}{36}=\frac{1}{6}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+התפלגות אחידה: יהי 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ מרחב מדגם סופי, ההתפלגות האחידה של 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ היא מרחב הדוגמה 
+\begin_inset Formula $\left(\Omega,\mathcal{F},\mathcal{P}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\mathcal{F}=2^{\Omega}$
+\end_inset
+
+ ולכל 
+\begin_inset Formula $A\in\mathcal{F}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\mathcal{P}\left(A\right)=\frac{\left|A\right|}{\Omega}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+אם רוצים לבחור נקודה אקראית בקטע 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+.
+ מה ההסתברות לבחור נקודה ב
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Subparagraph
+מרחב ההסתבאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Omega=\left[0,1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+אוסף המאורעוץ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{F}=\sigma\left(\mbox{\R{הקטעים}}\right)$
+\end_inset
+
+ ה 
+\begin_inset Formula $\sigma$
+\end_inset
+
+-אלגברה המינימאלית המכילה את כל הקטעים
+\end_layout
+
+\begin_layout Subparagraph
+פונקצית ההסתברות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{P}\left(\left[a,b\right]\right)=b-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+קיימת הרחבה יחידה של 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ ח 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+, כלומר קיימת פונקציה יחידה 
+\begin_inset Formula $\mathcal{P}:\mathcal{F}\to\left[0,1\right]$
+\end_inset
+
+ שגם מקיים את הדרישות מהשיעור הקודם וגם מקיים שלכל קטע 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\mathcal{P}\left(\left[a,b\right]\right)=b-a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $x_{0}\in\left[0,1\right]$
+\end_inset
+
+ מה 
+\begin_inset Formula $\mathcal{P}\left(\left\{ x_{0}\right\} \right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ 
+\begin_inset Formula $\left\{ x_{0}\right\} \subseteq\left[x_{0}-\varepsilon,x_{0}+\varepsilon\right]$
+\end_inset
+
+ נוכיח כי 
+\begin_inset Formula $\mathcal{P}\left(A\right)\leq\mathcal{P}\left(B\right)\Leftarrow A\subseteq B$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\mathcal{P}\left(\left\{ x_{0}\right\} \right)\leq\mathcal{P}\left(\left[x_{0}-\varepsilon,x_{0}+\varepsilon\right]\right)=2\varepsilon$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\mathcal{P}\left(\left\{ x_{0}\right\} \right)<2\varepsilon$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ ומכן 
+\begin_inset Formula $\mathcal{P}\left(\left\{ x_{0}\right\} \right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נטיל מטבע הוגן.
+ אם יצא עץ נבחר נקודה אחידה בקטע 
+\begin_inset Formula $\left[0,\nicefrac{2}{3}\right]$
+\end_inset
+
+.
+ אם יצא אחד נבחר נקודה אחידה בקטע 
+\begin_inset Formula $\left[\nicefrac{2}{3},1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Omega=\left[0,1\right],\mathcal{F}=\sigma\left(\mbox{\R{הקטעים}}\right)$
+\end_inset
+
+ אבל מה היא 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $\left[a,b\right]$
+\end_inset
+
+ קטע 
+\begin_inset Formula $0\leq a<b\leq b<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $b\leq\nicefrac{2}{3}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\left[a,b\right]\right)=\nicefrac{1}{2}\cdot\frac{b-a}{\nicefrac{2}{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a\geq\nicefrac{2}{3}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\left[a,b\right]\right)=\nicefrac{1}{2}\cdot\frac{b-a}{\nicefrac{1}{3}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a<\nicefrac{2}{3}<b$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\left[a,b\right]\right)=\mathcal{P}\left(\left[a,\nicefrac{2}{3}\right]\right)+P\left(\left[\nicefrac{2}{3},b\right]\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקרא לדוגמה הראשונה 
+\begin_inset Formula $\mathcal{P}_{1}$
+\end_inset
+
+, נקרא לדוגמה השניה 
+\begin_inset Formula $\mathcal{P}_{2}$
+\end_inset
+
+, לכל 
+\begin_inset Formula $x_{0}\in\Omega$
+\end_inset
+
+, 
+\begin_inset Formula $\mathcal{P}_{1}\left(\left\{ x_{0}\right\} \right)=\mathcal{P}_{2}\left(\left\{ x_{0}\right\} \right)=0$
+\end_inset
+
+ עם זאת 
+\begin_inset Formula $\mathcal{P}_{1}\neq\mathcal{P}_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+הערך בכל נקודה לא קובע את פונקצית ההסתברות
+\end_layout
+
+\begin_layout Paragraph
+סימון:
+\end_layout
+
+\begin_layout Standard
+)נובע מעצלנות( לנקודה 
+\begin_inset Formula $x_{0}\in\Omega$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $\mathcal{P}\left(x_{0}\right)$
+\end_inset
+
+ במקום 
+\begin_inset Formula $\mathcal{P}\left(\left\{ x_{0}\right\} \right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ מרחב סופי אז אז הערכים 
+\begin_inset Formula $\left(\mathcal{P}\left(x\right):x\in\Omega\right)$
+\end_inset
+
+ קובעים את 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אלגברה ואינפי של מרחב הסתברות
+\end_layout
+
+\begin_layout Standard
+כזכור 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+ מקיימת את התכונות הבאיות:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\emptyset\in\mathcal{F}$
+\end_inset
+
+, 
+\begin_inset Formula $\Omega\in\mathcal{F}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A^{c}\in\mathcal{F}\Leftarrow A\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1},A_{2}\dots\in\mathcal{F}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\cup_{n=1}^{\infty}A_{n}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+עובדות
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1}\in\mathcal{F}$
+\end_inset
+
+ ו 
+\begin_inset Formula $A_{2}\in\mathcal{F}$
+\end_inset
+
+ אז 
+\begin_inset Formula $A_{1}\cup A_{2}\in\mathcal{F}$
+\end_inset
+
+ )נבחר 
+\begin_inset Formula $A_{n}=\emptyset:3\leq n\leq\infty$
+\end_inset
+
+ ומפעילים תכונה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+( 
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1},A_{2}\dots\in\mathcal{F}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\cap_{n=1}^{\infty}A_{n}\in\mathcal{F}$
+\end_inset
+
+.
+ נגדיר 
+\begin_inset Formula $B_{n}=A_{n}^{c}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $B_{n}\in\mathcal{F}$
+\end_inset
+
+ ומכאן 
+\begin_inset Formula $\cup_{n=1}^{\infty}B_{n}\in\mathcal{F}$
+\end_inset
+
+ ומכאן 
+\begin_inset Formula $\left(\cup_{n=1}^{\infty}B_{n}\right)^{c}\in\mathcal{F}$
+\end_inset
+
+.
+ מחוקי דה-מורגן: 
+\begin_inset Formula $\left(\cup_{n=1}B_{n}\right)^{c}=\left(\cup_{n=1}A_{n}^{c}\right)=\cap_{n=1}^{\infty}A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{1}\cap A_{2}=\emptyset$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(A_{1}\cup A_{2}\right)=\mathcal{P}\left(A_{1}\right)+\mathcal{P}\left(A_{2}\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $A\subseteq B$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(A\right)\leq\mathcal{P}\left(B\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $B=A\cup\left(B\setminus A\right)$
+\end_inset
+
+ איחוד זר.
+ ולכן 
+\begin_inset Formula $\mathcal{P}\left(B\right)=\mathcal{P}\left(A\right)+\mathcal{P}\left(B\setminus A\right)$
+\end_inset
+
+ כזכור 
+\begin_inset Formula $\mathcal{P}$
+\end_inset
+
+ מקבלת ערכים אי שליליים לכן 
+\begin_inset Formula $\mathcal{P}\left(B\right)\geq\mathcal{P}\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אינפי של מרחב הסתברות
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ סדרה של קבוצות.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\to\infty}\sup A_{n}=\cap_{k=1}^{\infty}\cup_{n=k}^{\infty}A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim_{n\to\infty}\inf A_{n}=\cup_{k=1}^{\infty}\cap_{n=k}^{\infty}A_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{n}\in\mathcal{F}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ אז 
+\begin_inset Formula $\lim\sup A_{n}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $A_{n}\in\mathcal{F}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ אז 
+\begin_inset Formula $\lim_{n\to\infty}\inf A_{n}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\lim_{n\to\infty}\inf A_{n}\leq\lim_{n\to\infty}A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Enumerate
+לכל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $c_{k}=\cup_{n=k}^{\infty}A_{n}\in\mathcal{F}$
+\end_inset
+
+ מתכומות 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+.
+ ואז 
+\begin_inset Formula $\lim_{n\to\infty}\sup A_{n}=\cap_{k=1}^{\infty}c_{k}\in\mathcal{F}$
+\end_inset
+
+ כי החיתוך הוא חיתוך בן מיניה
+\end_layout
+
+\begin_layout Enumerate
+אותו דבר
+\end_layout
+
+\begin_layout Enumerate
+יהי 
+\begin_inset Formula $x\in\lim_{n\to\infty}\inf A_{n}$
+\end_inset
+
+ אנו רוצים להראות כי 
+\begin_inset Formula $x\in\lim_{n\to\infty}\sup A_{n}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x\in\cup_{k=1}^{\infty}B_{k}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $B_{k}=\cap_{n=k}^{\infty}A_{n}$
+\end_inset
+
+ ומכאן קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x\in B_{k}$
+\end_inset
+
+.
+ כלומר קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x\in\cap_{n=k}^{\infty}A_{n}$
+\end_inset
+
+ כלומר ריים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך שלכל 
+\begin_inset Formula $n>k$
+\end_inset
+
+, 
+\begin_inset Formula $x\in A_{n}$
+\end_inset
+
+.
+ לכן לכל 
+\begin_inset Formula $j$
+\end_inset
+
+ קיים 
+\begin_inset Formula $n>j$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x\in A_{n}$
+\end_inset
+
+.
+ לכן לכל 
+\begin_inset Formula $j$
+\end_inset
+
+, 
+\begin_inset Formula $x\in\cup_{n=j}^{\infty}A_{n}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x\in\cap_{j=1}^{\infty}\left[\cup_{n=j}^{\infty}A_{n}\right]$
+\end_inset
+
+.
+ כלומר 
+\begin_inset Formula $x\in\lim_{n\to\infty}\sup A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+סדרת קבוצות.
+ אם 
+\begin_inset Formula $\lim_{n\to\infty}\inf A_{n}=\lim_{n\to\infty}\sup A_{n}$
+\end_inset
+
+ אז נאמר שהסדרה 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ מתכנסת ונסמן 
+\begin_inset Formula $\lim_{n\to\infty}A_{n}=\lim_{n\to\infty}\inf A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שתה הגדרות חילופיות ל
+\begin_inset Formula $\inf$
+\end_inset
+
+ ו 
+\begin_inset Formula $\sup$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $A_{n}\subseteq\Omega$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ לכל 
+\begin_inset Formula $A\subseteq\Omega$
+\end_inset
+
+ נתאים את הפונקציה המציינת 
+\begin_inset Formula $\chi_{A}:\Omega\to\left\{ 0,1\right\} $
+\end_inset
+
+.
+ 
+\begin_inset Formula $\chi_{A}\left(x\right)=\begin{cases}
+1 & x\in A\\
+0 & x\not\in A\end{cases}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\bar{A}=\lim\sup A_{n}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\underbar{A}=\lim\inf A$
+\end_inset
+
+ אז לכל 
+\begin_inset Formula $x\in\Omega$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{\bar{A}}\left(x\right)=\lim\sup\chi_{a_{n}}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\chi_{\underbar{A}}=\lim\inf\chi_{A_{n}}\left(x\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה תרגיל.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\sup A_{n}$
+\end_inset
+
+ הוא קבוצה כל ה
+\begin_inset Formula $x$
+\end_inset
+
+ים שמופיעים באינסוף מעברי בגדרת 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\inf A_{n}$
+\end_inset
+
+ היא קב' כל ה
+\begin_inset Formula $x$
+\end_inset
+
+ים שמופיעים בכל אברי הסדרה 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+פרט )אולי( למספר סופי.
+\end_layout
+
+\begin_layout Section
+נחזור להסתברות
+\end_layout
+
+\begin_layout Paragraph
+משפט
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ סדרה עולה של מאורעות כלומר לכל 
+\begin_inset Formula $n$
+\end_inset
+
+, 
+\begin_inset Formula $A_{n}\subseteq A_{n+1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $A_{n}\in\mathcal{F}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\cup_{n=1}^{\infty}A_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נגדיר סדרה 
+\begin_inset Formula $\left\{ B_{n}\right\} $
+\end_inset
+
+: 
+\begin_inset Formula $B_{1}=A_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $B_{n}=A_{n}\setminus A_{n-1}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{n}\in\mathcal{F}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ מדוע 
+\begin_inset Formula $B_{1}=A_{1}\in\mathcal{F}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ 
+\begin_inset Formula $B_{n}=A_{n}\cap\left(A_{n-1}^{c}\right)\in\mathcal{F}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $B_{n}$
+\end_inset
+
+הם מאורעות זרים ולכל 
+\begin_inset Formula $k$
+\end_inset
+
+ 
+\begin_inset Formula $A_{k}=\cup_{n=1}^{k}B_{n}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\cup_{n=1}^{\infty}A_{n}=\cup_{n=1}^{\infty}B_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו: 
+\begin_inset Formula $\mathcal{P}\left(\cup_{n=1}^{\infty}A_{n}\right)=\mathcal{P}\left(\cup_{n=1}^{\infty}B_{n}\right)=\sum_{n=1}^{\infty}\mathcal{P}\left(B_{n}\right)=\lim_{k=\infty}\sum_{n=1}^{k}\mathcal{P}\left(B_{n}\right)=\lim_{k\to\infty}\mathcal{P}\left(\cup_{n=1}^{k}B_{n}\right)=\lim_{k\to\infty}\mathcal{P}\left(A_{k}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ סדרה יורדת של מאורעות אז 
+\begin_inset Formula $\mathcal{P}\left(\cap_{n=1}^{\infty}A_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+ )ההוכחה תרגיל לסטודנט(
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Section
+החזרה על אינפי
+\end_layout
+
+\begin_layout Standard
+המטרה שלנו היא להגיע למוסגים 
+\begin_inset Formula $\lim\inf,\lim\sup$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ ממשיים אזי נגדיר 
+\begin_inset Formula $\lim a_{n}=L$
+\end_inset
+
+ באופן הבא
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim a_{n}=L$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ טבעי כך שלכל 
+\begin_inset Formula $n\geq N$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|a_{n}-L\right|<\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תהי 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ קבוצה של ממשיים.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $S\in\mathbb{R}$
+\end_inset
+
+ הוא חסם מלעיל של 
+\begin_inset Formula $A$
+\end_inset
+
+ אם לכל 
+\begin_inset Formula $x\in A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\leq S$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם לקבוצה יש חסם מלעיל אז נומר שהיא חסומה מלעיל.
+\end_layout
+
+\begin_layout Standard
+באופן דומה מגדירים חסם מלרע.
+\end_layout
+
+\begin_layout Standard
+אומרים כי קבוצה היא חסומה אם היא חסומה מלעיל וחסמים מלרע.
+\end_layout
+
+\begin_layout Paragraph
+תכונה:
+\end_layout
+
+\begin_layout Standard
+לכל תת קבוצה 
+\begin_inset Formula $A\subset\mathbb{R}$
+\end_inset
+
+ אם 
+\begin_inset Formula $A$
+\end_inset
+
+ חסומה מלעיל אז קיים לה חסם עליון.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ הוא חסם עליון של 
+\begin_inset Formula $A$
+\end_inset
+
+ אם לכל חסם מלעיל 
+\begin_inset Formula $y$
+\end_inset
+
+ של 
+\begin_inset Formula $A$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $x\leq y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+תראה יחידות של חסם עליון
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\lim\sup a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $L$
+\end_inset
+
+ נקרא גבול חלקי של הסדרה 
+\begin_inset Formula $\left\{ a_{n}\right\} $
+\end_inset
+
+ אם קיימת תת סדרה 
+\begin_inset Formula $a_{n_{k}}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim a_{n_{k}}=L$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n_{1}<n_{2}<\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+לכל סדרה חסומה יש גבול חלקי
+\end_layout
+
+\begin_layout Paragraph
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+נתונה סדרה חסומה 
+\begin_inset Formula $\left\{ a_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $\left\{ a_{n}\mbox{\R{גבול\,חלקי\,של\:}}L\right\} $
+\end_inset
+
+ גבול חלקי של 
+\begin_inset Formula $a_{n}$
+\end_inset
+
+ צ"ל כי זו קבוצה סגורה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\sup\left\{ a_{n}\right\} $
+\end_inset
+
+: 
+\begin_inset Formula $b_{k}=\sup_{n\geq k}\left\{ a_{n}\right\} $
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b_{1}\geq b_{2}\dots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+לכל סדרה לא עולה יש גבול)במובן הרחב(
+\end_layout
+
+\begin_layout Standard
+אזי מגדירים את 
+\begin_inset Formula $\lim\sup a_{n}=\lim_{k\to\infty}\sup_{n\geq k}\left\{ a_{n}\right\} $
+\end_inset
+
+ זה הוא 
+\begin_inset Formula $\lim_{k\to\infty}b_{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסמנים את זה גם כך: 
+\begin_inset Formula $\overline{\lim}\left\{ a_{n}\right\} =\sup\left\{ L:a_{n}\mbox{\R{גבול\,חלקי\,של\,}}L\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+א.
+ 
+\begin_inset Formula $\lim\inf f=\lim a_{n}=\lim\sup a_{n}$
+\end_inset
+
+ ב.
+ 
+\begin_inset Formula $\lim\inf a_{n}\leq\lim\sup a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+את ב תמיד מתקיים לפי ההגדרה.
+ ואם יש שוויון אז הגבול קיים ומתקיים א.
+\end_layout
+
+\begin_layout Section
+עבור קבוצות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ קבוצה 
+\begin_inset Formula $\left\{ A_{n}\right\} _{n=1}^{\infty}$
+\end_inset
+
+ סדרה של תת קבוצות של 
+\begin_inset Formula $X$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\lim_{n\to\infty}\sup A_{n}=\cap_{k=1}^{\infty}\cup_{n\geq k}A_{k}$
+\end_inset
+
+ כלומר הקבוצה של כך ה 
+\begin_inset Formula $x$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $x$
+\end_inset
+
+ מופיע באינסוף קבוצות 
+\begin_inset Formula $X$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\lim\inf A_{n}=\cup_{k=1}^{\infty}\cap_{n\geq k}A_{n}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $x$
+\end_inset
+
+ מופיע בכל ב 
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ החל ממקום מסויים.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\lim\sup A_{n}\supset\lim\inf A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{n}$
+\end_inset
+
+ מתקנסת ל
+\begin_inset Formula $A$
+\end_inset
+
+ אם 
+\begin_inset Formula $\lim\sup A_{n}=\lim\inf A_{n}=A$
+\end_inset
+
+ אזי מסמנים כי 
+\begin_inset Formula $\lim A_{n}=A$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Standard
+כזכור לסדרה שלקבוצות 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ הגדרת 
+\begin_inset Formula $\lim_{n\to\infty}\sup A_{n}=\cap_{k=1}^{\infty}\cap_{n=k}^{\infty}A_{n}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lim_{n\to\infty}\inf A_{n}=\cup_{k=1}^{\infty}\cap_{n=1}^{k}A_{n}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\lim_{n=\infty}\sup A_{n}=\lim\inf A-n$
+\end_inset
+
+ אז אומרים כי הסדרה 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+מתכנסת ומגדירים 
+\begin_inset Formula $\lim_{n\to\infty}A_{n}=\lim_{n\to\infty}\sup A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הראנו את העובדות הבאות:
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ סדרה עולה של מאורעות 
+\begin_inset Formula $\left[\forall n:A_{n}\leq A_{n+1}\right]$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\cup_{n=1}^{\infty}A_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+אם 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ סדרה יורדת של מאורעות אז 
+\begin_inset Formula $\mathcal{P}\left(\cap_{n=1}^{\infty}A_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ סדרה עולה אז היא מתכנסת ו 
+\begin_inset Formula $\lim_{n\to\infty}A_{n}=\cup_{n=1}^{\infty}A_{n}$
+\end_inset
+
+ ואם 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ סדרה יורדת אז היא מתכנסת 
+\begin_inset Formula $\lim_{n\to\infty}A_{n}=\cap_{n=1}^{\infty}A_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+ סדרה מתכנסת של מאורעות במרחב ההסתברות 
+\begin_inset Formula $\left(\Omega,\mathcal{F},\mathcal{P}\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}A_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נשתמש בשתי טענות עזר:
+\end_layout
+
+\begin_layout Subparagraph
+א:
+\end_layout
+
+\begin_layout Standard
+לכל סדרת מאורעות 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}\sup A_{n}\right)\geq\lim_{n\to\infty}\sup\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+ב:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}\inf A_{n}\right)\leq\lim_{n\to\infty}\inf\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+הוכחת א:
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $B_{n}=\cup_{k=0}^{\infty}A_{k}$
+\end_inset
+
+ ואת 
+\begin_inset Formula $\lim\sup A_{n}=\cap_{n=1}^{\infty}B_{n}$
+\end_inset
+
+.
+ הסדרה 
+\begin_inset Formula $\left\{ B_{n}\right\} $
+\end_inset
+
+ היא סדרה יורדת.
+ מדוע? 
+\begin_inset Formula $B_{n}=\cup_{k=n}^{\infty}A_{k}=A_{n}\cup\left(\cup_{k=n+1}^{\infty}A_{k}\right)=A_{n}\cup B_{n+1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $B_{n+1}\subseteq B_{n+1}\cup\left(\mbox{something}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $B_{n+1}\subseteq B_{n}$
+\end_inset
+
+ וכמוכן 
+\begin_inset Formula $A_{n}\supseteq A_{n}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{P}\left(A_{n}\right)\leq\mathcal{P}\left(B_{n}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $n$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}\sup A_{n}\right)=\mathcal{P}\left(\cap_{n=1}^{\infty}B_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(B_{n}\right)=\lim_{n\to\infty}\sup\mathcal{P}\left(B_{n}\right)\geq\lim_{n\to\infty}\sup\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subparagraph
+הוכחת חלק ב:
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $C_{n}=\cap_{k=n}^{\infty}A_{k}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{n\to\infty}A_{n}=\cup_{n=1}^{\infty}C_{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\left\{ C_{n}\right\} $
+\end_inset
+
+סדרה עולה כי 
+\begin_inset Formula $C_{n}\subseteq A_{n}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{P}\left(C_{n}\right)\leq\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}\inf A_{n}\right)=\mathcal{P}\left(\cup_{n=1}^{\infty}C_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(C_{n}\right)=\lim_{n\to\infty}\inf\mathcal{P}\left(C_{n}\right)\leq\lim_{n\to\infty}\inf\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נניח בנוסף שהסדרה 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+מתכנסת.
+ כלומר 
+\begin_inset Formula $\lim\left(A_{n}\right)=\lim_{n\to\infty}\sup A_{n}=\lim_{n\to\infty}\inf A_{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}A_{n}\right)=\mathcal{P}\left(\lim_{n\to\infty}\sup A_{n}\right)\geq\lim_{n\to\infty}\sup\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}A_{n}\right)=\mathcal{P}\left(\lim_{n\to\infty}\inf A_{n}\right)\leq\lim_{n\to\infty}\inf\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+ בנוסף 
+\begin_inset Formula $\lim_{n\to\infty}\sup\mathcal{P}\left(A_{n}\right)\geq\lim_{n\to\infty}\inf\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $\lim_{n\to\infty}\sup\mathcal{P}\left(A_{n}\right)=\lim_{n\to\infty}\inf\mathcal{P}\left(A_{n}\right)=\mathcal{P}\left(\lim_{n\to\infty}A_{n}\right)$
+\end_inset
+
+ כלומר הגבול 
+\begin_inset Formula $\lim_{n\to\infty}A_{n}$
+\end_inset
+
+ קיים ו 
+\begin_inset Formula $\mathcal{P}\left(\lim_{n\to\infty}A_{n}\right)=\lim_{n\to\infty}\mathcal{P}\left(A_{n}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+תרגיל:
+\end_layout
+
+\begin_layout Standard
+מצאו מרחב הסתברות 
+\begin_inset Formula $\left(\Omega,\mathcal{F},\mathcal{P}\right)$
+\end_inset
+
+ וסתדרת מאורעות 
+\begin_inset Formula $\left\{ A_{n}\right\} $
+\end_inset
+
+כך ש 
+\begin_inset Formula $\lim_{n\to\infty}\sup\mathcal{P}\left(A_{n}\right)<P\left(\lim_{n\to\infty}\sup A_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עכשיו נעזוב את האינפי של מרחבי הסתברות ונחזור לחיים הרגילים.
+\end_layout
+
+\begin_layout Section
+הדכה והכלה
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לשתי מאורעות 
+\begin_inset Formula $A,B$
+\end_inset
+
+ במרחב ההסתברות 
+\begin_inset Formula $\left(\Omega,\mathcal{F},\mathcal{P}\right)$
+\end_inset
+
+ מתקיים: 
+\begin_inset Formula $\mathcal{P}\left(A\cup B\right)=\mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(A\cap B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $C=A\cap B$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula $A\cup B=\left(A\setminus C\right)\cup\left(B\setminus C\right)\cup C$
+\end_inset
+
+ וזה איחוד זר.
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{P}\left(A\cup B\right) & = & \mathcal{P}\left(A\setminus C\right)+\mathcal{P}\left(B\setminus C\right)+\mathcal{P}\left(C\right)\\
+ & = & \mathcal{P}\left(A\right)-\mathcal{P}\left(c\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(c\right)+\mathcal{P}\left(c\right)\\
+ & = & \mathcal{P}\left(A\right)+\mathcal{P}\left(B\right)-\mathcal{P}\left(c\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההכלה של זה ל
+\begin_inset Formula $n$
+\end_inset
+
+ מאורעות נקרה עיקרון ההכלה ווהדכה.
+\end_layout
+
+\begin_layout Section
+פרדוקס יום ההולדת
+\end_layout
+
+\begin_layout Standard
+בשנה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $m=356$
+\end_inset
+
+ ימים ונתונים 
+\begin_inset Formula $n$
+\end_inset
+
+ אנשים, מה הסיכוי שלאף שניים אין יום הולדת באותו יום?
+\end_layout
+
+\begin_layout Standard
+נניח כי התפלגות יום ההולדת היא אחידה לכל ימי השנה וגם כי תאריכי הלידה בלתי
+ תלויים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $m>n$
+\end_inset
+
+ אז ההסתברות כי שני אנשים יש להם אותו יום הולדת היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+צריך לבנות מרחב הסתברות להגדיר את המאורע ולחשב את פונקצית ההסתברות.
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+הסתברות מותנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Omega=\left\{ 1,2,\dots6\right\} $
+\end_inset
+
+ מרחב הסתברות אחיד.
+\end_layout
+
+\begin_layout Standard
+מאורע 
+\begin_inset Formula $B=\left\{ 2,4,6\right\} $
+\end_inset
+
+ התרחש, מה ההסתברות שיתרחש מאורע 
+\begin_inset Formula $A=\left\{ 1,2,3\right\} $
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+אם לא ידענו ש 
+\begin_inset Formula $B$
+\end_inset
+
+ התרחש אזי 
+\begin_inset Formula $P\left(A\right)=\frac{1}{2}$
+\end_inset
+
+ אבל מכיוון ש 
+\begin_inset Formula $B$
+\end_inset
+
+ התרחש, הדבר משתנה.
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+נסמן ההסתברות של 
+\begin_inset Formula $A$
+\end_inset
+
+ בהינתן ש 
+\begin_inset Formula $B$
+\end_inset
+
+ התרחש 
+\begin_inset Formula $P\left(A\vert B\right)$
+\end_inset
+
+.
+ במרחב הסתברות אחיד מתקיים: 
+\begin_inset Formula $P\left(A\vert B\right)=\frac{\left|A\cap B\right|}{\left|B\right|}=\frac{\nicefrac{\left|A\cap B\right|}{\left|\Omega\right|}}{\nicefrac{\left|B\right|}{\left|\Omega\right|}}=\frac{P\left(A\cap B\right)}{P\left(B\right)}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+שתי קוביות 
+\begin_inset Formula $A=\left\{ \mbox{Sum is 9}\right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $B=\left\{ \mbox{Second cube is 5}\right\} $
+\end_inset
+
+.
+ מה 
+\begin_inset Formula $P\left(A\vert B\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\vert B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}=\frac{\nicefrac{1}{36}}{\nicefrac{6}{36}}=\frac{1}{6}>P\left(A\right)=\frac{4}{36}=\frac{1}{9}\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+אפשר גם לחשב 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(B\vert A\right)=\frac{P\left(A\cap B\right)}{P\left(A\right)}=\frac{\nicefrac{1}{36}}{\nicefrac{4}{36}}=\frac{1}{4}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+תכונות של הסתברות מותנת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(\Omega\vert A\right) & = & 1\\
+P\left(A\cup B\vert C\right) & = & P\left(A\vert C\right)+P\left(B\vert C\right)-P\left(A\cap B\vert C\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי
+\begin_inset Formula $A$
+\end_inset
+
+ מאורע 
+\begin_inset Formula $\omega_{1},\omega_{2}\in A$
+\end_inset
+
+, אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(\left\{ \omega_{1}\right\} \vert A\right) & = & \frac{P\left(\left\{ \omega_{1}\right\} \cap A\right)}{P\left(A\right)}\\
+ & = & \frac{P\left(\left\{ \omega_{1}\right\} \right)}{P\left(A\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אותו דבר במקרה של 
+\begin_inset Formula $\omega_{2}$
+\end_inset
+
+: 
+\begin_inset Formula $P\left(\left\{ \omega_{2}\right\} \right)=\frac{P\left(\left\{ \omega_{2}\right\} \right)}{P\left(A\right)}$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{P\left(\left\{ \omega_{1}\right\} \vert A\right)}{P\left(\left\{ \omega_{2}\right\} \vert A\right)}=\frac{P\left(\left\{ \omega_{1}\right\} \right)}{P\left(\left\{ \omega_{2}\right\} \right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\sum_{\omega\in A}P\left(\left\{ \omega\right\} \vert A\right)=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{\omega\in A}P\left(\left\{ \omega\right\} \vert A\right) & \overset{?}{=} & 1\\
+\frac{\sum_{\omega\in A}P\left(\left\{ \omega\right\} \cap A\right)}{P\left(A\right)} & \overset{?}{=} & 1\\
+\frac{\sum_{\omega\in A}P\left(\left\{ \omega\right\} \right)}{P\left(A\right)} & \overset{?}{=} & 1\\
+\frac{P\left(\left\{ \omega_{1}\right\} \right)+P\left(\left\{ \omega_{2}\right\} \right)+\dots+P\left(\left\{ \omega_{n}\right\} \right)}{P\left(A\right)} & \overset{?}{=} & 1\\
+\frac{P\left(\left\{ \omega_{1}\right\} \cup\left\{ \omega_{2}\right\} \cup\left\{ \omega_{3}\right\} \cup\dots\cup\left\{ \omega_{n}\right\} \right)}{P\left(A\right)} & \overset{?}{=} & 1\\
+\frac{P\left(A\right)}{P\left(A\right)} & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+הסתברות לא אחידה
+\end_layout
+
+\begin_layout Standard
+ההסתברות שחתול ימות בשנה מסוימת: 
+\begin_inset Formula $P\left(1\right)=0.064,P\left(2\right)=0.013,P\left(3\right)=0.022,P\left(4\right)=0.083$
+\end_inset
+
+.
+ חתול חי לא יותר מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שנים.
+\end_layout
+
+\begin_layout Standard
+יש חתול בגיל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\numeric off
+, רוצים לדעת מה ההסתברות שהוא ימות בשנה הקרובה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(x=4\vert x>3\right)=P\left(x=4\vert x\geq4\right)=\frac{P\left(x=4\right)}{P\left(x\geq4\right)}=\frac{0.83}{1-\left(0.064+0.013+0.022\right)}=\frac{0.083}{0.901}=0.09211\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שאלה:
+\end_layout
+
+\begin_layout Standard
+אם נתון: 
+\begin_inset Formula $P\left(A\right)=0.5,P\left(A\vert B\right)=0.6,P\left(A\vert\overline{B}\right)=0.7$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+פתרון:
+\end_layout
+
+\begin_layout Standard
+ידוע כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\right) & = & P\left(A\cap B\right)+P\left(A\cap\overline{B}\right)\\
+P\left(A\right) & = & P\left(B\right)\cdot P\left(A\vert B\right)+P\left(\overline{B}\right)\cdot P\left(A\vert\overline{B}\right)\\
+0.5 & = & P\left(B\right)\cdot0.6+P\left(\overline{B}\right)\cdot0.7\\
+0.5 & = & P\left(B\right)0.6\left(1-P\left(B\right)\right)0.7\\
+P\left(B\right) & = & \frac{3}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר זה בלתי אפשרי.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\min\left(\left(P\vert B\right),P\left(A\vert\overline{B}\right)\right)\leq P\left(A\right)\leq\max\left(\left(P\vert B\right),P\left(A\vert\overline{B}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת ההסתברות השלמה
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $B_{1},\dots B_{w}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\right)=\sum_{i=1}^{w}P\left(A\cap B_{i}\right)=\sum_{i=1}^{w}P\left(B_{c}\right)\cdot P\left(A\vert C_{i}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+נוסחת באיס
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+גדים.
+ בכד א יש כדור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לבן ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדורים שחורים, בכד ב יש כדור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לבן ו
+\numeric on
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדורים שחורים.
+ בכד ג יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+לבן ו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+שחורים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(\mbox{white}\right)=P\left(\mbox{white}\vert A\right)+P\left(\mbox{white}\vert B\right)+P\left(\mbox{white}\vert C\right)=\frac{1}{3}\cdot\frac{1}{2}+\frac{1}{3}\cdot\frac{1}{3}+\frac{1}{3}\cdot\frac{1}{4}=\frac{13}{36}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לחשב ההסתברות שנבחר בכד א אם הוצאנו כדור לבן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\vert\mbox{white}\right) & = & \frac{P\left(A\cap\mbox{white}\right)}{P\left(\mbox{white}\right)}=\frac{\nicefrac{1}{2}\cdot\nicefrac{1}{3}}{\nicefrac{13}{36}}=\frac{\nicefrac{1}{6}}{\nicefrac{13}{36}}=\frac{6}{13}>\frac{1}{3}\\
+P\left(C\vert\mbox{white}\right) & = & \frac{P\left(C\cap\mbox{white}\right)}{P\left(\mbox{white}\right)}=\frac{3}{13}<\frac{1}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נקראנוסחת ביאס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Bayes
+\end_layout
+
+\begin_layout Standard
+אם יודעים את 
+\begin_inset Formula $P\left(B_{i}\right)$
+\end_inset
+
+ ויודעים את 
+\begin_inset Formula $P\left(A\vert B_{i}\right)$
+\end_inset
+
+ אז רוצים למצא 
+\begin_inset Formula $P\left(B_{c}\vert A\right)$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(B_{c}\vert A\right) & = & \frac{P\left(B_{i}\cap A\right)}{P\left(A\right)}\\
+ & = & \frac{P\left(B_{i}\right)P\left(A\vert B_{i}\right)}{\sum_{j=1}^{m}P\left(B_{j}\right)P\left(A\vert B_{j}\right)}=P\left(A\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Probability/c7d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עץ הסתברויות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לדעת מה ההסתברות של 
+\begin_inset Formula $P\left(A\vert\mbox{white}\right)$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\vert\mbox{white}\right)=\frac{\nicefrac{1}{6}}{\nicefrac{1}{6}+\nicefrac{1}{9}+\nicefrac{1}{12}}=\frac{6}{13}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\cap B\cap C\right)=P\left(A\right)P\left(B\vert A\right)P\left(C\vert A\cap B\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(\left(A\cap B\right)\cap C\right) & = & P\left(C\vert A\cap B\right)P\left(A\cap B\right)\\
+ & = & P\left(C\vert A\cap B\right)P\left(B\vert A\right)P\left(A\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+ימי ההולדת
+\end_layout
+
+\begin_layout Standard
+נגדיר מאורע 
+\begin_inset Formula $A_{i}$
+\end_inset
+
+ ננדגם ה 
+\begin_inset Formula $i+1$
+\end_inset
+
+ הוא אינו תיאום של אחד מקודמיו.
+ נניח 
+\begin_inset Formula $i\leq i\leq39$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $r=40$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(\cap_{i=1}^{39}A_{i}\right) & = & P\left(A_{1}\right)\cdot P\left(A_{2}\vert A_{1}\right)\cdot P\left(A_{3}\vert A_{1}\cap A_{2}\right)\cdots P\left(A_{39}\vert A_{1}\cap\dots\cap A_{38}\right)\\
+P\left(A_{1}\right) & = & \frac{364}{365}\\
+P\left(A_{2}\vert A_{1}\right) & = & \frac{363}{365}\\
+P\left(A_{3}\vert A_{1}\cap A_{2}\right) & = & \frac{362}{365}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(\cap_{i=1}^{39}A_{i}\right)=\frac{364}{365}\cdot\frac{363}{365}\cdot\frac{362}{365}\cdots\frac{365-40}{365}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+בכד יש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ כדורים לבנים ו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+30
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ שחורים.
+ מוציאים 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ללא החזרה.
+ מה ההסתברות שנקבל שחור לבן שחור לבן?
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $A_{1}$
+\end_inset
+
+ להיות הראשון לבן, 
+\begin_inset Formula $A_{2}$
+\end_inset
+
+ השני שחור...
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A_{1}\cap A_{2}\cap A_{3}\cap A_{4}\right)=\frac{20}{50}\cdot\frac{30}{49}\cdot\frac{19}{48}\cdot\frac{29}{47}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אי תחות)סטטיסטית, סטוססטית(
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A,B$
+\end_inset
+
+ יקראו בלתי תלויים אם ההסתברות של 
+\begin_inset Formula $P\left(A\vert B\right)=P\left(A\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+שתי קוביות, 
+\begin_inset Formula $A$
+\end_inset
+
+ הוא אחד בקוביה הראשונה, 
+\begin_inset Formula $B$
+\end_inset
+
+ הוא שלוש בקוביה השניה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\right) & = & \frac{1}{6}\\
+P\left(B\right) & = & \frac{1}{6}\\
+P\left(A\cap B\right) & = & \frac{1}{36}\\
+P\left(A\vert B\right) & = & \frac{\nicefrac{1}{36}}{\nicefrac{1}{6}}=\frac{1}{6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A$
+\end_inset
+
+ עדיין כמו קודם, ו 
+\begin_inset Formula $C$
+\end_inset
+
+ הוא שהסכום הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\cap C\right) & = & \frac{1}{36}\\
+P\left(C\right) & = & \frac{6}{36}\\
+P\left(A\vert C\right) & = & \frac{\nicefrac{1}{36}}{\nicefrac{6}{36}}=\frac{1}{6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה אחרת לאי תלות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\vert B\right) & = & P\left(A\right)\\
+\frac{P\left(A\cap B\right)}{P\left(B\right)} & = & P\left(A\right)\\
+P\left(A\cap B\right) & = & P\left(B\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subparagraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(B\vert A\right)=P\left(B\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו בעצם הגדרה שלישית
+\end_layout
+
+\begin_layout Paragraph
+הגדרה רביעית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\right)=P\left(B\right)P\left(A\vert B\right)+P\left(\overline{B}\right)P\left(A\vert\overline{B}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\vert B\right)=P\left(A\vert\overline{B}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+האצאה מס.?
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1},A_{2}\dots A_{n}$
+\end_inset
+
+ יקראו בלתי תלויים אם לכל קבוצה אלקית מתוכם 
+\begin_inset Formula $A_{i_{1}},A_{i_{2}}\dots A_{i_{k}}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(A_{i_{1}}\cap A_{i_{2}}\cap\dots\cap A_{i_{k}}\right)=P\left(A_{i_{1}}\right)P\left(A_{i_{2}}\right)\cdots P\left(A_{i_{k}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה אחרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $A_{1},A_{2}\dots A_{n}$
+\end_inset
+
+ יהיהו בלתי תלויים כלכ 
+\begin_inset Formula $A_{i},A_{j}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $P\left(A_{i}\cap A_{j}\right)=P\left(A_{i}\right)P\left(A_{j}\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ברור שההגדרה הראשונה גוררת את השניה, אבל ההפוך הוא לא נכון: דוגמה: שתי קוביות:
+ 
+\begin_inset Formula $A$
+\end_inset
+
+ זוגי ברשונה, 
+\begin_inset Formula $B$
+\end_inset
+
+ זוגי בשניה 
+\begin_inset Formula $C$
+\end_inset
+
+ סכום זוגי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\right) & = & P\left(B\right)=\frac{1}{2}\\
+P\left(A\cap B\right) & = & P\left(B\cap C\right)=P\left(A\cap C\right)=\frac{1}{4}\\
+P\left(A\cap B\cap C\right) & = & \frac{1}{4}\neq P\left(A\right)P\left(B\right)P\left(C\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+משתנים מקריים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Omega=\left\{ \omega_{1},\omega_{2}\dots\omega_{n}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי יש 
+\begin_inset Formula $P\left(A\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $P:\Omega\to\left[0,1\right]$
+\end_inset
+
+.
+ מסמנים משתנה מקרי ברות גדולה כמו 
+\begin_inset Formula $X,Y,Z$
+\end_inset
+
+ כך שעבור 
+\begin_inset Formula $\omega\in\Omega$
+\end_inset
+
+ מוגדרת 
+\begin_inset Formula $X\left(\omega\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Omega & = & \left\{ TT,HT,TH,HH\right\} \\
+X\left(TT\right) & = & -1\\
+X\left(HT\right) & = & 0\\
+X\left(TH\right) & = & 0\\
+X\left(HH\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מרחב ההסתברות הוא סימטרי אזי אפשר לשאול מה ההסתברות כך ש 
+\begin_inset Formula $X=0$
+\end_inset
+
+.
+ רושמים 
+\begin_inset Formula $P\left(X=0\right)=\frac{1}{4}+\frac{1}{4}=\frac{1}{2}$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(X=-1\right)=\frac{1}{4}$
+\end_inset
+
+, 
+\begin_inset Formula $P\left(X=1\right)=\frac{1}{4}$
+\end_inset
+
+.
+ אם מגדירים 
+\begin_inset Formula $Y=X^{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $P\left(Y=0\right)=\frac{1}{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $P\left(Y=1\right)=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+משתנה מקרי ברנולי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x=0\right) & = & 1-p\\
+P\left(x=1\right) & = & p\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+משתנה מקרי בינומי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(x=k\right)={n \choose k}p^{k}\left(1-p\right)^{n-k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $0\leq k\leq n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+סיום הדברים הטכניים
+\end_layout
+
+\begin_layout Standard
+עבור משתנה גיאומטרי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x>k+m\vert x>m\right) & = & P\left(x>k\right)\\
+\frac{P\left(x>k+m\right)}{P\left(x>m\right)} & = & \left(1-p\right)^{k}\\
+\frac{\left(1-p\right)^{k+m}}{\left(1-p\right)^{m}} & = & \left(1-p\right)^{k}\\
+\left(1-p\right)^{k} & = & \left(1-p\right)^{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & HG\left(n,a,b\right)\\
+P\left(X=k\right) & = & \frac{{a \choose k}{b \choose n-k}}{{a+b \choose n}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+תוחלת ושוני של מ"מ
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(x\right) & = & \sum x_{i}P\left(x=x_{i}\right)\\
+x\sim\mbox{bin}\left(n,p\right) & \Rightarrow & E\left(x\right)=np\\
+x\sim\mbox{pois}\left(\lambda\right) & \Rightarrow & E\left(x\right)=\lambda\\
+x\sim\mbox{Geom}\left(p\right) & \Rightarrow & E\left(x\right)=\frac{1}{p}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל מה עם המקרה הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y & = & f\left(x\right)\\
+E\left(Y\right) & = & ?\\
+E\left(Y\right) & = & \sum f\left(x_{i}\right)P\left(x=x_{i}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $Y\sim\mbox{bin}\left(n-1,p\right)$
+\end_inset
+
+אזי 
+\begin_inset Formula $k$
+\end_inset
+
+ טבעי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(x^{k}\right)=npE\left[\left(Y+1\right)^{k-1}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לדוגמה: 
+\begin_inset Formula $k=1$
+\end_inset
+
+, 
+\begin_inset Formula $E\left(x\right)=np$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k=2$
+\end_inset
+
+, 
+\begin_inset Formula $E\left(x^{2}\right)=npE\left(Y+1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(ax+b\right)=aE\left(x\right)+b\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור פונק ליניארית תוחלת הפונק מתלקדת עם הפ' של התוחלת 
+\begin_inset Formula $E\left(f\left(x\right)\right)=f\left(E\left(x\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+למשל 
+\begin_inset Formula $E\left(X^{2}\right)\neq\left(E\left(X\right)\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מציאת התוכלת של 
+\begin_inset Formula $X^{k}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $X\sim\mbox{bin}\left(n-1,p\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(X^{k}\right) & = & \sum_{i=1}^{n}i^{k}{n \choose i}p^{i}\left(1-p\right)^{n-i}\\
+ & = & np\sum_{i=1}^{n}i^{k-1}{n-1 \choose i-1}p^{i-1}\left(1-p\right)^{n-i}\\
+ & = & np\sum_{i=0}^{n-1}\left(i+1\right)^{k-1}{n-1 \choose i}p^{i}\left(1-p\right)^{n-i-1}\\
+ & = & npE\left[\left(Y+1\right)^{k-1}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שונות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y=f\left(x\right)=\left(x-E\left(x\right)\right)^{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התוכלת של 
+\begin_inset Formula $y$
+\end_inset
+
+ היא השונות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{var}\left(x\right)=E\left(\left(x-E\left(x\right)\right)^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יחידות המידידה של 
+\begin_inset Formula $\mbox{var}\left(x\right)$
+\end_inset
+
+ הם ריבוע יחידות המדידה של 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סטית התקן של מ"מ 
+\begin_inset Formula $x$
+\end_inset
+
+ היא 
+\begin_inset Formula $\mbox{SD}\left(x\right)=\sqrt{\mbox{var}\left(x\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{var}\left(x\right)=E\left(x^{2}\right)-E^{2}\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+X\sim\mbox{Bin}\left(n,p\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{var}\left(x\right) & = & np\left[\left(n-1\right)p+1\right]-n^{2}p^{2}=np\left(1-p\right)\\
+\mbox{SD}\left(x\right) & = & \sqrt{np\left(1-p\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & \mbox{Pois}\left(\lambda\right)\\
+E\left(x^{2}\right) & = & \lambda\left(\lambda+1\right)\\
+\mbox{var}\left(x\right) & = & \lambda\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\sim\mbox{Geom}\left(p\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(x^{2}\right) & = & \frac{2-p}{p^{2}}\\
+\mbox{var}\left(x\right) & = & \frac{2-p}{p^{2}}-\frac{1}{p^{2}}=\frac{1-p}{p^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1-p & = & q\\
+E\left(x^{2}\right) & = & \sum_{k=1}^{\infty}k^{2}q^{k-1}p=p\sum_{k=1}^{\infty}\frac{\partial}{\partial q}\left(kq^{k}\right)\\
+ & = & p\frac{\partial}{\partial q}\left(\sum_{k=1}^{\infty}kq^{k}\right)\\
+ & = & p\frac{\partial}{\partial q}\left(\frac{q}{1-q}E\left(x\right)\right)\\
+ & = & p\frac{\partial}{\partial q}\left(\frac{q}{1-q}\frac{q}{1-q}\right)\\
+ & = & p\left[\frac{1}{\left(1-q\right)^{2}}+\frac{2q}{\left(1-q\right)^{2}}\right]\\
+ & = & p\left[\frac{1}{p^{2}}+\frac{2\left(1-p\right)}{p^{3}}\right]\\
+ & = & \frac{2-p}{p^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{var}\left(ax+b\right)=a^{2}\cdot\mbox{var}\left(x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\sim y\left[1,n\right],E\left(x\right)=\frac{n+1}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(x^{2}\right) & = & \sum_{i=1}^{n}i^{2}\frac{1}{n}\\
+ & = & \frac{1}{n}\frac{n\left(n+1\right)\left(2n+1\right)}{6}\\
+ & = & \frac{\left(n+1\right)\left(2n+1\right)}{6}\\
+\mbox{var}\left(x\right) & = & \frac{\left(n+1\right)\left(2n+1\right)}{6}-\frac{\left(n+1\right)^{2}}{6}\\
+ & = & \frac{n^{2}-1}{16}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

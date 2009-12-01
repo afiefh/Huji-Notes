@@ -1,0 +1,20 @@
+#!/bin/usr/env octave
+
+x=-2:0.01:2;
+y=x.*0;
+for j=1:columns(x)
+   if( floor(x(j)) == 1 )
+      if( x(j)<1.1)
+	y(j)=1;
+      endif
+    endif
+   if( floor(x(j)) == -1 )
+      if( x(j)<-0.9)
+	y(j)=-1;
+      endif
+    endif
+endfor
+
+plot(x,y);
+
+print -dsvg c4d1.svg

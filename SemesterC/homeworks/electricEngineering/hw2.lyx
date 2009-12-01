@@ -1,0 +1,552 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Subsubsection
+ציור ראשון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2u\left(t\right)-2r\left(t-1\right)+2r\left(t-2\right)+u\left(t-3\right)-u\left(t-4\right)+\delta\left(t-4\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+ציור שני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r\left(t+2\right)-r\left(t\right)-3r\left(t-2\right)+3r\left(t-3\right)+2r\left(r-4\right)-2r\left(t-4.5\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}f\left(\tau\right)\delta\left(t-\tau\right)d\tau & = & \int_{\infty}^{-\infty}f\left(t-x\right)\delta\left(x\right)\left(-dx\right)\\
+ & = & \int_{-\infty}^{\infty}f\left(t-x\right)\delta\left(x\right)dx\\
+ & = & \int_{-\infty}^{\infty}f\left(t-\tau\right)\delta\left(\tau\right)d\tau\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לפי הגדרה של 
+\begin_inset Formula $u\left(t\right)$
+\end_inset
+
+ מתקיים כי עבור 
+\begin_inset Formula $a>0$
+\end_inset
+
+ 
+\begin_inset Formula $u\left(t+\frac{b}{a}\right)=u\left(at+b\right)$
+\end_inset
+
+ ועבור 
+\begin_inset Formula $a<0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $u\left(t+\frac{b}{a}\right)=1-u\left(at+b\right)$
+\end_inset
+
+ כמו כן 
+\begin_inset Formula $\delta\left(t\right)=\frac{\partial u\left(t\right)}{\partial t}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\delta\left(t+\frac{b}{a}\right) & = & \frac{\partial u\left(t+\frac{b}{a}\right)}{d\left(t+\frac{b}{a}\right)}\\
+ & = & \frac{\partial u\left(t+\frac{b}{a}\right)}{\partial t}\\
+ & = & \frac{\partial u\left(t+\frac{b}{a}\right)}{\partial\left(t+\frac{b}{a}\right)}\cdot\frac{d\left(t+\frac{b}{a}\right)}{\partial t}\\
+ & = & \delta\left(t+\frac{b}{a}\right)\cdot1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $a>0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u\left(t+\frac{b}{a}\right)}{\partial t} & = & \frac{\partial u\left(at+b\right)}{\partial t}\\
+ & = & \frac{\partial u\left(at+b\right)}{\partial\left(at+b\right)}\cdot\frac{\partial\left(at+b\right)}{\partial t}\\
+ & = & \delta\left(at+b\right)\cdot a\\
+ & = & \delta\left(at+b\right)\cdot\left|a\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $a>0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u\left(t+\frac{b}{a}\right)}{\partial t} & = & \frac{\partial\left(1-u\left(at+b\right)\right)}{\partial t}\\
+ & = & \frac{-\partial u\left(at+b\right)}{\partial\left(at+b\right)}\cdot\frac{\partial\left(at+b\right)}{\partial t}\\
+ & = & -\delta\left(at+b\right)\cdot a\\
+ & = & \delta\left(at+b\right)\cdot\left|a\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\delta\left(at+b\right)=\frac{1}{\left|a\right|}\delta\left(t+\frac{b}{a}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לפי ההגדרה של 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\int_{-\infty}^{\infty}\delta\left(t-t_{0}\right)f\left(t\right)dt$
+\end_inset
+
+, נשתמש בהחלפת משתנים ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}\delta\left(at+b\right)f\left(t\right)dt & = & \int_{-\infty}^{\infty}\delta\left(\tau\right)f\left(\frac{\tau}{a}-\frac{b}{a}\right)\frac{d\tau}{\left|a\right|}\\
+ & = & \int_{-\infty}^{\infty}\delta\left(t\right)f\left(-\frac{b}{a}\right)\frac{d\tau}{\left|a\right|}\\
+ & = & \int_{-\infty}^{\infty}\delta\left(\tau+\frac{b}{a}\right)f\left(\tau\right)\frac{d\tau}{\left|a\right|}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}f\left(t\right)\delta^{\prime}\left(t\right)dt & = & \underbrace{f\left(t\right)\delta\left(t\right)}_{0}\vert_{-\infty}^{\infty}-\int_{-\infty}^{\infty}\delta^{\left(n\right)}\left(t\right)f^{\prime}\left(t\right)dt\\
+ & = & -\left(-1\right)^{n}+f^{\left(n+1\right)}\left(0\right)\\
+ & = & \left(-1\right)^{n+1}f^{\left(n+1\right)}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P & = & \frac{V_{R_{10}}^{2}}{R}\\
+V_{R_{10}} & = & \sqrt{PR}\\
+ & = & \sqrt{10\cdot10}\\
+ & = & 10V\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I_{5} & = & \frac{10}{5}=2A\\
+I_{10} & = & \frac{10}{10}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי יש סך הכל 
+\begin_inset Formula $3A$
+\end_inset
+
+ במעגל.
+ המתח על הנגד המשתנה מתקבל על ידי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E & = & V_{R_{10,5}}+V_{R}\\
+V_{R} & = & 70-10\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי לפי חוק אום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\frac{V_{R}}{I}=\frac{60}{3}=20\Omega\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+מכיוון שיודעים הזרם במעגל נחשב את ההספק דרך מחלק מתח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P & = & I_{10}^{2}\cdot10\\
+ & = & \left(3\cdot\frac{5}{10+5}\right)^{2}\cdot10=10W\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{r} & = & IR=12i\left(t\right)\\
+V_{L} & = & L\frac{\partial i}{\partial t}=2\frac{\partial i}{\partial t}\\
+V_{c} & = & \frac{1}{C}\int i\left(t\right)dt=20\int_{0}^{t}i\left(t^{\prime}\right)dt^{\prime}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i\left(t\right) & = & 0.4\sin\left(2t-\frac{\pi}{r}\right)u\left(t\right)\\
+V_{R} & = & 4.8\sin\left(2t-\frac{\pi}{4}\right)u\left(t\right)\\
+V_{c} & = & 4\left[\cos\left(\frac{\pi}{4}\right)-\cos\left(2t-\frac{\pi}{4}\right)\right]u\left(t\right)\\
+V_{L} & = & 0.8\sin\left(-\frac{\pi}{4}\right)\delta\left(t\right)+1.6\cos\left(2t-\frac{\pi}{4}\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P=IV_{R}=1.92\sin^{2}\left(2t-\frac{\pi}{4}\right)u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{L} & = & iV_{L}\\
+ & = & 0.4\sin\left(2t-\frac{\pi}{4}\right)\left[-0.4\sqrt{2}\delta\left(t\right)+1.6\cos\left(2t-\frac{\pi}{4}\right)u\left(t\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i\left(t\right) & = & e^{-\frac{4t}{4}}u\left(t\right)\\
+V_{R} & = & 12e^{-\frac{3t}{4}}u\left(t\right)\\
+V_{L} & = & \frac{3}{2}e^{-\frac{3t}{4}}+2\delta\left(t\right)\\
+V_{c} & = & 20\int_{0}^{t}e^{-\frac{3t^{\prime}}{4}}dt^{\prime}\\
+ & = & \frac{80}{3}\left(1-e^{-\frac{3t}{4}}\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

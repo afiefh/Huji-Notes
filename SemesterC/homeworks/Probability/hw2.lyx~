@@ -1,0 +1,838 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נראה שכל איבר שלא מקיים אף אחת מהתכונות נספר פעם אחת, ושכל איבר שמקיים מספר
+ חיובי כלשהו של תכונות מתקזז בספירה.
+\end_layout
+
+\begin_layout Standard
+כל איבר שלא מקיים אף תכונה נספר רק פעם אחת, במחובר הראשון בסכום, 
+\begin_inset Formula $N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי כעת איבר שמקיים בדיוק 
+\begin_inset Formula $r$
+\end_inset
+
+ תכונות.
+ אז לכל 
+\begin_inset Formula $r\leq s$
+\end_inset
+
+, איבר זה נספר במחובר 
+\begin_inset Formula $\sum_{i_{1}<i_{2}<\dots<i_{s}}N_{i_{1}i_{2}\dots i_{s}}$
+\end_inset
+
+ בדיוק 
+\begin_inset Formula ${r \choose s}$
+\end_inset
+
+ פעמים.
+ )מספר האפשרויות שלנו לבחור 
+\begin_inset Formula $s$
+\end_inset
+
+ תכונות שונות מסך 
+\begin_inset Formula $r$
+\end_inset
+
+ התכונות שיש לאיבר שלנו, ולספור אותו בגלל אותן תכונות(.
+\end_layout
+
+\begin_layout Standard
+אם כך, עבור איבר זה נקבל את הסכום הבא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula ${r \choose 0}-{r \choose 1}+\dots+\left(-1\right)^{s}{r \choose s}+\dots+\left(-1\right)^{r}{r \choose r}=\sum_{s=0}^{r}\left(-1\right)^{s}{r \choose s}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סכום זה הוא בדיוק נוסחת הבינום, 
+\begin_inset Formula $\left(a+b\right)^{r}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a=-1,b=-1$
+\end_inset
+
+, ולכן הסכום הכולל הוא .
+ כך לכל איבר שמקיים לפחות אחת מהתכונות, ולכן מספר האיברים שנספרים הוא בדיוק
+ מספרם של אלו שאינם מקיימים אף אחת מהתכונות.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+מהשוויון הראשון נובע כי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(A\cup\overline{B}\right) & = & P\left(\overline{A}\cup B\right)\\
+P\left(A\right)-P\left(A\cap B\right) & = & P\left(B\right)-P\left(A\cap B\right)\\
+P\left(A\right) & = & P\left(B\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהשוויון השני נובע כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(\overline{A}\cup B\right) & = & P\left(\overline{A}\cup\overline{B}\right)\\
+P\left(B\right)-P\left(A\cap B\right) & = & P\left(A\cap B\right)\\
+P\left(B\right)-P\left(A\right)P\left(B\right) & = & P\left(A\right)P\left(B\right)\\
+P\left(B\right)-P\left(B\right)P\left(B\right) & = & P\left(B\right)P\left(B\right)\\
+0 & = & 2P^{2}\left(B\right)-P\left(B\right)\\
+0 & = & P\left(B\right)\cdot\left(2P\left(B\right)-1\right)\\
+P\left(B\right) & = & 0\\
+2P\left(B\right)-1 & = & 0\\
+P\left(B\right) & = & \frac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נבחר יום ההולדת הראשון, זה יכול להיות כל אחד מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+12
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+החודשים האפשריים, אבל השני כבר חייב להיות אחד מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+11
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+החודשים שנשארו.
+ נמשיך באופן הזה עד שנגיע לאחרון שחייב להיות בחודש מסויים אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{12}{12}\cdot\frac{11}{12}\cdot\frac{10}{12}\cdots\frac{2}{12}\cdot\frac{1}{12} & = & \frac{12!}{12^{12}}\\
+ & = & \frac{11!}{12^{11}}\\
+ & = & \frac{1925}{35831808}\\
+ & \approx & 0.000644679\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+ההסתברות ש
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מבין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+20
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אנשים נולדו בקיץ היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{{20 \choose 5}}{4^{20}}\cdot\frac{{15 \choose 5}}{4^{15}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{{2 \choose 10}\frac{1}{12^{2}}}{12^{10}}\cdot\frac{{2 \choose 8}\frac{1}{12^{2}}}{12^{8}}\cdot\frac{{2 \choose 6}\frac{1}{12^{2}}}{12^{6}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Omega=\begin{matrix}\left(1,1,1,1\right),\left(1,1,1,2\right),\left(1,1,2,1\right),\left(1,1,2,2\right),\\
+\left(1,2,1,1\right),\left(1,2,1,2\right),\left(1,2,2,1\right),\left(1,2,2,2\right),\\
+\left(2,1,1,1\right),\left(2,1,1,2\right),\left(2,1,2,1\right),\left(2,1,2,2\right),\\
+\left(2,2,1,1\right),\left(2,2,1,2\right),\left(2,2,2,1\right),\left(2,2,2,2\right),\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\begin{matrix}\left(1,1,1,2\right),\left(1,1,2,1\right),\left(1,2,1,1\right),\left(2,1,1,1\right)\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\right)=\frac{\left|A\right|}{\left|\Omega\right|}=\frac{4}{16}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נסים בכל תא כדור לבן וכדור שחור לפני שנתחיל כי דרוש שבכל תא יהיו כדורים
+ משני הצבעים.
+ אזי נשארו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ כדורים לבנים ו 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כדורים שחורים, רוצים לחלק אותם.
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+אם רוצים שבכל תא יהיה אותו מספר כדורים אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Omega=\begin{matrix}\left(\left(B,B\right),\left(W,W\right),\left(W,B\right)\right),\\
+\left(\left(W,W\right),\left(B,B\right),\left(W,B\right)\right),\\
+\left(\left(B,B\right),\left(W,B\right),\left(W,W\right)\right),\\
+\left(\left(W,W\right),\left(W,B\right),\left(B,B\right)\right),\\
+\left(\left(W,B\right),\left(B,B\right),\left(W,W\right)\right),\\
+\left(\left(W,B\right),\left(W,W\right),\left(B,B\right)\right),\\
+\left(\left(W,B\right),\left(W,B\right),\left(W,B\right)\right),\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+7
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ אופנים שונים.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+{n \choose 2} & \overset{?}{=} & {k \choose 2}+k\left(n-k\right)+{n-k \choose 2}\\
+\frac{n!}{2\left(n-2\right)!} & \overset{?}{=} & \frac{k!}{2\cdot\left(k-2\right)!}+k\left(n-k\right)+\frac{\left(n-k\right)!}{2\cdot\left(n-k-2\right)!}\\
+\frac{n\left(n-1\right)}{2} & \overset{?}{=} & \frac{k\cdot\left(k-1\right)}{2}+k\left(n-k\right)+\frac{\left(n-k\right)\left(n-k-1\right)}{2}\\
+n\left(n-1\right) & \overset{?}{=} & k\left(k-1\right)+2k\left(n-k\right)+\left(n-k\right)\left(n-k-1\right)\\
+n\left(n-1\right) & \overset{?}{=} & k^{2}-k+2nk-2k^{2}+n^{2}-nk-n-nk+k^{2}+k\\
+n\left(n-1\right) & \overset{\checkmark}{=} & n^{2}-n\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מספר הדרכים לבחור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מתוך 
+\begin_inset Formula $n$
+\end_inset
+
+ שווה לזה לבחור
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מתוך 
+\begin_inset Formula $k$
+\end_inset
+
+ ו 
+\begin_inset Formula $2$
+\end_inset
+
+ מתוך 
+\begin_inset Formula $n-k$
+\end_inset
+
+ ועוד 
+\begin_inset Formula $k\left(n-k\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+הוכחה הסתברותית: לבחר 
+\begin_inset Formula $n$
+\end_inset
+
+ איברים מתוך 
+\begin_inset Formula $\left\{ a_{1},a_{2},a_{3}\dots a_{2n}\right\} $
+\end_inset
+
+ זה שווה ללבחור 
+\begin_inset Formula $k$
+\end_inset
+
+ איברים מתוך 
+\begin_inset Formula $\left\{ a_{1}\dots a_{n}\right\} $
+\end_inset
+
+ ו 
+\begin_inset Formula $n-k$
+\end_inset
+
+ מ 
+\begin_inset Formula $\left\{ a_{n+1}\dots a_{2n}\right\} $
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $k$
+\end_inset
+
+ בתחום 
+\begin_inset Formula $0\leq k\leq n$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document
