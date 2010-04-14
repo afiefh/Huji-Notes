@@ -1,0 +1,408 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+3
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X,Y & \sim & \mathcal{U}\left(0,1\right)\\
+Z & = & X+Y\\
+W & = & X-Y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{Z} & = & f_{x}*f_{y}\\
+ & = & \int_{-\infty}^{\infty}f_{x}\left(\tau\right)f_{y}\left(t-\tau\right)d\tau\\
+ & = & \int_{-\infty}^{\infty}f_{x}\left(\tau\right)f_{y}\left(t-\tau\right)d\tau\\
+ & = & \begin{cases}
+0 & t\leq0\\
+\int_{0}^{t}1dt & 0<t<1\\
+\int_{t-1}^{1}1dt & 1\leq t<2\\
+0 & t\geq2\end{cases}\\
+ & = & \begin{cases}
+0 & t\leq0\\
+t & 0<t<1\\
+2-t & 1\leq t<2\\
+0 & t\geq2\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw3q1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{Z}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{Z}\left(t\right) & = & \int_{-\infty}^{t}f_{Z}\left(\tau\right)d\tau\\
+ & = & \begin{cases}
+0 & t\leq0\\
+\int_{0}^{t}\tau d\tau & 0<t<1\\
+\int_{0}^{1}\tau d\tau+\int_{1}^{t}\left(2-\tau\right)d\tau & 1\leq t<2\\
+\int_{0}^{1}\tau d\tau+\int_{1}^{2}\left(2-\tau\right)d\tau & t\geq2\end{cases}\\
+ & = & \begin{cases}
+0 & t\leq0\\
+\frac{1}{2}t^{2} & 0<t<1\\
+\frac{1}{2}+\left(-\frac{t^{2}}{2}+2t-\frac{3}{2}\right) & 1\leq t<2\\
+1 & t\geq2\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{W\vert Z}\left(b\vert a\right) & = & f\left(X-Y=b\vert X+Y=a\right)\\
+ & = & f\left(X-Y=b\vert X=a-Y\right)\\
+ & = & f\left(a-Y-Y=b\right)\\
+ & = & f\left(-2Y=b-a\right)\\
+ & = & f\left(Y=\frac{a-b}{2}\right)\\
+ & = & \begin{cases}
+0 & \frac{a-b}{2}<0\\
+1 & 0\leq\frac{a-b}{2}\leq1\\
+0 & \frac{a-b}{2}>1\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{Z,W}\left(a,b\right) & = & f_{W\vert Z}\left(b,a\right)\cdot f_{Z}\left(a\right)\\
+ & = & \left(\begin{cases}
+0 & \frac{a-b}{2}<0\\
+1 & 0\leq\frac{a-b}{2}\leq1\\
+0 & \frac{a-b}{2}>1\end{cases}\right)\left(\begin{cases}
+0 & a\leq0\\
+\frac{1}{2}a^{2} & 0<a<1\\
+\frac{a^{2}}{2}-2a+2 & 1\leq a<2\\
+0 & a\geq2\end{cases}\right)\\
+ & = & \begin{cases}
+\frac{1}{2}a^{2} & \left(0<a<1\right)\&\&\left(0\leq\frac{a-b}{2}\leq1\right)\\
+\frac{a^{2}}{2}-2a+2 & \left(1\leq a<2\right)\&\&\left(0\leq\frac{a-b}{2}\leq1\right)\\
+0 & otherwise\end{cases}\\
+ & = & \begin{cases}
+\frac{1}{2}a^{2} & \left(0<a<1\right)\&\&\left(0\leq a-b\leq2\right)\\
+\frac{a^{2}}{2}-2a+2 & \left(1\leq a<2\right)\&\&\left(0\leq a-b\leq2\right)\\
+0 & otherwise\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{Z,W}\left(a,b\right) & = & \begin{cases}
+\frac{1}{2}a^{2} & \left(0<a<1\right)\&\&\left(0\leq a-b\leq2\right)\\
+\frac{a^{2}}{2}-2a+2 & \left(1\leq a<2\right)\&\&\left(0\leq a-b\leq2\right)\\
+0 & otherwise\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{X,Y}\left(a,b\right)=\begin{cases}
+0.6\left(a^{2}+b^{2}+2b\right) & 0\leq a,b\leq1\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}da\int_{-\infty}^{\infty}db\left(0.6\left(a^{2}+b^{2}+2b\right)\right) & \overset{?}{=} & 1\\
+0.6\int_{0}^{1}da\int_{0}^{1}db\left(a^{2}+b^{2}+2b\right) & \overset{?}{=} & 1\\
+0.6\int_{0}^{1}da\left(a^{2}b+\frac{b^{3}}{3}+b^{2}\right)\vert_{0}^{1} & \overset{?}{=} & 1\\
+\frac{6}{10}\int_{0}^{1}da\left(a^{2}+\frac{1}{3}+1\right) & \overset{?}{=} & 1\\
+\frac{3}{5}\left(\frac{a^{3}}{3}+\frac{1}{3}a+a\right)\vert_{0}^{1} & \overset{?}{=} & 1\\
+\frac{3}{5}\left(\frac{5}{3}\right) & \overset{?}{=} & 1\\
+1 & \overset{\checkmark}{=} & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי קיימים 
+\begin_inset Formula $a,b$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f_{x,y}\left(a,b\right)<0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+0.6\left(a^{2}+b^{2}+2b\right) & < & 0\\
+a^{2}+b^{2}+2b & < & 0\\
+a^{2}+\left(b+1\right)^{2}-1 & < & 0\\
+a^{2}+\left(b+1\right)^{2}-1<\left(b+1\right)^{2}-1 & < & 0\\
+\left(b+1\right)^{2} & < & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן להזניח את 
+\begin_inset Formula $a^{2}$
+\end_inset
+
+ כי זה אף פעם לא יהיה שלילי.
+ אזי יש שתי תנאים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{matrix}-1 & < & b+1 & < & 1\\
+-2 & < & b & < & 0\end{matrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בסתירה לזה ש 
+\begin_inset Formula $0<b<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{X}\left(a\right) & = & \int_{-\infty}^{\infty}f_{X,Y}\left(a,b\right)\partial b\\
+ & = & \int_{0}^{1}0.6\left(a^{2}+b^{2}+2b\right)db\\
+ & = & \left(0.2a^{3}b+0.6ab^{3}+1.2ab^{2}\right)\vert_{0}^{1}\\
+ & = & 0.6a^{2}+0.8\\
+f_{Y}\left(b\right) & = & \int_{-\infty}^{\infty}f_{X,Y}\left(a,b\right)\partial a\\
+ & = & \int_{0}^{1}0.6\left(a^{2}+b^{2}+2b\right)da\\
+ & = & \left(0.15a^{4}+0.3a^{2}b^{2}+0.6a^{2}b\right)\vert_{0}^{1}\\
+ & = & 0.6b^{2}+1.2b+0.2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

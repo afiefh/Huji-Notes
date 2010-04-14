@@ -1,0 +1,9 @@
+t=0:0.01:1;
+x=exp(-5.*t);
+
+plot(t,x);
+xlabel('t');
+ylabel('f_x(t)');
+pause
+
+print -dsvg hw2q2.svg

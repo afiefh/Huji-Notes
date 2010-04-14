@@ -1,0 +1,8 @@
+#!/usr/bin/env octave
+
+x=-1:0.1:3;
+
+y=inline("t.*(0<t & t<1) + (2-t).*(1<=t & t<2) ");
+
+plot(x,y(x));
+print -dsvg hw3q1.svg

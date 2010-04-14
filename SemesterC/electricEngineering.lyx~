@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -4593,8 +4593,7 @@ V_{c}^{\prime\prime}\left(t\right)+\left(\frac{1}{R_{2}C}+\frac{R_{1}}{L}\right)
 V_{c}^{\prime\prime}+\frac{13}{12}V_{c}^{\prime}+\frac{1}{4}V_{C} & = & \frac{1}{6}V_{s}\\
 \omega_{0} & = & \frac{1}{2}\\
 2\alpha & = & \frac{13}{12}\\
-Q & = & \frac{\omega_{0}}{2\alpha}=\frac{6}{3}<\frac{1}{2}\\
-\\\end{eqnarray*}
+Q & = & \frac{\omega_{0}}{2\alpha}=\frac{6}{3}<\frac{1}{2}\end{eqnarray*}
 
 \end_inset
 
@@ -4795,6 +4794,988 @@ i^{\prime\prime}+\frac{1}{RC}i^{\prime}+\frac{1}{LC}i=\frac{1}{LC}u\left(t\right
 
  נציב במשוואה ומקבלים 
 \begin_inset Formula $D=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{L}\left(t\right)=\left[\frac{1}{s_{1}-s_{2}}\left[s_{2}e^{s_{1}t}-s_{1}e^{s_{2}t}\right]+1\right]u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+קונבולוציה
+\end_layout
+
+\begin_layout Standard
+ניתן לאפיין כל מע' ליניארי ב"ת בזמן עם תץהץ אפס ע"י תעובת ההלם שלו)כלומר
+ אהחהו עובדים ב 
+\begin_inset Formula $ZSR$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+פתרון 
+\begin_inset Formula $ZSR$
+\end_inset
+
+ של מע' נתון ע"י הקונבולוציה בין כניסת המערכת לבין תגובת ההלם של המערכת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{total}=y_{ZIR}+\mbox{convolution}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+קונבולוציה היא 
+\begin_inset Formula $y\left(t\right)=x\left(t\right)*h\left(t\right)=\int_{-\infty}^{\infty}x\left(t\right)h\left(t-\tau\right)d\tau=\int_{-\infty}^{\infty}x\left(t-\tau\right)h\left(\tau\right)$
+\end_inset
+
+ כאשר במקרה שלנו 
+\begin_inset Formula $h\left(t\right)=\delta\left(t\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h\left(\tau\right)$
+\end_inset
+
+ קיים רק עבור 
+\begin_inset Formula $\tau>0$
+\end_inset
+
+, 
+\begin_inset Formula $h\left(t-\tau\right)$
+\end_inset
+
+ קיים רק עבור 
+\begin_inset Formula $t-\tau>0$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\tau<t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(t\right)=\int_{-\infty}^{t}x\left(\tau\right)h\left(t-\tau\right)d\tau=\int_{0}^{\infty}x\left(t-\tau\right)h\left(\tau\right)d\tau\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים גם ש 
+\begin_inset Formula $x\left(t\right)=x\left(t\right)\cdot u\left(t\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(t\right)=\int_{0}^{t}h\left(\tau\right)h\left(t-\tau\right)d\tau=\int_{0}^{t}x\left(t-\tau\right)h\left(\tau\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+בפתרון תלוי ב 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+האינטגרציה תלויה ב 
+\begin_inset Formula $\tau$
+\end_inset
+
+, 
+\begin_inset Formula $t$
+\end_inset
+
+ הוא רק פרמטר.
+ לקבל פתרון מלא יש לרוץ על כל 
+\begin_inset Formula $t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Enumerate
+נבחר באינטגרל הנוח ביותר
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & t\\
+h\left(t\right) & = & e^{-\frac{t^{2}}{2}}\\
+y\left(t\right) & = & \int_{-\infty}^{\infty}x\left(t-\tau\right)h\left(\tau\right)d\tau\\
+ & = & \int_{-\infty}^{\infty}\left(t-\tau\right)e^{-\frac{\tau^{2}}{2}}d\tau\\
+ & = & t\int_{-\infty}^{\infty}e^{-\frac{\tau^{2}}{2}}d\tau-\int_{-\infty}^{\infty}\tau e^{-\frac{\tau^{2}}{2}}d\tau\\
+ & = & t\sqrt{2\pi}-0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עוד דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h\left(t\right) & = & u\left(t\right)-u\left(t-1\right)\\
+x\left(t\right) & = & u\left(t\right)\\
+y\left(t\right) & = & h\left(t\right)*x\left(t\right)\\
+ & = & \int_{-\infty}^{\infty}h\left(t-\tau\right)x\left(\tau\right)d\tau\\
+ & = & \int_{-\infty}^{\infty}\left[u\left(t-\tau\right)-u\left(t-\tau-1\right)\right]u\left(\tau\right)d\tau\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תכונות הקונבולוציה:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x*h=h*x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $\left(g+h\right)*x=g*x+h*x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $x\left(t\right)*\delta\left(t\right)=x\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+ל 
+\begin_inset Formula $h$
+\end_inset
+
+ ו 
+\begin_inset Formula $x$
+\end_inset
+
+ שנגזרתם מוגדרת היטב 
+\begin_inset Formula $\left(h*x\right)^{\prime}=h^{\prime}*x=h*x^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+עבור דובלט: 
+\begin_inset Formula $x\left(t\right)*\delta^{\prime}\left(t\right)=x^{\prime}\left(t\right)*\delta\left(t\right)=x^{\prime}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+אם יש לנו מעגל 
+\begin_inset Formula $RC$
+\end_inset
+
+ שעבור עירור 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מקבל מתח 
+\begin_inset Formula $V_{c}\left(t\right)=\frac{1}{RC}e^{-\frac{-t}{RC}}u\left(t\right)=h\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה קורה אם מחליפים העירור ב 
+\begin_inset Formula $\omega\left(t\right)=e^{-\frac{t}{RC}}u\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+א
+\begin_inset Formula \begin{eqnarray*}
+V_{c} & = & \int_{-\infty}^{\infty}\omega\left(\tau\right)h\left(t-\tau\right)d\tau\\
+ & = & \int_{-\infty}^{\infty}e^{-\frac{\tau}{RC}}u\left(t\right)\frac{1}{RC}e^{-\frac{\left(t-\tau\right)}{RC}}u\left(t-\tau\right)d\tau\\
+t & < & 0:\, V_{c}=0\\
+t & > & 0:\, V_{c}\left(t\right)=\frac{1}{RC}\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיימנו מעגלים מסדר ראשון ונעבור למעגלים מסדר שני
+\end_layout
+
+\begin_layout Section
+מעגלים מסדר שני
+\end_layout
+
+\begin_layout Standard
+למשל מעגל 
+\begin_inset Formula $RLC$
+\end_inset
+
+ טורי בעל 
+\begin_inset Formula $L=1H,R=2\Omega,C=0.2F$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i\left(s\right) & = & \frac{\omega\left(t\right)}{R+\frac{1}{sC}+Ls}\\
+ & = & \frac{sC\omega\left(s\right)}{s^{2}LC+sCR+1}\\
+ & = & \frac{\left(\frac{s\omega\left(s\right)}{L}\right)}{s^{2}+\frac{R}{L}s+\frac{1}{LC}}\\
+i^{\prime\prime}+\frac{R}{L}i^{\prime}+\frac{1}{LC}i & = & \frac{1}{L}\omega^{\prime}\left(t\right)\\
+i^{\prime\prime}+2i^{\prime}+5i & = & \omega^{\prime}\left(t\right)=\delta^{\prime}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פותרים עבור 
+\begin_inset Formula $\delta\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i^{\prime\prime}+2i^{\prime}+5i & = & \delta\left(t\right)\\
+i\left(0^{-}\right) & = & i\left(0^{+}\right)=0\\
+ & \Downarrow\\
+i^{\prime\prime}+2i^{\prime}+5i & = & 0\\
+i\left(0^{+}\right) & = & 0\\
+i^{\prime}\left(0^{+}\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+הספקים במצב סינוסי עמיד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(t\right) & = & V\left(t\right)i\left(t\right)\\
+V\left(t\right) & = & V_{m}\cos\left(\omega t+\measuredangle V\right)\\
+i\left(t\right) & = & i_{m}\cos\left(\omega t+\measuredangle I\right)\\
+P\left(t\right) & = & V\left(t\right)\cdot i\left(t\right)\\
+ & = & V_{m}I_{m}\cos\left(\omega t+\measuredangle V\right)\cos\left(\omega t+\measuredangle I\right)\\
+ & = & \underbrace{\frac{1}{2}V_{m}I_{m}\cos\left(\measuredangle V-\measuredangle I\right)}_{\mbox{Time Independent}}+\frac{1}{2}V_{m}I_{m}\cos\left(2\omega t+\measuredangle V-\measuredangle I\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הספק ממוצע:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{av} & = & \frac{1}{T}\int_{0}^{T}P\left(t\right)dt\\
+ & = & \frac{1}{2}V_{m}I_{m}\cos\left(\measuredangle V-\measuredangle I\right)\\
+\theta & = & \measuredangle V-\measuredangle I\\
+P_{av} & = & V_{m}I_{m}\cos\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור מעגלים פאסיביים 
+\begin_inset Formula $R,L,C$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $-90^{\circ}\leq\theta\leq90^{\circ}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbrace{PF}_{\mbox{Power Factor}}=\cos\theta\geq0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & \Rightarrow & \frac{1}{2}R_{e}\left[V_{m}e^{i\measuredangle V}I_{m}e^{i\measuredangle I}\right]=\frac{1}{2}Re\left[\hat{V}\cdot\hat{I}^{*}\right]\\
+S & = & P+jQ\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $S$
+\end_inset
+
+ הוא ההספק המורכב, 
+\begin_inset Formula $P$
+\end_inset
+
+ ההספק הממוצע ו 
+\begin_inset Formula $Q$
+\end_inset
+
+ הספק ריאקטיבי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+S & = & P+jQ\\
+ & = & \frac{1}{2}Re\left[\hat{V}\hat{I}^{*}\right]+\frac{1}{2}jIm\left[\hat{V}\hat{I}^{*}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד נוסחאות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{av} & = & \frac{1}{2}\left|\hat{I}\right|^{2}Re\left(Z\right)\\
+P_{av} & = & \frac{1}{2}\left|\hat{V}\right|^{2}Re\left(Y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גדלים אפקטיבבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y_{eff} & = & \frac{1}{T}\int_{0}^{T}y^{2}dt\\
+V_{eff} & = & \frac{V_{m}}{\sqrt{2}}\\
+I_{eff} & = & \frac{I_{m}}{\sqrt{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+PF=\cos\left(\measuredangle V_{s}-\measuredangle I_{s}\right)=\frac{P_{av}}{\frac{1}{2}\left|\hat{V}_{s}\right|\left|\hat{I}_{1}\right|}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+אלמנטים מצומדים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/cc.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעגל מצומד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+V_{1} & = & L_{1}\frac{dI_{1}}{dt}+M\frac{dI_{2}}{dt}\\
+V_{2} & = & L_{2}\frac{dI_{2}}{dt}+M\frac{dI_{1}}{dt}\\
+\kappa & = & \frac{\left|M\right|}{\sqrt{L_{1}L_{_{2}}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\kappa$
+\end_inset
+
+ הוא מקדם הצימוד והוא מציין כמה שטף עובר מסליל אחד לשני
+\end_layout
+
+\begin_layout Standard
+במצב סינוסי עמיד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{V}_{1} & = & j\omega L_{1}\hat{I}_{1}+j\omega M\hat{I}_{2}\\
+\hat{V}_{2} & = & j\omega L_{2}\hat{I}_{2}+j\omega M\hat{I}_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/cc2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דוגמה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{V}_{1} & = & 10\angle0^{\circ}\\
+\omega & = & 10\frac{\mbox{rad}}{\mbox{sec}}\\
+M & = & 9H\\
+L_{1} & = & 1H\\
+L_{2} & = & 100H\\
+j\omega L_{1} & = & 10j\\
+j\omega L_{2} & = & 100j\\
+j\omega M & = & 90j\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי 
+\begin_inset Formula $KVL$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{V_{1}} & = & 10\angle0=\hat{V}_{L_{1}}+1\hat{I}_{1}=j\omega L_{1}\hat{I}_{1}-j\omega M\hat{I}_{2}+1\hat{I}_{1}\\
+10\angle0 & = & 10j\hat{I}_{1}-90\hat{I}_{2}+\hat{I}_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צד ימני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\hat{V}_{2}=400\hat{I}_{2}=\hat{V}_{L_{1}}=-j\omega L_{2}\hat{I}_{2}+j\omega M\hat{I}_{1}=1000j\hat{I}_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename electricEngineering/cc3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עוד דוגמה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צד שמאלי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\hat{V}=3\cdot\hat{I}+\left[4j\hat{I}+3j\hat{I}_{1}\right]+\left[5j\hat{I}_{1}+3j\hat{I}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צד ימיני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+5j\hat{I}_{1}+3j\hat{I}=8j\left(\hat{I}-\hat{I}_{1}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נייצג את זה במטריצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}3+7j & 8j\\
+11j & -3j\end{pmatrix}\begin{pmatrix}\hat{I}\\
+\hat{I}_{1}\end{pmatrix}=\begin{pmatrix}\hat{V}\\
+0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משתמשים בכלל קרמר בשביל לקבל את הערכים
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+דיודה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{0}=I_{s}\left(e^{\frac{V_{0}}{nV_{T}}}-1\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I_{s}$
+\end_inset
+
+ הוא זרם הזליגה הזרם בממתה אחורי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $n$
+\end_inset
+
+ גודל חסר יחידות, תלוי בחומר ובתהליך הייצור בד"כ בין
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+V_{T}=k\frac{T}{e}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $e$
+\end_inset
+
+ מטען האלקטרון 
+\begin_inset Formula $1.6\cdot10^{-19}C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $k$
+\end_inset
+
+ קבוע בולצמן 
+\begin_inset Formula $1.38\cdot10^{-23}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $T$
+\end_inset
+
+ טמפרטורה במעלוןת קלבין עבור 
+\begin_inset Formula $T=300^{\circ}K$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $V=26mV$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המודל הזה הוא אקספוננציאלי.
+ נרצה לקבל אופינים יותר פשוטים בשביל לעבוד עם דיודות
+\end_layout
+
+\begin_layout Section
+דיודה אידיאלית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/diode1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+עקומה של דיודה אידיאלית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דודה לא אידיאלהית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/diode2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+דיודה לא אידיאלית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מייצגים דיודה לא אידיאלית דרך דיודה אידיאלית ומקור מתח.
+\end_layout
+
+\begin_layout Section
+מודל דיודה אידיאלית + מקור 
+\begin_inset Formula $DC$
+\end_inset
+
+ + נגד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename electricEngineering/diode3.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מודל עם מקור מתח+נגד
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר השיפוע הוא 
+\begin_inset Formula $\frac{1}{r}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{D}=\begin{cases}
+0 & V_{D}\leq V_{D_{0}}\\
+\frac{\left(V_{D}-V_{D_{0}}\right)}{r_{0}} & V_{D}\geq V_{D_{0}}\end{cases}\]
+
 \end_inset
 
 

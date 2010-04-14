@@ -1,0 +1,764 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=ax+by+i\left(cx+dy\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט: 
+\end_layout
+
+\begin_layout Standard
+תנאי קושי רימן מספיקים אם הנגזרות החלקיות חלקיות של 
+\begin_inset Formula $u,v$
+\end_inset
+
+)כאשר 
+\begin_inset Formula $f\left(z\right)=u\left(x,y\right)+iv\left(x,y\right)$
+\end_inset
+
+( רציפות בסביבת הנק' 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & ax+by\\
+v & = & cx+dy\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי קושי רימן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial x} & = & \frac{\partial v}{\partial y}\\
+\frac{\partial u}{\partial y} & = & -\frac{\partial v}{\partial x}\\
+\frac{ax+by}{\partial x} & \overset{?}{=} & \frac{cx+dy}{\partial y}\\
+a & = & d\\
+\frac{ax+by}{\partial y} & = & -\frac{cx+dy}{\partial y}\\
+b & = & -d\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רואים כי הנגזרות החלקיות רציפות)קבועים( אזי תנאי בשביל שפונק' תהיה אנליטית
+ בכל המישור הם: 
+\begin_inset Formula $a=d,b=-d$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\cos\left(x\right)\cdot\left(a\cdot\cosh\left(y\right)+b\sinh\left(y\right)\right)+i\left(c\cdot\cosh\left(y\right)+d\cdot\sinh\left(y\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial x} & = & -\sin\left(x\right)\left(a\cdot\cosh\left(y\right)+b\sinh\left(y\right)\right)\\
+\frac{\partial u}{\partial y} & = & \cos\left(x\right)\cdot\left(a\sinh\left(y\right)+b\cosh\left(y\right)\right)\\
+\frac{\partial v}{\partial x} & = & c\cdot\sinh\left(y\right)+d\cdot\cosh\left(y\right)\\
+\frac{\partial v}{\partial y} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial x} & = & \frac{\partial v}{\partial y}\\
+-\sin\left(x\right)\left(a\cdot\cosh\left(y\right)+b\sinh\left(y\right)\right) & = & 0\\
+a=b & = & 0\\
+\frac{\partial u}{\partial y} & = & -\frac{\partial v}{\partial x}\\
+\cos\left(x\right)\cdot\left(a\sinh\left(y\right)+b\cosh\left(y\right)\right) & = & -\left(c\cdot\sinh\left(y\right)+d\cdot\cosh\left(y\right)\right)\\
+a=b=c=d & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו שבשביל כל זה שיהיה אנליטי צריכים שזה יהיה אפס.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f=\sqrt{xy}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u}{\partial x}\vert_{\left(0,0\right)} & = & \lim_{\Delta x\to0}\frac{\sqrt{\left|0\cdot0\right|}-\sqrt{\left|0\cdot\Delta x\right|}}{\Delta x}=0\\
+\frac{\partial u}{\partial y}\vert_{\left(0,0\right)} & = & \lim_{\Delta y\to0}\frac{\sqrt{\left|0\cdot0\right|}-\sqrt{\left|0\cdot\Delta y\right|}}{\Delta y}=0\\
+\frac{\partial v}{\partial x} & = & 0\\
+\frac{\partial v}{y} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי קושי רימן מתקיימים.
+\end_layout
+
+\begin_layout Standard
+נבדוק דיפרנציאביליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial f\left(z=x+ix\right)}{\partial x}\vert_{\left(0,0\right)} & = & \lim_{\Delta x\to0}\frac{\sqrt{\Delta x\cdot\Delta x}-\sqrt{0\cdot0}}{\Delta x+i\Delta x}\\
+ & = & \lim_{\Delta x\to0}\frac{\Delta x\left(\Delta x+i\Delta x\right)}{2\Delta x^{2}}\\
+ & = & \lim_{\Delta x\to0}\frac{\left(1+i\right)}{2}\\
+ & = & \frac{1+i}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שזה שונה מאפס שקיבלנו קודם.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w & = & f\left(z\right)\\
+\lim_{\Delta z\to0}\left(\Re\left(\frac{\Delta w}{\Delta z}\right)\right) & = & L\\
+\lim_{\Delta z\to0}\Re\left(\frac{f\left(z+\Delta z\right)-f\left(z\right)}{\Delta z}\right) & = & L\\
+\lim_{\Delta z\to0}\Re\left(\frac{u\left(z+\Delta z\right)+iv\left(z+\Delta z\right)-u\left(z\right)-iv\left(z\right)}{\Delta z}\right) & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\Re\left(\frac{\left(u\left(z+\Delta z\right)+iv\left(z+\Delta z\right)-u\left(z\right)-iv\left(z\right)\right)\left(\Delta x+i\Delta y\right)}{\Delta x^{2}+\Delta y^{2}}\right) & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\Re\left(\frac{\begin{matrix}\Delta x\cdot u\left(z+\Delta z\right)+\Delta x\cdot iv\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta x\cdot iv\left(z\right)+\\
++i\Delta y\cdot u\left(z+\Delta z\right)-\Delta yv\left(z+\Delta z\right)-i\Delta y\cdot u\left(z\right)+\Delta yv\left(z\right)\end{matrix}}{\Delta x^{2}+\Delta y^{2}}\right) & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\frac{\Delta x\cdot u\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta yv\left(z+\Delta z\right)+\Delta yv\left(z\right)}{\Delta x^{2}+\Delta y^{2}} & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\frac{\Delta x\cdot u\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta yv\left(z+\Delta z\right)+\Delta yv\left(z\right)}{\Delta x^{2}+\Delta y^{2}} & = & L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שהגבול קיים נחשב מקרה פרטי של הגבול הזה כאשר 
+\begin_inset Formula $x\to0,y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y=0\end{matrix}}\frac{x\cdot u\left(z+\Delta z\right)-x\cdot u\left(z\right)}{\Delta x^{2}} & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y=0\end{matrix}}\frac{u\left(z+\Delta z\right)-u\left(z\right)}{\Delta x} & = & L\\
+u_{x} & = & L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אותו דבר עבור 
+\begin_inset Formula $x\to0,y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y=0\end{matrix}}\frac{-\Delta yv\left(z+\Delta z\right)+\Delta yv\left(z\right)}{\Delta y^{2}} & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y=0\end{matrix}}\frac{-v\left(z+\Delta z\right)+v\left(z\right)}{\Delta y} & = & L\\
+v_{y} & = & L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w & = & f\left(z\right)\\
+\lim_{\Delta z\to0}\left(\Im\left(\frac{\Delta w}{\Delta z}\right)\right) & = & L\\
+\lim_{\Delta z\to0}\Im\left(\frac{f\left(z+\Delta z\right)-f\left(z\right)}{\Delta z}\right) & = & L\\
+\lim_{\Delta z\to0}\Im\left(\frac{u\left(z+\Delta z\right)+iv\left(z+\Delta z\right)-u\left(z\right)-iv\left(z\right)}{\Delta z}\right) & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\Im\left(\frac{\left(u\left(z+\Delta z\right)+iv\left(z+\Delta z\right)-u\left(z\right)-iv\left(z\right)\right)\left(\Delta x+i\Delta y\right)}{\Delta x^{2}+\Delta y^{2}}\right) & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\Im\left(\frac{\begin{matrix}\Delta x\cdot u\left(z+\Delta z\right)+\Delta x\cdot iv\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta x\cdot iv\left(z\right)+\\
++i\Delta y\cdot u\left(z+\Delta z\right)-\Delta yv\left(z+\Delta z\right)-i\Delta y\cdot u\left(z\right)+\Delta yv\left(z\right)\end{matrix}}{\Delta x^{2}+\Delta y^{2}}\right) & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\frac{\Delta x\cdot iv\left(z+\Delta z\right)-\Delta x\cdot iv\left(z\right)+i\Delta y\cdot u\left(z+\Delta z\right)-i\Delta y\cdot u\left(z\right)}{\Delta x^{2}+\Delta y^{2}} & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y\to0\end{matrix}}\frac{\Delta x\cdot u\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta yv\left(z+\Delta z\right)+\Delta yv\left(z\right)}{\Delta x^{2}+\Delta y^{2}} & = & L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\Delta x\to0,\Delta y=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y=0\end{matrix}}\frac{\Delta x\cdot u\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta yv\left(z+\Delta z\right)+\Delta yv\left(z\right)}{\Delta x^{2}+\Delta y^{2}} & = & L\\
+\lim_{\begin{matrix}\Delta x\to0\\
+\Delta y=0\end{matrix}}\frac{u\left(z+\Delta z\right)-u\left(z\right)}{\Delta x} & = & L\\
+u_{x} & = & L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\Delta x=0,\Delta y\to0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{\begin{matrix}\Delta x=0\\
+\Delta y\to0\end{matrix}}\frac{\Delta x\cdot u\left(z+\Delta z\right)-\Delta x\cdot u\left(z\right)-\Delta yv\left(z+\Delta z\right)+\Delta yv\left(z\right)}{\Delta x^{2}+\Delta y^{2}} & = & L\\
+\lim_{\begin{matrix}\Delta x=0\\
+\Delta y\to0\end{matrix}}\frac{v\left(z\right)-v\left(z+\Delta z\right)}{\Delta y} & = & L\\
+\lim_{\begin{matrix}\Delta x=0\\
+\Delta y\to0\end{matrix}}-\frac{v\left(z+\Delta z\right)-v\left(z\right)}{\Delta y} & = & L\\
+v_{y} & = & -L\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $\frac{\partial^{2}u}{\partial x^{2}}=-\frac{\partial^{2}u}{\partial y^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}\left(u^{2}\right)}{\partial x^{2}} & \overset{?}{=} & -\frac{\partial^{2}\left(u^{2}\right)}{\partial y^{2}}\\
+\frac{\partial}{\partial x}\frac{\partial\left(u^{2}\right)}{\partial x} & \overset{?}{=} & -\frac{\partial}{\partial y}\frac{\partial\left(u^{2}\right)}{\partial y}\\
+\frac{\partial}{\partial x}\left(2u\cdot\frac{\partial u}{\partial x}\right) & \overset{?}{=} & -\frac{\partial}{\partial y}\left(2u\frac{\partial u}{\partial y}\right)\\
+\left(2\frac{\partial u}{\partial x}\right)\cdot\frac{\partial u}{\partial x}+2u\cdot\frac{\partial}{\partial x}\frac{\partial u}{\partial x} & \overset{?}{=} & -\left(2\frac{\partial u}{\partial y}\right)\frac{\partial u}{\partial y}-2u\frac{\partial}{\partial y}\frac{\partial u}{\partial y}\\
+2\left(\frac{\partial u}{\partial x}\right)^{2}+2u\frac{\partial^{2}u}{\partial x^{2}} & \overset{?}{=} & -2\left(\frac{\partial u}{\partial y}\right)^{2}-2u\frac{\partial^{2}u}{\partial y^{2}}\\
+2\left(\frac{\partial u}{\partial x}\right)^{2}+2u\frac{\partial^{2}u}{\partial y^{2}} & \overset{?}{=} & -2\left(\frac{\partial u}{\partial y}\right)^{2}-2u\frac{\partial^{2}u}{\partial y^{2}}\\
+2\left(\frac{\partial u}{\partial x}\right)^{2}-2u\frac{\partial^{2}u}{\partial y^{2}}+2\left(\frac{\partial u}{\partial y}\right)^{2}+2u\frac{\partial^{2}u}{\partial y^{2}} & \overset{?}{=} & 0\\
+2\left(\frac{\partial u}{\partial x}\right)^{2}+2\left(\frac{\partial u}{\partial y}\right)^{2}-2u\underbrace{\left(\frac{\partial^{2}u}{\partial y^{2}}+\frac{\partial^{2}u}{\partial y^{2}}\right)}_{0} & \overset{?}{=} & 0\\
+2\left(\frac{\partial u}{\partial x}\right)^{2}+2\left(\frac{\partial u}{\partial y}\right)^{2} & \overset{?}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא היא לא הרצונית עבור כך פונקציה אלה רק עבור פונקציות שעבורם 
+\begin_inset Formula $\frac{\partial u}{\partial y}=0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\frac{\partial u}{\partial x}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}f\left(u\right)}{\partial x^{2}}+\frac{\partial^{2}f\left(u\right)}{\partial y^{2}} & \overset{?}{=} & 0\\
+\frac{\partial}{\partial x}\frac{\partial f\left(u\right)}{\partial x}+\frac{\partial}{\partial y}\frac{\partial f\left(u\right)}{\partial y} & \overset{?}{=} & 0\\
+\frac{\partial}{\partial x}\left(f^{\prime}\left(u\right)\cdot\frac{\partial u}{\partial x}\right)+\frac{\partial}{\partial y}\left(f^{\prime}\left(u\right)\cdot\frac{\partial u}{\partial y}\right) & \overset{?}{=} & 0\\
+\left(\left(f^{\prime\prime}\left(u\right)\cdot\left(\frac{\partial u}{\partial x}\right)^{2}\right)+\left(f^{\prime}\left(u\right)\cdot\frac{\partial^{2}u}{\partial x^{2}}\right)\right)+\left(\left(f^{\prime\prime}\left(u\right)\cdot\left(\frac{\partial u}{\partial y}\right)^{2}\right)+\left(f^{\prime}\left(u\right)\cdot\frac{\partial^{2}u}{\partial y^{2}}\right)\right) & \overset{?}{=} & 0\\
+\left(f^{\prime\prime}\left(u\right)\cdot\left(\frac{\partial u}{\partial x}\right)^{2}\right)+\left(f^{\prime}\left(u\right)\cdot\frac{\partial^{2}u}{\partial x^{2}}\right)+\left(f^{\prime\prime}\left(u\right)\cdot\left(\frac{\partial u}{\partial y}\right)^{2}\right)+\left(f^{\prime}\left(u\right)\cdot\frac{\partial^{2}u}{\partial y^{2}}\right) & \overset{?}{=} & 0\\
+\left(f^{\prime}\left(u\right)\cdot\frac{\partial^{2}u}{\partial x^{2}}\right)+\left(f^{\prime}\left(u\right)\cdot\frac{\partial^{2}u}{\partial y^{2}}\right)+\left(f^{\prime\prime}\left(u\right)\cdot\left(\frac{\partial u}{\partial x}\right)^{2}\right)+\left(f^{\prime\prime}\left(u\right)\cdot\left(\frac{\partial u}{\partial y}\right)^{2}\right) & \overset{?}{=} & 0\\
+\left(f^{\prime}\left(u\right)\right)\left(\underbrace{\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial^{2}u}{\partial y^{2}}}_{0}\right)+\left(f^{\prime\prime}\left(u\right)\right)\cdot\left(\left(\frac{\partial u}{\partial x}\right)^{2}+\left(\frac{\partial u}{\partial y}\right)^{2}\right) & \overset{?}{=} & 0\\
+f^{\prime\prime}\left(u\right)\cdot\left(\left(\frac{\partial u}{\partial x}\right)^{2}+\left(\frac{\partial u}{\partial y}\right)^{2}\right) & \overset{?}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+או ש 
+\begin_inset Formula $f^{\prime\prime}\left(u\left(x,y\right)\right)$
+\end_inset
+
+ הוא זהותית אפס או ש 
+\begin_inset Formula $\left(\frac{\partial u}{\partial x}\right)^{2}=\left(\frac{\partial u}{\partial y}\right)^{2}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שאנחנו רוצים את זה עבור כל 
+\begin_inset Formula $u$
+\end_inset
+
+ אז בהכרח 
+\begin_inset Formula $\forall x,y:f^{\prime\prime}\left(u\left(x,y\right)\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $f=z^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(z\right)\right| & = & \left|z^{2}\right|=x^{2}+y^{2}\\
+\frac{\partial^{2}\left|f\left(z\right)\right|}{\partial x^{2}}+\frac{\partial^{2}\left|f\left(z\right)\right|}{\partial y^{2}} & = & 4\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\arg f$
+\end_inset
+
+ הרמונית בתחום שבו 
+\begin_inset Formula $\arg\left(x\right)$
+\end_inset
+
+ רציפה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\arg\left(f\left(z\right)\right)=\Im\left(\ln\left(f\left(z\right)\right)\right)$
+\end_inset
+
+.
+ זה נכון כי 
+\begin_inset Formula $\arg\left(e^{x+iy}\right)=\arg\left(e^{x}e^{iy}\right)$
+\end_inset
+
+ נסמן 
+\begin_inset Formula $z=e^{x+iy}$
+\end_inset
+
+ ואז 
+\begin_inset Formula $\arg\left(z\right)=y$
+\end_inset
+
+ אבל 
+\begin_inset Formula $y$
+\end_inset
+
+ זה 
+\begin_inset Formula $y=\Im\left(z\right)=\Im\left(\ln\left(e^{x+iy}\right)\right)=\Im\left(\ln\left(z\right)\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+זה נכון כי 
+\begin_inset Formula $\arg\left(f\left(z\right)\right)=\Im\left(\ln\left(f\left(z\right)\right)\right)$
+\end_inset
+
+ ומכיוון ש 
+\begin_inset Formula $\ln$
+\end_inset
+
+ ו 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטיות אז גם הרבתם 
+\begin_inset Formula $\ln\circ f$
+\end_inset
+
+ אנליטית ובנוסף החלק המדומה של פונק' אנליטית הוא הרמוני.
+ לכן 
+\begin_inset Formula $\arg f$
+\end_inset
+
+ הוא הרמוני.
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\ln\left|f\left(z\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באופן דומה 
+\begin_inset Formula $\ln\left|f\left(z\right)\right|=\Re\left|\ln\left(f\left(z\right)\right)\right|$
+\end_inset
+
+ כי 
+\begin_inset Formula $e^{x+iy}=e^{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+ובהכללה שעשינו קודם לפונק' שהנימוקשל ההרכבה של פונק' אנליטיות אנליטית
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v & = & e^{x}\sin\left(y\right)\\
+\frac{\partial v}{\partial x} & = & e^{x}\sin\left(y\right)\\
+\frac{\partial v}{\partial x} & = & -\frac{\partial u}{\partial y}\\
+\frac{\partial u}{\partial y} & = & -e^{x}\sin\left(y\right)\\
+u & = & e^{x}\cos\left(y\right)+c\left(x\right)\\
+\frac{\partial u}{\partial x} & = & \frac{\partial v}{\partial y}\\
+e^{x}\cos\left(y\right)+c^{\prime}\left(x\right) & = & e^{x}\cos\left(x\right)\\
+c^{\prime}\left(x\right) & = & 0\\
+c\left(x\right) & = & c\\
+u & = & e^{x}\cos\left(x\right)+c\\
+f\left(x+iy\right) & = & e^{x}\cos\left(x\right)+c+ie^{x}\sin\left(y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u_{x} & = & v_{y}=\frac{2y}{x^{2}+y^{2}}-2x\\
+u & = & -\tan^{-1}\left(\frac{y}{x}\right)+2xy+c\left(y\right)\\
+-u_{y} & = & v_{x}=\frac{2x}{x^{2}+y^{2}}-2x\\
+u & = & 2\tan^{-1}\left(\frac{x}{y}\right)+2xy+c\left(y\right)\\
+ & = & -2\tan^{-1}\left(\frac{x}{y}\right)+2xy+c\left(y\right)+\frac{\pi}{2}\\
+u & = & 2\tan^{-1}\left(\frac{x}{y}\right)+2xy+c\\
+f\left(z\right) & = & 2\tan^{-1}\left(\frac{x}{y}\right)+2xy+c+i\left(\ln\left(x^{2}+y^{2}\right)-x^{2}+y^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}u}{\partial x^{2}}+\frac{\partial u^{2}}{\partial y^{2}}=x^{2}e^{xy}+e^{xy}y^{2}=\left|z^{2}\right|e^{xy}\neq0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי 
+\begin_inset Formula $e^{xy}$
+\end_inset
+
+ לא הרמונית אזי היא אינה החלק הממשי של פונק' הרמונית.
+\end_layout
+
+\end_body
+\end_document

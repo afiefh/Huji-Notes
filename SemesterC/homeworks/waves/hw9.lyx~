@@ -1,0 +1,199 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+8
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+g\left(x,y\right) & = & \left[rect\left(\frac{x}{\nicefrac{a}{2}}\right)\cdot rect\left(\frac{y}{\nicefrac{b}{2}}\right)\right]*\left(\delta\left(x-d,y\right)\cdot\delta\left(x+d,y\right)\right)\\
+\mathcal{F}\left(rect\left(\frac{x}{\nicefrac{a}{2}}\right)\cdot rect\left(\frac{y}{\nicefrac{b}{2}}\right)\cdot\right) & = & \left|ab\right|sinc\left(\nicefrac{a}{2}k_{x},\nicefrac{b}{2}k_{y}\right)\\
+\mathcal{F}\left(\delta\left(x-d,y\right)+\delta\left(x+d,y\right)\right) & = & 2\cos\left(k_{x}d\right)\\
+a\left(k_{x},k_{y}\right) & = & 2\left|ab\right|\cos\left(k_{x}d\right)sinc\left(\frac{a}{2}k_{x},\frac{b}{2}k_{y}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{F}\left(\frac{1}{2}\left(1+m\cos\left(2\pi f_{0}x\right)\right)\right) & = & \mathcal{F}\left(\frac{1}{2}+\frac{m}{4}e^{i2\pi f_{0}x}+\frac{m}{4}e^{-i2\pi f_{0}x}\right)\\
+ & = & \frac{1}{2}\delta\left(k_{x},k_{y}\right)+\frac{m}{4}\delta\left(k_{x}-2\pi f_{0}\right)+\frac{m}{4}\delta\left(k_{x}+2\pi f_{0}\right)\\
+\mathcal{F}\left(rect\left(\frac{x}{l}\right)rect\left(\frac{y}{l}\right)\right) & = & 4l^{2}sinc\left(lk_{x}\right)sinc\left(lk_{y}\right)\\
+\mathcal{F}\left(g\left(x,y\right)\right) & = & \left(4l^{2}sinc\left(lk_{x}\right)sinc\left(lk_{y}\right)\right)*\left(\frac{1}{2}\delta\left(k_{x},k_{y}\right)+\frac{m}{4}\delta\left(k_{x}-2\pi f_{0}\right)+\frac{m}{4}\delta\left(kx+2\pi f_{0}\right)\right)\\
+ & = & 2l^{2}sinc\left(lk_{y}\right)\left[sinc\left(lk_{x}\right)+\frac{m}{2}sinc\left(l\left(k_{x}-2\pi f_{0}\right)\right)+\frac{m}{2}sinc\left(lk_{x}+2\pi f_{0}\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{S} & = & \frac{1}{\mu_{0}}\vec{E}\times\vec{B}\\
+I & = & \frac{n\varepsilon_{0}c}{2}\left|E\right|^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{E} & = & E_{0}\cos\left(\omega t-\vec{k}\vec{r}\right)\\
+\vec{B} & = & B_{0}\cos\left(\omega t-\vec{k}\vec{r}\right)\left(-\cos\theta\hat{x}+\sin\theta\hat{z}\right)\\
+\left|B_{0}\right| & = & \frac{n}{c}E_{0}\\
+S & = & \frac{1}{\mu_{0}}\frac{n}{c}E_{0}^{2}\cos\left(\omega t-\vec{k}\vec{r}\right)\\
+\left\langle \left|S\right|\right\rangle  & = & \frac{1}{T}\int_{0}^{T}\frac{1}{\mu_{0}}E_{0}^{2}\frac{n}{c}\cos^{2}\left(\omega t-\vec{k}\vec{r}\right)dt\\
+ & = & \frac{1}{\mu_{0}}\frac{n}{c}\frac{1}{2}=\frac{nE_{0}^{2}}{2\mu_{0}c}\\
+c^{2} & = & \frac{1}{\mu_{0}\varepsilon_{0}}\\
+\left\langle S\right\rangle  & = & \frac{nE_{0}^{2}}{2c}\varepsilon_{0}c^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

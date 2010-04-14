@@ -1,0 +1,749 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נרחיב את הרשת הנתונה ב 
+\begin_inset Formula $s,t$
+\end_inset
+
+ ומוסיפים צלעות 
+\begin_inset Formula $\left(s,l\right)_{l\in L}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left(r,t\right)_{r\in R}$
+\end_inset
+
+.
+ הקיבולים של כל הצלעות ברשת היא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר חתך ברשת הזו בצורה הבאה: 
+\begin_inset Formula $A=\left\{ s\right\} \cup X\cup\Gamma\left(X\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $X\subset L$
+\end_inset
+
+, ו 
+\begin_inset Formula $B=V\setminus A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחשב את קיבולת החתך שהגדרנו:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{array}{rcccccc}
+C\left(A,B\right) & = & C\left(\vec{e}\vert\left\{ s\right\} \to\left\{ L/X\right\} \right) & + & C\left(\vec{e}\vert X\to R\setminus\Gamma\left(x\right)\right) & + & C\left(\vec{e}\vert\Gamma\left(X\right)\to\left\{ t\right\} \right)\\
+ & = & \left|L\right|-\left|X\right| & + & 0 & + & \left|\Gamma\left(x\right)\right|\end{array}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו שהחתך הוא בעל קיבולת 
+\begin_inset Formula $C\left(A,B\right)=\left|L\right|-\left(\left|X\right|-\Gamma\left(X\right)\right)$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+עבור גרף 
+\begin_inset Formula $G$
+\end_inset
+
+ שהקיבול של כל צלע הוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+קיימת זרימה מקסימאלית 
+\begin_inset Formula $d$
+\end_inset
+
+ אם"ם הקיבול של החתך המינימאלי הוא 
+\begin_inset Formula $d$
+\end_inset
+
+, כלומר קיימים 
+\begin_inset Formula $d$
+\end_inset
+
+ מסלולים זרים שמחברים את 
+\begin_inset Formula $s,t$
+\end_inset
+
+.
+ אם לא קיימת זרימה כזו זה אומר שברשת השיורית שלנו התנתק 
+\begin_inset Formula $s$
+\end_inset
+
+ מ 
+\begin_inset Formula $t$
+\end_inset
+
+ אחרי הזרמת 
+\begin_inset Formula $x$
+\end_inset
+
+ מסלולים כך ש 
+\begin_inset Formula $x<d$
+\end_inset
+
+.
+ מפני שהמסלולים האלה הם בלתי תלויים מקבלים שהיה אפשר להוריד פשוט צלע אחד
+ מכל מסלול ולהגיע לאותה תוצאה)צריך להתחקם בבחירה במקרה שיש מסלולים לא זרים,
+ אבל תמיד ניתן למצא צלע משותפת לכל קבוצה של מסלולים לא זרים כי היא קייםמת
+ לפי ההגדרה של מסלולים לא זרים(
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+מפצלים כל צלע 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ לשתי צלעות 
+\begin_inset Formula $v_{i_{in}},v_{i_{out}}$
+\end_inset
+
+ ומחברים ביניהם בצלע בעלת קיבול
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+.
+\end_layout
+
+\begin_layout Standard
+ואז לפי ההוכחה של א מתקבל את ב.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נגדיר גרף זרימה באופן הבא: קודקודים הגרף יהיו המשימה ועוד 
+\begin_inset Formula $s,t$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{1}$
+\end_inset
+
+: צלעות אשר מחוברות בין פרויקט לבין דרישת קדם שלו.
+ 
+\begin_inset Formula $\left(u,v\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $v$
+\end_inset
+
+ היא דרישת הקדם.
+ הקיבול הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{2}$
+\end_inset
+
+: קודקודים אשר מסמנים פרויקט שתועלתו חיובית, יחובר ל 
+\begin_inset Formula $s$
+\end_inset
+
+)בצלע 
+\begin_inset Formula $\left(s,x_{j}\right)$
+\end_inset
+
+( וקיבול הצלע היא 
+\begin_inset Formula $p_{j}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $E_{3}$
+\end_inset
+
+: קודקודים אשר מסמנים פרויקט שתועלתו חיובית, יחובר ל 
+\begin_inset Formula $s$
+\end_inset
+
+)בצלע 
+\begin_inset Formula $\left(x_{k},t\right)$
+\end_inset
+
+( וקיבול הצלע היא 
+\begin_inset Formula $-p_{j}$
+\end_inset
+
+ או 
+\begin_inset Formula $\left|p_{j}\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+טענת עזר:
+\end_layout
+
+\begin_layout Standard
+קבוצת מסימות ניתנת לבצוע)כלומר כל דרישות הקדם בוצעו( אם"ם החתך של 
+\begin_inset Formula $\left\{ s\right\} $
+\end_inset
+
+ עם הקבוצה הזו הוא סופי.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+אם החתך סופי אז אין אף צלע אינסופית מ 
+\begin_inset Formula $S$
+\end_inset
+
+ ל 
+\begin_inset Formula $T$
+\end_inset
+
+, כלומר כלומר אין אף דרישת קדם שלא בוצעה.
+ הכיוון השני: אם החתך אינו סופי אזי יש צלע אינסופית)סכום סופי של צלעות סופיות
+ הוא עדיין סופי( ז"א שיש דרישת קדם שלא בוצעה.
+\end_layout
+
+\begin_layout Paragraph
+טענת עזר:
+\end_layout
+
+\begin_layout Standard
+אם נבחר סט של משימות 
+\begin_inset Formula $A$
+\end_inset
+
+ הניתנות לביצוע ונבנה חתך עם 
+\begin_inset Formula $s$
+\end_inset
+
+, קיבולת החתך תהיה סופית ותהיה שווה ל 
+\begin_inset Formula $c-\sum_{\mbox{cut}}p_{i}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $c$
+\end_inset
+
+ קבוע כלשהוא
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+רק צלעות ב 
+\begin_inset Formula $E_{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $E_{3}$
+\end_inset
+
+ ישתתפו בחתך הזה אזי הקיבול של החתך 
+\begin_inset Formula $\left(\left\{ s\right\} \cup A,V\setminus\left\{ s\right\} \setminus A\right)$
+\end_inset
+
+ היא 
+\begin_inset Formula \begin{eqnarray*}
+\sum_{u\in V\setminus\left\{ s\right\} \setminus A}c\left(s,u\right)+\sum_{u\in A}c\left(u,t\right) & = & \sum_{u\notin A,p_{u}>0}p_{u}+\sum_{u\in A,p_{u}<0}p_{u}\\
+ & = & \sum_{u\in A,p_{u}>0}p_{u}-\sum_{u\in A,p_{u}>0}-\sum_{u\in A,p_{u}<0}p_{u}\\
+ & = & \underbrace{\sum_{u\in P,p_{u}>0}p_{u}}_{C}-\sum_{u\in A}p_{u}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל.
+\end_layout
+
+\begin_layout Paragraph
+סוים התרגיל:
+\end_layout
+
+\begin_layout Standard
+מכיוון שתמיד יש חתכים ב 
+\begin_inset Formula $G$
+\end_inset
+
+ בעלי קיבול סופי, לפי טענת העזר הראשונה מקבלים כי החתך המינימאלי הוא סופי
+ ולכן מתאים לקבוצת מסימות שניתנת לבחור.
+ לפי טענת העזר השניה מסיקים כי החתך המינימאלי מתאים לקבוצה שממזערת את 
+\begin_inset Formula $C-\sum_{u\in A}p_{u}$
+\end_inset
+
+ ולכן ממקסמת 
+\begin_inset Formula $\sum_{u\in A}p_{u}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לכן האלג' הבא יפתור את הבעיה: תבנה גרף 
+\begin_inset Formula $G$
+\end_inset
+
+, תמצא זרימה מקסימאלית, תמצא חתך מינימאלי 
+\begin_inset Formula $\left(S,T\right)$
+\end_inset
+
+, תדפיס את 
+\begin_inset Formula $S\setminus\left\{ s\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נגדיר רשת 
+\begin_inset Formula $G=\left(V,E\right)$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $V=\left\{ s,t\right\} \cup\left\{ S_{i}\right\} _{i\in\left\{ 1\dots k\right\} }\cup\left\{ g_{j}\right\} _{j\in\left\{ 1\dots n\right\} }$
+\end_inset
+
+ והצלעות:
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(s,S_{i}\right)$
+\end_inset
+
+ בעלת קיבול 
+\begin_inset Formula $\left|S_{i}\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(g_{i},t\right)$
+\end_inset
+
+ בעלת קיבול 
+\begin_inset Formula $c_{j}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+\begin_inset Formula $\left(S_{i},g_{j}\right)$
+\end_inset
+
+ רק אם המדריך 
+\begin_inset Formula $g_{j}$
+\end_inset
+
+ מדבר את השפה 
+\begin_inset Formula $j$
+\end_inset
+
+, בעלות קיבולת 
+\begin_inset Formula $\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אם הזרימה המקסימאלית שווה למספר הטוריסתים אז אפשר לחלק אותם באופן הרצוי,
+ אם לא אז לא.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+נבנה גרף כך שעבור כל צומת 
+\begin_inset Formula $j_{i}$
+\end_inset
+
+ חוץ מהצומת שבה נמצא החנות קיימוים שני קודקודים: 
+\begin_inset Formula $v_{i_{in}},v_{i_{out}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיימת צלע בין 
+\begin_inset Formula $v_{in_{i}}$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{out_{j}}$
+\end_inset
+
+ אם קיים רחוב שאפשר לנסוע בו מהצומת ב 
+\begin_inset Formula $i$
+\end_inset
+
+ ל 
+\begin_inset Formula $j$
+\end_inset
+
+, הקיבול הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $v_{in_{i}},v_{out_{i}}$
+\end_inset
+
+ קיימת צלע מ
+\begin_inset Formula $in$
+\end_inset
+
+ ל 
+\begin_inset Formula $out$
+\end_inset
+
+ והקיבולת שלה הוא המחיר שעולה לסים פרסומת בצומת הזו
+\end_layout
+
+\begin_layout Standard
+קיימת צלע בין 
+\begin_inset Formula $s$
+\end_inset
+
+ ל 
+\begin_inset Formula $v_{in_{i}}$
+\end_inset
+
+ אם אפשר לכנס לעיר מהצומת ה 
+\begin_inset Formula $i$
+\end_inset
+
+ הקיבול הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיימת צלע בין 
+\begin_inset Formula $v_{out_{i}}$
+\end_inset
+
+ ל 
+\begin_inset Formula $t$
+\end_inset
+
+ אם שפר להגיע מהצומת ה 
+\begin_inset Formula $i$
+\end_inset
+
+ לחנות הקיבול הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזרימה המקסימאלית מגדירה חתך מינימאלי, לפרסם בחתכים האלה זה הדרך האכי יעילה.
+\end_layout
+
+\end_body
+\end_document

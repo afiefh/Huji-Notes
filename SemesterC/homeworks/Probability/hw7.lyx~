@@ -1,0 +1,425 @@
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y & = & \frac{1}{1+X}\\
+E\left(x\right) & = & \sum_{i=0}^{\infty}P\left(x=i\right)i\\
+ & = & \sum_{i=0}^{\infty}{n \choose i}p^{i}\left(1-p\right)^{n-i}\\
+ & = & np\\
+E\left(x\right) & = & \sum_{i=0}^{\infty}P\left(x=i\right)\frac{1}{1+i}\\
+ & = & \sum_{i=0}^{n}{n \choose i}p^{i}\left(1-p\right)^{n-i}\frac{1}{1+i}\\
+ & = & \sum_{i=0}^{n}\frac{n!}{i!\left(n-i\right)!}p^{i}\left(1-p\right)^{n-i}\cdot\frac{1}{1+i}\\
+ & = & \sum_{i=0}^{n}\frac{n!}{\left(1+i\right)!\left(n-i\right)!}p^{i}\left(1-p\right)^{n-i}\\
+ & = & \frac{1}{n+1}\sum_{i=0}^{n}\frac{\left(n+1\right)!}{\left(1+i\right)!\left(n+1-i-1\right)!}\cdot p^{i}\left(1-o\right)^{n+1-i+1}\\
+ & = & \frac{1}{1+np}\sum_{i=0}^{n+1}\overbrace{{n+1 \choose i}\left(1-p\right)^{n+1}}^{1}-\left(1-p\right)^{n+1}\\
+ & = & \frac{1-\left(1-p\right)^{n+1}}{\left(n+1\right)p}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{k=0}^{\infty}P\left(win\vert N=n\right)\cdot P\left(N=k\right) & = & \sum_{k=0}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{k!}\cdot\frac{l}{k+1}\\
+ & = & \frac{1}{\lambda}\sum_{k=0}^{\infty}e^{-\lambda}\frac{\lambda^{k+1}}{\left(n+1\right)!}\\
+ & = & \frac{1}{\lambda}\sum_{k=1}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{k!}\\
+ & = & \frac{1}{\lambda}\left[\left(\sum_{k=0}^{\infty}e^{-\lambda}\frac{\lambda^{k}}{k!}\right)-e^{-\lambda}\right]\\
+ & = & \frac{1-e^{-\lambda}}{\lambda}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+ההסתברות לראש מטבע א' 
+\begin_inset Formula $P_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההסתברות לראש מטבע ב' 
+\begin_inset Formula $P_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X$
+\end_inset
+
+ מס' הראשים כאשר כאשר בוחרים מטבע באקראי ומוטולים אותו פעמיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $Y$
+\end_inset
+
+ מס' הראשים כאשר בוחרים מטבע באקראי ומוטילים אותו פעם אחת אחר כך בוחרים
+ שוב מטבע באקראי ומוטילים אותו פעם אחת.
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+המשתנה 
+\begin_inset Formula $X$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x=0\right) & = & \frac{1}{2}q_{1}^{2}+\frac{1}{2}q_{2}^{2}\\
+P\left(x=1\right) & = & \frac{1}{2}p_{1}q_{1}\cdot2+\frac{1}{2}p_{2}q_{2}\cdot2\\
+ & = & p_{1}q_{1}+p_{2}q_{2}\\
+P\left(x=2\right) & = & \frac{1}{2}p_{1}^{2}+\frac{1}{2}p_{2}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(x\right) & = & \sum_{x=0}^{2}xp\left(X=x\right)\\
+ & = & \begin{matrix}0\cdot\left(\frac{1}{2}q_{1}^{2}+\frac{1}{2}q_{2}^{2}\right)+\\
+1\cdot\left(p_{1}q_{1}+p_{2}q_{2}\right)+\\
+2\cdot\left(\frac{1}{2}p_{1}^{2}+\frac{1}{2}p_{2}^{2}\right)\end{matrix}\\
+ & = & p_{1}q_{1}+p_{2}q_{2}+p_{1}^{2}+p_{2}^{2}\\
+ & = & p_{1}\underbrace{\left(q_{1}+p_{1}\right)}_{1}+p_{2}\underbrace{\left(q_{2}+p_{2}\right)}_{1}\\
+ & = & p_{1}+p_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשתנה 
+\begin_inset Formula $Y$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+אפשר לחשוב על זה כמו 
+\begin_inset Formula $Y\sim\mbox{Bin}\left(2,\frac{p_{1}+p_{2}}{2}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(Y\right)=n\cdot p=2\left(\frac{p_{1}+p_{2}}{2}\right)=p_{1}+p_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{var}\left(Y\right) & = & np\left(1-p\right)=\left(p_{1}+p_{2}\right)\left(1-\frac{p_{1}+p_{2}}{2}\right)\\
+ & = & p_{1}+p_{2}-\frac{\left(p_{1}+p_{2}\right)^{2}}{2}\\
+\mbox{var}\left(X\right) & = & E\left(x^{2}\right)-E\left(x\right)^{2}=p_{1}q_{1}+p_{2}q_{2}+4\left(\frac{1}{2}p_{1}^{2}+\frac{1}{2}p_{2}^{2}\right)-\left(p_{1}+p_{2}\right)^{2}\\
+ & = & p_{1}q_{1}-p_{2}q_{2}+2p_{1}^{2}+2p_{2}^{2}-p_{1}^{2}-2p_{1}p_{2}-p_{2}^{2}\\
+ & = & p_{1}q_{1}+p_{2}q_{2}+p_{1}^{2}+p_{2}^{2}-2p_{1}p_{2}\\
+ & = & p_{1}\left(q_{1}+p_{1}\right)+p_{2}\left(q_{2}+p_{2}\right)-2p_{1}p_{2}\\
+ & = & p_{1}+p_{2}-2p_{1}p_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך לבדוק 
+\begin_inset Formula $2p_{1}p_{2}\lessgtr\frac{\left(p_{1}+p_{2}\right)^{2}}{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2p_{1}p_{2} & \lessgtr & \frac{\left(p_{1}+p_{2}\right)^{2}}{2}\\
+4p_{1}p_{2} & \lessgtr & p_{1}^{2}+p_{2}^{2}+2p_{1}p_{2}\\
+0 & \lessgtr & p_{1}^{2}+p_{2}^{2}-2p_{1}p_{2}\\
+0 & \lessgtr & \left(p_{1}-p_{2}\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אם 
+\begin_inset Formula $0<\left(p_{1}-p_{2}\right)^{2}$
+\end_inset
+
+ מץקיים 
+\begin_inset Formula $\mbox{var}\left(x\right)>\mbox{var}\left(y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+הוכחנו שמתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(y=k\vert k>0\right)=\frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}{1-e^{-\lambda}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחפש את התוחלת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(Y\right) & = & \sum_{k=0}^{\infty}\frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}{1-e^{-\lambda}}\cdot k\\
+ & = & \frac{1}{1-e^{-\lambda}}\sum_{k=1}^{\infty}\frac{e^{-\lambda}\cdot\lambda^{k}}{\left(k-1\right)!}\\
+ & = & \frac{\lambda}{1-e^{-\lambda}}\cdot\underbrace{\sum_{j=0}^{\infty}\frac{e^{-\lambda}\lambda^{j}}{j!}}_{1}\\
+ & = & \frac{\lambda}{1-e^{-\lambda}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את 
+\begin_inset Formula $E\left(Y^{2}\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(Y^{2}\right) & = & \sum_{k=0}^{\infty}k^{2}P\left(Y=k\right)\\
+ & = & \sum_{k=0}^{\infty}k^{2}\frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}{1-e^{-\lambda}}\\
+ & = & \sum_{k=0}^{\infty}\left(k\left(k-1\right)+k\right)\frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}{1-e^{-\lambda}}\\
+ & = & \sum_{k=0}^{\infty}k\left(k-1\right)\frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}{1-e^{-\lambda}}+\underbrace{\sum_{k=0}^{\infty}k\frac{\left(\frac{e^{-\lambda}\cdot\lambda^{k}}{k!}\right)}{1-e^{-\lambda}}}_{E\left(Y\right)}\\
+ & = & \frac{1}{1-e^{-\lambda}}\underbrace{\sum_{k=2}^{\infty}\frac{e^{-\lambda}\cdot\lambda^{k}}{\left(k-2\right)!}}_{1}+E\left(Y\right)\\
+ & = & \frac{\lambda^{2}}{1-e^{-\lambda}}+\frac{\lambda}{1-e^{-\lambda}}\\
+ & = & \frac{\lambda^{2}+\lambda}{1-e^{-\lambda}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{var}\left(Y\right)=\frac{\lambda}{1-e^{-\lambda}}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

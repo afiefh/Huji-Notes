@@ -1,0 +1,647 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $f_{1}\dots f_{n}$
+\end_inset
+
+ תלויים ליניארית, לכן קיימים 
+\begin_inset Formula $a_{1}\dots a_{n}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\sum_{i=1}^{n}a_{i}f_{i}=0$
+\end_inset
+
+, לכן בהכרח מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{n} & = & -\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}f_{i}\\
+f_{n}^{\prime} & = & -\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}f_{i}^{\prime}\\
+\vdots & \vdots & \vdots\\
+f_{n}^{\left(n\right)} & = & -\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}f_{i}^{\left(n\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן ה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Wronskian
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+W\left(f_{1}\dots f_{n}\right)=\begin{vmatrix}f_{1} & \dots & f_{n-1} & -\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}f_{i}\\
+f_{1}^{\prime} & \ddots & f_{n-1}^{\prime} & -\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}f_{i}^{\prime}\\
+\vdots & \ddots & \vdots & \vdots\\
+f_{1}^{\left(n\right)} & \dots & f_{n-1}^{\left(n\right)} & -\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}f_{i}^{\left(n\right)}\end{vmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו בקורס אלגברה ליניארית שאם עמודה מסויימת היא קומבינציה ליניארית של
+ העמודות האחרות הדיטירמיננטה שווה לאפס.
+ רואים שעמודה ה 
+\begin_inset Formula $n$
+\end_inset
+
+ היא קומבינציה ליניארית של שאר העמודות.
+ אם 
+\begin_inset Formula $v_{i}$
+\end_inset
+
+ היא העמודה ה
+\begin_inset Formula $i$
+\end_inset
+
+ בדיטרמיננטה אזי 
+\begin_inset Formula $v_{n}=-\sum_{i=1}^{n-1}\frac{a_{i}}{a_{n}}v_{i}$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $W\left(f_{1}\dots f_{n}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{1} & = & x^{3}\\
+f_{2} & = & \left|x^{3}\right|\\
+f_{1}^{\prime} & = & 3x^{2}\\
+f_{2}^{\prime} & = & \begin{cases}
+3x^{2} & x\geq0\\
+-3x^{2} & x<0\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הורנסקיאן הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W\left(f_{1},f_{2}\right) & = & \begin{vmatrix}f_{1} & f_{2}\\
+f_{1}^{\prime} & f_{2}^{\prime}\end{vmatrix}\\
+x\geq0:\, W\left(f_{1},f_{2}\right) & = & \begin{vmatrix}x^{3} & x^{3}\\
+3x^{3} & 3x^{2}\end{vmatrix}=0\\
+x<0:\, W\left(f_{1},f_{2}\right) & = & \begin{vmatrix}x^{3} & -x^{3}\\
+3x^{3} & -3x^{2}\end{vmatrix}=0\\
+\forall t:W\left(f_{1},f_{2}\right) & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $x^{3},\left|x^{3}\right|$
+\end_inset
+
+ בלתי תלויות ליניראיות)קל לראות שאין פרמטרים 
+\begin_inset Formula $\alpha_{1},\alpha_{2}$
+\end_inset
+
+ שמאפסים 
+\begin_inset Formula $a_{1}x^{3}+\alpha_{2}\left|x^{3}\right|$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x$
+\end_inset
+
+( 
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+W\left(e^{\lambda_{1}t}\dots e^{\lambda_{n}t}\right) & = & \begin{matrix}e^{\lambda_{1}t} & \dots & e^{\lambda_{n}t}\\
+\vdots & \ddots & \vdots\\
+\lambda_{1}^{n}e^{\lambda_{1}t} & \dots & \lambda_{n}^{n}e^{\lambda_{n}t}\end{matrix}\\
+W\left(e^{\lambda_{1}t}\dots e^{\lambda_{n}t}\right)\left(t=0\right) & = & \begin{matrix}1 & \dots & 1\\
+\vdots & \ddots & \vdots\\
+\lambda_{1}^{n} & \dots & \lambda_{n}^{n}\end{matrix}\\
+ & = & \prod_{i\neq j}\left(\lambda_{i}-\lambda_{j}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים שלא קיים 
+\begin_inset Formula $\lambda_{i}=\lambda_{j}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+, לכן הורונסקיאן לא מתאפס באפס, לכן הוא לא מתאפס בכל התחום.
+ אם הורנסקיאן לא מתאפס בכל התחום אז הפונקציות בלתי תלויות ליניארית.
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה כי 
+\begin_inset Formula $\left\{ t^{i}e^{\lambda t}\right\} _{i=0}^{n}$
+\end_inset
+
+ הם פונקציות תלויות ליניארית, אזי קיימים 
+\begin_inset Formula $\alpha_{0}\dots\alpha_{n}$
+\end_inset
+
+ לא כולם אפס כך ש
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{0}e^{\lambda t}+a_{1}te^{\lambda t}+\dots+a_{n}t^{n}e^{\lambda t} & = & 0\\
+e^{\lambda t}\left(a_{0}+a_{1}t+\dots+a_{n}t^{n}\right) & = & 0\\
+a_{0}+a_{1}t+\dots+a_{n}t^{n} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל הפונקציות 
+\begin_inset Formula $1,t,t^{2}\dots t^{n}$
+\end_inset
+
+ הם בלתי תלויות ליניארית, לכן זה מתקיים רק עבור 
+\begin_inset Formula $\forall i:\alpha_{i}=0$
+\end_inset
+
+, בסתירה לזה ש 
+\begin_inset Formula $\left\{ t^{i}e^{\lambda t}\right\} _{i=0}^{n}$
+\end_inset
+
+ תלויות ליניארית.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & c\cdot e^{\left(\sigma+i\omega\right)t}+\overline{c}e^{\left(\sigma-i\omega\right)t}\\
+ & = & e^{\sigma t}\left(c\cdot e^{i\omega t}+\overline{c}e^{-i\omega t}\right)\\
+ & = & e^{\sigma t}\left(\left(a+ib\right)e^{i\omega t}+\left(a-ib\right)e^{-i\omega t}\right)\\
+ & = & e^{\sigma t}\left(ae^{i\omega t}+ibe^{i\omega t}+ae^{-i\omega t}-ibe^{-i\omega t}\right)\\
+ & = & e^{\sigma t}\left(\begin{matrix}a\left(\cos\left(\omega t\right)+i\sin\left(\omega t\right)\right)+ib\left(\cos\left(\omega t\right)+i\sin\left(\omega t\right)\right)+\\
++a\left(\cos\left(\omega t\right)-i\sin\left(\omega t\right)\right)-ib\left(\cos\left(\omega t\right)-i\sin\left(\omega t\right)\right)\end{matrix}\right)\\
+ & = & e^{\sigma t}\left(2a\cos\left(\omega t\right)-2b\sin\left(\omega t\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי עבור כל קבועים 
+\begin_inset Formula $\alpha_{1},\alpha_{2}$
+\end_inset
+
+ קיימים קבועים 
+\begin_inset Formula $r,\varphi$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a_{1}\cos\left(\omega t\right)+a_{2}\sin\left(\omega t\right)=r\cos\left(\omega t+\varphi\right)$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & e^{\sigma t}\left(\underbrace{\left(2a\right)}_{\alpha_{1}}\cos\left(\omega t\right)+\underbrace{\left(-2b\right)}_{\alpha_{2}}\sin\left(\omega t\right)\right)\\
+ & = & e^{\sigma t}\cdot2r\cdot\cos\left(\omega t+\varphi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & e^{\sigma t}2r\cos\left(\omega t+\theta\right)\\
+ & = & e^{\sigma t}\left(2r\left[\cos\left(\omega t\right)\cos\left(\theta\right)-\sin\left(\omega t\right)\sin\left(\theta\right)\right]\right)\\
+ & = & e^{\sigma t}\left(\underbrace{\left(2r\cos\left(\theta\right)\right)}_{a}\cos\left(\underbrace{\omega t}_{\phi\left(t\right)}\right)+\underbrace{2r\left(-\sin\left(\theta\right)\right)}_{b}\sin\left(\underbrace{\omega t}_{\phi\left(t\right)}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}y}{\partial t}+4\frac{\partial y}{\partial t}+4y & = & 0\\
+r^{2}+4r+4 & = & 0\\
+\left(r+2\right)^{2} & = & 0\\
+r_{1} & = & -2\\
+r_{2} & = & -2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן הפתרון הוא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(t\right)=Ae^{-2t}+Bte^{-2t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים תנאי התחלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t=0\right) & = & 3\\
+Ae^{-2\cdot0}+B\cdot0\cdot e^{-2\cdot0} & = & 3\\
+A & = & 3\\
+\frac{\partial y}{\partial t}_{t=0} & = & -4\\
+-2Ae^{-2\cdot0}+Be^{-2\cdot0}-2Be^{-2\cdot0}\cdot0 & = & -4\\
+-2A+B & = & -4\\
+B & = & 2A-4\\
+B & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}y}{\partial t^{2}}+5\frac{\partial y}{\partial t}+6y=\frac{\partial^{2}u}{\partial t^{2}}+7\frac{\partial u}{\partial t}+11u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור 
+\begin_inset Formula $\mbox{ZIR}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}y}{\partial t^{2}}+5\frac{\partial y}{\partial t}+6y & = & 0\\
+r^{2}+5r+6 & = & 0\\
+r_{1} & = & -3\\
+r_{2} & = & -2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן פתרון 
+\begin_inset Formula \[
+y=Ae^{-3t}+Be^{-2t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור 
+\begin_inset Formula $\mbox{ZSR}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}y}{\partial t^{2}}+5\frac{\partial y}{\partial t}+6y=\delta\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה שקול לפתור את 
+\begin_inset Formula $ZIR$
+\end_inset
+
+ בתנאי התחלה 
+\begin_inset Formula $y\left(0\right)=0,y^{\prime}\left(0\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A+B & = & 0\\
+-3A-2B & = & 1\\
+A & = & -1\\
+B & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר התגובה ל 
+\begin_inset Formula $\delta$
+\end_inset
+
+ היא 
+\begin_inset Formula $y\left(t\right)=e^{-2t}-e^{-3t}$
+\end_inset
+
+ ולכן התגובה ל 
+\begin_inset Formula $\delta^{\prime\prime}\left(t\right)+\delta^{\prime}\left(t\right)+11\delta\left(t\right)$
+\end_inset
+
+ היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & \begin{matrix}11\left(e^{-2t}-e^{-3t}\right)u\left(t\right)+7\left(-2e^{-2t}+3e^{-3t}\right)u\left(t\right)+\\
++7\delta\left(t\right)\left(e^{-3t}-2e^{-3t}\right)+\left(3e^{-2t}-9e^{-3t}\right)u\left(t\right)+\\
++\delta\left(t\right)\left(-2e^{-2t}+e^{-3t}-2e^{-2t}+3e^{-3t}\right)+\delta^{\prime}\left(t\right)\left(e^{-2t}-e^{-3t}\right)\end{matrix}\\
+ & = & \left(e^{-3t}+e^{-2t}\right)u\left(t\right)+\delta\left(t\right)\cdot2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

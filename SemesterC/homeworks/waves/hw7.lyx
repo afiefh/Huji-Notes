@@ -1,0 +1,798 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{\phi} & = & \sqrt{gH}\\
+n & = & \frac{c}{v_{\phi}}\\
+n & \sim & \frac{1}{\sqrt{H}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לפי חוק סנל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\sin\theta_{1}}{\sin\theta_{2}} & = & \frac{n_{2}}{n_{1}}\\
+\sin\theta_{2} & = & \sin\theta_{2}\frac{n_{1}}{n_{2}}=\sqrt{\frac{H_{2}}{H_{1}}}\sin\theta_{1}\\
+\theta_{2} & = & 56.4^{\circ}\\
+\sin\theta_{3} & = & \sin\theta_{2}\sqrt{\frac{H_{3}}{H_{2}}}\\
+\theta_{3} & = & 42^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+ע"ם ש 
+\begin_inset Formula $\theta_{3}=\frac{\pi}{2}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\theta_{1} & = & \sqrt{\frac{H_{1}}{H_{2}}}\sqrt{\frac{H_{2}}{H_{3}}}\sin\theta_{3}\\
+ & = & \sqrt{\frac{H_{1}}{H_{3}}}\sin\theta_{3}\\
+\sin\theta_{1} & = & \sqrt{\frac{H_{1}}{H_{3}}}\cdot1\\
+\theta_{1} & = & 48.6^{\circ}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{\phi} & = & \sqrt{gH}=\frac{\omega}{k}=\frac{\lambda\omega}{2\pi}\\
+v_{\phi} & = & \frac{c}{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{2\omega}{2\pi} & = & \frac{c}{n}\sim\sqrt{H}\\
+\frac{\lambda_{2}}{\lambda_{1}} & = & \sqrt{\frac{H_{2}}{H_{1}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{2} & = & \frac{5}{3}\lambda_{1}=83.3cm\\
+\lambda_{3} & = & \frac{4}{3}\lambda_{1}=66.7cm\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{12} & = & \frac{n_{1}-n_{2}}{n_{1}+n_{2}}=\frac{1}{4}\\
+T_{12} & = & \frac{2n_{1}}{n_{1}+n_{2}}=\frac{5}{4}\\
+R_{23} & = & \frac{n_{2}-n_{3}}{n_{2}+n_{3}}=-\frac{1}{9}\\
+T_{23} & = & \frac{2n_{2}}{n_{2}+n_{3}}=\frac{8}{9}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi_{1} & = & A\cos\left(\omega t-k_{1}x\right)\\
+\psi_{2} & = & AR_{12}\cos\left(\omega t+k_{1}x\right)\\
+ & = & \frac{A}{4}\cos\left(\omega t+k_{1}x\right)\\
+\psi_{3} & = & T_{12}A\cos\left(\omega t-k_{2}x\right)\\
+\psi_{4} & = & AT_{12}R_{23}\cos\left(\omega t+k_{2}x+\varphi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא הפזה ע"י
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi_{3}R_{23}\vert_{x=L} & = & \psi_{4}\vert_{x=L}\\
+\cos\left(\omega t-k_{2}L\right) & = & \cos\left(\omega t+k_{2}L+\varphi\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\varphi=-2k_{2}L\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגל בתחום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi_{4} & = & AT_{12}R_{23}\cos\left(\omega t+k_{2}x-2k_{2}L\right)\\
+T_{12}R_{23}T_{21} & = & -0.1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן הגל בתחום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi_{2}+\psi_{3}=\frac{1}{4}A\cos\left(\omega t+k_{1}x\right)-\frac{1}{10}A\cos\left(\omega t+k_{1}x-2k_{2}L\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+הגל מקבל ערך מינימאלי כאשר 
+\begin_inset Formula $2k_{2}L=2\pi n$
+\end_inset
+
+ עבור 
+\begin_inset Formula $n=1,2,3\dots$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+L=\frac{\pi n}{k_{2}}=\frac{\pi n}{2\pi}\lambda=\frac{\lambda_{2}n}{2}=n\cdot41.1cm\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ז
+\end_layout
+
+\begin_layout Standard
+זה כי לא כל הגל חוזר, יש גם החזרות מסדר יותר גבוה) נכנסים לתחום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ואז עושים כול מיני החזרות 
+\begin_inset Formula $1\to2\to1\to2\to1$
+\end_inset
+
+ לפני שהם יוצאים לתחום
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+עוד פעם( ויש אין סוף גלים כאלה)אבל אנחנו פיזיקאים אז מזניחים דברים שלא בא
+ לנו לטפל בהם(
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+t_{1}=\frac{L}{\nu}=\frac{L}{\left(\frac{c}{n_{1}}\right)}=n_{1}\frac{L}{C}\]
+
+\end_inset
+
+
+\begin_inset Formula \begin{eqnarray*}
+n_{1}\sin\theta_{m} & = & n_{2}\sin\theta_{f}=n_{2}\\
+\sin\theta_{m} & = & \frac{n_{1}}{n_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+t_{2}=\frac{L}{v_{x}}=\frac{L}{\frac{c}{n_{1}}\sin\left(\theta_{m}\right)}=\frac{L}{C}\cdot\frac{n_{1}^{2}}{n_{2}}\]
+
+\end_inset
+
+ הפרש הזמנים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\Delta t=t_{2}-t_{1}=\frac{L}{c}\cdot\left[\frac{n_{1}^{2}}{n_{2}}-n_{1}\right]=\frac{L}{C}\frac{n_{1}}{n_{2}}\cdot\left(n_{2}-n_{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+L & = & 42\cdot10^{4}m\\
+n_{1} & = & 1.58\\
+n_{2} & = & 1525\\
+c & = & 3\cdot10^{8}\frac{m}{sec}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+גם אם שתי הקרניים קוהרנטייות כלומר נכנסות לתחום כך שתהיה התהפכות צריך שהפרש
+ הזפזה יהי 
+\begin_inset Formula $\pi$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta\varphi & = & \omega\Delta t\\
+\omega & = & \frac{\Delta t}{\pi}=2.6\cdot10^{-5}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi\left(x,t=0\right)\begin{cases}
+V_{0} & \left|x\right|\leq\frac{L}{2}\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגל נע בכיוון החיובי לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi\left(x,t\right) & = & \sum_{n}A_{n}\cos\left(\omega_{n}t-k_{n}x\right)\\
+\psi\left(x,y\right) & = & \int_{0}^{\infty}A\left(k\right)\cos\left(\omega_{n}t-kx\right)dk\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"ם למצא מה זה 
+\begin_inset Formula $A\left(k\right)$
+\end_inset
+
+ נציב תנאי התחלה 
+\begin_inset Formula $t=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{\infty}A\left(k\right)\cos\left(kx\right)dx & = & \frac{2V_{0}}{\pi}\int_{0}^{\nicefrac{L}{2}}\cos\left(kx\right)dx\\
+ & = & \frac{2V_{0}}{\pi}\frac{\sin\left(\frac{kL}{2}\right)}{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ונקבל כי הגל הינו 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi\left(x,t\right)=\frac{2V_{0}}{\pi}\int_{0}^{\infty}\frac{\sin\left(\frac{kL}{2}\right)}{k}\cos\left(\omega\left(k\right)t-kx\right)dk\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\omega\left(k\right)=\nu k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi_{0}\left(x,t\right)=\frac{2V_{0}}{\pi}\int_{0}^{\infty}\frac{\sin\left(\frac{kL}{2}\right)}{k}\cos\left(-n\left(x-\nu t\right)\right)dx\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהירות הגל 
+\begin_inset Formula $\nu$
+\end_inset
+
+.
+ גם רואים כי 
+\begin_inset Formula $\psi\left(x,t=0\right)=\psi\left(x-\nu t,t\right)$
+\end_inset
+
+ אזי הוא שומר על צורתו.
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\omega\left(k\right)=\omega_{0}+\nu k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכל מספר גל 
+\begin_inset Formula $k$
+\end_inset
+
+ מהירות פאזה שונה כיוון ש 
+\begin_inset Formula $v_{\phi}=\frac{\omega\left(k\right)}{k}$
+\end_inset
+
+ שונה למספרי גל שונים.
+\end_layout
+
+\begin_layout Standard
+לעומת זאת מהירות החבורה זהה לסעיף הקודם 
+\begin_inset Formula $\nu_{g}=\frac{\partial\omega}{\partial k}=\nu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מכיוון שלכל מספר גל מהירות שונה צורת הגל תשתנה.
+ נציב ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi\left(x,t\right)=\frac{2v_{0}}{\pi}\int_{0}^{\infty}\frac{\sin\left(\frac{kL}{2}\right)}{k}\cos\left[\omega_{0}t-k\left(x-\nu t\right)\right]dk\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור זמנים קצרים צצ
+\begin_inset Formula $\omega_{0}t\ll1$
+\end_inset
+
+ מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\left(\omega_{0}t-kx\left(t\right)\right) & = & \cos\left(-kx\left(t\right)\right)+\omega_{0}t\sin\left(kx\left(t\right)\right)+\theta\left(\omega_{0}t\right)^{2}\\
+x\left(t\right) & = & x-\nu t\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi\left(x,t\right)=\frac{2v_{0}}{\pi}\int_{0}^{\infty}\frac{\sin\frac{kL}{2}}{k}\cos\left[-k\left(x-\nu t\right)\right]dk+\omega_{0}t\cdot\int_{0}^{\infty}\frac{\sin\frac{kL}{2}}{k}\sin\left[-k\left(x-\nu t\right)\right]dk\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+האיבר הראשון הוא פתרון סעיך א 
+\begin_inset Formula $\psi_{0}\left(x,t\right)$
+\end_inset
+
+, הגל השני הוא גל הנע במהירות 
+\begin_inset Formula $\nu$
+\end_inset
+
+ כיוון שהוא מהצורה 
+\begin_inset Formula $f\left(x-\nu t\right)$
+\end_inset
+
+ כאשר הוא כדל עם הזמן.
+ נמצא צורה זו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{0}^{\infty}\frac{\sin\left(\frac{kL}{2}\right)}{k}\sin\left(k\cdot x\left(t\right)\right)dk=\frac{1}{2}\int_{0}^{\infty}\frac{\cos\left[k\left(\frac{L}{2}-x\left(t\right)\right)\right]}{k}-\frac{\cos\left[k\left(\frac{L}{2}+x\left(t\right)\right)\right]}{k}dk\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $p$
+\end_inset
+
+ קטן הזהות נכונה אזי גם עבור 
+\begin_inset Formula $p=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{p}^{\infty}\left[\frac{\cos kx_{1}}{k}-\frac{\cos kx_{2}}{k}\right]du=\log p-\log p+\log x_{1}-\log x_{2}=\log\frac{x_{1}}{x_{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן הגל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\psi\left(x,t\right)=\psi_{0}\left(x,t\right)+\omega_{0}t+\frac{v_{0}}{\pi}\left(\frac{x-\nu t-\frac{L}{2}}{x-\nu t+\frac{L}{2}}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

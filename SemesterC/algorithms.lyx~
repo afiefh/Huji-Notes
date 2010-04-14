@@ -3,6 +3,9 @@
 \begin_document
 \begin_header
 \textclass book
+\begin_preamble
+\floatname{algorithm}{אלגוריתם}
+\end_preamble
 \use_default_options false
 \language hebrew
 \inputencoding auto
@@ -10240,7 +10243,7 @@ makespan
 \bar default
 \noun default
 \color inherit
-לביות זמן הסיום של המשימה שמסיימת אחרונה.
+להיות זמן הסיום של המשימה שמסיימת אחרונה.
  נרצה למזער אותו.
 \end_layout
 
@@ -10509,8 +10512,8 @@ g\left(opt\right)\geq\frac{\sum_{i=1}^{n}t_{i}}{k}\end{matrix}} & \left(2-\frac{
 \end_layout
 
 \begin_layout Standard
-נסדר את המשימות בסדר יורד)הארוכות לפני הקצרות( של מכים ואת נפעיל את האלג
- וריתם הקודם
+נסדר את המשימות בסדר יורד)הארוכות לפני הקצרות( של אורכים ואז נפעיל את האלגוריתם
+ הקודם
 \end_layout
 
 \begin_layout Paragraph
@@ -10563,6 +10566,946 @@ g\left(opt\right)\geq\frac{\sum_{i=1}^{n}t_{i}}{k}\end{matrix}} & \left(2-\frac{
 \begin_inset Formula $g\left(opt\right)\geq\frac{\sum_{i=1}^{n}t_{i}}{k}$
 \end_inset
 
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+g\left(o\right) & = & T+t_{i}\leq\frac{\sum_{i=1}^{i}t_{i}}{k}+t_{i}\\
+ & = & \frac{\sum_{j=1}^{i}t_{j}}{k}+\left(1-\frac{1}{k}\right)t_{i}\\
+ & \leq & \overbrace{\frac{\sum_{i=1}^{n}t_{i}}{k}}^{\leq g\left(opt\right)}+\overbrace{\left(1-\frac{1}{k}\right)t_{i}}^{\leq\frac{g\left(opt\right)}{2}}\\
+ & \leq & \left(1.5-\frac{1}{k}\right)g\left(opt\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+אלגוריתמי קירוב
+\end_layout
+
+\begin_layout Standard
+בבעית אופטימיזציה, אלג' יעיל 
+\begin_inset Formula $A$
+\end_inset
+
+ ייקרא 
+\begin_inset Formula $C$
+\end_inset
+
+-קירוב)כאשר 
+\begin_inset Formula $C>1$
+\end_inset
+
+( אם"ם:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\forall x:\, A\left(x\right) & \geq & \frac{OPT\left(x\right)}{C}\\
+\forall x:\, A\left(x\right) & \leq & C\cdot OPT\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להגיע לאלג' 
+\begin_inset Formula $\left(1+\varepsilon\right)$
+\end_inset
+
+ קירוב)כאשר 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula $\mbox{PTAS: Polynomial Time Approximation Scheme}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+האלג הוא פולינומיאלי בקלט 
+\begin_inset Formula $n$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+\begin_inset Formula $\mbox{FPTAS - Polynomial Time Approximation Scheme}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+כנ"ל אך האלג' פולינומיאלי גם ב 
+\begin_inset Formula $\frac{1}{\varepsilon}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+לבעית 
+\begin_inset Formula $\mbox{Vertex Cover}$
+\end_inset
+
+ לא יכולים למצא 
+\begin_inset Formula $\mbox{FPTAS}$
+\end_inset
+
+ אז נדגים את זה בבעיה אחרת.
+\end_layout
+
+\begin_layout Section
+בעית 
+\begin_inset Formula $\mbox{Subset Sum}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתונים 
+\begin_inset Formula $n$
+\end_inset
+
+ מספרים 
+\begin_inset Formula $x_{n_{1}},\dots x_{n}$
+\end_inset
+
+, 
+\begin_inset Formula $x_{1}=1$
+\end_inset
+
+ ומס' 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ אנו מחפסים תת, קבוצה של 
+\begin_inset Formula $x_{1}\dots x_{n}$
+\end_inset
+
+ שסכומה לא גדול מ 
+\begin_inset Formula $w$
+\end_inset
+
+ והיא מקסימאלית.
+ כלומר 
+\begin_inset Formula $\max_{I\subset\left[n\right]}\left\{ \sum_{i\in I}x_{i}\vert\sum_{i\in I}x_{i}\leq w\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסה את זה דרך אלג' דינאמי אבל זה לא יעבוד כי זה לא יהיה פולינומיאלי.
+\end_layout
+
+\begin_layout Subsection
+פתרון מדוייק באלג דינאמי
+\end_layout
+
+\begin_layout Standard
+באלג הזה אנחנו לא רק מחשבים את האיבר המקסימאלי.
+ 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ - קבוצת הסכומים של כל תתי הקבוצות של 
+\begin_inset Formula $i$
+\end_inset
+
+ האיברים הראשונים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ קב' מספרים ו 
+\begin_inset Formula $b$
+\end_inset
+
+ מס' נסמן 
+\begin_inset Formula $A+b=\left\{ a+b\vert a\in A\right\} $
+\end_inset
+
+.
+ אז יש לנו נוסחה ריקורסיבית: 
+\begin_inset Formula $P_{i}=P_{i-1}\cup\left(P_{i-1}+x_{i}\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כלומר ב 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ יש כל תתי הקבוצות באוך 
+\begin_inset Formula $i-1$
+\end_inset
+
+ ועוד פעם כל הקבוצות האלה עם תוספת האיבר 
+\begin_inset Formula $x$
+\end_inset
+
+.
+ 
+\begin_inset Formula $P_{i}$
+\end_inset
+
+ היא קבוצה של קבוצות.
+\end_layout
+
+\end_inset
+
+.
+ הפתרון של השאלה יהיה האיבר המקסימאלי ב 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ שלא גדול מ
+\begin_inset Formula $w$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\max_{p\in P_{n}}\left\{ \forall x\in p\vert\sum_{x\in p}x<w\right\} $
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L_{0}=\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+for 
+\begin_inset Formula $i=1$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L_{i}=$
+\end_inset
+
+Merge
+\begin_inset Formula $\left(L_{i-1},L_{i-1}+x_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+remove from 
+\begin_inset Formula $L_{i}$
+\end_inset
+
+ elements greater than 
+\begin_inset Formula $w$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+return 
+\begin_inset Formula $\max\left(L_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Exact\_subset\_sum}\left(\left\{ x\right\} ,w\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה הגרוע ביותר שומרים את סכומי כל תתי הקבוצות 
+\begin_inset Formula $\mathcal{O}\left(2^{n}\right)$
+\end_inset
+
+.
+ אנחנו יכולים לגרום לזה להיות יותר יעיל:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $L$
+\end_inset
+
+ קבוצת מספרים ו 
+\begin_inset Formula $L^{\prime}\subseteq L,\delta>0$
+\end_inset
+
+ תקרא 
+\begin_inset Formula $\delta$
+\end_inset
+
+ קיצוץ של 
+\begin_inset Formula $L$
+\end_inset
+
+ אם"ם לכל 
+\begin_inset Formula $y\in L$
+\end_inset
+
+ קיים 
+\begin_inset Formula $z\in L^{\prime}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{y}{1+\delta}\leq z\leq y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L^{\prime}\leftarrow\left\{ y_{1}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\mbox{last}=y_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+for 
+\begin_inset Formula $i=2$
+\end_inset
+
+ to 
+\begin_inset Formula $m$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+if
+\begin_inset Formula $\left(y_{y}>\mbox{last}\cdot\left(1+\delta\right)\right):$
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L^{\prime}=L^{\prime}\cup\left\{ y_{i}\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $\mbox{last}=y_{i}$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+endif
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+next
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+return 
+\begin_inset Formula $L^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Trim}\left(L,\delta\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+דוגמה ל-
+\begin_inset Formula $\mbox{Trim}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתחיל עם 
+\begin_inset Formula $L=\left\{ 10,11,12,15,20,21,22,24\right\} ,\delta=0.2$
+\end_inset
+
+ אזי מקבלים את החילוק 
+\begin_inset Formula $L=\left\{ \,^{\overset{10}{\downarrow}}\left[10,11,12\right]^{\overset{12}{\downarrow}},^{\overset{15}{\downarrow}}\left[15\right]^{\overset{18}{\downarrow}},^{\overset{20}{\downarrow}}\left[20,21,22,24\right]^{\overset{24}{\downarrow}}\right\} $
+\end_inset
+
+ ואז משנים את האלג המקורי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L_{0}=\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+for 
+\begin_inset Formula $i=1$
+\end_inset
+
+ to 
+\begin_inset Formula $n$
+\end_inset
+
+:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L_{i}=$
+\end_inset
+
+Merge
+\begin_inset Formula $\left(L_{i-1},L_{i-1}+x_{i}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+remove from 
+\begin_inset Formula $L_{i}$
+\end_inset
+
+ elements greater than 
+\begin_inset Formula $w$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+
+\lang english
+\begin_inset Formula $L_{i}=\mbox{Trim}\left(L_{i},\frac{\varepsilon}{2n}\right)$
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+
+\lang english
+return 
+\begin_inset Formula $\max\left(L_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Exact\_subset\_sum}\left(\left\{ x\right\} ,w\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+לכל 
+\begin_inset Formula $y\leq w,y\in P_{i}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $z\in L_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{y}{\left(1+\delta\right)^{p}}\leq z\leq y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נוכיח באינדוקציה.
+ אם 
+\begin_inset Formula $i=0$
+\end_inset
+
+ אזי 
+\begin_inset Formula $L_{o}=P_{0}=\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח נכונות ל
+\begin_inset Formula $i$
+\end_inset
+
+, נניח 
+\begin_inset Formula $y\in P_{i+1}=P_{i}\cup\left(P_{i}+x_{i+1}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $y\in P_{i}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $z\in L_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{y}{\left(1+\delta\right)^{i}}\leq z\leq y$
+\end_inset
+
+ וקיים 
+\begin_inset Formula $a\in L_{i+1}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\frac{z}{1+\delta}\leq a\leq z$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ולכן 
+\begin_inset Formula $\frac{y}{\left(1+\delta\right)^{i+1}}\leq\frac{z}{1+\delta}\leq a\leq z\leq y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את הקירוב של 
+\begin_inset Formula $L_{n}$
+\end_inset
+
+ ל 
+\begin_inset Formula $P_{n}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\varepsilon$
+\end_inset
+
+ קטן מספיק: 
+\begin_inset Formula $\left(1+\frac{\varepsilon}{2n}\right)^{n}\leq e^{\frac{\epsilon}{2}}\leq1+\varepsilon$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+הוכחת נכונות האלג
+\end_layout
+
+\begin_layout Standard
+ע"פ הגדרה האלג' יחזיר משקל תת-קבוצה שערכה לא עולה על 
+\begin_inset Formula $w$
+\end_inset
+
+.
+ נניח שהפתרון האופט' הוא 
+\begin_inset Formula $y^{*}\in P_{n}$
+\end_inset
+
+ ושלנו 
+\begin_inset Formula $z^{*}$
+\end_inset
+
+ קיים 
+\begin_inset Formula $z\in L_{n}$
+\end_inset
+
+: 
+\begin_inset Formula $\frac{y^{*}}{1+\varepsilon}\leq z\leq y^{*}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $\frac{y^{*}}{1+\varepsilon}\leq z\leq z^{*}\leq y^{*}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+זמן ריצה
+\end_layout
+
+\begin_layout Standard
+יש 
+\begin_inset Formula $n$
+\end_inset
+
+ איטרציות ובכל אחת יש 
+\begin_inset Formula $\mbox{merge, trim}$
+\end_inset
+
+ שניהם רצים ב 
+\begin_inset Formula $\mathcal{O}\left(\left|L_{i}\right|\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $y_{j+1}>\left(1+\delta\right)y_{j},L_{i}=\left\{ y_{1}\dots y_{n}\right\} $
+\end_inset
+
+ לכן 
+\begin_inset Formula $y_{m}>y_{1}\cdot\left(1+\delta\right)^{m+1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m-1 & \leq & \log_{1+\delta}\left(w\right)\\
+ & = & \frac{\log\left(w\right)}{\log\left(1+\delta\right)}\\
+ & = & \frac{\log\left(w\right)}{\log\left(1+\frac{\varepsilon}{2n}\right)}\\
+ & \leq & \frac{\log\left(w\right)}{\frac{\varepsilon}{4n}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+נתונה סדרת מספרים בגודל 
+\begin_inset Formula $n$
+\end_inset
+
+: 
+\begin_inset Formula $a=a_{0},a_{1}\dots a_{n}$
+\end_inset
+
+.
+ נותן לרשום את זה כוקטור)עמודה(
+\end_layout
+
+\begin_layout Standard
+נבצע התמרה של 
+\begin_inset Formula $a$
+\end_inset
+
+, נסמן ב 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+ ה 
+\begin_inset Formula $DFT$
+\end_inset
+
+ של 
+\begin_inset Formula $a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר מטריצה 
+\begin_inset Formula $H_{kl}=\omega_{n}^{-kl}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ההתמרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{a} & = & H\cdot a\\
+\hat{a}_{k} & = & \sum_{l}a_{l}\cdot\omega_{n}^{-k\cdot l}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $FFT$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+ניתן לבצע 
+\begin_inset Formula $DFT$
+\end_inset
+
+ חישוב 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+ מ 
+\begin_inset Formula $a$
+\end_inset
+
+( וכאן הפעולה ההפוכה )חישוב 
+\begin_inset Formula $a$
+\end_inset
+
+ מ 
+\begin_inset Formula $\hat{a}$
+\end_inset
+
+( בזמן 
+\begin_inset Formula $\mathcal{O}\left(n\log n\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מטריצה אותומורמלית: 
+\begin_inset Formula $A\cdot A^{T}=I$
+\end_inset
+
+ אבל אפשר גם 
+\begin_inset Formula $A\cdot A^{T}=I\cdot c$
+\end_inset
+
+, במקרה של מספרים מרוכבום צריכים לעשות 
+\begin_inset Formula $A\cdot\underbrace{A^{*}}_{\overline{A^{T}}}=I\cdot c$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קונבולוציה: נתון
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+סדרות מספרים 
+\begin_inset Formula $a=a_{0},a_{1}\dots a_{n-1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $b=b_{0}\dots b_{m-1}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\left(a*b\right)_{j}=\sum_{i=\max\left(0,j-n\right)}^{\min\left(j,n\right)}a_{i}b_{j-i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה אחרת: 
+\begin_inset Formula $\left(a*b\right)_{j}=\sum_{i}a_{i}b_{\left(\left(j-i\right)\mbox{mod}n\right)}$
+\end_inset
+
+ אבל זו מתמטית אז לא נשתמש בה.
+ במקרה זה צריכים 
+\begin_inset Formula $m=n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
 
 \end_layout
 

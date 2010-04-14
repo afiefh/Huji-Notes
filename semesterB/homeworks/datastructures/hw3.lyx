@@ -1,4 +1,4 @@
-#LyX 1.6.2 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -672,6 +672,8 @@ Worst Input A[0]=A[1 to n/2], A[n/2+1]!=A[0]
 
 \lang english
 Best input: A[0]!=A[1]
+\lang hebrew
+.
 \end_layout
 
 \begin_layout Subsection

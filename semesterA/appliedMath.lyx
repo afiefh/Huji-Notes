@@ -1,8 +1,9 @@
-#LyX 1.5.6 created this file. For more info see http://www.lyx.org/
-\lyxformat 276
+#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
 \begin_document
 \begin_header
 \textclass book
+\use_default_options false
 \language hebrew
 \inputencoding auto
 \font_roman default
@@ -13,9 +14,11 @@
 \font_osf false
 \font_sf_scale 100
 \font_tt_scale 100
+
 \graphics default
 \paperfontsize default
 \spacing single
+\use_hyperref false
 \papersize a4paper
 \use_geometry false
 \use_amsmath 1
@@ -47,8 +50,20 @@
 עפיף חלומה
 \end_layout
 
+\begin_layout Date
+
+\size normal
+\numeric on
+2008
+\numeric off
+/
+\numeric on
+2009
+\end_layout
+
 \begin_layout Standard
-\begin_inset LatexCommand tableofcontents
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
 
 \end_inset
 
@@ -59,7 +74,7 @@
 \begin_inset Note Note
 status open
 
-\begin_layout Standard
+\begin_layout Plain Layout
 ספר טוב כדי להוסיף חומר:
 \family roman
 \series medium
@@ -351,6 +366,10 @@ t=\tan\theta\]
 
 \end_layout
 
+\begin_layout Standard
+זה הוא
+\end_layout
+
 \begin_layout Section
 גל סינוס כללי
 \end_layout
@@ -475,7 +494,7 @@ A & = & \sqrt{a^{2}+b^{2}}\\
 
 \begin_layout Standard
 קבוצה ריקה נרשמת 
-\begin_inset Formula $\left\{ \right\} =\textrm{\O}$
+\begin_inset Formula $\left\{ \right\} =\textrm{Ø}$
 \end_inset
 
 
@@ -747,6 +766,10 @@ A & = & \sqrt{a^{2}+b^{2}}\\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Standard
+פשוט לא?
 \end_layout
 
 \begin_layout Section
@@ -1461,6 +1484,10 @@ AB^{2} & = & OA^{2}+OB^{2}-2OA\cdot OB\cdot\cos\alpha\end{eqnarray*}
 
 \end_layout
 
+\begin_layout Standard
+אני לא רוצה לדעת מה זה
+\end_layout
+
 \begin_layout Section
 משוואה וקטורית של מישור ב 
 \lang english
@@ -2024,8 +2051,14 @@ x_{n}\end{pmatrix}\mid x_{i}\in\mathbb{R}\right\} $
 \end_layout
 
 \begin_layout Description
-מכפלה\InsetSpace ~
-פנימית)מכפלה\InsetSpace ~
+מכפלה
+\begin_inset space ~
+\end_inset
+
+פנימית)מכפלה
+\begin_inset space ~
+\end_inset
+
 סקלרית(: 
 \begin_inset Formula $\vec{a}\cdot\vec{b}=\sum_{i=0}^{n}a_{i}b_{i}$
 \end_inset
@@ -2034,7 +2067,10 @@ x_{n}\end{pmatrix}\mid x_{i}\in\mathbb{R}\right\} $
 \end_layout
 
 \begin_layout Description
-מכפלה\InsetSpace ~
+מכפלה
+\begin_inset space ~
+\end_inset
+
 וקטורית: מוגדרת רק ב 
 \begin_inset Formula $\mathbb{R}^{3}$
 \end_inset
@@ -2588,10 +2624,32 @@ x^{2}-y^{2}=c\]
 \end_layout
 
 \begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+x^2-y^2=1 with asimptots
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
 \begin_inset Graphics
 	filename appliedmath/l3d7.svg
 	width 50text%
-	subcaptionText "x^2-y^2=1 with asimptots"
+
+\end_inset
+
+
+\end_layout
 
 \end_inset
 
@@ -4092,7 +4150,10 @@ imaginatry part
 
 \begin_layout List
 \labelwidthstring 00.00.0000
-כפל\InsetSpace ~
+כפל
+\begin_inset space ~
+\end_inset
+
 בסקלר: 
 \begin_inset Formula $r\cdot\left(a+bi\right)=\left(r+0\cdot i\right)\left(a+bi\right)=ra+rbi$
 \end_inset
@@ -5488,13 +5549,13 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \begin_inset Tabular
 <lyxtabular version="3" rows="11" columns="2">
 <features>
-<column alignment="center" valignment="top" leftline="true" width="0">
-<column alignment="center" valignment="top" leftline="true" rightline="true" width="0">
-<row topline="true" bottomline="true">
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $f^{'}\left(x\right)$
 \end_inset
 
@@ -5503,10 +5564,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $f\left(x\right)$
 \end_inset
 
@@ -5516,11 +5577,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $ax^{a-1}$
 \end_inset
 
@@ -5532,7 +5593,7 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $x^{a}$
 \end_inset
 
@@ -5542,11 +5603,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $e^{x}$
 \end_inset
 
@@ -5558,7 +5619,7 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $e^{x}$
 \end_inset
 
@@ -5568,11 +5629,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\frac{1}{x}$
 \end_inset
 
@@ -5584,7 +5645,7 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 <cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\ln x$
 \end_inset
 
@@ -5594,11 +5655,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\cos\left(x\right)$
 \end_inset
 
@@ -5607,10 +5668,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\sin\left(x\right)$
 \end_inset
 
@@ -5620,11 +5681,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\frac{1}{\sqrt{1-x^{2}}}$
 \end_inset
 
@@ -5633,10 +5694,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\arcsin\left(x\right)$
 \end_inset
 
@@ -5646,11 +5707,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $-\frac{1}{\sqrt{1-x^{2}}}$
 \end_inset
 
@@ -5659,10 +5720,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\arccos\left(x\right)$
 \end_inset
 
@@ -5672,11 +5733,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\frac{1}{\cos^{2}x}$
 \end_inset
 
@@ -5685,10 +5746,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\tan x$
 \end_inset
 
@@ -5698,11 +5759,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\sinh\left(x\right)$
 \end_inset
 
@@ -5711,10 +5772,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\cosh\left(x\right)$
 \end_inset
 
@@ -5724,11 +5785,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\cosh\left(x\right)$
 \end_inset
 
@@ -5737,10 +5798,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\sinh\left(x\right)$
 \end_inset
 
@@ -5750,11 +5811,11 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 \end_inset
 </cell>
 </row>
-<row topline="true">
+<row>
 <cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\frac{1}{\cosh^{2}x}$
 \end_inset
 
@@ -5763,10 +5824,10 @@ f^{'}\left(x\right)\propto\frac{\Delta f}{\Delta x}\]
 
 \end_inset
 </cell>
-<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
 \begin_inset Text
 
-\begin_layout Standard
+\begin_layout Plain Layout
 \begin_inset Formula $\tanh\left(x\right)$
 \end_inset
 

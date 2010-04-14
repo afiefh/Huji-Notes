@@ -1,0 +1,372 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+S=\left\{ 2,3,4,5,6,7,8,9,10,11,12\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא כל האיברים בעל הסתברות שווה
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P & = & S^{2}\\
+\left|P\right| & = & \left|S\right|^{2}\\
+ & = & 2^{11}\\
+ & = & 2048\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מאורע בעל הסתברות מקסימאלית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\left\{ 2,3,4,5,6,7,8,9,10,11,12\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מאורע בעל הסתברות מינימאלית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A=\emptyset\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(2\right) & = & \frac{1}{36}\\
+P\left(3\right) & = & \frac{2}{36}\\
+P\left(4\right) & = & \frac{3}{36}\\
+P\left(5\right) & = & \frac{4}{36}\\
+P\left(6\right) & = & \frac{5}{36}\\
+P\left(7\right) & = & \frac{6}{36}\\
+P\left(8\right) & = & \frac{5}{36}\\
+P\left(9\right) & = & \frac{4}{36}\\
+P\left(10\right) & = & \frac{3}{36}\\
+P\left(11\right) & = & \frac{2}{36}\\
+P\left(12\right) & = & \frac{1}{36}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\forall a\left\{ 1,2,3,10,11,12\right\} :P\left(a\right) & = & 0\\
+P\left(4\right) & = & \frac{1}{6}\\
+P\left(5\right) & = & \frac{1}{6}\\
+P\left(6\right) & = & \frac{1}{6}\\
+P\left(7\right) & = & \frac{1}{6}\\
+P\left(8\right) & = & \frac{1}{6}\\
+P\left(9\right) & = & \frac{1}{6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(5\right) & = & \frac{4}{36}\\
+P\left(6\right) & = & \frac{5}{36}\\
+P\left(7\right) & = & \frac{6}{36}\\
+P\left(\left\{ 5,6\right\} \right) & = & \frac{9}{36}\\
+P\left(\left\{ 6,7\right\} \right) & = & \frac{11}{36}\\
+P\left(\left\{ 5,6\right\} \cap\left\{ 6,7\right\} \right) & = & P\left(6\right)=\frac{6}{36}\\
+P\left(\left\{ 5,6\right\} \right)\cdot P\left(\left\{ 6,7\right\} \right) & = & \frac{9}{36}\cdot\frac{11}{36}=\frac{11}{144}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+צ"ל 
+\begin_inset Formula $p\left(a\leq X\leq b\right)=F_{x}\left(b\right)-F_{x}\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+p\left(a\leq X\leq b\right) & = & \int_{a}^{b}p\left(x\right)dx\\
+ & = & \int_{-\infty}^{b}p\left(x\right)dx-\int_{-\infty}^{a}p\left(x\right)\\
+ & = & F_{x}\left(b\right)-F_{x}\left(a\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+רואים כי 
+\begin_inset Formula $f_{x}\left(\cdot\right)>0$
+\end_inset
+
+ כי פונקציות אקספוננציאליות הם תמיד גדולות מאפס.
+ צ"ל כי 
+\begin_inset Formula $\int_{-\infty}^{\infty}f_{x}\left(a\right)\partial a=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}f\left(a\right)\partial a & = & \int_{0}^{\infty}3e^{-3a}\partial a\\
+ & = & \left[\frac{3e^{-3a}}{-3}\right]_{0}^{\infty}\\
+ & = & 0--1\\
+ & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+פותרים עבור 
+\begin_inset Formula $a>0$
+\end_inset
+
+ כי כל לראות כי עבור 
+\begin_inset Formula $a\leq0$
+\end_inset
+
+ האינטגרל מתאפס.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{X}\left(a\right) & = & \int_{-\infty}^{a}f\left(a^{\prime}\right)\partial a^{\prime}\\
+ & = & \int_{0}^{a}3e^{-3a^{\prime}}\partial a^{\prime}\\
+ & = & \left[\frac{3e^{-3a^{\prime}}}{-3}\right]_{0}^{a}\\
+ & = & 1-e^{-3a}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{X}\left(a\right)=\begin{cases}
+0 & a\leq0\\
+1-e^{-3a} & a>0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+p_{x}\left(X<5\right) & = & F_{x}\left(5\right)=1-e^{-15}\\
+p_{x}\left(X>5\right) & = & 1-F_{x}\left(5\right)\\
+ & = & e^{-15}\\
+F\left(X\leq5\right) & = & F\left(X<5\right)\\
+ & = & 1-e^{-15}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

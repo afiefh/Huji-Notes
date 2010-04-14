@@ -1,0 +1,2113 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass book
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+אותות אקראיים
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+שיעורי בית:
+\end_layout
+
+\begin_layout Standard
+
+\numeric on
+10
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+נקודות,
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הטובים ביותר.
+ מגן.
+\end_layout
+
+\begin_layout Paragraph
+בוחן: 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $20\%$
+\end_inset
+
+מגן.
+\end_layout
+
+\begin_layout Paragraph
+בונוס:
+\end_layout
+
+\begin_layout Standard
+לפתור תרגילים חדשים שאפשר להשתמש בהם בשיעורי בית או במבחן.
+\end_layout
+
+\begin_layout Paragraph
+מרצה:
+\end_layout
+
+\begin_layout Standard
+דנה פורת שעת קבלה יום שני רוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+56
+\numeric off
+ 
+\numeric on
+14:00-13:00
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Section
+פונק' הפילוג
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Cumulative Distribution Function
+\end_layout
+
+\begin_layout Standard
+היא תמיד מסומנת 
+\begin_inset Formula $F_{X}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $X$
+\end_inset
+
+ הוא שם המשתנה המקרי.
+ 
+\end_layout
+
+\begin_layout Paragraph
+הגדרה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $F_{X}\left(a\right)=P\left(X\leq a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ משתנה אקראי, נתון 
+\begin_inset Formula $f_{x}\left(a\right)$
+\end_inset
+
+ ופונק' מונוטונית 
+\begin_inset Formula $g\left(a\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $b=g\left(a\right)$
+\end_inset
+
+ 
+\begin_inset Formula $y=g\left(x\right)$
+\end_inset
+
+ אזי 
+\begin_inset Formula $x=g^{-1}\left(y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{y}\left(b\right) & = & \frac{f_{x}\left(a\right)}{\left|g^{\prime}\left(a\right)\right|}\\
+ & = & f_{X}\left(g^{-1}\left(b\right)\right)\left|\left(g^{-1}\right)^{\prime}\left(b\right)\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר גם לכתוב את זה בצורת 
+\begin_inset Formula $f_{x}\left(a\right)\left|da\right|=f_{y}\left(b\right)\left|db\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תוחלת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[x\right] & = & \int_{-\infty}^{\infty}af_{x}\left(a\right)da\\
+\mbox{var}\left(x\right) & = & \sigma_{x}^{2}=E\left(\left(x-E\left[x\right]\right)^{2}\right)\\
+ & = & \int_{-\infty}^{\infty}\left(a-E\left[x\right]\right)^{2}f_{x}\left(a\right)da\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מומנט שני: 
+\begin_inset Formula $E\left[x^{2}\right]=\int_{-\infty}^{\infty}a^{2}f_{x}\left(a\right)da$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הורינס הוא מומנט שני ממורכז כלומר 
+\begin_inset Formula $\mbox{var}\left(x\right)=E\left[x^{2}\right]-\left(E\left[x\right]\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פונק' אופינית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{x}\left(j\omega\right) & = & \int_{-\infty}^{\infty}e^{j\omega a}f_{x}\left(a\right)da\\
+ & = & E\left[e^{j\omega x}\right]\\
+ & = & \mathcal{F}\left[f_{x}\left(a\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר זו הטמרת פורייה)נסמן ב 
+\begin_inset Formula $\mathcal{F}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section
+פונק' יוצרת מומנטים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{x}\left(s\right) & = & \int_{-\infty}^{\infty}e^{sa}f_{x}\left(a\right)da\\
+ & = & E\left[e^{sa}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{x}^{\prime}\left(s\right) & = & \int_{-\infty}^{\infty}ae^{sa}f_{x}\left(a\right)da\\
+\phi_{x}^{\prime}\left(0\right) & = & \int_{-\infty}^{\infty}af_{x}\left(a\right)da=E\left[x\right]\\
+\phi_{x}^{\prime\prime}\left(0\right) & = & \int_{-\infty}^{\infty}a^{2}f_{x}\left(a\right)da\\
+\phi_{x}^{\left(n\right)}\left(s\right) & = & \int_{-\infty}^{\infty}a^{n}e^{sa}f_{x}\left(a\right)da\\
+\phi_{x}^{\left(n\right)}\left(0\right) & = & \int_{-\infty}^{\infty}a^{n}f_{x}\left(a\right)da\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+התפלגות גאוסית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & N\left(\mu,\sigma^{2}\right)\\
+f_{x}\left(a\right) & = & \frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\left(a-\mu\right)^{2}}{2\sigma^{2}}}\\
+\phi_{x}\left(s\right) & = & \int_{-\infty}^{\infty}e^{sa}\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{-\frac{\left(a-\mu\right)^{2}}{2\sigma^{2}}}da\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בהחלפת משתנים 
+\begin_inset Formula $b=\frac{a-\mu}{\sigma}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $db=\frac{1}{\sigma}da$
+\end_inset
+
+ ו 
+\begin_inset Formula $a=\sigma b+\mu$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{x}\left(s\right) & = & \int_{-\infty}^{\infty}e^{s\left(\sigma b+\mu\right)}\frac{1}{\sqrt{2\pi\sigma^{2}}}e^{\frac{-b^{2}}{2}}\sigma db\\
+ & = & \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{s\left(\sigma b+\mu\right)-\frac{b^{2}}{2}}db\\
+\phi_{x}\left(s\right) & = & \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{1}{2}\left(b^{2}-2b\sigma s\right)}e^{s\mu}db\\
+ & = & \frac{e^{s\mu}}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{1}{2}\left(b^{2}-2b\sigma s+\sigma^{2}s^{2}-\sigma^{2}s^{2}\right)}db\\
+ & = & e^{s\mu+\frac{s^{2}\sigma^{2}}{2}}\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}e^{-\frac{\left(b-s\sigma\right)^{2}}{2}}db\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא יודעים לחשב מה שבאינטגרל אבל זו פונק' צפיפות של 
+\begin_inset Formula $N\left(\sigma s,1\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{x}\left(s\right) & = & e^{s\mu+\frac{s^{2}\sigma^{2}}{2}}\\
+\phi_{x}^{\prime}\left(s\right) & = & \left(\mu+\frac{2s\sigma^{2}}{2}\right)e^{s\mu+\frac{s^{2}\sigma^{2}}{2}}\\
+\phi^{\prime}\left(0\right) & = & \mu=E\left[x\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\phi_{x}^{\prime\prime}\left(s\right) & = & \left[\sigma^{2}+\left(\mu+s\sigma^{2}\right)\right]e^{s\mu+\frac{s^{2}\sigma^{2}}{2}}\\
+E\left[x^{2}\right] & = & \phi^{\prime\prime}\left(0\right)=\sigma^{2}+\mu^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פונקצית פילוג של זוג מ"א 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{\left(x,y\right)}\left(a,b\right) & = & P\left(x\leq a,y\leq b\right)\\
+\lim_{a\to-\infty}F_{xy}\left(a,b\right) & = & 0\\
+\lim_{b\to-\infty}F_{xy}\left(a,b\right) & = & 0\\
+\lim_{\begin{matrix}a\to\infty\\
+b\to\infty\end{matrix}}F_{xy}\left(a,b\right) & = & 1\\
+P\left(a_{1}<x\leq a_{2},b_{1}<y\leq b_{2}\right) & = & F_{xy}\left(a_{2},b_{2}\right)-F_{xy}\left(a_{2},b_{1}\right)-F_{xy}\left(a_{1},b_{2}\right)+F_{xy}\left(a_{1},b_{1}\right)\\
+F_{x}\left(a\right) & = & P\left(x\leq a\right)\\
+ & = & P\left(x\leq a,y\leq\infty\right)=F_{x,y}\left(a,\infty\right)\\
+F_{y}\left(b\right) & = & F_{x,y}\left(\infty,b\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{xy}\left(a,b\right) & = & \frac{\partial^{2}F_{x,y}\left(a,b\right)}{dadb}\\
+F_{xy}\left(a,b\right) & = & \int_{-\infty}^{a}d\alpha\int_{-\infty}^{b}f_{x,y}\left(\alpha,\beta\right)d\beta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\Leftrightarrow\mbox{cov}\left(x,y\right)=0$
+\end_inset
+
+
+\begin_inset Formula $x,y$
+\end_inset
+
+ בלתי תלויים ליניארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x,y$
+\end_inset
+
+ בלתי תלויים סטטיסטית 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בלתי תלויים ליניארית
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+זוג משתנים בלתי תלויים ליניארית אבל תלויים סטטיסטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\theta\sim\left(0,\pi\right)$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x=\cos\left(\theta\right),y=\sin\left(\theta\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח ש 
+\begin_inset Formula $x,y$
+\end_inset
+
+ תלויים סטטיסטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{x,y}\left(\alpha,\beta\right)\overset{?}{=}F_{x}\left(\alpha\right)F_{y}\left(\beta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמצא נקודה 
+\begin_inset Formula $\left(\alpha_{0},\beta_{0}\right)$
+\end_inset
+
+ שבה השוויון לא יתקיים ומכאן ינבע ש 
+\begin_inset Formula $x,y$
+\end_inset
+
+ תלויים סטטיסטית
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+אפשר גם עבור 
+\begin_inset Formula $f_{x,y}\left(\alpha,b\right)=\overset{?}{=}f_{x}\left(\alpha\right)f_{y}\left(\alpha\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נחשב 
+\begin_inset Formula $F_{x}\left(\alpha\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{x}\left(\alpha\right) & = & P\left(x\leq\alpha\right)\\
+ & = & P\left(\arccos\left(\alpha\right)\leq\theta\leq2\pi-\arccos\left(\alpha\right)\right)\\
+ & = & \int_{\arccos\left(\alpha\right)}^{2\pi-\arccos\left(\alpha\right)}\frac{1}{2\pi}d\varphi\\
+ & = & \frac{2\pi-2\arccos\left(\alpha\right)}{2\pi}\\
+ & = & 1-\frac{\arccos\left(\alpha\right)}{\pi}\\
+F_{y}\left(\beta\right) & = & P\left(\sin\theta\leq\beta\right)\\
+F_{y}\left(\beta\right) & = & \begin{cases}
+1 & \beta>1\\
+\frac{1}{2}+\frac{\arcsin\beta}{\pi} & 0\leq\beta\leq1\\
+\frac{1}{2}+\frac{\arcsin\beta}{\pi} & -1\leq\beta\leq0\\
+0 & \beta<-1\end{cases}\\
+ & = & \begin{cases}
+1 & \beta>1\\
+\frac{1}{2}+\arcsin\left(\beta\right) & -1\leq\beta\leq1\\
+0 & \beta<0\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{xy}\left(-0.95,-0,95\right) & = & 0\\
+F_{x}\left(-0.95\right) & = & 1-\frac{\arccos\left(-0.95\right)}{\pi}\neq0\\
+F_{y}\left(-0.95\right) & = & \frac{1}{2}+\frac{\arcsin\left(\beta\right)}{\pi}\neq0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח כי 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בלתי תלויים ליניארית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cov}\left(x,y\right) & = & E\left(\left(x-\mu_{x}\right)\left(y-\mu_{y}\right)\right)\\
+\mu_{x} & = & E\left[x\right]\\
+ & = & \int_{-\infty}^{\infty}f_{x}\left(\alpha\right)\cdot\alpha d\alpha\\
+ & = & \int_{-\infty}^{\infty}f_{\theta}\left(\varphi\right)\cos\varphi d\varphi\\
+ & = & \int_{0}^{2\pi}\frac{1}{2\pi}\cos\varphi d\varphi\\
+ & = & 0\\
+\mu_{y} & = & 0\\
+\mbox{cov}\left(x,y\right) & = & E\left[x,y\right]\\
+ & = & E\left[\cos\theta\sin\theta\right]\\
+ & = & \int_{0}^{2\pi}\frac{1}{2\pi}\cos\left(\varphi\right)\sin\left(\varphi\right)d\varphi\\
+ & = & \frac{1}{2\pi}\int_{0}^{2\pi}\frac{1}{2}\sin\left(2\varphi\right)d\varphi\\
+ & = & \frac{1}{4\pi}\int_{0}^{4\pi}\sin\left(u\right)\cdot\frac{1}{2}du\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+זוג מ"א גאוסיים במשותף
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x,y$
+\end_inset
+
+ גאוסיים במשותף אם"ם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{x,y}\left(a,b\right) & = & \frac{1}{2\pi\sigma_{x}\sigma_{y}\sqrt{1-\gamma^{2}}}\cdot\exp\left(-\frac{1}{2\left(1-\gamma^{2}\right)}\cdot\left(\frac{\left(a-\mu_{x}\right)^{2}}{\sigma_{x}^{2}}-2\gamma\frac{\left(a-\mu_{x}\right)\left(b-\mu_{y}\right)}{\sigma_{x}\sigma_{y}}+\frac{\left(b-\mu_{y}\right)^{2}}{\sigma_{y}^{2}}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $\mu_{x},\mu_{y}$
+\end_inset
+
+ ממשיים, 
+\begin_inset Formula $\sigma_{y}>0,\sigma_{x}>0$
+\end_inset
+
+ וגם 
+\begin_inset Formula $\left|r\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סימון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}x\\
+y\end{pmatrix}\sim N\left(\mu,\Sigma\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu & = & \begin{pmatrix}\mu_{x}\\
+\mu_{y}\end{pmatrix}\\
+\Sigma & = & \begin{pmatrix}\sigma_{x}^{2} & \gamma\sigma_{x}\sigma_{y}\\
+\gamma\sigma_{x}\sigma_{y} & \sigma_{y}^{2}\end{pmatrix}\\
+f\left(a,b\right) & = & \frac{1}{2\pi\sqrt{\left|\Sigma\right|}}\cdot\exp\left(-\frac{1}{2}\left[\begin{pmatrix}a\\
+b\end{pmatrix}-\mu\right]\Sigma^{-1}\left[\begin{pmatrix}a\\
+b\end{pmatrix}-\mu\right]\right)\\
+f_{x} & = & \int_{-\infty}^{\infty}f_{xy}\left(a,b\right)db\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משתמשים בהחלפת משתנה והשלמה לריבוע ואז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{x}\left(a\right)=\frac{1}{\sqrt{2\pi}\sigma_{x}}e^{-\frac{\left(a-\mu_{x}\right)}{2\sigma_{x}^{2}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x,y$
+\end_inset
+
+ גאוסים במשותף אזי 
+\begin_inset Formula $x$
+\end_inset
+
+ גאוסי ו 
+\begin_inset Formula $y$
+\end_inset
+
+ גאוסי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{cov}\left(x,y\right)=\gamma\sigma_{x}\sigma_{y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מקדם הקורילציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho=\frac{\mbox{cov}\left(x,y\right)}{\sqrt{\mbox{var}\left(x\right)\mbox{var}\left(y\right)}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בכל מקרה: 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בת"ס 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ בת"ל
+\end_layout
+
+\begin_layout Standard
+עבור משתנים אקראיים גאוסים במשותף: אם 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בת"ס 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ בת"ל
+\end_layout
+
+\begin_layout Standard
+נוכיח:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f_{xy}=f_{x}f_{y}\Leftarrow\mbox{cov}\left(x,y\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\mbox{cov}=0\Rightarrow\gamma=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{x,y}\left(a,b\right) & = & \frac{1}{2\pi\sigma_{x}\sigma_{y}\sqrt{1-\gamma^{2}}}\cdot\exp\left(-\frac{1}{2\left(1-\gamma^{2}\right)}\cdot\left(\frac{\left(a-\mu_{x}\right)^{2}}{\sigma_{x}^{2}}+\frac{\left(b-\mu_{y}\right)^{2}}{\sigma_{y}^{2}}\right)\right)\\
+ & = & f_{x}f_{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מעבר בין זוגות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x,y$
+\end_inset
+
+ זוג מ"א עם 
+\begin_inset Formula $f_{xy}\left(a,b\right),F_{xy}\left(a,b\right)$
+\end_inset
+
+ נגדיר 
+\begin_inset Formula $z=g_{1}\left(x,y\right),w=g_{2}\left(x,y\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפילוג המשותף של 
+\begin_inset Formula $z,w$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{zw}\left(c,d\right) & = & P\left(z\leq c,w\leq d\right)\\
+ & = & P\left(g_{1}\left(x,y\right)\leq c,g_{2}\left(x,y\right)\leq d\right)\\
+ & = & \iint_{D}f_{x,y}\left(a,b\right)dadb\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתעניין בפונק' 
+\begin_inset Formula $g_{1},g_{2}$
+\end_inset
+
+ שהן רציפות גזירות וחח"ע במשותף.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{zw}\left(c,d\right) & = & \frac{f_{x,y}\left(a,b\right)}{\left|J\left(g_{1},g_{2}\right)\right|}\\
+c & = & g_{1}\left(a,b\right)\\
+d & = & g_{2}\left(a,b\right)\\
+J\left(g_{1},g_{2}\right) & = & \begin{vmatrix}\frac{\partial g_{1}}{\partial a} & \frac{\partial g_{2}}{\partial b}\\
+\frac{\partial g_{2}}{\partial a} & \frac{\partial g_{2}}{\partial b}\end{vmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי יחידות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{xy}\left(a,b\right)dadb & \sim & f_{zw}\left(c,d\right)dcdd\\
+f_{xy}\left(a,b\right) & \sim & \frac{f_{zw}\left(c,d\right)}{\left(\frac{dadb}{dcdd}\right)}\\
+f_{xy}\left(a,b\right) & = & \frac{f_{zw}\left(c,d\right)}{\left|J\left(g_{1},g_{2}\right)\right|}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & \sim & u\left[0,1\right]\\
+y & \sim & u\left[0,1\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בלתי תלויים סטטיסטית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & x+y\\
+w & = & x-y\\
+f_{zw}\left(c,d\right) & = & ?\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{xy}\left(a,v\right) & = & f_{x}\left(a\right)f_{y}\left(b\right)\\
+ & = & \begin{cases}
+1 & \begin{matrix}0\leq a\leq1\\
+0\leq b\leq1\end{matrix}\\
+0 & otherwise\end{cases}\\
+x & = & \frac{z+w}{2}\\
+y & = & \frac{z-w}{2}\\
+f_{zw}\left(c,d\right) & = & \frac{f_{xy}\left(\frac{c+d}{2},\frac{c-d}{2}\right)}{\left|J\right|}\\
+J & = & \begin{vmatrix}1 & 1\\
+1 & -1\end{vmatrix}=2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{zw}=\frac{1}{2}\left\{ 1\,\,\,\begin{matrix}0\leq\frac{c+d}{2}\leq1\\
+0\leq\frac{c-d}{2}\leq1\end{matrix}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+פילוג מותנב
+\end_layout
+
+\begin_layout Standard
+הסתברות מותנת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(A\vert B\right)=\frac{P\left(A\cap B\right)}{P\left(B\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פילוג מותנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{x\vert y}\left(a\vert y=b\right) & = & f_{x\vert y}\left(a\vert b\right)\\
+ & = & P\left(x\leq a\vert y=b\right)\\
+F_{x\vert y}\left(a\vert b\right) & = & \lim_{db\to0}P\left(x\leq a\vert b<y\leq b+db\right)\\
+ & = & \lim_{db\to0}\frac{P\left(x\leq a,b<y\leq b+db\right)}{b<y\leq b+db}\\
+ & = & \lim_{db\to0}\frac{\int_{-\infty}^{a}d\alpha\int_{b}^{b+db}f_{xy}\left(\alpha,b\right)}{\int_{b}^{b+db}d\beta f_{y}\left(\beta\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בתחום הקטן 
+\begin_inset Formula $\left[b,b+db\right]$
+\end_inset
+
+ הוא בערך קבוע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+ & = & \lim_{db\to0}\frac{\int_{-\infty}^{a}d\alpha f_{xy}\left(\alpha,b\right)\cdot db}{f_{y}\left(b\right)\cdot db}\\
+F_{x\vert y}\left(a\vert b\right) & = & \frac{\int_{-\infty}^{a}d\alpha f_{xy}\left(\alpha,b\right)}{f_{y}\left(b\right)}\\
+f_{x\vert b}\left(a\vert b\right) & = & \frac{dF_{x\vert b}\left(a\vert b\right)}{da}\\
+ & = & \frac{f_{xy}\left(a,b\right)}{f_{y}\left(b\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X,Y & \sim & N\left(\mu_{x},\mu_{y},\sigma_{x},\sigma_{y},\gamma\right)\\
+f_{x,y}\left(a,b\right) & = & \frac{1}{2\pi\sigma_{x}\sigma_{y}\sqrt{1-\gamma^{2}}}\cdot\exp\left(-\frac{1}{2\left(1-\gamma^{2}\right)}\cdot\left(\frac{\left(a-\mu_{x}\right)^{2}}{\sigma_{x}^{2}}-2\gamma\frac{\left(a-\mu_{x}\right)\left(b-\mu_{y}\right)}{\sigma_{x}\sigma_{y}}+\frac{\left(b-\mu_{y}\right)^{2}}{\sigma_{y}^{2}}\right)\right)\\
+f_{x}\left(\alpha\right) & = & \int_{-\infty}^{\infty}f_{xy}\left(a,b\right)db\sim N\left(\mu_{x}\sigma_{\mu}^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+פיחוגים שוליים גאוסיניים אינם מחיבים פילוג משותף של גאוסיינים במשותף בהכרח.
+ פילוג גאוסייני במשותף מחייב פילוגים שוליים גאוסיניים.
+\end_layout
+
+\begin_layout Section
+פילוג מותנה של משתניים במשותף
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $X,Y\sim N\left(\mu_{x},\mu_{y},\sigma_{x}^{2},\sigma_{y}^{2},r\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f_{y\vert x}\left(b\vert a\right)=\frac{f_{xy}\left(a,b\right)}{f_{x}\left(a\right)}\sim N\left(\mu_{y}\cdot\frac{r\sigma_{y}}{\sigma_{x}}\left(a-\mu_{x}\right),\left(1-r^{2}\right)\sigma_{y}^{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה של הפונק' המותנת כאשר התוחלת של 
+\begin_inset Formula $x,y$
+\end_inset
+
+ בראשית
+\end_layout
+
+\begin_layout Paragraph
+טענה אלגברית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{2\left(1-\gamma^{2}\right)}\cdot\left(\frac{\left(a-\mu_{x}\right)^{2}}{\sigma_{x}^{2}}-2\gamma\frac{\left(a-\mu_{x}\right)\left(b-\mu_{y}\right)}{\sigma_{x}\sigma_{y}}+\frac{\left(b-\mu_{y}\right)^{2}}{\sigma_{y}^{2}}\right)=\frac{\left(b-\frac{r\sigma_{y}a}{\sigma_{x}}\right)^{2}}{-2\sigma_{x}^{2}\left(1-r^{2}\right)}+\frac{a^{2}}{2\sigma_{x}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לא נוכיח את זה כי זה אלגברה פשוטה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{f_{xy}\left(a,b\right)}{f_{x}\left(a\right)} & = & \frac{\frac{1}{2\pi\sqrt{1-r^{2}}\sigma_{x}\sigma_{y}}}{\frac{1}{\sqrt{2\pi}\sigma_{x}}}\frac{\exp\left\{ \frac{\left(b-\frac{r\sigma_{y}a}{\sigma_{x}}\right)^{2}}{-2\sigma_{x}^{2}\left(1-r^{2}\right)}+\frac{a^{2}}{2\sigma_{x}}\right\} }{\exp\left\{ \frac{a^{2}}{2\sigma_{x}^{2}}\right\} }\\
+f_{x\vert y}\left(b\vert a\right) & = & \frac{1}{\sqrt{2\pi}\sqrt{2-r^{2}}\sigma_{y}}\exp\left\{ \frac{-1}{2\left(1-r^{2}\right)\sigma_{y}^{2}}\left(b-\frac{r\sigma_{y}}{\sigma_{x}}a\right)^{2}\right\} \\
+ & \sim & N\left(\frac{r\sigma_{y}a}{\sigma_{x}},\left(1-r^{2}\right)\sigma_{y}^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{X\vert Y}\left(a\vert b\right) & = & P\left(X\leq a\vert y=b\right)\:\mbox{discreet}\\
+ & = & P\left(x\leq a\vert b\leq y\leq b+db\right)\,\mbox{continuous}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צפיפות פילוג מותנת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{x\vert y}\left(a\vert b\right)=\frac{f_{xy}\left(a,b\right)}{f_{y}\left(b\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{xy}\left(a,b\right)=\begin{cases}
+k & 0<a<b\leq1\\
+0 & \mbox{otherwise}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה לחשב את 
+\begin_inset Formula $k$
+\end_inset
+
+.
+ השטח שבו הפונקציה מקבלת 
+\begin_inset Formula $k$
+\end_inset
+
+ היא משולש בעל שטח 
+\begin_inset Formula $\nicefrac{1}{2}$
+\end_inset
+
+ לכן 
+\begin_inset Formula $k=2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{y}\left(b\right) & = & \int_{-\infty}^{\infty}f_{xy}\left(a,b\right)da\\
+ & = & \int_{0}^{b}2da\\
+ & = & 2b\\
+f_{y}\left(b\right) & = & \begin{cases}
+2b & 0<b\leq1\\
+0 & \mbox{else}\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{x\vert y}\left(a\vert b\right)=\begin{cases}
+\frac{2}{2b}=\frac{1}{b} & 0<a<b\leq1\\
+0 & \mbox{else}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צפיפות פילוג מותנת של מ"א בת"ס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X,Y$
+\end_inset
+
+ בת"ס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{x\vert y} & = & ?\\
+f_{xy}\left(a,b\right) & = & f_{x}\left(a\right)\cdot f_{y}\left(b\right)\\
+f_{x\vert y} & = & \frac{f_{xy}\left(a,b\right)}{f_{y}\left(b\right)}\\
+ & = & \frac{f_{x}\left(a\right)f_{y}\left(b\right)}{f_{y}\left(b\right)}\\
+ & = & f_{x}\left(a\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $y$
+\end_inset
+
+ לא משפיע על 
+\begin_inset Formula $x$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+נוסחאות נוספות לצפיפות פילוג מותנה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{y}\left(b\right) & = & \int_{-\infty}^{\infty}f_{xy}\left(a,b\right)da\\
+f_{x\vert y}\left(a\vert b\right) & = & \frac{f_{xy}\left(a,b\right)}{\int_{-\infty}^{\infty}f_{xy}\left(a,b\right)da}\\
+f_{xy}\left(a,b\right) & = & f_{y\vert x}\left(b\vert a\right)f_{x}\left(a\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תוחלות מותנות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[x\vert y=b\right] & = & \int_{-\infty}^{\infty}af_{x\vert y}\left(a\vert b\right)da\\
+var\left(x\vert y=b\right) & = & E\left[\left(x=\mu_{x\vert y}\right)^{2}\vert y=b\right]\\
+ & = & \int_{-\infty}^{\infty}\left(a-\mu_{x\vert y=b}\right)^{2}f_{x\vert y}\left(a\vert b\right)da\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{xy}\left(a,b\right)=\begin{cases}
+1 & 0<\left|b\right|<a<1\\
+0 & else\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לחשב 
+\begin_inset Formula $E\left[x\vert y\right],E\left[y\vert x\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename random/c5d1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $f_{xy}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X\vert Y & \sim & \mathcal{U}\left(\left|b\right|,1\right)\;\left|b\right|<1\\
+Y\vert X & \sim & \mathcal{U}\left(-a,a\right)\;0<a<1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[x\vert y=b\right] & = & \int_{-\infty}^{\infty}af_{x\vert y}\left(a\vert b\right)da\\
+ & = & \int_{\left|b\right|}^{1}a\frac{1}{1-\left|b\right|}da\\
+ & = & \frac{1}{2}\frac{\left(1-\left|b\right|^{2}\right)}{1-\left|b\right|}\\
+ & = & \frac{1+\left|b\right|}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מתוך סימטריה נובע כי 
+\begin_inset Formula $E\left[y\vert x=a\right]=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תכומות של תוכלת מותנת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left[g\left(x,y\right)\vert x=a\right]=E\left[g\left(a,y\right)\vert x=a\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלל השרשרת של תוחלות)משפט ההחלקה(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left[g\left(x,y\right)\right]=E\left[E\left[g\left(x,y\right)\vert x\right]\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+ווקטורים אקראיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x=\begin{pmatrix}x_{1}\\
+x_{2}\\
+\vdots\\
+x_{n}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקצית הפילוג המשותפת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{\underbar{x}}\left(\underbar{a}\right) & = & F_{x_{1}\dots x_{n}}\left(a_{1},a_{2}\dots a_{n}\right)\\
+ & = & P\left(x_{1}\leq a_{1},x_{2}\leq a_{2}\dots x_{n}\leq a_{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צפיפות פילוג משותפת 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{x}\left(\underbar{a}\right)=f_{x_{1}\dots x_{n}}\left(a_{1}\dots a_{n}\right)=\frac{\partial^{n}F_{x}\left(a\right)}{\partial a_{1}\partial a_{2}\dots\partial a_{n}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צפיפות פילוג שולית
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $f_{x_{1}x_{2}x_{3}x_{4}}\left(a_{1}a_{2}a_{3}a_{4}\right)$
+\end_inset
+
+ צפיפות שולית של 
+\begin_inset Formula $x_{1}x_{3}$
+\end_inset
+
+ היא 
+\begin_inset Formula \[
+f_{x_{1}x_{3}}\left(a_{1},a_{3}\right)=\int_{-\infty}^{\infty}da_{2}\int_{-\infty}^{\infty}da_{4}f_{x_{1}x_{2}x_{3}x_{4}}\left(a_{1}a_{2}a_{3}a_{4}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשתנים 
+\begin_inset Formula $x_{1}\dots x_{n}$
+\end_inset
+
+ הם בלתי תלויים סטטיסטית אםם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+F_{\underbar{x}}\left(\underbar{a}\right)=F_{X_{1}}\left(a_{1}\right)F_{X_{2}}\left(a_{2}\right)\dots F_{X_{n}}\left(a_{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תנאי שקול
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{\underbar{x}}\left(\underbar{a}\right)=f_{x_{1}}\left(a_{1}\right)f_{x_{2}}\left(a_{2}\right)\dots f_{x_{n}}\left(a_{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+תוחלת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(g\left(x_{1},x_{2}\dots x_{n}\right)\right)=\int_{-\infty}^{\infty}da_{1}\dots\int_{-\infty}^{\infty}da_{n}g\left(a_{1}\dots a_{n}\right)f_{x_{1}\dots x_{n}}\left(a_{1}\dots a_{n}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תוחלת שו מטריצה או ווקטור נעשת איבר איבר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left[\underbar{x}\right]=\begin{pmatrix}E\left[x_{1}\right]\\
+E\left[x_{2}\right]\\
+\vdots\\
+E\left[x_{n}\right]\end{pmatrix}=\mu_{\underbar{x}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+שונות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & x_{1}+x_{2}+\dots+x_{n}\\
+var\left(y\right) & = & E\left[\left(x_{1}-\mu_{1}+x_{2}-\mu_{2}+\dots+x_{n}-\mu_{n}\right)^{2}\right]\\
+ & = & \sum_{i=1}^{n}E\left[\left(x_{i}-\mu_{u}\right)^{2}\right]+\sum_{\begin{matrix}i,j=1\\
+i\neq j\end{matrix}}^{n}E\left[\left(x_{i}-\mu_{i}\right)\left(x_{j}-\mu_{j}\right)\right]\\
+ & = & var\left(x_{i}\right)+\dots+var\left(x_{n}\right)+\sum_{\begin{matrix}i,j=1\\
+i\neq j\end{matrix}}^{n}cov\left(x_{i},x_{j}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור וקטור אקראי 
+\begin_inset Formula $x$
+\end_inset
+
+ שאיבריו בלתי תלויים ליניארית בזוגות נקבל 
+\begin_inset Formula $var\left(y\right)=var\left(x\right)+\dots+var\left(x_{n}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מטריצת הקווריאנס, אוטו-קווריאנס של הווקטור 
+\begin_inset Formula $\underbar{x}$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{\underbar{x}}=E\left[\left(\underbar{x}-\underbar{\mu}_{x}\right)\left(\underbar{x}-\underbar{\mu}_{x}\right)^{T}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו היא מטריצת קווריאנס בגודל 
+\begin_inset Formula $n\times n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הקווריאנס של 
+\begin_inset Formula $\underbar{x},\underbar{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{\underbar{x},\underbar{y}}=E\left(\left(\underbar{x}-\underbar{\mu}_{x}\right)\left(\underbar{y}-\underbar{\mu_{y}}\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+מטריצת הקורלציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{X}=E\left(\underbar{X}\underbar{X}^{T}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קורלציה של 
+\begin_inset Formula $x,y$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R_{x,y}=E\left(\underbar{X}\underbar{Y}^{T}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+תכונות מטריצת הקווריאנס והקורילציה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c_{ij} & = & c_{ji}\\
+R_{ij} & = & R_{ji}\\
+c_{ii} & = & var\left(x_{i}\right)\\
+R_{ii} & = & E\left[x_{i}^{2}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שני סוגים של תלות ליניארית בוקטור אקראי
+\end_layout
+
+\begin_layout Standard
+אי תלות ליניארית בזוגות: כל 
+\begin_inset Formula $i\neq j$
+\end_inset
+
+: 
+\begin_inset Formula $cov\left(x_{i},x_{j}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תלות ליניארית של הוקטורים: 
+\begin_inset Formula $\exists\underbar{d}\neq0:\underbar{d}^{T}\underbar{x}=0$
+\end_inset
+
+ )כאשר 
+\begin_inset Formula $\underbar{d}$
+\end_inset
+
+ ווקטור באורך 
+\begin_inset Formula $n$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\underbar{x}$
+\end_inset
+
+ ו"א עם תוחלת אםס עם וריאנסים 
+\begin_inset Formula $\sigma_{i}^{2}>0$
+\end_inset
+
+ ואברי 
+\begin_inset Formula $\underbar{x}$
+\end_inset
+
+ בת"ל בזוגות אזי בווקטור 
+\bar under
+אין
+\bar default
+ תלות ליניארית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{x}=\begin{pmatrix}\sigma_{1}^{2} & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & \sigma_{n}^{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח עבור כל וקטור 
+\begin_inset Formula $\underbar{d}\neq\underbar{0}$
+\end_inset
+
+ לפעמים 
+\begin_inset Formula $\underbar{d}^{T}\underbar{x}\neq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[\left(\underbar{d}^{T}\underbar{x}\right)^{2}\right] & = & E\left[\underbar{d}^{T}\underbar{x}\underbar{x}^{T}\underbar{d}\right]\\
+ & = & \underbar{d}^{T}E\left[\underbar{x}\underbar{x}\right]\underbar{d}\\
+ & = & \underbar{d^{T}}C_{\underbar{x}}\underbar{d}\\
+ & = & \begin{pmatrix}\cdots\end{pmatrix}\begin{pmatrix}\ddots\end{pmatrix}\begin{pmatrix}\vdots\end{pmatrix}\\
+ & = & \sum\underbrace{d_{i}^{2}}_{\geq0}\underbrace{\sigma_{i}^{2}}_{>0}\\
+ & > & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממוצע חיובי 
+\begin_inset Formula $\Leftarrow$
+\end_inset
+
+ 
+\begin_inset Formula $\left(d^{T}\underbar{x}\right)^{2}$
+\end_inset
+
+ מקבל ערך חיובי עבור איזשהוא ערך של 
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+מטריצת קוורינס חייבת להיות מוגדרת חיובית)אי שליליץ( כלומר 
+\begin_inset Formula $x^{t}Ax>0$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+אם היא סימטרית ממשית ומוגדרת אי שלילית אז היא בהכרח מטריצת קוורינס.
+\end_layout
+
+\begin_layout Standard
+דוגמה לחישוב מטריצת הקוורינס:
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $x_{1},x_{2}$
+\end_inset
+
+ בלתי תלויים 
+\begin_inset Formula $E\left[x_{1}\right]=E\left[x_{2}\right]=0$
+\end_inset
+
+ ו 
+\begin_inset Formula $var\left(x_{1}\right)=3,var\left(x_{2}\right)=5$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y_{1} & = & x_{1}\\
+y_{2} & = & \frac{1}{2}\left(x_{2}+x_{2}\right)\\
+y_{3} & = & \frac{1}{2}\left(y_{1}+y_{2}\right)=\frac{3}{4}x_{1}+\frac{1}{4}x_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C & \in & \mathbb{R}^{3\times3}\\
+C_{11} & = & var\left(x_{1}\right)=3\\
+C_{12} & = & E\left[y_{1}y_{2}\right]-E\left[y_{1}\right]E\left[y_{2}\right]\\
+ & = & E\left[x_{1}\left(\frac{1}{2}\right)\left(x_{1}+x_{2}\right)\right]\\
+ & = & E\left[\frac{1}{2}x_{1}^{2}+\frac{1}{2}x_{1}x_{2}\right]\\
+ & = & \frac{3}{2}\\
+C_{13} & = & E\left[y_{1}y_{3}\right]-E\left[y_{1}\right]E\left[y_{3}\right]\\
+ & = & E\left[x_{1}\left(\frac{3}{4}x_{1}+\frac{1}{4}x_{2}\right)\right]\\
+ & = & E\left[\frac{3}{4}x_{1}^{2}+\frac{1}{4}x_{1}x_{2}\right]\\
+ & = & \frac{9}{4}\\
+C_{22} & = & var\left(y_{2}\right)\\
+ & = & var\left(\frac{1}{2}\left(x_{1}+x_{2}\right)\right)\\
+ & = & \frac{1}{4}var\left(x_{1}+x_{2}\right)\\
+ & = & \frac{1}{4}\left(var\left(x_{1}\right)+var\left(x_{2}\right)+\overbrace{cov\left(x_{1},x_{2}\right)}^{0}\right)\\
+ & = & \frac{1}{4}\left(var\left(x_{1}\right)+var\left(x_{2}\right)\right)\\
+ & = & 2\\
+C_{23} & = & C_{32}\\
+ & = & E\left[\frac{1}{2}\left(x_{1}+x_{2}\right)\left(\frac{3}{4}x_{1}+\frac{1}{4}x_{2}\right)\right]\\
+ & = & \frac{3}{4}E\left[x_{1}^{2}\right]+\frac{1}{8}E\left[x_{2}^{2}\right]+\underbrace{\frac{1}{2}E\left[x_{1}x_{2}\right]}_{0}\\
+ & = & \frac{14}{8}\\
+C_{33} & = & var\left(y_{3}\right)\\
+ & = & var\left(\frac{3}{4}x_{1}+\frac{1}{4}x_{2}\right)\\
+ & = & var\left(\frac{3}{4}x_{1}\right)+var\left(\frac{1}{4}x_{2}\right)\\
+ & = & \frac{9}{16}var\left(x_{1}\right)+\frac{1}{16}var\left(x_{2}\right)\\
+ & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C=\begin{pmatrix}3 & 1.5 & \nicefrac{9}{4}\\
+1.5 & 2 & \nicefrac{7}{4}\\
+\nicefrac{9}{4} & \nicefrac{7}{4} & 2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מטריצת הקוורינס של טרנספורמציה אפינה של וקטור אקראי
+\end_layout
+
+\begin_layout Standard
+נתון וקטור אקראי 
+\begin_inset Formula $x$
+\end_inset
+
+ וקטור תוחלות 
+\begin_inset Formula $\mu_{x}$
+\end_inset
+
+ומטריצת הקווריס 
+\begin_inset Formula $c_{x}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מצא את וקטור התוחלת ואת מטרצת הקוורינס של 
+\begin_inset Formula $y=Ax+b$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $A$
+\end_inset
+
+ מטריצה ו 
+\begin_inset Formula $b$
+\end_inset
+
+ וקטור
+\begin_inset Marginal
+status open
+
+\begin_layout Plain Layout
+ליניאריות התוחלת נשמרת עבור וקטור כלומר 
+\begin_inset Formula $E\left[A\underbar{x}\right]=AE\left[\underbar{x}\right]$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[\underbar{y}\right] & = & E\left[A\underbar{x}+b\right]\\
+ & = & AE\left[\underbar{x}\right]+b\\
+ & = & A\mu_{x}+b\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציאת מטריצת הקוורינס של ורנספורמציה ליניארית של וקטור אקראי עם תוחלת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $E\left[x\right]=0$
+\end_inset
+
+, 
+\begin_inset Formula $y=Ax$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C_{y} & = & E\left[Ax\left(Ax\right)^{T}\right]\\
+ & = & E\left[Axx^{T}A^{T}\right]\\
+ & = & A\underbrace{E\left[x\cdot x^{T}\right]}_{cov\left(x\right)}A^{T}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרת הקווריס של 
+\begin_inset Formula $x$
+\end_inset
+
+ 
+\begin_inset Formula $C_{x}=E\left[\left(x-E\left[x\right]\right)\left(x-E\left[x\right]\right)^{T}\right]$
+\end_inset
+
+ לכן אם 
+\begin_inset Formula $E\left[x\right]=0$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $C_{x}=E\left[x\cdot x^{T}\right]$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+C_{y}=AC_{x}A^{T}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התוצאה הזו נכונה גם רם 
+\begin_inset Formula $\mu_{x}\neq0$
+\end_inset
+
+ ו 
+\begin_inset Formula $y=Ax+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם ל 
+\begin_inset Formula $x$
+\end_inset
+
+ מטריצת קווריס 
+\begin_inset Formula $C_{X}$
+\end_inset
+
+, אז מטריצת הקווריאנס של 
+\begin_inset Formula $y=Ax+b$
+\end_inset
+
+ הנה 
+\begin_inset Formula $C_{y}=AC_{x}A^{T}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset VSpace medskip
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+חישוב פונק' הצפיפות של טרנספורמציה ליניארית:
+\end_layout
+
+\begin_layout Standard
+נתון לנו וקטור אקראי 
+\begin_inset Formula $x$
+\end_inset
+
+, פונק' הצפיפות שלו 
+\begin_inset Formula $f_{x}\left(\cdot\right)$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $y=Ax$
+\end_inset
+
+ והטרנספורמציה מונוטונית לכומר הפיכה אזי 
+\begin_inset Formula $f_{y}\left(b\right)=\frac{1}{\left\Vert A\right\Vert }f_{x}\left(A^{-1}b\right)$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\left\Vert A\right\Vert $
+\end_inset
+
+ זו הדיטירמיננטה של 
+\begin_inset Formula $A$
+\end_inset
+
+ בערך מוחלט.
+\end_layout
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+וקטור אקראי גאוסי
+\end_layout
+
+\begin_layout Standard
+פונק' הצפיפות של ו"א גאוסי 
+\begin_inset Formula $x\in\mathbb{R}^{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{x}\left(a\right)=\frac{1}{\left(2\pi\right)^{\nicefrac{2}{n}}\left|C_{x}\right|^{\nicefrac{1}{2}}}\exp\left\{ -\frac{1}{2}\left(a-\mu_{x}\right)^{T}C_{x}^{-1}\left(A-\mu_{x}\right)\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $x\in\mathbb{R}^{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{x}\left(a\right)=\frac{1}{\sqrt{2\pi}\sigma_{x}}\exp\left\{ -\frac{1}{2\sigma^{2}}\left(x-\mu_{x}\right)^{2}\right\} \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כמה פרמטריפ שונים צריך כדי לתאר פונקציית צפיפות של מ"א גאוסי?
+\end_layout
+
+\begin_layout Section
+טרנספורמציה ליניארית של ו"א גרוסי
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $x\sim N\left(\mu_{x},C_{x}\right)$
+\end_inset
+
+ איך מתפלג 
+\begin_inset Formula $y=Ax+b$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגלל ש 
+\begin_inset Formula $y$
+\end_inset
+
+ טרנספורמציה אפינית של 
+\begin_inset Formula $x$
+\end_inset
+
+, 
+\begin_inset Formula $y$
+\end_inset
+
+ מ"מ נורמאלי.
+\end_layout
+
+\begin_layout Standard
+בשביל לבטא את הפילוג של 
+\begin_inset Formula $y$
+\end_inset
+
+ צריך לדעת את 
+\begin_inset Formula $C_{y}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\mu_{y}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mu_{y} & = & A\mu_{x}+b\\
+C_{y} & = & AC_{x}A^{T}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הערה:
+\end_layout
+
+\begin_layout Standard
+הפילוג השולי של תת קבוצה של וקטור אקראי גאוסי מתפלג גאוסית, עם מטריצת קווריס
+ ווקטור תוחלת שמתאימים לאינדקסים של תת הקבוצה שבחרנו.
+\end_layout
+
+\end_body
+\end_document

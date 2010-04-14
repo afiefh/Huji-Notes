@@ -1,0 +1,708 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+# f(t,x) is an inline function where dx=f(t,x(t)) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+function [t,x]=EulerSolution(f,delta,startT,endT,initialValue) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+t = startT:delta:endT; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x = t.*0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x(1)=initialValue; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for i=2:length(t) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x(i)= x(i-1) .+ delta .* f( t(i-1), x(i-1) ); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+end 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+startT=0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+endT=10; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+initialValue=0.5;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+f=inline("x+0*t"); #dx/dt=x 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+Xanalitical=inline("0.5*exp(t)");
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+t=startT:0.01:endT; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x=Xanalitical(t);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+[t1,x1]=EulerSolution(f, 0.01, startT, endT, initialValue);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+[t2,x2]=EulerSolution(f, 0.1, startT, endT, initialValue);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+plot(t,x,'b-',t1,x1,'r.',t2,x2,'gx'); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+xlabel('t'); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+ylabel('x'); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+legend('Analytical', 'Euler(
+\backslash
+Delta = 0.01)','Euler(
+\backslash
+Delta = 0.1)');
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+pause;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+print -dsvg hw2.1.svg
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פתרון למשוואה 
+\begin_inset Formula $\frac{\partial}{\partial t}x=x$
+\end_inset
+
+ בשיטת אוילר
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2.1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+גרף המתקבל מהתוכנית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+#!/usr/bin/env octave
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+function [x1,x2]=mypendlum(x1_0,x2_0,dt,T) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+t = 0:dt:T; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x1 = t.*0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x2 = t.*0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x1(1) = x1_0; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x2(1) = x2_0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for i=2:length(t) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x2(i)=x2(i-1) .+ dt.*(-sin(x1(i-1))); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x1(i)=x1(i-1) .+ dt.*(x2(i-1)); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+end 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+end
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+hold('on');
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x1=-2*pi:pi/4:2*pi; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+x2=-pi:pi/4:pi; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+[a,b]=meshgrid(x1,x2); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+quiver(a,b,b,-sin(a)); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+xlabel('x_1'); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+ylabel('x_2');
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+[x11,x21]=mypendlum(pi/8, 0, 0.01, 10); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+[x12,x22]=mypendlum(pi/8, pi/8, 0.01, 10); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+[x13,x23]=mypendlum(0, -pi, 0.01, 2.5);
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+t1=0:0.01:10; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+t2=0:0.01:10; 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+t3=0:0.01:2.5;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+plot(x11,x21,x12,x22,x13,x23); 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+legend('Vector Field', 'Euler(
+\backslash
+Delta=0.01,x1_0=
+\backslash
+pi/8,x2_0=0)', 'Euler(
+\backslash
+Delta=0.01,x1_0=
+\backslash
+pi/8,x2_0=
+\backslash
+pi/8)', 'Euler(
+\backslash
+Delta=0.01,x1_0=0,x2_0=-
+\backslash
+pi)');
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+pause;
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+print -dsvg hw2.2.svg
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פתרון למשוואה 
+\begin_inset Formula $\frac{\partial^{2}}{\partial t^{2}}x=-\sin\left(x\right)$
+\end_inset
+
+ בשיטת אוילר
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2.2.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+גרף המתקבל מהתוכנית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+משוואו תנועה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M\frac{\partial^{2}x_{1}}{\partial t^{2}} & = & f\left(t\right)-kx_{1}-k\left(x_{1}-x_{2}\right)\\
+M\frac{\partial^{2}x_{2}}{\partial t^{2}} & = & k\left(x_{1}-x_{2}\right)-\gamma\frac{\partial x_{2}}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש באנלוג מיכני חשמלי ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c\frac{\partial v_{1}}{\partial t} & = & i\left(t\right)-\frac{1}{L}\int_{-\infty}^{t}v_{1}\left(t^{\prime}\right)dt^{\prime}-\frac{1}{L}\int_{-\infty}^{t}\left(v_{1}\left(t^{\prime}\right)-v_{2}\left(t^{\prime}\right)\right)dt^{\prime}\\
+c\frac{\partial v_{2}}{\partial t} & = & \frac{1}{L}\int_{-\infty}^{t}\left[v_{1}\left(t^{\prime}\right)-v_{2}\left(t^{\prime}\right)\right]dt^{\prime}-\frac{1}{R}\cdot v_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw2.3.png
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+המעגל המתקבל
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום 
+\begin_inset Formula $KCL$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c\frac{\partial v_{1}}{\partial t} & = & i\left(t\right)-\frac{1}{L}\int_{-\infty}^{t}v_{1}\left(t^{\prime}\right)dt^{\prime}-\frac{1}{L}\int_{-\infty}^{t}\left(v_{1}\left(t^{\prime}\right)-v_{2}\left(t^{\prime}\right)\right)dt^{\prime}\\
+c\frac{\partial v_{2}}{\partial t} & = & \frac{1}{L}\int_{-\infty}^{t}\left[v_{1}\left(t^{\prime}\right)-v_{2}\left(t^{\prime}\right)\right]dt^{\prime}-\frac{1}{R}\cdot v_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,767 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+1
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=az+b\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם מנסים 
+\begin_inset Formula $f\left(0\right)=0$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $b=0$
+\end_inset
+
+ אזי אי אפשר לקבוע את שאר התנאים.
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $f\left(0\right)=1+i$
+\end_inset
+
+ אזי מקבלים 
+\begin_inset Formula $b=1+i$
+\end_inset
+
+ מקבלים כי 
+\begin_inset Formula $a=-1-i$
+\end_inset
+
+, וגם מקיימים את 
+\begin_inset Formula $f\left(i\right)=2$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\left(-1-i\right)z+1+i\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+כדי להישאר במחצית המישור העליונה אסור לנו להזיז את המישור בציר 
+\begin_inset Formula $y$
+\end_inset
+
+ אבל מותר לנו למתוח אותו, אזי עבור 
+\begin_inset Formula $\alpha,\beta\in\mathbb{R}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\alpha z+\beta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+רוצים לסובב את המישור ב 
+\begin_inset Formula $-90^{\circ}$
+\end_inset
+
+ אזי נכפול את 
+\begin_inset Formula $z$
+\end_inset
+
+ ב 
+\begin_inset Formula $e^{-\frac{\pi}{2}}=-i$
+\end_inset
+
+, אחר כך אפשר להזיז את המישור בכל מספר ממשי שנרצה אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & -i\cdot z+\beta\\
+\beta & \in & \mathbb{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+מזיזים את המעגל לראשית, ואז מסובבים ב
+\begin_inset Formula $\theta$
+\end_inset
+
+, אז מזיזים את זה ל 
+\begin_inset Formula $\left(-1,0\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\left(z-1\right)\cdot e^{i\theta}-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+בשביל להפוך את הקו 
+\begin_inset Formula $y=x+1$
+\end_inset
+
+ לקו מהצורה 
+\begin_inset Formula $x=\alpha$
+\end_inset
+
+ צריך לסובב אותו 
+\begin_inset Formula $45^{\circ}$
+\end_inset
+
+ אזי נכפול את 
+\begin_inset Formula $z$
+\end_inset
+
+ ב 
+\begin_inset Formula $re^{i\frac{\pi}{4}}$
+\end_inset
+
+.
+ מקבלים את הקו 
+\begin_inset Formula $x=r\sqrt{2}$
+\end_inset
+
+.
+ בשביל לקבל את 
+\begin_inset Formula $x=0$
+\end_inset
+
+ צצריך להחסיר את 
+\begin_inset Formula $r\sqrt{2}$
+\end_inset
+
+ וניתן להזיז בציר 
+\begin_inset Formula $y$
+\end_inset
+
+ כרצוננו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & re^{i\frac{\pi}{4}}-r\sqrt{2}+it\\
+r,t & \in & \mathbb{R}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+הדרך היחידה לקבל היפרבולה דרך פעולות מתיכה והזזה זה לסובב אותה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $180^{\circ}$
+\end_inset
+
+ או 
+\begin_inset Formula $360^{\circ}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w\left(z\right) & = & z\cdot\left(e^{i\pi}\right)^{n}\\
+ & = & \left(-1\right)^{n}\cdot z\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לא קיימת העזתקה כזו כי אם בונים משולש בתוך האליפסה אנחנו אמורים לקבל משולש
+ עם אותן זוויות במעגל, אבל לא ייתכן שזה יתקיים לגבי כל משולש אזי אי אפשר)כי
+ טרנספורם אפיני שומר על זוויות(
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+כן.
+ רוצים שהמעגל יהיה ברדיוס 
+\begin_inset Formula $\sqrt{2}$
+\end_inset
+
+ ואז להזהיה את המרכז ל 
+\begin_inset Formula $1+i$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w\left(z\right)=\sqrt{2}\cdot z+2+i\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+בונים משולש באליפסה הנתונה כך ש שתי נקודודת יושבות על הראדיוס הקטן והנקודה
+ השלישית על הראדיוס הגדול, המשולש הזה הוא שווה שוקיים ויש עוד משולש דומה
+ לו בצד השני של האליפסה.
+ טרנספורמצית מוביוס שומרת על זוויות אזי בשביל לבנות שני המשולשים שווי השוקיים
+ האלה באליפסה החדשה כל הנקודות יושבות על הראדיוסים, אבל המימדים של האליפסה
+ השתנו באופן לא אחיד אזי אי אפשר לקבל את זהווית השלישית כמו שהיתה מקודם.
+ לכן לא קיימת טרנספורמציה אפינית שמעבירה את האליפסה לאליפסה.
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+בהיפרבולה אין נקודה כלשהיא שנמצאת על שני הישרים, אבל באיחוד שני ההיפרבולות
+ יש נקודה כזי 
+\begin_inset Formula $\left(z=0\right)$
+\end_inset
+
+.
+ יודעים כי טרנספורמציה אפינה לא מעבירה שתי נקודות לנקודה אחת אזי אי אפשר
+ להעביר את ההיפרבולה לאיחוד שתי ההיפרבולות.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+רוצים להעביר את 
+\begin_inset Formula $w\left(a\right)\mapsto1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w\left(a\right) & = & 1\\
+w\left(a+h\right) & = & -1\\
+\alpha\cdot a+\beta & = & 1\\
+\alpha\left(a+h\right)+\beta & = & -1\\
+\alpha a-\alpha a-\alpha h & = & 2\\
+\alpha & = & -\frac{2}{h}\\
+-\frac{2}{h}a+\beta & = & 1\\
+\beta & = & 1+\frac{2}{h}a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w\left(z\right)=-\frac{2}{h}z+1+\frac{2}{h}a\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+רוצים ש 
+\begin_inset Formula $a\mapsto1$
+\end_inset
+
+ ו 
+\begin_inset Formula $a+h\mapsto-1$
+\end_inset
+
+ אזי מזיזים את 
+\begin_inset Formula $z$
+\end_inset
+
+ ב 
+\begin_inset Formula $a+\frac{h}{2}$
+\end_inset
+
+ ומחלקים ב 
+\begin_inset Formula $\frac{h}{2}$
+\end_inset
+
+ בשביל לקבל את זה.
+ אחר כך מזיזים ב 
+\begin_inset Formula $i$
+\end_inset
+
+ בשביל לקבל את התנאי 
+\begin_inset Formula $w\left(a+\nicefrac{h}{2}\right)=i$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w\left(z\right)=\frac{-z+a+\frac{h}{2}}{\nicefrac{h}{2}}+i\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+רוצים להעביר את 
+\begin_inset Formula $y=kx$
+\end_inset
+
+ ל 
+\begin_inset Formula $x=-1$
+\end_inset
+
+ אזי ראשית נכפול את הקו 
+\begin_inset Formula $kx$
+\end_inset
+
+ ב 
+\begin_inset Formula $e^{-i\arctan\left(k\right)}$
+\end_inset
+
+ שזה מעביר כל מספר מוכב מהצורה 
+\begin_inset Formula $x+ikx$
+\end_inset
+
+ לצורה 
+\begin_inset Formula $a+0\cdot i$
+\end_inset
+
+.
+ רוצים להעביר את 
+\begin_inset Formula $0\mapsto-1$
+\end_inset
+
+ אזי צריך להזיז את זה ב 
+\numeric on
+-1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w\left(z\right)=r\cdot e^{-i\arctan\left(k\right)}\cdot z-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+העובי של הרצועה הנתונה היא 
+\begin_inset Formula $b\cos\left(\arctan\left(k\right)\right)$
+\end_inset
+
+ אנחנו רוצים רצועה בעובי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אזח 
+\begin_inset Formula $r=\frac{2}{b\cos\left(\arctan\left(k\right)\right)}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w\left(z\right)=\frac{2}{b\cos\left(\arctan\left(k\right)\right)}e^{-i\arctan\left(k\right)}\cdot z-1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+בשלילה קיימת 
+\begin_inset Formula $f$
+\end_inset
+
+ אנליטית כזו לכן 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה.
+ נתבונן בסביבת הבקודות המשותפות למעגל ולריבוע ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+המקבילית חוצה את המעגל, 
+\begin_inset Formula $f$
+\end_inset
+
+ רציפה לכן סביבה עוברת לסביבה וקו עובר לקו קאבל בסביבה של נק' החיתוך 
+\begin_inset Formula $\frac{f\left(z_{1}\right)-f\left(z_{0}\right)}{z-z_{0}}=1$
+\end_inset
+
+ לכל נק' 
+\begin_inset Formula $z$
+\end_inset
+
+ במעגל 
+\end_layout
+
+\end_body
+\end_document

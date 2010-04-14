@@ -1,0 +1,454 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+2
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\begin{cases}
+\frac{\cos\left(x\right)}{\sqrt{2}} & a<x<b\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}f\left(x\right)dx & = & 1\\
+P\left(x>\frac{\pi}{6}\right) & = & \frac{2-\sqrt{2}}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\sqrt{2}}\int_{a}^{b}\cos\left(x\right)dx & = & 1\\
+\frac{1}{\sqrt{2}}\left(\sin\left(b\right)-\sin\left(a\right)\right) & = & 1\\
+\sin\left(b\right)-\sin\left(a\right) & = & \sqrt{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x>\frac{\pi}{6}\right) & = & \frac{2-\sqrt{2}}{4}\\
+1-P\left(x<\frac{\pi}{6}\right) & = & \frac{2-\sqrt{2}}{4}\\
+1-\int_{a}^{\nicefrac{\pi}{6}}f\left(x\right)dx & = & \frac{2-\sqrt{2}}{4}\\
+\frac{1}{\sqrt{2}}\left(\sin\left(\frac{\pi}{6}\right)-\sin\left(a\right)\right) & = & 1-\frac{2-\sqrt{2}}{4}\\
+\sin\left(\frac{\pi}{6}\right)-\sin\left(a\right) & = & \frac{2+\sqrt{2}}{4}\sqrt{2}\\
+-\sin\left(a\right) & = & \frac{2\sqrt{2}+2}{4}-\frac{1}{2}\\
+\sin\left(a\right) & = & -\frac{\sqrt{2}}{2}\\
+a & = & \arcsin\left(-\frac{\sqrt{2}}{2}\right)=-\frac{\pi}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(b\right)--\frac{\pi}{4} & = & \sqrt{2}\\
+\sin\left(b\right) & = & \sqrt{2}-\frac{\pi}{4}\\
+b & = & \arcsin\left(\sqrt{2}-\frac{\pi}{4}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[x\right] & = & \int_{a}^{b}xf\left(x\right)dx\\
+ & = & \frac{1}{\sqrt{2}}\int_{-\frac{\pi}{4}}^{\arcsin\left(\sqrt{2}-\frac{\pi}{4}\right)}x\cos\left(x\right)dx\\
+ & = & \frac{1}{\sqrt{2}}\left[\left(x\sin\left(x\right)+\cos\left(x\right)\right)\right]_{-\frac{\pi}{4}}^{\arcsin\left(\sqrt{2}-\frac{\pi}{4}\right)}\\
+ & = & -0.0405\\
+E\left[x^{2}\right] & = & \int_{a}^{b}x^{2}f\left(x\right)dx\\
+ & = & \frac{1}{\sqrt{2}}\int_{-\frac{\pi}{4}}^{\arcsin\left(\sqrt{2}-\frac{\pi}{4}\right)}x^{2}\cos\left(x\right)dx\\
+ & = & 0.1579\\
+\mbox{var}x & = & E\left[x^{2}\right]-E^{2}\left[x\right]\\
+ & = & 0.156\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\begin{cases}
+ax+bx^{2} & 0<x<1\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $E\left[x\right]=0.6$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}f\left(x\right)dx & = & 1\\
+\left[\frac{ax^{2}}{2}+\frac{bx^{3}}{3}\right]_{0}^{1} & = & 1\\
+\frac{a}{2}+\frac{b}{3} & = & 1\\
+a & = & 2-\frac{2b}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}xf\left(x\right)dx & = & 0.6\\
+\int_{0}^{1}ax^{2}+bx^{3}dx & = & 0.6\\
+\left[\frac{ax^{3}}{3}+\frac{bx^{4}}{4}\right]_{0}^{1} & = & 0.6\\
+\frac{a}{3}+\frac{b}{4} & = & 0.6\\
+a+\frac{3b}{4} & = & 1.8\\
+2-\frac{2b}{3}+\frac{3b}{4} & = & 1.8\\
+\frac{b}{12} & = & -0.2\\
+b & = & -2.4\\
+a & = & 3.6\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[x^{2}\right] & = & \int_{0}^{1}xf\left(x\right)dx\\
+ & = & \int_{0}^{1}ax^{2}+bx^{3}dx\\
+ & = & 0.42\\
+\mbox{var}\left[x\right] & = & E\left[x^{2}\right]-E\left[x\right]\\
+ & = & 0.06\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+X\sim exp\left(\lambda\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $Y=\left\{ X\vert x>k\right\} $
+\end_inset
+
+ ונחשב פונקצית ההתפלגות התצטברת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F_{Y}\left(y\right) & = & P\left(x<y\vert x>k\right)\\
+ & = & \frac{F_{x}\left(y\right)-F_{x}\left(k\right)}{1-F_{x}\left(k\right)}\\
+ & = & \frac{1-e^{-\lambda y}-\left(1-e^{-\lambda k}\right)}{1-\left(1-e^{-\lambda k}\right)}\\
+ & = & \frac{-e^{-\lambda y}+e^{-\lambda k}}{e^{-\lambda k}}\\
+ & = & 1-\frac{e^{-\lambda y}}{e^{-\lambda k}}\\
+ & = & 1-e^{-\lambda y+\lambda k}\\
+ & = & 1-e^{\lambda\left(k-y\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left[x\right]=\int_{0}^{\infty}\left(1-F\left(x\right)\right)dx\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צ"ל כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int_{0}^{\infty}\left(1-F\left(x\right)\right)dx=\int_{0}^{\infty}\int_{x}^{\infty}f\left(t\right)dtdx\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F\left(x\right) & = & \int_{-\infty}^{x}f\left(x^{\prime}\right)dx^{\prime}\\
+F\left(x\right) & = & \int_{-\infty}^{x}f\left(x^{\prime}\right)dx^{\prime}+\int_{x}^{\infty}f\left(x^{\prime}\right)dx^{\prime}-\int_{x}^{\infty}f\left(x^{\prime}\right)dx^{\prime}\\
+F\left(x\right) & = & \int_{-\infty}^{\infty}f\left(x^{\prime}\right)dx^{\prime}-\int_{x}^{\infty}f\left(x^{\prime}\right)dx^{\prime}\\
+F\left(x\right) & = & 1-\int_{x}^{\infty}f\left(x^{\prime}\right)dx^{\prime}\\
+1-F\left(x\right) & = & \int_{x}^{\infty}f\left(x^{\prime}\right)dx^{\prime}\\
+\int_{0}^{\infty}1-F\left(x\right)dx & = & \int_{0}^{\infty}\int_{x}^{\infty}f\left(x^{\prime}\right)dx^{\prime}dx\\
+ & = & \int_{0}^{\infty}x^{\prime}f\left(x^{\prime}\right)dx^{\prime}\\
+ & = & E\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+מ"מ מעריכי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & exp\left(\lambda\right)\\
+Y & = & \sqrt[n]{X},x>0\\
+f_{y}\left(y\right) & = & \frac{\partial}{\partial y}1-e^{-\lambda y^{n}}\\
+ & = & e^{-\lambda y^{n}}\cdot\lambda ny^{n-1}\\
+F_{y}\left(y\right) & = & P\left(Y\leq y\right)\\
+ & = & P\left(\sqrt[n]{X}\leq y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

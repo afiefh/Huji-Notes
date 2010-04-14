@@ -1,0 +1,41 @@
+#!/usr/bin/env octave
+
+function [x1,x2]=mypendlum(x1_0,x2_0,dt,T)
+    t  = 0:dt:T;
+    x1 = t.*0;
+    x2 = t.*0;
+
+    x1(1) = x1_0;
+    x2(1) = x2_0;
+
+    for i=2:length(t)
+        x2(i)=x2(i-1) .+ dt.*(-sin(x1(i-1)));
+        x1(i)=x1(i-1) .+ dt.*(x2(i-1));
+    end
+end
+
+hold('on');
+
+x1=-2*pi:pi/4:2*pi;
+x2=-pi:pi/4:pi;
+[a,b]=meshgrid(x1,x2);
+quiver(a,b,b,-sin(a));
+legend('Vector Field')
+xlabel('x_1');
+ylabel('x_2');
+
+[x11,x21]=mypendlum(pi/8, 0, 0.01, 10);
+[x12,x22]=mypendlum(pi/8, pi/8, 0.01, 10);
+[x13,x23]=mypendlum(0, -pi, 0.01, 2.5);
+
+t1=0:0.01:10;
+t2=0:0.01:10;
+t3=0:0.01:2.5;
+
+plot(x11,x21,x12,x22,x13,x23);
+legend('Vector Field', 'Euler(\Delta=0.01,x1_0=\pi/8,x2_0=0)', 'Euler(\Delta=0.01,x1_0=\pi/8,x2_0=\pi/8)', 'Euler(\Delta=0.01,x1_0=0,x2_0=-\pi)');
+#plot(t1, x11, t1, x21, t2, x12, t2, x22, t3, x13, t3, x23); 
+
+pause;
+
+print -dsvg hw2.2.svg

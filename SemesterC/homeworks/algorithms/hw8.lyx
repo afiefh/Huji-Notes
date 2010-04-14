@@ -1,0 +1,532 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+8
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+נשתמש באותו אלג' שבו השתמשנו בכיתה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+\begin_inset Formula $L_{0}$
+\end_inset
+
+← {0} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for i ← 1 to n
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--
+\begin_inset Formula $L_{i}$
+\end_inset
+
+ ← Merge(
+\begin_inset Formula $L_{i−1}$
+\end_inset
+
+ , 
+\begin_inset Formula $L_{i−1}$
+\end_inset
+
+ + xi ) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--
+\begin_inset Formula $L_{i}$
+\end_inset
+
+ ← T rim(
+\begin_inset Formula $L_{i}$
+\end_inset
+
+ , 2n ) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+--Remove all elements greater or equal than t aside from the minimal one
+ of them.
+ 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+Return max(
+\begin_inset Formula $L_{n}$
+\end_inset
+
+ ) 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+פתרון
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומשתמשים באלג 
+\begin_inset Formula $\mbox{Trim}$
+\end_inset
+
+ הבא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+n ← length(L) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+L′ ← {L[n]} 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+last ← L[n] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+for i ← n − 1 downto 1
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+-- if (L[i] < 
+\begin_inset Formula $\frac{last}{1+\delta}$
+\end_inset
+
+ ) 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+-- -- 
+\begin_inset Formula $L^{\prime}\leftarrow L^{\prime}\cup\left\{ L\left[i\right]\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+-- --last ← L[i] 
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang english
+return L′ 
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Trim}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי זה עובד כי הוכחנו את זה בתרגול.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+כדי להוכיח ש 
+\begin_inset Formula $r\leq2OPT-1$
+\end_inset
+
+ נראה:
+\end_layout
+
+\begin_layout Standard
+כיוון שכל מכונה מוגבלת לביצוע 
+\begin_inset Formula $k$
+\end_inset
+
+ עבודה 
+\begin_inset Formula $OPT\geq\frac{\sum_{i}^{n}t_{i}}{k}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כל מכונה יכולה לבצע 
+\begin_inset Formula $k$
+\end_inset
+
+, אזי המצב הכי גרוע הוא אם מסדרים המסימות 
+\begin_inset Formula $i,k-i+1,i,k-i+1\dots$
+\end_inset
+
+)אין שתי מסימות באותה מכונה( לכן כל שתי מכונות מבצעות 
+\begin_inset Formula $i+k-i+1=k+1$
+\end_inset
+
+.
+ נניח כרגע כי 
+\begin_inset Formula $r$
+\end_inset
+
+)מספר המכונות( זוגי ו 
+\begin_inset Formula $r_{i}$
+\end_inset
+
+ הוא כמות העבודה המתבצעת במכונה ה
+\begin_inset Formula $i$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum t_{i} & = & \sum_{i=1}^{\frac{r}{2}}\left(r_{2i}+r_{2i+1}\right)\\
+\sum t_{i} & = & \sum_{i=1}^{\frac{r}{2}}\left(k+1\right)\\
+\sum t_{i} & = & \frac{r}{2}\left(k+1\right)\\
+\sum t_{i} & > & \frac{r}{2}k\\
+2\frac{\sum t_{i}}{k} & > & r\\
+2OPT & > & r\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שהכל דיסקרטי אנחנו יכולים להפוך את זה לאי שוויון חלש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2OPT-1\geq r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה ש 
+\begin_inset Formula $r$
+\end_inset
+
+ אי זוגי נניח שבמכונה האחרונה)שאין לה זוג( יש 
+\begin_inset Formula $d$
+\end_inset
+
+ עבודה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum t_{i} & = & \sum_{i=1}^{\frac{r-1}{2}}\left(r_{2i}+r_{2i+1}\right)+r_{last}\\
+\sum t_{i} & = & \sum_{i=1}^{\frac{r-1}{2}}\left(k+1\right)+d\\
+\sum t_{i} & = & \frac{r-1}{2}\left(k+1\right)+d\\
+\sum t_{i} & > & \frac{r-1}{2}k\\
+2\frac{\sum t_{i}}{k} & > & r-1\\
+2OPT & > & r-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכיוון שהכל דיסקרטי אנחנו יכולים להפוך את זה לאי שוויון חלש:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2OPT\geq r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל 
+\begin_inset Formula $OPT$
+\end_inset
+
+ זה מספר שלם ו 
+\begin_inset Formula $r$
+\end_inset
+
+ זה אי זוגי, אזי אנחנו טוענים כי מספר אי זוגי קטן שווה ממספר זוגי.
+ אבל מספר זוגי ומספר אי זוגי אף פעם לא יהיו שווים לכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+2OPT-1\geq r\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+בכל שלב האלג הזה בוחר פחות או שווה 
+\begin_inset Formula $f$
+\end_inset
+
+ קודקודים, אזי אם היו לו 
+\begin_inset Formula $r$
+\end_inset
+
+ שלבים הוא יבחר 
+\begin_inset Formula $f\cdot r$
+\end_inset
+
+ קודקודים.
+\end_layout
+
+\begin_layout Standard
+נשים לב שהאלג' בוחר בכל שלב קודקוד שלא נבחר באף קבוצה קודמת, וכל אלג תקין
+ לפתרון הבעיה יהיה חייב לעשות את זה, אזי 
+\begin_inset Formula $OPT\geq r$
+\end_inset
+
+.
+ אבל האלג שלנו פועל ב 
+\begin_inset Formula $g\left(o\right)\leq f\cdot r$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\left(o\right)\leq f\cdot OPT$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,356 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+עבור פאזה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s_{2}\approx s_{1}+d\sin\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור אמפליטודה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+s_{1}p\approx s_{2}p\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi\left(p,t\right) & = & \psi_{1}+\psi_{2}\\
+ & = & \frac{E_{0}}{s_{1}P}\cdot e^{i\left(ks_{1}P-\omega t\right)}+\frac{\sqrt{2}E_{0}}{s_{2}P}\cdot e^{i\left(ks_{2}P-\omega t\right)}\\
+ & = & \frac{E_{0}}{s_{1}P}\cdot e^{i\left(ks_{1}P-\omega t\right)}\cdot\left(1+\sqrt{2}e^{ikd\sin\theta}\right)\\
+I & \propto & \left|\psi\right|^{2}=\psi\cdot\psi^{*}\\
+ & = & 4\sqrt{2}\cos^{2}\left(\frac{kd\sin\left(t\right)}{2}\right)+\left(3-2\sqrt{2}\right)\\
+ & = & 2\sqrt{2}\cos\left(kd\sin\left(t\right)\right)+3\\
+\frac{I_{max}}{I_{min}} & = & \frac{2\sqrt{2}\cos\left(kd\sin\left(t_{max}\right)\right)+3}{2\sqrt{2}\cos\left(kd\sin\left(t_{min}\right)\right)+3}\\
+ & = & \frac{2\sqrt{2}\cdot1+3}{2\sqrt{2}\cdot-1+3}\\
+ & = & 8\sqrt{2}+11\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a^{2} & \overset{?}{\ll} & \frac{2z}{k}\\
+\left(5\cdot10^{-3}\right)^{2} & \overset{?}{\ll} & \frac{2\cdot10\cdot10^{3}}{\left(\frac{2\pi}{6328\cdot10^{-10}}\right)}\\
+2.5\cdot10^{-5} & \overset{\checkmark}{\ll} & 0.002\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי אפשר להשתמש בקירוב פראונהופר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+E\left(x_{1},y_{1}\right)=\frac{e^{ikz}}{i\lambda z}\cdot e^{\frac{ik\left(x_{1}^{2}+y_{1}^{2}\right)}{2z}}\iint t\left(x,y\right)g\left(x,y\right)e^{-i\frac{k}{z}\left(xx_{1}+yy_{1}\right)}dxdy\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $k_{y}=\frac{ky_{1}}{z}$
+\end_inset
+
+ ו 
+\begin_inset Formula $k_{x}=\frac{kx_{1}}{z}$
+\end_inset
+
+ ונעשה טרנספורם פורייה.
+\end_layout
+
+\begin_layout Standard
+עבור סדק ברוחב 
+\begin_inset Formula $w=5mm$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+t\left(x,y\right) & = & \mbox{rect}\left(\frac{x}{w}\right)\\
+E\left(k_{x},k_{y}\right) & = & \mbox{sinc}\left(\frac{\omega k_{x}}{2}\right)\\
+I & \propto & \mbox{sinc}^{2}\left(\frac{\omega k_{x}}{2}\right)\\
+ & = & \mbox{sinc}^{2}\left(\frac{\omega\cdot\overbrace{k\cdot\frac{x}{z}}^{k_{x}}}{2}\right)\\
+ & = & \mbox{sinc}^{2}\left(\frac{5\cdot10^{-3}\cdot\frac{2\pi}{6328\cdot10^{-10}}\cdot\frac{x}{10\cdot10^{3}}}{2}\right)\\
+ & = & \mbox{sinc}^{2}\left(\frac{625\pi}{791}x\right)\\
+\frac{625\pi}{791}x_{min} & = & \pi\\
+x_{min} & = & \frac{791}{625}\\
+\Delta x & = & 2.5312\mbox{m}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+הפונק של השריג:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\left(\mbox{rect}\left(\frac{x}{\left(\frac{Nd}{z}\right)}\right)\right)\cdot\sum\delta\left(x-nd\right)*\mbox{rect}\left(\frac{x}{\nicefrac{a}{2}}\right)\cdot\cos\left(k_{0}x\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכללי התמרות)עם החלפת 
+\begin_inset Formula $k_{x}\to k_{\theta}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{F}\left(f\left(x\right)\right)=\mbox{sinc}\left(\frac{Nd}{z}k\theta\right)*\sum_{n}\delta\left(k\theta-\frac{2n\pi}{d}\right)\cdot\mbox{sinc}\left(\frac{ak\theta}{2}\right)*\left[\delta\left(k_{\theta}+k_{0}\right)+\delta\left(k\theta-k_{0}\right)\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקבל את התוצאה שקיבלנו בסוף התרגול "מוכפלת" בהזזות ונק' 
+\begin_inset Formula $k\theta=k_{0},-k_{0}=\pm\frac{2\pi}{a}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי העוצמה היא 
+\begin_inset Formula $\left|E\right|^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hateyou.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+תוצאה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

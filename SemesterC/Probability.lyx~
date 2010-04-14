@@ -4383,11 +4383,1035 @@ x\sim y\left[1,n\right],E\left(x\right)=\frac{n+1}{2}\]
 \begin_inset Formula \begin{eqnarray*}
 E\left(x^{2}\right) & = & \sum_{i=1}^{n}i^{2}\frac{1}{n}\\
  & = & \frac{1}{n}\frac{n\left(n+1\right)\left(2n+1\right)}{6}\\
- & = & \frac{\left(n+1\right)\left(2n+1\right)}{6}\end{eqnarray*}
+ & = & \frac{\left(n+1\right)\left(2n+1\right)}{6}\\
+\mbox{var}\left(x\right) & = & \frac{\left(n+1\right)\left(2n+1\right)}{6}-\frac{\left(n+1\right)^{2}}{6}\\
+ & = & \frac{n^{2}-1}{16}\end{eqnarray*}
 
 \end_inset
 
 
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+פונקציה יוצרת מומנטים
+\end_layout
+
+\begin_layout Standard
+של משתנה מקרי 
+\begin_inset Formula $x\sim\mbox{Pois}\left(\lambda\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(e^{tx}\right) & = & \sum_{k=0}^{\infty}e^{tk}e^{-\lambda}\frac{k^{\lambda}}{k!}\\
+ & = & e^{-\lambda}\sum_{k=0}^{\infty}\frac{\left(\lambda e^{t}\right)^{k}}{k!}\\
+ & = & e^{-\lambda}e^{\lambda e^{t}}\\
+ & = & e^{-\lambda\left(1-e^{t}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x\sim B\left(n,p\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(e^{tx}\right) & = & \sum_{k=0}^{n}e^{tk}{n \choose k}p^{k}q^{n-k}\\
+ & = & \sum_{k=0}^{n}{n \choose k}\left(pe^{t}\right)^{k}q^{n-k}\\
+ & = & \left(pe^{t}+1-p\right)^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונקציה יוצרת מומנטים? על שום מה?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{x}\left(t\right) & = & E\left(e^{tx}\right)\\
+\dot{m}_{x}\left(t\right) & = & \frac{\partial E\left(e^{tx}\right)}{\partial t}\\
+ & = & \frac{\partial}{\partial t}\left(\sum_{x}e^{tx}P\left(x\right)\right)\\
+ & = & \sum_{x}\left(\frac{\partial}{\partial t}e^{tx}P\left(x\right)\right)\\
+ & = & \sum_{x}xe^{tx}P\left(x\right)\\
+\dot{m}_{x}\left(0\right) & = & \sum_{x}x\underbrace{e^{tx}}_{1}P\left(x\right)\\
+ & = & \sum_{x}xP\left(x\right)\\
+ & = & E\left(x\right)\\
+\ddot{m}_{x}\left(t\right) & = & \frac{\partial^{2}}{\partial t^{2}}m_{x}\left(t\right)\\
+ & = & \frac{\partial^{2}}{\partial t^{2}}\sum_{x}e^{tx}P\left(x\right)\\
+ & = & \sum_{x}\frac{\partial^{2}}{\partial t^{2}}e^{tx}P\left(x\right)\\
+ & = & \sum_{x}x^{2}e^{tx}P\left(x\right)\\
+\ddot{m}\left(0\right) & = & \sum_{x}x^{2}P\left(x\right)\\
+ & = & E\left(x^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הכלל הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left(\frac{\partial^{r}}{\partial t^{r}}m_{x}\left(t\right)\right)\vert_{t=0}=E\left(x^{r}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה מקל עלינו הרבה לחשב את המומנטים של משתנים מקרים שלנו!
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & \sim & B\left(n,p\right)\\
+m_{x}\left(t\right) & = & \left[pe^{t}+1-p\right]^{n}\\
+\dot{m}_{x}\left(t\right)\vert_{t=0} & = & n\left[pe^{t}+1-p\right]^{n-1}pe^{t}\vert_{t=0}\\
+\ddot{m}_{x}\left(t\right) & = & \left(n\left(n-1\right)\left[pe^{t}1-p\right]^{n-2}pe^{t}\cdot pe^{t}+n\left[pe^{t}+1-p\right]pe^{t}\right)\vert_{t=0}\\
+ & = & n\left(n-1\right)p^{2}+np\\
+\mbox{var}\left(x\right) & = & n^{2}p^{2}-np^{2}+np-n^{2}p^{2}\\
+ & = & np\left(1-p\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & \mbox{Pois}\left(\lambda\right)\\
+m_{x}\left(t\right) & = & e^{-\lambda\left[1-e^{r}\right]}\\
+E\left(x\right) & = & \dot{m}_{x}\left(t\right)\vert_{t=0}\\
+ & = & e^{-\lambda\left(1-e^{t}\right)}\lambda e^{t}\vert_{t=0}=\lambda\\
+E\left(x^{2}\right) & = & \ddot{m}_{x}\left(t\right)\vert_{t=0}\\
+ & = & \lambda^{2}+\left[e^{-\lambda\left(1-e^{t}\right)}\lambda e^{t}\right]=\lambda^{2}+\lambda\\
+\mbox{var}\left(x\right) & = & \lambda^{2}+\lambda-\lambda^{2}\\
+ & = & \lambda\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור משתנה גיאומטרי שסופר כמה כשלונות כדמו את ההצלחה הראשון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x & \sim & G\left(p\right)\\
+P\left(x=k\right) & = & \underset{\underset{k=1,2,3,4\dots}{\uparrow}}{pq^{k-1}}\\
+m_{x}\left(t\right) & = & E\left(e^{tx}\right)\\
+ & = & \sum_{k=1}^{\infty}e^{tk}pq^{k-1}\\
+ & = & \frac{pe^{t}}{1-qe^{t}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הטור 
+\begin_inset Formula $e^{t}q$
+\end_inset
+
+ מתכנה עבור 
+\begin_inset Formula $t<\ln\left(\frac{1}{q}\right)$
+\end_inset
+
+ אבל זה לא בעייתי כי דרשנו התכנסות עבור סביבה פתוחה של 
+\begin_inset Formula $0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{m}_{x}\left(t\right)\vert_{t=0} & = & \frac{pe^{t}\left(1-qe^{t}\right)+pe^{t}qe^{t}}{\left(1-qe^{t}\right)^{2}}\vert_{t=0}\\
+ & = & \frac{Pe^{t}}{\left(1-qe^{t}\right)}\\
+ & = & \frac{p}{p^{2}}=p=E\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט קטן:
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+"משפטון" כמו שאמא המארצה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ מ"מ, 
+\begin_inset Formula $m_{x}\left(t\right)$
+\end_inset
+
+ פונק' יוצרת מומנטים.
+ אם 
+\begin_inset Formula $Y=ax+b$
+\end_inset
+
+)
+\begin_inset Formula $a,b$
+\end_inset
+
+ קבועים( אזי עם ל 
+\begin_inset Formula $Y$
+\end_inset
+
+ יש פ"מ)פונקציה יוצרת מומנטים( 
+\begin_inset Formula \begin{eqnarray*}
+m_{y}\left(t\right) & = & E\left(e^{yt}\right)\\
+ & = & E\left(e^{\left(ax+b\right)t}\right)\\
+ & = & E\left(a^{atx+tb}\right)\\
+ & = & e^{tb}E\left(e^{\left(at\right)x}\right)\\
+ & = & e^{tb}m_{x}\left(at\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דרך זה אפשר לקבל דברים יפים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(Y\right) & = & E\left(ax+b\right)\\
+ & = & be^{tb}m_{x}\left(at\right)+e^{tb}\dot{m}_{x}\left(at\right)\cdot a\vert_{t=0}\\
+ & = & b\cdot1+E\left(x\right)\cdot a\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משתנה מקרי דו מימדי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\langle \Omega,\mathcal{B},\mathcal{P}\right\rangle \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+"מהמשפט יש לי קוביות קטנות, טוב מהן הכל לבנות."
+\end_layout
+
+\begin_layout Standard
+נבחרה מילה באופן מקרי, אזי מרחב המדגם 
+\begin_inset Formula $\Omega$
+\end_inset
+
+ יש בו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מילות כלומר 
+\begin_inset Formula $\left|\Omega\right|=8$
+\end_inset
+
+.
+ הכל פו סימטרי אזי 
+\begin_inset Formula $P\left(x=x\right)\frac{1}{8}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יהי 
+\begin_inset Formula $x$
+\end_inset
+
+ אורך המילה, ויהי 
+\begin_inset Formula $Y$
+\end_inset
+
+ מספר ה-ווים)הופעות של אות ו( שבה.
+\end_layout
+
+\begin_layout Standard
+אזי התאמנו לכל מילה זוג 
+\begin_inset Formula $\left(x,y\right)$
+\end_inset
+
+, למשל למילה 
+\begin_inset Formula $\left(4,4\right)$
+\end_inset
+
+ היה מתאים וווו.
+\end_layout
+
+\begin_layout Standard
+אז ה
+\begin_inset Formula $x$
+\end_inset
+
+ בלבד היינו יכולים לתאר בטבלה חד מימדית, אבל עכשיו אנחנו צריכים טבלה דו
+ מימדית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="6" columns="2">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $P\left(x=x\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{2}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\nicefrac{3}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\nicefrac{2}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Total:}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang english
+1
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלה חד מימדית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Float table
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Tabular
+<lyxtabular version="3" rows="5" columns="4">
+<features>
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<column alignment="center" valignment="top" width="0">
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $x,y$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+0
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+1
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+2
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{2}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+3
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{2}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+5
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{2}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+<row>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\numeric on
+6
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+</cell>
+<cell alignment="center" valignment="top" topline="true" bottomline="true" leftline="true" rightline="true" usebox="none">
+\begin_inset Text
+
+\begin_layout Plain Layout
+\begin_inset Formula $\nicefrac{1}{8}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+</cell>
+</row>
+</lyxtabular>
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלה דו מימדית
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+טבלאות הסתברות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+\begin_inset Formula $\mbox{Covariance}$
+\end_inset
+
+ השונות המשותפת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cov}\left(x,y\right) & = & \sum_{i,j}\left(x_{i}-\mu_{x}\right)\left(y_{i}-\mu_{y}\right)P\left(x_{i},y_{i}\right)\\
+ & = & \sum_{i}\sum_{j}\left(x_{i}-\mu_{x}\right)\left(y_{i}-\mu_{y}\right)P\left(x_{i},y_{i}\right)\\
+ & = & \sum_{i}\sum_{j}\left(x_{i}y_{i}-\mu_{x}y_{i}-\mu_{y}x_{i}+\mu_{x}\mu_{y}\right)P\left(x_{i},y_{j}\right)\\
+ & = & \sum_{i}\sum_{j}x_{i}y_{j}P\left(x_{i},y_{j}\right)-\sum_{i}\sum_{j}\mu_{x}y_{j}P\left(x_{i},y_{j}\right)-\sum_{i}\sum_{j}\mu_{y}x_{i}P\left(x_{i},y_{j}\right)+\sum_{i}\sum_{j}\mu_{y}\mu_{x}P\left(x_{i},y_{j}\right)\\
+ & = & \sum_{i}\sum_{j}x_{i}y_{j}P\left(x_{i},y_{j}\right)-\mu_{x}\mu_{y}-\mu_{y}\mu_{x}+\mu_{x}\mu_{u}\cdot1\\
+ & = & \sum_{i}\sum_{j}x_{i}y_{j}P\left(x_{i},y_{j}\right)-\mu_{x}\mu_{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+האצאה מס?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mbox{cov}\left(aX+b,cY+d\right)=ac\cdot\mbox{cov}\left(X,Y\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cov}\left(X+Y,Z\right) & = & E\left[\left(X+Y\right)Z\right]-E\left(X+Y\right)E\left(Z\right)\\
+ & = & E\left(XZ+YZ\right)-\left(E\left(X\right)+E\left(Y\right)\right)E\left(Z\right)\\
+ & = & E\left(XZ\right)+E\left(YZ\right)-E\left(X\right)E\left(Z\right)-E\left(Y\right)E\left(Z\right)\\
+ &  & \underbrace{E\left(XZ\right)+-E\left(X\right)E\left(Z\right)}_{\mbox{cov}\left(X,Z\right)}+\underbrace{E\left(YZ\right)-E\left(Y\right)E\left(Z\right)}_{\mbox{cov}\left(Y,Z\right)}\\
+ & = & \mbox{cov}\left(X,Z\right)+\mbox{cov}\left(Y,Z\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+מקדם ההתאם
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Correletion Coefficient
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho\left(X,Y\right)=\frac{\mbox{cov}\left(X,Y\right)}{+\sqrt{\mbox{var}\left(X\right)\cdot\mbox{var}\left(Y\right)}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\rho\left(aX+b,cY+d\right) & = & \frac{\mbox{cov}\left(aX+b,cY+d\right)}{\sqrt{\mbox{var}\left(aX+b\right)\mbox{var}\left(cY+d\right)}}\\
+ & = & \frac{ac\mbox{cov}\left(X,Y\right)}{\sqrt{a^{2}\mbox{var}\left(X\right)c^{2}\mbox{var}\left(Y\right)}}\\
+ & = & \frac{ac}{\left|ac\right|}\rho\left(X,Y\right)\\
+ & = & \pm\rho\left(X,Y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X^{*} & = & \frac{X-\mu_{X}}{\sigma_{X}}\\
+Y^{*} & = & \frac{Y-\mu_{Y}}{\sigma_{Y}}\\
+E\left(X^{*}\right) & = & 0\\
+E\left(Y^{*}\right) & = & 0\\
+\mbox{var}\left(X^{*}\right) & = & 1\\
+\mbox{var}\left(Y^{*}\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+-1\leq\rho\left(X,Y\right)\leq+1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\rho\left(X,Y\right)=\rho\left(X^{*},Y^{*}\right)=\frac{\mbox{cov}\left(X^{*},Y^{*}\right)}{\sqrt{\mbox{var}\left(X^{*}\right)\mbox{var}\left(Y^{*}\right)}}=\mbox{cov}\left(X^{*},Y^{*}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+0 & \leq & \mbox{var}\left(X^{*}\pm Y^{*}\right)=\mbox{var}\left(X^{*}\right)+\mbox{var}\left(Y^{*}\right)\pm2\mbox{cov}\left(X^{*},Y*\right)\\
+0 & \leq & 2\pm2\mbox{cov}\left(X^{*},Y*\right)\\
+1 & \geq & \left|\mbox{cov}\left(X^{*},Y^{*}\right)\right|\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+התפלגות מותנת
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $P\left(X=x_{i},Y=y_{j}\right)$
+\end_inset
+
+ היא ההתפלגות המשותפת.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(X=x_{i}\vert Y=y_{i}\right)=\frac{P\left(X=x_{i}\vert Y=y_{j}\right)}{P\left(Y=y_{j}\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו התפלגות מותנת.
 \end_layout
 
 \end_body

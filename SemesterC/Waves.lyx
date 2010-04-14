@@ -1,4 +1,4 @@
-#LyX 1.6.4 created this file. For more info see http://www.lyx.org/
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
 \lyxformat 345
 \begin_document
 \begin_header
@@ -3896,6 +3896,805 @@ I_{n+1}+I_{n-1} & = & 2\cos\left(ka\right)I_{n}\\
 \begin_inset Formula \begin{eqnarray*}
 \ddot{I}_{n} & = & -\underbrace{\frac{4}{LC}\sin^{2}}_{\omega^{2}}I_{n}\\
 \omega^{2} & = & \frac{n}{LC}\sin\left(\frac{ka}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול ?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/c18d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מעבר של גל 
+\begin_inset Formula $\vec{E}_{i}$
+\end_inset
+
+ מתווך 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ ל
+\begin_inset Formula $n_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\vec{E}_{t}$
+\end_inset
+
+ גל מועבר ו
+\begin_inset Formula $\vec{E}_{r}$
+\end_inset
+
+ גל מוחזר 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שני תווכים בעלי מקדמי שבירה 
+\begin_inset Formula $n_{1},n_{2}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $E_{i}$
+\end_inset
+
+ זה האמפליטודה של הגל הנכנס.
+\end_layout
+
+\begin_layout Standard
+נדבר על גל תלת מימדי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\vec{E}=\vec{E}_{0}e^{i\left(\omega t-\vec{k}\cdot\vec{r}\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המישור ששלושת הקרניים נמצאים בו נקרא לו מישור הפגיעה או מישורר ההתקדמות.
+\end_layout
+
+\begin_layout Standard
+החצים בציור הם 
+\begin_inset Formula $\vec{k}$
+\end_inset
+
+ של הגלים השונים, לכן הגל החשמלי והמגניטי מאונכים ל
+\begin_inset Formula $k$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/Onde_electromagnetique.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+גל אלקטרו מגנטי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בציור שלנו ל
+\begin_inset Formula $k$
+\end_inset
+
+ אין רכיב בכיוון 
+\begin_inset Formula $y$
+\end_inset
+
+ כי כך בחרנו את הצירים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{k}\cdot\vec{r} & = & \left(k_{x}\hat{x}+k_{z}\hat{z}\right)\left(x\hat{x}+z\hat{z}\right)=\overbrace{k\sin\left(\theta\right)}^{k_{x}}x+\overbrace{k\cos\left(\theta\right)}^{k_{z}}z\\
+\vec{E}_{1} & = & \hat{y}\left(E_{0i}e^{-ik_{1}\left(\sin\theta_{1}x+\cos\theta_{2}z\right)}\right)e^{i\omega_{1}t}\\
+\vec{E}_{r} & = & \hat{y}\left[E_{0r}e^{-ik_{1}\left(\sin\theta_{r}x+\cos\theta_{r}z\right)}\right]e^{i\omega_{2}t}\\
+\vec{E}_{t} & = & \hat{y}\left[E_{0t}e^{-ik_{2}\left(\sin\theta_{t}x+\cos\theta_{r}z\right)}\right]e^{i\omega_{3}t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים לקבל את הכיוון של 
+\begin_inset Formula $\vec{H}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\mu}{c}\frac{\partial\vec{H}}{\partial t} & = & -\vec{\nabla}\times\vec{E}\\
+\mu\vec{H} & \sim & \vec{k}\times\vec{E}\\
+ & = & \begin{vmatrix}\hat{x} & \hat{y} & \hat{z}\\
+k_{x} & 0 & k_{z}\\
+0 & E_{0} & 0\end{vmatrix}\\
+ & = & E_{0}k\underbrace{\left(-\cos\theta_{i}\hat{x}+\sin\theta_{i}\hat{z}\right)}_{\mbox{direction}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+היחס בין 
+\begin_inset Formula $E$
+\end_inset
+
+ ל 
+\begin_inset Formula $H$
+\end_inset
+
+ הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\left|\vec{E}\right|}{\left|\vec{H}\right|}=\sqrt{\frac{\mu_{0}}{\varepsilon}}=Z=\frac{1}{Y}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $Z$
+\end_inset
+
+ הוא העקבה ו 
+\begin_inset Formula $Y$
+\end_inset
+
+ הוא האדמיטנס
+\lang english
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\lang english
+Admittance
+\end_layout
+
+\end_inset
+
+
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\vec{H}_{i} & = & Y_{1}E_{i0}e^{ik_{i}\left(\sin\theta_{i}x+\cos\theta_{i}z\right)}e^{i\omega_{i}t}\left[-\cos\theta_{i}\hat{x}+\sin\theta_{i}\hat{z}\right]\\
+\vec{H}_{r} & = & Y_{1}E_{r0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרכיב המשיק לתווך של הרכיב החשמלי והמגנטי הוא רציף בהעברה
+\end_layout
+
+\begin_layout Standard
+רציפות הרכיב המשיק או המקביל למשטח
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $E$
+\end_inset
+
+ נמצא בכיוון 
+\begin_inset Formula $\hat{y}$
+\end_inset
+
+ והמשטח הוא במישו 
+\begin_inset Formula $x,y$
+\end_inset
+
+, לכן 
+\begin_inset Formula $E$
+\end_inset
+
+ כולו משיק
+\end_layout
+
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(E_{i}+E_{r}\right)_{z=0} & = & E_{t}\vert_{z=0}\\
+\left(H_{ix}+H_{rx}\right)\vert_{z=0} & = & H_{tx}\vert_{z=0}\\
+k_{1}\sin\theta_{i} & = & k_{1}\sin\theta_{r}=k_{2}\sin\theta_{t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\theta_{i} & = & \theta_{r}\\
+n_{1}\sin\theta_{i} & = & n_{2}\sin\theta_{t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי נסמן: 
+\begin_inset Formula $\theta_{1}=\theta_{r}=\theta_{i}$
+\end_inset
+
+, ו 
+\begin_inset Formula $\theta_{t}=\theta_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נגדיר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+r_{\perp}=\frac{E_{r_{0}}}{E_{i_{0}}}=\frac{n_{1}\cos\theta_{1}-n_{2}\cos\theta_{2}}{n_{1}\cos\theta_{1}+n_{2}\cos\theta_{2}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא יחס העברת האנרגיה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r_{\parallel} & = & \frac{H_{xr0}}{H_{xi0}}=\frac{n_{1}\cos\theta_{2}-n_{2}\cos\theta_{1}}{n_{1}\cos\theta_{1}+n_{2}\cos\theta_{2}}\\
+t_{\perp} & = & \frac{E_{r0}}{E_{i0}}=\frac{2n_{1}\cos\theta_{1}}{n_{1}\cos\theta_{1}+n_{2}\cos\theta_{2}}\\
+t_{\parallel} & = & \frac{2n_{1}\cos\left(\theta_{1}\right)}{n_{1}\cos\theta_{2}+n_{2}\cos\theta_{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & r^{2}\\
+T & = & t^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E_{r0_{\perp}} & = & r_{\perp}E_{i0_{\perp}}\\
+E_{r0_{\parallel}} & = & r_{\parallel}E_{i0_{\parallel}}\\
+\left|E_{r_{0}}\right|_{\perp}^{2} & = & R_{\perp}\left|E_{i0}\right|_{\perp}^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זווית ברוסתר
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+
+\size normal
+\color none
+\lang english
+Brewster
+\end_layout
+
+\end_inset
+
+ נקבל בתנאי של 
+\begin_inset Formula $R_{\parallel}=0$
+\end_inset
+
+ אזי מקבלים 
+\begin_inset Formula $\theta_{B}=\theta_{\mbox{Brewster}}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{n^{2}+1} & = & \cos^{2}\theta_{r}=\frac{1}{\tan^{2}\theta+1}\\
+\tan\theta_{B} & = & n=\frac{n_{2}}{n_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+מקור אור ומשטח שיש בו שני חריצים, מרוחק מהמשטח הראשון יש עוד משטח.
+ מה נראה עליו?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/c19d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מקור אור, חריצים ומסך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפרש הפאזה כאשר הם מגיעים למסך היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\delta=\overbrace{\frac{2\pi}{\lambda}}^{k}\overbrace{\left(\overline{S_{2}P}-\overline{S_{1}P}\right)}^{\Delta x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $D\gg d$
+\end_inset
+
+ אז אפשר להניח כי 
+\begin_inset Formula $S_{2}P\approx S_{1}P+d\sin\theta$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi\left(\theta\right) & = & \psi_{1}+\psi_{2}\\
+ & = & \frac{E_{0}}{S_{1}P}e^{i\left(tS_{1}P-\omega t\right)}+\frac{E_{0}}{S_{2}P}e^{i\left(kS_{2}P-\omega t\right)}\\
+ & = & \frac{E_{0}}{S_{1}P}e^{i\left(kS_{1}P-\omega t\right)}\left[n-e^{i\left(kd\sin\theta-\omega t\right)}\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מודדים את העוצמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+I & \sim & \left|\psi\right|^{2}=\psi\overbrace{\psi^{*}}^{\overline{\psi}}\\
+I & \sim & E_{0}^{2}\cos^{2}\left(\frac{kd\sin\theta}{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+טרנספורם פורייה בשתי מימדים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{F}\left(f\left(x\right)\right) & = & F\left(k\right)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}f\left(x\right)e^{-ikx}dx\\
+f\left(x\right) & = & \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}F\left(k\right)e^{ikx}dk\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשתי מימדים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{F}\left(f\left(x,y\right)\right) & = & F\left(k_{x},k_{y}\right)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}f\left(x,y\right)e^{-i\left(k_{x}x+k_{y}y\right)}dxdy\\
+f\left(x,y\right) & = & \frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\infty}\int_{-\infty}^{\infty}F\left(k_{x},k_{y}\right)e^{i\left(k_{x}x+k_{y}y\right)}dk_{x}dk_{y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח גל מהצורה: 
+\begin_inset Formula $e^{i2\pi\left(k_{x}x+k_{y}y\right)}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lambda=\frac{2\pi}{\left|\vec{k}\right|}=\frac{2\pi}{\sqrt{k_{x}^{2}+k_{y}^{2}}}$
+\end_inset
+
+ וזווית ההתקדמות של הגל היא 
+\begin_inset Formula $\theta=\tan^{-1}\left(\frac{k_{y}}{k_{x}}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+אנרגיה, עוצמה, הספק.
+\end_layout
+
+\begin_layout Standard
+ההספק הוא שנשמר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\langle v\right\rangle  & = & \frac{1}{2}\varepsilon_{0}\left|E\right|^{2}n^{2}\\
+\left\langle I\right\rangle  & = & \frac{1}{2}\varepsilon_{0}\left|E\right|^{2}n^{2}\frac{c}{n}\\
+\left\langle p\right\rangle  & = & \left\langle I\right\rangle \cdot A\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גל מגיע מ 
+\begin_inset Formula $n_{1}$
+\end_inset
+
+ ועובר ל 
+\begin_inset Formula $n_{2}$
+\end_inset
+
+ אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \frac{\mbox{\R{\text{ה}\text{ס}\text{פ}\text{ק}\,\text{מ}\text{ו}\text{ח}\text{ז}\text{ר}}}}{\R{\text{ה}\text{ס}\text{פ}\text{ק}\,\text{ש}\text{ה}\text{ג}\text{י}\text{ע}}}=r^{2}\\
+T & = & \frac{\mbox{\R{\text{ה}\text{ס}\text{פ}\text{ק}\,\text{ש}\text{ע}\text{ב}\text{ר}}}}{\R{\text{ה}\text{ס}\text{פ}\text{ק}\,\text{ש}\text{ה}\text{ג}\text{י}\text{ע}}}=\left|t\right|^{2}\cdot\frac{n_{2}}{n_{1}}\frac{\cos\theta_{t}}{\cos\theta_{i}}\\
+R+T & = & 1\\
+r & = & \frac{n_{1}-n_{2}}{n_{1}+n_{2}}\\
+t & = & \frac{2n_{1}}{n_{1}+n_{2}}\\
+R & = & r^{2}\\
+ & = & \frac{\left(n_{1}-n_{2}\right)^{2}}{\left(n_{1}+n_{2}\right)^{2}}\\
+T & = & \frac{4n_{1}n_{2}}{\left(n_{1}+n_{2}\right)^{2}}\\
+t & = & \frac{4n_{1}^{2}}{\left(n_{1}+n_{2}\right)^{2}}\\
+T & = & \frac{4n_{1}^{2}n_{2}}{\left(n_{1}+n_{2}\right)n_{1}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה ?
+\end_layout
+
+\begin_layout Section
+אופטיקה גיאומטרית, עדשות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+D & = & \begin{pmatrix}1 & u\\
+0 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
+-\frac{1}{f} & 1\end{pmatrix}\begin{pmatrix}1 & v\\
+0 & 1\end{pmatrix}\\
+ & = & \begin{pmatrix}1-\frac{v}{f} & u-\frac{uv}{f}+v\\
+-\frac{1}{f} & 1-\frac{u}{f}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}r_{out}\\
+\alpha_{out}\end{pmatrix}=D\cdot\begin{pmatrix}r_{in}\\
+\alpha_{in}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי בשביל לקבל דמוד ברורה דורשים כי 
+\begin_inset Formula $u+v-\frac{uv}{f}=0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{v}+\frac{1}{u}=\frac{1}{f}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא התנאי לקבל דמות ברורה.
+ אזי אם הדמות ברורה 
+\begin_inset Formula $r_{out}=\left(1-\frac{v}{f}\right)r_{in}$
+\end_inset
+
+.
+ מציבים 
+\begin_inset Formula $\frac{v}{f}=1+\frac{u}{u}$
+\end_inset
+
+ ומקבלים 
+\begin_inset Formula $r_{out}=-\frac{v}{u}r_{in}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ממשולשים דומיםי אפשר לקבל 
+\begin_inset Formula $\left|\frac{r_{out}}{r_{in}}\right|=\left|\frac{v}{u}\right|$
+\end_inset
+
+ ואז 
+\begin_inset Formula $vu-uf=fv$
+\end_inset
+
+ שזה אנחנו מקירים בטור 
+\begin_inset Formula $\frac{1}{f}-\frac{1}{v}=\frac{1}{u}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/lenses444.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+שתי עדשות
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם העדשה היא לא דקה אז המטריצה שלה היא 
+\begin_inset Formula $\begin{pmatrix}1 & d\\
+-\frac{1}{f} & 1\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+עדשה עבה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}1 & 0\\
+-\left(\frac{n_{3}-n_{2}}{R_{2}n_{3}}\right) & \frac{n_{2}}{n_{3}}\end{pmatrix}\begin{pmatrix}1 & d\\
+0 & 1\end{pmatrix}\begin{pmatrix}1 & 0\\
+\frac{n_{2}-n_{1}}{R_{1}n_{2}} & \frac{n_{1}}{n_{2}}\end{pmatrix}\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+אינטרפורמטר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename Waves/intersormeter.svg
+	lyxscale 30
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+אינטפורמטר
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
 
 \end_inset
 

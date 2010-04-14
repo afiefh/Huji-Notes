@@ -1,0 +1,12 @@
+t=-3:0.2:-2;
+t2=-3:0.01:-2;
+p=1./(2.*sqrt(t+3));
+p2=1./(2.*sqrt(t2+3));
+
+plot(t,p,'x',t2,p2,'-');
+axis([-3,-2,0,2]);
+xlabel('b');
+ylabel('f_y(b)');
+pause;
+
+print -dsvg hw2q1.svg
