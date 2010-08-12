@@ -1,0 +1,651 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\\
+\left|\lambda I-A\right| & = & \begin{vmatrix}\lambda-0.5 & -0.5\\
+-0.2 & \lambda-0.8\end{vmatrix}\\
+ & = & \left(\lambda-0.5\right)\left(\lambda-0.8\right)-0.1\\
+ & = & \lambda^{2}-0.5\lambda-0.8\lambda+0.4-0.1\\
+ & = & \lambda^{2}-1.3\lambda+0.3\\
+\lambda & = & \frac{1.3\pm\sqrt{1.69-4\cdot0.3}}{2}\\
+\lambda_{1} & = & 0.3\\
+\lambda_{2} & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש ע"ע אחד שהוא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+והעאך העצמי השני הוא קטן מ
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+, לכן התהליך מתכנס.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+מוצאים את הו"ע של 
+\begin_inset Formula $\lambda=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v\cdot A & = & v\\
+v\cdot A-v & = & 0\\
+v\left(A-I\right) & = & 0\\
+\begin{pmatrix}v_{1} & v_{2}\end{pmatrix}\cdot\begin{pmatrix}-0.5 & 0.5\\
+0.2 & -0.2\end{pmatrix} & = & 0\\
+-0.5v_{1}+0.2v_{2} & = & 0\\
+0.5v_{1}-0.2v_{2} & = & 0\\
+v_{1} & = & \frac{2}{5}v_{2}\\
+\begin{pmatrix}v_{1} & v_{2}\end{pmatrix} & = & \begin{pmatrix}2 & 5\end{pmatrix}\\
+v_{normal} & = & \begin{pmatrix}\frac{2}{7} & \frac{5}{7}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[x\right] & = & \frac{2}{7}\cdot1+\frac{5}{7}\cdot2\\
+ & = & \frac{12}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+אחרי זמן רב מקבלים הסתברות קבועה שמקיימת 
+\begin_inset Formula $vA=v$
+\end_inset
+
+.
+ לכן גם 
+\begin_inset Formula $vA^{n}=v$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{x_{t},x_{t+1}\dots x_{t+n}}\left(a_{1},a_{2}\dots a_{n}\right) & = & f_{x_{t+\tau},x_{t+\tau+1},x_{t+\tau+n}}\left(a_{1},a_{2}\dots a_{n}\right)\\
+\begin{matrix}f_{x_{t}}\left(a_{1}\right)\cdot f_{x_{t+1}\vert x_{t}}\left(a_{2}\vert a_{1}\right)\cdots\\
+\cdots f_{x_{t+n}\vert x_{t+n-1}}\left(a_{n}\vert a_{n-1}\right)\end{matrix} & = & \begin{matrix}f_{x_{t+\tau}}\left(a_{1}\right)\cdot f_{x_{t+\tau+1}\vert x_{t+\tau}}\left(a_{2}\vert a_{1}\right)\cdots\\
+\cdots f_{x_{t+n+\tau}\vert x_{t+\tau+n-1}}\left(a_{n}\vert a_{n-1}\right)\end{matrix}\\
+v_{a_{1}}\cdot A\left(a_{1},a_{2}\right)\cdots A\left(a_{n},a_{n-1}\right) & = & \left(v\cdot A^{\tau}\right)\left(a_{1}\right)\cdot A\left(a_{1},a_{2}\right)\cdots A\left(a_{n},a_{n-1}\right)\\
+v_{a_{1}}\cdot A\left(a_{1},a_{2}\right)\cdots A\left(a_{n},a_{n-1}\right) & = & v\left(a_{1}\right)\cdot A\left(a_{1},a_{2}\right)\cdots A\left(a_{n},a_{n-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+נרצה לחשה את הקורלציה אחרי התכנסות)כלומר 
+\begin_inset Formula $t$
+\end_inset
+
+ גדול( בין 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\left(t+\tau\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\tau$
+\end_inset
+
+ גדול מאוד.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{x\left(t\right)x\left(t+\tau\right)} & = & E\left[x\left(t\right)\cdot x\left(t+\tau\right)\right]\\
+ & = & E\left[\left(\begin{cases}
+1 & \frac{2}{7}\\
+2 & \frac{5}{7}\end{cases}\right)\cdot\left(\begin{cases}
+1 & \frac{2}{7}\\
+2 & \frac{5}{7}\end{cases}\right)\right]\\
+ & = & 1\cdot\frac{4}{49}+2\cdot2\cdot\frac{10}{49}+4\cdot\frac{25}{49}\\
+ & = & \frac{144}{49}\\
+ & \approxeq & 2.938\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+נרצה לחשה את הקורלציה אחרי התכנסות)כלומר 
+\begin_inset Formula $t$
+\end_inset
+
+ גדול( בין 
+\begin_inset Formula $x\left(t\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $x\left(t+1\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{x\left(t\right)x\left(t\right)} & = & E\left[x\left(t\right)\cdot x\left(t+1\right)\right]\\
+ & = & \begin{matrix}1\cdot P\left(x\left(t\right)=1\wedge x\left(t+1\right)=1\right)+2\cdot P\left(x\left(t\right)=1\wedge x\left(t+1\right)=2\right)+\\
++2P\left(x\left(t\right)=2\wedge x\left(t+1\right)=1\right)+4P\left(x\left(t\right)=2\wedge x\left(t+1\right)=2\right)\end{matrix}\\
+ & = & 1\cdot\frac{2}{7}\cdot0.5+2\cdot\frac{2}{7}\cdot0.5+2\cdot\frac{5}{7}\cdot0.2+4\cdot\frac{5}{7}\cdot0.8\\
+ & = & 3\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+v_{0} & = & \begin{pmatrix}0 & 1\end{pmatrix}\\
+P\left(x_{3}=2\right)\cdot P\left(x_{7}=1\vert x_{3}=2\right) & = & v_{0}\cdot A^{3}\left(2\right)\cdot A^{4}\left(2,1\right)\\
+v_{0}\cdot A^{3} & = & \begin{pmatrix}0 & 1\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\\
+ & = & \begin{pmatrix}0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\\
+ & = & \begin{pmatrix}0.26 & 0.74\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\\
+ & = & \begin{pmatrix}0.26 & 0.74\end{pmatrix}\\
+ & = & \begin{pmatrix}0.278 & 0.722\end{pmatrix}\\
+A^{4} & = & \begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\cdot\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}\\
+ & = & \begin{pmatrix}0.2915 & 0.7085\\
+0.2834 & 0.7166\end{pmatrix}\\
+P\left(x_{3}=2\right)\cdot P\left(x_{7}=1\vert x_{3}=2\right) & = & 0.722\cdot0.2834\\
+ & = & 0.2046148\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן ההסתברות להיות במצב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+הוא 
+\begin_inset Formula $0.2046148$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ז
+\end_layout
+
+\begin_layout Standard
+אוווווקי, זה כבר יותר מדי כפל מטריצות, אני עובר לשיטת לכסון בשביל לחסוך
+ זמן.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix} & = & P\begin{pmatrix}1 & 0\\
+0 & 0.3\end{pmatrix}P^{-1}\\
+\lambda=1:\begin{pmatrix}-0.5 & 0.5\\
+0.2 & -0.2\end{pmatrix}v & = & 0\\
+v & = & \begin{pmatrix}1\\
+1\end{pmatrix}\\
+\lambda=0.3:\begin{pmatrix}0.2 & 0.5\\
+0.2 & 0.5\end{pmatrix}v & = & 0\\
+v & = & \begin{pmatrix}5\\
+-2\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P & = & \begin{pmatrix}1 & 5\\
+1 & -2\end{pmatrix}\\
+P^{-1} & = & \frac{1}{7}\begin{pmatrix}2 & 5\\
+1 & -1\end{pmatrix}\\
+\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix} & = & \frac{1}{7}\begin{pmatrix}1 & 5\\
+1 & -2\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & 0.3\end{pmatrix}\begin{pmatrix}2 & 5\\
+1 & -1\end{pmatrix}\\
+\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}^{3} & = & \frac{1}{7}\begin{pmatrix}1 & 5\\
+1 & -2\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & 0.3\end{pmatrix}^{3}\begin{pmatrix}2 & 5\\
+1 & -1\end{pmatrix}\\
+ & = & \frac{1}{7}\begin{pmatrix}1 & 5\\
+1 & -2\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & 0.027\end{pmatrix}\begin{pmatrix}2 & 5\\
+1 & -1\end{pmatrix}\\
+ & = & \begin{pmatrix}0.305 & 0.695\\
+0.278 & 0.722\end{pmatrix}\\
+\begin{pmatrix}0.5 & 0.5\\
+0.2 & 0.8\end{pmatrix}^{4} & = & \frac{1}{7}\begin{pmatrix}1 & 5\\
+1 & -2\end{pmatrix}\begin{pmatrix}1 & 0\\
+0 & 0.3\end{pmatrix}^{4}\begin{pmatrix}2 & 5\\
+1 & -1\end{pmatrix}\\
+ & = & \begin{pmatrix}0.2915 & 0.7085\\
+0.2834 & 0.7166\end{pmatrix}\\
+v_{0}A^{3}\left(2\right)A^{4}\left(2,1\right) & = & \begin{pmatrix}\frac{1}{3} & \frac{2}{3}\end{pmatrix}A^{3}\left(2\right)A^{4}\left(2,1\right)\\
+\begin{pmatrix}\frac{1}{3} & \frac{2}{3}\end{pmatrix}A^{3} & = & \begin{pmatrix}0.2847 & 0.7139\end{pmatrix}\\
+v_{0}A^{3}\left(2\right)A^{4}\left(2,1\right) & = & 0.7139\cdot0.7166\\
+ & = & 0.51158074\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+תהליך שבכל רגע נתון מקבל 
+\begin_inset Formula $1$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $0.5$
+\end_inset
+
+ ו 
+\begin_inset Formula $-1$
+\end_inset
+
+ בהסתברות 
+\begin_inset Formula $0.5$
+\end_inset
+
+.
+ עבור 
+\begin_inset Formula $t_{1}\neq t_{2}$
+\end_inset
+
+ המשתנים 
+\begin_inset Formula $x\left(t_{1}\right),x\left(t_{2}\right)$
+\end_inset
+
+ בלתי תלויים.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x_{i}$
+\end_inset
+
+ משתני ברנולי עם 
+\begin_inset Formula $p=\frac{1}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Y_{i}=\begin{cases}
+x_{i} & i\mod3\neq0\\
+x_{i-1}+x_{i-2}\mod2 & i\mod3\neq0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\theta & \sim & U\left[-2\pi,2\pi\right]\\
+X & = & \sin\left(\theta\right)\\
+Y & = & \cos\left(\theta\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X,Y$
+\end_inset
+
+ ב"ת ליניארית)
+\begin_inset Formula $\mbox{cov}$
+\end_inset
+
+ שווה לאפס( אבל תלויים סטטיסטית)ברור כי שניהם תלויים באותו משתנה(
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}1 & 0 & 0\\
+0.5 & 0.5 & 0\\
+0.8 & 0 & 0.2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}0.4 & 0.6 & 0\\
+0.3 & 0.7 & 0\\
+0 & 0 & 1\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}0 & 0 & 1\\
+1 & 0 & 0\\
+0 & 1 & 0\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

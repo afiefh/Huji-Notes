@@ -1,0 +1,293 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hw5.1.eps
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1} & = & -\frac{\partial^{2}x_{1}}{\partial t^{2}}\\
+x_{1} & = & A\cos\left(t\right)+B\sin\left(t\right)\\
+x_{2} & = & -A\sin\left(t\right)+B\cos\left(t\right)\\
+x_{1}\left(0\right) & = & \frac{7\pi}{8}\Rightarrow B=\frac{7\pi}{8}\\
+x_{2}\left(0\right) & = & 0\Rightarrow A=0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hw5.2.eps
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename images/hw5.3.eps
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+הפתרון הליניארי מתרחק מהפתרון האנליטי ככל שמתרחקים מנקודת הליניאריזציה.
+ כיוון שעשינו ליניאריזציה סביב נקודת שבת הפונק' לא אמורה להתרחק מהנקודה
+ הזו אבל הקירוב של אוילר הוא גם לא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+100
+\numeric off
+% מדוייק אז הוא מתרחק אחרי סיבוב.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Paragraph
+ליניאריזציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial t}x_{1} & = & x_{2}\\
+\frac{\partial}{\partial t}x_{2} & = & -\sin x_{1}-\gamma x_{2}\approx-x_{1}-\gamma x_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+יעקובין:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+J & = & \begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}}\\
+\frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}}\end{pmatrix}\\
+ & = & \begin{pmatrix}0 & 1\\
+-1 & -\gamma\end{pmatrix}\\
+\left|J-I\lambda\right| & = & 0\\
+\begin{vmatrix}-\lambda & 1\\
+-1 & -\gamma-\lambda\end{vmatrix} & = & 0\\
+\left(-\lambda\right)\left(-\gamma-\lambda\right)+1 & = & 0\\
+\lambda^{2}+\lambda\gamma+1 & = & 0\\
+\lambda_{1,2} & = & \frac{-\gamma\pm\sqrt{\gamma^{2}-4}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma>2$
+\end_inset
+
+ אז הפתרונות הם דועכים בצורה 
+\begin_inset Formula $e^{-\lambda t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma<2$
+\end_inset
+
+ אז הערכים העצמיים מורכבים נסמן 
+\begin_inset Formula $\lambda_{i}=a_{i}+ib_{i}$
+\end_inset
+
+ ואז הפתרונות הם מהצורה 
+\begin_inset Formula $e^{a_{i}}\sin\left(b_{i}t+\varphi\right)$
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

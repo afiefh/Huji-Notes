@@ -64,7 +64,7 @@
 \color inherit
 מס.
 \numeric on
-2
+5
 \end_layout
 
 \begin_layout Author
@@ -172,6 +172,10 @@ E\left(T_{1}-T_{2}\right) & = & \theta_{1}+3\theta_{2}-\theta_{1}-2\theta_{2}\\
 2
 \end_layout
 
+\begin_layout Subsection
+א
+\end_layout
+
 \begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 E\left(x\right) & = & \frac{1}{n}\overline{x}\\
@@ -186,6 +190,30 @@ E\left(x\right) & = & \frac{1}{n}\overline{x}\\
 \end_inset
 
 
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\tilde{P} & = & \sqrt{\frac{1}{\nicefrac{n}{2}}\sum_{i=1}^{\nicefrac{n}{2}}x_{2i}x_{2i-1}}\\
+E\left(\tilde{P}\right)-P & = & E\left[\sqrt{\frac{1}{\nicefrac{n}{2}}\sum_{i=1}^{\nicefrac{n}{2}}x_{2i}x_{2i-1}}\right]-P\\
+ & = & \sqrt{\frac{1}{\nicefrac{n}{2}}}\cdot\left[\sqrt{\sum_{i=1}^{\nicefrac{n}{2}}E\left[x_{2i}\right]E\left[x_{2i-1}\right]}\right]-P\\
+ & = & \sqrt{\frac{1}{\nicefrac{n}{2}}}\cdot\sqrt{\sum_{i=1}^{\nicefrac{n}{2}}E\left[x_{2i}\right]E\left[x_{2i-1}\right]}-P\\
+ & = & \sqrt{\frac{1}{\nicefrac{n}{2}}}\cdot\sqrt{P\cdot P\cdot\left[\nicefrac{n}{2}\right]}-P\\
+ & = & P\cdot\sqrt{\frac{1}{\nicefrac{n}{2}}}\sqrt{\nicefrac{n}{2}}-P\\
+ & = & P-P\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן הוא חסר הטיה
 \end_layout
 
 \begin_layout Section
@@ -211,7 +239,184 @@ E\left(x\right) & = & \frac{1}{n}\overline{x}\\
 3
 \end_layout
 
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
 \begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & N\left(\theta,1\right)\\
+MSE\left(T_{a,b}\right) & = & \mbox{var}\left(aX+b\right)+\left(E\left(aX+b\right)-\theta\right)^{2}\\
+ & = & a^{2}\mbox{var}\left(X\right)+\left(a\theta+b-\theta\right)^{2}\\
+ & = & a^{2}+\left(\theta\left(a-1\right)+b\right)^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+MSE\left(T_{0.5,0}\right) & = & \left(\frac{1}{2}\right)^{2}+\left(\theta\cdot\frac{1}{2}+0\right)^{2}\\
+ & = & \frac{1}{4}\left(1+\theta\right)\\
+MSE\left(T_{1,0}\right) & = & 1^{2}+0^{2}=1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\theta=7$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $MSE\left(T_{0.5,0}\right)=2$
+\end_inset
+
+, 
+\begin_inset Formula $MSE\left(T_{1,0}\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\theta=0$
+\end_inset
+
+ מקבלים 
+\begin_inset Formula $MSE\left(T_{1,0}\right)=\frac{1}{4}$
+\end_inset
+
+, 
+\begin_inset Formula $MSE\left(T_{1,0}\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+אין מהצרה 
+\begin_inset Formula $T_{a,b}$
+\end_inset
+
+ שהוא יותר טוב מ 
+\begin_inset Formula $T_{1,0}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\theta$
+\end_inset
+
+ כי עבור 
+\begin_inset Formula $a=1,b=0$
+\end_inset
+
+ האומד הוא חסר הטייה עבור כל ערכים אחרים של 
+\begin_inset Formula $a,b$
+\end_inset
+
+ נקבל אומד מוטה ולכן אין אומד יותר טוב מ 
+\begin_inset Formula $T_{1,0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(x,\theta\right) & = & \begin{cases}
+e^{\theta-X} & \theta<x\\
+0 & \mbox{Otherwise}\end{cases}\\
+E\left(x\right) & = & \int_{\theta}^{\infty}xe^{\theta-x}dx\\
+ & = & e^{\theta}\int_{\theta}^{\infty}xe^{-x}dx\\
+ & = & e^{\theta}\left[-e^{-x}-xe^{-x}\right]_{=\theta}^{\infty}\\
+ & = & e^{\theta}\left[0+e^{-\theta}-\theta e^{-\theta}\right]\\
+ & = & 1-\theta\\
+\theta & = & 1-E\left(x\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+מצאנו כי 
+\begin_inset Formula $E\left(x\right)=1-\theta$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\theta & = & 1-E\left(x\right)\\
+\hat{\theta} & = & 1-\overline{x}_{n}\\
+ & = & 1-\frac{1}{n}\sum_{i=1}^{n}x_{i}\end{eqnarray*}
+
+\end_inset
+
 
 \end_layout
 

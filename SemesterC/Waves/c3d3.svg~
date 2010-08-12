@@ -1,6 +1,0 @@
-#!/usr/bin/env octave
-
-x=0:0.01:5
-y=cos(100*x) + cos(102*x)
-plot(x,y)
-pause

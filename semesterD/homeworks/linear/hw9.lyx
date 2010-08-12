@@ -1,0 +1,473 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+9
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+יודעים ש 
+\begin_inset Formula $\lim_{s\to\infty}\mathcal{L}\left(\frac{\partial}{\partial t}x\right)=\lim_{s\to\infty}\left(-x\left(0^{-}\right)+sX\left(s\right)\right)=-x\left(0^{-}\right)+\lim_{s\to\infty}sX\left(s\right)$
+\end_inset
+
+ וגם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{s\to\infty}\mathcal{L}\left(\frac{\partial}{\partial t}x\left(t\right)\right) & = & \lim_{s\to\infty}\int_{0^{-}}^{\infty}\frac{\partial}{\partial t}x\left(t\right)e^{-st}dt\\
+ & = & \lim_{s\to\infty}\left[\int_{0^{-}}^{0^{+}}\frac{\partial}{\partial t}x\left(t\right)e^{0}dt+\int_{0^{+}}^{\infty}\frac{\partial}{\partial t}x\left(t\right)e^{-st}dt\right]\\
+ & = & \left[x\left(t\right)\right]_{0^{-}}^{0^{+}}+0\\
+ & = & x\left(0^{+}\right)-x\left(0^{-}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{s\to\infty}\mathcal{L}\left(\frac{\partial}{\partial t}x\left(t\right)\right) & = & \lim_{s\to\infty}\mathcal{L}\left(\frac{\partial}{\partial t}x\right)\\
+-x\left(0^{-}\right)+\lim_{s\to\infty}sX\left(s\right) & = & x\left(0^{+}\right)-x\left(0^{-}\right)\\
+\lim_{s\to\infty}sX\left(s\right) & = & x\left(0^{+}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+אם מסתכלים על אותו פיתוח כאשר משאיפים 
+\begin_inset Formula $s$
+\end_inset
+
+ ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0^{-}}^{\infty}\frac{\partial}{\partial t}x\left(t\right)e^{-st}dt & = & \int_{0^{-}}^{\infty}x\left(t\right)dt\\
+ & = & \left[x\left(t\right)\right]_{0^{-}}^{\infty}\\
+ & = & \lim_{t\to\infty}x\left(t\right)-x\left(0^{-}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{s\to0}\mathcal{L}\left(\frac{\partial}{\partial t}x\left(t\right)\right) & = & \lim_{s\to0}\mathcal{L}\left(\frac{\partial}{\partial t}x\left(t\right)\right)\\
+-x\left(0^{-}\right)+\lim_{s\to0}sX\left(s\right) & = & \lim_{t\to\infty}x\left(t\right)-x\left(0^{-}\right)\\
+\lim_{s\to0}sX\left(s\right) & = & \lim_{t\to\infty}x\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Y\left(s\right)=\frac{10\left(2s+3\right)}{s\left(s^{2}+2s+5\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מהשאלה הקודמת יודעים כי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(0^{+}\right) & = & \lim_{s\to\infty}sY\left(s\right)\\
+ & = & \lim_{s\to\infty}\frac{10\left(2s+3\right)}{\left(s^{2}+2s+5\right)}\\
+ & = & 0\\
+y\left(\infty\right) & = & \lim_{s\to0}\frac{10\left(2s+3\right)}{\left(s^{2}+2s+5\right)}\\
+ & = & 6\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{2s+5}{s^{2}+5s+6} & = & F\left(s\right)\\
+\frac{2s+5}{s^{2}+5s+6} & = & \frac{c_{1}}{x+2}+\frac{c_{2}}{x+3}\\
+c_{1} & = & \left(x+3\right)F\left(s\right)\vert_{s=-3}\\
+ & = & 1\\
+c_{2} & = & \left(x+2\right)F\left(s\right)\vert_{x=-2}\\
+ & = & 1\\
+\frac{2s+5}{s^{2}+5s+6} & = & \frac{1}{x+2}+\frac{1}{x+3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש ב 
+\begin_inset Formula $F\left(s\right)=\frac{1}{s+\alpha}\mapsto\mathcal{L}^{-1}\left[F\left(s\right)\right]=e^{-\alpha t}\theta\left(t\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\Re\left(s\right)>-\alpha$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{L}^{-1}\left(F\left(s\right)\right)=\left[e^{-2t}+e^{-3t}\right]\theta\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{s^{2}+2s+1}{s^{2}-s-6} & = & 1+\frac{3s+7}{\left(s-3\right)\left(s+2\right)}\\
+\frac{3s+7}{\left(s-3\right)\left(s+2\right)} & = & \frac{c_{1}}{s-3}+\frac{c_{2}}{s+2}\\
+c_{1} & = & F\left(s\right)\left(s-3\right)\vert_{s=3}=\frac{16}{5}\\
+c_{2} & = & F\left(s\right)\left(s+2\right)\vert_{s=-2}=-\frac{1}{5}\\
+\frac{\left(s+1\right)^{2}}{s^{2}-s-6} & = & 1+\frac{16}{5\left(s-3\right)}-\frac{1}{5\left(s+2\right)}\\
+\mathcal{L}^{-1}\left(F\left(s\right)\right) & = & \delta\left(t\right)+\frac{16}{5}e^{3t}\theta\left(t\right)-\frac{1}{5}e^{-2t}\theta\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+F\left(s\right) & = & \frac{s+2}{s\left(s+1\right)^{2}}=\frac{c_{1}}{s}+\frac{c_{21}}{s+1}+\frac{c_{22}}{\left(s+1\right)^{2}}\\
+c_{1} & = & \frac{s+2}{\left(s+1\right)^{2}}\vert_{s=0}=2\\
+c_{22} & = & \frac{s+2}{s}\vert_{s=-1}=-1\\
+c_{21} & = & \frac{d}{ds}\left(F\left(s\right)\left(s+1\right)^{2}\right)\vert_{s=1}=\frac{-2}{s^{2}}\vert_{s=1}=-2\\
+F\left(s\right) & = & \frac{2}{s}-\frac{2}{s+1}-\frac{1}{\left(s+1\right)^{2}}\\
+\mathcal{L}^{-1}\left[F\left(s\right)\right] & = & 2\theta\left(t\right)-2e^{-t}\theta\left(t\right)-te^{-t}\theta\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+H\left(s\right) & = & \frac{Q_{n}\left(s\right)}{P_{n}\left(s\right)}=\frac{1}{s^{2}+3s+2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שתנאי ההתחלה הם אפס)מצב מנוחה( מתקיים 
+\begin_inset Formula $R\left(s\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{\left(s+1\right)\left(s+2\right)} & = & \frac{c_{1}}{s+1}+\frac{c_{2}}{s+2}\\
+c_{1} & = & 1\\
+c_{2} & = & -1\\
+ZSR:\,\mathcal{L}^{-1}\left(H\left(s\right)\right) & = & \left[e^{-t}-e^{-2t}\right]\theta\left(t\right)\\
+y\left(t\right) & = & \left[2e^{-2t}-e^{-2t}\right]\theta\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial u}{\partial t}+u\left(t\right)=-e^{-t}\theta\left(t\right)+\delta\left(t\right)+e^{-t}=\delta\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המשוואה שצריך בעצם לפתור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ddot{y}+3\dot{y}+3y & = & \delta\left(t\right)\\
+H\left(s\right) & = & \frac{1}{\left(s+2\right)^{2}}\\
+\mathcal{L}^{-1}\left[H\left(s\right)\right] & = & te^{-2t}=y_{ZSR}\\
+\dot{y} & = & sY\left(s\right)-2\\
+\ddot{y} & = & s^{2}Y\left(s\right)-2s-1\\
+R\left(s\right) & = & -\left(-2s+\left(-2\right)\cdot4-1\right)=2s+9\\
+y_{ZIR} & = & \frac{R\left(s\right)}{P_{n}\left(s\right)}=\frac{2s+9}{\left(s+2\right)^{2}}=\frac{5}{\left(s+2\right)^{2}}+\frac{2}{s+2}\\
+\mathcal{L}^{-1}\left(y_{ZIR}\left(s\right)\right) & = & 5te^{-2t}+2e^{-t}\\
+y & = & y_{ZIR}+y_{ZSR}\\
+ & = & \left(2+5t+t\right)e^{-2t}\theta\left(t\right)\\
+ & = & \left(6t+2\right)e^{-2t}\theta\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

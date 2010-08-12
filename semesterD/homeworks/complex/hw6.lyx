@@ -1,0 +1,595 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+6
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}\left|z\right|dz & = & ?\\
+\gamma:\left[0,1\right] & \to & C\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma\left(t\right) & = & \left(-3-4i\right)t\\
+\int_{\gamma}\left|z\right|dz & = & \int_{0}^{1}\left|\left(-3-4i\right)t\right|\cdot\left(-3-4i\right)dt\\
+ & = & \int_{0}^{1}\left(\sqrt{\left(-3t\right)^{2}+\left(-4t\right)^{2}}\right)\cdot\left(-3-4i\right)dt\\
+ & = & -3\int_{0}^{1}t\sqrt{\left(-3\right)^{2}+\left(-4\right)^{2}}\cdot dt-4i\int_{0}^{1}t\sqrt{\left(-3\right)^{2}+\left(-4\right)^{2}}dt\\
+ & = & -3\int_{0}^{1}t\cdot5\cdot dt-4i\int_{0}^{1}t\cdot5dt\\
+ & = & \left(-15-20i\right)\int_{0}^{1}tdt\\
+ & = & \frac{-15-20i}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma\left(t\right) & = & \frac{1}{2}e^{i\frac{\pi}{2}\left(t+1\right)}\\
+\int_{\gamma}\left|z\right|dz & = & \int_{0}^{1}\left|\frac{1}{2}e^{i\frac{\pi}{2}\left(t+1\right)}\right|\cdot\left(\frac{1}{2}e^{i\frac{\pi}{2}\left(t+1\right)}\right)^{\prime}dt\\
+ & = & \int_{0}^{1}\left|\frac{1}{2}\right|i\frac{\pi}{4}e^{i\frac{\pi}{2}\left(t+1\right)}dt\\
+ & = & \frac{1}{2}i\frac{\pi}{4}\int_{0}^{1}e^{i\frac{\pi}{2}\left(t+1\right)}dt\\
+ & = & i\frac{\pi}{8}\left[\frac{e^{i\frac{\pi}{2}\left(t+1\right)}}{i\nicefrac{\pi}{2}}\right]_{0}^{1}\\
+ & = & i\frac{\pi}{8}\left(\frac{e^{i\pi}}{i\nicefrac{\pi}{2}}-\frac{e^{i\frac{\pi}{2}}}{i\nicefrac{\pi}{2}}\right)\\
+ & = & i\frac{\pi}{8}\cdot\frac{1}{i\cdot\nicefrac{\pi}{2}}\left(e^{i\pi}-e^{i\frac{\pi}{2}}\right)\\
+ & = & -\frac{1}{4}\left(i+1\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma & = & e^{i\pi\left(t+1\right)}\\
+\int_{\gamma}\left|z\right|dz & = & \int_{0}^{1}\left|e^{i\pi\left(t+1\right)}\right|\cdot i\pi e^{i\pi\left(t+1\right)}dt\\
+ & = & \int_{0}^{1}1\cdot i\pi e^{i\pi\left(t+1\right)}dt\\
+ & = & i\pi\int_{0}^{1}e^{i\pi\left(t+1\right)}dt\\
+ & = & i\pi\left[\frac{e^{i\pi\left(t+1\right)}}{i\pi}\right]_{0}^{1}dt\\
+ & = & e^{2\pi i}-e^{i\pi}\\
+ & = & 1+1\\
+ & = & 2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\gamma\left(t\right)=re^{i\pi t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כנראה יש טעות, הסעיף אומר כל המעגל אבל ההגדרה של 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ אומרת שהתחום שלה הוא 
+\begin_inset Formula $\left[0,1\right]$
+\end_inset
+
+, בתחום הזה 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ מיצרת חצי מעגל בגודל 
+\begin_inset Formula $r$
+\end_inset
+
+.
+ אני אפתור לפי הגדרה זו.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}\left|z\right|dz & = & \int_{0}^{1}\left|re^{i\pi t}\right|ri\pi e^{i\pi t}dt\\
+ & = & r^{2}i\pi\int_{0}^{1}e^{i\pi t}dt\\
+ & = & r^{2}i\pi\left[\frac{e^{i\pi t}}{i\pi}\right]_{0}^{1}\\
+ & = & r^{2}\left(e^{i\pi}-e^{0}\right)\\
+ & = & r^{2}\left(-1-1\right)\\
+ & = & -2r^{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & u+iv\\
+dz & = & dx+iy\\
+\oint_{\gamma}\left(u+iv\right)\left(dx+idy\right) & = & \oint_{\gamma}\left(udx-vdy\right)+i\oint_{\gamma}\left(vdx+udy\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי גרין 
+\begin_inset Formula $\oint_{c}\left(udx+vdy\right)=\iint_{c}\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oint_{\gamma}\left(udx-vdy\right)+i\oint_{\gamma}\left(vdx+udy\right)=\iint_{\gamma}\left[-\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}\right]+i\iint_{\gamma}\left[\frac{\partial u}{\partial x}-\frac{\partial v}{\partial y}\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנוסף הפונקציה צריכה לממש את תנאי קושי רימן לכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial v}{\partial x} & = & -\frac{\partial u}{\partial y}\\
+\frac{\partial u}{\partial x} & = & \frac{\partial v}{\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\iint_{\gamma}\left[-\frac{\partial v}{\partial x}-\frac{\partial u}{\partial y}\right]+i\iint_{\gamma}\left[\frac{\partial u}{\partial x}-\frac{\partial v}{\partial y}\right] & = & \iint_{\gamma}\left(\frac{\partial u}{\partial y}-\frac{\partial u}{\partial y}\right)+i\iint_{\gamma}\left(\frac{\partial v}{\partial y}-\frac{\partial v}{\partial y}\right)\\
+ & = & \iint_{\gamma}0+i\iint_{\gamma}0\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma:dz & = & \gamma^{\prime}\left(t\right)dt\\
+\delta:dz & = & \delta^{\prime}\left(t\right)dt=-\gamma^{\prime}\left(t\right)dt\\
+\int_{\gamma}fdz+\int_{\delta}fdz & = & \int_{a}^{b}f\cdot\gamma^{\prime}\left(t\right)dt+\int_{a}^{b}f\cdot\left(-\gamma^{\prime}\left(t\right)\right)dt\\
+ & = & \int_{a}^{b}\left(f\gamma^{\prime}\left(t\right)dt\right)-\int_{a}^{b}f\gamma^{\prime}\left(t\right)dt\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לא נכון.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma_{1} & = & e^{i\pi\theta}\\
+\gamma_{1}^{\prime} & = & i\pi e^{i\pi\theta}\\
+\gamma_{2} & = & e^{i\pi\left(2-\theta\right)}\\
+\gamma_{2}^{\prime} & = & -i\pi e^{i\pi\left(2-\theta\right)}\\
+\int_{\gamma_{1}}zdz & \overset{?}{=} & \int_{\gamma_{2}}zdz\\
+\int_{0}^{2}e^{i\pi\theta}i\pi e^{i\pi\theta}d\theta & \overset{?}{=} & -\int_{0}^{2}-e^{i\pi\left(2-\theta\right)}i\pi e^{i\pi\left(2-\theta\right)}d\theta\\
+\int_{0}^{2}e^{2\pi i\theta}d\theta & \overset{?}{=} & -\int_{0}^{2}e^{2\pi i\left(2-\theta\right)}d\theta\\
+\frac{e^{2\pi i}}{2\pi i}\vert_{0}^{2} & \overset{?}{=} & \frac{-e^{2\pi i\left(2-\theta\right)}}{-2\pi i}\vert_{0}^{2}\\
+e^{4\pi i}-1 & \neq & 1-e^{4\pi i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לא נכון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & z\\
+\gamma & = & \left(1+i\right)t\\
+\gamma:\left[0:1\right] & \to & \mathbb{C}\\
+\int_{\gamma}fdz & = & \int_{0}^{1}\left(1+i\right)t\left(1+i\right)dt\\
+ & = & 2i\int_{0}^{1}tdt\\
+ & = & 2i\\
+\int_{f\left(\gamma\left(t\right)\right)}1dz & = & \int_{0}^{1}d\left(\left(1+i\right)t\right)\\
+ & = & i\int_{0}^{1}dt\\
+ & = & i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+הטענה נכונה כי בה"כ נניח ש 
+\begin_inset Formula $\int fdz=z_{1}$
+\end_inset
+
+ אז אני יכול לבחור את 
+\begin_inset Formula $\delta$
+\end_inset
+
+ כ-קו ישר עם שיפוע 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\delta:\left[0,1\right]\to\mathbb{C}$
+\end_inset
+
+, 
+\begin_inset Formula $\delta\left(t\right)=z_{1}t$
+\end_inset
+
+ ואז 
+\begin_inset Formula $\int_{\delta}1dz=z_{1}\int_{0}^{1}1dt=z_{1}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}\frac{z}{\left|z\right|}dz & = & \int_{\gamma_{1}}\frac{z}{\left|z\right|}dz+\int_{\gamma_{2}}\frac{z}{\left|z\right|}dz\\
+ & = & \int_{0}^{1}\frac{e^{i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}}{\left|e^{i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}\right|}\cdot\left(e^{i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}\right)^{\prime}dt+\int_{-\frac{\sqrt{3}}{2}}^{\frac{\sqrt{3}}{2}}\frac{t+i\frac{1}{2}}{\left|t+i\frac{1}{2}\right|}\cdot\left(t\right)^{\prime}dt\\
+ & = & \int_{0}^{1}e^{i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}\cdot i\frac{4\pi}{6}e^{i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}dt+\int_{-\frac{\sqrt{3}}{2}}^{\frac{\sqrt{3}}{2}}\frac{t+i\frac{1}{2}}{\sqrt{t^{2}+\frac{1}{4}}}dt\\
+ & = & i\frac{4\pi}{6}\int_{0}^{1}e^{2i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}dt+\int_{-\frac{\sqrt{3}}{2}}^{\frac{\sqrt{3}}{2}}\frac{t+i\frac{1}{2}}{\sqrt{t^{2}+\frac{1}{4}}}dt\\
+ & = & i\frac{4\pi}{6}\left[\frac{e^{2i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}}{\frac{8i\pi}{6}}\right]_{0}^{1}+\left[\sqrt{t^{2}+0.25}+\left(0.5i\right)\sinh^{-1}\left(2t\right)\right]_{-\frac{\sqrt{3}}{2}}^{\frac{\sqrt{3}}{2}}\\
+ & = & i\frac{4\pi}{6}\cdot\frac{6}{8i\pi}\left[e^{2i\left(\frac{\pi}{6}+\frac{4\pi}{6}t\right)}\right]_{0}^{1}+\underbrace{\left[\sqrt{x^{2}+0.25}+\left(0.5i\right)\sinh^{-1}\left(2t\right)\right]_{-\frac{\sqrt{3}}{2}}^{\frac{\sqrt{3}}{2}}}_{+1.31696i}\\
+ & = & i\frac{4\pi}{6}\cdot\frac{6}{8i\pi}\left(e^{i\frac{5\pi}{3}}-e^{i\frac{\pi}{3}}\right)+1.31696i\\
+ & = & i\frac{4\pi}{6}\cdot\frac{6}{8i\pi}\left(e^{i\frac{5\pi}{3}}-e^{i\frac{\pi}{3}}\right)+1.31696i\\
+ & = & \frac{4}{8}\left(e^{i\frac{5\pi}{3}}-e^{i\frac{\pi}{3}}\right)+1.31696i\\
+ & = & \frac{1}{2}\left(e^{i\frac{5\pi}{3}}-e^{i\frac{\pi}{3}}\right)+1.31696i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int z^{n}dz & = & \int_{-1}^{1}\left(it\right)^{n}\cdot idt\\
+ & = & i^{n+1}\int_{-1}^{1}t^{n}dt\\
+ & = & i^{n+1}\left[\frac{t^{n+1}}{n+1}\right]_{-1}^{1}\\
+ & = & i^{n+1}\left(\frac{1}{n+1}-\frac{\left(-1\right)^{n+1}}{n+1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int z^{n}dz & = & \int_{0}^{1}\left(e^{2\pi it}\right)^{n}2\pi ie^{2\pi it}dt\\
+ & = & 2\pi i\int_{0}^{1}e^{2\pi nit+2\pi it}dt\\
+ & = & 2\pi i\int_{0}^{1}e^{\left(n+1\right)2\pi it}dt\\
+ & = & 2\pi i\left[\frac{e^{\left(n+1\right)2\pi it}}{\left(n+1\right)2\pi i}\right]_{0}^{1}\\
+ & = & \frac{1}{\left(n+1\right)}\left(e^{\left(n+1\right)2\pi i}-1\right)\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{dz}{z^{n}} & = & \int_{0}^{1}\frac{1}{e^{2\pi nit}}2\pi ie^{2\pi it}dt\\
+ & = & 2\pi i\int_{0}^{1}\frac{e^{2\pi it}}{e^{2\pi nit}}dt\\
+ & = & 2\pi i\int_{0}^{1}\frac{1}{e^{2\pi\left(n-1\right)it}}dt\\
+ & = & 2\pi i\int_{0}^{1}e^{-2\pi\left(n-1\right)it}dt\\
+ & = & 2\pi i\left[-\frac{e^{-2\pi\left(n-1\right)it}}{2\pi\left(n-1\right)i}\right]_{0}^{1}\\
+ & = & \frac{1}{\left(n-1\right)}\left[-e^{-2\pi\left(n-1\right)it}\right]_{0}^{1}\\
+ & = & \frac{1}{\left(n-1\right)}\left[-e^{-2\pi\left(n-1\right)it}\right]_{0}^{1}\\
+ & = & \frac{1}{\left(n-1\right)}\left(-e^{-2\pi\left(n-1\right)i}+1\right)\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int\frac{dz}{z^{n+1}} & = & \int_{0}^{\pi}\frac{1}{\left(e^{i\frac{t}{n}}\right)^{n+1}}\cdot\frac{i}{n}e^{i\frac{t}{n}}dt\\
+ & = & \frac{i}{n}\int_{0}^{\pi}\frac{e^{i\frac{t}{n}}}{\left(e^{i\frac{t}{n}\left(n+1\right)}\right)}dt\\
+ & = & \frac{i}{n}\int_{0}^{\pi}\frac{1}{e^{it}}dt\\
+ & = & \frac{i}{n}\int_{0}^{\pi}e^{-it}dt\\
+ & = & \frac{i}{n}\left[-\frac{e^{-it}}{i}\right]_{0}^{\pi}\\
+ & = & \frac{1}{n}\left(-e^{-i\pi}+1\right)\\
+ & = & \frac{2}{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int e^{z}dz & = & \int_{0}^{1}e^{\left(1+i\right)t}\left(1+i\right)dt\\
+ & = & \left(1+i\right)\int_{0}^{1}e^{\left(1+i\right)t}dt\\
+ & = & \left(1+i\right)\left[\frac{e^{\left(1+i\right)t}}{1+i}\right]_{0}^{1}\\
+ & = & \left[e^{\left(1+i\right)t}\right]_{0}^{1}\\
+ & = & e^{1+i}-1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

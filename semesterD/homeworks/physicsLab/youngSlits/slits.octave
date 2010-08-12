@@ -1,0 +1,26 @@
+#!/bin/env octave
+
+n=[18,29,14,22,11];
+a=[0.5,1,2,1,0.75];
+D=[93,222,293.5,293.5,293.5];
+x=[2.25,4.4,1.2,3.95,2.5];
+
+graphx=n.*D./a;
+graphy=x;
+
+sortedx=sort(graphx);
+
+[P, S, MU] = polyfit (graphx, graphy, 1);
+
+y=polyval(P,sortedx);
+
+plot(graphx, graphy, '-;measurements;', sortedx, y, '-;approximation;');
+
+
+
+xlabel('\frac{n \cdot D}{a}');
+ylabel('\Delta \x');
+
+
+
+pause;

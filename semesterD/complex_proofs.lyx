@@ -1,0 +1,2688 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options true
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize default
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+הוכחות לקורס פונקציות מורכבות
+\end_layout
+
+\begin_layout Section
+תנאי קושי רימן כתנאים הכרחיים לקיום נגזרת של פונק'
+\end_layout
+
+\begin_layout Standard
+ההגדרה של נגזרת בנקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ היא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f^{\prime}\left(z\right) & = & \lim_{\Delta z\to0}\frac{f\left(z+\Delta z\right)-f\left(z\right)}{\Delta z}\\
+ & = & \lim_{\Delta z\to0}\frac{u\left(z+\Delta z\right)+iv\left(z+\Delta z\right)-u\left(z\right)-iv\left(z\right)}{\Delta z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בשביל שהגבול הזה יהיה קיים הוא חייב להיות שווה בלי קשר למסלול שבו 
+\begin_inset Formula $\Delta z$
+\end_inset
+
+ מתקרב ל
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+
+\begin_inset Formula $0$
+\end_inset
+
+, זה הוא תנאי הכרחי לגזירות.
+ אז מסתכלים על שני המסלילים האלה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma_{1}\left(t\right) & = & t\\
+\gamma_{2}\left(t\right) & = & it\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $f_{1}^{\prime}$
+\end_inset
+
+ הגבול בכיוון 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $f_{2}^{\prime}$
+\end_inset
+
+ הנגזרת בכיוון 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{1}^{\prime}\left(z\right) & = & \frac{u\left(z+t\right)+iv\left(z+t\right)-u\left(z\right)-iv\left(z\right)}{t}\\
+ & = & \frac{u\left(z+t\right)-u\left(z\right)}{t}+i\frac{v\left(z+t\right)-v\left(z\right)}{t}\\
+ & = & \frac{\partial u\left(z\right)}{\partial x}+i\frac{\partial v\left(z\right)}{\partial x}\\
+f_{2}^{\prime}\left(z\right) & = & \frac{u\left(z+it\right)+iv\left(z+it\right)-u\left(z\right)-iv\left(z\right)}{it}\\
+ & = & \frac{u\left(x+i\left(y+t\right)\right)+iv\left(x+i\left(y+t\right)\right)-u\left(z\right)-iv\left(z\right)}{it}\\
+ & = & \frac{u\left(x+i\left(y+t\right)\right)-u\left(z\right)}{it}+i\frac{v\left(x+i\left(y+t\right)\right)-v\left(z\right)}{it}\\
+ & = & -i\frac{u\left(x+i\left(y+t\right)\right)-u\left(z\right)}{t}+\frac{v\left(x+i\left(y+t\right)\right)-v\left(z\right)}{t}\\
+ & = & -i\frac{\partial u\left(z\right)}{\partial y}+\frac{\partial v\left(z\right)}{\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{1}^{\prime} & = & f_{2}^{\prime}\\
+\frac{\partial u\left(z\right)}{\partial x}+i\frac{\partial v\left(z\right)}{\partial x} & = & -i\frac{\partial u\left(z\right)}{\partial y}+\frac{\partial v\left(z\right)}{\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי מקבלים שני המשוואות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u\left(z\right)}{\partial x} & = & \frac{\partial v\left(z\right)}{\partial y}\\
+\frac{\partial v\left(z\right)}{\partial x} & = & -\frac{\partial u\left(z\right)}{\partial y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז תנאי קושי רימן הם תנאים הכרחיים לגזירות
+\end_layout
+
+\begin_layout Section
+תנאים מספיקים לאנליטיות של פונק'
+\end_layout
+
+\begin_layout Standard
+לאנליטיות של פונק' 
+\begin_inset Formula $f\left(z\right)=u\left(z\right)+iv\left(z\right)$
+\end_inset
+
+ בנק' 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ חייב להיות נגזרות חלקיות של פונקציות 
+\begin_inset Formula $u\left(z\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $v\left(z\right)$
+\end_inset
+
+ רציפות בסביבת 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ וקיום תנאי קושי רימן בנקודה זו.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח נגזרות פנימיות רציפות וקיום תנאי קושי רימן.
+\end_layout
+
+\begin_layout Standard
+לפי משפט טיילור:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Delta u & = & \frac{\partial u}{\partial x}\Delta x+\frac{\partial u}{\partial y}\Delta y+O_{1}\left(x,y\right)\\
+\Delta v & = & \frac{\partial y}{\partial x}\Delta x+\frac{\partial y}{\partial y}\Delta y+O_{2}\left(x,y\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\Delta f}{\Delta z} & = & \frac{\Delta u+i\Delta v}{\Delta x+i\Delta y}\\
+ & = & \frac{\frac{\partial u}{\partial x}\Delta x+\frac{\partial u}{\partial y}\Delta y+\frac{\partial y}{\partial x}\Delta x+\frac{\partial y}{\partial y}\Delta y+O_{1}\left(x,y\right)}{\Delta x+i\Delta y}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש בתנאי קושי רימן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial u\left(z\right)}{\partial x} & = & \frac{\partial v\left(z\right)}{\partial y}\\
+\frac{\partial u\left(z\right)}{\partial y} & = & -\frac{\partial v\left(z\right)}{\partial x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ומקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\Delta f}{\Delta z} & = & \frac{\frac{\partial u}{\partial x}\left(\Delta x+i\Delta y\right)+\frac{\partial v}{\partial x}\left(-\Delta y+i\Delta x\right)+O_{3}\left(\Delta x,\Delta y\right)}{\Delta x+i\Delta y}\\
+ & = & \frac{\partial u}{\partial x}+\frac{\partial v}{\partial x}\cdot\frac{-\Delta y+i\Delta x}{\Delta x+i\Delta y}+\frac{O_{3}\left(\Delta x,\Delta y\right)}{\Delta x+i\Delta y}\\
+ & = & \frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}\cdot\frac{\Delta x-\frac{1}{i}\Delta y}{\Delta x+i\Delta y}+\frac{O_{3}\left(\Delta x,\Delta y\right)}{\Delta x+i\Delta y}\\
+ & = & \frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}+\frac{O_{3}\left(\Delta x,\Delta y\right)}{\Delta x+i\Delta y}\\
+\lim_{\Delta z\to0}\frac{\Delta f}{\Delta z} & = & \frac{\partial u}{\partial x}+i\frac{\partial v}{\partial x}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הגדרה של אנליטיות בנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+: קיימת נגזרת בסביבת נק' 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ אז אם מתקיימים חוקי קושי רימן והנגזרות החלקיות של 
+\begin_inset Formula $u,v$
+\end_inset
+
+ רציפות הפונק' אנליטית.
+\end_layout
+
+\begin_layout Section
+מוביוס מעביר מעגל למעגל
+\end_layout
+
+\begin_layout Subsection
+דרך ראשונה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{1}{\left(z+\frac{d}{c}\right)\left(\frac{c^{2}}{bc-ad}\right)}+\frac{a}{c}\\
+ & = & \frac{1}{\left(\frac{zc^{2}+dc}{bc-ad}\right)}+\frac{a}{c}\\
+ & = & \frac{bc-ad}{zc^{2}+dc}+\frac{a}{c}\\
+ & = & \frac{bc-ad+a\left(zc+d\right)}{zc^{2}+dc}\\
+ & = & \frac{bc-ad+zac+ad}{zc^{2}+dc}\\
+ & = & \frac{bc+zac}{zc^{2}+dc}\\
+ & = & \frac{az+b}{cz+d}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן אפשר לבנות את הטרנספורמציה ע"י:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w_{1} & = & z+\frac{d}{c}\\
+w_{2} & = & \frac{c^{2}}{bc-ad}w_{1}\\
+w_{3} & = & \frac{1}{w_{2}}\\
+f & = & w_{3}+\frac{a}{c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו כי כל אחת מהטרנספורמציות האלה שומרת מעגלים.
+\end_layout
+
+\begin_layout Subsection
+דרך שניה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w_{1} & = & cz+d\\
+w_{2} & = & \frac{b-\frac{da}{c}}{w_{1}}\\
+f & = & w_{2}+\frac{a}{c}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+צורה כללית של טרנספורמציה המעבירה 
+\begin_inset Formula $\alpha,\beta,\gamma$
+\end_inset
+
+ ל 
+\begin_inset Formula $\alpha^{\prime},\beta^{\prime},\gamma^{\prime}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{z-\alpha}{z-\gamma}\frac{\beta-\gamma}{\beta-\alpha}=\frac{w-\alpha^{\prime}}{w-\gamma^{\prime}}\frac{\beta^{\prime}-\gamma^{\prime}}{\beta^{\prime}-\alpha^{\prime}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אפשר לעבוד קצת עם אלגברה ולקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w=\frac{Az+B}{Cz+D}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט מוררה
+\end_layout
+
+\begin_layout Standard
+אם פונקציה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ רציפה בתחום פשוט קשר 
+\begin_inset Formula $G$
+\end_inset
+
+ ועבור כל מסילה סגורה 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+)חלקה במקטעין
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+כלומר רציפה ובעלת נגזרת רציפה למקוטעין
+\end_layout
+
+\end_inset
+
+( השייכת ל 
+\begin_inset Formula $G$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\oint_{\Gamma}f\left(z\right)dz=0$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית ב 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ )המשפט הזה הפוך למה שמשפט קושי אומר(
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+הוכחנו כי אם אינטגרל בכל מסילה סגורה שווה לאפס אז אפשר להגדיר אינטגרל בלתי
+ מסוים של הפונק': 
+\begin_inset Formula $F\left(z\right)=\int_{z_{0}}^{z}f\left(z\right)dz$
+\end_inset
+
+.
+ האינטגרל הזה לא תלוי במסילה ביו הנקודות 
+\begin_inset Formula $z_{0},z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+הוכחנו כי 
+\begin_inset Formula $F\left(z\right)$
+\end_inset
+
+ אנליטית ו 
+\begin_inset Formula $F^{\prime}\left(z\right)=f\left(z\right)$
+\end_inset
+
+ אבל יודעים גם כן כי לפונקציה אנליטית קיימת נגזרות מכל סדר, בפרט קיימת 
+\begin_inset Formula $F^{\prime\prime}\left(z\right)=f^{\prime}\left(z\right)$
+\end_inset
+
+, לכן קיימת נגזרת לפונק' 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית.
+\end_layout
+
+\begin_layout Section
+משפט ווירשטראוס הראשון
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ פונק' אנליטיות בתחום 
+\begin_inset Formula $G$
+\end_inset
+
+ והטור 
+\begin_inset Formula $f_{1}\left(z\right)+f_{2}\left(z\right)+\dots+f_{n}\left(z\right)+\dots$
+\end_inset
+
+ מתכנס במידה שווה בכל תחום 
+\begin_inset Formula $G^{\prime}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\overline{G^{\prime}}\subset G$
+\end_inset
+
+.
+ אזי
+\end_layout
+
+\begin_layout Subsection
+סכום 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ של הטור פונק' אנליטית ב 
+\begin_inset Formula $G$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים )ממשפט אחר( כי 
+\begin_inset Formula $f\left(z\right)=\sum_{i=1}^{\infty}f_{i}\left(z\right)$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $\overline{G^{\prime}}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $G^{\prime}\subset G$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ רציפה ב 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נשאר להוכיח כי בכל נקודה 
+\begin_inset Formula $z_{0}\in G$
+\end_inset
+
+ לפונק 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ קיימת נגזרת.
+ נבנה מסילה 
+\begin_inset Formula $C\subset G$
+\end_inset
+
+ סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ הטור מתכנס במידה שווה על 
+\begin_inset Formula $C$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\xi\in C$
+\end_inset
+
+ ו 
+\begin_inset Formula $z$
+\end_inset
+
+ נקודה בתוך התחום החסום ע"י 
+\begin_inset Formula $C$
+\end_inset
+
+.
+ נחלק את 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ב 
+\begin_inset Formula $\left(\xi-z\right)$
+\end_inset
+
+ ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{f\left(\xi\right)}{\xi-z} & = & \frac{f_{1}\left(\xi\right)}{\xi-z}+\frac{f_{2}\left(\xi\right)}{\xi-z}+\dots+\frac{f_{n}\left(\xi\right)}{\xi-z}+\dots\\
+ & = & \sum_{i=1}^{\infty}\frac{f_{i}\left(\xi\right)}{\xi-z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שהטור מתכנס במידה שווה על 
+\begin_inset Formula $C$
+\end_inset
+
+ אזי אפשר לעבור לאינטגרציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{2\pi i}\int_{C}\frac{f\left(\xi\right)}{\xi-z}d\xi=\frac{1}{2\pi i}\sum_{i=1}^{\infty}\int_{C}\frac{f_{i}\left(\xi\right)}{\xi-z}d\xi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגלל שהפונקציה 
+\begin_inset Formula $f_{i}\left(z\right)$
+\end_inset
+
+ אנליטית בתוך 
+\begin_inset Formula $C$
+\end_inset
+
+)כולל 
+\begin_inset Formula $C$
+\end_inset
+
+( נקבל לפי נוסחת קושי
+\begin_inset Formula $\left(f_{i}\left(z\right)=\frac{1}{2\pi i}\oint_{C}\frac{f_{i}\left(\xi\right)}{\xi-z}d\xi\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{2\pi i}\int_{C}\frac{f\left(\xi\right)}{\xi-z}=f_{1}\left(z\right)+f_{2}\left(z\right)+\dots+f_{n}\left(z\right)+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי קיבלנו שני משוואות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & f_{1}\left(z\right)+f_{2}\left(z\right)+\dots+f_{n}\left(z\right)+\dots\\
+\frac{1}{2\pi i}\int_{C}\frac{f\left(\xi\right)}{\xi-z} & = & f_{1}\left(z\right)+f_{2}\left(z\right)+\dots+f_{n}\left(z\right)+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\frac{1}{2\pi i}\int_{C}\frac{f\left(\xi\right)}{\xi-z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן ניתן לייצג אתהפונק' באמצעות אינטגרל קושי עבור כל נקודה 
+\begin_inset Formula $z\in G$
+\end_inset
+
+ לכן קיימת נגזרת בכל נקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ פנימית ל 
+\begin_inset Formula $C$
+\end_inset
+
+, לכן קיימת 
+\begin_inset Formula $f^{\prime}\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אחרי גזירה של הטור נקבל טור חדש 
+\begin_inset Formula $\sum_{i=1}^{\infty}f_{i}^{\prime}\left(z\right)$
+\end_inset
+
+ שגם מתכנס במידה שווה ב 
+\begin_inset Formula $\overline{G^{\prime}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח את אותה מסילה 
+\begin_inset Formula $C$
+\end_inset
+
+ ונקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ ונחלק הטור הפעם ב 
+\begin_inset Formula $\left(\xi-z\right)^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{2\pi i}\int_{C}\frac{f\left(\xi\right)}{\left(\xi-z\right)^{2}}d\xi=\frac{1}{2\pi i}\sum_{i=1}^{\infty}\int_{C}\frac{f_{i}\left(\xi\right)}{\left(\xi-z\right)^{2}}d\xi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי נוסחת האינטגרל של קושי זה שווה ל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f^{\prime}\left(z\right)=\sum_{i=1}^{\infty}f_{i}^{\prime}\left(z\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר קיבלנו טור.
+ נשאר להוכיח שהטור מתכנס.
+\end_layout
+
+\begin_layout Standard
+נקח מסילה 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ הנמצאת ב 
+\begin_inset Formula $G$
+\end_inset
+
+ וכוללת 
+\begin_inset Formula $G^{\prime}$
+\end_inset
+
+.
+ כאשר נקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ שייכת ל 
+\begin_inset Formula $\overline{G^{\prime}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\xi$
+\end_inset
+
+ עוברת מסילה 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+, המרחק ביניהם הוא 
+\begin_inset Formula $\left|\xi-z\right|$
+\end_inset
+
+ גדול מאיזה שהוא מספר חיובי 
+\begin_inset Formula $d$
+\end_inset
+
+.
+ לכן 
+\begin_inset Formula $\left|\xi-z\right|>d$
+\end_inset
+
+.
+ אז אפשר להעריך את שראית הטור מנגזרת.
+ אפשר לכתוב את השארית בצורה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{n+1}^{\prime}\left(z\right)+f_{n+2}^{\prime}\left(z\right)+\dots=\frac{1}{2\pi i}\int_{\Gamma}\frac{f_{n+1}\left(\xi\right)+f_{n+2}\left(\xi\right)+\dots}{\left(\xi-z\right)^{2}}d\xi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בגלל שהטור מתכנס במידה שווה על 
+\begin_inset Formula $\Gamma$
+\end_inset
+
+ לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $N$
+\end_inset
+
+ כך ש כאשר 
+\begin_inset Formula $n>N$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $\xi\in\Gamma$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f_{n+1}\left(\xi\right)+f_{n+2}\left(\xi\right)+\dots\right|<\varepsilon$
+\end_inset
+
+ אז לפי הערך של האינטגרל נקבל 
+\begin_inset Formula $\left|f_{n+1}^{\prime}\left(\xi\right)+f_{n+2}^{\prime}\left(\xi\right)+\dots\right|<\frac{\varepsilon\cdot\left(\mbox{Length of }\Gamma\right)}{2\pi d^{2}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי הטור מתכנס במידה שווה בכל תחום 
+\begin_inset Formula $\overline{G^{\prime}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+כתוצאה מ
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+ו
+\numeric on
+2
+\family roman
+\series bold
+\shape up
+\size large
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ הטור גזיר אינסוף פעמים 
+\begin_inset Formula $f^{\left(n\right)}\left(z\right)=\sum f_{i}^{\left(n\right)}\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי גם 
+\begin_inset Formula $f^{\prime}\left(z\right)=\sum_{i=1}^{\infty}f_{i}^{\prime}\left(z\right)$
+\end_inset
+
+ מתכנס במידה שווה אז גם אפשר לגזור אותו, וכך הלא 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים.
+\end_layout
+
+\begin_layout Section
+פיתוח של פונק' אנליטית בטור חזקות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית בתוך מעגל 
+\begin_inset Formula $k$
+\end_inset
+
+)בראדיוס 
+\begin_inset Formula $R$
+\end_inset
+
+( שמרכזו 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ ניקח מעגל 
+\begin_inset Formula $C$
+\end_inset
+
+ בתוך 
+\begin_inset Formula $k$
+\end_inset
+
+)
+\begin_inset Formula $r<R$
+\end_inset
+
+( ונבחר נקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ בתוכו.
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית על 
+\begin_inset Formula $C$
+\end_inset
+
+ נוכל להשתמש במשפט קושי 
+\begin_inset Formula $f\left(z\right)=\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\xi-z}d\xi$
+\end_inset
+
+.
+ אפשר לרשום 
+\begin_inset Formula $\frac{1}{\xi-z}=\frac{1}{\left(\xi-a\right)-\left(z-a\right)}=\frac{1}{\left(\xi-a\right)}\cdot\frac{1}{1-\frac{z-a}{\xi-a}}$
+\end_inset
+
+.
+ אנחנו יודעים ש 
+\begin_inset Formula $\left|\frac{z-a}{\xi-a}\right|<1$
+\end_inset
+
+ כי 
+\begin_inset Formula $\left|z\right|<r$
+\end_inset
+
+ ו 
+\begin_inset Formula $\left|\xi\right|=r$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אז אפשר להשתמש בסדרה ההנדסית 
+\begin_inset Formula $\frac{1}{1-u}=1+u+u^{2}+u^{3}+\dots$
+\end_inset
+
+.
+ אז מקבלים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{1-\frac{z-a}{\xi-a}} & = & 1+\frac{z-a}{\xi-a}+\left(\frac{z-a}{\xi-a}\right)^{2}+\dots\\
+\frac{f\left(\xi\right)}{\xi-z} & = & \frac{1}{\left(\xi-a\right)}\cdot\frac{f\left(\xi\right)}{1-\frac{z-a}{\xi-a}}\\
+ & = & \frac{1}{\left(\xi-a\right)}f\left(\xi\right)+\frac{z-a}{\left(\xi-a\right)^{2}}f\left(\xi\right)+\frac{\left(z-a\right)^{2}}{\left(\xi-a\right)^{3}}f\left(\xi\right)+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שהטור מתכנס במידה שווה עוברים לאינטגרציה וכופלים ב 
+\begin_inset Formula $\frac{1}{2\pi i}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\xi-z}=\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)}+\left(z-a\right)\cdot\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)^{2}}+\left(z-a\right)^{2}\cdot\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)^{3}}+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צד סמאל של המשוואה לפי משפט קושי שווה ל 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ לכן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)}+\left(z-a\right)\cdot\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)^{2}}+\left(z-a\right)^{2}\cdot\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)^{3}}+\dots\\
+ & = & c_{0}+c_{1}\left(z-a\right)+c_{2}\left(z-a\right)^{2}+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $c_{n}=\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-a\right)^{n}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה הוא טור חזקות.
+\end_layout
+
+\begin_layout Section
+יחידות פונק' אנליטלת
+\end_layout
+
+\begin_layout Standard
+נניח תחום 
+\begin_inset Formula $G$
+\end_inset
+
+ וסדרת נקודות 
+\begin_inset Formula $E\subset G$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $a$
+\end_inset
+
+ נק' הצטברות של 
+\begin_inset Formula $E$
+\end_inset
+
+.
+ אם 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $z\in E$
+\end_inset
+
+ אז הם שוות בכל 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נוכיח קודם עבור מעגל ששיך ל 
+\begin_inset Formula $G$
+\end_inset
+
+ ומרכזו ב 
+\begin_inset Formula $a$
+\end_inset
+
+.
+ נפתח את 
+\begin_inset Formula $f,g$
+\end_inset
+
+ לטורי חזקות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & c_{0}+c_{1}\left(z-a\right)+c_{2}\left(z-a\right)^{2}+\dots\\
+g\left(z\right) & = & c_{0}^{\prime}+c_{1}^{\prime}\left(z-a\right)+c_{2}^{\prime}\left(z-a\right)^{2}+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניקח סדרה 
+\begin_inset Formula $z_{k}$
+\end_inset
+
+ המתכנסת ל 
+\begin_inset Formula $a$
+\end_inset
+
+ אזי לפי השוויון של 
+\begin_inset Formula $f,g$
+\end_inset
+
+ על נקודות 
+\begin_inset Formula $E$
+\end_inset
+
+ מתקיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{0}+c_{1}\left(z-a\right)+c_{2}\left(z-a\right)^{2}+\dots=c_{0}^{\prime}+c_{1}^{\prime}\left(z-a\right)+c_{2}^{\prime}\left(z-a\right)^{2}+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבור לגבול 
+\begin_inset Formula $z_{k}\to a$
+\end_inset
+
+ ונקבל 
+\begin_inset Formula $c_{0}=c_{0}^{\prime}$
+\end_inset
+
+.
+ נצמצם 
+\begin_inset Formula $c_{0}$
+\end_inset
+
+ משני הצדדים ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c_{1}\left(z-a\right)+c_{2}\left(z-a\right)^{2}+\dots=c_{1}^{\prime}\left(z-a\right)+c_{2}^{\prime}\left(z-a\right)^{2}+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נצמצם 
+\begin_inset Formula $z-a$
+\end_inset
+
+ משני הצדדים ונעבור עוד פעם לגבול ונקבל 
+\begin_inset Formula $c_{1}=c_{1}^{\prime}$
+\end_inset
+
+.
+ נמשיך בדרך הזו ונקבל 
+\begin_inset Formula $c_{n}=c_{n}^{\prime}$
+\end_inset
+
+.
+ טורי ההחזקות שווים אזי 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ בתוך המעגל
+\end_layout
+
+\begin_layout Standard
+נוכיח שהם שווים בכל 
+\begin_inset Formula $G$
+\end_inset
+
+: מספיק להוכיח כי עבור כל נקודה 
+\begin_inset Formula $b\in G$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(b\right)=g\left(b\right)$
+\end_inset
+
+.
+ נחבר את הנקודות 
+\begin_inset Formula $a,b$
+\end_inset
+
+ ע"י מסילה 
+\begin_inset Formula $L$
+\end_inset
+
+ שנמצאת ב 
+\begin_inset Formula $G$
+\end_inset
+
+ והמרחק בין 
+\begin_inset Formula $L$
+\end_inset
+
+ ל
+\begin_inset Formula $\partial G$
+\end_inset
+
+)השפה של התחום( הוא 
+\begin_inset Formula $d=\min_{\begin{matrix}\xi\in\partial G\\
+z\in L\end{matrix}}\left|\xi-z\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחנו כי במעגל בראדיוס 
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ שמרכזו בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+.
+ נזיז את מרכז המעגל על המסילה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך שמרכז המעגל החדש עדיין נמצא במעגל הראשון.
+ המרכז החדש הוא נקודת הצטברות שבה 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+ אז לפי מה שהוכחנו אפשר לבנות מעגל בראדיוס 
+\begin_inset Formula $\frac{d}{2}$
+\end_inset
+
+ שבו מתקיים 
+\begin_inset Formula $f\left(z\right)=g\left(z\right)$
+\end_inset
+
+.
+ נמשיך כך עד שמגיעים לנקודה 
+\begin_inset Formula $b$
+\end_inset
+
+.
+ כיוון שזה מתקיים עבור כל נקודה 
+\begin_inset Formula $b$
+\end_inset
+
+ הוכחנו את השוויון בכל התחום 
+\begin_inset Formula $G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+מקסימום של 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם פונק' 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית בתחום 
+\begin_inset Formula $G$
+\end_inset
+
+ ו 
+\begin_inset Formula $f\left(z\right)\neq\mbox{const}$
+\end_inset
+
+ אז המקסימום של 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ מתקבל על השפה של 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ כלומר אין נקודה 
+\begin_inset Formula $z_{0}\in G$
+\end_inset
+
+ שהיא נק' פנימית כך ש 
+\begin_inset Formula $\left|f\left(z_{0}\right)\right|=\max_{z\in G}\left|f\left(z\right)\right|$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נניח שקיימת נקודה פנימית 
+\begin_inset Formula $z_{0}\in G$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|f\left(z_{0}\right)\right|=M$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M=\max_{z\in G}\left|f\left(z\right)\right|$
+\end_inset
+
+.
+ נבנה מעגל 
+\begin_inset Formula $C$
+\end_inset
+
+ שראדיוסו 
+\begin_inset Formula $r$
+\end_inset
+
+ ו מרכזו 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+ מכיוון שהפונק' אנליטית שפשר להשתמש במשפ קושי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z_{0}\right)=\frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\xi-z_{0}}d\xi\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $\xi=z_{0}+re^{i\theta}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ קבוע)רדיוס המעגל( אזי 
+\begin_inset Formula $\frac{d\xi}{d\theta}=ire^{i\theta}$
+\end_inset
+
+.
+ נציב ונקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z_{0}\right) & = & \frac{1}{2\pi i}\oint_{C}\frac{f\left(z_{0}+re^{i\theta}\right)}{re^{i\theta}}ire^{i\theta}d\theta\\
+ & = & \frac{1}{2\pi}\oint_{0}^{2\pi}f\left(z_{0}+re^{i\theta}\right)d\theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לפי המשפט על הערך של האינטגרל)הרחבה של אי שוויון המשולש( נקבל:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|f\left(z_{0}\right)\right|\leq\frac{1}{2\pi}\oint_{0}^{2\pi}\left|f\left(z_{0}+re^{i\theta}\right)\right|d\theta\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ היא נק' מקסימום חייב להתקיים כי עבור ערך מספיק קטן של 
+\begin_inset Formula $r$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\theta_{min}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|f\left(z_{0}+re^{i\theta_{min}}\right)\right|<M$
+\end_inset
+
+.
+ נחלק את האינטגרל שלנו לתחומים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|f\left(z_{0}\right)\right| & \leq & \begin{matrix}\frac{1}{2\pi}\underbrace{\oint_{0}^{\theta_{min}-\varepsilon}\left|f\left(z_{0}+re^{i\theta}\right)\right|d\theta}_{\leq\frac{\left(\theta_{min}-\varepsilon\right)M}{2\pi}}+\frac{1}{2\pi}\underbrace{\oint_{\theta_{min-\varepsilon}}^{\theta_{min}+\varepsilon}\left|f\left(z_{0}+re^{i\theta}\right)\right|d\theta}_{<\frac{\left(2\varepsilon\right)M}{2\pi}}+\\
++\frac{1}{2\pi}\underbrace{\oint_{\theta_{min}+\varepsilon}^{2\pi}\left|f\left(z_{0}+re^{i\theta}\right)\right|d\theta}_{\leq\frac{\left(2\pi-\theta_{min}-\varepsilon\right)M}{2\pi}}\end{matrix}\\
+ & < & \frac{\left(\theta_{min}-\varepsilon\right)M}{2\pi}+\frac{\left(2\varepsilon\right)M}{2\pi}+\frac{\left(2\pi-\theta_{min}-\varepsilon\right)M}{2\pi}\\
+ & < & \frac{M\left(\theta_{min}-\varepsilon+2\varepsilon+2\pi-\theta_{min}-\varepsilon\right)}{2\pi}\\
+ & < & M\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו מצד אחד 
+\begin_inset Formula $f\left(z_{0}\right)=M$
+\end_inset
+
+ ומצד שני 
+\begin_inset Formula $f\left(z_{0}\right)<M$
+\end_inset
+
+.
+ בסתירה לקיום מקסימום מקומי.
+ אז הוכחנו כי 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ קבועה בתוך העיגול 
+\begin_inset Formula $C$
+\end_inset
+
+ שמרכזו 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+צריך להוכיח כי זה מתקיים עבור כל התחום 
+\begin_inset Formula $G$
+\end_inset
+
+.
+ נוכיח עבור נק' 
+\begin_inset Formula $z_{1}\in G$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נבנה מסילה המקשרת בין 
+\begin_inset Formula $z_{0},z_{1}$
+\end_inset
+
+.
+ המרחק המינימאלי בין השפה של 
+\begin_inset Formula $G$
+\end_inset
+
+ והמסילה הוא 
+\begin_inset Formula $d^{\prime}<\min_{\begin{matrix}z\in\partial G\\
+z^{\prime}\in L\end{matrix}}\left|z-z^{\prime}\right|$
+\end_inset
+
+.
+ אנחנו יודעים כי בראדיוס 
+\begin_inset Formula $d=\min\left(d^{\prime},r\right)$
+\end_inset
+
+ מהנקודה 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ קבוע.
+ מזיזים את מרכז המעגל דרך המסילה 
+\begin_inset Formula $L$
+\end_inset
+
+ כך שהמרכז החדש ישאר בתוך המעגל המקורי.
+ לפי אותה הוכחה אפשר להויח כי 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ קבועה גם במעגל הזה, וכיוון ששני המעגלים חופפים אז 
+\begin_inset Formula $\left|f\left(z\right)\right|$
+\end_inset
+
+ שווה לאותו קבוע בשני המעגלים.
+ נמשיך בדרך הזו ונקבל שכל הפונק' קבועה עבור כל העיגולים במסילה, כולל הנקודה
+ 
+\begin_inset Formula $z_{1}$
+\end_inset
+
+ בקצה השני של המסילה.
+\end_layout
+
+\begin_layout Standard
+ברגע שהוכחנו כי 
+\begin_inset Formula $\left|f\left(z\right)\right|=\mbox{const}$
+\end_inset
+
+ קל מאוד להוכיח כי גם 
+\begin_inset Formula $f\left(z\right)=\mbox{const}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נסתכל על 
+\begin_inset Formula $\ln\left(f\left(z\right)\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln\left(f\left(z\right)\right)=\underbrace{\left|f\left(z\right)\right|}_{\mbox{const}}+i\arg\left(f\left(z\right)\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתון כי 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית לכן גם 
+\begin_inset Formula $\ln\left(f\left(z\right)\right)$
+\end_inset
+
+ אנליטית.
+ נשתמש בתנאי קושי רימן בשביל למצא את החלק המדומה של הפונק')נתון כי החלק
+ הממשי הוא קבוע(:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial v}{\partial y} & = & 0\\
+\frac{\partial v}{\partial x} & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קל לראות כי פונק 
+\begin_inset Formula $v\left(x,y\right)$
+\end_inset
+
+ היחידה הפותרת את שתי המשוואות היא 
+\begin_inset Formula $v=\mbox{const}$
+\end_inset
+
+.
+ אז קיבלנו שגם החלק הממשי וגם החלק המדומה הם קבועים.
+\end_layout
+
+\begin_layout Section
+משפט על פיתוח פונק' טור לורן בטבעת
+\end_layout
+
+\begin_layout Standard
+נניח ש פונק' 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ רציפה בטבעת שמרכזה ב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ בעלת ראדיוסים 
+\begin_inset Formula $r<R$
+\end_inset
+
+.
+ אז נבנב שני מעגלים 
+\begin_inset Formula $C,c$
+\end_inset
+
+ בראדיוסים 
+\begin_inset Formula $r^{\prime},R^{\prime}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $r<r^{\prime}<\left|z-z_{0}\right|<R^{\prime}<R$
+\end_inset
+
+.
+ הפונק' אנליטית בין שני המעגלים אזי לפי משפט קושי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\frac{1}{2\pi i}\underbrace{\oint_{C}\frac{f\left(\xi\right)}{\xi-z_{0}}}_{\left(I\right)}-\frac{1}{2\pi i}\underbrace{\oint_{c}\frac{f\left(\xi\right)}{\xi-z_{0}}}_{\left(II\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באינטגרל 
+\begin_inset Formula $\left(I\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\xi\in C$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left|\xi-z_{0}\right|=R$
+\end_inset
+
+ אזי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{f\left(\xi\right)}{\xi-z} & = & \frac{f\left(\xi\right)}{\left(\xi-z_{0}\right)-\left(z-z_{0}\right)}\\
+ & = & \frac{f\left(\xi\right)}{\xi-z_{0}}\cdot\frac{1}{1-\frac{z-z_{0}}{\xi-z_{0}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $\left|\xi-z_{0}\right|=R,\left|z-z_{0}\right|<R$
+\end_inset
+
+ מקבלים 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\left|\frac{z-z_{0}}{\xi-z_{0}}\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+באינאגרל 
+\begin_inset Formula $\left(II\right)$
+\end_inset
+
+ 
+\begin_inset Formula $\xi\in c$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\left|\xi-z_{0}\right|=r$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{f\left(\xi\right)}{\xi-z} & = & \frac{f\left(\xi\right)}{\left(\xi-z_{0}\right)-\left(z-z_{0}\right)}\\
+ & = & \frac{f\left(\xi\right)}{z-z_{0}}\cdot\frac{1}{\frac{\xi-z_{0}}{z-z_{0}}-1}\\
+ & = & -\frac{f\left(\xi\right)}{z-z_{0}}\cdot\frac{1}{1-\frac{\xi-z_{0}}{z-z_{0}}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $\left|\xi-z_{0}\right|=r,\left|z-z_{0}\right|>r$
+\end_inset
+
+ מקבלים 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $\left|\frac{\xi-z_{0}}{z-z_{0}}\right|<1$
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Standard
+משתמשים בפיתוח של הטור 
+\begin_inset Formula $\frac{1}{1-u}=1+u+u^{2}+\dots$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\left|u\right|<1$
+\end_inset
+
+ ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{1-\frac{z-z_{0}}{\xi-z_{0}}} & = & \sum_{n=0}^{\infty}\left(\frac{z-z_{0}}{\xi-z_{0}}\right)^{n}\\
+\frac{1}{1-\frac{\xi-z_{0}}{z-z_{0}}} & = & \sum_{n=0}^{\infty}\left(\frac{\xi-z_{0}}{z-z_{0}}\right)^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\xi-z_{0}}d\xi-\frac{1}{2\pi i}\oint_{c}\frac{f\left(\xi\right)}{\xi-z_{0}}d\xi\\
+ & = & \frac{1}{2\pi i}\oint_{C}\sum_{n=0}^{\infty}\frac{f\left(\xi\right)\left(z-z_{0}\right)^{n}}{\left(\xi-z_{0}\right)^{n+1}}d\xi+\frac{1}{2\pi i}\oint_{c}\sum_{n=0}^{\infty}\frac{f\left(\xi\right)\left(\xi-z_{0}\right)^{n}}{\left(z-z_{0}\right)^{n+1}}d\xi\\
+ & = & \frac{1}{2\pi i}\sum_{n=0}^{\infty}\oint_{C}\frac{f\left(\xi\right)\left(z-z_{0}\right)^{n}}{\left(\xi-z_{0}\right)^{n+1}}d\xi+\frac{1}{2\pi i}\sum_{n=0}^{\infty}\oint_{c}\frac{f\left(\xi\right)\left(\xi-z_{0}\right)^{n}}{\left(z-z_{0}\right)^{n+1}}d\xi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון שהכל מתכנס במידה שווה מותר לעשות אינטגרציה איבר איבר.
+ עכשיו נסמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{n} & = & \frac{1}{2\pi i}\oint_{C}\frac{f\left(\xi\right)}{\left(\xi-z_{0}\right)^{n+1}}d\xi\\
+b_{n} & = & \frac{1}{2\pi i}\oint_{C}f\left(\xi\right)\left(\xi-z_{0}\right)^{n}d\xi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\sum_{n=0}^{\infty}a_{n}\left(z-z_{0}\right)^{n}+\sum_{n=0}^{\infty}b_{n}\left(z-z_{0}\right)^{-n-1}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו טור לורן.
+\end_layout
+
+\begin_layout Standard
+אם רוצים לכתוב את זה יותר יפה אפשר להגדיר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+c_{n} & = & \begin{cases}
+a_{n} & n\geq0\\
+b_{n+1} & n<0\end{cases}\\
+f\left(z\right) & = & \sum_{n=-\infty}^{\infty}c_{n}\left(z-z_{0}\right)^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+התנהגות פונק' בסביבת קוטב
+\end_layout
+
+\begin_layout Standard
+נניח כי 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ הוא קוטב מסדר 
+\begin_inset Formula $m$
+\end_inset
+
+ של הפונקציה 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\sum_{n=0}^{\infty}c_{n}\left(z-z_{0}\right)^{n}+\frac{c_{-1}}{z-z_{0}}+\frac{c_{-2}}{\left(z-z_{0}\right)^{2}}+\dots+\frac{c_{-m}}{\left(z-z_{0}\right)^{m}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $c_{-m}\neq0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נכפיל את שני הצדדים ב 
+\begin_inset Formula $\left(z-z_{0}\right)^{m}$
+\end_inset
+
+ ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right)\left(z-z_{0}\right)^{m} & = & \begin{matrix}\sum_{n=0}^{\infty}c_{n}\left(z-z_{0}\right)^{n+m}+\\
++c_{-1}\left(z-z_{0}\right)^{m-1}+c_{-2}\left(z-z_{0}\right)^{m-2}+\dots+c_{-m}\end{matrix}\\
+\lim_{z\to z_{0}}f\left(z\right)\left(z-z_{0}\right)^{m} & = & c_{-m}\neq0\\
+\lim_{z\to z_{0}}\left|f\left(z\right)\right|\left|z-z_{0}\right|^{m} & = & \left|c_{-m}\right|>q\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר לכל 
+\begin_inset Formula $M>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $0<\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(z\right)\right|>\frac{q}{\left|z-z_{0}\right|^{m}}>M$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זו הגדרה של 
+\begin_inset Formula $\lim_{z\to z_{0}}\left|f\left(z\right)\right|\to\infty$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ לא חסום בסביבת קוטב.
+\end_layout
+
+\begin_layout Section
+משפט ווירשטראוס על התנהגות פונק' סביב נק' סינגולרית עיקרית
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $a$
+\end_inset
+
+ נק' סינגולרית של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אז לכל ערך 
+\begin_inset Formula $A$
+\end_inset
+
+ קיימת סדרה 
+\begin_inset Formula $z_{n}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim_{n\to\infty}z_{n}=a$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(z_{n}\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נתחיל בהוכחה עבור 
+\begin_inset Formula $A=\infty$
+\end_inset
+
+ אז רוצים למצא 
+\begin_inset Formula $z_{k}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim_{z\to\infty}f\left(z_{k}\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $a$
+\end_inset
+
+ היא נקודה עיקרית של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אז 
+\begin_inset Formula $f\left(z\right)=P\left(z-a\right)+Q\left(\frac{1}{z-a}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $P\left(z-a\right)$
+\end_inset
+
+ חלק אמיתי ו 
+\begin_inset Formula $Q\left(\frac{1}{z-a}\right)$
+\end_inset
+
+ חלק עיקרי.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\lim_{z\to a}P\left(z-a\right)=c_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נבדוק התנהגות של 
+\begin_inset Formula $Q\left(\frac{1}{z-a}\right)$
+\end_inset
+
+.
+ נסמן 
+\begin_inset Formula $z^{\prime}=\frac{1}{z-a}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $Q\left(\frac{1}{z-a}\right)=Q\left(z^{\prime}\right)$
+\end_inset
+
+.
+ הטור 
+\begin_inset Formula $Q\left(\frac{1}{z-a}\right)$
+\end_inset
+
+ מתכנס בכל המישור המורכב חוץ מהנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ כלומר הוא מתכנס בכל המישור של 
+\begin_inset Formula $z^{\prime}$
+\end_inset
+
+)כי 
+\begin_inset Formula $a$
+\end_inset
+
+ מועבר ל 
+\begin_inset Formula $\infty$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Q\left(z^{\prime}\right)=c_{-1}z^{\prime}+c_{-2}\left(z^{\prime}\right)^{2}+c_{-3}\left(z^{\prime}\right)^{3}+\dots+c_{-n}\left(z^{\prime}\right)^{n}+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונק' לא קבועה אז לפי משפט ליוביל אזי לכל 
+\begin_inset Formula $N$
+\end_inset
+
+ קיימת 
+\begin_inset Formula $z_{N}^{\prime}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\left|Q\left(z_{N}^{\prime}\right)\right|>N$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $n$
+\end_inset
+
+ יקבל ערכים 
+\begin_inset Formula $1,2,3\dots N\dots$
+\end_inset
+
+ נקבל סדרת נקודות 
+\begin_inset Formula $z_{n}^{\prime}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim_{n\to\infty}z_{n}^{\prime}=\infty$
+\end_inset
+
+ו 
+\begin_inset Formula $\lim_{n\to\infty}Q\left(z_{n}^{\prime}\right)=\infty$
+\end_inset
+
+.
+ בגלל ש 
+\begin_inset Formula $z^{\prime}=\frac{1}{z-a}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $z_{n}^{\prime}\to\infty$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $z_{n}\to a$
+\end_inset
+
+.
+ אז 
+\begin_inset Formula $\lim_{n\to\infty}f\left(z_{n}\right)=\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל עבור 
+\begin_inset Formula $A=\infty$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+עכשיו רוצים להוכיח כי עבור כל 
+\begin_inset Formula $A\in\mathbb{C}$
+\end_inset
+
+ קיימת סדרה 
+\begin_inset Formula $\lim_{n\to\infty}z_{n}=a$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim_{n\to\infty}f\left(z_{n}\right)=A$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח שבסביבת נק' 
+\begin_inset Formula $a$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $f\left(z\right)\neq A$
+\end_inset
+
+ אזי 
+\begin_inset Formula $g\left(z\right)=\frac{1}{f\left(z\right)-A}$
+\end_inset
+
+ אנליטית בסביבת 
+\begin_inset Formula $a$
+\end_inset
+
+ חוץ מבנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+ עצמה שהיא נק' סינגולרית עיקרית של 
+\begin_inset Formula $g\left(z\right)$
+\end_inset
+
+ אז כמו שהוכחנו קיימת סדרה 
+\begin_inset Formula $\lim_{n\to\infty}z_{n}=a$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\lim_{n\to\infty}g\left(z_{n}\right)=\infty$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\lim_{n\to\infty}f\left(z_{n}\right)=A$
+\end_inset
+
+.
+ משל.
+\end_layout
+
+\begin_layout Section
+קשר בין אפסים וקטבים של פונקציות 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $\nicefrac{1}{f\left(z\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+אפסים
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא אפס מדרגה 
+\begin_inset Formula $m$
+\end_inset
+
+ של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אזי פיתוח של פונק' 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ סביב 
+\begin_inset Formula $a$
+\end_inset
+
+ יהיה מהצורה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & c_{m}\left(z-a\right)^{m}+c_{m+1}\left(z-a\right)^{m+1}+\dots+c_{n}\left(z-a\right)^{n}+\dots\\
+ & = & \left(z-a\right)^{m}\underbrace{\left(c_{m}+c_{m+1}\left(z-a\right)+c_{m+2}\left(z-a\right)^{2}+\dots+c_{n}\left(z-a\right)^{n}+\dots\right)}_{\psi\left(z\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $\psi\left(a\right)=c_{m}\neq0\neq\infty$
+\end_inset
+
+ לכן 
+\begin_inset Formula $\frac{1}{\psi\left(a\right)}\neq0$
+\end_inset
+
+ אנליטית גם כן.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{1}{f\left(z\right)}=\frac{1}{\left(z-a\right)^{m}}\cdot\frac{1}{\psi\left(z\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו קוטב מדרגה 
+\begin_inset Formula $m$
+\end_inset
+
+ בנקודה 
+\begin_inset Formula $a$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+קטבים
+\end_layout
+
+\begin_layout Standard
+אותו דבר עבור קוטב של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{c_{-m}}{\left(z-a\right)^{m}}+\dots+c_{0}+c_{1}\left(z-a\right)+\dots\\
+ & = & \frac{1}{\left(z-a\right)^{m}}\underbrace{\left(c_{-m}+c_{-m+1}\left(z-a\right)+\dots\right)}_{\psi\left(z\right)}\\
+\frac{1}{f\left(z\right)} & = & \frac{\left(z-a\right)^{m}}{\psi\left(z\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $\psi\left(a\right)=c_{-m}\neq0\neq\infty$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\frac{1}{\psi\left(a\right)}$
+\end_inset
+
+ אנליטית ולכן קיבלנו אור עם אפס מדרגה 
+\begin_inset Formula $m$
+\end_inset
+
+ ב 
+\begin_inset Formula $z=a$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שארית של פונק
+\end_layout
+
+\begin_layout Standard
+נפתח פונק' 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ לטור ונקבל
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\dots+\frac{c_{-2}}{\left(z-a\right)^{2}}+\frac{c_{-1}}{z-a}+c_{0}+c_{1}\left(z-a\right)+c_{2}\left(z-a\right)^{2}+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נעבור לאינטגרציה)מכיוון שהטור מתכנס במידה שווה אפשר לעשות אינטגרציה של האיברים(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\int f\left(z\right)dz=\dots+\int_{c}\frac{c_{-2}}{\left(z-a\right)^{2}}dz+\int_{c}\frac{c_{-1}}{z-a}dz+\int_{c}c_{0}dz+\int_{C}c_{1}\left(z-a\right)dz+\int_{c}c_{2}\left(z-a\right)^{2}dz+\dots\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי כל האינטגרלים האלה הם אפס חוץ מ 
+\begin_inset Formula $\int\frac{c_{-1}}{z-a}dz=c_{-1}2\pi i$
+\end_inset
+
+ לכן האינטגרל עבור נק' סינגולרית היא אפס אלה אם הנק' היא קוטב או עיקרית.
+\end_layout
+
+\begin_layout Section
+חישוב שארית במקרה של קוטב מדרגה 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+נוסחה פרטית עבור קוטב פשוט
+\end_layout
+
+\begin_layout Standard
+אם הקוטב מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ והפונק' מהצורה 
+\begin_inset Formula $\psi\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $c_{-1}=\frac{g\left(z\right)}{g^{\prime}\left(z\right)}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נחפס נוסחה ל 
+\begin_inset Formula $c_{-1}$
+\end_inset
+
+ במקרה של קוטב מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\numeric off
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\psi\left(z\right) & = & \frac{c_{-1}}{z-a}+c_{0}+c_{1}\left(z-a\right)+\dots\\
+\left(z-a\right)\psi\left(z\right) & = & c_{-1}+c_{0}\left(z-a\right)+c_{1}\left(z-a\right)^{2}+\dots\\
+\lim_{z\to a}\left(z-a\right)\psi\left(z\right) & = & c_{-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כרגע נסתכל על 
+\begin_inset Formula $\psi\left(z\right)=\frac{f\left(z\right)}{g\left(z\right)}$
+\end_inset
+
+.
+ אם זה קוטב מדרגה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אז 
+\begin_inset Formula $g\left(a\right)=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{z\to a}\left(z-a\right)\psi\left(z\right) & = & \lim_{z\to a}\left(z-a\right)\frac{f\left(z\right)}{g\left(z\right)}\\
+ & = & \lim_{z\to a}\frac{f\left(z\right)}{\left(\frac{g\left(z\right)}{z-a}\right)}\\
+ & = & \lim_{z\to a}\frac{f\left(z\right)}{\left(\frac{g\left(z\right)-g\left(a\right)}{z-a}\right)}\\
+ & = & \frac{f\left(a\right)}{g^{\prime}\left(a\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+במקרה של קוטב מסדר 
+\begin_inset Formula $n$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{c_{-n}}{\left(z-a\right)^{n}}+\dots+\frac{c_{-2}}{\left(z-a\right)^{2}}+\frac{c_{-1}}{z-a}+c_{0}+c_{1}\left(z-a\right)+\dots\\
+\left(z-a\right)^{n}f\left(z\right) & = & c_{-n}+\dots+c_{-2}\left(z-a\right)^{n-2}+c_{-1}\left(z-a\right)^{n-1}+c_{0}\left(z-a\right)^{n}+c_{1}\left(z-a\right)^{n+1}+\dots\\
+\frac{\partial^{n-1}\left(z-a\right)^{n}f\left(z\right)}{\partial z^{n-1}} & = & c_{-1}\left(n-1\right)!+c_{0}\left(z-a\right)n!+c_{1}\left(z-a\right)^{2}\frac{n!}{2}+\dots\\
+\lim_{z\to a}\frac{\partial^{n-1}\left(z-a\right)^{n}f\left(z\right)}{\partial z^{n-1}} & = & c_{-1}\left(n-1\right)!\\
+\frac{1}{\left(n-1\right)!}\lim_{z\to a}\frac{\partial^{n-1}\left(z-a\right)^{n}f\left(z\right)}{\partial z^{n-1}} & = & c_{-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+חישוב אינטגרל 
+\begin_inset Formula $\oint_{\Gamma}\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)}dz$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אנליטית עבור 
+\begin_inset Formula $z\in\Gamma$
+\end_inset
+
+)בפרט 
+\begin_inset Formula $f\left(z\right)\neq0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $z\in\Gamma$
+\end_inset
+
+( ושלפונקצינ יש מספר סופי של אפסים בתחום הזה 
+\begin_inset Formula $a_{1},a_{2}\dots a_{n}$
+\end_inset
+
+ שסדרם 
+\begin_inset Formula $\alpha_{1},\alpha_{2}\dots$
+\end_inset
+
+ ומספר קטבים 
+\begin_inset Formula $b_{1},b_{2}\dots b_{m}$
+\end_inset
+
+ שהדרגה שלהם 
+\begin_inset Formula $\beta_{1},\beta_{2}\dots$
+\end_inset
+
+.
+ אזי 
+\begin_inset Formula \[
+\frac{1}{2\pi i}\oint_{\Gamma}\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)}dz=\sum_{k=1}^{n}a_{k}\alpha_{k}+\sum_{k=1}^{m}b_{k}\beta_{k}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+הוכחה:
+\end_layout
+
+\begin_layout Standard
+נוכיח כי אם 
+\begin_inset Formula $a$
+\end_inset
+
+ הוא אפס מספר 
+\begin_inset Formula $\alpha$
+\end_inset
+
+ של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ אז הוא קוטב מסדר ראשון של 
+\begin_inset Formula $\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f^{\prime}\left(z\right) & = & A_{i}\left(z-a\right)^{\alpha}+A_{i+1}\left(z-a\right)^{\alpha+1}+\dots\\
+f\left(z\right) & = & A_{i}\alpha\left(z-a\right)^{\alpha-1}+A_{i+1}\left(\alpha+1\right)\left(z-a\right)^{\alpha}+\dots\\
+\varphi\left(z\right) & = & \varphi\left(a\right)+\varphi^{\prime}\left(a\right)\left(z-a\right)+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)} & = & \frac{\left(A_{i}\alpha\left(z-a\right)^{\alpha-1}+A_{i+1}\left(\alpha+1\right)\left(z-a\right)^{\alpha}+\dots\right)\left(\varphi\left(a\right)+\varphi^{\prime}\left(a\right)\left(z-a\right)+\dots\right)}{A_{i}\alpha\left(z-a\right)^{\alpha}+A_{i+1}\left(\alpha+1\right)\left(z-a\right)^{\alpha+1}+\dots}\\
+ & = & \frac{\left(z-a\right)^{\alpha-1}}{\left(z-a\right)^{\alpha}}\frac{\left(A_{i}\alpha+A_{i+1}\left(\alpha+1\right)\left(z-a\right)+\dots\right)\left(\varphi\left(a\right)+\varphi^{\prime}\left(a\right)\left(z-a\right)+\dots\right)}{A_{i}\alpha+A_{i+1}\left(\alpha+1\right)\left(z-a\right)+\dots}\\
+ & = & \frac{1}{z-a}\frac{\left(A_{i}\alpha+A_{i+1}\left(\alpha+1\right)\left(z-a\right)+\dots\right)\left(\varphi\left(a\right)+\varphi^{\prime}\left(a\right)\left(z-a\right)+\dots\right)}{A_{i}+A_{i+1}\left(z-a\right)+\dots}\\
+ & = & \frac{1}{z-a}\frac{\mbox{Analytical function}\neq0}{\mbox{Analytical function}\neq0}\\
+\lim_{z\to a}\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)} & = & \frac{1}{z-a}\cdot\alpha\varphi\left(a\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן זה קוטב מסדר ראשון והשארית היא 
+\begin_inset Formula $\alpha\varphi\left(a\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נוכיח כי קוטב 
+\begin_inset Formula $b$
+\end_inset
+
+ מסדר 
+\begin_inset Formula $\beta$
+\end_inset
+
+של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ קוטב מסדר ראשון של 
+\begin_inset Formula $\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)}$
+\end_inset
+
+ והשארית שלו 
+\begin_inset Formula $\beta f\left(b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & B_{j}\left(z-b\right)^{-\beta}+\dots\\
+f^{\prime}\left(z\right) & = & B_{j}\beta\left(z-b\right)^{-\beta+1}+\dots\\
+\varphi\left(z\right) & = & \varphi\left(b\right)+\varphi^{\prime}\left(b\right)\left(z-a\right)+\dots\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)} & = & \frac{\left(\varphi\left(b\right)+\varphi^{\prime}\left(b\right)\left(z-a\right)+\dots\right)\left(B_{j}\beta\left(z-b\right)^{-\beta+1}+\dots\right)}{B_{j}\left(z-b\right)^{-\beta}+\dots}\\
+ & = & \frac{\left(z-b\right)^{-\beta+1}}{\left(z-b\right)^{-\beta}}\cdot\frac{\left(\varphi\left(b\right)+\varphi^{\prime}\left(b\right)\left(z-a\right)+\dots\right)\left(B_{j}\beta\left(z-b\right)^{-\beta+1}+\dots\right)}{B_{j}\left(z-b\right)^{-\beta}+\dots}\\
+ & = & \frac{1}{z-b}\frac{\mbox{Analytical function}\neq0}{\mbox{Analytical function}\neq0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\oint\varphi\left(z\right)\frac{f^{\prime}\left(z\right)}{f\left(z\right)}dz=\sum\alpha_{i}\varphi\left(a_{i}\right)+\sum\beta_{i}\varphi\left(b_{i}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט רושה
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,854 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(t\right)=u\left(t-\tau\right),\tau<0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מערכת היא סיבתית אם"ם התגובה להלם שווה ל
+\begin_inset Formula $0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $t<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & \delta\left(t-\tau\right)\\
+ & = & \begin{cases}
+\infty & t-\tau=0\\
+0 & t-\tau=0\end{cases}\\
+ & = & \begin{cases}
+\infty & t=\tau\\
+0 & \mbox{Otherwise}\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המערכת היא לא סיבתית כי 
+\begin_inset Formula $y\left(\tau\right)\neq0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\tau<0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & \int_{-\infty}^{t}\delta\left(\tau\right)d\tau\\
+ & = & \begin{cases}
+0 & t<0\\
+1 & t\geq0\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קיבלנו כי עבור כל 
+\begin_inset Formula $t<0$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $y\left(t\right)=0$
+\end_inset
+
+, לכן המערכת היא סיבתית
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & \int_{t-5}^{t+5}\delta\left(\tau\right)d\tau\\
+ & = & \begin{cases}
+1 & t-5<0\mbox{ and }t+5>0\\
+0 & \mbox{Otherwise}\end{cases}\\
+ & = & \begin{cases}
+1 & -5<t<5\\
+0 & \mbox{Otherwise}\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי המערכת לא סיבתית מכיוון ש 
+\begin_inset Formula $y\left(-4\right)=1$
+\end_inset
+
+ עבור כניסה 
+\begin_inset Formula $\delta\left(t\right)$
+\end_inset
+
+ המערכת היא לא סיבתית.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}}{\partial t^{2}}y+8\frac{\partial}{\partial t}y+12y=\frac{\partial}{\partial t}u-u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המערכת היא יציבה 
+\begin_inset Formula $Bibo$
+\end_inset
+
+ אם עבור תגובת ההלם 
+\begin_inset Formula $h$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\int_{-\infty}^{\infty}\left|h\right|dt<\infty$
+\end_inset
+
+ .
+ אזי רוצים את תגובת ההלם של המערכת.
+\end_layout
+
+\begin_layout Standard
+פותרים מערכת הומוגינית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r^{2}+8r+12 & = & 0\\
+r & = & -6\\
+r & = & -2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון הומוגיני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{h}=Ae^{-2t}+Be^{-6t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון עבור 
+\begin_inset Formula $u=\delta\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}}{\partial t^{2}}y+8\frac{\partial}{\partial t}y+12y=\delta\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h_{0}\left(0\right) & = & 0\\
+A+B & = & 0\\
+A & = & -B\\
+h_{0}^{'}\left(0\right) & = & 1\\
+-2A-6B & = & 1\\
+2B-6B & = & 1\\
+-4B & = & 1\\
+B & = & -\frac{1}{4}\\
+A & = & \frac{1}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h_{0}=\left(\frac{e^{-2t}}{4}-\frac{e^{-6t}}{4}\right)u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{0}$
+\end_inset
+
+ פותר את המשוואה 
+\begin_inset Formula $\frac{\partial^{2}}{\partial t^{2}}y+8\frac{\partial}{\partial t}y+12y=\delta\left(t\right)$
+\end_inset
+
+ אזי לפתור את המשוואה 
+\begin_inset Formula $\frac{\partial^{2}}{\partial t^{2}}y+8\frac{\partial}{\partial t}y+12y=\frac{\partial}{\partial t}u-u$
+\end_inset
+
+ אנחנו משתמשים בפונקציה 
+\begin_inset Formula $h=\frac{\partial}{\partial t}h_{0}-h_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h\left(t\right) & = & \frac{\partial}{\partial t}h_{0}-h_{0}\\
+ & = & \overbrace{\left(\frac{e^{-2t}}{4}-\frac{e^{-6t}}{4}\right)\delta\left(t\right)}^{0}+\left(-\frac{e^{-2t}}{2}+\frac{6}{4}e^{-6t}\right)u\left(t\right)+\left(\frac{e^{-6t}}{4}-\frac{e^{-2t}}{4}\right)u\left(t\right)\\
+ & = & \left(-\frac{e^{-2t}}{2}+\frac{6}{4}e^{-6t}+\frac{e^{-6t}}{4}-\frac{e^{-2t}}{4}\right)u\left(t\right)\\
+ & = & \left(-\frac{3}{4}e^{-2t}+\frac{7}{4}e^{-6t}\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים תנאי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+BIBO
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{\infty}\left|-\frac{3}{4}e^{-2t}+\frac{7}{4}e^{-6t}\right|dt & \leq & \int_{0}^{\infty}\left|-\frac{3}{4}e^{-2t}\right|+\left|\frac{7}{4}e^{-6t}\right|dt\\
+ & = & \int_{0}^{\infty}\frac{3}{4}e^{-2t}+\frac{7}{4}e^{-6t}dt\\
+ & = & \frac{2}{3}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}}{\partial t^{2}}y-6\frac{\partial}{\partial t}y+5y=3\frac{\partial}{\partial t}u+u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+המערכת היא יציבה 
+\begin_inset Formula $Bibo$
+\end_inset
+
+ אם עבור תגובת ההלם 
+\begin_inset Formula $h$
+\end_inset
+
+ מקיימת 
+\begin_inset Formula $\int_{-\infty}^{\infty}\left|h\right|dt<\infty$
+\end_inset
+
+ .
+ אזי רוצים את תגובת ההלם של המערכת.
+\end_layout
+
+\begin_layout Standard
+פותרים מערכת הומוגינית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r^{2}-6r+5 & = & 0\\
+r & = & 1\\
+r & = & 5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון הומוגיני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y_{h}=Ae^{t}+Be^{5t}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פתרון עבור 
+\begin_inset Formula $u=\delta\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial^{2}}{\partial t^{2}}y-6\frac{\partial}{\partial t}y+5y=\delta\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h_{0}\left(0\right) & = & 0\\
+A+B & = & 0\\
+A & = & -B\\
+h_{0}^{'}\left(0\right) & = & 1\\
+A+5B & = & 1\\
+-B+5B & = & 1\\
+4B & = & 1\\
+B & = & \frac{1}{4}\\
+A & = & -\frac{1}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h_{0}=\left(-\frac{e^{t}}{4}+\frac{e^{5t}}{4}\right)u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $h_{0}$
+\end_inset
+
+ פותר את המשוואה 
+\begin_inset Formula $\frac{\partial^{2}}{\partial t^{2}}y+8\frac{\partial}{\partial t}y+12y=\delta\left(t\right)$
+\end_inset
+
+ אזי לפתור את המשוואה 
+\begin_inset Formula $\frac{\partial^{2}}{\partial t^{2}}y+8\frac{\partial}{\partial t}y+12y=\frac{\partial}{\partial t}u-u$
+\end_inset
+
+ אנחנו משתמשים בפונקציה 
+\begin_inset Formula $h=3\frac{\partial}{\partial t}h_{0}+h_{0}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h\left(t\right) & = & 3\frac{\partial}{\partial t}h_{0}+h_{0}\\
+ & = & 3\left(\overbrace{\left(-\frac{e^{t}}{4}+\frac{e^{5t}}{4}\right)\delta\left(t\right)}^{0}+\left(-\frac{e^{t}}{4}+\frac{5e^{5t}}{4}\right)u\left(t\right)\right)+\left(-\frac{e^{t}}{4}+\frac{e^{5t}}{4}\right)u\left(t\right)\\
+ & = & \left(-\frac{3e^{t}}{4}+\frac{15e^{5t}}{4}-\frac{e^{t}}{4}+\frac{e^{5t}}{4}\right)u\left(t\right)\\
+ & = & \left(4e^{5t}-e^{t}\right)u\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בודקים תנאי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+BIBO
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{\infty}\left|\left(4e^{5t}-e^{t}\right)\right|dt & = & \left(\frac{4}{5}e^{5t}-e^{t}\right)\vert_{0}^{\infty}\\
+ & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהסתמך על שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\begin_inset Formula $\int_{-\infty}^{\infty}\left|h\left(t\right)\right|dt<\infty$
+\end_inset
+
+ הוא תנאי הכרחי, לכן המערכת הזו לא יציבה 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+BIBO
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+נניח בשלילה שקיימת מערכת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+BIBO
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+כך ש 
+\begin_inset Formula $\int_{-\infty}^{\infty}\left|h\left(t\right)\right|dt=\infty$
+\end_inset
+
+.
+ האות 
+\begin_inset Formula $u\left(t\right)=\begin{cases}
+1 & h\left(-t\right)\geq0\\
+-1 & h\left(-t\right)<0\end{cases}$
+\end_inset
+
+ מקיים את תנאי
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+BIBO
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מכיוון ש 
+\begin_inset Formula $\forall t:u\left(t\right)\in\left[-1,1\right]$
+\end_inset
+
+, אזי גם המוצא של המערכת אמור להיות חסום.
+\end_layout
+
+\begin_layout Standard
+המוצא של המערכת עבור כניסה 
+\begin_inset Formula $u$
+\end_inset
+
+ הוא 
+\begin_inset Formula $u*h$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(u*h\right)\left(t\right) & = & \int_{-\infty}^{\infty}u\left(\tau\right)h\left(\tau-t\right)dt\\
+ & = & \int_{-\infty}^{\infty}h\left(\tau-t\right)\begin{cases}
+1 & h\left(-\tau\right)\geq0\\
+-1 & h\left(-\tau\right)<0\end{cases}dt\\
+ & = & \begin{cases}
+\int_{-\infty}^{\infty}h\left(\tau-t\right) & h\left(-\tau\right)\geq0\\
+\int_{-\infty}^{\infty}-h\left(\tau-t\right) & h\left(-\tau\right)<0\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים 
+\begin_inset Formula $t=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(u*h\right)\left(0\right) & = & \begin{cases}
+\int_{-\infty}^{\infty}h\left(-t\right) & h\left(-\tau\right)\geq0\\
+\int_{-\infty}^{\infty}-h\left(-t\right) & h\left(-\tau\right)<0\end{cases}\\
+ & = & \int_{-\infty}^{\infty}\left|h\left(-t\right)\right|dt\\
+ & = & \int_{-\infty}^{\infty}\left|h\left(t\right)\right|dt\\
+ & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלת בונוס
+\end_layout
+
+\begin_layout Standard
+נשתמש בפונק' 
+\begin_inset Formula $\sin\left(t\right)\theta\left(t\right)$
+\end_inset
+
+ ככניסה גם כן אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(u*h\right)\left(t\right) & = & \int_{-\infty}^{\infty}\sin\left(\tau\right)\theta\left(\tau\right)\sin\left(t-\tau\right)\theta\left(t-\tau\right)d\tau\\
+ & = & \int_{0}^{t}\sin\left(\tau\right)\sin\left(t-\tau\right)d\tau\\
+ & = & \left[-\tau\sin\left(\tau\right)\cos\left(t-\tau\right)\right]_{0}^{t}\\
+ & = & \frac{1}{2}\left(\sin\left(t\right)-t\cos\left(t\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\sin\left(t\right)$
+\end_inset
+
+ פונק' חסומה אבל 
+\begin_inset Formula $t\cos\left(t\right)$
+\end_inset
+
+ היא פונק' לא חסומה ולכן התגובה גם לא חסומה.
+\end_layout
+
+\end_body
+\end_document

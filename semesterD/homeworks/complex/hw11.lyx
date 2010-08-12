@@ -1,0 +1,432 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+אם התחום מכיל מסילה סגורה סביב 
+\begin_inset Formula $z_{0}=0+i\cdot0$
+\end_inset
+
+ אזי אי אפשר להגדיר את הפונק' 
+\begin_inset Formula $\log$
+\end_inset
+
+ אנליטית כך ש 
+\begin_inset Formula $e^{\log z}=z$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לא קיים לפי המשפט
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לא קיים לפי המשפט
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+לא קיים לפי המשפט
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\log\left(z\right)=\log\left|z\right|+i\cdot\arg\left(z\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\log\left(z\right)=\log\left|z\right|+i\cdot\arg\left(z\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+r & = & \sqrt[5]{z}\\
+ & = & \sqrt[5]{re^{i\theta}}\\
+r_{1} & = & \sqrt[5]{r}e^{i\frac{\theta}{5}}\\
+r_{2} & = & \sqrt[5]{r}e^{i\left(\frac{\theta}{5}+\frac{1\cdot2\pi}{5}\right)}\\
+r_{3} & = & \sqrt[5]{r}e^{i\left(\frac{\theta}{5}+\frac{2\cdot2\pi}{5}\right)}\\
+r_{4} & = & \sqrt[5]{r}e^{i\left(\frac{\theta}{5}+\frac{3\cdot2\pi}{5}\right)}\\
+r_{5} & = & \sqrt[5]{r}e^{i\left(\frac{\theta}{5}+\frac{4\cdot2\pi}{5}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $z=re^{i\theta}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ מוגדר להיות 
+\begin_inset Formula $\theta\in\left[0,2\pi\right)$
+\end_inset
+
+ )בלי הגבלת הכלליות(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\sqrt{z}\right)^{2} & = & z\\
+\sqrt{re^{i\theta}}^{2} & = & re^{i\theta}\\
+\left(\sqrt{r}e^{i\nicefrac{\theta}{2}+i\pi k}\right)^{2} & = & re^{i\theta}\\
+\left(\sqrt{r}\right)^{2}\left(e^{i\nicefrac{\theta}{2}+i\pi k}\right)^{2} & = & re^{i\theta}\\
+r\cdot e^{i\theta+2\pi ik} & = & re^{i\theta}\\
+r\cdot e^{i\theta} & = & re^{i\theta}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן הפונק 
+\begin_inset Formula $\sqrt{re^{i\theta}}=\sqrt{r}e^{i\nicefrac{\theta}{2}+\pi k}$
+\end_inset
+
+ הוא ההגדרה היחיהדה של פונקצית שורש המקים את התנאי.
+ בודקים עבור 
+\begin_inset Formula $k\in\left\{ 0,1\right\} $
+\end_inset
+
+)כי כל ערך יותר גדול של 
+\begin_inset Formula $k$
+\end_inset
+
+ שווה לאחד משני המקרים האלה(
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k=0$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+אנחנו אמורים לקבל כי 
+\begin_inset Formula $\lim_{z\to a}\sqrt{z}$
+\end_inset
+
+ קיים לכל ערך 
+\begin_inset Formula $a$
+\end_inset
+
+ בתחום ההגדרה.
+ נבחר את 
+\begin_inset Formula $z=1$
+\end_inset
+
+)או כל נקודה אחרת שנמצאת בצד הפתוח של תחום ההגדרה של 
+\begin_inset Formula $\arg\left(z\right)$
+\end_inset
+
+( המסילה 
+\begin_inset Formula $\gamma\left(t\right)=1+it$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lim_{t\to0+}\sqrt{1+it} & = & \lim_{\begin{matrix}r\to1\\
+\theta\to0^{+}\end{matrix}}\sqrt{re^{i\theta}}\\
+ & = & \lim_{\theta\to0^{+}}e^{i\frac{\theta}{2}}\\
+ & = & e^{0}\\
+ & = & 1\\
+\lim_{t\to0-}\sqrt{1+it} & = & \lim_{\begin{matrix}r\to1\\
+\theta\to\left(2\pi\right)^{-}\end{matrix}}\sqrt{re^{i\theta}}\\
+ & = & \lim_{\theta\to\left(2\pi\right)^{-}}e^{i\nicefrac{\theta}{2}}\\
+ & = & -1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אותו דבר עושים עבור 
+\begin_inset Formula $k=1$
+\end_inset
+
+)אפילו לא צריך לשנות את 
+\begin_inset Formula $a$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\frac{1+\left(-1\right)^{\left(\frac{1}{z}\right)}}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\frac{z\left(z+\left(-1\right)^{\left(\nicefrac{1}{z}\right)}\right)}{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\left(\frac{z}{1+z}\right)\cdot\left(\frac{1+\left(-1\right)^{\left(\frac{z+1}{z}\right)}}{2}\right)+z\left(\frac{z+\left(-1\right)^{\frac{1}{z}}}{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(z\right)=\frac{1}{1+z}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

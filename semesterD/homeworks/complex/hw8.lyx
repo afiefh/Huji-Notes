@@ -1,0 +1,730 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+8
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\left|z\right|<1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום פתוח, קשיר מסילתית ופשוט קשר
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $xy>1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום פתוח, לא קשיר מסילתית ולא פשוט קשר
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $C\setminus\left\{ 0\right\} $
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום פתוח, קשיר מסילתית ולא פשוט קשר
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $1<\left|z\right|<2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום פתוח, קשיר מסילתית ולא פשוט קשר
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\left|z\right|>\Re\left(z\right)\mbox{ and }1<\left|z\right|<2$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום פתוח
+\end_layout
+
+\begin_layout Standard
+לא קשיר
+\end_layout
+
+\begin_layout Standard
+לא פשוט קשר
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $z\neq0,\arg\left(z\right)\neq a_{1}\dots a_{n}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תחום פתוח
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+ הוא פשוט קשר וקשיר
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n>1$
+\end_inset
+
+ הוא לא פשוט קשר ולא קשיר
+\end_layout
+
+\begin_layout Subsection
+\begin_inset Formula $\mbox{Not gonna copy this one!}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סגור, קשיר מסילתית ופשוט קשר
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $c$
+\end_inset
+
+ מסילה מעגלית בראדיוס
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+סביב 
+\begin_inset Formula $z=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}\frac{dz}{z} & = & \int_{c}\frac{dz}{z}\\
+ & = & 2\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{z^{2}+9} & = & \frac{A}{z-3i}+\frac{B}{z+3i}\\
+1 & = & A\left(z+3i\right)+B\left(z-3i\right)\\
+1 & = & Az+3Ai+Bz-3Bi\\
+1 & = & z\left(A+B\right)+\left(3A-3B\right)i\\
+3A-3B & = & -i\\
+A & = & B-\frac{i}{3}\\
+A+B & = & 0\\
+B+B-\frac{i}{3} & = & 0\\
+2B & = & \frac{i}{3}\\
+B & = & \frac{i}{6}\\
+A & = & \frac{i}{6}-\frac{i}{3}\\
+A & = & -\frac{i}{6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{z^{2}-9} & = & -\frac{i}{6z-18i}+\frac{i}{6z+18i}\\
+ & = & \frac{i}{6}\left(-\frac{1}{z-3i}+\frac{1}{z+3i}\right)\\
+ & = & \frac{i}{6}\left(\frac{-z-3i+z-3i}{z^{2}+9}\right)\\
+ & = & \frac{i}{6}\left(\frac{-6i}{z^{2}+9}\right)\\
+ & = & \frac{1}{z^{2}+9}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $3i\in C,-3i\not\in C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{dz}{z^{2}-9} & = & -\oint_{C}\frac{idz}{6z-18i}+\oint_{C}\frac{idz}{6z+18i}\\
+ & = & -\oint\frac{\frac{i}{6}dz}{z-3i}+\oint_{C}\frac{\frac{i}{6}dz}{z+3i}\\
+ & = & -\frac{i}{6}2\pi i+0\\
+ & = & \frac{1}{3}\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{dz}{z^{2}-9} & = & -\oint_{C}\frac{idz}{6z-18i}+\oint_{C}\frac{idz}{6z+18i}\\
+ & = & -\oint\frac{\frac{i}{6}dz}{z-3i}+\oint_{C}\frac{\frac{i}{6}dz}{z+3i}\\
+ & = & 0+\frac{i}{6}2\pi i\\
+ & = & -\frac{1}{3}\pi\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{dz}{z^{2}-9} & = & -\oint_{C}\frac{idz}{6z-18i}+\oint_{C}\frac{idz}{6z+18i}\\
+ & = & \frac{1}{3}\pi-\frac{1}{3}\pi\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Standard
+מכיוון שהמסילה פשוטה אנחנו יודעים כי היא יכולה להקיף כל נקודה פעם אחת או
+ לא להקיף אותה
+\end_layout
+
+\begin_layout Standard
+הפתרון שלי מניח כי 
+\begin_inset Formula $C$
+\end_inset
+
+ מסילה בכיוון החיובי, אם 
+\begin_inset Formula $C$
+\end_inset
+
+ היא בכיוון השלילי אז מקבלים אותה תשובה מוכפלת ב 
+\begin_inset Formula $-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $c_{1},c_{2},c_{3}$
+\end_inset
+
+ מסילות שמכילות את הנקודות 
+\begin_inset Formula $0,i,-i$
+\end_inset
+
+ בהתאם
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\in C,i\in C,-i\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{1}}\frac{\left(\frac{1}{\left(z^{2}+1\right)}\right)}{z}dz+\oint_{c_{2}}\frac{\left(\frac{1}{z\left(z+i\right)}\right)}{z-i}dz+\oint_{c_{3}}\frac{\left(\frac{1}{z\left(z-i\right)}\right)}{z+i}dz\\
+ & = & 2\pi i\cdot1+2\pi i\cdot\left(-\frac{1}{2}\right)+2\pi i\cdot\left(-\frac{1}{2}\right)\\
+ & = & 2\pi i-\pi i-\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\not\in C,i\not\in C,-i\not\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\in C,i\not\in C,-i\not\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{1}}\frac{\left(\frac{1}{\left(z^{2}+1\right)}\right)}{z}dz\\
+ & = & 2\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\not\in C,i\in C,-i\not\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{2}}\frac{\left(\frac{1}{z\left(z+i\right)}\right)}{z-i}dz\\
+ & = & -\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\not\in C,i\not\in C,-i\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{3}}\frac{\left(\frac{1}{z\left(z-i\right)}\right)}{z+i}dz\\
+ & = & -\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\in C,i\in C,-i\not\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{1}}\frac{\left(\frac{1}{\left(z^{2}+1\right)}\right)}{z}dz+\oint_{c_{2}}\frac{\left(\frac{1}{z\left(z+i\right)}\right)}{z-i}dz\\
+ & = & 2\pi i-\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\not\in C,i\in C,-i\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{2}}\frac{\left(\frac{1}{z\left(z+i\right)}\right)}{z-i}dz+\oint_{c_{3}}\frac{\left(\frac{1}{z\left(z-i\right)}\right)}{z+i}dz\\
+ & = & -\pi i-\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+עבור 
+\begin_inset Formula $0\in C,i\not\in C,-i\in C$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{1}{z\left(z^{2}+1\right)}dz & = & \oint_{c_{1}}\frac{\left(\frac{1}{\left(z^{2}+1\right)}\right)}{z}dz+\oint_{c_{3}}\frac{\left(\frac{1}{z\left(z-i\right)}\right)}{z+i}dz\\
+ & = & 2\pi i-\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+בהנחה ש 
+\begin_inset Formula $f\left(a_{i}\right)$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\frac{f\left(a_{i}\right)}{z-a_{i}}$
+\end_inset
+
+ עבור כל 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ סינגולרית שונה לכל 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אנחנו יודעים כי המסילה פשוטה, אזי אם היא עוקפת 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ בכיוון מסויים היא חייבת להקיף את כל הנקודות באותו כיוון.
+ לכן האפשרויות הן שהמסילה מקיפה 
+\begin_inset Formula $a_{i}$
+\end_inset
+
+ אפ לא מקיפה אותה, אזי יש 
+\begin_inset Formula $2^{n}$
+\end_inset
+
+ אפשרויות.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+המסילה היא מעכל בעלת ראדיוס 
+\begin_inset Formula $a$
+\end_inset
+
+ וממוקמת בנקודה 
+\begin_inset Formula $z=a$
+\end_inset
+
+, אזי היא מכילה את הנקודה 
+\begin_inset Formula $z=1$
+\end_inset
+
+ ולא מכילה את הנקודות 
+\begin_inset Formula $-1,i,-i$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{C}\frac{zdz}{z^{4}-1} & = & \oint_{C}\frac{zdz}{\left(z-1\right)\left(z+1\right)\left(z+i\right)\left(z-i\right)}\\
+ & = & \oint_{C}\frac{\left(\frac{zdz}{\left(z+1\right)\left(z+i\right)\left(z-i\right)}\right)}{\left(z-1\right)}\\
+ & = & 2\pi i\frac{1}{\left(1+1\right)\left(1+i\right)\left(1-i\right)}\\
+ & = & \frac{1}{2}\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

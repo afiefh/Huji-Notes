@@ -1,0 +1,301 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1} & = & I_{L}\\
+x_{2} & = & V_{c}\\
+V_{L} & = & L\dot{I}=1\cdot\dot{x}_{1}\\
+I_{C} & = & C\dot{V}_{C}\\
+1:\, u & = & 2\left(x_{1}+\dot{x}_{2}\right)+1\cdot x_{1}+\dot{x}_{1}\\
+2:\,\dot{x}_{1}+x_{1} & = & \dot{x}_{2}+x_{2}\\
+1\to2:\, u & = & 2\left(x_{1}+\dot{x}_{2}\right)+\dot{x}_{2}+x_{2}\\
+\dot{x}_{1} & = & \frac{1}{3}u-\frac{5}{3}x_{1}+\frac{2}{3}x_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי 
+\begin_inset Formula $y_{1}=x_{2}$
+\end_inset
+
+, 
+\begin_inset Formula $y_{2}=1\cdot\dot{x}_{2}=\frac{1}{3}u-\frac{2}{3}x_{1}-\frac{1}{3}x_{2}$
+\end_inset
+
+.
+ סה"כ:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\overline{x}} & = & \begin{pmatrix}-\nicefrac{5}{3} & \nicefrac{2}{3}\\
+-\nicefrac{2}{3} & -\nicefrac{1}{3}\end{pmatrix}\overline{x}+\begin{pmatrix}\nicefrac{1}{3}\\
+\nicefrac{1}{3}\end{pmatrix}u\\
+\dot{\overline{y}} & = & \begin{pmatrix}1 & 0\\
+-\nicefrac{2}{3} & -\nicefrac{1}{3}\end{pmatrix}\overline{x}+\begin{pmatrix}0\\
+\nicefrac{1}{3}\end{pmatrix}u\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+פונק' התמסורת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+H\left(s\right) & = & C\left(sI-A\right)^{-1}\overline{b}+D\\
+\left(sI-A\right) & = & \begin{pmatrix}s+\nicefrac{5}{3} & -\frac{2}{3}\\
+\frac{2}{3} & s+\frac{1}{3}\end{pmatrix}\\
+\left|sI-A\right| & = & \left(s+\frac{5}{3}\right)\left(s+\frac{1}{3}\right)+\frac{4}{9}\\
+ & = & \left(s+1\right)^{2}\\
+\left(sI-A\right)^{-1} & = & \frac{1}{\left(s+1\right)^{2}}\begin{pmatrix}s+\frac{1}{3} & +\frac{2}{3}\\
+-\frac{2}{3} & s+\nicefrac{5}{3}\end{pmatrix}\\
+H\left(s\right) & = & C\cdot\left(sI-A\right)^{-1}B+D\\
+ & = & \begin{pmatrix}1 & 0\\
+-\nicefrac{2}{3} & -\nicefrac{1}{3}\end{pmatrix}\cdot\frac{1}{\left(s+1\right)^{2}}\begin{pmatrix}s+\frac{1}{3} & \frac{2}{3}\\
+-\frac{2}{3} & s+\nicefrac{5}{3}\end{pmatrix}\cdot\begin{pmatrix}\nicefrac{1}{3}\\
+\nicefrac{1}{3}\end{pmatrix}+\begin{pmatrix}0\\
+\nicefrac{1}{3}\end{pmatrix}\\
+ & = & \frac{1}{\left(s+1\right)^{2}}\begin{pmatrix}1 & 0\\
+-\nicefrac{2}{3} & -\nicefrac{1}{3}\end{pmatrix}\cdot\begin{pmatrix}s+\frac{1}{3} & \frac{2}{3}\\
+-\frac{2}{3} & s+\nicefrac{5}{3}\end{pmatrix}\cdot\begin{pmatrix}\nicefrac{1}{3}\\
+\nicefrac{1}{3}\end{pmatrix}+\begin{pmatrix}0\\
+\nicefrac{1}{3}\end{pmatrix}\\
+ & = & \frac{1}{\left(s+1\right)^{2}}\cdot\frac{1}{3}\begin{pmatrix}3s+1 & 2\\
+-2s & -s-3\end{pmatrix}\cdot\begin{pmatrix}1\\
+1\end{pmatrix}\cdot\frac{1}{3}+\begin{pmatrix}0\\
+\nicefrac{1}{3}\end{pmatrix}\\
+ & = & \frac{1}{9\left(s+1\right)^{2}}\cdot\begin{pmatrix}3s+3\\
+-3s-3\end{pmatrix}+\begin{pmatrix}0\\
+\nicefrac{1}{3}\end{pmatrix}\\
+ & = & \begin{pmatrix}\frac{s+1}{3\left(s+1\right)^{2}}\\
+\frac{-s-1}{3\left(s+1\right)^{2}}+\frac{1}{3}\end{pmatrix}\\
+ & = & \begin{pmatrix}\frac{1}{3\left(s+1\right)}\\
+-\frac{1}{3\left(s+1\right)}+\frac{1}{3}\end{pmatrix}\\
+ & = & \begin{pmatrix}\frac{1}{3\left(s+1\right)}\\
+\frac{s}{3\left(s+1\right)}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $\Re\left(\lambda_{i}\right)<0$
+\end_inset
+
+ יוצא שהמערכת היא יציבה.
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & \mathcal{L}^{-1}\left(H\left(s\right)u\left(s\right)\right)\\
+ & = & \mathcal{L}^{-1}\begin{pmatrix}\frac{1}{3\left(s+1\right)}\cdot\overbrace{\frac{1}{s}}^{\mathcal{L}\left(\theta\left(t\right)\right)}\\
+\frac{1}{3\left(s+1\right)}\end{pmatrix}\\
+ & = & \begin{pmatrix}\mathcal{L}^{-1}\left\{ \frac{1}{3s\left(s+1\right)}\right\} \\
+\mathcal{L}^{-1}\left\{ \frac{1}{3\left(s+1\right)}\right\} \end{pmatrix}\\
+ & = & \begin{pmatrix}\mathcal{L}^{-1}\left(\frac{1}{3s}-\frac{1}{3\left(s+1\right)}\right)\\
+\mathcal{L}^{-1}\left(\frac{1}{3\left(s+1\right)}\right)\end{pmatrix}\\
+ & = & \begin{pmatrix}\frac{1}{3}\left[1-e^{-t}\right]\theta\left(t\right)\\
+\frac{1}{3}e^{-t}\theta\left(t\right)\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+ראינו בכיתה כי תגובת המעגל ל 
+\begin_inset Formula $\cos\left(\omega t\right)$
+\end_inset
+
+ היא:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(t\right)=\left|H\left(i\omega\right)\right|\cos\left(\omega t+\varphi\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נותן 
+\begin_inset Formula $\omega=1$
+\end_inset
+
+ לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|y\left(t\right)\right| & = & \begin{pmatrix}\left|\frac{1}{3\left(1+i\right)}\right|\\
+\left|\frac{i}{3\left(i+1\right)}\right|\end{pmatrix}=\begin{pmatrix}\frac{1}{3\sqrt{2}}\\
+\frac{1}{3\sqrt{2}}\end{pmatrix}\\
+\varangle y\left(t\right) & = & \begin{pmatrix}\varangle\frac{1}{3\left(1+i\right)}\\
+\varangle\frac{i}{3\left(1+i\right)}\end{pmatrix}=\begin{pmatrix}-\frac{\pi}{4}\\
+\frac{\pi}{4}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(t\right)=\begin{pmatrix}\frac{1}{3\sqrt{2}}\cos\left(t-\frac{\pi}{4}\right)\\
+\frac{1}{3\sqrt{2}}\cos\left(t+\frac{\pi}{4}\right)\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

@@ -1,0 +1,639 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[E\left[g\left(X,Y\right)\vert X\right]\right] & = & E_{X}\left[E_{Y}\left[g\left(X,Y\right)\vert X\right]\right]\\
+ & = & E_{X}\left(\int_{-\infty}^{\infty}\overbrace{g\left(X,Y\right)}^{\mbox{Item}}\cdot\overbrace{\frac{f_{XY}\left(X,Y\right)}{f_{X}\left(X,Y\right)}}^{\mbox{Conditional Probability}}dY\right)\\
+ & = & \int_{-\infty}^{\infty}\underbrace{\int_{-\infty}^{\infty}\frac{g\left(X,Y\right)\cdot f_{XY}\left(X,Y\right)}{f_{X}\left(X,Y\right)}dY}_{\mbox{Item}}\cdot\underbrace{f_{X}\left(X\right)}_{\mbox{Probability of item}}dX\\
+ & = & \int_{-\infty}^{\infty}\int_{-\infty}^{\infty}g\left(X,Y\right)f_{XY}\left(X,Y\right)dYdX\\
+ & = & E\left[g\left(X,Y\right)\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Sigma_{X} & = & E\left(\left(X-\mu_{x}\right)\left(X-\mu_{x}\right)^{T}\right)\\
+\Sigma_{X} & = & E\left(XX^{T}-\mu_{x}X^{T}-X\mu_{x}^{T}+\mu_{x}\mu_{x}^{T}\right)\\
+\Sigma_{x} & = & E\left(XX^{T}\right)-\mu_{x}E\left(X^{T}\right)-E\left(X\right)\mu_{x}^{T}+\mu_{x}\mu_{x}^{T}\\
+\Sigma_{x} & = & R_{XX}-\mu_{x}\mu_{x}^{T}-\mu_{x}\mu_{x}^{T}+\mu_{x}\mu_{x}^{T}\\
+R_{XX} & = & \Sigma_{x}-\mu_{x}\mu_{x}^{T}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y & = & AX+b\\
+R_{YY} & = & E\left[YY^{T}\right]\\
+ & = & E\left[\left(AX+b\right)\left(AX+b\right)^{T}\right]\\
+ & = & E\left[\left(AX+b\right)\left(\left(AX\right)^{T}+b^{T}\right)\right]\\
+ & = & E\left[\left(AX+b\right)\left(X^{T}A^{T}+b^{T}\right)\right]\\
+ & = & E\left[AXX^{T}A^{T}+AXb^{T}+bX^{T}A^{T}+bb^{T}\right]\\
+ & = & AE\left[XX^{T}\right]A^{T}+AE\left[X\right]b^{T}+bE\left[X^{T}\right]A^{T}+bb^{T}\\
+ & = & AR_{XX}A^{T}+A\mu_{X}b^{T}+bA^{T}\mu_{x}^{T}+bb^{T}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{x}\left(a\right) & = & \frac{1}{\left(2\pi\right)^{\nicefrac{n}{2}}\left|C_{x}\right|^{\nicefrac{1}{2}}}\exp\left\{ -\frac{1}{2}\left(a-\mu_{x}\right)^{T}C_{x}^{-1}\left(a-\mu_{x}\right)\right\} \\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot288}\exp\left\{ -\frac{1}{2}\left(a-0\right)^{T}C_{X}^{-1}\left(a-0\right)\right\} \\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot288}\exp\left\{ -\frac{1}{2}a^{T}C_{X}^{-1}a\right\} \\
+C_{x} & = & \begin{pmatrix}7 & -1 & -3\\
+-1 & 7 & -3\\
+-3 & 3 & 9\end{pmatrix}\\
+C_{x}^{-1} & = & \frac{1}{48}\begin{pmatrix}9 & 3 & 4\\
+3 & 9 & 4\\
+4 & 4 & 8\end{pmatrix}\\
+f_{x}\left(a\right) & = & \frac{1}{\sqrt{8\pi^{3}}\cdot288}\exp\left\{ -\frac{1}{96}a^{T}\begin{pmatrix}9 & 3 & 4\\
+3 & 9 & 4\\
+4 & 4 & 8\end{pmatrix}a\right\} \end{eqnarray*}
+
+\end_inset
+
+אם נסמן 
+\begin_inset Formula $a=\begin{pmatrix}a_{1}\\
+a_{2}\\
+a_{3}\end{pmatrix}$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{x}\left(a\right) & = & \frac{1}{\sqrt{8\pi^{3}}\cdot288}\exp\left\{ -\frac{1}{2}\begin{pmatrix}a_{1}\\
+a_{2}\\
+a_{3}\end{pmatrix}^{T}\begin{pmatrix}7 & -1 & -3\\
+-1 & 7 & -3\\
+-3 & -3 & 9\end{pmatrix}^{-1}\begin{pmatrix}a_{1}\\
+a_{2}\\
+a_{3}\end{pmatrix}\right\} \\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot288}\exp\left\{ -\frac{1}{96}\begin{pmatrix}a_{1}\\
+a_{2}\\
+a_{3}\end{pmatrix}^{T}\begin{pmatrix}9 & 3 & 4\\
+3 & 9 & 4\\
+4 & 4 & 8\end{pmatrix}\begin{pmatrix}a_{1}\\
+a_{2}\\
+a_{3}\end{pmatrix}\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+רוצים לבנות קומבינציה ליניארית של 
+\begin_inset Formula $X_{1},X_{3}$
+\end_inset
+
+ אזי נבנה קודם את הווקטור 
+\begin_inset Formula $\begin{pmatrix}X_{1}\\
+X_{3}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט מהכיתה:
+\end_layout
+
+\begin_layout Standard
+הפילוג של תת-קבוצה של ווקטור אקראי גאוסי זה פילוג גאוסי עם "תת-מטריצת" קווריאנס
+ ותוכלת בעלי אינדקסים מתאימים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}X_{1}\\
+X_{3}\end{pmatrix}\sim N\left(0,\begin{pmatrix}7 & -3\\
+-3 & 9\end{pmatrix}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y & = & \overbrace{\begin{pmatrix}1 & 2\end{pmatrix}}^{A}\begin{pmatrix}X_{1}\\
+X_{3}\end{pmatrix}\\
+E\left[Y\right] & = & A\mu_{X}=0\\
+C_{YY} & = & A\begin{pmatrix}7 & -3\\
+-3 & 9\end{pmatrix}A^{T}\\
+ & = & \begin{pmatrix}1 & 2\end{pmatrix}\begin{pmatrix}7 & -3\\
+-3 & 9\end{pmatrix}\begin{pmatrix}1\\
+2\end{pmatrix}\\
+ & = & \begin{pmatrix}1 & 2\end{pmatrix}\begin{pmatrix}1\\
+15\end{pmatrix}\\
+ & = & 31\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+Y\sim N\left(0,31\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M & = & \begin{pmatrix}\dots v_{1}\dots\\
+\dots v_{2}\dots\\
+\dots v_{3}\dots\end{pmatrix}\\
+ & = & \begin{pmatrix}-1 & -1 & 2\\
+1 & -1 & 0\\
+1 & 1 & 1\end{pmatrix}\\
+\underbar{b} & = & -M\mu_{X}=\underbar{0}\\
+\underbar{Z} & = & \overbrace{\begin{pmatrix}-1 & -1 & 2\\
+1 & -1 & 0\\
+1 & 1 & 1\end{pmatrix}}^{M}\underbar{X}\\
+C_{x} & = & \begin{pmatrix}-1 & -1 & 2\\
+1 & -1 & 0\\
+1 & 1 & 1\end{pmatrix}\begin{pmatrix}7 & -1 & -3\\
+-1 & 7 & -3\\
+-3 & -3 & 9\end{pmatrix}\begin{pmatrix}-1 & 1 & 1\\
+-1 & -1 & 1\\
+2 & 0 & 1\end{pmatrix}\\
+ & = & \begin{pmatrix}-12 & -12 & 24\\
+8 & -8 & 0\\
+3 & 3 & 3\end{pmatrix}\begin{pmatrix}-1 & 1 & 1\\
+-1 & -1 & 1\\
+2 & 0 & 1\end{pmatrix}\\
+ & = & \begin{pmatrix}72 & 0 & 0\\
+0 & 16 & 0\\
+0 & 0 & 9\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יודעים כי כל טרנספורמציה ליניארית של ווקטור משתנים אקראיים גרוסיאנים הוא
+ עדיין ו"א גאוסיאני אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Z & \sim & N\left(0,\begin{pmatrix}72 & 0 & 0\\
+0 & 16 & 0\\
+0 & 0 & 9\end{pmatrix}\right)\\
+f_{Z} & = & \frac{1}{\sqrt{8\pi^{3}}\cdot10368}\exp\left\{ -\frac{1}{2}\begin{pmatrix}z_{1}\\
+z_{2}\\
+z_{3}\end{pmatrix}^{T}\begin{pmatrix}72 & 0 & 0\\
+0 & 16 & 0\\
+0 & 0 & 9\end{pmatrix}^{-1}\begin{pmatrix}z_{1}\\
+z_{2}\\
+z_{3}\end{pmatrix}\right\} \\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot10368}\exp\left\{ -\frac{1}{2\cdot144}\begin{pmatrix}z_{1}\\
+z_{2}\\
+z_{3}\end{pmatrix}^{T}\begin{pmatrix}2 & 0 & 0\\
+0 & 9 & 0\\
+0 & 0 & 16\end{pmatrix}\begin{pmatrix}z_{1}\\
+z_{2}\\
+z_{3}\end{pmatrix}\right\} \\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot10368}\exp\left\{ -\frac{1}{2\cdot144}\left(2z_{1}^{2}+9z_{2}^{2}+16z_{3}^{2}\right)\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{z} & = & f_{z_{1}}\cdot f_{z_{2}}\cdot f_{z_{3}}\\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot10368}\left[\exp\left(-\frac{z_{1}^{2}}{144}\right)+\exp\left(-\frac{9z_{2}^{2}}{2\cdot144}\right)+\exp\left(-\frac{16z_{3}^{2}}{2\cdot144}\right)\right]\\
+ & = & \frac{1}{\sqrt{8\pi^{3}}\cdot10368}\exp\left\{ -\frac{1}{2\cdot144}\left(2z_{1}^{2}+9z_{2}^{2}+16z_{3}^{2}\right)\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X_{1},X_{2},X_{3},X_{4} & \sim & N\left(0,1\right)\\
+\underbar{X} & \sim & N\left(\overbrace{\begin{pmatrix}0\\
+0\\
+0\end{pmatrix}}^{\mu_{X}},\overbrace{\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\end{pmatrix}}^{\Sigma_{XX}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y_{1} & = & X_{1}\\
+Y_{2} & = & \frac{1}{2}X_{2}+\frac{1}{2}X_{1}\\
+Y_{3} & = & \frac{1}{2}X_{3}+\frac{1}{4}X_{2}+\frac{1}{4}X_{1}\\
+Y_{4} & = & \frac{1}{2}X_{4}+\frac{1}{4}X_{3}+\frac{1}{8}X_{2}+\frac{1}{8}X_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y & = & \begin{pmatrix}1 & 0 & 0 & 0\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 0\\
+\nicefrac{1}{4} & \nicefrac{1}{4} & \nicefrac{1}{2} & 0\\
+\nicefrac{1}{8} & \nicefrac{1}{8} & \nicefrac{1}{4} & \nicefrac{1}{2}\end{pmatrix}\underbar{X}\\
+\Sigma_{YY} & = & \begin{pmatrix}1 & 0 & 0 & 0\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 0\\
+\nicefrac{1}{4} & \nicefrac{1}{4} & \nicefrac{1}{2} & 0\\
+\nicefrac{1}{8} & \nicefrac{1}{8} & \nicefrac{1}{4} & \nicefrac{1}{2}\end{pmatrix}\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 1 & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\end{pmatrix}\begin{pmatrix}1 & 0 & 0 & 0\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 0\\
+\nicefrac{1}{4} & \nicefrac{1}{4} & \nicefrac{1}{2} & 0\\
+\nicefrac{1}{8} & \nicefrac{1}{8} & \nicefrac{1}{4} & \nicefrac{1}{2}\end{pmatrix}^{T}\\
+ & = & \begin{pmatrix}1 & 0 & 0 & 0\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 0\\
+\nicefrac{1}{4} & \nicefrac{1}{4} & \nicefrac{1}{2} & 0\\
+\nicefrac{1}{8} & \nicefrac{1}{8} & \nicefrac{1}{4} & \nicefrac{1}{2}\end{pmatrix}\cdot\begin{pmatrix}1 & 0 & 0 & 0\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & 0 & 0\\
+\nicefrac{1}{4} & \nicefrac{1}{4} & \nicefrac{1}{2} & 0\\
+\nicefrac{1}{8} & \nicefrac{1}{8} & \nicefrac{1}{4} & \nicefrac{1}{2}\end{pmatrix}^{\prime}\\
+ & = & \begin{pmatrix}1 & \nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{1}{8}\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{1}{8}\\
+\nicefrac{1}{4} & \nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{3}{16}\\
+\nicefrac{1}{8} & \nicefrac{1}{8} & \nicefrac{3}{16} & \nicefrac{11}{32}\end{pmatrix}\\
+ & = & \frac{1}{32}\cdot\begin{pmatrix}32 & 16 & 8 & 4\\
+16 & 16 & 8 & 4\\
+8 & 8 & 12 & 6\\
+4 & 4 & 6 & 11\end{pmatrix}\\
+E\left[Y\right] & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\Sigma_{YY} & = & \frac{1}{64}\\
+f_{Y}\left(b\right) & = & \frac{1}{\left(2\pi\right)^{\nicefrac{n}{2}}\left|\Sigma_{YY}\right|^{\nicefrac{1}{2}}}\exp\left\{ -\frac{1}{2}\left(b-\mu_{Y}\right)^{T}\Sigma_{YY}^{-1}\left(b-\mu_{x}\right)\right\} \\
+ & = & \frac{1}{\left(2\pi\right)^{\nicefrac{4}{2}}\left|\Sigma_{YY}\right|^{\nicefrac{1}{2}}}\exp\left\{ -\frac{1}{2}b^{T}\Sigma_{YY}^{-1}b\right\} \\
+ & = & \frac{1}{\frac{4\pi^{2}}{8}}\exp\left\{ -\frac{1}{2}b^{T}\begin{pmatrix}2 & -2 & 0 & 0\\
+-2 & 5 & -2 & 0\\
+0 & -2 & 5 & -2\\
+0 & 0 & -2 & 4\end{pmatrix}b\right\} \\
+ & = & \frac{1}{\nicefrac{\pi^{2}}{2}}\exp\left\{ -\frac{1}{2}b^{T}\begin{pmatrix}2 & -2 & 0 & 0\\
+-2 & 5 & -2 & 0\\
+0 & -2 & 5 & -2\\
+0 & 0 & -2 & 4\end{pmatrix}b\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y_{1} & = & X_{1}\\
+Y_{2} & = & \frac{1}{2}X_{2}+\frac{1}{2}X_{1}\\
+Y_{3} & = & \frac{1}{2}X_{3}+\frac{1}{4}X_{2}+\frac{1}{4}X_{1}\\
+Y_{4} & = & \frac{1}{2}X_{4}+\frac{1}{4}X_{3}+\frac{1}{8}X_{2}+\frac{1}{8}X_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\left(Y_{3}\vert Y_{2}\right)$
+\end_inset
+
+ הוא לא תלוי ב 
+\begin_inset Formula $Y_{1}$
+\end_inset
+
+ כי הביטויים 
+\begin_inset Formula $\frac{1}{4}X_{2}+\frac{1}{4}X_{1}=\frac{1}{2}Y_{2}=const$
+\end_inset
+
+ אזי אין בהם אקראיות.
+ כל האקראיות ב 
+\begin_inset Formula $\left(Y_{3}\vert Y_{2}\right)$
+\end_inset
+
+ באה מהמשתנה 
+\begin_inset Formula $X_{3}$
+\end_inset
+
+ ולא מ
+\begin_inset Formula $Y_{1}=X_{1}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+אותו דבר לגבי 
+\begin_inset Formula $\left(Y_{4}\vert Y_{3}\right)$
+\end_inset
+
+ )
+\begin_inset Formula $\frac{1}{4}X_{3}+\frac{1}{8}X_{2}+\frac{1}{8}X_{1}=\frac{1}{2}Y_{3}=const$
+\end_inset
+
+ לכן האקראיות ב 
+\begin_inset Formula $\left(Y_{4}\vert Y_{3}\right)$
+\end_inset
+
+ באה מ 
+\begin_inset Formula $X_{4}$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y_{1} & = & X_{1}\\
+Y_{2} & = & \frac{1}{2}X_{2}+\frac{1}{2}X_{1}\\
+Y_{3} & = & \frac{1}{2}X_{3}+\frac{1}{4}X_{2}+\frac{1}{4}X_{1}\\
+Y_{4} & = & \frac{1}{2}X_{4}+\frac{1}{4}X_{3}+\frac{1}{8}X_{2}+\frac{1}{8}X_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X_{1} & = & Y_{1}\\
+X_{2} & = & 2\left(Y_{2}-\frac{1}{2}X_{1}\right)=2\left(Y_{2}-\frac{1}{2}Y_{1}\right)\\
+X_{3} & = & 2\left(Y_{3}-\frac{1}{4}X_{2}-\frac{1}{4}X_{1}\right)=2\left(Y_{3}-\frac{1}{2}Y_{2}\right)\\
+X_{4} & = & 2\left(Y_{4}-\frac{1}{2}Y_{3}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f_{Y}\left(b\right) & = & f_{Y_{1}}\left(b_{1}\right)\prod_{i=2}^{4}f_{Y_{i}\vert Y_{i-1}}\left(b_{i}\vert b_{i-1}\right)\\
+ & = & f_{Y_{1}}\left(b_{1}\right)\cdot f_{Y_{2}\vert Y_{1}}\left(b_{2}\vert b_{1}\right)\cdot f_{Y_{3}\vert Y_{2}}\left(b_{3}\vert b_{2}\right)\cdot f_{Y_{4}\vert Y_{3}}\left(b_{4}\vert b_{3}\right)\\
+ & = & \begin{matrix}f_{X_{1}}\left(b_{1}\right)\cdot f_{X_{2}}\left(2\left(b_{2}-\frac{1}{2}b_{1}\right)\right)\cdot f_{X_{3}}\left(2\left(b_{3}-\frac{1}{2}b_{2}\right)\right)\cdot\\
+\cdot f_{X_{4}}\left(2\left(b_{4}-\frac{1}{2}b_{3}\right)\right)\end{matrix}\\
+ & = & \begin{matrix}\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{1}{2}b_{1}^{2}\right)\cdot\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{2^{2}}{2}\left(b_{2}-\frac{1}{2}b_{1}\right)^{2}\right)\cdot\\
+\cdot\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{2^{2}}{2}\left(b_{3}-\frac{1}{2}b_{2}\right)^{2}\right)\cdot\frac{1}{\sqrt{2\pi}}\exp\left(-\frac{2^{2}}{2}\left(b_{4}-\frac{1}{2}b_{3}\right)^{2}\right)\end{matrix}\\
+ & = & \frac{1}{4\pi^{2}}\exp\left(-\frac{1}{2}b_{1}^{2}-2\left(b_{2}-\frac{1}{2}b_{1}\right)^{2}-2\left(b_{3}-\frac{1}{2}b_{2}\right)^{2}-2\left(b_{4}-\frac{1}{2}b_{3}\right)^{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

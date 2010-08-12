@@ -1,0 +1,822 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+10
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{n=0}^{\infty}\frac{z^{n}}{n!}\\
+R & = & \lim_{n\to\infty}\frac{a_{n}}{a_{n+1}}\\
+ & = & \lim\frac{\left(\frac{1}{n!}\right)}{\left(\frac{1}{\left(n+1\right)!}\right)}\\
+ & = & \lim_{n\to\infty}n+1\\
+ & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{n=0}^{\infty}\frac{\left(z^{2}\right)^{n}}{n!} & = & \sum_{k=0}^{\infty}\frac{z^{k}}{\left(\frac{k}{2}\right)!}\\
+R & = & \lim_{k\to\infty}\frac{\left(\frac{1}{\left(\nicefrac{k}{2}\right)!}\right)}{\frac{1}{\left(\nicefrac{\left(k+1\right)}{2}\right)!}}\\
+ & = & \lim_{k\to\infty}k+1\\
+ & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{n=0}^{\infty}\frac{z^{n}}{n}\\
+R & = & \lim_{n\to\infty}\frac{\left(\frac{1}{n}\right)}{\left(\frac{1}{n+1}\right)}\\
+ & = & \lim_{n\to\infty}\frac{n+1}{n}\\
+ & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{n=0}^{\infty}\frac{z^{n}}{n}\\
+R & = & \frac{1}{\limsup_{n\to\infty}\sqrt[n]{\left|a_{n}\right|}}\\
+ & = & \frac{1}{\lim n}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \lim_{n\to\infty}\frac{a_{n}}{a_{n+1}}\\
+ & = & \lim_{n\to\infty}\frac{n!}{n^{n}}\cdot\frac{\left(n+1\right)^{n+1}}{\left(n+1\right)!}\\
+ & = & \lim_{n\to\infty}\left(\frac{n+1}{n}\right)^{n}\\
+ & = & \lim\left(1+\frac{1}{n}\right)^{n}\\
+ & = & e\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\frac{1}{\limsup_{n\to\infty}2^{\left(\frac{n}{n!}\right)}}=1\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \frac{1}{\limsup_{n\to\infty}\left(n+2^{n}\right)^{\left(\frac{1}{n}\right)}}\\
+ & = & \frac{1}{\lim_{n\to\infty}2}\\
+ & = & \frac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ח
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{n} & = & \left[1+\left(-1\right)^{n}\right]^{n}\\
+R & = & \frac{1}{\limsup\sqrt[n]{a_{n}}}\\
+ & = & \frac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ט
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sum_{n=0}^{\infty}\sin\left(in\right)z^{n} & = & \frac{1}{2i}\left(\underbrace{e^{-n}z^{n}}_{R_{1}}-\underbrace{e^{n}z^{n}}_{R_{2}}\right)\\
+R_{1} & = & \frac{1}{\limsup\sqrt[n]{e^{-n}}}\\
+ & = & e\\
+R_{2} & = & \frac{1}{\limsup\sqrt[n]{e^{n}}}\\
+ & = & \frac{1}{e}\\
+\min\left(R_{1},R_{2}\right) & = & \frac{1}{e}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+a_{n} & = & n^{k}c_{n}\\
+R & = & \left(\limsup\sqrt[n]{\left|n^{k}c_{n}\right|}\right)^{-1}\\
+ & = & R_{0}\left(\limsup\sqrt[n]{n^{k}}\right)^{-1}\\
+ & = & R_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \left(\limsup\sqrt[n]{\left(2^{n}-1\right)c_{n}}\right)^{-1}\\
+ & = & R_{0}\left(\limsup\sqrt[n]{\left(2^{n}-1\right)c_{n}}\right)^{-1}\\
+ & = & \frac{1}{2}R_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \lim_{n\to\infty}\left|\frac{c_{n}\left(n+1\right)!}{n!c_{n+1}}\right|\\
+ & = & \lim\left|\frac{nc_{n}}{c_{n+1}}\right|\\
+ & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R & = & \lim\left|\frac{n^{n}c_{n}}{\left(n+1\right)^{n+1}c_{n+1}}\right|\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{1} & = & \frac{1}{\lim\sup\sqrt[n]{a_{n}}}\\
+R_{2} & = & \frac{1}{\lim\sup\sqrt[n]{b_{n}}}\\
+R & = & \frac{1}{1\lim\sup\sqrt[n]{a_{n}+b_{n}}}\\
+ & \geq & \frac{1}{\lim\sup2^{\frac{1}{n}}\max\left(\left|a_{n}\right|^{\frac{1}{n}},\left|b_{n}\right|^{\frac{1}{n}}\right)}\\
+ & = & \min\left(R_{1},R_{2}\right)\\
+ & = & R_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לפי אותו חישוב מקבלים תוצאה אפשרית אחת שהיא 
+\begin_inset Formula $R_{1}$
+\end_inset
+
+, עם זאת אם 
+\begin_inset Formula $a_{n}=-b_{n}$
+\end_inset
+
+ אז 
+\begin_inset Formula $R_{1}=R_{2}$
+\end_inset
+
+ ורדיוס ההתכנסות הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\frac{1\cdot1}{\lim\sup\sqrt[n]{\left|a_{n}\right|}\cdot\lim\sup\sqrt[n]{\left|b_{n}\right|}}=R_{1}R_{2}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+R=\frac{1}{\lim\sup\sqrt[n]{\frac{1}{a_{n}}}}=\frac{1}{\left(\frac{1}{\lim\sup\sqrt[n]{a_{n}}}\right)}=\frac{1}{R_{1}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & e^{z}\\
+ & = & \sum_{n=0}^{\infty}\frac{z^{n}}{n!}\\
+R & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \cos\left(z\right)\\
+f^{\prime}\left(z\right) & = & \sin\left(z\right)\\
+f^{\prime\prime}\left(z\right) & = & -\cos\left(z\right)\\
+f^{\prime\prime\prime}\left(z\right) & = & -\sin\left(z\right)\\
+f^{\left(2n+1\right)}\left(0\right) & = & 0\\
+f^{\left(2n\right)}\left(0\right) & = & \left(-1\right)^{n}\\
+f\left(z\right) & = & \sum_{n=0}^{\infty}\frac{\left(-1\right)^{n}z^{2n}}{\left(2n\right)!}\\
+R & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{1}{1-z}\\
+f^{\prime}\left(z\right) & = & \frac{-1}{\left(1-z\right)^{2}}\\
+f^{\left(n\right)}\left(z\right) & = & \frac{\left(-1\right)^{n}n!\left(-1\right)^{n}}{\left(1-z\right)^{n+1}}=\frac{n!}{\left(1-z\right)^{n+1}}\\
+f^{\left(n\right)}\left(0\right) & = & n!\\
+f\left(z\right) & = & \sum_{n=0}^{\infty}\frac{n!}{n!}z^{n}=\sum_{n=0}^{\infty}z^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $r=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \frac{1}{z^{2}-3z+2}\\
+ & = & \frac{1}{\left(z-1\right)\left(z-2\right)}\\
+ & = & \frac{1}{z-2}-\frac{1}{z-1}\\
+f\left(z\right) & = & -\sum_{n=0}^{\infty}\frac{z^{n}}{2^{n+1}}+\sum_{n=0}^{\infty}\frac{z^{n}}{1}\\
+ & = & \sum\left(1-\frac{1}{2^{n+1}}\right)z^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $r=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \int_{0}^{z}e^{z^{\prime^{2}}}dz^{'}\\
+g\left(z\right) & = & e^{z^{2}}\\
+g\left(z\right) & = & \sum_{n=0}^{\infty}\frac{z^{2n}}{n!}\\
+f\left(z\right) & = & \int_{0}^{z}g\left(z^{\prime}\right)dz^{\prime}\\
+ & = & \int_{0}^{z}\sum_{n=0}^{\infty}\frac{z^{\prime^{2n}}}{n!}dz^{\prime}\\
+ & = & \sum_{n=0}^{\infty}\int_{0}^{z}\frac{z^{\prime^{2n}}}{n!}dz^{\prime}\\
+ & = & \sum_{n=0}^{\infty}\frac{z^{2n+1}}{\left(2n+1\right)n!}\\
+R & = & \infty\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sqrt{1-z} & = & \sum_{n=0}^{\infty}\frac{\left(2n\right)!}{\left(1-2n\right)\left(n!\right)^{2}}z^{n}\\
+R & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\log\left(1-z\right) & = & -\sum_{r=0}^{\infty}\frac{z^{n}}{n}\\
+R & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+לא קיימת פונק' שהיא אנליטית בכל המישור אך בעלת רדיוס התכנסות סופי )סביב
+ 
+\begin_inset Formula $0$
+\end_inset
+
+( כיוון שרדיוס ההתכנסות מוגדר להיות הרדיוס המקסימאלי שבו בפונק' אנליטית.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לפונק' 
+\begin_inset Formula $f\left(z\right)=\frac{1}{R-z}$
+\end_inset
+
+ יש רדוס התכנסות 
+\begin_inset Formula $R$
+\end_inset
+
+ סביב אפס.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $\frac{1}{e^{z}}$
+\end_inset
+
+ אנליטית בכל המישור רדיוס ההתכנסות של טור טיילור הוא 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $\tan\left(z\right)$
+\end_inset
+
+ לא מוגדר ב 
+\begin_inset Formula $\pm\frac{\pi}{2}$
+\end_inset
+
+ רדיוס ההתכנסות הוא 
+\begin_inset Formula $R=\frac{\pi}{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\frac{1}{z+a}$
+\end_inset
+
+ לא מוגדר ב 
+\begin_inset Formula $z=a$
+\end_inset
+
+ לכן רדיוס ההתכנסות 
+\begin_inset Formula $R=\left|a\right|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+רדיוס ההתכנסות של שבר פשוט הוא 
+\begin_inset Formula $\min\left(R_{i}\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $R_{i}$
+\end_inset
+
+ הוא הקוטב ה 
+\begin_inset Formula $i$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{z^{2}-2z+2} & = & \frac{1}{\left(z-1\right)\left(z-2\right)}=\underbrace{\frac{1}{z-2}}_{R_{1}}-\underbrace{\frac{1}{z-1}}_{R_{2}}\\
+R_{1} & = & 2\\
+R_{2} & = & 1\\
+\min\left(R_{1},R_{2}\right) & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+הטור של 
+\begin_inset Formula $e^{z^{2}}$
+\end_inset
+
+ יהיה הרכבה של 
+\begin_inset Formula $z^{2}$
+\end_inset
+
+ על 
+\begin_inset Formula $e^{z}$
+\end_inset
+
+ כלומר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{z^{2}}=e^{z}\circ z^{2}=\sum_{n=0}^{\infty}\frac{z^{2n}}{n!}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{0}^{z}e^{z^{2}} & = & \int_{0}^{z}\frac{z^{2n}}{n!}\\
+ & = & \frac{1}{2n+1}\\
+ & = & \frac{1}{2\pi+1}\sum_{n=0}^{\infty}\frac{z^{2n+1}}{n!}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ז
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\ln\left(1-z\right) & = & -\int_{0}^{z}\frac{1}{1-z}\\
+ & = & -\int_{0}^{z}\sum_{n=0}^{\infty}z^{n}\\
+ & = & -\frac{1}{n+1}\sum z^{n+1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sqrt{1-z} & = & ?\\
+f^{\left(n\right)}\left(0\right) & = & -\frac{1}{2}\cdot\frac{3}{2}\cdot\frac{5}{2}\cdot\frac{7}{2}\dots\\
+\sqrt{1-z} & = & \sum_{n=0}^{\infty}\frac{\left(2n\right)!}{\left(1-2n\right)\left(n!\right)^{2}4^{n}}z^{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

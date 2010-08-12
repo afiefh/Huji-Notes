@@ -1,0 +1,426 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(x_{n}\right) & = & \begin{cases}
+1 & \nicefrac{1}{2}\\
+0 & \nicefrac{1}{2}\end{cases}\\
+f_{x_{1}x_{2}\dots x_{n}}\left(a_{1},\dots,a_{n}\right) & = & f_{x_{1+b}x_{2+b}\dots x_{n+b}}\left(a_{1},\dots,a_{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אין תלות באינדקס כאן ולכן 
+\begin_inset Formula $x_{n}\left(i\right)$
+\end_inset
+
+ סטציונארי במובן הצר.
+ כיוון ש
+\begin_inset Formula $x$
+\end_inset
+
+ בכל אינדקס מתפלג ברנולי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(i\right)=\begin{cases}
+x\left(i\right) & i\mod3\neq0\\
+\left[x\left(i-1\right)+x\left(i-2\right)\right]\mod2 & i\mod3=0\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(7\right) & = & x\left(7\right)\\
+y\left(8\right) & = & x\left(8\right)\\
+y\left(9\right) & = & \left(x\left(7\right)+x\left(8\right)\right)\mod2\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מכאן ש 
+\begin_inset Formula $y\left(9\right)$
+\end_inset
+
+ תלוי ב 
+\begin_inset Formula $y\left(8\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $y\left(7\right)$
+\end_inset
+
+ כלומר בהנתן 
+\begin_inset Formula $y\left(8\right),y\left(7\right)$
+\end_inset
+
+ אנחנו יכולים לחשב את 
+\begin_inset Formula $y\left(9\right)$
+\end_inset
+
+ בוודאות.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(2\right) & = & x\left(2\right)\\
+y\left(3\right) & = & \left(x\left(2\right)+x\left(1\right)\right)\mod2\\
+y\left(4\right) & = & x\left(4\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאן אם ידועים 
+\begin_inset Formula $y\left(4\right)$
+\end_inset
+
+ עדיין בהסתברות 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ יהיה 
+\begin_inset Formula $y\left(3\right)$
+\end_inset
+
+ שווה אפס וגם בלי ידיעת 
+\begin_inset Formula $y\left(1\right),y\left(2\right)$
+\end_inset
+
+ נקבל כי 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+y\left(3\right)=\begin{cases}
+1 & \frac{1}{2}\\
+0 & \frac{1}{2}\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+)כי בהסתברות 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מתקיים כי 
+\begin_inset Formula $\left(x\left(2\right)+x\left(3\right)\right)=0\mod2$
+\end_inset
+
+ ובהסתברות 
+\begin_inset Formula $\frac{1}{2}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left(x\left(2\right)+x\left(3\right)\right)=1\mod2$
+\end_inset
+
+(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f_{y_{1}y_{2}y_{3}}\left(b_{1},b_{2},b_{3}\right)\neq f_{y_{7}y_{8}y_{9}}\left(b_{1},b_{2},b_{3}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\begin_inset Formula $y$
+\end_inset
+
+ אינו סטציונארי במובן הצר.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[y\left(i\right)\right] & = & \begin{cases}
+\frac{1}{2} & i\mod3\neq0\\
+\begin{matrix}\frac{1}{4}\left(1+1\right)\mod2+\frac{1}{4}\left(1+0\right)\mod2+\\
++\frac{1}{4}\left(0+1\right)\mod2+\frac{1}{4}\left(0+0\right)\mod2\end{matrix} & i\mod3=0\end{cases}\\
+ & = & \begin{cases}
+\frac{1}{2} & i\mod3\neq0\\
+\frac{1}{2} & i\mod3=0\end{cases}\\
+ & = & \frac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $E\left[y\left(i\right)\right]$
+\end_inset
+
+ לא תלוי באינדקס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{cov}\left(m,m+b\right) & = & E\left[y\left(m\right)y\left(m+b\right)\right]\\
+ & = & E\left[y\left(m\right)\right]E\left[y\left(m+b\right)\right]\\
+ & = & \frac{1}{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+S_{x}\left(f\right) & = & \sigma^{2}\\
+R_{x}\left(\tau\right) & = & \delta\left(\tau\right)\sigma^{2}\\
+S_{y}\left(f\right) & = & S_{x}\left(f\right)\left|H\left(f\right)\right|^{2}\\
+ & = & \frac{\sigma^{2}}{1+4\pi^{2}f^{2}}\\
+R_{y}\left(\tau\right) & = & \int_{-\infty}^{\infty}S_{y}\left(f\right)e^{j2\pi f\tau}df\\
+ & = & \sigma^{2}\int_{-\infty}^{\infty}\frac{1}{1+4\pi^{2}f^{2}}e^{j2\pi f\tau}df\\
+\frac{1}{2}e^{-\left|\tau\right|} & = & \mathcal{F}^{-1}\left(\frac{1}{1+4\pi^{2}f^{2}}\right)\\
+R_{y}\left(\tau\right) & = & \frac{\sigma^{2}}{2}e^{-\left|\tau\right|}\\
+y & = & x*h\\
+R_{y,x}\left(\tau\right) & = & \sigma^{2}h\left(\tau\right)\\
+ & = & \sigma^{2}\mathcal{F}^{-1}\left(H\left(f\right)\right)\\
+ & = & \sigma^{2}e^{-\tau}\theta\left(t\right)\\
+S_{y,f} & = & \mathcal{F}\left(\left(R_{x}*h\right)\left(\tau\right)\right)\\
+ & = & S_{x}\left(f\right)\cdot H\left(f\right)=\frac{\sigma^{2}}{1+2\pi jf}\\
+var\left(y\right) & = & R_{y}\left(0\right)-0\\
+ & = & \frac{\sigma^{2}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $x$
+\end_inset
+
+ ו 
+\begin_inset Formula $y$
+\end_inset
+
+ הם 
+\begin_inset Formula $WWS$
+\end_inset
+
+)לא הוכח אבל זה נובע מהנתון והסבר בתרגול( והקרוס קורלציה ביניהם תלוייה רק
+ בהפרש הזמנים 
+\begin_inset Formula $\tau$
+\end_inset
+
+ אזי הם 
+\begin_inset Formula $WSS$
+\end_inset
+
+ במשותף.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+R_{y}\left(\tau\right) & = & E\left[y\left(t\right)\cdot y\left(t+\tau\right)\right]\\
+ & = & E\left[\left(x\left(t+a\right)-x\left(t-a\right)\right)\left(x\left(t+a+\tau\right)x\left(t-a+\tau\right)\right)\right]\\
+ & = & \begin{matrix}E\left[x\left(t+a\right)x\left(t+a+\tau\right)\right]+E\left[x\left(t-a\right)x\left(t-a+\tau\right)\right]+\\
+-E\left[x\left(t+a\right)x\left(t-a+\tau\right)\right]-E\left[x\left(t-a\right)x\left(t+a+\tau\right)\right]\end{matrix}\\
+ & = & \begin{matrix}R_{x}\left(\tau\right)+R_{x}\left(\tau\right)-\overbrace{E\left[x\left(t^{\prime}\right)x\left(t^{\prime}+\left(\tau-2\alpha\right)\right)\right]}^{t+w=t^{\prime}}+\\
+-E\left[x\left(t^{\prime\prime}\right)x\left(t^{\prime\prime}+\left(\tau+2a\right)\right)\right]\end{matrix}\\
+ & = & 2R_{x}\left(\tau\right)-\left(R_{x}\left(\tau-2a\right)+R_{x}\left(\tau+2a\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תגובת ההלם 
+\begin_inset Formula $h\left(t\right)$
+\end_inset
+
+ תהיה:
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\overline{h\left(t\right)}=h\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+h\left(t\right) & = & \delta\left(t+a\right)-\delta\left(t-a\right)\\
+H\left(f\right) & = & \overline{\mathcal{F}\left[\overline{h\left(t\right)}\right]}\\
+ & = & -i2\sin\left(2a\pi f\right)\\
+S_{y}\left(f\right) & = & \left|H\left(f\right)\right|^{2}\cdot S_{x}\left(f\right)=4\sin^{2}\left(2a\pi f\right)S_{x}\left(f\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

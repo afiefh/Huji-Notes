@@ -1,0 +1,9 @@
+#!/bin/usr/env octave
+
+t=0:0.01:3*pi;
+y=abs(sin(t));
+
+plot(t,y);
+grid("on");
+
+print -dsvg c14d2.svg

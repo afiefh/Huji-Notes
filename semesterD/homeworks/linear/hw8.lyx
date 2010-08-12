@@ -1,0 +1,633 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw8.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+המעגל החשמלי
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\dot{x}_{1}\\
+\dot{x}_{2}\end{pmatrix}=\begin{pmatrix}a & b\\
+c & d\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}+\begin{pmatrix}e\\
+f\end{pmatrix}u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים למצא את הקבועים 
+\begin_inset Formula $a,b,c,d,e,f$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1} & = & v_{c}\\
+\frac{\partial x_{1}}{\partial t} & = & \frac{1}{c}\cdot i_{c}\left(t\right)\\
+\mbox{KCL: }i_{c} & = & i_{R_{1}}-i_{R_{2}}-\overbrace{i_{R_{3}}}^{x_{2}}\\
+i_{R_{2}} & = & \frac{v_{R_{2}}}{R_{2}}=\frac{v_{c}}{R_{2}}=\frac{x_{1}}{R_{2}}\\
+i_{R_{1}} & = & \frac{v_{R_{1}}}{R_{1}}\\
+\mbox{KVL: }u & = & v_{R_{1}}+v_{C}=v_{R_{1}}+x_{1}\\
+v_{R_{1}} & = & u-x_{1}\\
+i_{R_{1}} & = & \frac{u-x_{1}}{R_{1}}\\
+i_{c} & = & \frac{u-x_{1}}{R_{1}}-\frac{x_{1}}{R_{2}}-x_{2}\\
+\frac{\partial x_{1}}{\partial t} & = & \frac{1}{cR_{1}}u-\frac{1}{cR_{1}}x_{1}-\frac{1}{cR_{2}}x_{1}-\frac{1}{c}x_{2}\\
+ & = & \frac{1}{cR_{1}}u+\left(-\frac{1}{cR_{1}}-\frac{1}{cR_{2}}\right)x_{1}-\frac{1}{c}x_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים במטריצה ומקבלים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\dot{x}_{1}\\
+\dot{x}_{2}\end{pmatrix}=\begin{pmatrix}-\frac{1}{cR_{1}}-\frac{1}{cR_{2}} & -\frac{1}{c}\\
+c & d\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}+\begin{pmatrix}\frac{1}{cR_{1}}\\
+f\end{pmatrix}u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמשיך למצא את המשוואה של 
+\begin_inset Formula $\frac{\partial}{\partial t}x_{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{2} & = & i_{L}\\
+\frac{\partial x_{2}}{\partial t} & = & \frac{1}{L}v_{L}\\
+\mbox{KVL: }u & = & v_{R_{1}}+v_{R_{3}}+v_{L}\\
+v_{L} & = & u-v_{R_{1}}-v_{R_{3}}\\
+v_{R_{1}} & = & u-x_{1}\\
+v_{R_{3}} & = & i_{R_{3}}R_{3}=i_{L}R_{3}=x_{2}R_{3}\\
+v_{L} & = & u-u+x_{1}-x_{2}R_{3}\\
+\frac{\partial x_{2}}{\partial t} & = & \frac{1}{L}x_{1}-\frac{R_{3}}{L}x_{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\dot{x}_{1}\\
+\dot{x}_{2}\end{pmatrix}=\begin{pmatrix}-\frac{1}{cR_{1}}-\frac{1}{cR_{2}} & -\frac{1}{c}\\
+\frac{1}{L} & -\frac{R_{3}}{L}\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\end{pmatrix}+\begin{pmatrix}\frac{1}{cR_{1}}\\
+0\end{pmatrix}u\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y & = & v_{L}\\
+y & = & L\cdot\frac{\partial x_{2}}{\partial t}\\
+y & = & L\left(\frac{1}{L}x_{1}-\frac{R_{3}}{L}x_{2}\right)\\
+y & = & x_{1}-R_{2}x_{2}\\
+\frac{\partial y}{\partial t} & = & \frac{\partial x_{1}}{\partial t}-R_{2}\frac{\partial x_{2}}{\partial t}\\
+\frac{\partial y}{\partial t} & = & \frac{1}{cR_{1}}u+\left(-\frac{1}{cR_{1}}-\frac{1}{cR_{2}}\right)x_{1}-\frac{1}{c}x_{2}-\frac{R_{2}}{L}y\\
+\frac{\partial^{2}y}{\partial t} & = & \frac{1}{cR_{1}}\frac{\partial u}{\partial t}+\left(-\frac{1}{cR_{1}}-\frac{1}{cR_{2}}\right)\frac{\partial x_{1}}{\partial t}-\frac{1}{c}\frac{\partial x_{2}}{\partial t}-\frac{R_{2}}{L}\frac{\partial y}{\partial t}\\
+\frac{\partial^{2}y}{\partial t} & = & \frac{1}{cR_{1}}\frac{\partial u}{\partial t}+\left(-\frac{1}{cR_{1}}-\frac{1}{cR_{2}}\right)\frac{\partial x_{1}}{\partial t}-\frac{1}{Lc}y-\frac{R_{2}}{L}\frac{\partial y}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשתמש ב 
+\begin_inset Formula $\mbox{KVL}$
+\end_inset
+
+ עבור המעגל החיצוני:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u & = & v_{R_{1}}+v_{R_{3}}+\overbrace{v_{L}}^{y}\\
+v_{R_{1}} & = & u-v_{R_{3}}-y\\
+v_{R_{1}} & = & u-i_{L}R_{3}-y\\
+v_{R_{1}} & = & u-x_{2}R_{3}-y\\
+u & = & v_{R_{1}}+x_{1}\\
+x_{1} & = & u-v_{R_{1}}\\
+x_{1} & = & u-\left(u-x_{2}R_{3}-y\right)\\
+x_{1} & = & u-u+x_{2}R_{3}+y\\
+\frac{\partial x_{1}}{\partial t} & = & R_{3}\frac{\partial x_{2}}{\partial t}+\frac{\partial y}{\partial t}\\
+\frac{\partial x_{1}}{\partial t} & = & \frac{R_{3}}{L}y+\frac{\partial y}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מציבים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}y}{\partial t} & = & \frac{1}{cR_{1}}\frac{\partial u}{\partial t}+\left(-\frac{1}{cR_{1}}-\frac{1}{cR_{2}}\right)\frac{\partial x_{1}}{\partial t}-\frac{1}{Lc}y-\frac{R_{2}}{L}\frac{\partial y}{\partial t}\\
+\frac{\partial^{2}y}{\partial t} & = & \frac{1}{cR_{1}}\frac{\partial u}{\partial t}+\left(-\frac{1}{cR_{1}}-\frac{1}{cR_{2}}\right)\left(\frac{R_{3}}{L}y+\frac{\partial y}{\partial t}\right)-\frac{1}{Lc}y-\frac{R_{2}}{L}\frac{\partial y}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{L}\left[x\left(t\right)\right]=\int_{0}^{\infty}x\left(t\right)e^{-st}dt\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+נוכים לכל 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+ באינדוקציה.
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(x\left(t\right)\right) & = & \int_{0}^{\infty}x\left(t\right)e^{-st}dt\\
+\mathcal{L}\left(x\left(t\right)\right) & = & \overbrace{\left[\frac{x\left(t\right)e^{-st}}{-s}\right]-\int_{0}^{\infty}\frac{e^{-st}}{-s}x^{\prime}\left(t\right)dt}^{\mbox{Integration by parts}}\\
+\mathcal{L}\left(x\left(t\right)\right) & = & \frac{x\left(0\right)}{-s}+\frac{1}{s}\mathcal{L}\left(x^{\prime}\left(t\right)\right)\\
+\mathcal{L}\left(x^{\prime}\left(t\right)\right) & = & s\cdot\mathcal{L}\left(x\left(t\right)\right)+x\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח נכונות הטענה עבור 
+\begin_inset Formula $j=n$
+\end_inset
+
+ כלומר 
+\begin_inset Formula $\mathcal{L}\left(\frac{\partial^{t}x}{\partial t^{t}}\right)=s^{t}\mathcal{L}\left(x\right)-\sum_{k=1}^{t}s^{t-k}x^{\left(k-1\right)}\left(0\right)$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $j+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(\left(\frac{\partial^{t}x}{\partial t}\right)^{\prime}\right) & \overset{?}{=} & s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j+1}s^{j+1-k}x^{\left(k-1\right)}\left(0\right)\\
+s\cdot\mathcal{L}\left(\frac{\partial^{t}x}{\partial t}\right)+\frac{\partial^{t}x}{\partial t}\left(0\right) & \overset{?}{=} & s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j+1}s^{j+1-k}x^{\left(k-1\right)}\left(0\right)\\
+s\cdot\left(s^{j}\mathcal{L}\left(x\right)-\sum_{k=1}^{j}s^{j-k}x^{\left(k-1\right)}\left(0\right)\right)+\frac{\partial^{t}x}{\partial t}\left(0\right) & \overset{?}{=} & s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j+1}s^{j+1-k}x^{\left(k-1\right)}\left(0\right)\\
+s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j}s^{j+1-k}x^{\left(k-1\right)}\left(0\right)+\frac{\partial^{t}x}{\partial t}\left(0\right) & \overset{?}{=} & s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j+1}s^{j+1-k}x^{\left(k-1\right)}\left(0\right)\\
+s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j+1}s^{j+1-k}x^{\left(k-1\right)}\left(0\right) & \overset{\checkmark}{=} & s^{j+1}\mathcal{L}\left(x\right)-\sum_{k=1}^{j+1}s^{j+1-k}x^{\left(k-1\right)}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+מתיחות בזמן 
+\begin_inset Formula $x\left(at\right)$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $a>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(x\left(at\right)\right) & = & \int_{0}^{\infty}x\left(at\right)e^{-st}dt\\
+ & = & \int_{0}^{\infty}\frac{a}{a}\cdot x\left(at\right)e^{-\frac{a}{a}\cdot st}dt\\
+ & = & \frac{1}{a}\int_{0}^{\infty}x\left(at\right)e^{-\frac{s}{a}\cdot\left(at\right)}d\left(at\right)\\
+ & = & \frac{1}{a}\int_{0}^{\infty}xt^{\prime}e^{-\left(\frac{s}{a}\right)\cdot t^{\prime}}dt^{\prime}\\
+ & = & \frac{1}{a}X\left(\frac{s}{a}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(x\left(t\right)e^{s_{0}t}\right) & = & \int_{0}^{\infty}x\left(t\right)e^{s_{0}t}e^{-st}dt\\
+ & = & \int_{0}^{\infty}x\left(t\right)e^{s_{0}t-st}dt\\
+ & = & \int_{0}^{\infty}x\left(t\right)e^{\left(s_{0}-s\right)t}dt\\
+ & = & X\left(s-s_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(-tx\left(t\right)\right) & = & \int_{0}^{\infty}-tx\left(t\right)e^{-st}dt\\
+ & = & \int_{0}^{\infty}x\left(t\right)\left(-te^{-st}\right)dt\\
+ & = & \int_{0}^{\infty}x\left(t\right)\frac{\partial}{\partial s}e^{-st}dt\\
+ & = & \frac{\partial}{\partial s}\int_{0}^{\infty}x\left(t\right)e^{-st}dt\\
+ & = & \frac{\partial}{\partial s}X\left(s\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(\delta\left(t\right)\right) & = & \int_{0^{-}}^{\infty}\delta\left(t\right)e^{-st}dt\\
+ & = & e^{-st}\vert_{t=0}\\
+ & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(\cos\left(\omega t\right)\theta\left(t\right)\right) & = & \int_{0}^{\infty}\cos\left(\omega t\right)\theta\left(t\right)e^{-st}dt\\
+ & = & \int_{0}^{\infty}\frac{e^{i\omega t}+e^{-i\omega t}}{2}e^{-st}\theta\left(t\right)dt\\
+ & = & \frac{1}{2}\int_{0}^{\infty}e^{i\omega t}e^{-st}\theta\left(t\right)dt+\frac{1}{2}\int_{0}^{\infty}e^{-i\omega t}e^{-st}\theta\left(t\right)dt\\
+ & = & \frac{1}{2}\left(\frac{1}{s-i\omega}+\frac{1}{s+i\omega}\right)\\
+ & = & \frac{1}{2}\frac{s+i\omega+s-i\omega}{\left(s-i\omega\right)\left(s-i\omega\right)}\\
+ & = & \frac{1}{2}\cdot\frac{2s}{s^{2}+\omega^{2}}\\
+ & = & \frac{s}{s^{2}+\omega^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(\cos\left(\omega t-\phi\right)\theta\left(t\right)\right) & = & \int_{0}^{\infty}\cos\left(\omega t-\phi\right)\theta\left(t\right)e^{-st}dt\\
+ & = & \int_{0}^{\infty}\left(\cos\left(\omega t\right)\cos\left(\phi\right)+\sin\left(\omega t\right)\sin\left(\phi\right)\right)\theta\left(t\right)e^{-st}dt\\
+ & = & \int_{0}^{\infty}\cos\left(\omega t\right)\cos\left(\phi\right)\theta\left(t\right)e^{-st}dt+\int_{0}^{\infty}\sin\left(\omega t\right)\sin\left(\phi\right)\theta\left(t\right)e^{-st}dt\\
+ & = & \cos\left(\phi\right)\int_{0}^{\infty}\cos\left(\omega t\right)\theta\left(t\right)e^{-st}dt+\sin\left(\phi\right)\int_{0}^{\infty}\sin\left(\omega t\right)\theta\left(t\right)e^{-st}dt\\
+ & = & \frac{s\cos\left(\phi\right)}{s^{2}+\omega^{2}}+\sin\left(\phi\right)\int_{0}^{\infty}\sin\left(\omega t\right)\theta\left(t\right)e^{-st}dt\\
+ & = & \frac{s\cos\left(\phi\right)}{s^{2}+\omega^{2}}+\sin\left(\phi\right)\int_{0}^{\infty}\frac{e^{i\omega t}-e^{-i\omega t}}{2i}\theta\left(t\right)e^{-st}dt\\
+ & = & \frac{s\cos\left(\phi\right)}{s^{2}+\omega^{2}}+\frac{\sin\left(\phi\right)}{2i}\left(\int_{0}^{\infty}e^{i\omega t}\theta\left(t\right)e^{-st}dt-\int_{0}^{\infty}e^{-i\omega t}\theta\left(t\right)e^{-st}dt\right)\\
+ & = & \frac{s\cos\left(\phi\right)}{s^{2}+\omega^{2}}+\frac{\sin\left(\phi\right)}{2i}\left(\frac{1}{s-i\omega}-\frac{1}{s+i\omega}\right)\\
+ & = & \frac{s\cos\left(\phi\right)}{s^{2}+\omega^{2}}+\frac{\sin\left(\phi\right)}{2i}\frac{s+i\omega-s+i\omega}{\left(s-i\omega\right)\left(s+i\omega\right)}\\
+ & = & \frac{s\cos\left(\phi\right)}{s^{2}+\omega^{2}}+\frac{\omega\sin\left(\phi\right)}{s^{2}+\omega^{2}}\\
+ & = & \frac{s\cos\left(\phi\right)+\omega\sin\left(\phi\right)}{s^{2}+\omega^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+משתמשים בתכונה 
+\begin_inset Formula $\mathcal{L}\left(t^{n}f\left(t\right)\right)=\left(-1\right)^{n}F^{\left(n\right)}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(t^{n}e^{\lambda t}\theta\left(t\right)\right) & = & \left(-1\right)^{n}\frac{\partial^{n}}{\partial s^{n}}\mathcal{L}\left(e^{\lambda t}\theta\left(t\right)\right)\\
+ & = & \left(-1\right)^{n}\left(\frac{\partial^{n}}{\partial s^{n}}\frac{1}{s-\lambda}\right)\\
+ & = & \left(-1\right)^{n}\left(\frac{\partial^{n}}{\partial s^{n}}\frac{1}{s-\lambda}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להוכיח כי 
+\begin_inset Formula $\frac{\partial^{n}}{\partial s^{n}}\frac{1}{s-\lambda}=\left(-1\right)^{n}\frac{n!}{\left(s-\lambda\right)^{n+1}}$
+\end_inset
+
+.
+ נוכיח באינדוקציה עבור 
+\begin_inset Formula $n\in\mathbb{N}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בדיקה עבור 
+\begin_inset Formula $n=1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial}{\partial s}\frac{1}{s-\lambda} & \overset{?}{=} & -\frac{1}{\left(s-\lambda\right)^{2}}\\
+\frac{\partial}{\partial\left(s-\lambda\right)}\frac{1}{\left(s-\lambda\right)} & \overset{?}{=} & -\frac{1}{\left(s-\lambda\right)^{2}}\\
+\frac{\partial}{\partial s^{\prime}}\frac{1}{s^{\prime}} & \overset{?}{=} & -\frac{1}{\left(s-\lambda\right)^{2}}\\
+-\frac{1}{s^{\prime^{2}}} & \overset{?}{=} & -\frac{1}{\left(s-\lambda\right)^{2}}\\
+-\frac{1}{\left(s-\lambda\right)^{2}} & \overset{\checkmark}{=} & -\frac{1}{\left(s-\lambda\right)^{2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח כי הטענה נכונה עבור 
+\begin_inset Formula $k=n$
+\end_inset
+
+ ונוכיח עבור 
+\begin_inset Formula $k+1$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{k+1}}{\partial s^{k+1}}\frac{1}{s-\lambda} & \overset{?}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\\
+\frac{\partial}{\partial s}\left(\frac{\partial^{k}}{\partial s^{k}}\frac{1}{s-\lambda}\right) & \overset{?}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\\
+\frac{\partial}{\partial s}\left(\left(-1\right)^{k}\frac{k!}{\left(s-\lambda\right)^{k+1}}\right) & \overset{?}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\\
+\left(-1\right)^{k}k!\frac{\partial}{\partial s^{\prime}}\frac{1}{\left(s^{\prime}\right)^{k+1}} & \overset{?}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\\
+\left(-1\right)^{k}k!\frac{k+1}{-\left(s^{\prime}\right)^{k+2}} & \overset{?}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\\
+\left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s^{\prime}\right)^{k+2}} & \overset{?}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\\
+\left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}} & \overset{\checkmark}{=} & \left(-1\right)^{k+1}\frac{\left(k+1\right)!}{\left(s-\lambda\right)^{k+2}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

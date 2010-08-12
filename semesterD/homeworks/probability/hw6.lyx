@@ -1,0 +1,514 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $X\sim\exp\left(\lambda\right)$
+\end_inset
+
+ הוכח ש 
+\begin_inset Formula $aX\sim\exp\left(\frac{\lambda}{a}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Y=aX$
+\end_inset
+
+ ואז רוצים להוכיח כי 
+\begin_inset Formula $Y\sim\exp\left(\frac{\lambda}{a}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב כי 
+\begin_inset Formula $E\left(Y\right)=E\left(aX\right)=aE\left(X\right)=\frac{a}{\lambda}$
+\end_inset
+
+ ולכן 
+\begin_inset Formula $E\left(Y\right)=\frac{a}{\lambda}$
+\end_inset
+
+ ומכיוון ש 
+\begin_inset Formula $x\sim\exp$
+\end_inset
+
+ אז 
+\begin_inset Formula $Y\sim\exp\left(\lambda^{*}\right)$
+\end_inset
+
+ כאר 
+\begin_inset Formula $\lambda^{*}=\frac{1}{\left(\frac{a}{\lambda}\right)}=\frac{\lambda}{a}$
+\end_inset
+
+.
+ משל.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\hat{\theta}_{a}$
+\end_inset
+
+ הוא האומד שלנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(\hat{\theta}_{\alpha}\right)-\theta & \overset{?}{=} & 0\\
+E\left(\alpha\hat{\theta}_{1}+\left(1-\alpha\right)\hat{\theta}_{2}\right)-\theta & \overset{?}{=} & 0\\
+\alpha E\left(\hat{\theta}_{1}\right)+\left(1-\alpha\right)E\left(\hat{\theta}_{2}\right)-\theta & \overset{?}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כיוון ש 
+\begin_inset Formula $\hat{\theta}_{1},\hat{\theta}_{2}$
+\end_inset
+
+ אומדים בלתי מוטעים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(E\left(\hat{\theta}_{1}\right)-\theta\right)^{2} & = & 0\\
+E\left(\hat{\theta}_{1}\right) & = & \theta\\
+\left(E\left(\hat{\theta}_{2}\right)-\theta\right)^{2} & = & 0\\
+E\left(\hat{\theta}_{2}\right) & = & \theta\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha E\left(\hat{\theta}_{1}\right)+\left(1-\alpha\right)E\left(\hat{\theta}_{2}\right)-\theta & = & \alpha\theta+\theta-\alpha\theta-\theta\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי זה אומד בלתי מוטעה
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{var}\left(\hat{\theta}_{\alpha}\right) & = & \alpha^{2}\mbox{var}\left(\hat{\theta}_{1}\right)+\left(1-\alpha\right)^{2}\mbox{var}\left(\hat{\theta}_{2}\right)+2\alpha\left(1-\alpha\right)\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)\\
+\frac{\partial\mbox{var}\left(\hat{\theta}_{\alpha}\right)}{\partial\alpha} & = & 2\alpha\mbox{var}\left(\hat{\theta}_{1}\right)-2\left(1-\alpha\right)\mbox{var}\left(\hat{\theta}_{2}\right)+2\left(1-\alpha\right)\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)-2\alpha\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)\\
+0 & = & 2\alpha\mbox{var}\left(\hat{\theta}_{1}\right)-2\left(1-\alpha\right)\mbox{var}\left(\hat{\theta}_{2}\right)+2\left(1-\alpha\right)\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)-2\alpha\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)\\
+\alpha & = & \frac{2\left(\mbox{var}\left(\hat{\theta}_{2}\right)-\mbox{cov}\left(\hat{\theta}_{1}\right)\right)}{\mbox{var}\left(\hat{\theta}_{1}\right)-2\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)+\mbox{var}\left(\hat{\theta}_{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משל
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha_{min}=1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{var\left(\hat{\theta}_{1}\right)-2\ensuremath{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)+var}\left(\hat{\theta}_{2}\right) & = & var\left(\hat{\theta}_{2}\right)-cov\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)\\
+var\left(\hat{\theta}_{1}\right) & = & \mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+ אז 
+\begin_inset Formula $\hat{\theta}_{\alpha}=\hat{\theta}_{1}$
+\end_inset
+
+ כלומר אותו אומד של 
+\begin_inset Formula $\hat{\theta}_{1}$
+\end_inset
+
+ ולכן אני לא מוכן לשלם שום דבר עבור 
+\begin_inset Formula $\alpha=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+מסעיף ג קיבלנו כי 
+\begin_inset Formula $\mbox{var}\left(\hat{\theta}_{1}\right)=\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\rho\left(\hat{\theta}_{1},\hat{\theta}_{2}\right) & = & \frac{\mbox{cov}\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)}{\sqrt{\mbox{var}\left(\hat{\theta}_{1}\right)\mbox{var}\left(\hat{\theta}_{2}\right)}}\\
+ & = & \frac{\mbox{var}\left(\hat{\theta}_{1}\right)}{\sqrt{\mbox{var}\left(\hat{\theta}_{1}\right)\mbox{var}\left(\hat{\theta}_{2}\right)}}\\
+ & = & \sqrt{\frac{\mbox{var}\left(\hat{\theta}_{1}\right)}{\mbox{var}\left(\hat{\theta}_{2}\right)}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\hat{\theta}_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\hat{\theta}_{2}$
+\end_inset
+
+ הם בלתי תלויים אז 
+\begin_inset Formula $cov\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)=0$
+\end_inset
+
+.
+ ולכן מהביטוי שקיבלנו עבור 
+\begin_inset Formula $\alpha_{min}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha_{min} & = & \frac{var\left(\hat{\theta_{2}}\right)-cov\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)}{var\left(\hat{\theta}_{1}\right)-2cov\left(\hat{\theta}_{1},\hat{\theta}_{2}\right)+var\left(\hat{\theta}_{2}\right)}\\
+\alpha_{min} & = & \frac{var\left(\hat{\theta}_{2}\right)}{var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta}_{2}\right)}\\
+var\left(\hat{\theta}_{\alpha_{min}}\right) & = & \left[\frac{var\left(\hat{\theta}_{2}\right)}{var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta}\right)}\right]^{2}+\left[1-\frac{var\left(\hat{\theta}_{2}\right)}{var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta}_{2}\right)}\right]^{2}var\left(\hat{\theta}_{2}\right)+0\\
+ & = & \left[\frac{var\left(\hat{\theta}_{2}\right)}{var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta}_{2}\right)}\right]var\left(\hat{\theta}_{1}\right)+\left[\frac{var\left(\hat{\theta}_{1}\right)}{var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta_{2}}\right)}\right]^{2}var\left(\hat{\theta}_{2}\right)\\
+ & = & \frac{var\left(\theta_{1}\right)\left(var^{2}\left(\hat{\theta}_{2}\right)+var\left(\hat{\theta}_{1}\right)var\left(\theta_{2}\right)\right)}{\left[var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta}_{2}\right)\right]^{2}}\\
+ & = & \frac{var\left(\hat{\theta}_{1}\right)var\left(\hat{\theta_{2}}\right)}{var\left(\hat{\theta}_{1}\right)+var\left(\hat{\theta}_{2}\right)}\\
+ & = & \left(\frac{1}{var\left(\theta_{1}\right)}+\frac{1}{var\left(\hat{\theta}_{2}\right)}\right)^{-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה 
+\numeric on
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{\theta} & = & 2\overline{X}+\overline{Y}\\
+\min\left(MSE\left(\hat{\theta}\right)\right) & = & \min_{\theta}\left(var\left(\hat{\theta}\right)+0\right)\\
+var\left(\hat{\theta}\right) & = & 4var\left(\overline{x}\right)+var\left(\overline{y}\right)\\
+ & = & 4\frac{\sigma^{2}}{k}+\frac{\sigma^{2}}{m-k}\\
+\frac{\partial}{\partial k}\left(\frac{4\sigma^{2}}{k}+\frac{\sigma^{2}}{n-k}\right) & = & 0\\
+3k^{2}-8nk+4n^{2} & = & 0\\
+k_{1,2} & = & \pm\frac{4n}{6}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $k_{1}=\frac{2}{3}n$
+\end_inset
+
+ נקבל מינימום ולכן נבחר 
+\begin_inset Formula $k=\frac{2}{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+var\left(\hat{\theta}\right) & = & \frac{4\sigma^{2}}{\nicefrac{k}{2}}+\frac{\sigma^{2}}{n-k}\\
+\frac{\partial}{\partial k}var\left(\hat{\theta}\right) & = & 0\\
+7k^{2}-16nk+8n^{2} & = & 0\\
+k_{1,2} & = & \left(\frac{16\pm\sqrt{13}}{14}\right)n\\
+k & = & \left(\frac{16-\sqrt{13}}{14}\right)n\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $x$
+\end_inset
+
+ מ"מ רציף
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(x\right)=\begin{cases}
+\left(\theta+1\right)x^{\theta} & 0<x<1\\
+0 & otherwise\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m_{1} & = & E\left(x\right)\\
+ & = & \int_{0}^{1}x\cdot\left(\theta+1\right)x^{\theta}dx\\
+ & = & \left(\theta+1\right)\int_{0}^{1}x^{\theta+1}dx\\
+ & = & \frac{\theta+1}{\theta+2}x^{\theta+1}\vert_{0}^{1}=\frac{\theta+1}{\theta+2}\\
+m_{1}\left(\theta+2\right) & = & \theta+1\\
+m_{1}\theta+2m_{1} & = & \theta+1\\
+\theta\left(m_{1}-1\right) & = & 1-2m_{1}\\
+\hat{\theta} & = & \frac{1-2m_{1}}{m_{1}-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $m_{1}=\frac{1}{n}\sum_{i=1}^{n}x_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left(x^{2}\right) & = & \int_{0}^{1}x^{2}\left(\theta+1\right)x^{\theta}dx\\
+ & = & \left(\theta+1\right)\int_{0}^{1}x^{x+1}dx\\
+ & = & \frac{\theta+1}{\theta+3}\\
+m_{2}\left(\theta+3\right) & = & \theta+1\\
+\theta\left(m_{2}-1\right) & = & 1-3m_{2}\\
+\hat{\theta} & = & \frac{1-3m_{2}}{m_{2}-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

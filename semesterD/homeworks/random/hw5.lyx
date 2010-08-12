@@ -1,0 +1,219 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+C_{Y} & = & \begin{pmatrix}1 & \nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2}\\
+\nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{8} & \nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{1}{8} & \nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}\\
+\Sigma_{Y_{1}Y_{2}} & = & \begin{pmatrix}1 & \nicefrac{1}{2}\\
+\nicefrac{1}{2} & \nicefrac{1}{2}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{Y}_{1}\left(Y_{2}\right) & = & E\left[Y_{1}\vert Y_{2}\right]\\
+ & = & E\left[Y_{1}\right]+\mbox{cov}\left(Y_{1},Y_{2}\right)\cdot\left(\underbrace{\Sigma_{Y_{1}Y_{2}}^{\left(i\right)}}_{\nicefrac{1}{2}}\right)^{-1}\left(Y_{2}-E\left[Y_{2}\right]\right)\\
+ & = & 0+\frac{1}{2}\cdot2\cdot\left(Y_{2}-0\right)\\
+ & = & Y_{2}\\
+E\left[\varepsilon_{min}^{2}\right] & = & \left(\Sigma_{x}\right)_{ii}-\mbox{cov}\left(x_{i},x^{\left(i\right)}\right)\left(\Sigma_{X}^{\left(i\right)}\right)^{-1}\left(\mbox{cov}\left(x_{i},x^{\left(i\right)}\right)\right)^{T}\\
+ & = & 1-\nicefrac{1}{2}\cdot\frac{1}{\nicefrac{1}{2}}\cdot\nicefrac{1}{2}\\
+ & = & 1-\nicefrac{1}{2}\\
+ & = & \nicefrac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\hat{Y}_{1}\right)_{opt} & = & E\left[Y_{1}\vert Y^{\left(1\right)}\right]\\
+ & = & E\left[Y_{1}\right]+\mbox{cov}\left(Y_{1},Y^{\left(1\right)}\right)\left(\Sigma_{Y}^{\left(1\right)}\right)\left(Y^{\left(1\right)}-E\left[Y^{\left(1\right)}\right]\right)\\
+ & = & 0+\mbox{cov}\left(Y_{1},\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}\right)\cdot\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}^{-1}\cdot\left(\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}-\begin{pmatrix}0\\
+0\\
+0\end{pmatrix}\right)\\
+ & = & 0+E\left[Y_{1},\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}^{T}\right]\cdot\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}^{-1}\cdot\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}\\
+ & = & E\left[\begin{pmatrix}Y_{1}Y_{2} & Y_{1}Y_{3} & Y_{1}Y_{4}\end{pmatrix}\right]\cdot\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}^{-1}\cdot\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}\\
+ & = & \begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2}\end{pmatrix}\cdot\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}^{-1}\cdot\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}\\
+ & = & \begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2}\end{pmatrix}\cdot\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}^{-1}\cdot\begin{pmatrix}Y_{2}\\
+Y_{3}\\
+Y_{4}\end{pmatrix}\\
+ & = & 0.4444Y_{2}+0.4444Y_{2}+0.888889Y_{3}\\
+E\left[\varepsilon_{min}^{2}\right] & = & \left(\Sigma_{Y}\right)_{ii}-\mbox{cov}\left(Y_{1},Y^{\left(1\right)}\right)\left(\Sigma_{Y}^{\left(1\right)}\right)^{-1}\left(\mbox{cov}\left(Y_{1},Y^{\left(1\right)}\right)\right)^{T}\\
+ & = & 1-\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{2} & \nicefrac{1}{2}\end{pmatrix}\cdot\begin{pmatrix}\nicefrac{1}{2} & \nicefrac{1}{4} & \nicefrac{3}{16}\\
+\nicefrac{1}{4} & \nicefrac{3}{8} & \nicefrac{1}{4}\\
+\nicefrac{3}{16} & \nicefrac{1}{4} & \nicefrac{11}{32}\end{pmatrix}^{-1}\cdot\begin{pmatrix}\nicefrac{1}{2}\\
+\nicefrac{1}{2}\\
+\nicefrac{1}{2}\end{pmatrix}\\
+ & = & 0.1111\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[Y_{1}\vert Y_{2}=0\right] & = & 0\\
+E\left[Y_{1}\vert Y_{2}=3\right] & = & 3\\
+E\left[\varepsilon_{min}^{2}\right] & = & \nicefrac{1}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

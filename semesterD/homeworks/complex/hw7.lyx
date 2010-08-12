@@ -1,0 +1,592 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+7
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+כן, אם 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ היא הריבוע שקודקודיו 
+\begin_inset Formula $\left\{ \left(-1,0\right),\left(1,0\right),\left(-1,1\right),\left(1,1\right)\right\} $
+\end_inset
+
+ והפונק 
+\begin_inset Formula $f\left(z\right)=\Re\left(z\right)$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}f\left(z\right)dz & = & \int_{\gamma_{1}}f\left(z\right)dz+\int_{\gamma_{2}}f\left(z\right)dz+\int_{\gamma_{3}}f\left(z\right)dz+\int_{\gamma_{4}}f\left(z\right)dz\\
+ & = & \int_{0}^{1}t\cdot\left(2t-1\right)^{\prime}dt+\int_{0}^{1}1\cdot\left(1+it\right)^{\prime}dt+\int_{0}^{1}t\cdot\left(1+i-2t\right)dt+\int_{0}^{1}\left(-1\right)\cdot\left(-1+i-it\right)dt\\
+ & = & \int_{0}^{1}2tdt+\int_{0}^{1}idt+\int_{0}^{1}-2tdt+\int_{0}^{1}idt\\
+ & = & \underbrace{\int_{0}^{1}2tdt+\int_{0}^{1}-2tdt}_{0}+\int_{0}^{1}idt+\int_{0}^{1}idt\\
+ & = & \left[it\right]_{0}^{1}+\left[it\right]_{0}^{1}\\
+ & = & 2i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+לא, כי אם 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ממשית וסגורה אזי אפשר לבטא את 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ בעזרת מסילה 
+\begin_inset Formula $\omega$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ היא הרכבה מ 
+\begin_inset Formula $\omega$
+\end_inset
+
+ ואותה מסילה 
+\begin_inset Formula $\omega$
+\end_inset
+
+ בכיוון ההפוך.
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}f\left(z\right)dz & = & \int_{\omega}f\left(z\right)dz+\int_{\overline{\omega}}f\left(z\right)dz\\
+ & = & \int_{\omega}f\left(z\right)dz-\int_{\omega}f\left(z\right)dz\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+כן, 
+\begin_inset Formula $f\left(z\right)=\left(\Re\left(z\right)\right)^{2}$
+\end_inset
+
+ במסילה העוברת דרך 
+\begin_inset Formula $\left(\left(-1,0\right),\left(1,0\right),\left(1,i\right),\left(-1,i\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\oint_{\gamma}f\left(z\right) & = & \begin{matrix}\int_{0}^{2}\left[\Re\left(i-1+t\right)\right]^{2}dt+\int_{0}^{2}\left[\Re\left(i+1-it\right)\right]^{2}\cdot\left(-i\right)dt+\\
++\int_{0}^{2}\left[\Re\left(-i+1-t\right)\right]^{2}\cdot\left(-1\right)dt+\int_{0}^{2}\left[\Re\left(-i-1+it\right)\right]^{2}\cdot idt\end{matrix}\\
+ & = & \int_{0}^{2}\left[-1+t\right]^{2}dt-i\int_{0}^{2}\left[1\right]^{2}dt-\int_{0}^{2}\left[1\right]^{2}dt+i\int_{0}^{2}\left[-1\right]^{2}dt\\
+ & = & \int_{0}^{2}\left[-1+t\right]^{2}dt-i\int_{0}^{2}\left[1\right]^{2}dt-\int_{0}^{2}\left[1-t\right]^{2}dt+i\int_{0}^{2}\left[-1\right]^{2}dt\\
+ & = & \int_{0}^{2}\left[-1+t\right]^{2}dt-\int_{0}^{2}\left[-\left(-1+t\right)\right]^{2}dt-i\int_{0}^{2}\left[1\right]^{2}dt+i\int_{0}^{2}\left[1\right]^{2}dt\\
+ & = & \int_{0}^{2}\left[-1+t\right]^{2}dt-\int_{0}^{2}\left[-1+t\right]^{2}dt-i\int_{0}^{2}\left[1\right]^{2}dt+i\int_{0}^{2}\left[1\right]^{2}dt\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+פונק' 
+\begin_inset Formula $f\left(z\right)=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נניח כי קיימת פונק' רציפה 
+\begin_inset Formula $f\left(z_{0}\right)=a\neq0$
+\end_inset
+
+ עבור 
+\begin_inset Formula $z_{0}\in\mathbb{C}$
+\end_inset
+
+, אזי מרציפות נובע כי לכל 
+\begin_inset Formula $\varepsilon>0$
+\end_inset
+
+ קיים 
+\begin_inset Formula $\delta>0$
+\end_inset
+
+ כך שאם 
+\begin_inset Formula $\left|z-z_{0}\right|<\delta$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\left|f\left(z\right)-f\left(z_{0}\right)\right|<\varepsilon$
+\end_inset
+
+.
+ נבחר 
+\begin_inset Formula $\varepsilon=\frac{1}{2}\left|a\right|$
+\end_inset
+
+ אזי קיים מעגל בראדיוס 
+\begin_inset Formula $\delta$
+\end_inset
+
+ סביב 
+\begin_inset Formula $z_{0}$
+\end_inset
+
+ כך שכל הערכים במעגל הזה מקיימים 
+\begin_inset Formula $\left|f\left(z\right)-a\right|<\frac{1}{2}\left|a\right|$
+\end_inset
+
+.
+ אזי בכל התחום הזה מתקיים שלפחות אחד מהרכיבים של 
+\begin_inset Formula $f\left(z\right)$
+\end_inset
+
+ לא משנה את הסימן שלו.
+ בונים את המסילה 
+\begin_inset Formula $\gamma:\left[0,1\right]\to\mathbb{C}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\gamma\left(z\right)\mapsto z_{0}+\delta t$
+\end_inset
+
+.
+ כיוון שאחד מהרכיבים לא משנה הסימן שלו ו 
+\begin_inset Formula $\delta$
+\end_inset
+
+ מספר ממשי חיובי מתקיים כי 
+\begin_inset Formula $\int_{\gamma}f\left(z\right)dz\neq0$
+\end_inset
+
+.
+ משל.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\gamma:\left[0,1\right] & \to & \mathbb{C}\\
+\gamma\left(t\right) & = & Ae^{2\pi it}\\
+\int_{\gamma}\frac{dz}{z} & = & \int_{0}^{1}\frac{1}{Ae^{2\pi it}}2\pi iAe^{2\pi it}dt\\
+ & = & \int_{0}^{1}2\pi idt\\
+ & = & 2\pi i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרדיוס לא משנה כי 
+\begin_inset Formula $A$
+\end_inset
+
+ מצטמצם.
+\end_layout
+
+\begin_layout Standard
+נראה את זה דרך משפט קושי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename images/hw7d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מסילות 
+\begin_inset Formula $\gamma$
+\end_inset
+
+ ו 
+\begin_inset Formula $\delta$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רוצים להראות שההפרש בין האינטגרל על 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\gamma_{2}$
+\end_inset
+
+ הוא אפס.
+ נסמן ב 
+\begin_inset Formula $\overline{\gamma_{1}}$
+\end_inset
+
+ את המסילה 
+\begin_inset Formula $\gamma_{1}$
+\end_inset
+
+ ההולכת בכיוון שלילי.
+ 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma_{2}}\frac{dz}{z}-\int_{\gamma_{1}}\frac{dz}{z} & = & \int_{\gamma_{2}\cup\overline{\gamma_{1}}}\frac{dz}{z}\\
+ & = & \int_{\delta1}\frac{dz}{z}+\int_{\delta_{2}}\frac{dz}{z}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפונק' אנליטית בהחומים 
+\begin_inset Formula $\delta_{1},\delta_{2}$
+\end_inset
+
+ אזי לפי קושי האינטגרלים מתאפסים ומקבלים כי 
+\begin_inset Formula $\int_{\gamma_{2}}\frac{dz}{z}=\int_{\gamma_{1}}\frac{dz}{z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+המסילה סגורה לכן 
+\begin_inset Formula $\gamma\left(a\right)=\gamma\left(b\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(z\right) & = & \sum_{k=0}^{n}a_{k}z^{k}\\
+\int_{\gamma}f\left(z\right)dz & = & \int_{a}^{b}f\left(\gamma\left(t\right)\right)\gamma^{\prime}\left(t\right)dt\\
+ & = & \int_{a}^{b}\sum_{k=0}^{n}a_{k}\gamma^{k}\left(t\right)\gamma^{\prime}\left(t\right)dt\\
+ & = & \sum_{k=0}^{n}a_{k}\int_{a}^{b}\left(\gamma\left(t\right)\right)^{k}\gamma^{\prime}\left(t\right)dt\\
+ & = & \sum_{k=0}^{n}a_{k}\left[\left(\gamma\left(t\right)\right)^{k+1}\right]_{a}^{b}\\
+ & = & \sum_{k=0}^{n}a_{k}\left(\gamma\left(b\right)\right)^{k+1}-\sum_{k=0}^{n}a_{k}\left(\gamma\left(a\right)\right)^{k+1}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{\gamma}f\left(z\right)dz & = & \int_{\gamma}\sqrt{z}dz\\
+ & = & \begin{matrix}\int_{0}^{1}\sqrt{e^{\frac{\pi i}{2}t}}\frac{\pi i}{2}e^{\frac{\pi i}{2}t}dt+\int_{1}^{2}\sqrt{ti}\cdot idt+\\
++\int_{2}^{3}\sqrt{2e^{i\pi\frac{3-t}{2}}}\cdot2\left(-\frac{i\pi}{2}\right)e^{i\pi\frac{3-t}{2}}dt+\int_{3}^{4}\sqrt{5-t}\cdot\left(-1\right)dt\end{matrix}\\
+ & = & \int_{0}^{1}e^{\frac{\pi i}{4}t}\frac{\pi i}{2}e^{\frac{\pi i}{2}t}dt+\int_{1}^{2}\sqrt{i}\sqrt{t}\cdot idt+\int_{2}^{3}-\sqrt{2}e^{i\pi\frac{3-t}{4}}\cdot i\pi e^{i\pi\frac{3-t}{2}}dt+\int_{3}^{4}-\sqrt{5-t}dt\\
+ & = & \frac{\pi i}{2}\int_{0}^{1}e^{\frac{3\pi i}{4}t}dt+ie^{i\frac{\pi}{4}}\int_{1}^{2}\sqrt{t}dt-i\pi\sqrt{2}\int_{2}^{3}e^{i\pi\frac{3\left(3-t\right)}{4}}dt-\int_{3}^{4}\sqrt{5-t}dt\\
+ & = & \frac{\pi i}{2}\left[\frac{e^{\frac{3\pi i}{4}t}}{\left(\frac{3\pi i}{4}\right)}\right]_{0}^{1}+ie^{i\frac{\pi}{4}}\left[\frac{2x^{\nicefrac{3}{2}}}{3}\right]_{1}^{2}-i\pi\sqrt{2}\left[\frac{e^{i\pi\frac{3\left(3-t\right)}{4}}}{-i\pi\frac{3}{4}}\right]_{2}^{3}-\left[-\frac{2\left(5-t\right)^{\nicefrac{3}{2}}}{3}\right]_{3}^{4}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Standard
+נשלים את המסילה באמצעות 
+\begin_inset Formula $\gamma^{\prime}:\left[-1,1\right]\to\mathbb{C}$
+\end_inset
+
+ עבור 
+\begin_inset Formula $\gamma^{\prime}\left(t\right)\mapsto t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-1}^{1}e^{t}dt & = & \left[e^{t}\right]_{-1}^{1}\\
+ & = & e-e^{-1}\\
+\int_{\gamma\cup\gamma^{\prime}}e^{z}dz & = & 0\\
+\int_{\gamma}e^{z}dz+\int_{\gamma^{\prime}}e^{z}dz & = & 0\\
+\int_{\gamma}e^{z}dz & = & -\int_{\gamma^{\prime}}e^{z}dz\\
+ & = & -e+e^{-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

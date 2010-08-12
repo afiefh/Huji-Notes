@@ -1,0 +1,505 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dot{\underbar{x}}=\overbrace{\begin{pmatrix}0 & 1\\
+-1 & -\gamma\end{pmatrix}}^{A}\underbar{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון של המערכת הזו הוא 
+\begin_inset Formula $\underbar{x}=e^{At}\cdot\underbar{x}_{0}$
+\end_inset
+
+.
+ בשביל לחשב את 
+\begin_inset Formula $e^{A}$
+\end_inset
+
+ נשתמש במשפט קיילי המילטות שאומר כי 
+\begin_inset Formula $e^{A}=\alpha_{0}I+\alpha_{1}A$
+\end_inset
+
+ כאשר 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{\lambda_{1}t} & = & \alpha_{0}+\lambda_{1}\alpha_{1}\\
+e^{\lambda_{2}t} & = & \alpha_{0}+\lambda_{2}\alpha_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור שתי משוואות בשתי נעלמים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\alpha_{0} & = & e^{\lambda_{1}t}-\lambda_{1}\alpha_{1}\\
+e^{\lambda_{2}t} & = & e^{\lambda_{1}t}-\lambda_{1}\alpha_{1}+\lambda_{2}\alpha_{1}\\
+e^{\lambda_{2}t}-e^{\lambda_{1}t} & = & \alpha_{1}\left(\lambda_{2}-\lambda_{1}\right)\\
+\alpha_{1} & = & \frac{e^{\lambda_{2}t}-e^{\lambda_{1}t}}{\left(\lambda_{2}-\lambda_{1}\right)}\\
+\alpha_{0} & = & \frac{e^{\lambda_{1}t}\left(\lambda_{2}-\lambda_{1}\right)}{\left(\lambda_{2}-\lambda_{1}\right)}-\lambda_{1}\frac{e^{\lambda_{2}t}-e^{\lambda_{1}t}}{\left(\lambda_{2}-\lambda_{1}\right)}\\
+\alpha_{0} & = & \frac{e^{\lambda_{1}t}\lambda_{2}-e^{\lambda_{1}t}\lambda_{1}-\lambda_{1}e^{\lambda_{2}t}+e^{\lambda_{1}t}}{\left(\lambda_{2}-\lambda_{1}\right)}\\
+\alpha_{0} & = & \frac{e^{\lambda_{1}t}\lambda_{2}-\lambda_{1}e^{\lambda_{2}t}}{\left(\lambda_{2}-\lambda_{1}\right)}\\
+\alpha_{1} & = & \frac{e^{\lambda_{2}t}-e^{\lambda_{1}t}}{\left(\lambda_{2}-\lambda_{1}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב את הערכים העצמיים של 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{vmatrix}-\lambda & 1\\
+-1 & -\gamma-\lambda\end{vmatrix} & = & 0\\
+\lambda\left(\gamma+\lambda\right)+1 & = & 0\\
+\lambda^{2}+\gamma\lambda+1 & = & 0\\
+\lambda_{1,2} & = & \frac{-\gamma\pm\sqrt{\gamma^{2}-4}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הצבת ערכים של 
+\begin_inset Formula $\lambda_{1,2}$
+\end_inset
+
+ ב 
+\begin_inset Formula $\alpha_{0,1}$
+\end_inset
+
+ יצא ממש מכוער, אבל מכיוון שהערכים שלהם ידועים אפשר להתיחס לפתרון הבא כפתרון
+ סופי כי אין בו פרמטרים לא ידועים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{At}=\frac{e^{\lambda_{1}t}\lambda_{2}-\lambda_{1}e^{\lambda_{2}t}}{\left(\lambda_{2}-\lambda_{1}\right)}I+\frac{e^{\lambda_{2}t}-e^{\lambda_{1}t}}{\left(\lambda_{2}-\lambda_{1}\right)}A\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן הפתרון הוא
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbar{x} & = & e^{At}\cdot\underbar{x}\left(0\right)\\
+ & = & \left(\frac{e^{\lambda_{1}t}\lambda_{2}-\lambda_{1}e^{\lambda_{2}t}}{\left(\lambda_{2}-\lambda_{1}\right)}I+\frac{e^{\lambda_{2}t}-e^{\lambda_{1}t}}{\left(\lambda_{2}-\lambda_{1}\right)}A\right)\underbar{x}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+אפשר לחשב את הפתרון האנליטי דרך שימוש בפונק'
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+expm
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ וגם אפשר לצייר פתרון אוילר ולראות שהוא קרוב לפתרון האנליטי.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size large
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+m\frac{\partial^{2}y_{1}}{\partial t^{2}} & = & -Ky_{1}+K\left(y_{2}-y_{1}\right)-\gamma\frac{\partial y_{1}}{\partial t}+u\left(t\right)\\
+m\frac{\partial^{2}y_{2}}{\partial t^{2}} & = & -K\left(y_{2}-y_{1}\right)-Ky_{2}-\gamma\frac{\partial y_{2}}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{2}}{\partial t} & = & -\frac{K}{m}x_{1}+\frac{K}{m}\left(x_{3}-x_{1}\right)-\frac{\gamma}{m}x_{2}+\frac{u\left(t\right)}{m}\\
+\frac{\partial x_{4}}{\partial t} & = & -\frac{K}{m}\left(x_{3}-x_{1}\right)-\frac{K}{m}x_{3}-\frac{\gamma}{m}x_{4}\\
+\frac{\partial x_{1}}{\partial t} & = & x_{2}\\
+\frac{\partial x_{3}}{\partial t} & = & x_{4}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרשום כמטריצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dot{\underbar{x}}=\begin{pmatrix}0 & 1 & 0 & 0\\
+-\frac{2K}{m} & -\frac{\gamma}{m} & \frac{K}{m} & 0\\
+0 & 0 & 0 & 1\\
+\frac{K}{m} & 0 & -\frac{2K}{m} & -\frac{\gamma}{m}\end{pmatrix}\underbar{x}+\begin{pmatrix}0\\
+\frac{1}{m}\\
+0\\
+0\end{pmatrix}u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\dot{\underbar{x}}=\begin{pmatrix}0 & 1 & 0 & 0\\
+-2 & -2 & 1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & -2 & -2\end{pmatrix}\underbar{x}+\begin{pmatrix}0\\
+1\\
+0\\
+0\end{pmatrix}u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צורת ג'ורדן של המטריצה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+J & = & \begin{pmatrix}-1-\sqrt{2}i & 0 & 0 & 0\\
+0 & -1+\sqrt{2}i & 0 & 0\\
+0 & 0 & -1 & 1\\
+0 & 0 & 0 & -1\end{pmatrix}\\
+v_{1} & = & \begin{pmatrix}0.25+0.1768i\\
+-0.5303i\\
+-0.25-0.1768i\\
+0.5303i\end{pmatrix}\\
+v_{2} & = & \begin{pmatrix}0.25-0.1768i\\
+0.5303i\\
+-0.25+0.1768i\\
+-0.5303i\end{pmatrix}\\
+v_{3} & = & \begin{pmatrix}0.5\\
+-0.5\\
+0.5\\
+-0.5\end{pmatrix}\\
+v_{4} & = & \begin{pmatrix}0.5\\
+0\\
+0.5\\
+0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{Jt}=\begin{pmatrix}e^{-t-it\sqrt{2}} & 0 & 0 & 0\\
+0 & e^{-t+ti\sqrt{2}} & 0 & 0\\
+0 & 0 & e^{-t} & te^{-t}\\
+0 & 0 & 0 & e^{-t}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון הוא 
+\begin_inset Formula $\underbar{x}\left(t\right)=\left(Ve^{Jt}V^{-1}\right)\underbar{x}_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"י שימוש מטלאב קיבלנו:
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $x_{0}=\begin{pmatrix}1\\
+0\\
+1\\
+1\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbar{x}_{a} & = & \begin{pmatrix}e^{-t}+te^{-t}\\
+-te^{-t}\\
+e^{-t}+te^{-t}\\
+-te^{-t}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbar{x}_{b}=\begin{pmatrix}2e^{-\sqrt{2}it}\left(\frac{\sqrt{2}i}{8}-\frac{1}{4}\right)-2e^{-t-\sqrt{2}it}\left(\frac{\sqrt{2}it}{8}+\frac{1}{4}\right)\\
+\frac{1}{4}\cdot\left(3\sqrt{2}ie^{-t-\sqrt{2}it}-3\sqrt{2}ie^{-t-\sqrt{2}it}\right)\\
+2e^{-\sqrt{2}it-t}\left(\frac{\sqrt{2}i}{8}+\frac{1}{4}\right)-2e^{-t+\sqrt{2}it}\left(\frac{\sqrt{2}}{8}-\frac{1}{4}\right)\\
+\frac{1}{4}\left(3\sqrt{2}ie^{-t+\sqrt{2}it}-3\sqrt{2}ie^{-t-\sqrt{2}it}\right)\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נמיר את זה לפתרון ממשי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbar{x}_{b}=\begin{pmatrix}\left(-\cos\left(\sqrt{2}t\right)+\frac{1}{\sqrt{2}}\sin\left(\sqrt{2}t\right)\right)e^{t}\\
+\frac{3}{2}\sin\left(\sqrt{2}t\right)e^{-t}\\
+\cos\left(\sqrt{2}t\right)-\frac{1}{\sqrt{2}}\sin\left(\sqrt{2}t\right)e^{-t}\\
+-\frac{3}{\sqrt{2}}\sin\left(\sqrt{2}t\right)e^{-t}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ה
+\end_layout
+
+\begin_layout Standard
+נבדוק אי תלות של הפתרונות ע"י מכפלה פנימית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{2}\left(t\right) & = & \begin{pmatrix}\alpha\\
+\beta\\
+\alpha\\
+\beta\end{pmatrix}\\
+\left\langle x_{1}\left(t\right),x_{2}\left(t\right)\right\rangle  & \overset{?}{=} & 0\\
+\left(e^{-t}+te^{-t}\right)a-te^{-t}b+\left(e^{-t}+te^{-t}\right)a+te^{-t}b & \overset{?}{=} & 0\\
+0 & \overset{\checkmark}{=} & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

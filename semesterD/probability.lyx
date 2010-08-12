@@ -60,6 +60,93 @@ LatexCommand tableofcontents
 
 \end_layout
 
+\begin_layout Standard
+\begin_inset Note Note
+status open
+
+\begin_layout Plain Layout
+ספרים:
+\end_layout
+
+\begin_layout Plain Layout
+עברית: אוניברסיטה פתוחה - הסקה סטטסטית
+\end_layout
+
+\begin_layout Plain Layout
+אנגלית:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Mood & Graybill
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ או 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Mood & Graybill & boze
+\end_layout
+
+\begin_layout Plain Layout
+אנגלית:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Lindgren
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Chapter
 תרגול מס.
 \numeric on
@@ -1430,6 +1517,187 @@ P\left(x_{1}=x_{1},x_{2}=x_{2}\dots x_{n}=x_{n};\lambda\right) & = & \prod_{i=1}
 
 \begin_layout Standard
 כמו בשיטת המומנטים
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x_{1}\dots x_{n}\sim N\left(\mu,\sigma^{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בונים רווח סמך
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+P\left(-z_{1-\nicefrac{\alpha}{2}}\leq\frac{\overline{x}-\mu}{\nicefrac{\sigma}{\sqrt{n}}}\leq z_{1-\nicefrac{\alpha}{2}}\right)=1-\alpha\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם לא יודעים את 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אז מחליפים אותו ב 
+\begin_inset Formula $S^{2}=\frac{1}{n-1}\sum_{i=1}^{n}\left(x_{i}-\overline{x}\right)^{2}$
+\end_inset
+
+ שזה עומד בלתי מוטעה ל 
+\begin_inset Formula $\sigma$
+\end_inset
+
+ אבל זה משבש לנו את המשוואה למעלה ואנחנו צריכים לתקן אותה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\overbrace{\sqrt{n}\left(\frac{\overline{x}-\mu}{\sigma}\right)}^{\sim N\left(0,1\right)}}{\underbrace{\nicefrac{S}{\sigma}}_{\sqrt{\frac{\chi_{n-1}^{2}}{n-1}}}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\chi^{2}$
+\end_inset
+
+ זה משפחת משתנים אקראיים.
+\end_layout
+
+\begin_layout Standard
+יודעים כי 
+\begin_inset Formula $\frac{\left(n-1\right)S}{\sigma^{2}}\sim\chi_{n-1}^{2}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אז מגדירים אתפלגות 
+\begin_inset Formula $T$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $T=\frac{\sqrt{n}\frac{\left(\overline{x}-\mu\right)}{\sigma}}{\nicefrac{S}{\sigma}}$
+\end_inset
+
+ שהיא דומה מאות להפתפלגות נורמלית ושואפת להפתפלגות נורמאלית כאשר 
+\begin_inset Formula $n\to\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לחשב את השונות של 
+\begin_inset Formula $T=\frac{u}{\sqrt{\frac{v}{n}}}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $u\sim N\left(0,1\right)$
+\end_inset
+
+ ו 
+\begin_inset Formula $u\sim\chi_{n}^{2}$
+\end_inset
+
+ בלתי תלויים.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[T\right] & = & EE\left[T\vert v\right]\\
+ & = & E\left[E\left[\frac{u}{\sqrt{\frac{v}{n}}}\vert V\right]\right]\\
+ & = & E\left[\frac{1}{\sqrt{\frac{v}{n}}}E\left[u\vert V\right]\right]\\
+ & = & E\left[\frac{1}{\sqrt{\frac{v}{n}}}\right]\cdot E\left[u\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mbox{var}\left(T\right) & = & \mbox{var}\left(E\left(T\vert v\right)\right)+E\left[\mbox{var}\left(T\vert v\right)\right]\\
+ & = & \mbox{var}\left(E\left(\frac{u}{\sqrt{\frac{v}{n}}}\vert v\right)\right)+E\left[\mbox{var}\left(\frac{u}{\sqrt{\frac{v}{n}}}\vert v\right)\right]\\
+ & = & \underbrace{\mbox{var}\left(\frac{1}{\sqrt{\frac{v}{n}}}\cdot\overbrace{E\left(u\vert v\right)}^{\mu_{x}=0}\right)}_{=0}+E\left[\mbox{var}\left(\frac{u}{\sqrt{\frac{v}{n}}}\vert v\right)\right]\\
+ & = & E\left[\frac{n}{v}\underbrace{\mbox{var}\left(u\vert v\right)}_{\sigma_{u}^{2}=1}\right]\\
+ & = & \frac{n}{v}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תזכורת:
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $Y\sim Gamma\left[\alpha,\beta\right]$
+\end_inset
+
+ אזי 
+\begin_inset Formula $f\left(y\right)=\frac{\beta^{\alpha}}{\Gamma\left(\alpha\right)}x^{\alpha-1}e^{\beta x}$
+\end_inset
+
+ לכל 
+\begin_inset Formula $x\geq0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\chi_{n}^{2} & = & Gamma\left(\frac{n}{2},\frac{1}{2}\right)\\
+E\sqrt{\frac{n}{v}} & = & \sqrt{n}E\left[\frac{1}{\sqrt{v}}\right]\\
+ & = & \frac{\left(\frac{1}{2}\right)^{\frac{n}{2}}}{\Gamma\left(\frac{n}{2}\right)}\sqrt{n}\int_{0}^{\infty}v^{-\frac{1}{2}}\cdot v^{\frac{n}{2}-1}e^{\frac{1}{2}v}dx\\
+ & = & \frac{\left(\frac{1}{2}\right)^{\frac{n}{2}}}{\Gamma\left(\frac{n}{2}\right)}\sqrt{n}\int_{0}^{\infty}v^{\frac{n-1}{2}-1}e^{\frac{1}{2}v}dv\\
+ & = & \begin{cases}
+C & n\neq1\\
+\infty & n=1\end{cases}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן 
+\begin_inset Formula $E\left[T\right]=\begin{cases}
+0 & n>1\\
+\mbox{undefined} & n=1\end{cases}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עבור 
+\begin_inset Formula $n=2$
+\end_inset
+
+, השונות של 
+\begin_inset Formula $T$
+\end_inset
+
+ לא קיימת
 \end_layout
 
 \end_body

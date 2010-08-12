@@ -1,0 +1,325 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}0 & \cdots & 0\\
+\vdots & \ddots & \vdots\\
+0 & \cdots & 0\end{pmatrix}\\
+e^{A} & = & I+A+\frac{1}{2}A^{2}+\frac{1}{6}A^{3}\dots\\
+ & = & I+\sum_{k=1}^{\infty}\frac{1}{k!}A^{k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אבל מטריצת האפס היא אפס עבור כל חזקה טבעית.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{A}=I+A=I\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{At_{1}}e^{At_{2}} & = & \left(\sum_{k=0}^{\infty}\frac{1}{k!}A^{k}t_{1}^{k}\right)\left(\sum_{n=0}^{\infty}\frac{1}{n!}A^{n}t_{2}^{n}\right)\\
+ & = & \left(\sum_{k=0}^{\infty}\left(\sum_{i=0}^{j}\left(\frac{1}{i!}A^{i}t_{1}^{i}\right)\left(\frac{1}{\left(k-i\right)!}A^{k-i}t_{2}^{k-i}\right)\right)\right)\\
+ & = & \sum_{k=0}^{\infty}\sum_{i=0}^{k}{k \choose i}\frac{A^{k}}{k!}t_{1}^{i}t_{2}^{k-i}\\
+ & = & \sum_{k=0}^{\infty}\frac{A^{k}}{k!}\left(\sum_{i=0}^{k}{k \choose i}t_{1}^{i}t_{2}^{k-i}\right)\\
+ & = & \sum_{k=0}^{\infty}\frac{A^{k}}{k!}\left(t_{1}+t_{2}\right)^{k}\\
+ & = & e^{A\left(t_{1}+t_{2}\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+נתבונן במכפלה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{-At}e^{At} & = & e^{A\left(-t\right)}e^{At}\\
+ & = & e^{A\left(t+-t\right)}\\
+ & = & e^{0}\\
+ & = & I\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כן אז ממשפט בליניארית המטריצה ההפוכה ל 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+ זו 
+\begin_inset Formula $e^{-At}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}0 & 1\\
+1 & 0\end{pmatrix}\\
+P\left(x\right) & = & \begin{vmatrix}-\lambda & 1\\
+1 & -\lambda\end{vmatrix}\\
+P\left(x\right) & = & \lambda^{2}-1\\
+A^{2}-I & = & 0\\
+A^{2} & = & I\\
+\left(A^{2}\right)^{k} & = & I\\
+A^{2k} & = & I\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{At} & = & \sum_{k=0}^{\infty}\frac{1}{k!}A^{k}t^{k}\\
+ & = & \sum_{k=0}^{\infty}\frac{1}{\left(2k\right)!}A^{2k}t^{2k}+\sum_{k=0}^{\infty}\frac{1}{\left(2k+1\right)!}A^{\left(2k+1\right)}t^{\left(2j+1\right)}\\
+ & = & \sum_{k=0}^{\infty}\frac{t^{2k}}{\left(2k\right)!}\overbrace{A^{2k}}^{I}+\sum_{k=0}^{\infty}\frac{t^{2k+1}}{\left(2k+1\right)!}\overbrace{A^{2k}}^{I}\cdot A\\
+ & = & \cosh\left(t\right)\cdot I+\sinh\left(t\right)A\\
+ & = & \begin{pmatrix}\cosh\left(t\right) & \sinh\left(t\right)\\
+\sinh\left(t\right) & \cosh\left(t\right)\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}0 & 1 & \dots & 0 & 0\\
+0 & 0 & \dots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \dots & 0 & 1\\
+-a_{0} & -a_{1} & \dots & -a_{n-2} & -a_{n-1}\end{pmatrix}\\
+\left|I\lambda-A\right| & = & \begin{vmatrix}\lambda & -1 & \dots & 0 & 0\\
+0 & \lambda & \dots & 0 & 0\\
+\vdots & \vdots & \ddots & \vdots & \vdots\\
+0 & 0 & \dots & \lambda & -1\\
+a_{0} & a_{1} & \dots & a_{n-2} & \lambda+a_{n-1}\end{vmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחשב בריקורסיה כאשר 
+\begin_inset Formula $A_{k}$
+\end_inset
+
+ מטריצה כזו בגודל 
+\begin_inset Formula $k$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|I\lambda-A_{1}\right| & = & \lambda+a_{k-1}\\
+\left|I\lambda-A_{k}\right| & = & \lambda\left|I\lambda-A_{k-1}\right|+\overbrace{\left(-1\right)^{k-1}\cdot a_{0}\left(-1\right)^{k-1}}^{=a_{0}}\\
+ & = & \lambda\left|I\lambda-A_{k-1}\right|+a_{0}\\
+ & = & \lambda^{2}\left(\left|I\lambda-A_{k-2}\right|\lambda+a_{1}\right)+a_{0}\\
+ & = & \lambda^{2}\left|I\lambda-A_{k-2}\right|+\lambda a_{1}+a_{0}\\
+ & = & \vdots\\
+ & = & \lambda^{k-1}\left|\lambda I-A_{1}\right|+\sum_{j=0}^{k-2}a_{j}\lambda^{j}\\
+ & = & \lambda^{k}+\lambda^{k-1}a_{n+1}+\sum_{j=0}^{k-2}a_{j}k^{j}\\
+ & = & \lambda^{k}+\sum_{k=0}^{k-1}a_{j}\lambda^{j}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

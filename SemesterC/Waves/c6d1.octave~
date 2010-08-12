@@ -1,8 +1,0 @@
-k=0:0.01:4;
-w=4.*k.*(sin(k./2)).^2;
-
-plot(k,w);
-
-pause;
-
-print -dsvg c6d1.svg

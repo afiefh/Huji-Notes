@@ -1,0 +1,438 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(t_{10}>1.372\right) & = & 1-P\left(t_{10}\leq1.372\right)=1-0.9=0.1\\
+P\left(t_{5}<-0.267\right) & = & 1-P\left(t_{5}\leq0.267\right)=1-0.6=0.4\\
+P\left(-2.67<t_{5}<3.365\right) & = & P\left(t_{5}<3.365\right)-\left[1-P\left(t<2.57\right)\right]=0.965\\
+P\left(\left|t_{15}\right|<2.946\right) & = & 2P\left(t_{15}<2.946\right)-1=0.99\\
+P\left(t_{10}>c\right) & = & 0.1\Leftrightarrow P\left(t_{10}<c\right)=0.9\Leftrightarrow c=1.372\\
+P\left(t_{5}>c\right) & = & 0.4\Leftrightarrow c=0.267\\
+P\left(\left|t_{15}\right|<c\right) & = & 0.5\Leftrightarrow2P\left(t_{15}<c\right)-1=0.5\Leftrightarrow c=0.691\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size large
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+תוחלת 
+\begin_inset Formula $\frac{1}{10}\sum x_{i}=\sqrt{2}$
+\end_inset
+
+ שונות 
+\begin_inset Formula $\frac{\sum\left(x_{i}-E\left[x\right]\right)^{2}}{9}=20.44$
+\end_inset
+
+ אזי 
+\begin_inset Formula $\hat{\sigma}=\sqrt{20.4}=4.521$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+רווח סמך התוחלת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1-\alpha & = & 0.95\\
+P\left(-t_{9}^{0.975}<\frac{52-\mu}{\sqrt{\frac{20.44}{10}}}<t_{9}^{0.975}\right) & = & 0.95\\
+P\left(-t_{9}^{0.975}\sqrt{2.04}+52\leq N\leq t_{9}^{0.975}\sqrt{2.04}+52\right) & = & 0.95\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+לכן רווח סמך עבור 
+\begin_inset Formula $N$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[-2.262\sqrt{2.04}+52,2.262\sqrt{2.04}+52\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה והתןחלת לא ידועה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(\frac{\sum_{i=1}^{10}\left(x_{i}-\overline{x}_{10}\right)^{2}}{\chi_{9}^{2\left(0.9+5\right)}},\frac{\sum_{i=1}^{10}\left(x_{i}-\overline{x}_{10}\right)^{2}}{\chi_{9}^{2\left(0.025\right)}}\right) & = & \left(\frac{184}{\chi_{9}^{2\left(0.9+5\right)}},\frac{184}{\chi_{9}^{0.025}}\right)\\
+ & = & \left[9.68,68.14\right]\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה והתוחלת ידועה 
+\begin_inset Formula $\mu=54$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left[10.926,68.923\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X_{i} & \sim & Ber\left(\frac{\theta}{N}\right)\\
+X & = & \sum_{i=1}^{n}x_{i}\\
+X & \sim & Bin\left(\frac{nD}{N}.n\frac{D}{N}\left(1-\frac{D}{N}\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1-\alpha & = & P\left(-z_{1-\frac{\alpha}{2}}\leq\frac{X-\frac{nD}{N}}{\sqrt{N\frac{D}{n}\left(1-\frac{D}{N}\right)}}\leq Z_{1-\frac{\alpha}{2}}\right)\\
+ & = & P\left(x-z_{1-\frac{\alpha}{2}}\sqrt{N\frac{D}{n}\left(1-\frac{D}{N}\right)}\leq x+z_{1-\frac{\alpha}{2}}\sqrt{N\frac{D}{n}\left(1-\frac{D}{N}\right)}\right)\\
+ & = & P\left(\frac{nD}{x+z_{1-\frac{\alpha}{2}}\sqrt{x\left(1-x\right)}}\leq N\leq\frac{nD}{x-z_{1-\frac{\alpha}{2}}\sqrt{x\left(1-x\right)}}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+אומד לפרופורציה 
+\begin_inset Formula $\hat{p}=\frac{25}{150}=\frac{1}{6}$
+\end_inset
+
+ סימנו 
+\begin_inset Formula $p=10$
+\end_inset
+
+ דגם
+\end_layout
+
+\begin_layout Standard
+סה"כ אומד למס' הדגים באגם יהיה 
+\begin_inset Formula $\hat{N}=100\cdot6=600$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+נסמן 
+\begin_inset Formula $Y=\sum_{i=1}^{50}y_{1}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $y_{i}$
+\end_inset
+
+ הוא משך הזמן עד שיתפס הדג ה 
+\begin_inset Formula $i$
+\end_inset
+
+.
+ 
+\begin_inset Formula $y_{i}\sim Geo\left(\frac{D}{N}\right)$
+\end_inset
+
+ לפי משפט הגבול המרכזי 
+\begin_inset Formula $Y\sim N\left(\frac{50N}{D},50\left(\frac{1-\frac{D}{N}}{\left(\frac{D}{N}\right)^{2}}\right)\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P\left(-z_{n-\frac{\alpha}{2}}\leq\frac{Y-\frac{50N}{D}}{\frac{N}{D}\sqrt{50\left(1-\frac{D}{N}\right)}}\leq Z_{1-\frac{\alpha}{2}}\right) & = & P\left(\begin{matrix}-Z_{1-\frac{\alpha}{2}}\frac{N}{D}\sqrt{50\left(1-\frac{D}{N}\right)}-Y\leq-\frac{50N}{D}\\
+-\frac{50N}{D}\leq Z_{1-\frac{\alpha}{2}}\frac{N}{D}\sqrt{50\left(1-\frac{D}{N}\right)}\end{matrix}\right)\\
+ & = & P\left(\begin{matrix}\left(-Z_{1-\frac{\alpha}{2}}\frac{N}{D}\sqrt{50\left(1-\frac{D}{N}\right)}+Y\right)\frac{D}{50}\leq N\\
+N\leq\left(Z_{1-\frac{\alpha}{2}}\frac{N}{D}\sqrt{50\left(1-\frac{D}{N}\right)}+Y\right)\frac{D}{50}\end{matrix}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נציב בגבולים אומד ל 
+\begin_inset Formula $\frac{N}{D}$
+\end_inset
+
+ את 
+\begin_inset Formula $\frac{Y}{D}$
+\end_inset
+
+ את 
+\begin_inset Formula $\frac{Y}{50}$
+\end_inset
+
+ ונקבל 
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+
+\begin_inset Formula $P\left(\begin{matrix}\left(-Z_{1-\frac{\alpha}{2}}\frac{Y}{50}\sqrt{50\left(1-\frac{Y}{50}\right)}+Y\right)\frac{D}{50}\leq N\\
+N\leq\left(Z_{1-\frac{\alpha}{2}}\frac{50}{Y}\sqrt{50\left(1-\frac{Y}{50}\right)}+Y\right)\frac{D}{50}\end{matrix}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+נסיב 
+\begin_inset Formula $Y=320$
+\end_inset
+
+ ונקבל ברמה 
+\begin_inset Formula $0.95$
+\end_inset
+
+: 
+\begin_inset Formula $\left[-1.95\cdot\frac{320}{50}\left(\sqrt{50\left(1-\frac{50}{320}\right)+320}\right)\frac{D}{50},1.95\cdot\frac{320}{50}\left(\sqrt{50\left(1-\frac{50}{320}\right)+320}\right)\frac{D}{50}\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+var\left(T\right) & = & var\left(E\left(T\vert V\right)\right)+E\left(var\left(T\vert E\right)\right)\\
+ & = & var\left(E\left(\frac{u}{\sqrt{\nicefrac{v}{n}}}\vert V\right)\right)+E\left(var\left(\frac{u}{\sqrt{\nicefrac{v}{n}}}\vert V\right)\right)\\
+ & = & var\left(\sqrt{\frac{n}{V}}E\left(u\vert V\right)\right)+E\left(\frac{n}{v}\cdot var\left(u\vert v\right)\right)\\
+ & = & 0+E\left(\frac{n}{v}\right)\\
+ & = & nE\left(\frac{1}{V}\right)\\
+ & = & n\int_{0}^{\infty}\frac{1}{v}f\left(v\right)dv=n\int_{0}^{\infty}\frac{1}{v}\frac{1}{2^{\nicefrac{n}{2}}\Gamma\left(\frac{n}{2}\right)}v^{\nicefrac{n}{2}-1}e^{-\frac{v}{2}}\\
+ & = & \frac{n}{2}\int_{0}^{\infty}\frac{v^{\nicefrac{n}{2}-2}e^{-\frac{v}{2}}\left(\frac{1}{2}\right)^{\frac{n}{2}-1}}{\left(\frac{n}{2}-1\right)\Gamma\left(\frac{n}{2}-1\right)}=\frac{n}{2\left(\frac{n}{2}-1\right)}\int_{0}^{\infty}\frac{v^{\frac{n}{2}-2}e^{-\frac{v}{2}}\left(\frac{1}{2}\right)^{\frac{n}{2}-1}}{\Gamma\left(\frac{n}{2}-1\right)}\\
+ & = & \frac{n}{2\left(\frac{n}{2}-1\right)}\\
+ & = & \frac{n}{n-2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

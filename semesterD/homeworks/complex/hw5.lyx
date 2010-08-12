@@ -1,0 +1,947 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+5
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{i\pi}+1 & = & 0\\
+\cos\left(\pi\right)+i\sin\left(\pi\right)+1 & = & 0\\
+-1+0\cdot i+1 & = & 0\\
+0 & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\sin^{\prime}\left(z\right)=\cos\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin^{\prime}\left(z\right) & = & \frac{d}{dt}\cdot\frac{e^{iz}-e^{-iz}}{2i}\\
+ & = & \frac{d}{dt}\left(\frac{e^{iz}}{2i}-\frac{e^{-iz}}{2i}\right)\\
+ & = & \frac{ie^{iz}}{2i}-\frac{-ie^{-iz}}{2i}\\
+ & = & \frac{e^{iz}+e^{-iz}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\cos^{\prime}\left(z\right)=-\sin\left(z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos^{\prime}\left(z\right) & = & \frac{d}{dt}\cdot\frac{e^{iz}+e^{-iz}}{2}\\
+ & = & \frac{d}{dt}\left(\frac{e^{iz}}{2}+\frac{e^{-iz}}{2}\right)\\
+ & = & \frac{ie^{iz}}{2}+\frac{-ie^{-iz}}{2}\\
+ & = & i\frac{e^{iz}-e^{-iz}}{2}\\
+ & = & -\frac{e^{iz}-e^{-iz}}{2i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\cos^{2}\left(z\right)+\sin^{2}\left(z\right)=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos^{2}\left(z\right)+\sin^{2}\left(z\right) & = & \left(\frac{e^{iz}+e^{-iz}}{2}\right)^{2}+\left(\frac{e^{iz}-e^{-iz}}{2i}\right)^{2}\\
+ & = & \frac{e^{2iz}+2e^{iz}e^{-iz}+e^{-2iz}}{4}+\frac{e^{2iz}-2e^{iz}e^{-iz}+e^{-2iz}}{-4}\\
+ & = & \frac{e^{2iz}}{4}+\frac{e^{iz}e^{-iz}}{2}+\frac{e^{-2iz}}{4}+-\frac{e^{2iz}}{4}+\frac{e^{iz}e^{-iz}}{2}-\frac{e^{-2iz}}{4}\\
+ & = & \frac{e^{iz}e^{-iz}}{2}+\frac{e^{iz}e^{-iz}}{2}\\
+ & = & e^{0}\\
+ & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+\begin_inset Formula $\cos\left(z\right)=\sin\left(\frac{\pi}{2}-z\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(\frac{\pi}{2}-z\right) & = & \frac{e^{i\left(\frac{\pi}{2}-z\right)}-e^{-i\left(\frac{\pi}{2}-z\right)}}{2i}\\
+ & = & \frac{e^{i\frac{\pi}{2}}e^{-iz}-e^{-i\frac{\pi}{2}}e^{iz}}{2i}\\
+ & = & \frac{ie^{-iz}-\left(-i\right)e^{iz}}{2i}\\
+ & = & \frac{e^{iz}+e^{-iz}}{2}\\
+ & = & \cos\left(z\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & x+iy\\
+w & = & a+ib\\
+A & = & \left(e^{z}\right)^{w}\\
+ & = & e^{w\ln\left(e^{z}\right)}\\
+ & = & e^{w\ln\left(e^{x}e^{iy}\right)}\\
+ & = & e^{w\left(x+i\left(y+2\pi\right)\right)}\\
+B & = & e^{zw}\\
+C & = & \left(e^{w}\right)^{z}\\
+ & = & e^{z\ln\left(e^{w}\right)}\\
+ & = & e^{z\cdot\left(w+2\pi in\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & \frac{i}{4\pi}\\
+w & = & \frac{i}{3\pi}\\
+A & = & \left\{ \exp\left(\frac{i}{4\pi}\right)\right\} ^{\frac{i}{3\pi}}\\
+ & = & \exp\left[\frac{i}{3\pi}\left(\frac{i}{4\pi}+2\pi ik\right)\right]\\
+ & = & \exp\left[-\frac{1}{12\pi^{2}}-\frac{2}{3}ik\right]\\
+B & = & \exp\left(\frac{1}{12\pi^{2}}\right)\\
+C & = & \left\{ \exp\left(\frac{i}{3\pi}\right)\right\} ^{\frac{i}{4\pi}}\\
+ & = & \exp\left\{ \frac{i}{4\pi}\left(\frac{i}{3\pi}+2\pi ik\right)\right\} \\
+ & = & \exp\left\{ \frac{1}{12\pi^{2}}-\frac{1}{2}ik\right\} \end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & i\\
+w & = & 0\\
+A & = & \left(e^{i}\right)^{0}\\
+ & = & e^{0\left(i+2\pi ik\right)}\\
+ & = & 1\\
+B & = & e^{0i}\\
+ & = & 1\\
+C & = & \left(e^{0}\right)^{i}\\
+ & = & 1^{i}\\
+ & = & e^{i\left(\ln1+2\pi ik\right)}\\
+ & = & e^{i\ln1-2\pi k}\\
+ & = & e^{-2\pi k}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+כמו
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+א, 
+\begin_inset Formula $A\not\subseteq C$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+לא נגון כיוון ש 
+\begin_inset Formula $B=e^{wz},C=e^{w\left(z+2\pi ik\right)}$
+\end_inset
+
+ לכן ניתן לראות שלא תתכן הכלה של 
+\begin_inset Formula $A$
+\end_inset
+
+ או 
+\begin_inset Formula $C$
+\end_inset
+
+ ל 
+\begin_inset Formula $B$
+\end_inset
+
+)
+\begin_inset Formula $A$
+\end_inset
+
+ ו 
+\begin_inset Formula $C$
+\end_inset
+
+ סימטריות( ולכן תנאי השאלה לא יתקיים.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln e=1+2\pi in\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln\left(1+i\right)=\ln\left(\sqrt{2}\right)+i\left(\frac{\pi}{4}+2\pi n\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\ln\left(1\right)=0+2\pi in\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+4
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+i^{i} & = & e^{i\ln\left(i\right)}\\
+ & = & e^{i\left(i\left(\frac{\pi}{2}+2\pi n\right)\right)}\\
+ &  & e^{-\left(\frac{\pi}{2}+2\pi n\right)}\\
+ & = & e^{-\frac{\pi}{2}+2\pi n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2^{3} & = & e^{3\ln\left(2\right)}\\
+ & = & e^{3\left(\ln\left(2\right)+2\pi in\right)}\\
+ & = & e^{3\ln\left(2\right)}e^{6\pi in}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+2^{i} & = & e^{i\ln\left(2\right)}\\
+ & = & e^{i\left(\ln2+2\pi in\right)}\\
+ & = & e^{-2\pi n}e^{i\ln2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+5
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\sin\left(i\right) & = & \frac{e^{i\cdot i}-e^{-i\cdot i}}{2i}\\
+ & = & \frac{e^{-1}-e^{1}}{2i}\\
+ & = & i\frac{-e^{-1}+e^{1}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\cos\left(1+i\right) & = & \frac{e^{i-1}+e^{-i+1}}{2}\\
+ & = & 0.833-0.9889i\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ד
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z & = & \arcsin\left(1+i\right)\\
+\sin\left(z\right) & = & 1+i\\
+\frac{e^{iz}-e^{-iz}}{2i} & = & 1+i\\
+e^{iz}-e^{-iz} & = & 2i-2\\
+e^{iz}-1 & = & \left(2i-2\right)e^{iz}\\
+\left(e^{iz}\right)^{2}+\left(2-2i\right)e^{iz}-1 & = & 0\\
+e^{iz_{1}} & = & -2.27202+i1.78615i\\
+iz_{1} & = & 1.061+i\left(\pi-0.21\pi\right)+2\pi ni\\
+z_{1} & = & -i1.061+0.21\pi+2\pi n\\
+e^{iz_{2}} & = & 2.27202+i0.2138i\\
+iz_{2} & = & 2.282+0.09i+2\pi in\\
+z_{2} & = & -i2.282+0.09+2\pi n\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+6
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z\mapsto z^{n}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+re^{i\theta}\to r^{n}e^{in\theta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $r$
+\end_inset
+
+ קבוע ו 
+\begin_inset Formula $0\leq\theta<2\pi$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+מעגל בגודל 
+\begin_inset Formula $r^{n}$
+\end_inset
+
+ כך שחוזרים על כל נקודה במעגל 
+\begin_inset Formula $n$
+\end_inset
+
+ פעמים.
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+re^{i\theta}\mapsto r^{n}e^{in\theta}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\theta$
+\end_inset
+
+ קבוע ו 
+\begin_inset Formula $r\in\left(0,\infty\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קו ישר בזוית 
+\begin_inset Formula $n\theta$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+7
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+z\mapsto e^{z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+כל המישור מועבר לכל המיושר.
+ כי אם 
+\begin_inset Formula $x,y\in\mathbb{R}$
+\end_inset
+
+ אזי דרך 
+\begin_inset Formula $e^{x+iy}$
+\end_inset
+
+ ניתן ליצג כל נקודה 
+\begin_inset Formula $z$
+\end_inset
+
+ במישור הממשי
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+כל המישור הממשי לפחות המעגל 
+\begin_inset Formula $\left|w\right|\leq1$
+\end_inset
+
+כי אפשר לייצג מספר כלשהוא בהינתן הזוויות 
+\begin_inset Formula $y>0$
+\end_inset
+
+ אבל אי אפשר לייצג מספר כך ש 
+\begin_inset Formula $\left|w\right|\leq1$
+\end_inset
+
+ בהינתן 
+\begin_inset Formula $x>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $\alpha<\left|w\right|<\beta$
+\end_inset
+
+ עבור חצי מישור מסובב ב 
+\begin_inset Formula $\gamma$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+8
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+z_{1} & = & -\frac{\sqrt{3}}{2}+\frac{i}{2}\\
+z_{2} & = & \frac{\sqrt{3}}{2}+\frac{i}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתבונן בהעתקת מוביוס המעבירה 
+\begin_inset Formula $w\left(z_{1}\right)=0$
+\end_inset
+
+ ו 
+\begin_inset Formula $w\left(z_{2}\right)=\infty$
+\end_inset
+
+ למשל 
+\begin_inset Formula $w\left(z\right)=\frac{z-z_{1}}{z-z_{2}}=\frac{z+\frac{\sqrt{3}}{2}-\frac{i}{2}}{z-\frac{\sqrt{3}}{2}-\frac{i}{2}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $w$
+\end_inset
+
+ מעבירה את המעגלים הנ"ל לישרים הנחתכים ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\numeric off
+.
+ נחשב את הזווית ביניהם
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+w\left(0\right) & = & \frac{\sqrt{\frac{3}{2}}-\frac{i}{2}}{-\sqrt{\frac{3}{2}}-\frac{i}{2}}e^{\frac{2}{3}\pi i}\\
+w\left(1\right) & = & \frac{i+\sqrt{\frac{3}{2}}-\frac{i}{2}}{i-\sqrt{\frac{3}{2}}-\frac{i}{2}}=e^{-\frac{2}{3}\pi i}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+w=e^{\pi z}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר קודם מעלים ב 
+\begin_inset Formula $\pi$
+\end_inset
+
+ ואז ב 
+\begin_inset Formula $z$
+\end_inset
+
+ 
+\begin_inset Formula $\left(e^{\pi}\right)^{z}=e^{\pi z}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ג
+\end_layout
+
+\begin_layout Standard
+נגביר את התחום לרצועה ע"י 
+\begin_inset Formula $w_{1}\left(z\right)=\frac{z-2}{z}$
+\end_inset
+
+, זה נותן הרצועה החסומה בין 
+\begin_inset Formula $x=0$
+\end_inset
+
+ ל 
+\begin_inset Formula $x=2$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+כאת נסובב את הרצועה 
+\begin_inset Formula $w_{2}\left(z\right)=\frac{\pi}{2}e^{\frac{1}{2}\pi i}z$
+\end_inset
+
+ ואז נפעיל 
+\begin_inset Formula $w_{3}\left(z\right)=e^{z}$
+\end_inset
+
+ נקבל חצי המעגל בין 
+\begin_inset Formula $\left|z\right|=1$
+\end_inset
+
+, 
+\begin_inset Formula $\Im\left(z\right)>0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+נפעיל מוביוס 
+\begin_inset Formula $w_{4}=\frac{z-1}{z+1}$
+\end_inset
+
+ שזה מעביר התחום לרבע השלישי של המיושר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w_{5}=-z$
+\end_inset
+
+ נקבל את הרבע השני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $w_{6}=z^{2}$
+\end_inset
+
+ ונקבל חצי המישור העליון.
+\end_layout
+
+\end_body
+\end_document

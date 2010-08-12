@@ -1,0 +1,293 @@
+#LyX 1.6.5 created this file. For more info see http://www.lyx.org/
+\lyxformat 345
+\begin_document
+\begin_header
+\textclass article
+\use_default_options false
+\language hebrew
+\inputencoding auto
+\font_roman default
+\font_sans default
+\font_typewriter default
+\font_default_family default
+\font_sc false
+\font_osf false
+\font_sf_scale 100
+\font_tt_scale 100
+
+\graphics default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref false
+\papersize a4paper
+\use_geometry false
+\use_amsmath 1
+\use_esint 1
+\cite_engine basic
+\use_bibtopic false
+\paperorientation portrait
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\defskip medskip
+\quotes_language english
+\papercolumns 1
+\papersides 2
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\author "" 
+\author "" 
+\end_header
+
+\begin_body
+
+\begin_layout Title
+תרגיל
+\family roman
+\series medium
+\shape up
+\size largest
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+מס.
+\numeric on
+4
+\end_layout
+
+\begin_layout Author
+עפיף חלומה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+302323001
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+1
+\end_layout
+
+\begin_layout Subsection
+א
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[Y\vert\begin{pmatrix}X_{1}\\
+X_{2}\end{pmatrix}=\begin{pmatrix}0\\
+0\end{pmatrix}\right] & = & \frac{\sum_{i\in\left\{ 2,4\right\} }i\cdot P\left(Y=i\right)}{\sum_{i\in\left\{ 2,4\right\} }P\left(Y=i\right)}\\
+ & = & \frac{2\cdot\frac{1}{9}+4\cdot\frac{2}{9}}{\nicefrac{3}{9}}\\
+ & = & \frac{13}{3}\\
+ & = & 4.333\\
+E\left[Y\vert\begin{pmatrix}X_{1}\\
+X_{2}\end{pmatrix}=\begin{pmatrix}0\\
+1\end{pmatrix}\right] & = & \frac{\sum_{i\in\left\{ 6\right\} }i\cdot P\left(Y=i\right)}{\sum_{i\in\left\{ 6\right\} }P\left(Y=i\right)}\\
+ & = & 6\cdot\frac{P\left(Y=6\right)}{P\left(Y=6\right)}\\
+ & = & 6\\
+E\left[Y\vert\begin{pmatrix}X_{1}\\
+X_{2}\end{pmatrix}=\begin{pmatrix}1\\
+0\end{pmatrix}\right] & = & \frac{\sum_{i\in\left\{ 1,3\right\} }i\cdot P\left(Y=i\right)}{\sum_{i\in\left\{ 1,3\right\} }P\left(Y=i\right)}\\
+ & = & \frac{1\cdot\frac{1}{9}+3\cdot\frac{2}{9}}{\frac{1}{9}+\frac{2}{9}}\\
+ & = & \frac{7}{3}\\
+ & = & 2.333\\
+E\left[Y\vert\begin{pmatrix}X_{1}\\
+X_{2}\end{pmatrix}=\begin{pmatrix}1\\
+1\end{pmatrix}\right] & = & \frac{\sum_{i\in\left\{ 5\right\} }i\cdot P\left(Y=i\right)}{\sum_{i\in\left\{ 5\right\} }P\left(Y=i\right)}\\
+ & = & 5\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsection
+ב
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[Y\vert X_{1},X_{2}\right] & = & \begin{cases}
+4.333 & x_{1}=0,x_{2}=0\\
+6 & x_{1}=0,x_{2}=1\\
+2.333 & x_{1}=1,x_{2}=0\\
+5 & x_{1}=1,x_{2}=1\end{cases}\\
+MSE & = & E\left[\left(X-\hat{X}\right)^{2}\right]\\
+ & = & \sum_{x=1}^{6}\left(x-\hat{x}\right)^{2}P\left(x\right)\\
+ & = & \begin{matrix}\left(1-\hat{x}\right)^{2}\cdot P\left(1\right)+\left(2-\hat{x}\right)^{2}\cdot P\left(1\right)+\left(3-\hat{x}\right)^{2}\cdot P\left(1\right)+\\
++\left(4-\hat{x}\right)^{2}\cdot P\left(1\right)+\left(5-\hat{x}\right)^{2}\cdot P\left(1\right)+\left(6-\hat{x}\right)^{2}\cdot P\left(1\right)\end{matrix}\\
+ & = & \begin{matrix}\left(1-\frac{7}{3}\right)^{2}\cdot\frac{1}{9}+\left(2-\frac{13}{3}\right)^{2}\cdot\frac{1}{9}+\left(3-\frac{7}{3}\right)^{2}\cdot\frac{2}{9}+\\
++\left(4-\frac{13}{3}\right)^{2}\cdot\frac{2}{9}+\left(5-5\right)^{2}\cdot\frac{1}{9}+\left(6-6\right)^{2}\cdot\frac{2}{9}\end{matrix}\\
+ & = & \frac{16}{9}\cdot\frac{1}{9}+\frac{49}{9}\cdot\frac{1}{9}+\frac{4}{9}\cdot\frac{2}{9}+\frac{1}{9}\cdot\frac{2}{9}\\
+ & = & \frac{75}{9}\\
+ & = & 8.333\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+2
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X & \sim & U\left[-1,1\right]\\
+Y & = & X^{2}\\
+E\left[X\right] & = & 0\\
+E\left[Y\right] & = & \int_{-\infty}^{\infty}y\cdot P\left(Y=y\right)dy\\
+ & = & \int_{-1}^{1}x^{2}\cdot P\left(x=x\right)dx\\
+ & = & \int_{-1}^{1}x^{2}\cdot\frac{1}{2}dx\\
+ & = & \int_{-1}^{1}\frac{x^{3}}{3}\cdot\frac{1}{2}dx\\
+ & = & \frac{1}{6}\cdot\left[x^{3}\right]_{-1}^{1}\\
+ & = & \frac{1}{6}\cdot\left[x^{3}\right]_{-1}^{1}\\
+ & = & \frac{2}{6}=\frac{1}{3}\\
+\mbox{cov}\left(X,Y\right) & = & E\left[XY\right]-\underbrace{E\left[x\right]E\left[y\right]}_{0}\\
+ & = & E\left[x^{3}\right]\\
+ & = & \int_{-1}^{1}x^{3}\cdot P\left(x\right)dx\\
+ & = & \left[\frac{x^{4}}{4}\cdot\frac{1}{2}\right]_{-1}^{1}\\
+ & = & \frac{1}{8}\left[x^{4}\right]_{-1}^{1}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{X}^{LMMSE}\left(Y=y\right) & = & \overbrace{E\left[x\right]}^{0}+\left(y-E\left[y\right]\right)\overbrace{\frac{\mbox{cov}\left(x,y\right)}{\mbox{var}\left(x\right)}}^{0}\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\hat{X}^{MMSE}\left(Y=y\right) & = & E\left[X\vert Y=y\right]\\
+ & = & E\left[x\vert x^{2}=y\right]\\
+ & = & E\left[x\vert x=\pm\sqrt{y}\right]\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שניהם נותנים אותה תשובה ולכן הם באותה רמת דיוק.
+\end_layout
+
+\begin_layout Section
+שאלה
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+3
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+E\left[y\right] & = & E\left[x^{2}\right]=var\left(x\right)+E\left[x\left(t\right)\right]^{2}=var\left(x\right)=cov\left(t,t\right)\\
+cov_{y}\left(t_{1},t_{2}\right) & = & E\left[\left(y\left(t_{1}\right)-\mu_{y}\left(t_{1}\right)\right)\left(y\left(t_{2}\right)-\mu_{y}\left(t_{2}\right)\right)\right]\\
+ & = & E\left[\left(x^{2}\left(t_{1}\right)-E\left[x^{2}\left(t_{1}\right)\right]\right)\left(x^{2}\left(t_{2}\right)-E\left[x^{2}\left(t_{2}\right)\right]\right)\right]\\
+ & = & E\left[\begin{matrix}x^{2}\left(t_{1}\right)x^{2}\left(t_{2}\right)-x^{2}\left(t_{2}\right)E\left[x^{2}\left(t_{1}\right)\right]+\\
+-x^{2}\left(t_{1}\right)E\left[x^{2}\left(t_{2}\right)\right]+E\left[x^{2}\left(t_{1}\right)\right]E\left[x^{2}\left(t_{2}\right)\right]\end{matrix}\right]\\
+ & = & \begin{matrix}var\left(x\left(t_{1}\right)\right)var\left(x\left(t_{2}\right)\right)+2cov^{2}\left(x\left(t_{1}\right),x\left(t_{2}\right)\right)+\\
+-2var\left(x\left(t_{1}\right)\right)var\left(x\left(t_{2}\right)\right)+var\left(x_{1}\right)var\left(x_{2}\right)\end{matrix}\\
+ & = & 2cov^{2}\left(x\left(t_{1}\right),x\left(t_{2}\right)\right)\\
+ & = & 2cov^{2}\left(t_{1},t_{2}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

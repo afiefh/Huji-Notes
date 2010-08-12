@@ -169,7 +169,7 @@ tishby@cs.huji.ac.il
 \color inherit
 25
 \numeric off
-% תרכילים,
+% תרגילים,
 \family roman
 \series medium
 \shape up
@@ -1090,6 +1090,10 @@ A=\begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\
 \end_layout
 
 \begin_layout Standard
+
+\end_layout
+
+\begin_layout Standard
 \begin_inset Formula \begin{eqnarray*}
 \underbar{x}\left(t+h\right) & = & \underbar{x}+\underbar{\dot{x}}\left(t\right)h+o\left(h^{2}\right)\\
  & = & \underbar{x}\left(t\right)+A\underbar{x}\left(t\right)h\\
@@ -1241,6 +1245,2833 @@ e^{\begin{pmatrix}0 & 1\\
 \begin_layout Standard
 \begin_inset Formula \[
 f\left(x\right)=f\left(x_{0}\right)+\sum_{i=1}^{n}\frac{\partial f\left(x_{9}\right)}{\partial x_{i}}h_{i}+\frac{1}{2}\sum_{i=1}^{n}\sum_{i_{2}=1}^{n}\frac{\partial^{2}f\left(x_{0}\right)}{\partial x_{i_{1}}\partial x_{i_{2}}}h_{i_{1}}h_{i_{2}}+\dots+R_{m}\left(h\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+בהינתן אופרטור 
+\begin_inset Formula $O_{1},O_{2}$
+\end_inset
+
+ אזי 
+\begin_inset Formula $O_{1}O_{2}=O_{1}\circ O_{2}$
+\end_inset
+
+ כלומר ההרגבה שלהם.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+הרכבה 
+\begin_inset Formula $\frac{\partial}{x_{i}},\frac{\partial}{x_{j}}$
+\end_inset
+
+ נותן את הנגזרת המעורבת: 
+\begin_inset Formula $\frac{\partial^{2}}{\partial x_{1}\partial x_{j}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left(h^{T}\circ\nabla\right)^{k}\circ f\left(\underbar{x_{0}}\right) & = & \left(\sum_{i=1}^{n}h_{i}\frac{\partial}{\partial x_{i}}\right)^{k}f\left(x_{0}\right)\\
+ & = & \left(\sum_{i_{1}=1}^{n}\dots\sum_{i_{k}=1}^{n}h_{i_{1}}\cdots h_{i_{k}}\frac{\partial^{k}}{\partial x_{i_{1}}\cdots\partial x_{i_{k}}}\right)f\left(x_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניסוח קומפקטי של טור טיילור
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(\underbar{x}\right) & = & \left(\sum_{k=0}^{m}\frac{1}{k!}\left(\underbar{h}\circ\nabla\right)^{k}\right)f\left(x_{0}\right)+R_{n}\left(\underbar{h}\right)\\
+R_{n}\left(h\right) & = & \frac{1}{\left(n+1\right)!}\left(\underbar{h}\circ\nabla\right)^{n+1}f\left(x_{0}+\theta h\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\theta\in\left(0,1\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ניתן לייצג את 
+\begin_inset Formula $f$
+\end_inset
+
+ כטור אינסופי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(\underbar{x}\right) & = & \left(\sum_{k=0}^{\infty}\frac{1}{k!}\left(\underbar{h}\cdot\nabla\right)^{k}\right)f\left(x_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר הטור מתכנס:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(\underbar{x}\right)=\left(e^{\underbar{h}\nabla}\right)f\left(x_{0}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמה
+\end_layout
+
+\begin_layout Standard
+למערכת לא ליניארית האוסילטור של ואן-דר-פול
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename linear/c9d1.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+האוסצצילטור הזה
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+והאפיון של הנגד:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+i_{R}\left(V\right)=\alpha V\left(V^{2}-1\right),\alpha>0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename linear/c9d2.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+האופיין נראה כך
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואת המעגל הן האופיין הנתון ו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+c\frac{\partial V}{\partial t}+i_{L}+i_{R}\left(V\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $C=1$
+\end_inset
+
+ ו 
+\begin_inset Formula $L=1$
+\end_inset
+
+ ונגדיר 
+\begin_inset Formula $X_{1}=V$
+\end_inset
+
+ ו 
+\begin_inset Formula $X_{2}=i_{L}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{1}}{\partial t} & = & -\alpha x_{1}\left(x_{1}^{2}-1\right)-x_{2}\\
+\frac{\partial x_{2}}{\partial t} & = & x_{1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נקודת השבת היא 
+\begin_inset Formula $x_{1}=0,x_{2}=0$
+\end_inset
+
+, כי 
+\begin_inset Formula $\frac{\partial x_{2}}{\partial t}=0$
+\end_inset
+
+ רק כאשר 
+\begin_inset Formula $x_{1}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+נזכר בליניאריזציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{1}}{\partial t} & = & f_{1}\left(x_{1},x_{2},t\right)\\
+\frac{\partial x_{2}}{\partial t} & = & f_{2}\left(x_{1},x_{2},t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במקרה זה מסביב נקודת שבת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\frac{\partial h}{\partial t}=A\cdot\underbar{h}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}} & \frac{\partial f_{1}}{\partial x_{2}}\\
+\frac{\partial f_{2}}{\partial x_{1}} & \frac{\partial f_{2}}{\partial x_{2}}\end{pmatrix}\vert_{x_{0}}\\
+ & = & \begin{pmatrix}\alpha & -1\\
+1 & 0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+h\left(t\right)=e^{At}\cdot\underbar{h}\left(0\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אקספוננט של מטריצה ניתנת לליכסון
+\end_layout
+
+\begin_layout Standard
+מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+ הינה ניתנת לליכסון אם קיימת מטריצה הפיכה 
+\begin_inset Formula $P$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A=P\overline{A}P^{-1}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\overline{A}$
+\end_inset
+
+ הינה מטריצה אלכסונית 
+\begin_inset Formula $\overline{A}=\begin{pmatrix}\lambda_{1} & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & \lambda_{2}\end{pmatrix}$
+\end_inset
+
+ .
+\end_layout
+
+\begin_layout Standard
+נחשב את 
+\begin_inset Formula $A^{k}$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A^{k} & = & \underbrace{\left(P\overline{A}P^{-1}\right)\left(P\overline{A}P^{-1}\right)\cdots\left(P\overline{A}P^{-1}\right)}_{k\mbox{ times}}\\
+ & = & P\overline{A}\left(P^{-1}P\right)\overline{A}\left(P^{-1}\cdots P\right)\overline{A}P^{-1}\\
+ & = & P\overline{A}I\overline{A}\cdots I\overline{A}P^{-1}\\
+ & = & P\overline{A}^{k}P^{-1}\\
+ & = & P\begin{pmatrix}\lambda_{1} & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & \lambda_{2}\end{pmatrix}^{k}P^{-1}\\
+e^{At} & \equiv & \sum_{k=0}^{\infty}\frac{A^{k}t^{k}}{k!}=\\
+ & = & \sum_{k=0}^{\infty}\frac{P\overline{A}^{k}P^{-1}t^{k}}{k!}\\
+ & = & P\left(\sum_{k=0}^{\infty}\frac{\overline{A}^{k}t^{k}}{k!}\right)P^{-1}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם כל ה 
+\begin_inset Formula $\Re\left(\lambda_{i}\right)$
+\end_inset
+
+ שלילים נקודת השבת היא יציבה
+\end_layout
+
+\begin_layout Standard
+אם קיימת 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $\Re\left(\lambda_{i}\right)>0$
+\end_inset
+
+ נק' השבת אינה יציבה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}\alpha & -1\\
+1 & 0\end{pmatrix}\\
+\left|A-\lambda I\right| & = & \begin{vmatrix}\alpha-\lambda & -1\\
+1 & -\lambda\end{vmatrix}\\
+ & = & -\lambda\left(\alpha-\lambda\right)+1\\
+ & = & \lambda^{2}-\alpha\lambda+1\\
+\lambda_{1,2} & = & \frac{\alpha\pm\sqrt{\alpha^{2}-4}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+אם ערכים עצמיים של מטריצה שונים אזי המטריצה ניתנת ללכסון.
+
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+)זה תנאי מספיק אבל לא הכרחי ללכסון(
+\end_layout
+
+\begin_layout Standard
+דוגמה לכן שהתנאי הוא הכרחי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula $I$
+\end_inset
+
+ היא לכסנה)היא כבר מלוכסנת( אבל כל הערכים העציים שווים.
+\end_layout
+
+\begin_layout Standard
+דוגמה למטריצה לא ניתנת ללכסון:
+\end_layout
+
+\begin_layout Standard
+מטריצה נילפוטנטית מטריצה שעבורה קיים 
+\begin_inset Formula $k$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $A^{k}=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+מ"ע של 
+\begin_inset Formula $n$
+\end_inset
+
+ משואות ב 
+\begin_inset Formula $n$
+\end_inset
+
+ נעלמים מסדר ראשון אוטונומית
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathbb{R}^{n} & \ni & \begin{pmatrix}\dot{x}_{1}=f_{1}\left(x_{1},\dots,x_{n},t\right)\\
+\vdots\\
+x_{n}=f_{n}\left(x_{1},\dots x_{n},t\right)\end{pmatrix}\\
+\underbar{\dot{x}} & = & \underbar{f}\left(\underbar{x},t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+ליניאריזציה:
+\end_layout
+
+\begin_layout Standard
+סביב נקודות שיווי משקל)שבת(
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbar{\dot{x}}=0=\underbar{f}\left(\underbar{x},t\right)=0\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\underbar{f}\left(\underbar{x}\right)$
+\end_inset
+
+ לא תלוייה מפורשות ב 
+\begin_inset Formula $t$
+\end_inset
+
+ 
+\begin_inset Formula $\frac{\partial f}{\partial t}=0$
+\end_inset
+
+ נוכל לפתח את 
+\begin_inset Formula $f\left(\underbar{x}_{0}+\delta x\right)\approx\underbar{f}\left(\underbar{x}_{0}+Df\vert_{x_{0}}\right)$
+\end_inset
+
+ בסדר ראשון - ליניאריזציה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\underbar{\dot{x}}=\dot{\left(\delta x\right)}=\underbrace{\underbar{f}\left(\underbar{x}_{0}\right)}_{0}+Df\delta\underbar{x}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בנקודת שבת שיווי משקל 
+\begin_inset Formula $f\left(x_{0}\right)=0$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\dot{\left(\delta\underbar{x}\right)} & = & Df\delta\underbar{x}\\
+Df & = & \begin{pmatrix}\frac{\partial f_{1}}{\partial x_{1}} & \dots & \frac{\partial f_{n}}{\partial x_{1}}\\
+\vdots & \ddots & \vdots\\
+\frac{\partial f_{1}}{\partial x_{n}} & \dots & \frac{\partial f_{n}}{\partial x_{n}}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זאת משוואה מהצורה 
+\begin_inset Formula $\underbar{\dot{x}}=A\underbar{x}$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $A\in\mathbb{R}^{n\times n}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+פתרון פורמאלי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbar{\dot{x}} & = & A\underbar{x}\\
+x\left(t\right) & = & e^{A\cdot t}\underbar{x}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{A\cdot t} & = & I+A\cdot t+\frac{1}{2}A^{2}t^{2}+\dots\\
+e^{\begin{pmatrix}\lambda_{1} & \ddots\\
+\ddots & \lambda_{n}\end{pmatrix}} & = & \begin{pmatrix}e^{\lambda_{1}t} & \ddots\\
+\ddots & e^{\lambda_{n}t}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אם 
+\begin_inset Formula $A$
+\end_inset
+
+ ניתנת ללכסון:
+\end_layout
+
+\begin_layout Standard
+קיימת ל 
+\begin_inset Formula $A$
+\end_inset
+
+ "מטריצה דומה" אלכסונית 
+\begin_inset Formula $\begin{pmatrix}\lambda_{1} & \ddots\\
+\ddots & \lambda_{n}\end{pmatrix}=P^{-1}AP$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $\lambda_{i}$
+\end_inset
+
+ הם ע"ע של המטריצה והם שורשי הפולינום האופיני 
+\begin_inset Formula $\left|\lambda I-A\right|=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Section
+ניתוח מערכת בעזרת יצוג ספקטראלי
+\end_layout
+
+\begin_layout Standard
+מערכת שח מסות וקפיצים
+\end_layout
+
+\begin_layout Standard
+\align center
+\begin_inset Graphics
+	filename linear/c11d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זוהיא מערכת 
+\begin_inset Formula $\mbox{MIMO}$
+\end_inset
+
+
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Multiple Input Multiple Output}$
+\end_inset
+
+ 
+\end_layout
+
+\end_inset
+
+הקלט הוא 
+\begin_inset Formula $\underbar{u}=\left(u_{1},u_{2}\right)$
+\end_inset
+
+ הפלט הוא 
+\begin_inset Formula $\underbar{y}=\left(y_{1},y_{2}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואות פיזיקאליות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+M\frac{\partial^{2}y_{1}}{\partial t^{2}} & = & -ky_{1}\left(t\right)+k_{m}\left(y_{2}\left(t\right)-y_{1}\left(t\right)\right)+u_{1}\left(t\right)\\
+M\frac{\partial^{2}y_{2}}{\partial t^{2}} & = & -ky_{2}\left(t\right)+k_{m}\left(y_{1}\left(t\right)-y_{2}\left(t\right)\right)+u_{2}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $k=k_{m}=1$
+\end_inset
+
+ ונניח 
+\begin_inset Formula $M=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נפתור בהינתן שאין כוח חיצוני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}y_{1}}{\partial t^{2}} & = & -2y_{1}\left(t\right)+y_{2}\left(t\right)\\
+\frac{\partial^{2}y_{2}}{\partial t^{2}} & = & y_{1}\left(t\right)-2y_{2}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $x_{1}=y_{1},x_{2}=\dot{y}_{1},x_{3}=y_{2},x_{4}=\dot{y}_{3}$
+\end_inset
+
+ ונקבל משוואה מהצורה 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial\underbar{x}}{\partial t} & = & A\underbar{x}+\overbrace{B\underbar{u}}^{0}\\
+\underbar{y} & = & C\cdot\underbar{x}+\underbrace{B\underbar{u}}_{0}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\begin{pmatrix}\dot{x}_{1}\\
+\dot{x}_{2}\\
+\dot{x}_{3}\\
+\dot{x}_{4}\end{pmatrix} & = & \overbrace{\begin{pmatrix}0 & 1 & 0 & 0\\
+-2 & 0 & 1 & 0\\
+0 & 0 & 0 & 1\\
+1 & 0 & -2 & 0\end{pmatrix}}^{A}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\\
+x_{4}\end{pmatrix}\\
+\begin{pmatrix}y_{1}\\
+y_{2}\end{pmatrix} & = & \underbrace{\begin{pmatrix}1 & 0 & 0 & 0\\
+0 & 0 & 1 & 0\end{pmatrix}}_{C}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\\
+x_{4}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה נקרא
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+State Space
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+נמצא ערכים עצמיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left|\lambda I-A\right|=\begin{vmatrix}\lambda & -1 & 0 & 0\\
+2 & \lambda & -1 & 0\\
+0 & 0 & \lambda & -1\\
+-1 & 0 & 2 & \lambda\end{vmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ב
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Matlab
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+אפשר למצא את הערכים העצמיים דרך 
+\begin_inset Formula $\left[D,V\right]=\mbox{eig}\left(A\right)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+קיבלנו
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+D & = & \begin{pmatrix}\sqrt{3}i & 0 & 0 & 0\\
+0 & \sqrt{3}i & 0 & 0\\
+0 & 0 & 1 & 0\\
+0 & 0 & 0 & i\end{pmatrix}\\
+V & = & \begin{pmatrix}-\sqrt{\frac{1}{2}}i & \sqrt{\frac{1}{2}}i & -1 & 1\\
+\sqrt{\frac{2}{2}}i & \sqrt{\frac{3}{2}} & 1 & 1\\
+\sqrt{\frac{1}{2}}i & -\sqrt{\frac{1}{2}}i & -i & i\\
+-\sqrt{\frac{3}{2}} & -\sqrt{\frac{3}{2}} & 1 & 1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+תזכורת:
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $x\left(0\right)=v_{i}$
+\end_inset
+
+ במקרה זה 
+\begin_inset Formula $x\left(t\right)=e^{\lambda_{i}t}v_{i}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב ש 
+\begin_inset Formula $\lambda_{1}=\overline{\lambda_{2}}$
+\end_inset
+
+ ו 
+\begin_inset Formula $\lambda_{3}=\overline{\lambda_{4}}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $v_{1}=\overline{v}_{2}$
+\end_inset
+
+ ו 
+\begin_inset Formula $v_{4}=\overline{v}_{3}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נתחיל עם 
+\begin_inset Formula $x\left(0\right)=v_{1}+v_{2}=\left[0,\sqrt{6},0,-\sqrt{6}\right]$
+\end_inset
+
+.
+ במקרה זה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & e^{\lambda_{1}t}v_{1}+e^{\lambda_{2}t}v_{2}\\
+ & = & e^{\lambda_{1}t}v_{1}+e^{\overline{\lambda}_{1}t}\overline{v}_{1}\\
+ & = & e^{\lambda_{1}t}v_{1}+\overline{e^{\lambda_{1}t}v_{1}}\\
+ & = & 2\Re\left(e^{\lambda_{1}t}\underbar{v}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כלומר 
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & 2\Re\left(e^{\sqrt{3}it}\left[-\sqrt{\frac{1}{2}}i,\sqrt{\frac{3}{2}},\sqrt{\frac{1}{2}}i,-\sqrt{\frac{3}{2}}\right]^{T}\right)\\
+ & = & 2\Re\left(\left(\cos\left(\sqrt{3}t\right)+i\sin\left(\sqrt{3}t\right)\right)\left[\dots\dots\right]^{T}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+מסקנה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y_{1}\left(t\right) & = & \frac{2}{\sqrt{2}}\sin\left(\sqrt{3}t\right)\\
+y_{2}\left(t\right) & = & -\frac{2}{\sqrt{2}}\sin\left(\sqrt{3}t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שימו לב כי 
+\begin_inset Formula $y_{1}\left(t\right)=-y_{2}\left(t\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+משפט:
+\end_layout
+
+\begin_layout Standard
+כל מטריצה מאפסת את הפולינום האופיני שלה כלומר 
+\begin_inset Formula $P\left(A\right)=\prod_{i=1}^{k}\left(A-\lambda_{i}I\right)^{M_{i}}=0$
+\end_inset
+
+ כאשר 
+\begin_inset Formula $M_{i}$
+\end_inset
+
+ הם הריבויים של הע"ע.
+ כאשר
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\numeric on
+\bar default
+\noun default
+\color inherit
+0
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\numeric off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+זו מטריצת האפס.
+\end_layout
+
+\begin_layout Paragraph
+תוצאה:
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $f\left(\lambda\right)$
+\end_inset
+
+ היא פולינום אזי קיים 
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ כך ש 
+\begin_inset Formula $f\left(a\right)=\beta_{n-1}A^{n-1}+\dots+\beta_{1}A+\beta_{0}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ע"י חלוקה של פולינומים נרשום
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(\lambda\right)=P_{n}\left(\lambda\right)\cdot g\left(\lambda\right)+r\left(\lambda\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כך שהמעלה של 
+\begin_inset Formula $r$
+\end_inset
+
+ היא לכל היותר 
+\begin_inset Formula $n-1$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+נתון 
+\begin_inset Formula $A=\begin{pmatrix}1 & 0\\
+1 & 2\end{pmatrix}$
+\end_inset
+
+.
+ חשבו את 
+\begin_inset Formula $A^{37}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A^{37}=\beta_{1}A+\beta_{0}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נשים לב שלכל ערך עצמי של 
+\begin_inset Formula $A$
+\end_inset
+
+ מתקיים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+f\left(\lambda_{i}\right)=\underbrace{\beta_{1}\lambda_{i}+\beta_{0}}_{r\left(\lambda_{i}\right)}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגדיר כי 
+\begin_inset Formula $f\left(\lambda\right)=\lambda^{37}$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+כאשר הערכים העצמיים שונים זה מזה ניתן למצא את ה
+\begin_inset Formula $\beta_{i}$
+\end_inset
+
+ ע"י הצבה של הע"ע
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left|\lambda I-A\right| & = & \begin{vmatrix}\lambda-1 & 0\\
+-1 & \lambda-2\end{vmatrix}\\
+ & = & \left(\lambda-1\right)\left(\lambda-2\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+1^{37} & = & \beta_{1}+\beta_{9}\\
+2^{37} & = & 2\beta_{1}+\beta_{0}\\
+\beta_{1} & = & 2^{37}-1\\
+\beta_{0} & = & 2-2^{37}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+A^{37}=\begin{pmatrix}1 & 0\\
+2^{37}-1 & 2^{37}-2\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbar{\dot{x}} & = & A\underbar{x}\\
+\underbar{x}\left(t\right) & = & e^{A\left(t-t_{0}\right)}\underbar{x}\left(t_{0}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שני מקרים מענינים:
+\end_layout
+
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ ניתנת ללכסון
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+הע"ע שונים
+\end_layout
+
+\begin_layout Enumerate
+הע"ע מנובנים)אלגברית(
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+\begin_inset Formula $A$
+\end_inset
+
+ לא ניתנת ללכסון 
+\begin_inset Formula $\Leftrightarrow$
+\end_inset
+
+ לא קיים בסיס של וקטורים עצמיים
+\end_layout
+
+\begin_layout Standard
+הפולינום האופיני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{n}\left(\lambda\right) & = & \left|A-\lambda I\right|\\
+ & = & \int_{k=0}^{n}a_{k}\lambda^{k}\\
+ & = & \prod_{i=1}^{p}\left(\lambda-\lambda_{i}\right)^{m_{i}}\\
+\sum_{i=1}^{p} & m_{i} & n\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+משפט קילי המילתון
+\end_layout
+
+\begin_layout Standard
+מטריצה מאפסת את הפולינום האופיני שלה.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Pf\left(A\right)P^{-1} & = & \sum_{k=0}^{\infty}\alpha_{k}PA^{k}P^{-1}=\sum_{k=0}^{\infty}\alpha_{k}\left(PAP^{-1}\right)\\
+ & = & f\left(PAP^{-1}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפולינום המינימאלי של מטריצה 
+\begin_inset Formula $A$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+נפולינום בעל המעלה הנמוכה ביותר אם מקדם עליון 
+\begin_inset Formula $1$
+\end_inset
+
+ שהמטריצה מאפסת
+\end_layout
+
+\begin_layout Standard
+טענה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+m\left(\lambda\right)=\prod_{i=1}^{p}\left(\lambda-\lambda_{i}\right)^{\mu_{i}}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $m_{i}\geq\mu_{i}\geq1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+חשבו את 
+\begin_inset Formula $e^{At}$
+\end_inset
+
+ עבור מטריצה 
+\begin_inset Formula $A=\begin{pmatrix}-1 & 1\\
+-1 & 1\end{pmatrix}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(\lambda\right) & = & e^{\lambda t}\\
+g\left(\lambda\right) & = & \alpha_{1}\left(t\right)\lambda+\alpha_{0}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+צריך למצא ערכים אפסים: 
+\begin_inset Formula $\lambda_{1}=0,\lambda_{2}=0$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{0\cdot t} & = & \alpha_{1}\left(t\right)\cdot0+\alpha_{0}t\\
+te^{\lambda t}\vert_{\lambda=0} & = & t=\alpha_{1}t\\
+\alpha_{1}\left(t\right) & = & t\\
+\alpha_{0}\left(t\right) & = & 1\\
+f\left(A\right) & = & g\left(A\right)=tA+I\\
+ & = & \begin{pmatrix}-t+1 & t\\
+-t & t+1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename linear/c13d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מערכת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x_{1}\left(t\right) & = & y\left(t\right)\\
+x_{2}\left(t\right) & = & \frac{\partial y}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+משוואות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\frac{\partial x_{1}}{\partial t}\\
+\frac{\partial x_{2}}{\partial t}\end{pmatrix}=\begin{pmatrix}0 & 1\\
+-\frac{k}{M} & -\frac{\gamma}{M}\end{pmatrix}\begin{pmatrix}x_{1}\left(t\right)\\
+x_{2}\left(t\right)\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח ש 
+\begin_inset Formula $M=1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x}{\partial t} & = & Ax\left(t\right)\\
+A & = & \begin{pmatrix}0 & 1\\
+-k & -\gamma\end{pmatrix}\\
+x\left(t\right) & = & e^{At}x\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ערכים עצמיים:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+P_{n}\left(\lambda\right) & = & \left|A-\lambda I\right|\\
+ & = & \begin{vmatrix}-\lambda & 1\\
+-k & -\lambda-\gamma\end{vmatrix}\\
+ & = & \lambda\left(\lambda+\gamma\right)+k\\
+P_{n}\left(\lambda\right) & = & \lambda^{2}+\gamma\lambda+k\\
+\lambda_{1,2} & = & \frac{-\gamma\pm\sqrt{\gamma^{2}-4k}}{2}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אם 
+\begin_inset Formula $\gamma^{2}\neq4k$
+\end_inset
+
+ ערכים עצמיים שונים ניתן ללכסן את המטריצה והפתרון 
+\begin_inset Formula $c_{1}e^{\lambda_{1}t}+c_{2}e^{\lambda_{2}t}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\gamma^{2}=4k$
+\end_inset
+
+, נניח 
+\begin_inset Formula $\gamma=2,k=1$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\lambda_{1,2} & = & -1\\
+e^{\lambda_{1}t} & = & \beta_{0}\left(t\right)\lambda_{1}+\beta_{0}\\
+e^{-t} & = & -\beta_{1}\left(t\right)+\beta_{0}\\
+f\left(A;t\right) & = & \beta\left(t\right)A+R_{0}\left(t\right)\\
+f\left(-1\right) & = & \beta_{1}\left(t\right)\cdot\left(-1\right)+\beta_{0}\left(t\right)\\
+\frac{\partial f}{\partial\lambda}\vert_{\lambda=-1} & = & te^{\lambda t}\vert_{\lambda=-1}=\beta_{1}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{-t} & = & -\beta_{1}\left(t\right)+\beta_{0}\left(t\right)\\
+te^{-t} & = & \beta_{1}\left(t\right)\\
+e^{At} & = & te^{-t}A+\left(e^{-t}+te^{-t}\right)I\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הפתרון של המערכת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=e^{-t}\begin{pmatrix}1-t & t\\
+-1 & 1-t\end{pmatrix}\begin{pmatrix}x_{1}\left(0\right)\\
+x_{2}\left(0\right)\end{pmatrix}\]
+
+\end_inset
+
+ 
+\end_layout
+
+\begin_layout Section
+מערכת מתיאור פנימי לתיאור חיצוני
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename linear/c13d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מערכת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+u\left(t\right) & = & \frac{\partial x_{1}}{\partial t}+x_{3}\\
+y\left(t\right) & = & x_{3}-\frac{1}{3}\frac{\partial x_{2}}{\partial t}\\
+x_{1} & = & x_{2}+\frac{1}{2}\frac{\partial x_{3}}{\partial t}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\frac{\partial}{\partial t}x_{1}\\
+\frac{\partial}{\partial t}x_{2}\\
+\frac{\partial}{\partial t}x_{3}\end{pmatrix}=\begin{pmatrix}0 & 0 & -1\\
+0 & -3 & 3\\
+2 & -2 & 0\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}+\begin{pmatrix}1\\
+0\\
+0\end{pmatrix}u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+זה יצוג פנימי או
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+State Space
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+מעבר מ
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series medium
+\shape default
+\size normal
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+State Space
+\family roman
+\shape up
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\shape default
+\emph default
+\bar default
+\noun default
+\color inherit
+ל
+\family roman
+\shape up
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\shape default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Input-Output
+\end_layout
+
+\begin_layout Standard
+עבור מערכת של שיעור אחרון
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename linear/c13d2.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+מערכת
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\begin{pmatrix}\frac{\partial}{\partial t}x_{1}\\
+\frac{\partial}{\partial t}x_{2}\\
+\frac{\partial}{\partial t}x_{3}\end{pmatrix}=\begin{pmatrix}0 & 0 & -1\\
+0 & -3 & 3\\
+2 & -2 & 0\end{pmatrix}\begin{pmatrix}x_{1}\\
+x_{2}\\
+x_{3}\end{pmatrix}+\begin{pmatrix}1\\
+0\\
+0\end{pmatrix}u\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & x_{2}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נחליף את 
+\begin_inset Formula $x_{2}$
+\end_inset
+
+ ב 
+\begin_inset Formula $y$
+\end_inset
+
+ אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{1}}{\partial t} & = & -x_{3}+u\\
+\frac{\partial y}{\partial t} & = & -3y+3x_{3}\\
+\frac{\partial x_{3}}{\partial t} & = & 2x_{1}-2y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נרצה להיפטר מ 
+\begin_inset Formula $x_{3}$
+\end_inset
+
+.
+ 
+\begin_inset Formula $x_{3}=y+\frac{1}{3}\frac{\partial y}{\partial t}$
+\end_inset
+
+ מציבים במשוואה הראשונה והשלישית:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial x_{1}}{\partial t} & = & -y-\frac{1}{3}\frac{\partial y}{\partial t}+u\left(t\right)\\
+\frac{\partial y}{\partial t}+\frac{1}{3}\frac{\partial^{2}y}{\partial t^{2}} & = & 2x_{1}-2y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+גוזרים את המשוואה השניה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{2}y}{\partial t^{2}}+\frac{1}{3}\frac{\partial^{3}y}{\partial t^{3}} & = & 2\frac{\partial x_{1}}{\partial t}-2\frac{\partial y}{\partial y}\\
+\frac{\partial^{2}y}{\partial t^{2}}+\frac{1}{3}\frac{\partial^{3}y}{\partial t^{3}} & = & -2y-\frac{2}{3}\frac{\partial y}{\partial t}+2u\left(t\right)-2y\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+גורדאן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+J & = & \begin{pmatrix}\lambda & 1 & 0\\
+0 & \ddots & 1\\
+0 & 0 & \lambda\end{pmatrix}=\lambda I+N\\
+N & = & \begin{pmatrix}0 & 1 & 0\\
+0 & \ddots & 1\\
+0 & 0 & 0\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+e^{Jt} & = & e^{\left(\lambda I+N\right)t}\\
+ & = & e^{\lambda It}e^{Nt}\\
+ & = & \begin{pmatrix}e^{\lambda t} & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & e^{\lambda t}\end{pmatrix}\left(\sum_{p=0}^{q-1}\frac{\left(Nt\right)^{p}}{p!}\right)\\
+ & = & \begin{pmatrix}e^{\lambda t} & 0 & 0\\
+0 & \ddots & 0\\
+0 & 0 & e^{\lambda t}\end{pmatrix}\cdot\begin{pmatrix}1 & t & \frac{t^{q-1}}{\left(q-1\right)!}\\
+0 & \ddots & t\\
+0 & 0 & 1\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+J=\begin{pmatrix}\lambda_{1}\\
+0 & \lambda_{2} & 1\\
+0 &  & \lambda_{2}\end{pmatrix}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+יש שני בלוקים במטריצה הזו 
+\begin_inset Formula $\begin{pmatrix}\lambda_{2} & 1\\
+0 & \lambda_{2}\end{pmatrix}$
+\end_inset
+
+, 
+\begin_inset Formula $\begin{pmatrix}\lambda_{1}\end{pmatrix}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+e^{At}p_{i}=\sum_{r=0}^{i-l_{k}}\frac{t^{r}}{r!}e^{\lambda_{k}t}p_{i-r}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\mathcal{L}\left(f*g\right) & = & \int_{0}^{\infty}\left[\int_{-\infty}^{\infty}f\left(\tau\right)g\left(t-\tau\right)d\tau\right]e^{-st}dt\\
+ & = & \int_{0}^{\infty}\left[\int_{-\infty}^{\infty}f\left(\tau\right)\cdot e^{-s\tau}\cdot g\left(t-\tau\right)e^{-\left(t-\tau\right)s}d\tau\right]d\tau\\
+ & = & \int_{0}^{\infty}f\left(\tau\right)\cdot e^{-s\tau}d\tau\cdot\int_{0}^{\infty}g\left(\tau^{\prime}\right)e^{-s\tau^{\prime}}d\tau^{\prime}\\
+ & = & \mathcal{L}\left(f\right)\cdot\mathcal{L}\left(g\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\tau^{\prime}=t-\tau$
+\end_inset
+
+ ומכיוון שהאות שלנו היא סיבתית אפשר לעבור מאינטגרל מ 
+\begin_inset Formula $-\infty$
+\end_inset
+
+ עד 
+\begin_inset Formula $\infty$
+\end_inset
+
+ לאינטגרל מ 
+\begin_inset Formula $0$
+\end_inset
+
+ עד 
+\begin_inset Formula $\infty$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזזה בזמן
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{L}\left(f\left(t-t_{0}\right)\right)=e^{t_{0}s}\mathcal{L}\left[f\right]\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+התרחבות או התקווצות הזמן כאשר 
+\begin_inset Formula $\mathcal{L}\left(f\left(t\right)\right)=F\left(s\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{L}\left(f\left(\frac{t}{a}\right)\right)=aF\left(as\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מטריצות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbar{\dot{x}} & = & A\underbar{x}\\
+\mathcal{L}\left[e^{At}\right] & = & \left(sI-A\right)^{-1}\\
+x\left(t\right) & = & \mathcal{L}^{-1}\left(\left(sI-A\right)^{-1}\right)\underbar{x}\left(0\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+A & = & \begin{pmatrix}0 & 1\\
+-1 & 0\end{pmatrix}\\
+\left(sI-A\right)^{-1} & = & \left[\begin{pmatrix}s & -1\\
+1 & s\end{pmatrix}\right]^{-1}=\frac{1}{\left|sI-A\right|}\underbrace{\begin{pmatrix}s & 1\\
+-1 & s\end{pmatrix}}_{\mbox{adj}\left(A\right)}\\
+\left|sI-A\right| & = & s^{2}+1\\
+\left(sI-A\right)^{-1} & = & \begin{pmatrix}\frac{s}{s^{2}+1} & \frac{1}{s^{2}+1}\\
+\frac{-1}{s^{2}+1} & \frac{s}{s^{2}+1}\end{pmatrix}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Standard
+פתרון של מערכות בייצוג
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+state space
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+בעזרת טרנספורם לפלס
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\underbar{\dot{x}}\left(t\right) & = & A\underbar{x}\left(t\right)+B\underbar{u}\left(t\right)\\
+y\left(t\right) & = & c\underbar{x}\left(t\right)+D\underbar{u}\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נזכר כי 
+\begin_inset Formula $\mathcal{L}\left(\underbar{\dot{x}}\right)=s\mathcal{L}\left(\underbar{x}\right)-\underbar{x}\left(0^{-}\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+s\underbar{X}\left(s\right)-\underbar{x}\left(0^{-}\right) & = & A\underbar{X}\left(s\right)+B\underbar{U}\left(s\right)\\
+s\underbar{X}\left(s\right)-AX\left(s\right) & = & B\underbar{U}\left(s\right)+x\left(0^{-}\right)\\
+\left(SI-A\right)X\left(s\right) & = & BU\left(s\right)+x\left(0^{-}\right)\\
+X\left(s\right) & = & \left(SI-A\right)^{-1}BU\left(s\right)+\left(SI-A\right)^{-1}\underbar{x}\left(0^{-}\right)\\
+Y\left(s\right) & = & C\underbar{X}\left(s\right)+D\underbar{U}\left(s\right)\\
+Y\left(s\right) & = & C\left(SI-A\right)^{-1}BU\left(s\right)+C\left(SI-A\right)^{-1}x\left(0^{-}\right)+DU\left(s\right)\\
+Y\left(s\right) & = & \left(C\left(SI-A\right)^{-1}+B+D\right)U\left(s\right)+C\left(SI-A\right)^{-1}x\left(0^{-}\right)\\
+H\left(s\right) & = & C\left(SI-A\right)^{-1}B+D\\
+Y\left(s\right) & = & \underbrace{H\left(s\right)u\left(s\right)}_{\mbox{Zero State}}+\underbrace{C\left(sI-A\right)\underbar{x}\left(0^{-}\right)}_{\mbox{Zero Input}}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תזכורת: עבור יצוג 
+\begin_inset Formula $input,output$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+Y\left(s\right) & = & H\left(s\right)U\left(s\right)+\frac{R\left(s\right)}{P_{n}\left(s\right)}\\
+H\left(s\right) & = & \frac{Q_{m}\left(s\right)}{P_{n}\left(s\right)}\end{eqnarray*}
+
+\end_inset
+
+ עבור מטריצה כלשהיא 
+\begin_inset Formula $M$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+M^{-1}=\frac{\mbox{adj}\left(M\right)}{\left|M\right|}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+H\left(s\right)=\frac{C\cdot\mbox{adj}\left(SI-A\right)B}{\left|sI-A\right|}+D\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Paragraph
+טענה:
+\end_layout
+
+\begin_layout Standard
+מערכת 
+\begin_inset Formula $LTI$
+\end_inset
+
+ היא יציבה 
+\begin_inset Formula $BIBO$
+\end_inset
+
+ אם ורק אם כל הקטבים נמצאים בצד השמאלי של המישור כלומר לכל קוטב 
+\begin_inset Formula $\lambda_{j}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $\Re\left(\lambda_{j}\right)<0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמא - תגובת תדר של מערכת
+\family roman
+\series bold
+\shape up
+\size larger
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Shift
+\lang hebrew
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+u\left(t\right)\Rightarrow y\left(t\right)=u\left(t-\tau\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+פונק' אתמסורת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(s\right) & = & e^{-\tau s}u\left(s\right)\\
+H\left(s\right) & = & e^{-\tau s}\\
+\left|H\left(s\right)\right| & = & 1\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+אות מחזורי
+\end_layout
+
+\begin_layout Standard
+אות שעבורו קיים 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+כך ש 
+\begin_inset Formula $x\left(t\right)=x\left(t+T_{0}\right)$
+\end_inset
+
+ לכל 
+\begin_inset Formula $t$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+הרצאה מס.?
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X\left(\omega\right) & = & \int_{-\infty}^{\infty}x\left(t\right)e^{-i\omega t}dt\\
+X\left(\omega\right) & = & X\left(s=i\omega\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תדר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \frac{1}{2\pi}\int_{-\infty}^{\infty}X\left(\omega\right)e^{i\omega t}d\omega\\
+X\left(\omega\right) & = & \mathcal{F}\left(x\left(t\right)\right)\\
+X\left(\omega\right) & \overset{\mathcal{F}}{\leftrightarrow} & x\left(t\right)\\
+X\left(\omega\right) & = & \underbrace{\int_{-\infty}^{\infty}x\left(t\right)\cos\left(\omega t\right)dt}_{\mbox{Cosine Transform}}-i\int_{-\infty}^{\infty}x\left(t\right)\sin\left(\omega t\right)dt\\
+X\left(\omega=0\right) & = & \int_{-\infty}^{\infty}x\left(t\right)dt\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח 
+\begin_inset Formula $\int_{-\infty}^{\infty}\left|x\left(t\right)\right|<\infty$
+\end_inset
+
+ אינטגרבילי, 
+\begin_inset Formula $L^{2}\left(f\right)\ni\int_{-\infty}^{\infty}\left|x\left(t\right)\right|^{2}=\overbrace{E\left(x\right)}^{\mbox{Energy}}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+ליניאריות:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\mathcal{F}\left(\alpha_{1}x_{1}\left(t\right)+\alpha_{2}x_{2}\left(t\right)\right)=\alpha_{1}\mathcal{F}\left(x_{1}\right)+\alpha_{2}\mathcal{F}\left(x_{2}\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+שיקוף בזמן
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+time reversal
+\lang hebrew
+: עבור 
+\begin_inset Formula $x$
+\end_inset
+
+ ממשי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & \to & x\left(-t\right)\\
+X\left(\omega\right) & \to & \overline{X\left(\omega\right)}\\
+X\left(-\omega\right) & = & \overline{X\left(\omega\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הרחבת זמן:
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+scaling
+\lang hebrew
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & \to & x\left(\alpha t\right)\\
+X\left(t\right) & \to & \frac{1}{\left|a\right|}X\left(\frac{\omega}{\left|a\right|}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזזה בזמן:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & \to & x\left(t-t_{0}\right)\\
+X\left(\omega\right) & \to & e^{i\omega t_{0}}X\left(\omega\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הזזה בתדר:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+X\left(\omega\right) & \to & X\left(\omega-\omega_{0}\right)\\
+x\left(t\right) & \to & e^{-i\omega_{0}t}x\left(t\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נגזרת:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{\partial^{n}}{\partial t^{n}}x\left(t\right) & \to & \left(i\omega\right)^{n}X\left(\omega\right)\\
+\int^{t}x\left(t^{\prime}\right)dt^{\prime} & \to & \frac{1}{i\omega}X\left(\omega\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+קונבולוציה:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+f\left(t\right)*g\left(t\right) & \leftrightarrow & F\left(\omega\right)G\left(\omega\right)\\
+f\left(t\right)\cdot g\left(t\right) & \leftrightarrow & \frac{1}{2\pi}F\left(\omega\right)*G\left(\omega\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+זהות
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+Parseval
+\lang hebrew
+ 
+\end_layout
+
+\begin_layout Standard
+ספקטרום: בתדר 
+\begin_inset Formula $\omega$
+\end_inset
+
+: 
+\begin_inset Formula $\left|X\left(\omega\right)\right|^{2}$
+\end_inset
+
+ צפיפות אנרגיה בתדר
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\int_{-\infty}^{\infty}\left|x\left(t\right)\right|^{2}dt & = & \int_{-\infty}^{\infty}x\left(t\right)\cdot\overline{x\left(t\right)}dt\\
+ & = & \int_{-\infty}^{\infty}\left|X\left(\omega\right)\right|^{2}d\omega\\
+ & = & \int_{-\infty}^{\infty}X\left(\omega\right)\overline{X\left(\omega\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+הוכחה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\frac{1}{2\pi}\int_{-\infty}^{\infty}X\left(\omega\right)\overline{X\left(\omega\right)}d\omega & = & \frac{1}{2\pi}\int_{-\infty}^{\infty}d\omega\left(\int_{-\infty}^{\infty}x\left(t\right)e^{-i\omega t}dt\right)\int_{-\infty}^{\infty}\overline{x\left(t^{\prime}\right)}e^{i\omega t^{\prime}}dt^{\prime}\\
+ & = & \int_{-\infty}^{\infty}dt\int_{-\infty}^{\infty}dt^{\prime}x\left(t\right)\overline{x\left(t^{\prime}\right)}\left(\frac{1}{2\pi}\int_{-\infty}^{\infty}e^{i\omega\left(t-t^{\prime}\right)}d\omega\right)\\
+ & = & \int_{-\infty}^{\infty}dtx\left(t\right)\overline{x\left(t\right)}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+תגובת התדר של מערכת 
+\begin_inset Formula $LTIC$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+H\left(\omega\right)=H\left(s=i\omega\right)=\int_{-\infty}^{\infty}h\left(t\right)e^{-i\omega t}dt\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+סיבתית 
+\begin_inset Formula $h\left(t<0\right)=0$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+במצב מנוחה: 
+\begin_inset Formula $Y\left(\omega\right)=H\left(\omega\right)U\left(\omega\right)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+H\left(\omega\right) & = & \left|H\left(\omega\right)\right|e^{i\arg\left(H\left(\omega\right)\right)}\\
+\log\left(H\left(\omega\right)\right) & = & \log\left|H\left(\omega\right)\right|+i\arg\left(H\left(\omega\right)\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מה הקשר בין תגובת האמפליטודה והפזה בין פונקצית התימסורת 
+\begin_inset Formula $H\left(s\right)$
+\end_inset
+
+?
+\end_layout
+
+\begin_layout Standard
+במקרה רציונאלי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+H\left(\omega\right) & = & \frac{Q_{m}\left(i\omega\right)}{P_{n}\left(i\omega\right)}=b_{0}\frac{\prod_{j=1}^{m}\left(i\omega-z_{j}\right)}{\prod_{k=1}^{n}\left(i\omega-\lambda_{k}\right)}\\
+\log\left(H\left(\omega\right)\right) & = & \log\left(b_{0}\right)+\sum_{j=1}^{m}\log\left(i\omega-z_{j}\right)-\sum_{k=1}^{n}\log\left(i\omega-\lambda_{k}\right)\\
+\log\left|H\left(\omega\right)\right| & = & \log\left(b_{0}\right)+\sum_{j=1}^{m}\log\left|i\omega-z_{j}\right|-\sum_{k=1}^{n}\log\left|i\omega-\lambda_{k}\right|\\
+\arg\left(H\left(\omega\right)\right) & = & \sum_{j=1}^{m}\arg\left(i\omega-z_{j}\right)-\sum_{k=1}^{n}\arg\left(i\omega-\lambda_{k}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+דוגמאת:
+\end_layout
+
+\begin_layout Standard
+קוטב ממשי פשוט 
+\begin_inset Formula $\lambda$
+\end_inset
+
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+H\left(s\right) & = & \frac{1}{s+\lambda}\\
+-\log\left|i\omega+\lambda\right| & = & \frac{1}{2}\log\left(\omega^{2}+\lambda^{2}\right)\\
+\arg\left(i\omega-\lambda\right) & = & \arctan\left(\frac{\omega}{\lambda}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+תרגול מס.?
+\end_layout
+
+\begin_layout Section
+טורי פורייה
+\end_layout
+
+\begin_layout Standard
+אות מחזורי עם מחזור 
+\begin_inset Formula $T_{0}$
+\end_inset
+
+ הוא אות עבורו מתקיים לכל 
+\begin_inset Formula $t$
+\end_inset
+
+: 
+\begin_inset Formula $x\left(t+T_{0}\right)=x\left(t\right)$
+\end_inset
+
+.
+ ניתן ליצג פונק' מחזורית יפה באמצעות טור פורייה
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=a_{0}+\sum_{n=1}^{\infty}a_{n}\cos n\omega_{0}t+b_{n}\sin\left(\omega_{0}t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+כאשר 
+\begin_inset Formula $\omega_{0}=\frac{2\pi}{T_{0}}$
+\end_inset
+
+ או 
+\begin_inset Formula $\omega_{0}=2\pi f$
+\end_inset
+
+.
+ 
+\begin_inset Formula $\omega_{0},f_{0}$
+\end_inset
+
+ נקראים תדר יסודי
+\end_layout
+
+\begin_layout Standard
+ייצוג נוסף:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=c_{0}+\sum_{n=1}^{\infty}c_{n}\cos\left(n\omega_{0}t+\theta\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+עוד ייצוג:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \sum_{n=-\infty}^{\infty}D_{n}e^{in\omega_{0}t}\\
+D_{n} & = & \frac{1}{2}\left(a_{n}+ib_{n}\right)\\
+D_{-n} & = & \frac{1}{2}\left(a_{n}+ib_{n}\right)\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+השפעה של מערכת 
+\begin_inset Formula $LTIC$
+\end_inset
+
+ על אות מחזורית
+\end_layout
+
+\begin_layout Standard
+נניח שפונקציהית התמסורת היא 
+\begin_inset Formula $H\left(s\right)$
+\end_inset
+
+ ראינו שעבור 
+\begin_inset Formula $x\left(t\right)=e^{i\omega t}$
+\end_inset
+
+ מתקיים 
+\begin_inset Formula $y\left(t\right)=e^{i\omega t}H\left(i\omega\right)$
+\end_inset
+
+	
+\end_layout
+
+\begin_layout Standard
+נגדיר 
+\begin_inset Formula $\left\langle x,y\right\rangle =\frac{1}{T_{0}}\int_{0}^{T_{0}}x\left(t\right)\overline{y\left(t\right)}dt$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שיש לנו אוסף אותות 
+\begin_inset Formula $\left\{ x_{n}\right\} _{n=-\infty}^{\infty}$
+\end_inset
+
+ שהם אותונורמליים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+\left\langle x_{n},x_{m}\right\rangle =\begin{cases}
+1 & n=m\\
+0 & n\neq m\end{cases}\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נניח שקיים למרחב בסיס אורתונורמלי
+\end_layout
+
+\begin_layout Standard
+כלומר לכל 
+\begin_inset Formula $x$
+\end_inset
+
+ יש ייצוג
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+x\left(t\right)=\sum_{n=-\infty}^{\infty}D_{n}x_{n}\left(t\right)\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+אזי
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \[
+D_{n}=\left\langle x,x_{n}\right\rangle \]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+נראה שווקטורי פורייה 
+\begin_inset Formula $x_{n}\left(t\right)e^{i\omega nt}$
+\end_inset
+
+ הם אורטוגונאליים
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\langle x_{n},x_{n}\right\rangle  & = & \frac{1}{T_{0}}\int_{0}^{T_{0}}e^{i\omega_{0}nt}e^{-i\omega_{0}nt}e^{-i\omega_{0}nt}dt=1\\
+\left\langle x_{n},x_{m}\right\rangle  & = & \frac{1}{T_{0}}\int_{0}^{T_{0}}e^{i\omega_{0}nt}e^{-i\omega_{0}nt}e^{-i\omega_{0}mt}dt\\
+ & = & \frac{1}{T_{0}}\int_{0}^{T_{0}}e^{i\omega_{0}\left(n-m\right)t}dt\\
+ & = & \frac{1}{T_{0}}\left[\frac{1}{i\omega_{0}\left(n-m\right)}e^{i\omega_{0}\left(n-m\right)t}\right]_{0}^{T_{0}}\\
+ & = & C\left[e^{i\frac{2\pi}{T_{0}}\left(n-m\right)T_{0}}-e^{0}\right]\\
+ & = & 0\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+בהנתן ייצוג:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+x\left(t\right) & = & \sum_{n=-\infty}^{\infty}D_{n}e^{i\omega_{0}nt}\\
+D_{n} & = & \frac{1}{T_{0}}\int_{0}^{T_{0}}x\left(t\right)e^{-i\omega_{0}nt}dt\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+מסוע: 
+\begin_inset Formula $x_{n}\left(t\right)=e^{i\omega_{0}nt}$
+\end_inset
+
+ הן אורתוגונליות
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+\left\langle x,x_{n}\right\rangle  & = & \left\langle \sum_{m}D_{m}x_{m},x_{n}\right\rangle \\
+ & = & \sum_{m}D_{m}\left\langle x_{m},x_{n}\right\rangle \\
+ & = & \sum_{m}D_{m}\delta_{n,m}=D_{n}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+דוגמא לשימוש בטור פורייה
+\end_layout
+
+\begin_layout Standard
+מערכת
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+\lang english
+full wave rectifier
+\family roman
+\series medium
+\shape up
+\size normal
+\emph off
+\bar no
+\noun off
+\color none
+\lang hebrew
+ 
+\family default
+\series default
+\shape default
+\size default
+\emph default
+\bar default
+\noun default
+\color inherit
+:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename linear/c14d1.svg
+	lyxscale 30
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename linear/c14d2.svg
+	width 70text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption
+
+\begin_layout Plain Layout
+\begin_inset Formula $\mbox{Full wave rectifier}$
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+T_{0} & = & \pi,\omega_{0}=\frac{2\pi}{T_{0}}=2\\
+u\left(t\right) & = & \sum_{n=-\infty}^{\infty}D_{n}e^{in2t}\\
+H\left(s\right) & = & \frac{\frac{1}{RC}}{\frac{1}{RC}+s}=\frac{1}{1+RCs}\end{eqnarray*}
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula \begin{eqnarray*}
+y\left(t\right) & = & \sum_{n=-\infty}^{\infty}D_{0}H\left(i\omega_{0}n\right)e^{+i\omega_{0}nt}\\
+ & = & \sum\frac{2}{\pi\left(i-4n^{2}\right)}\cdot\frac{1}{1+3\cdot2\cdot in}\end{eqnarray*}
 
 \end_inset
 

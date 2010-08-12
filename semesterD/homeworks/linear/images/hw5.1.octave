@@ -1,0 +1,16 @@
+#!/usr/bin/env octave
+
+
+hold('on');
+
+x1=-2*pi:pi/4:2*pi;
+x2=-pi:pi/4:pi;
+[a,b]=meshgrid(x1,x2);
+quiver(a,b,b,-a);
+legend('Vector Field')
+xlabel('x_1');
+ylabel('x_2');
+
+pause
+
+print -dsvg hw5.1.svg
